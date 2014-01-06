@@ -220,7 +220,7 @@
       </div>
       <h2 class="Section">Requirements</h2>
       <div class="SectionBox" id="T:CoreTweet.Streaming.Reactive.Extension:Docs:Version Information">
-        <b>Namespace: </b>CoreTweet.Streaming.Reactive<br /><b>Assembly: </b>CoreTweet.Streaming.Reactive (in CoreTweet.Streaming.Reactive.dll)<br /><b>Assembly Versions: </b>0.1.5108.3532</div>
+        <b>Namespace: </b>CoreTweet.Streaming.Reactive<br /><b>Assembly: </b>CoreTweet.Streaming.Reactive (in CoreTweet.Streaming.Reactive.dll)<br /><b>Assembly Versions: </b>0.1.5108.3532, 0.1.5120.2775</div>
       <h2 class="Section" id="Members">Members</h2>
       <div class="SectionBox" id="_Members">
         <p>
@@ -239,6 +239,17 @@
                   <b>
                     <a href="#M:CoreTweet.Streaming.Reactive.Extension.StartObservableStream(CoreTweet.Streaming.StreamingApi,CoreTweet.Streaming.StreamingParameters,CoreTweet.Streaming.StreamingType)">StartObservableStream</a>
                   </b>(<i>this</i> <a href="../CoreTweet.Streaming/StreamingApi.html">CoreTweet.Streaming.StreamingApi</a>, <a href="../CoreTweet.Streaming/StreamingParameters.html">CoreTweet.Streaming.StreamingParameters</a>, <a href="../CoreTweet.Streaming/StreamingType.html">CoreTweet.Streaming.StreamingType</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IObservable`1">IObservable&lt;CoreTweet.Streaming.StreamingMessage&gt;</a></nobr><blockquote>
+            Starts the stream.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:CoreTweet.Streaming.Reactive.Extension.StartObservableStream(CoreTweet.Streaming.StreamingApi,CoreTweet.Streaming.StreamingParameters,CoreTweet.Streaming.StreamingType)">StartObservableStream</a>
+                  </b>(<i>this</i> <a href="../CoreTweet.Streaming/StreamingApi.html">CoreTweet.Streaming.StreamingApi</a>, <a href="../CoreTweet.Streaming/StreamingParameters.html">CoreTweet.Streaming.StreamingParameters</a>, <a href="../CoreTweet.Streaming/StreamingType.html">CoreTweet.Streaming.StreamingType</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Reactive.Subjects.IConnectableObservable`1">System.Reactive.Subjects.IConnectableObservable&lt;CoreTweet.Streaming.StreamingMessage&gt;</a></nobr><blockquote>
             Starts the stream.
             </blockquote></td>
               </tr>
@@ -283,6 +294,41 @@
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:CoreTweet.Streaming.Reactive.Extension.StartObservableStream(CoreTweet.Streaming.StreamingApi,CoreTweet.Streaming.StreamingParameters,CoreTweet.Streaming.StreamingType):Version Information">
             <b>Namespace: </b>CoreTweet.Streaming.Reactive<br /><b>Assembly: </b>CoreTweet.Streaming.Reactive (in CoreTweet.Streaming.Reactive.dll)<br /><b>Assembly Versions: </b>0.1.5108.3532</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:CoreTweet.Streaming.Reactive.Extension.StartObservableStream(CoreTweet.Streaming.StreamingApi,CoreTweet.Streaming.StreamingParameters,CoreTweet.Streaming.StreamingType)">StartObservableStream Method</h3>
+        <blockquote id="M:CoreTweet.Streaming.Reactive.Extension.StartObservableStream(CoreTweet.Streaming.StreamingApi,CoreTweet.Streaming.StreamingParameters,CoreTweet.Streaming.StreamingType):member">
+          <p class="Summary">
+            Starts the stream.
+            </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Reactive.Subjects.IConnectableObservable`1">System.Reactive.Subjects.IConnectableObservable&lt;CoreTweet.Streaming.StreamingMessage&gt;</a> <b>StartObservableStream</b> (<i>this</i> <a href="../CoreTweet.Streaming/StreamingApi.html">CoreTweet.Streaming.StreamingApi</a> e, <a href="../CoreTweet.Streaming/StreamingParameters.html">CoreTweet.Streaming.StreamingParameters</a> parameters, <a href="../CoreTweet.Streaming/StreamingType.html">CoreTweet.Streaming.StreamingType</a> type)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Streaming.Reactive.Extension.StartObservableStream(CoreTweet.Streaming.StreamingApi,CoreTweet.Streaming.StreamingParameters,CoreTweet.Streaming.StreamingType):Parameters">
+            <dl>
+              <dt>
+                <i>e</i>
+              </dt>
+              <dd>Tokens.</dd>
+              <dt>
+                <i>parameters</i>
+              </dt>
+              <dd>Parameters.</dd>
+              <dt>
+                <i>type</i>
+              </dt>
+              <dd>Type of streaming API.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Streaming.Reactive.Extension.StartObservableStream(CoreTweet.Streaming.StreamingApi,CoreTweet.Streaming.StreamingParameters,CoreTweet.Streaming.StreamingType):Returns">The observable object. Connect() must be called.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:CoreTweet.Streaming.Reactive.Extension.StartObservableStream(CoreTweet.Streaming.StreamingApi,CoreTweet.Streaming.StreamingParameters,CoreTweet.Streaming.StreamingType):Remarks">
+            <span class="NotEntered"></span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:CoreTweet.Streaming.Reactive.Extension.StartObservableStream(CoreTweet.Streaming.StreamingApi,CoreTweet.Streaming.StreamingParameters,CoreTweet.Streaming.StreamingType):Version Information">
+            <b>Namespace: </b>CoreTweet.Streaming.Reactive<br /><b>Assembly: </b>CoreTweet.Streaming.Reactive (in CoreTweet.Streaming.Reactive.dll)<br /><b>Assembly Versions: </b>0.1.5120.2775</div>
           <hr size="1" />
         </blockquote>
       </div>
