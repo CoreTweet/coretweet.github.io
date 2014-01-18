@@ -220,13 +220,35 @@
       </div>
       <h2 class="Section">Requirements</h2>
       <div class="SectionBox" id="T:CoreTweet.RateLimit:Docs:Version Information">
-        <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5108.3530, 0.1.5120.2773</div>
+        <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5132.5858</div>
       <h2 class="Section" id="Members">Members</h2>
       <div class="SectionBox" id="_Members">
         <p>
 								See Also: Inherited members from
 								<a href="../CoreTweet.Core/CoreBase.html">CoreTweet.Core.CoreBase</a>.
 							</p>
+        <h2 class="Section">Public Constructors</h2>
+        <div class="SectionBox" id="Public Constructors">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <b>
+                      <a href="#C:CoreTweet.RateLimit()">RateLimit</a>
+                    </b>()</div>
+                </td>
+                <td>
+                  <span class="NotEntered"></span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
         <h2 class="Section">Public Properties</h2>
         <div class="SectionBox" id="Public Properties">
           <div class="SubsectionBox">
@@ -285,7 +307,7 @@
                 </td>
                 <td>
                   <i>
-                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.DateTime">DateTime</a>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.DateTimeOffset">DateTimeOffset</a>
                   </i>. <span class="NotEntered"></span></td>
               </tr>
             </table>
@@ -320,13 +342,29 @@
     <div class="Members" id="T:CoreTweet.RateLimit:Members">
       <h2 class="Section" id="MemberDetails">Member Details</h2>
       <div class="SectionBox" id="_MemberDetails">
+        <h3 id="C:CoreTweet.RateLimit()">RateLimit Constructor</h3>
+        <blockquote id="C:CoreTweet.RateLimit():member">
+          <p class="Summary">
+            <span class="NotEntered"></span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public  <b>RateLimit</b> ()</div>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="C:CoreTweet.RateLimit():Remarks">
+            <span class="NotEntered"></span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="C:CoreTweet.RateLimit():Version Information">
+            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5132.5858</div>
+          <hr size="1" />
+        </blockquote>
         <h3 id="P:CoreTweet.RateLimit.Limit">Limit Property</h3>
         <blockquote id="P:CoreTweet.RateLimit.Limit:member">
           <p class="Summary">
             <span class="NotEntered"></span>
           </p>
           <h2>Syntax</h2>
-          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> <b>Limit</b>  { get; set; }</div>
+          <div class="Signature">[Newtonsoft.Json.JsonProperty("limit")]<br />public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> <b>Limit</b>  { get; set; }</div>
           <h4 class="Subsection">Value</h4>
           <blockquote class="SubsectionBox" id="P:CoreTweet.RateLimit.Limit:Value">
             <span class="NotEntered"></span>
@@ -337,7 +375,7 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="P:CoreTweet.RateLimit.Limit:Version Information">
-            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5108.3530, 0.1.5120.2773</div>
+            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5132.5858</div>
           <hr size="1" />
         </blockquote>
         <h3 id="P:CoreTweet.RateLimit.Remaining">Remaining Property</h3>
@@ -346,7 +384,7 @@
             <span class="NotEntered"></span>
           </p>
           <h2>Syntax</h2>
-          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> <b>Remaining</b>  { get; set; }</div>
+          <div class="Signature">[Newtonsoft.Json.JsonProperty("remaining")]<br />public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> <b>Remaining</b>  { get; set; }</div>
           <h4 class="Subsection">Value</h4>
           <blockquote class="SubsectionBox" id="P:CoreTweet.RateLimit.Remaining:Value">
             <span class="NotEntered"></span>
@@ -357,7 +395,7 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="P:CoreTweet.RateLimit.Remaining:Version Information">
-            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5108.3530, 0.1.5120.2773</div>
+            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5132.5858</div>
           <hr size="1" />
         </blockquote>
         <h3 id="P:CoreTweet.RateLimit.Reset">Reset Property</h3>
@@ -366,7 +404,7 @@
             <span class="NotEntered"></span>
           </p>
           <h2>Syntax</h2>
-          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.DateTime">DateTime</a> <b>Reset</b>  { get; set; }</div>
+          <div class="Signature">[Newtonsoft.Json.JsonConverter(typeof(CoreTweet.Core.DateTimeOffsetConverter))]<br />[Newtonsoft.Json.JsonProperty("reset")]<br />public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.DateTimeOffset">DateTimeOffset</a> <b>Reset</b>  { get; set; }</div>
           <h4 class="Subsection">Value</h4>
           <blockquote class="SubsectionBox" id="P:CoreTweet.RateLimit.Reset:Value">
             <span class="NotEntered"></span>
@@ -377,7 +415,7 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="P:CoreTweet.RateLimit.Reset:Version Information">
-            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5108.3530, 0.1.5120.2773</div>
+            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5132.5858</div>
           <hr size="1" />
         </blockquote>
       </div>

@@ -220,7 +220,7 @@
       </div>
       <h2 class="Section">Requirements</h2>
       <div class="SectionBox" id="T:CoreTweet.Setting:Docs:Version Information">
-        <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5108.3530, 0.1.5120.2773</div>
+        <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5132.5858</div>
       <h2 class="Section" id="Members">Members</h2>
       <div class="SectionBox" id="_Members">
         <p>
@@ -239,8 +239,8 @@
                 <td>
                   <div>
                     <b>
-                      <a href="#C:CoreTweet.Setting(CoreTweet.Tokens)">Setting</a>
-                    </b>(<a href="../CoreTweet/Tokens.html">Tokens</a>)</div>
+                      <a href="#C:CoreTweet.Setting()">Setting</a>
+                    </b>()</div>
                 </td>
                 <td>
                   <span class="NotEntered"></span>
@@ -268,23 +268,6 @@
                     <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>
                   </i>. 
             When true, always use https.
-            </td>
-              </tr>
-              <tr valign="top">
-                <td>
-                  <div>
-                  </div>
-                </td>
-                <td>
-                  <b>
-                    <a href="#P:CoreTweet.Setting.DiscoverableByEmail">DiscoverableByEmail</a>
-                  </b>
-                </td>
-                <td>
-                  <i>
-                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>
-                  </i>. 
-            When true, your friend can discover you by your email address.
             </td>
               </tr>
               <tr valign="top">
@@ -323,14 +306,14 @@
                 </td>
                 <td>
                   <b>
-                    <a href="#P:CoreTweet.Setting.Language">Language</a>
+                    <a href="#P:CoreTweet.Setting.IsDiscoverableByEmail">IsDiscoverableByEmail</a>
                   </b>
                 </td>
                 <td>
                   <i>
-                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>
                   </i>. 
-            The BCP 47 code for the user's self-declared user interface language. May or may not have anything to do with the content of their Tweets.
+            When true, your friend can discover you by your email address.
             </td>
               </tr>
               <tr valign="top">
@@ -340,7 +323,7 @@
                 </td>
                 <td>
                   <b>
-                    <a href="#P:CoreTweet.Setting.Protected">Protected</a>
+                    <a href="#P:CoreTweet.Setting.IsProtected">IsProtected</a>
                   </b>
                 </td>
                 <td>
@@ -348,6 +331,23 @@
                     <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>
                   </i>. 
             When true, indicates that this user has chosen to protect their Tweets.
+            </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#P:CoreTweet.Setting.Language">Language</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>
+                  </i>. 
+            The BCP 47 code for the user's self-declared user interface language. May or may not have anything to do with the content of their Tweets.
             </td>
               </tr>
               <tr valign="top">
@@ -396,8 +396,8 @@
                 </td>
                 <td>
                   <i>
-                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.Dictionary`2">Dictionary&lt;string, object&gt;</a>
-                  </i>. <p>Gets or sets the sleep time.</p><p>Values: </p><p>bool Enabled</p><p>int EndTime</p><p>int StartTime</p></td>
+                    <a href="../CoreTweet/SleepTime.html">SleepTime</a>
+                  </i>. Gets or sets the sleep time.</td>
               </tr>
               <tr valign="top">
                 <td>
@@ -411,8 +411,8 @@
                 </td>
                 <td>
                   <i>
-                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.Dictionary`2">Dictionary&lt;string, object&gt;</a>
-                  </i>. <p>Gets or sets the time zone.</p><p>Values: </p><p>string Name</p><p>string TzinfoName</p><p>int UtcOffset</p></td>
+                    <a href="../CoreTweet/TimeZone.html">TimeZone</a>
+                  </i>. Gets or sets the time zone.</td>
               </tr>
               <tr valign="top">
                 <td>
@@ -426,8 +426,8 @@
                 </td>
                 <td>
                   <i>
-                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.Dictionary`2">Dictionary&lt;string, object&gt;</a>
-                  </i>. <p>Gets or sets the trend locaion.</p><p>Values: </p><p>string Country</p><p>string CountryCode</p><p>string Name</p><p>long ParentId</p><p>Dictionary(string,object) PlaceType [ int Code, string Name ]</p></td>
+                    <a href="../CoreTweet/Place.html">Place</a>
+                  </i>. Gets or sets the trend locaion.</td>
               </tr>
               <tr valign="top">
                 <td>
@@ -476,31 +476,20 @@
     <div class="Members" id="T:CoreTweet.Setting:Members">
       <h2 class="Section" id="MemberDetails">Member Details</h2>
       <div class="SectionBox" id="_MemberDetails">
-        <h3 id="C:CoreTweet.Setting(CoreTweet.Tokens)">Setting Constructor</h3>
-        <blockquote id="C:CoreTweet.Setting(CoreTweet.Tokens):member">
+        <h3 id="C:CoreTweet.Setting()">Setting Constructor</h3>
+        <blockquote id="C:CoreTweet.Setting():member">
           <p class="Summary">
             <span class="NotEntered"></span>
           </p>
           <h2>Syntax</h2>
-          <div class="Signature">public  <b>Setting</b> (<a href="../CoreTweet/Tokens.html">Tokens</a> tokens)</div>
-          <h4 class="Subsection">Parameters</h4>
-          <blockquote class="SubsectionBox" id="C:CoreTweet.Setting(CoreTweet.Tokens):Parameters">
-            <dl>
-              <dt>
-                <i>tokens</i>
-              </dt>
-              <dd>
-                <span class="NotEntered"></span>
-              </dd>
-            </dl>
-          </blockquote>
+          <div class="Signature">public  <b>Setting</b> ()</div>
           <h2 class="Section">Remarks</h2>
-          <div class="SectionBox" id="C:CoreTweet.Setting(CoreTweet.Tokens):Remarks">
+          <div class="SectionBox" id="C:CoreTweet.Setting():Remarks">
             <span class="NotEntered"></span>
           </div>
           <h2 class="Section">Requirements</h2>
-          <div class="SectionBox" id="C:CoreTweet.Setting(CoreTweet.Tokens):Version Information">
-            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5108.3530, 0.1.5120.2773</div>
+          <div class="SectionBox" id="C:CoreTweet.Setting():Version Information">
+            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5132.5858</div>
           <hr size="1" />
         </blockquote>
         <h3 id="P:CoreTweet.Setting.AlwaysUseHttps">AlwaysUseHttps Property</h3>
@@ -509,7 +498,7 @@
             When true, always use https.
             </p>
           <h2>Syntax</h2>
-          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> <b>AlwaysUseHttps</b>  { get; set; }</div>
+          <div class="Signature">[Newtonsoft.Json.JsonProperty("always_use_https")]<br />public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> <b>AlwaysUseHttps</b>  { get; set; }</div>
           <h4 class="Subsection">Value</h4>
           <blockquote class="SubsectionBox" id="P:CoreTweet.Setting.AlwaysUseHttps:Value">
             <tt>true</tt> if always use https; otherwise, <tt>false</tt>.
@@ -520,27 +509,7 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="P:CoreTweet.Setting.AlwaysUseHttps:Version Information">
-            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5108.3530, 0.1.5120.2773</div>
-          <hr size="1" />
-        </blockquote>
-        <h3 id="P:CoreTweet.Setting.DiscoverableByEmail">DiscoverableByEmail Property</h3>
-        <blockquote id="P:CoreTweet.Setting.DiscoverableByEmail:member">
-          <p class="Summary">
-            When true, your friend can discover you by your email address.
-            </p>
-          <h2>Syntax</h2>
-          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> <b>DiscoverableByEmail</b>  { get; set; }</div>
-          <h4 class="Subsection">Value</h4>
-          <blockquote class="SubsectionBox" id="P:CoreTweet.Setting.DiscoverableByEmail:Value">
-            <span class="NotEntered"></span>
-          </blockquote>
-          <h2 class="Section">Remarks</h2>
-          <div class="SectionBox" id="P:CoreTweet.Setting.DiscoverableByEmail:Remarks">
-            <span class="NotEntered"></span>
-          </div>
-          <h2 class="Section">Requirements</h2>
-          <div class="SectionBox" id="P:CoreTweet.Setting.DiscoverableByEmail:Version Information">
-            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5108.3530, 0.1.5120.2773</div>
+            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5132.5858</div>
           <hr size="1" />
         </blockquote>
         <h3 id="P:CoreTweet.Setting.GeoEnabled">GeoEnabled Property</h3>
@@ -549,7 +518,7 @@
             When true, indicates that the user has enabled the possibility of geotagging their Tweets. This field must be true for the current user to attach geographic data when using POST statuses/update.
             </p>
           <h2>Syntax</h2>
-          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> <b>GeoEnabled</b>  { get; set; }</div>
+          <div class="Signature">[Newtonsoft.Json.JsonProperty("geo_enabled")]<br />public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> <b>GeoEnabled</b>  { get; set; }</div>
           <h4 class="Subsection">Value</h4>
           <blockquote class="SubsectionBox" id="P:CoreTweet.Setting.GeoEnabled:Value">
             <span class="NotEntered"></span>
@@ -560,7 +529,47 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="P:CoreTweet.Setting.GeoEnabled:Version Information">
-            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5108.3530, 0.1.5120.2773</div>
+            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5132.5858</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:CoreTweet.Setting.IsDiscoverableByEmail">IsDiscoverableByEmail Property</h3>
+        <blockquote id="P:CoreTweet.Setting.IsDiscoverableByEmail:member">
+          <p class="Summary">
+            When true, your friend can discover you by your email address.
+            </p>
+          <h2>Syntax</h2>
+          <div class="Signature">[Newtonsoft.Json.JsonProperty("discoverable_by_email")]<br />public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> <b>IsDiscoverableByEmail</b>  { get; set; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:CoreTweet.Setting.IsDiscoverableByEmail:Value">
+            <span class="NotEntered"></span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:CoreTweet.Setting.IsDiscoverableByEmail:Remarks">
+            <span class="NotEntered"></span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:CoreTweet.Setting.IsDiscoverableByEmail:Version Information">
+            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5132.5858</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:CoreTweet.Setting.IsProtected">IsProtected Property</h3>
+        <blockquote id="P:CoreTweet.Setting.IsProtected:member">
+          <p class="Summary">
+            When true, indicates that this user has chosen to protect their Tweets.
+            </p>
+          <h2>Syntax</h2>
+          <div class="Signature">[Newtonsoft.Json.JsonProperty("protected")]<br />public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> <b>IsProtected</b>  { get; set; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:CoreTweet.Setting.IsProtected:Value">
+            <span class="NotEntered"></span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:CoreTweet.Setting.IsProtected:Remarks">
+            <span class="NotEntered"></span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:CoreTweet.Setting.IsProtected:Version Information">
+            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5132.5858</div>
           <hr size="1" />
         </blockquote>
         <h3 id="P:CoreTweet.Setting.Language">Language Property</h3>
@@ -569,7 +578,7 @@
             The BCP 47 code for the user's self-declared user interface language. May or may not have anything to do with the content of their Tweets.
             </p>
           <h2>Syntax</h2>
-          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>Language</b>  { get; set; }</div>
+          <div class="Signature">[Newtonsoft.Json.JsonProperty("language")]<br />public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>Language</b>  { get; set; }</div>
           <h4 class="Subsection">Value</h4>
           <blockquote class="SubsectionBox" id="P:CoreTweet.Setting.Language:Value">
             <span class="NotEntered"></span>
@@ -580,27 +589,7 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="P:CoreTweet.Setting.Language:Version Information">
-            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5108.3530, 0.1.5120.2773</div>
-          <hr size="1" />
-        </blockquote>
-        <h3 id="P:CoreTweet.Setting.Protected">Protected Property</h3>
-        <blockquote id="P:CoreTweet.Setting.Protected:member">
-          <p class="Summary">
-            When true, indicates that this user has chosen to protect their Tweets.
-            </p>
-          <h2>Syntax</h2>
-          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> <b>Protected</b>  { get; set; }</div>
-          <h4 class="Subsection">Value</h4>
-          <blockquote class="SubsectionBox" id="P:CoreTweet.Setting.Protected:Value">
-            <span class="NotEntered"></span>
-          </blockquote>
-          <h2 class="Section">Remarks</h2>
-          <div class="SectionBox" id="P:CoreTweet.Setting.Protected:Remarks">
-            <span class="NotEntered"></span>
-          </div>
-          <h2 class="Section">Requirements</h2>
-          <div class="SectionBox" id="P:CoreTweet.Setting.Protected:Version Information">
-            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5108.3530, 0.1.5120.2773</div>
+            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5132.5858</div>
           <hr size="1" />
         </blockquote>
         <h3 id="P:CoreTweet.Setting.ScreenName">ScreenName Property</h3>
@@ -609,7 +598,7 @@
             The screen name, handle, or alias that this user identifies themselves with. screen_names are unique but subject to change. Use id_str as a user identifier whenever possible. Typically a maximum of 15 characters long, but some historical accounts may exist with longer names.
             </p>
           <h2>Syntax</h2>
-          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>ScreenName</b>  { get; set; }</div>
+          <div class="Signature">[Newtonsoft.Json.JsonProperty("screen_name")]<br />public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>ScreenName</b>  { get; set; }</div>
           <h4 class="Subsection">Value</h4>
           <blockquote class="SubsectionBox" id="P:CoreTweet.Setting.ScreenName:Value">
             <span class="NotEntered"></span>
@@ -620,7 +609,7 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="P:CoreTweet.Setting.ScreenName:Version Information">
-            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5108.3530, 0.1.5120.2773</div>
+            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5132.5858</div>
           <hr size="1" />
         </blockquote>
         <h3 id="P:CoreTweet.Setting.ShowAllInlineMedia">ShowAllInlineMedia Property</h3>
@@ -629,7 +618,7 @@
             Indicates that the user would like to see media inline. Somewhat disused.
             </p>
           <h2>Syntax</h2>
-          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Nullable`1">Nullable&lt;bool&gt;</a> <b>ShowAllInlineMedia</b>  { get; set; }</div>
+          <div class="Signature">[Newtonsoft.Json.JsonProperty("show_all_inline_media")]<br />public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Nullable`1">Nullable&lt;bool&gt;</a> <b>ShowAllInlineMedia</b>  { get; set; }</div>
           <h4 class="Subsection">Value</h4>
           <blockquote class="SubsectionBox" id="P:CoreTweet.Setting.ShowAllInlineMedia:Value">
             <span class="NotEntered"></span>
@@ -640,20 +629,14 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="P:CoreTweet.Setting.ShowAllInlineMedia:Version Information">
-            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5108.3530, 0.1.5120.2773</div>
+            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5132.5858</div>
           <hr size="1" />
         </blockquote>
         <h3 id="P:CoreTweet.Setting.SleepTime">SleepTime Property</h3>
         <blockquote id="P:CoreTweet.Setting.SleepTime:member">
-          <p class="Summary">
-            <p>Gets or sets the sleep time.</p>
-            <p>Values: </p>
-            <p>bool Enabled</p>
-            <p>int EndTime</p>
-            <p>int StartTime</p>
-          </p>
+          <p class="Summary">Gets or sets the sleep time.</p>
           <h2>Syntax</h2>
-          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.Dictionary`2">Dictionary&lt;string, object&gt;</a> <b>SleepTime</b>  { get; set; }</div>
+          <div class="Signature">[Newtonsoft.Json.JsonProperty("sleep_time")]<br />public <a href="../CoreTweet/SleepTime.html">SleepTime</a> <b>SleepTime</b>  { get; set; }</div>
           <h4 class="Subsection">Value</h4>
           <blockquote class="SubsectionBox" id="P:CoreTweet.Setting.SleepTime:Value">
             <span class="NotEntered"></span>
@@ -664,20 +647,14 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="P:CoreTweet.Setting.SleepTime:Version Information">
-            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5108.3530, 0.1.5120.2773</div>
+            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5132.5858</div>
           <hr size="1" />
         </blockquote>
         <h3 id="P:CoreTweet.Setting.TimeZone">TimeZone Property</h3>
         <blockquote id="P:CoreTweet.Setting.TimeZone:member">
-          <p class="Summary">
-            <p>Gets or sets the time zone.</p>
-            <p>Values: </p>
-            <p>string Name</p>
-            <p>string TzinfoName</p>
-            <p>int UtcOffset</p>
-          </p>
+          <p class="Summary">Gets or sets the time zone.</p>
           <h2>Syntax</h2>
-          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.Dictionary`2">Dictionary&lt;string, object&gt;</a> <b>TimeZone</b>  { get; set; }</div>
+          <div class="Signature">[Newtonsoft.Json.JsonProperty("time_zone")]<br />public <a href="../CoreTweet/TimeZone.html">TimeZone</a> <b>TimeZone</b>  { get; set; }</div>
           <h4 class="Subsection">Value</h4>
           <blockquote class="SubsectionBox" id="P:CoreTweet.Setting.TimeZone:Value">
             <span class="NotEntered"></span>
@@ -688,22 +665,14 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="P:CoreTweet.Setting.TimeZone:Version Information">
-            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5108.3530, 0.1.5120.2773</div>
+            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5132.5858</div>
           <hr size="1" />
         </blockquote>
         <h3 id="P:CoreTweet.Setting.TrendLocaion">TrendLocaion Property</h3>
         <blockquote id="P:CoreTweet.Setting.TrendLocaion:member">
-          <p class="Summary">
-            <p>Gets or sets the trend locaion.</p>
-            <p>Values: </p>
-            <p>string Country</p>
-            <p>string CountryCode</p>
-            <p>string Name</p>
-            <p>long ParentId</p>
-            <p>Dictionary(string,object) PlaceType [ int Code, string Name ]</p>
-          </p>
+          <p class="Summary">Gets or sets the trend locaion.</p>
           <h2>Syntax</h2>
-          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.Dictionary`2">Dictionary&lt;string, object&gt;</a> <b>TrendLocaion</b>  { get; set; }</div>
+          <div class="Signature">[Newtonsoft.Json.JsonProperty("trend_location")]<br />public <a href="../CoreTweet/Place.html">Place</a> <b>TrendLocaion</b>  { get; set; }</div>
           <h4 class="Subsection">Value</h4>
           <blockquote class="SubsectionBox" id="P:CoreTweet.Setting.TrendLocaion:Value">
             <span class="NotEntered"></span>
@@ -714,7 +683,7 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="P:CoreTweet.Setting.TrendLocaion:Version Information">
-            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5108.3530, 0.1.5120.2773</div>
+            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5132.5858</div>
           <hr size="1" />
         </blockquote>
         <h3 id="P:CoreTweet.Setting.UseCookiePersonalization">UseCookiePersonalization Property</h3>
@@ -723,7 +692,7 @@
             <span class="NotEntered"></span>
           </p>
           <h2>Syntax</h2>
-          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> <b>UseCookiePersonalization</b>  { get; set; }</div>
+          <div class="Signature">[Newtonsoft.Json.JsonProperty("use_cookie_personalization")]<br />public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> <b>UseCookiePersonalization</b>  { get; set; }</div>
           <h4 class="Subsection">Value</h4>
           <blockquote class="SubsectionBox" id="P:CoreTweet.Setting.UseCookiePersonalization:Value">
             <span class="NotEntered"></span>
@@ -734,7 +703,7 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="P:CoreTweet.Setting.UseCookiePersonalization:Version Information">
-            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5108.3530, 0.1.5120.2773</div>
+            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5132.5858</div>
           <hr size="1" />
         </blockquote>
       </div>

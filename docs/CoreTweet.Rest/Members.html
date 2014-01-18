@@ -220,7 +220,7 @@
       </div>
       <h2 class="Section">Requirements</h2>
       <div class="SectionBox" id="T:CoreTweet.Rest.Members:Docs:Version Information">
-        <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5108.3530, 0.1.5120.2773</div>
+        <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5132.5858</div>
       <h2 class="Section" id="Members">Members</h2>
       <div class="SectionBox" id="_Members">
         <p>
@@ -321,6 +321,16 @@
                 </td>
                 <td colspan="2">
                   <b>
+                    <a href="#M:CoreTweet.Rest.Members.Enumerate(CoreTweet.EnumerateMode,System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">Enumerate</a>
+                  </b>(<a href="../CoreTweet/EnumerateMode.html">CoreTweet.EnumerateMode</a>, <b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;string, object&gt;&gt;</a>[])<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;CoreTweet.User&gt;</a></nobr><blockquote><p>Returns the members of the specified list. Private list members will only be shown if the authenticated user owns the specified list.</p><p>Note: Either a list_id or a slug is required. If providing a list_slug, an owner_screen_name or owner_id is also required.</p><p>The response from the API will include a previous_cursor and next_cursor to allow paging back and forth. See Using cursors to navigate collections for more information.</p><p>Avaliable parameters: </p><p><i>long list_id (required)</i> : The numerical id of the list.</p><p><i>string slug (required)</i> : You can identify a list by its slug instead of its numerical id. If you decide to do so, note that you'll also have to specify the list owner using the owner_id or owner_screen_name parameters.</p><p><i>string owner_sereen_name (optional)</i> : The screen name of the user who owns the list being requested by a slug.</p><p><i>long owner_id (optional)</i> : The user ID of the user who owns the list being requested by a slug.</p><p><i>long cursor (optional)</i> : The first cursor. If not be specified, enumerating starts from the first page.</p></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
                     <a href="#M:CoreTweet.Rest.Members.Show(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">Show</a>
                   </b>(<b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;string, object&gt;&gt;</a>[])<nobr> : <a href="../CoreTweet/User.html">CoreTweet.User</a></nobr><blockquote><p>Check if the specified user is a member of the specified list.</p><p>Note: Either a list_id or a slug is required. If providing a list_slug, an owner_screen_name or owner_id is also required.</p><p>Avaliable parameters: </p><p><i>long list_id (required)</i> : The numerical id of the list.</p><p><i>string slug (required)</i> : You can identify a list by its slug instead of its numerical id. If you decide to do so, note that you'll also have to specify the list owner using the owner_id or owner_screen_name parameters.</p><p><i>string sereen_name (required)</i> : The screen name of the user for whom to return results for. Helpful for disambiguating when a valid screen name is also a user ID.</p><p><i>long user_id (required)</i> : The ID of the user for whom to return results for. Helpful for disambiguating when a valid user ID is also a valid screen name.</p><p><i>string owner_screen_name (optional)</i> : The screen name of the user who owns the list being requested by a slug.</p><p><i>long owner_id (optional)</i> : The user ID of the user who owns the list being requested by a slug.</p></blockquote></td>
               </tr>
@@ -384,7 +394,7 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:CoreTweet.Rest.Members.Create(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Version Information">
-            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5108.3530, 0.1.5120.2773</div>
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5132.5858</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:CoreTweet.Rest.Members.CreateAll(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">CreateAll Method</h3>
@@ -430,7 +440,7 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:CoreTweet.Rest.Members.CreateAll(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Version Information">
-            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5108.3530, 0.1.5120.2773</div>
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5132.5858</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:CoreTweet.Rest.Members.Delete(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">Delete Method</h3>
@@ -475,7 +485,7 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:CoreTweet.Rest.Members.Delete(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Version Information">
-            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5108.3530, 0.1.5120.2773</div>
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5132.5858</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:CoreTweet.Rest.Members.DeleteAll(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">DeleteAll Method</h3>
@@ -521,7 +531,55 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:CoreTweet.Rest.Members.DeleteAll(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Version Information">
-            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5108.3530, 0.1.5120.2773</div>
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5132.5858</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:CoreTweet.Rest.Members.Enumerate(CoreTweet.EnumerateMode,System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">Enumerate Method</h3>
+        <blockquote id="M:CoreTweet.Rest.Members.Enumerate(CoreTweet.EnumerateMode,System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):member">
+          <p class="Summary">
+            <p>Returns the members of the specified list. Private list members will only be shown if the authenticated user owns the specified list.</p>
+            <p>Note: Either a list_id or a slug is required. If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
+            <p>The response from the API will include a previous_cursor and next_cursor to allow paging back and forth. See Using cursors to navigate collections for more information.</p>
+            <p>Avaliable parameters: </p>
+            <p>
+              <i>long list_id (required)</i> : The numerical id of the list.</p>
+            <p>
+              <i>string slug (required)</i> : You can identify a list by its slug instead of its numerical id. If you decide to do so, note that you'll also have to specify the list owner using the owner_id or owner_screen_name parameters.</p>
+            <p>
+              <i>string owner_sereen_name (optional)</i> : The screen name of the user who owns the list being requested by a slug.</p>
+            <p>
+              <i>long owner_id (optional)</i> : The user ID of the user who owns the list being requested by a slug.</p>
+            <p>
+              <i>long cursor (optional)</i> : The first cursor. If not be specified, enumerating starts from the first page.</p>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;CoreTweet.User&gt;</a> <b>Enumerate</b> (<a href="../CoreTweet/EnumerateMode.html">CoreTweet.EnumerateMode</a> mode, <b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;string, object&gt;&gt;</a>[] parameters)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Members.Enumerate(CoreTweet.EnumerateMode,System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Parameters">
+            <dl>
+              <dt>
+                <i>mode</i>
+              </dt>
+              <dd> Specify whether enumerating goes to the next page or the previous.</dd>
+              <dt>
+                <i>parameters</i>
+              </dt>
+              <dd>
+            Parameters.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Members.Enumerate(CoreTweet.EnumerateMode,System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Returns">
+            Users.
+            </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Members.Enumerate(CoreTweet.EnumerateMode,System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Remarks">
+            <span class="NotEntered"></span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Members.Enumerate(CoreTweet.EnumerateMode,System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Version Information">
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5132.5858</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:CoreTweet.Rest.Members.Show(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">Show Method</h3>
@@ -564,7 +622,7 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:CoreTweet.Rest.Members.Show(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Version Information">
-            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5108.3530, 0.1.5120.2773</div>
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5132.5858</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:CoreTweet.Rest.Members.This(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">This Method</h3>
@@ -607,7 +665,7 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:CoreTweet.Rest.Members.This(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Version Information">
-            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5108.3530, 0.1.5120.2773</div>
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5132.5858</div>
           <hr size="1" />
         </blockquote>
       </div>

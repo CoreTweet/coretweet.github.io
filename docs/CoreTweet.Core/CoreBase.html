@@ -207,8 +207,8 @@
     </div>
     <h1 class="PageTitle" id="T:CoreTweet.Core.CoreBase">CoreBase  Class</h1>
     <p class="Summary" id="T:CoreTweet.Core.CoreBase:Summary">
-      <span class="NotEntered"></span>
-    </p>
+            The base class of twitter objects.
+            </p>
     <div>
       <h2>Syntax</h2>
       <div class="Signature" id="T:CoreTweet.Core.CoreBase:Signature">public abstract class  <b>CoreBase</b> : <a href="../CoreTweet.Core/TokenIncluded.html">TokenIncluded</a></div>
@@ -220,7 +220,7 @@
       </div>
       <h2 class="Section">Requirements</h2>
       <div class="SectionBox" id="T:CoreTweet.Core.CoreBase:Docs:Version Information">
-        <b>Namespace: </b>CoreTweet.Core<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5108.3530, 0.1.5120.2773</div>
+        <b>Namespace: </b>CoreTweet.Core<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5132.5858</div>
       <h2 class="Section" id="Members">Members</h2>
       <div class="SectionBox" id="_Members">
         <p>
@@ -317,8 +317,10 @@
                 </td>
                 <td colspan="2">
                   <b>
-                    <a href="#M:CoreTweet.Core.CoreBase.Convert``1(CoreTweet.Tokens,System.Object)">Convert&lt;T&gt;</a>
-                  </b>(<a href="../CoreTweet/Tokens.html">CoreTweet.Tokens</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a>)<nobr> : <i title="To be added.">T</i></nobr><blockquote><span class="NotEntered"></span></blockquote></td>
+                    <a href="#M:CoreTweet.Core.CoreBase.Convert``1(CoreTweet.Tokens,System.String)">Convert&lt;T&gt;</a>
+                  </b>(<a href="../CoreTweet/Tokens.html">CoreTweet.Tokens</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <i title="&#xA;            The type of a twitter object.&#xA;            ">T</i></nobr><blockquote>
+            Convert the json to a twitter object of the specified type.
+            </blockquote></td>
               </tr>
               <tr valign="top">
                 <td>
@@ -326,8 +328,22 @@
                 </td>
                 <td colspan="2">
                   <b>
-                    <a href="#M:CoreTweet.Core.CoreBase.ConvertArray``1(CoreTweet.Tokens,System.Object)">ConvertArray&lt;T&gt;</a>
-                  </b>(<a href="../CoreTweet/Tokens.html">CoreTweet.Tokens</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;T&gt;</a></nobr><blockquote><span class="NotEntered"></span></blockquote></td>
+                    <a href="#M:CoreTweet.Core.CoreBase.ConvertArray``1(CoreTweet.Tokens,System.String)">ConvertArray&lt;T&gt;</a>
+                  </b>(<a href="../CoreTweet/Tokens.html">CoreTweet.Tokens</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;T&gt;</a></nobr><blockquote>
+            Convert the json to a twitter object of the specified type.
+            This is used for APIs that return an array.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:CoreTweet.Core.CoreBase.ConvertBase``1(CoreTweet.Tokens,System.String)">ConvertBase&lt;T&gt;</a>
+                  </b>(<a href="../CoreTweet/Tokens.html">CoreTweet.Tokens</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <i title="&#xA;            The type of a twitter object.&#xA;            ">T</i></nobr><blockquote>
+            Convert the json to a twitter object of the specified type.
+            </blockquote></td>
               </tr>
             </table>
           </div>
@@ -350,7 +366,7 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="C:CoreTweet.Core.CoreBase():Version Information">
-            <b>Namespace: </b>CoreTweet.Core<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5108.3530, 0.1.5120.2773</div>
+            <b>Namespace: </b>CoreTweet.Core<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5132.5858</div>
           <hr size="1" />
         </blockquote>
         <h3 id="C:CoreTweet.Core.CoreBase(CoreTweet.Tokens)">CoreBase Constructor</h3>
@@ -359,12 +375,12 @@
             <span class="NotEntered"></span>
           </p>
           <h2>Syntax</h2>
-          <div class="Signature">public  <b>CoreBase</b> (<a href="../CoreTweet/Tokens.html">CoreTweet.Tokens</a> tokens)</div>
+          <div class="Signature">public  <b>CoreBase</b> (<a href="../CoreTweet/Tokens.html">CoreTweet.Tokens</a> t)</div>
           <h4 class="Subsection">Parameters</h4>
           <blockquote class="SubsectionBox" id="C:CoreTweet.Core.CoreBase(CoreTweet.Tokens):Parameters">
             <dl>
               <dt>
-                <i>tokens</i>
+                <i>t</i>
               </dt>
               <dd>
                 <span class="NotEntered"></span>
@@ -377,103 +393,155 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="C:CoreTweet.Core.CoreBase(CoreTweet.Tokens):Version Information">
-            <b>Namespace: </b>CoreTweet.Core<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5108.3530, 0.1.5120.2773</div>
+            <b>Namespace: </b>CoreTweet.Core<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5132.5858</div>
           <hr size="1" />
         </blockquote>
-        <h3 id="M:CoreTweet.Core.CoreBase.Convert``1(CoreTweet.Tokens,System.Object)">Convert&lt;T&gt; Generic Method</h3>
-        <blockquote id="M:CoreTweet.Core.CoreBase.Convert``1(CoreTweet.Tokens,System.Object):member">
+        <h3 id="M:CoreTweet.Core.CoreBase.Convert``1(CoreTweet.Tokens,System.String)">Convert&lt;T&gt; Generic Method</h3>
+        <blockquote id="M:CoreTweet.Core.CoreBase.Convert``1(CoreTweet.Tokens,System.String):member">
           <p class="Summary">
-            <span class="NotEntered"></span>
-          </p>
+            Convert the json to a twitter object of the specified type.
+            </p>
           <h2>Syntax</h2>
-          <div class="Signature">public static <i title="To be added.">T</i> <b>Convert&lt;T&gt;</b> (<a href="../CoreTweet/Tokens.html">CoreTweet.Tokens</a> tokens, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a> e)<br /> where T : <a href="../CoreTweet.Core/CoreBase.html">CoreTweet.Core.CoreBase</a></div>
+          <div class="Signature">public static <i title="&#xA;            The type of a twitter object.&#xA;            ">T</i> <b>Convert&lt;T&gt;</b> (<a href="../CoreTweet/Tokens.html">CoreTweet.Tokens</a> tokens, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> json)<br /> where T : <a href="../CoreTweet.Core/CoreBase.html">CoreTweet.Core.CoreBase</a></div>
           <h4 class="Subsection">Type Parameters</h4>
-          <blockquote class="SubsectionBox" id="M:CoreTweet.Core.CoreBase.Convert``1(CoreTweet.Tokens,System.Object):Type Parameters">
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Core.CoreBase.Convert``1(CoreTweet.Tokens,System.String):Type Parameters">
             <dl>
               <dt>
                 <i>T</i>
               </dt>
               <dd>
-                <span class="NotEntered"></span>
-              </dd>
+            The type of a twitter object.
+            </dd>
             </dl>
           </blockquote>
           <h4 class="Subsection">Parameters</h4>
-          <blockquote class="SubsectionBox" id="M:CoreTweet.Core.CoreBase.Convert``1(CoreTweet.Tokens,System.Object):Parameters">
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Core.CoreBase.Convert``1(CoreTweet.Tokens,System.String):Parameters">
             <dl>
               <dt>
                 <i>tokens</i>
               </dt>
               <dd>
-                <span class="NotEntered"></span>
-              </dd>
+            OAuth tokens.
+            </dd>
               <dt>
-                <i>e</i>
+                <i>json</i>
               </dt>
               <dd>
-                <span class="NotEntered"></span>
-              </dd>
+            The json message.
+            </dd>
             </dl>
           </blockquote>
           <h4 class="Subsection">Returns</h4>
-          <blockquote class="SubsectionBox" id="M:CoreTweet.Core.CoreBase.Convert``1(CoreTweet.Tokens,System.Object):Returns">
-            <span class="NotEntered"></span>
-          </blockquote>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Core.CoreBase.Convert``1(CoreTweet.Tokens,System.String):Returns">
+            The twitter object.
+            </blockquote>
           <h2 class="Section">Remarks</h2>
-          <div class="SectionBox" id="M:CoreTweet.Core.CoreBase.Convert``1(CoreTweet.Tokens,System.Object):Remarks">
-            <span class="NotEntered"></span>
-          </div>
+          <div class="SectionBox" id="M:CoreTweet.Core.CoreBase.Convert``1(CoreTweet.Tokens,System.String):Remarks">
+            This method is used internally in CoreTweet.
+            You can use this method for debugging.
+            </div>
           <h2 class="Section">Requirements</h2>
-          <div class="SectionBox" id="M:CoreTweet.Core.CoreBase.Convert``1(CoreTweet.Tokens,System.Object):Version Information">
-            <b>Namespace: </b>CoreTweet.Core<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5108.3530, 0.1.5120.2773</div>
+          <div class="SectionBox" id="M:CoreTweet.Core.CoreBase.Convert``1(CoreTweet.Tokens,System.String):Version Information">
+            <b>Namespace: </b>CoreTweet.Core<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5132.5858</div>
           <hr size="1" />
         </blockquote>
-        <h3 id="M:CoreTweet.Core.CoreBase.ConvertArray``1(CoreTweet.Tokens,System.Object)">ConvertArray&lt;T&gt; Generic Method</h3>
-        <blockquote id="M:CoreTweet.Core.CoreBase.ConvertArray``1(CoreTweet.Tokens,System.Object):member">
+        <h3 id="M:CoreTweet.Core.CoreBase.ConvertArray``1(CoreTweet.Tokens,System.String)">ConvertArray&lt;T&gt; Generic Method</h3>
+        <blockquote id="M:CoreTweet.Core.CoreBase.ConvertArray``1(CoreTweet.Tokens,System.String):member">
           <p class="Summary">
-            <span class="NotEntered"></span>
-          </p>
+            Convert the json to a twitter object of the specified type.
+            This is used for APIs that return an array.
+            </p>
           <h2>Syntax</h2>
-          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;T&gt;</a> <b>ConvertArray&lt;T&gt;</b> (<a href="../CoreTweet/Tokens.html">CoreTweet.Tokens</a> tokens, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a> e)<br /> where T : <a href="../CoreTweet.Core/CoreBase.html">CoreTweet.Core.CoreBase</a></div>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;T&gt;</a> <b>ConvertArray&lt;T&gt;</b> (<a href="../CoreTweet/Tokens.html">CoreTweet.Tokens</a> tokens, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> json)<br /> where T : <a href="../CoreTweet.Core/CoreBase.html">CoreTweet.Core.CoreBase</a></div>
           <h4 class="Subsection">Type Parameters</h4>
-          <blockquote class="SubsectionBox" id="M:CoreTweet.Core.CoreBase.ConvertArray``1(CoreTweet.Tokens,System.Object):Type Parameters">
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Core.CoreBase.ConvertArray``1(CoreTweet.Tokens,System.String):Type Parameters">
             <dl>
               <dt>
                 <i>T</i>
               </dt>
               <dd>
-                <span class="NotEntered"></span>
-              </dd>
+            The type of a twitter object.
+            </dd>
             </dl>
           </blockquote>
           <h4 class="Subsection">Parameters</h4>
-          <blockquote class="SubsectionBox" id="M:CoreTweet.Core.CoreBase.ConvertArray``1(CoreTweet.Tokens,System.Object):Parameters">
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Core.CoreBase.ConvertArray``1(CoreTweet.Tokens,System.String):Parameters">
             <dl>
               <dt>
                 <i>tokens</i>
               </dt>
               <dd>
-                <span class="NotEntered"></span>
-              </dd>
+            OAuth tokens.
+            </dd>
               <dt>
-                <i>e</i>
+                <i>json</i>
               </dt>
               <dd>
-                <span class="NotEntered"></span>
-              </dd>
+            The json message.
+            </dd>
             </dl>
           </blockquote>
           <h4 class="Subsection">Returns</h4>
-          <blockquote class="SubsectionBox" id="M:CoreTweet.Core.CoreBase.ConvertArray``1(CoreTweet.Tokens,System.Object):Returns">
-            <span class="NotEntered"></span>
-          </blockquote>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Core.CoreBase.ConvertArray``1(CoreTweet.Tokens,System.String):Returns">
+            Twitter objects.
+            </blockquote>
           <h2 class="Section">Remarks</h2>
-          <div class="SectionBox" id="M:CoreTweet.Core.CoreBase.ConvertArray``1(CoreTweet.Tokens,System.Object):Remarks">
-            <span class="NotEntered"></span>
-          </div>
+          <div class="SectionBox" id="M:CoreTweet.Core.CoreBase.ConvertArray``1(CoreTweet.Tokens,System.String):Remarks">
+            This method is used internally in CoreTweet.
+            You can use this method for debugging.
+            </div>
           <h2 class="Section">Requirements</h2>
-          <div class="SectionBox" id="M:CoreTweet.Core.CoreBase.ConvertArray``1(CoreTweet.Tokens,System.Object):Version Information">
-            <b>Namespace: </b>CoreTweet.Core<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5108.3530, 0.1.5120.2773</div>
+          <div class="SectionBox" id="M:CoreTweet.Core.CoreBase.ConvertArray``1(CoreTweet.Tokens,System.String):Version Information">
+            <b>Namespace: </b>CoreTweet.Core<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5132.5858</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:CoreTweet.Core.CoreBase.ConvertBase``1(CoreTweet.Tokens,System.String)">ConvertBase&lt;T&gt; Generic Method</h3>
+        <blockquote id="M:CoreTweet.Core.CoreBase.ConvertBase``1(CoreTweet.Tokens,System.String):member">
+          <p class="Summary">
+            Convert the json to a twitter object of the specified type.
+            </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <i title="&#xA;            The type of a twitter object.&#xA;            ">T</i> <b>ConvertBase&lt;T&gt;</b> (<a href="../CoreTweet/Tokens.html">CoreTweet.Tokens</a> tokens, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> json)</div>
+          <h4 class="Subsection">Type Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Core.CoreBase.ConvertBase``1(CoreTweet.Tokens,System.String):Type Parameters">
+            <dl>
+              <dt>
+                <i>T</i>
+              </dt>
+              <dd>
+            The type of a twitter object.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Core.CoreBase.ConvertBase``1(CoreTweet.Tokens,System.String):Parameters">
+            <dl>
+              <dt>
+                <i>tokens</i>
+              </dt>
+              <dd>
+            OAuth tokens.
+            </dd>
+              <dt>
+                <i>json</i>
+              </dt>
+              <dd>
+            The json message.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Core.CoreBase.ConvertBase``1(CoreTweet.Tokens,System.String):Returns">
+            The twitter object.
+            </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:CoreTweet.Core.CoreBase.ConvertBase``1(CoreTweet.Tokens,System.String):Remarks">
+            This method is used internally in CoreTweet.
+            You can use this method for debugging.
+            </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:CoreTweet.Core.CoreBase.ConvertBase``1(CoreTweet.Tokens,System.String):Version Information">
+            <b>Namespace: </b>CoreTweet.Core<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5132.5858</div>
           <hr size="1" />
         </blockquote>
       </div>

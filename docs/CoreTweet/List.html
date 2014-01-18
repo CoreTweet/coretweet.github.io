@@ -220,7 +220,7 @@
       </div>
       <h2 class="Section">Requirements</h2>
       <div class="SectionBox" id="T:CoreTweet.List:Docs:Version Information">
-        <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5108.3530, 0.1.5120.2773</div>
+        <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5132.5858</div>
       <h2 class="Section" id="Members">Members</h2>
       <div class="SectionBox" id="_Members">
         <p>
@@ -239,8 +239,8 @@
                 <td>
                   <div>
                     <b>
-                      <a href="#C:CoreTweet.List(CoreTweet.Tokens)">List</a>
-                    </b>(<a href="../CoreTweet/Tokens.html">Tokens</a>)</div>
+                      <a href="#C:CoreTweet.List()">List</a>
+                    </b>()</div>
                 </td>
                 <td>
                   <span class="NotEntered"></span>
@@ -266,7 +266,9 @@
                 <td>
                   <i>
                     <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.DateTimeOffset">DateTimeOffset</a>
-                  </i>. <span class="NotEntered"></span></td>
+                  </i>. 
+            Time when this List was created.
+            </td>
               </tr>
               <tr valign="top">
                 <td>
@@ -281,22 +283,9 @@
                 <td>
                   <i>
                     <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>
-                  </i>. <span class="NotEntered"></span></td>
-              </tr>
-              <tr valign="top">
-                <td>
-                  <div>
-                  </div>
-                </td>
-                <td>
-                  <b>
-                    <a href="#P:CoreTweet.List.Following">Following</a>
-                  </b>
-                </td>
-                <td>
-                  <i>
-                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>
-                  </i>. <span class="NotEntered"></span></td>
+                  </i>. 
+            Nullable. The user-defined UTF-8 string describing this List.
+            </td>
               </tr>
               <tr valign="top">
                 <td>
@@ -311,7 +300,9 @@
                 <td>
                   <i>
                     <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>
-                  </i>. <span class="NotEntered"></span></td>
+                  </i>. 
+            The full name of this List.
+            </td>
               </tr>
               <tr valign="top">
                 <td>
@@ -320,13 +311,15 @@
                 </td>
                 <td>
                   <b>
-                    <a href="#P:CoreTweet.List.Id">Id</a>
+                    <a href="#P:CoreTweet.List.ID">ID</a>
                   </b>
                 </td>
                 <td>
                   <i>
                     <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int64">long</a>
-                  </i>. <span class="NotEntered"></span></td>
+                  </i>. 
+            The integer representation of the unique identifier for this List.
+            </td>
               </tr>
               <tr valign="top">
                 <td>[read-only]<div></div></td>
@@ -347,13 +340,32 @@
                 </td>
                 <td>
                   <b>
+                    <a href="#P:CoreTweet.List.IsFollowing">IsFollowing</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>
+                  </i>. 
+            Indicates whether this List has been followed by the authenticating user.
+            </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
                     <a href="#P:CoreTweet.List.MemberCount">MemberCount</a>
                   </b>
                 </td>
                 <td>
                   <i>
                     <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>
-                  </i>. <span class="NotEntered"></span></td>
+                  </i>. 
+            Number of members in this List .
+            </td>
               </tr>
               <tr valign="top">
                 <td>
@@ -368,7 +380,9 @@
                 <td>
                   <i>
                     <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>
-                  </i>. <span class="NotEntered"></span></td>
+                  </i>. 
+            Indicates whether this List has been published by the owner.
+            </td>
               </tr>
               <tr valign="top">
                 <td>
@@ -383,7 +397,9 @@
                 <td>
                   <i>
                     <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>
-                  </i>. <span class="NotEntered"></span></td>
+                  </i>. 
+            The name of thi List.
+            </td>
               </tr>
               <tr valign="top">
                 <td>
@@ -398,7 +414,9 @@
                 <td>
                   <i>
                     <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>
-                  </i>. <span class="NotEntered"></span></td>
+                  </i>. 
+            The string that become unique representation by combining an owner_id or owner_screen_name.
+            </td>
               </tr>
               <tr valign="top">
                 <td>
@@ -413,7 +431,9 @@
                 <td>
                   <i>
                     <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>
-                  </i>. <span class="NotEntered"></span></td>
+                  </i>. 
+            Number of users following this List.
+            </td>
               </tr>
               <tr valign="top">
                 <td>
@@ -428,7 +448,9 @@
                 <td>
                   <i>
                     <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Uri">Uri</a>
-                  </i>. <span class="NotEntered"></span></td>
+                  </i>. 
+            Uri of this List. Usage: string.Format("https://twitter.com{0}", uri)
+            </td>
               </tr>
               <tr valign="top">
                 <td>
@@ -443,7 +465,9 @@
                 <td>
                   <i>
                     <a href="../CoreTweet/User.html">User</a>
-                  </i>. <span class="NotEntered"></span></td>
+                  </i>. 
+            The user of this List's owner.
+            </td>
               </tr>
             </table>
           </div>
@@ -477,40 +501,29 @@
     <div class="Members" id="T:CoreTweet.List:Members">
       <h2 class="Section" id="MemberDetails">Member Details</h2>
       <div class="SectionBox" id="_MemberDetails">
-        <h3 id="C:CoreTweet.List(CoreTweet.Tokens)">List Constructor</h3>
-        <blockquote id="C:CoreTweet.List(CoreTweet.Tokens):member">
+        <h3 id="C:CoreTweet.List()">List Constructor</h3>
+        <blockquote id="C:CoreTweet.List():member">
           <p class="Summary">
             <span class="NotEntered"></span>
           </p>
           <h2>Syntax</h2>
-          <div class="Signature">public  <b>List</b> (<a href="../CoreTweet/Tokens.html">Tokens</a> tokens)</div>
-          <h4 class="Subsection">Parameters</h4>
-          <blockquote class="SubsectionBox" id="C:CoreTweet.List(CoreTweet.Tokens):Parameters">
-            <dl>
-              <dt>
-                <i>tokens</i>
-              </dt>
-              <dd>
-                <span class="NotEntered"></span>
-              </dd>
-            </dl>
-          </blockquote>
+          <div class="Signature">public  <b>List</b> ()</div>
           <h2 class="Section">Remarks</h2>
-          <div class="SectionBox" id="C:CoreTweet.List(CoreTweet.Tokens):Remarks">
+          <div class="SectionBox" id="C:CoreTweet.List():Remarks">
             <span class="NotEntered"></span>
           </div>
           <h2 class="Section">Requirements</h2>
-          <div class="SectionBox" id="C:CoreTweet.List(CoreTweet.Tokens):Version Information">
-            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5108.3530, 0.1.5120.2773</div>
+          <div class="SectionBox" id="C:CoreTweet.List():Version Information">
+            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5132.5858</div>
           <hr size="1" />
         </blockquote>
         <h3 id="P:CoreTweet.List.CreatedAt">CreatedAt Property</h3>
         <blockquote id="P:CoreTweet.List.CreatedAt:member">
           <p class="Summary">
-            <span class="NotEntered"></span>
-          </p>
+            Time when this List was created.
+            </p>
           <h2>Syntax</h2>
-          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.DateTimeOffset">DateTimeOffset</a> <b>CreatedAt</b>  { get; set; }</div>
+          <div class="Signature">[Newtonsoft.Json.JsonConverter(typeof(CoreTweet.Core.DateTimeOffsetConverter))]<br />[Newtonsoft.Json.JsonProperty("created_at")]<br />public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.DateTimeOffset">DateTimeOffset</a> <b>CreatedAt</b>  { get; set; }</div>
           <h4 class="Subsection">Value</h4>
           <blockquote class="SubsectionBox" id="P:CoreTweet.List.CreatedAt:Value">
             <span class="NotEntered"></span>
@@ -521,16 +534,16 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="P:CoreTweet.List.CreatedAt:Version Information">
-            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5108.3530, 0.1.5120.2773</div>
+            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5132.5858</div>
           <hr size="1" />
         </blockquote>
         <h3 id="P:CoreTweet.List.Description">Description Property</h3>
         <blockquote id="P:CoreTweet.List.Description:member">
           <p class="Summary">
-            <span class="NotEntered"></span>
-          </p>
+            Nullable. The user-defined UTF-8 string describing this List.
+            </p>
           <h2>Syntax</h2>
-          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>Description</b>  { get; set; }</div>
+          <div class="Signature">[Newtonsoft.Json.JsonProperty("description")]<br />public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>Description</b>  { get; set; }</div>
           <h4 class="Subsection">Value</h4>
           <blockquote class="SubsectionBox" id="P:CoreTweet.List.Description:Value">
             <span class="NotEntered"></span>
@@ -541,36 +554,16 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="P:CoreTweet.List.Description:Version Information">
-            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5108.3530, 0.1.5120.2773</div>
-          <hr size="1" />
-        </blockquote>
-        <h3 id="P:CoreTweet.List.Following">Following Property</h3>
-        <blockquote id="P:CoreTweet.List.Following:member">
-          <p class="Summary">
-            <span class="NotEntered"></span>
-          </p>
-          <h2>Syntax</h2>
-          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> <b>Following</b>  { get; set; }</div>
-          <h4 class="Subsection">Value</h4>
-          <blockquote class="SubsectionBox" id="P:CoreTweet.List.Following:Value">
-            <span class="NotEntered"></span>
-          </blockquote>
-          <h2 class="Section">Remarks</h2>
-          <div class="SectionBox" id="P:CoreTweet.List.Following:Remarks">
-            <span class="NotEntered"></span>
-          </div>
-          <h2 class="Section">Requirements</h2>
-          <div class="SectionBox" id="P:CoreTweet.List.Following:Version Information">
-            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5108.3530, 0.1.5120.2773</div>
+            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5132.5858</div>
           <hr size="1" />
         </blockquote>
         <h3 id="P:CoreTweet.List.FullName">FullName Property</h3>
         <blockquote id="P:CoreTweet.List.FullName:member">
           <p class="Summary">
-            <span class="NotEntered"></span>
-          </p>
+            The full name of this List.
+            </p>
           <h2>Syntax</h2>
-          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>FullName</b>  { get; set; }</div>
+          <div class="Signature">[Newtonsoft.Json.JsonProperty("full_name")]<br />public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>FullName</b>  { get; set; }</div>
           <h4 class="Subsection">Value</h4>
           <blockquote class="SubsectionBox" id="P:CoreTweet.List.FullName:Value">
             <span class="NotEntered"></span>
@@ -581,36 +574,56 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="P:CoreTweet.List.FullName:Version Information">
-            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5108.3530, 0.1.5120.2773</div>
+            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5132.5858</div>
           <hr size="1" />
         </blockquote>
-        <h3 id="P:CoreTweet.List.Id">Id Property</h3>
-        <blockquote id="P:CoreTweet.List.Id:member">
+        <h3 id="P:CoreTweet.List.ID">ID Property</h3>
+        <blockquote id="P:CoreTweet.List.ID:member">
           <p class="Summary">
-            <span class="NotEntered"></span>
-          </p>
+            The integer representation of the unique identifier for this List.
+            </p>
           <h2>Syntax</h2>
-          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int64">long</a> <b>Id</b>  { get; set; }</div>
+          <div class="Signature">[Newtonsoft.Json.JsonProperty("id")]<br />public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int64">long</a> <b>ID</b>  { get; set; }</div>
           <h4 class="Subsection">Value</h4>
-          <blockquote class="SubsectionBox" id="P:CoreTweet.List.Id:Value">
+          <blockquote class="SubsectionBox" id="P:CoreTweet.List.ID:Value">
             <span class="NotEntered"></span>
           </blockquote>
           <h2 class="Section">Remarks</h2>
-          <div class="SectionBox" id="P:CoreTweet.List.Id:Remarks">
+          <div class="SectionBox" id="P:CoreTweet.List.ID:Remarks">
             <span class="NotEntered"></span>
           </div>
           <h2 class="Section">Requirements</h2>
-          <div class="SectionBox" id="P:CoreTweet.List.Id:Version Information">
-            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5108.3530, 0.1.5120.2773</div>
+          <div class="SectionBox" id="P:CoreTweet.List.ID:Version Information">
+            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5132.5858</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:CoreTweet.List.IsFollowing">IsFollowing Property</h3>
+        <blockquote id="P:CoreTweet.List.IsFollowing:member">
+          <p class="Summary">
+            Indicates whether this List has been followed by the authenticating user.
+            </p>
+          <h2>Syntax</h2>
+          <div class="Signature">[Newtonsoft.Json.JsonProperty("following")]<br />public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> <b>IsFollowing</b>  { get; set; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:CoreTweet.List.IsFollowing:Value">
+            <span class="NotEntered"></span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:CoreTweet.List.IsFollowing:Remarks">
+            <span class="NotEntered"></span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:CoreTweet.List.IsFollowing:Version Information">
+            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5132.5858</div>
           <hr size="1" />
         </blockquote>
         <h3 id="P:CoreTweet.List.MemberCount">MemberCount Property</h3>
         <blockquote id="P:CoreTweet.List.MemberCount:member">
           <p class="Summary">
-            <span class="NotEntered"></span>
-          </p>
+            Number of members in this List .
+            </p>
           <h2>Syntax</h2>
-          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> <b>MemberCount</b>  { get; set; }</div>
+          <div class="Signature">[Newtonsoft.Json.JsonProperty("member_count")]<br />public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> <b>MemberCount</b>  { get; set; }</div>
           <h4 class="Subsection">Value</h4>
           <blockquote class="SubsectionBox" id="P:CoreTweet.List.MemberCount:Value">
             <span class="NotEntered"></span>
@@ -621,16 +634,16 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="P:CoreTweet.List.MemberCount:Version Information">
-            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5108.3530, 0.1.5120.2773</div>
+            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5132.5858</div>
           <hr size="1" />
         </blockquote>
         <h3 id="P:CoreTweet.List.Mode">Mode Property</h3>
         <blockquote id="P:CoreTweet.List.Mode:member">
           <p class="Summary">
-            <span class="NotEntered"></span>
-          </p>
+            Indicates whether this List has been published by the owner.
+            </p>
           <h2>Syntax</h2>
-          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>Mode</b>  { get; set; }</div>
+          <div class="Signature">[Newtonsoft.Json.JsonProperty("mode")]<br />public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>Mode</b>  { get; set; }</div>
           <h4 class="Subsection">Value</h4>
           <blockquote class="SubsectionBox" id="P:CoreTweet.List.Mode:Value">
             <span class="NotEntered"></span>
@@ -641,16 +654,16 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="P:CoreTweet.List.Mode:Version Information">
-            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5108.3530, 0.1.5120.2773</div>
+            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5132.5858</div>
           <hr size="1" />
         </blockquote>
         <h3 id="P:CoreTweet.List.Name">Name Property</h3>
         <blockquote id="P:CoreTweet.List.Name:member">
           <p class="Summary">
-            <span class="NotEntered"></span>
-          </p>
+            The name of thi List.
+            </p>
           <h2>Syntax</h2>
-          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>Name</b>  { get; set; }</div>
+          <div class="Signature">[Newtonsoft.Json.JsonProperty("name")]<br />public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>Name</b>  { get; set; }</div>
           <h4 class="Subsection">Value</h4>
           <blockquote class="SubsectionBox" id="P:CoreTweet.List.Name:Value">
             <span class="NotEntered"></span>
@@ -661,16 +674,16 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="P:CoreTweet.List.Name:Version Information">
-            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5108.3530, 0.1.5120.2773</div>
+            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5132.5858</div>
           <hr size="1" />
         </blockquote>
         <h3 id="P:CoreTweet.List.Slug">Slug Property</h3>
         <blockquote id="P:CoreTweet.List.Slug:member">
           <p class="Summary">
-            <span class="NotEntered"></span>
-          </p>
+            The string that become unique representation by combining an owner_id or owner_screen_name.
+            </p>
           <h2>Syntax</h2>
-          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>Slug</b>  { get; set; }</div>
+          <div class="Signature">[Newtonsoft.Json.JsonProperty("slug")]<br />public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>Slug</b>  { get; set; }</div>
           <h4 class="Subsection">Value</h4>
           <blockquote class="SubsectionBox" id="P:CoreTweet.List.Slug:Value">
             <span class="NotEntered"></span>
@@ -681,16 +694,16 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="P:CoreTweet.List.Slug:Version Information">
-            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5108.3530, 0.1.5120.2773</div>
+            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5132.5858</div>
           <hr size="1" />
         </blockquote>
         <h3 id="P:CoreTweet.List.SubscriberCount">SubscriberCount Property</h3>
         <blockquote id="P:CoreTweet.List.SubscriberCount:member">
           <p class="Summary">
-            <span class="NotEntered"></span>
-          </p>
+            Number of users following this List.
+            </p>
           <h2>Syntax</h2>
-          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> <b>SubscriberCount</b>  { get; set; }</div>
+          <div class="Signature">[Newtonsoft.Json.JsonProperty("subscriber_count")]<br />public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> <b>SubscriberCount</b>  { get; set; }</div>
           <h4 class="Subsection">Value</h4>
           <blockquote class="SubsectionBox" id="P:CoreTweet.List.SubscriberCount:Value">
             <span class="NotEntered"></span>
@@ -701,16 +714,16 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="P:CoreTweet.List.SubscriberCount:Version Information">
-            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5108.3530, 0.1.5120.2773</div>
+            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5132.5858</div>
           <hr size="1" />
         </blockquote>
         <h3 id="P:CoreTweet.List.Uri">Uri Property</h3>
         <blockquote id="P:CoreTweet.List.Uri:member">
           <p class="Summary">
-            <span class="NotEntered"></span>
-          </p>
+            Uri of this List. Usage: string.Format("https://twitter.com{0}", uri)
+            </p>
           <h2>Syntax</h2>
-          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Uri">Uri</a> <b>Uri</b>  { get; set; }</div>
+          <div class="Signature">[Newtonsoft.Json.JsonConverter(typeof(CoreTweet.Core.UriConverter))]<br />[Newtonsoft.Json.JsonProperty("uri")]<br />public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Uri">Uri</a> <b>Uri</b>  { get; set; }</div>
           <h4 class="Subsection">Value</h4>
           <blockquote class="SubsectionBox" id="P:CoreTweet.List.Uri:Value">
             <span class="NotEntered"></span>
@@ -721,16 +734,16 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="P:CoreTweet.List.Uri:Version Information">
-            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5108.3530, 0.1.5120.2773</div>
+            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5132.5858</div>
           <hr size="1" />
         </blockquote>
         <h3 id="P:CoreTweet.List.User">User Property</h3>
         <blockquote id="P:CoreTweet.List.User:member">
           <p class="Summary">
-            <span class="NotEntered"></span>
-          </p>
+            The user of this List's owner.
+            </p>
           <h2>Syntax</h2>
-          <div class="Signature">public <a href="../CoreTweet/User.html">User</a> <b>User</b>  { get; set; }</div>
+          <div class="Signature">[Newtonsoft.Json.JsonProperty("user")]<br />public <a href="../CoreTweet/User.html">User</a> <b>User</b>  { get; set; }</div>
           <h4 class="Subsection">Value</h4>
           <blockquote class="SubsectionBox" id="P:CoreTweet.List.User:Value">
             <span class="NotEntered"></span>
@@ -741,7 +754,7 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="P:CoreTweet.List.User:Version Information">
-            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5108.3530, 0.1.5120.2773</div>
+            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5132.5858</div>
           <hr size="1" />
         </blockquote>
       </div>

@@ -220,15 +220,15 @@
       </div>
       <h2 class="Section">Requirements</h2>
       <div class="SectionBox" id="T:CoreTweet.Streaming.StreamingMessage:Docs:Version Information">
-        <b>Namespace: </b>CoreTweet.Streaming<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5108.3530, 0.1.5120.2773</div>
+        <b>Namespace: </b>CoreTweet.Streaming<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5132.5858</div>
       <h2 class="Section" id="Members">Members</h2>
       <div class="SectionBox" id="_Members">
         <p>
 								See Also: Inherited members from
 								<a href="../CoreTweet.Core/CoreBase.html">CoreTweet.Core.CoreBase</a>.
 							</p>
-        <h2 class="Section">Public Constructors</h2>
-        <div class="SectionBox" id="Public Constructors">
+        <h2 class="Section">Protected Constructors</h2>
+        <div class="SectionBox" id="Protected Constructors">
           <div class="SubsectionBox">
             <table class="TypeMembers">
               <tr valign="top">
@@ -239,8 +239,8 @@
                 <td>
                   <div>
                     <b>
-                      <a href="#C:CoreTweet.Streaming.StreamingMessage(CoreTweet.Tokens)">StreamingMessage</a>
-                    </b>(<a href="../CoreTweet/Tokens.html">CoreTweet.Tokens</a>)</div>
+                      <a href="#C:CoreTweet.Streaming.StreamingMessage()">StreamingMessage</a>
+                    </b>()</div>
                 </td>
                 <td>
                   <span class="NotEntered"></span>
@@ -266,13 +266,10 @@
                   </i>. <span class="NotEntered"></span> (<i>Inherited from <a href="../CoreTweet.Core/TokenIncluded.html">CoreTweet.Core.TokenIncluded</a>.</i>)</td>
               </tr>
               <tr valign="top">
-                <td>
-                  <div>
-                  </div>
-                </td>
+                <td>[read-only]<div></div></td>
                 <td>
                   <b>
-                    <a href="#P:CoreTweet.Streaming.StreamingMessage.MessageType">MessageType</a>
+                    <a href="#P:CoreTweet.Streaming.StreamingMessage.Type">Type</a>
                   </b>
                 </td>
                 <td>
@@ -317,8 +314,8 @@
                 </td>
                 <td colspan="2">
                   <b>
-                    <a href="#M:CoreTweet.Streaming.StreamingMessage.Parse(CoreTweet.Tokens,System.Object)">Parse</a>
-                  </b>(<a href="../CoreTweet/Tokens.html">CoreTweet.Tokens</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a>)<nobr> : <a href="../CoreTweet.Streaming/StreamingMessage.html">StreamingMessage</a></nobr><blockquote><span class="NotEntered"></span></blockquote></td>
+                    <a href="#M:CoreTweet.Streaming.StreamingMessage.Parse(CoreTweet.Tokens,System.String)">Parse</a>
+                  </b>(<a href="../CoreTweet/Tokens.html">CoreTweet.Tokens</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="../CoreTweet.Streaming/StreamingMessage.html">StreamingMessage</a></nobr><blockquote><span class="NotEntered"></span></blockquote></td>
               </tr>
             </table>
           </div>
@@ -328,62 +325,31 @@
     <div class="Members" id="T:CoreTweet.Streaming.StreamingMessage:Members">
       <h2 class="Section" id="MemberDetails">Member Details</h2>
       <div class="SectionBox" id="_MemberDetails">
-        <h3 id="C:CoreTweet.Streaming.StreamingMessage(CoreTweet.Tokens)">StreamingMessage Constructor</h3>
-        <blockquote id="C:CoreTweet.Streaming.StreamingMessage(CoreTweet.Tokens):member">
+        <h3 id="C:CoreTweet.Streaming.StreamingMessage()">StreamingMessage Constructor</h3>
+        <blockquote id="C:CoreTweet.Streaming.StreamingMessage():member">
           <p class="Summary">
             <span class="NotEntered"></span>
           </p>
           <h2>Syntax</h2>
-          <div class="Signature">public  <b>StreamingMessage</b> (<a href="../CoreTweet/Tokens.html">CoreTweet.Tokens</a> tokens)</div>
-          <h4 class="Subsection">Parameters</h4>
-          <blockquote class="SubsectionBox" id="C:CoreTweet.Streaming.StreamingMessage(CoreTweet.Tokens):Parameters">
-            <dl>
-              <dt>
-                <i>tokens</i>
-              </dt>
-              <dd>
-                <span class="NotEntered"></span>
-              </dd>
-            </dl>
-          </blockquote>
+          <div class="Signature">protected  <b>StreamingMessage</b> ()</div>
           <h2 class="Section">Remarks</h2>
-          <div class="SectionBox" id="C:CoreTweet.Streaming.StreamingMessage(CoreTweet.Tokens):Remarks">
+          <div class="SectionBox" id="C:CoreTweet.Streaming.StreamingMessage():Remarks">
             <span class="NotEntered"></span>
           </div>
           <h2 class="Section">Requirements</h2>
-          <div class="SectionBox" id="C:CoreTweet.Streaming.StreamingMessage(CoreTweet.Tokens):Version Information">
-            <b>Namespace: </b>CoreTweet.Streaming<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5108.3530, 0.1.5120.2773</div>
+          <div class="SectionBox" id="C:CoreTweet.Streaming.StreamingMessage():Version Information">
+            <b>Namespace: </b>CoreTweet.Streaming<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5132.5858</div>
           <hr size="1" />
         </blockquote>
-        <h3 id="P:CoreTweet.Streaming.StreamingMessage.MessageType">MessageType Property</h3>
-        <blockquote id="P:CoreTweet.Streaming.StreamingMessage.MessageType:member">
+        <h3 id="M:CoreTweet.Streaming.StreamingMessage.Parse(CoreTweet.Tokens,System.String)">Parse Method</h3>
+        <blockquote id="M:CoreTweet.Streaming.StreamingMessage.Parse(CoreTweet.Tokens,System.String):member">
           <p class="Summary">
             <span class="NotEntered"></span>
           </p>
           <h2>Syntax</h2>
-          <div class="Signature">public <a href="../CoreTweet.Streaming/MessageType.html">MessageType</a> <b>MessageType</b>  { get; set; }</div>
-          <h4 class="Subsection">Value</h4>
-          <blockquote class="SubsectionBox" id="P:CoreTweet.Streaming.StreamingMessage.MessageType:Value">
-            <span class="NotEntered"></span>
-          </blockquote>
-          <h2 class="Section">Remarks</h2>
-          <div class="SectionBox" id="P:CoreTweet.Streaming.StreamingMessage.MessageType:Remarks">
-            <span class="NotEntered"></span>
-          </div>
-          <h2 class="Section">Requirements</h2>
-          <div class="SectionBox" id="P:CoreTweet.Streaming.StreamingMessage.MessageType:Version Information">
-            <b>Namespace: </b>CoreTweet.Streaming<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5108.3530, 0.1.5120.2773</div>
-          <hr size="1" />
-        </blockquote>
-        <h3 id="M:CoreTweet.Streaming.StreamingMessage.Parse(CoreTweet.Tokens,System.Object)">Parse Method</h3>
-        <blockquote id="M:CoreTweet.Streaming.StreamingMessage.Parse(CoreTweet.Tokens,System.Object):member">
-          <p class="Summary">
-            <span class="NotEntered"></span>
-          </p>
-          <h2>Syntax</h2>
-          <div class="Signature">public static <a href="../CoreTweet.Streaming/StreamingMessage.html">StreamingMessage</a> <b>Parse</b> (<a href="../CoreTweet/Tokens.html">CoreTweet.Tokens</a> tokens, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a> x)</div>
+          <div class="Signature">public static <a href="../CoreTweet.Streaming/StreamingMessage.html">StreamingMessage</a> <b>Parse</b> (<a href="../CoreTweet/Tokens.html">CoreTweet.Tokens</a> tokens, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> x)</div>
           <h4 class="Subsection">Parameters</h4>
-          <blockquote class="SubsectionBox" id="M:CoreTweet.Streaming.StreamingMessage.Parse(CoreTweet.Tokens,System.Object):Parameters">
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Streaming.StreamingMessage.Parse(CoreTweet.Tokens,System.String):Parameters">
             <dl>
               <dt>
                 <i>tokens</i>
@@ -400,16 +366,36 @@
             </dl>
           </blockquote>
           <h4 class="Subsection">Returns</h4>
-          <blockquote class="SubsectionBox" id="M:CoreTweet.Streaming.StreamingMessage.Parse(CoreTweet.Tokens,System.Object):Returns">
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Streaming.StreamingMessage.Parse(CoreTweet.Tokens,System.String):Returns">
             <span class="NotEntered"></span>
           </blockquote>
           <h2 class="Section">Remarks</h2>
-          <div class="SectionBox" id="M:CoreTweet.Streaming.StreamingMessage.Parse(CoreTweet.Tokens,System.Object):Remarks">
+          <div class="SectionBox" id="M:CoreTweet.Streaming.StreamingMessage.Parse(CoreTweet.Tokens,System.String):Remarks">
             <span class="NotEntered"></span>
           </div>
           <h2 class="Section">Requirements</h2>
-          <div class="SectionBox" id="M:CoreTweet.Streaming.StreamingMessage.Parse(CoreTweet.Tokens,System.Object):Version Information">
-            <b>Namespace: </b>CoreTweet.Streaming<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5108.3530, 0.1.5120.2773</div>
+          <div class="SectionBox" id="M:CoreTweet.Streaming.StreamingMessage.Parse(CoreTweet.Tokens,System.String):Version Information">
+            <b>Namespace: </b>CoreTweet.Streaming<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5132.5858</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:CoreTweet.Streaming.StreamingMessage.Type">Type Property</h3>
+        <blockquote id="P:CoreTweet.Streaming.StreamingMessage.Type:member">
+          <p class="Summary">
+            <span class="NotEntered"></span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../CoreTweet.Streaming/MessageType.html">MessageType</a> <b>Type</b>  { get; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:CoreTweet.Streaming.StreamingMessage.Type:Value">
+            <span class="NotEntered"></span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:CoreTweet.Streaming.StreamingMessage.Type:Remarks">
+            <span class="NotEntered"></span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:CoreTweet.Streaming.StreamingMessage.Type:Version Information">
+            <b>Namespace: </b>CoreTweet.Streaming<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5132.5858</div>
           <hr size="1" />
         </blockquote>
       </div>

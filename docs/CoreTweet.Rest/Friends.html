@@ -218,7 +218,7 @@
       </div>
       <h2 class="Section">Requirements</h2>
       <div class="SectionBox" id="T:CoreTweet.Rest.Friends:Docs:Version Information">
-        <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5108.3530, 0.1.5120.2773</div>
+        <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5132.5858</div>
       <h2 class="Section" id="Members">Members</h2>
       <div class="SectionBox" id="_Members">
         <p>
@@ -279,7 +279,27 @@
                 </td>
                 <td colspan="2">
                   <b>
-                    <a href="#M:CoreTweet.Rest.Friends.Ids(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">Ids</a>
+                    <a href="#M:CoreTweet.Rest.Friends.EnumerateIDs(CoreTweet.EnumerateMode,System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">EnumerateIDs</a>
+                  </b>(<a href="../CoreTweet/EnumerateMode.html">CoreTweet.EnumerateMode</a>, <b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;string, object&gt;&gt;</a>[])<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;long&gt;</a></nobr><blockquote><p>Enumerates user IDs for every user the specified user is following (otherwise known as their "friends").</p><p>At this time, results are ordered with the most recent following first - however, this ordering is subject to unannounced change and eventual consistency issues. Results are given in groups of 5,000 user IDs and multiple "pages" of results can be navigated through using the next_cursor value in subsequent requests. See Using cursors to navigate collections for more information.</p><p>This method is especially powerful when used in conjunction with GET users/lookup, a method that allows you to convert user IDs into full user objects in bulk.</p><p>Avaliable parameters: </p><p><i>long user_id (optional)</i> : The ID of the user for whom to return results for.</p><p><i>string screen_name (optional)</i> : The screen name of the user for whom to return results for.</p><p><i>int count (optional)</i> : Specifies the number of IDs attempt retrieval of, up to a maximum of 5,000 per distinct request. The value of count is best thought of as a limit to the number of results to return. When using the count parameter with this method, it is wise to use a consistent count value across all requests to the same user's collection. Usage of this parameter is encouraged in environments where all 5,000 IDs constitutes too large of a response.</p><p><i>long cursor (optional)</i> : The first cursor. If not be specified, enumerating starts from the first page.</p></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:CoreTweet.Rest.Friends.EnumerateList(CoreTweet.EnumerateMode,System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">EnumerateList</a>
+                  </b>(<a href="../CoreTweet/EnumerateMode.html">CoreTweet.EnumerateMode</a>, <b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;string, object&gt;&gt;</a>[])<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;CoreTweet.User&gt;</a></nobr><blockquote><p>Enumerates user objects for every user the specified user is following (otherwise known as their "friends").</p><p>At this time, results are ordered with the most recent following first — however, this ordering is subject to unannounced change and eventual consistency issues. Results are given in groups of 20 users and multiple "pages" of results can be navigated through using the next_cursor value in subsequent requests. See Using cursors to navigate collections for more information.</p><p>Note: Either a screen_name or a user_id should be provided.</p><p>Avaliable parameters: </p><p><i>long id (optional)</i> : The ID of the user for whom to return results for.</p><p><i>string screen_name (optional)</i> : The screen name of the user for whom to return results for.</p><p><i>bool include_entities (optional)</i> : The entities node will not be included when set to false.</p><p><i>bool skip_status (optional)</i> : When set to true, statuses will not be included in the returned user objects.</p><p><i>long cursor (optional)</i> : The first cursor. If not be specified, enumerating starts from the first page.</p></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:CoreTweet.Rest.Friends.IDs(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">IDs</a>
                   </b>(<b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;string, object&gt;&gt;</a>[])<nobr> : <a href="../CoreTweet/Cursored`1.html">CoreTweet.Cursored&lt;long&gt;</a></nobr><blockquote><p>Returns a cursored collection of user IDs for every user the specified user is following (otherwise known as their "friends").</p><p>At this time, results are ordered with the most recent following first - however, this ordering is subject to unannounced change and eventual consistency issues. Results are given in groups of 5,000 user IDs and multiple "pages" of results can be navigated through using the next_cursor value in subsequent requests. See Using cursors to navigate collections for more information.</p><p>This method is especially powerful when used in conjunction with GET users/lookup, a method that allows you to convert user IDs into full user objects in bulk.</p><p>Avaliable parameters: </p><p><i>long user_id (optional)</i> : The ID of the user for whom to return results for.</p><p><i>string screen_name (optional)</i> : The screen name of the user for whom to return results for.</p><p><i>long cursor (semi-optional)</i> : Causes the list of connections to be broken into pages of no more than 5000 IDs at a time. The number of IDs returned is not guaranteed to be 5000 as suspended users are filtered out after connections are queried. If no cursor is provided, a value of -1 will be assumed, which is the first "page". The response from the API will include a previous_cursor and next_cursor to allow paging back and forth. See Using cursors to navigate collections for more information.</p><p><i>int count (optional)</i> : Specifies the number of IDs attempt retrieval of, up to a maximum of 5,000 per distinct request. The value of count is best thought of as a limit to the number of results to return. When using the count parameter with this method, it is wise to use a consistent count value across all requests to the same user's collection. Usage of this parameter is encouraged in environments where all 5,000 IDs constitutes too large of a response.</p></blockquote></td>
               </tr>
               <tr valign="top">
@@ -300,8 +320,102 @@
     <div class="Members" id="T:CoreTweet.Rest.Friends:Members">
       <h2 class="Section" id="MemberDetails">Member Details</h2>
       <div class="SectionBox" id="_MemberDetails">
-        <h3 id="M:CoreTweet.Rest.Friends.Ids(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">Ids Method</h3>
-        <blockquote id="M:CoreTweet.Rest.Friends.Ids(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):member">
+        <h3 id="M:CoreTweet.Rest.Friends.EnumerateIDs(CoreTweet.EnumerateMode,System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">EnumerateIDs Method</h3>
+        <blockquote id="M:CoreTweet.Rest.Friends.EnumerateIDs(CoreTweet.EnumerateMode,System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):member">
+          <p class="Summary">
+            <p>Enumerates user IDs for every user the specified user is following (otherwise known as their "friends").</p>
+            <p>At this time, results are ordered with the most recent following first - however, this ordering is subject to unannounced change and eventual consistency issues. Results are given in groups of 5,000 user IDs and multiple "pages" of results can be navigated through using the next_cursor value in subsequent requests. See Using cursors to navigate collections for more information.</p>
+            <p>This method is especially powerful when used in conjunction with GET users/lookup, a method that allows you to convert user IDs into full user objects in bulk.</p>
+            <p>Avaliable parameters: </p>
+            <p>
+              <i>long user_id (optional)</i> : The ID of the user for whom to return results for.</p>
+            <p>
+              <i>string screen_name (optional)</i> : The screen name of the user for whom to return results for.</p>
+            <p>
+              <i>int count (optional)</i> : Specifies the number of IDs attempt retrieval of, up to a maximum of 5,000 per distinct request. The value of count is best thought of as a limit to the number of results to return. When using the count parameter with this method, it is wise to use a consistent count value across all requests to the same user's collection. Usage of this parameter is encouraged in environments where all 5,000 IDs constitutes too large of a response.</p>
+            <p>
+              <i>long cursor (optional)</i> : The first cursor. If not be specified, enumerating starts from the first page.</p>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;long&gt;</a> <b>EnumerateIDs</b> (<a href="../CoreTweet/EnumerateMode.html">CoreTweet.EnumerateMode</a> mode, <b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;string, object&gt;&gt;</a>[] parameters)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Friends.EnumerateIDs(CoreTweet.EnumerateMode,System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Parameters">
+            <dl>
+              <dt>
+                <i>mode</i>
+              </dt>
+              <dd> Specify whether enumerating goes to the next page or the previous.</dd>
+              <dt>
+                <i>parameters</i>
+              </dt>
+              <dd>
+            Parameters.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Friends.EnumerateIDs(CoreTweet.EnumerateMode,System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Returns">
+            IDs.
+            </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Friends.EnumerateIDs(CoreTweet.EnumerateMode,System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Remarks">
+            <span class="NotEntered"></span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Friends.EnumerateIDs(CoreTweet.EnumerateMode,System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Version Information">
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5132.5858</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:CoreTweet.Rest.Friends.EnumerateList(CoreTweet.EnumerateMode,System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">EnumerateList Method</h3>
+        <blockquote id="M:CoreTweet.Rest.Friends.EnumerateList(CoreTweet.EnumerateMode,System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):member">
+          <p class="Summary">
+            <p>Enumerates user objects for every user the specified user is following (otherwise known as their "friends").</p>
+            <p>At this time, results are ordered with the most recent following first — however, this ordering is subject to unannounced change and eventual consistency issues. Results are given in groups of 20 users and multiple "pages" of results can be navigated through using the next_cursor value in subsequent requests. See Using cursors to navigate collections for more information.</p>
+            <p>Note: Either a screen_name or a user_id should be provided.</p>
+            <p>Avaliable parameters: </p>
+            <p>
+              <i>long id (optional)</i> : The ID of the user for whom to return results for.</p>
+            <p>
+              <i>string screen_name (optional)</i> : The screen name of the user for whom to return results for.</p>
+            <p>
+              <i>bool include_entities (optional)</i> : The entities node will not be included when set to false.</p>
+            <p>
+              <i>bool skip_status (optional)</i> : When set to true, statuses will not be included in the returned user objects.</p>
+            <p>
+              <i>long cursor (optional)</i> : The first cursor. If not be specified, enumerating starts from the first page.</p>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;CoreTweet.User&gt;</a> <b>EnumerateList</b> (<a href="../CoreTweet/EnumerateMode.html">CoreTweet.EnumerateMode</a> mode, <b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;string, object&gt;&gt;</a>[] parameters)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Friends.EnumerateList(CoreTweet.EnumerateMode,System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Parameters">
+            <dl>
+              <dt>
+                <i>mode</i>
+              </dt>
+              <dd> Specify whether enumerating goes to the next page or the previous.</dd>
+              <dt>
+                <i>parameters</i>
+              </dt>
+              <dd>
+            Parameters.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Friends.EnumerateList(CoreTweet.EnumerateMode,System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Returns">
+            Users.
+            </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Friends.EnumerateList(CoreTweet.EnumerateMode,System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Remarks">
+            <span class="NotEntered"></span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Friends.EnumerateList(CoreTweet.EnumerateMode,System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Version Information">
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5132.5858</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:CoreTweet.Rest.Friends.IDs(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">IDs Method</h3>
+        <blockquote id="M:CoreTweet.Rest.Friends.IDs(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):member">
           <p class="Summary">
             <p>Returns a cursored collection of user IDs for every user the specified user is following (otherwise known as their "friends").</p>
             <p>At this time, results are ordered with the most recent following first - however, this ordering is subject to unannounced change and eventual consistency issues. Results are given in groups of 5,000 user IDs and multiple "pages" of results can be navigated through using the next_cursor value in subsequent requests. See Using cursors to navigate collections for more information.</p>
@@ -317,9 +431,9 @@
               <i>int count (optional)</i> : Specifies the number of IDs attempt retrieval of, up to a maximum of 5,000 per distinct request. The value of count is best thought of as a limit to the number of results to return. When using the count parameter with this method, it is wise to use a consistent count value across all requests to the same user's collection. Usage of this parameter is encouraged in environments where all 5,000 IDs constitutes too large of a response.</p>
           </p>
           <h2>Syntax</h2>
-          <div class="Signature">public <a href="../CoreTweet/Cursored`1.html">CoreTweet.Cursored&lt;long&gt;</a> <b>Ids</b> (<b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;string, object&gt;&gt;</a>[] parameters)</div>
+          <div class="Signature">public <a href="../CoreTweet/Cursored`1.html">CoreTweet.Cursored&lt;long&gt;</a> <b>IDs</b> (<b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;string, object&gt;&gt;</a>[] parameters)</div>
           <h4 class="Subsection">Parameters</h4>
-          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Friends.Ids(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Parameters">
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Friends.IDs(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Parameters">
             <dl>
               <dt>
                 <i>parameters</i>
@@ -328,14 +442,14 @@
             </dl>
           </blockquote>
           <h4 class="Subsection">Returns</h4>
-          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Friends.Ids(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Returns">IDs.</blockquote>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Friends.IDs(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Returns">IDs.</blockquote>
           <h2 class="Section">Remarks</h2>
-          <div class="SectionBox" id="M:CoreTweet.Rest.Friends.Ids(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Remarks">
+          <div class="SectionBox" id="M:CoreTweet.Rest.Friends.IDs(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Remarks">
             <span class="NotEntered"></span>
           </div>
           <h2 class="Section">Requirements</h2>
-          <div class="SectionBox" id="M:CoreTweet.Rest.Friends.Ids(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Version Information">
-            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5108.3530, 0.1.5120.2773</div>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Friends.IDs(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Version Information">
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5132.5858</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:CoreTweet.Rest.Friends.List(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">List Method</h3>
@@ -377,7 +491,7 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:CoreTweet.Rest.Friends.List(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Version Information">
-            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5108.3530, 0.1.5120.2773</div>
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5132.5858</div>
           <hr size="1" />
         </blockquote>
       </div>

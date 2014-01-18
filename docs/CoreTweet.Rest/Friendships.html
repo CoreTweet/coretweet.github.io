@@ -218,7 +218,7 @@
       </div>
       <h2 class="Section">Requirements</h2>
       <div class="SectionBox" id="T:CoreTweet.Rest.Friendships:Docs:Version Information">
-        <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5108.3530, 0.1.5120.2773</div>
+        <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5132.5858</div>
       <h2 class="Section" id="Members">Members</h2>
       <div class="SectionBox" id="_Members">
         <p>
@@ -299,6 +299,26 @@
                 </td>
                 <td colspan="2">
                   <b>
+                    <a href="#M:CoreTweet.Rest.Friendships.EnumerateIncoming(CoreTweet.EnumerateMode,System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">EnumerateIncoming</a>
+                  </b>(<a href="../CoreTweet/EnumerateMode.html">CoreTweet.EnumerateMode</a>, <b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;string, object&gt;&gt;</a>[])<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;long&gt;</a></nobr><blockquote><p>Enumerate numeric IDs for every user who has a pending request to follow the authenticating user.</p><p>Avaliable parameters: </p><p><i>long cursor (semi-optional)</i> : Causes the list of connections to be broken into pages of no more than 5000 IDs at a time. The number of IDs returned is not guaranteed to be 5000 as suspended users are filtered out after connections are queried. If no cursor is provided, a value of -1 will be assumed, which is the first "page." The response from the API will include a previous_cursor and next_cursor to allow paging back and forth. See Using cursors to navigate collections for more information.</p></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:CoreTweet.Rest.Friendships.EnumerateOutgoing(CoreTweet.EnumerateMode,System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">EnumerateOutgoing</a>
+                  </b>(<a href="../CoreTweet/EnumerateMode.html">CoreTweet.EnumerateMode</a>, <b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;string, object&gt;&gt;</a>[])<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;long&gt;</a></nobr><blockquote><p>Enumerate numeric IDs for every protected user for whom the authenticating user has a pending follow request.</p><p>Avaliable parameters: </p><p><i>long cursor (semi-optional)</i> : Causes the list of connections to be broken into pages of no more than 5000 IDs at a time. The number of IDs returned is not guaranteed to be 5000 as suspended users are filtered out after connections are queried. If no cursor is provided, a value of -1 will be assumed, which is the first "page." The response from the API will include a previous_cursor and next_cursor to allow paging back and forth. See Using cursors to navigate collections for more information.</p></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
                     <a href="#M:CoreTweet.Rest.Friendships.Incoming(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">Incoming</a>
                   </b>(<b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;string, object&gt;&gt;</a>[])<nobr> : <a href="../CoreTweet/Cursored`1.html">CoreTweet.Cursored&lt;long&gt;</a></nobr><blockquote><p>Returns a collection of numeric IDs for every user who has a pending request to follow the authenticating user.</p><p>Avaliable parameters: </p><p><i>long cursor (semi-optional)</i> : Causes the list of connections to be broken into pages of no more than 5000 IDs at a time. The number of IDs returned is not guaranteed to be 5000 as suspended users are filtered out after connections are queried. If no cursor is provided, a value of -1 will be assumed, which is the first "page." The response from the API will include a previous_cursor and next_cursor to allow paging back and forth. See Using cursors to navigate collections for more information.</p></blockquote></td>
               </tr>
@@ -319,7 +339,7 @@
                 </td>
                 <td colspan="2">
                   <b>
-                    <a href="#M:CoreTweet.Rest.Friendships.NoRetweetsIds(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">NoRetweetsIds</a>
+                    <a href="#M:CoreTweet.Rest.Friendships.NoRetweetsIDs(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">NoRetweetsIDs</a>
                   </b>(<b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;string, object&gt;&gt;</a>[])<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;long&gt;</a></nobr><blockquote><p>Returns a collection of user_ids that the currently authenticated user does not want to receive retweets from.</p><p>Use POST friendships/update to set the "no retweets" status for a given user account on behalf of the current user.</p><p>Avaliable parameters: Nothing.</p></blockquote></td>
               </tr>
               <tr valign="top">
@@ -396,7 +416,7 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:CoreTweet.Rest.Friendships.Create(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Version Information">
-            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5108.3530, 0.1.5120.2773</div>
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5132.5858</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:CoreTweet.Rest.Friendships.Destroy(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">Destroy Method</h3>
@@ -433,7 +453,83 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:CoreTweet.Rest.Friendships.Destroy(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Version Information">
-            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5108.3530, 0.1.5120.2773</div>
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5132.5858</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:CoreTweet.Rest.Friendships.EnumerateIncoming(CoreTweet.EnumerateMode,System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">EnumerateIncoming Method</h3>
+        <blockquote id="M:CoreTweet.Rest.Friendships.EnumerateIncoming(CoreTweet.EnumerateMode,System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):member">
+          <p class="Summary">
+            <p>Enumerate numeric IDs for every user who has a pending request to follow the authenticating user.</p>
+            <p>Avaliable parameters: </p>
+            <p>
+              <i>long cursor (semi-optional)</i> : Causes the list of connections to be broken into pages of no more than 5000 IDs at a time. The number of IDs returned is not guaranteed to be 5000 as suspended users are filtered out after connections are queried. If no cursor is provided, a value of -1 will be assumed, which is the first "page." The response from the API will include a previous_cursor and next_cursor to allow paging back and forth. See Using cursors to navigate collections for more information.</p>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;long&gt;</a> <b>EnumerateIncoming</b> (<a href="../CoreTweet/EnumerateMode.html">CoreTweet.EnumerateMode</a> mode, <b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;string, object&gt;&gt;</a>[] parameters)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Friendships.EnumerateIncoming(CoreTweet.EnumerateMode,System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Parameters">
+            <dl>
+              <dt>
+                <i>mode</i>
+              </dt>
+              <dd> Specify whether enumerating goes to the next page or the previous.</dd>
+              <dt>
+                <i>parameters</i>
+              </dt>
+              <dd>
+            Parameters.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Friendships.EnumerateIncoming(CoreTweet.EnumerateMode,System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Returns">
+            <span class="NotEntered"></span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Friendships.EnumerateIncoming(CoreTweet.EnumerateMode,System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Remarks">
+            <span class="NotEntered"></span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Friendships.EnumerateIncoming(CoreTweet.EnumerateMode,System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Version Information">
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5132.5858</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:CoreTweet.Rest.Friendships.EnumerateOutgoing(CoreTweet.EnumerateMode,System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">EnumerateOutgoing Method</h3>
+        <blockquote id="M:CoreTweet.Rest.Friendships.EnumerateOutgoing(CoreTweet.EnumerateMode,System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):member">
+          <p class="Summary">
+            <p>Enumerate numeric IDs for every protected user for whom the authenticating user has a pending follow request.</p>
+            <p>Avaliable parameters: </p>
+            <p>
+              <i>long cursor (semi-optional)</i> : Causes the list of connections to be broken into pages of no more than 5000 IDs at a time. The number of IDs returned is not guaranteed to be 5000 as suspended users are filtered out after connections are queried. If no cursor is provided, a value of -1 will be assumed, which is the first "page." The response from the API will include a previous_cursor and next_cursor to allow paging back and forth. See Using cursors to navigate collections for more information.</p>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;long&gt;</a> <b>EnumerateOutgoing</b> (<a href="../CoreTweet/EnumerateMode.html">CoreTweet.EnumerateMode</a> mode, <b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;string, object&gt;&gt;</a>[] parameters)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Friendships.EnumerateOutgoing(CoreTweet.EnumerateMode,System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Parameters">
+            <dl>
+              <dt>
+                <i>mode</i>
+              </dt>
+              <dd> Specify whether enumerating goes to the next page or the previous.</dd>
+              <dt>
+                <i>parameters</i>
+              </dt>
+              <dd>
+            Parameters.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Friendships.EnumerateOutgoing(CoreTweet.EnumerateMode,System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Returns">
+            <span class="NotEntered"></span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Friendships.EnumerateOutgoing(CoreTweet.EnumerateMode,System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Remarks">
+            <span class="NotEntered"></span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Friendships.EnumerateOutgoing(CoreTweet.EnumerateMode,System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Version Information">
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5132.5858</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:CoreTweet.Rest.Friendships.Incoming(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">Incoming Method</h3>
@@ -465,7 +561,7 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:CoreTweet.Rest.Friendships.Incoming(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Version Information">
-            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5108.3530, 0.1.5120.2773</div>
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5132.5858</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:CoreTweet.Rest.Friendships.Lookup(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">Lookup Method</h3>
@@ -499,20 +595,20 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:CoreTweet.Rest.Friendships.Lookup(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Version Information">
-            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5108.3530, 0.1.5120.2773</div>
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5132.5858</div>
           <hr size="1" />
         </blockquote>
-        <h3 id="M:CoreTweet.Rest.Friendships.NoRetweetsIds(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">NoRetweetsIds Method</h3>
-        <blockquote id="M:CoreTweet.Rest.Friendships.NoRetweetsIds(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):member">
+        <h3 id="M:CoreTweet.Rest.Friendships.NoRetweetsIDs(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">NoRetweetsIDs Method</h3>
+        <blockquote id="M:CoreTweet.Rest.Friendships.NoRetweetsIDs(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):member">
           <p class="Summary">
             <p>Returns a collection of user_ids that the currently authenticated user does not want to receive retweets from.</p>
             <p>Use POST friendships/update to set the "no retweets" status for a given user account on behalf of the current user.</p>
             <p>Avaliable parameters: Nothing.</p>
           </p>
           <h2>Syntax</h2>
-          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;long&gt;</a> <b>NoRetweetsIds</b> (<b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;string, object&gt;&gt;</a>[] parameters)</div>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;long&gt;</a> <b>NoRetweetsIDs</b> (<b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;string, object&gt;&gt;</a>[] parameters)</div>
           <h4 class="Subsection">Parameters</h4>
-          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Friendships.NoRetweetsIds(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Parameters">
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Friendships.NoRetweetsIDs(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Parameters">
             <dl>
               <dt>
                 <i>parameters</i>
@@ -523,16 +619,16 @@
             </dl>
           </blockquote>
           <h4 class="Subsection">Returns</h4>
-          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Friendships.NoRetweetsIds(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Returns">
-            Ids.
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Friendships.NoRetweetsIDs(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Returns">
+            IDs.
             </blockquote>
           <h2 class="Section">Remarks</h2>
-          <div class="SectionBox" id="M:CoreTweet.Rest.Friendships.NoRetweetsIds(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Remarks">
+          <div class="SectionBox" id="M:CoreTweet.Rest.Friendships.NoRetweetsIDs(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Remarks">
             <span class="NotEntered"></span>
           </div>
           <h2 class="Section">Requirements</h2>
-          <div class="SectionBox" id="M:CoreTweet.Rest.Friendships.NoRetweetsIds(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Version Information">
-            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5108.3530, 0.1.5120.2773</div>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Friendships.NoRetweetsIDs(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Version Information">
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5132.5858</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:CoreTweet.Rest.Friendships.Outgoing(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">Outgoing Method</h3>
@@ -564,7 +660,7 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:CoreTweet.Rest.Friendships.Outgoing(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Version Information">
-            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5108.3530, 0.1.5120.2773</div>
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5132.5858</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:CoreTweet.Rest.Friendships.Show(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">Show Method</h3>
@@ -603,7 +699,7 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:CoreTweet.Rest.Friendships.Show(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Version Information">
-            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5108.3530, 0.1.5120.2773</div>
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5132.5858</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:CoreTweet.Rest.Friendships.Update(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">Update Method</h3>
@@ -637,7 +733,7 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:CoreTweet.Rest.Friendships.Update(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Version Information">
-            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5108.3530, 0.1.5120.2773</div>
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5132.5858</div>
           <hr size="1" />
         </blockquote>
       </div>
