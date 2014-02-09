@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>CoreTweet.Streaming.WarningMessage</title>
+    <title>CoreTweet.Error</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <style>
       a { text-decoration: none }
@@ -187,45 +187,45 @@
   </head>
   <body>
     <div class="CollectionTitle">
-      <a href="../index.html">CoreTweet</a> : <a href="index.html">CoreTweet.Streaming Namespace</a></div>
+      <a href="../index.html">CoreTweet</a> : <a href="index.html">CoreTweet Namespace</a></div>
     <div class="SideBar">
       <p>
-        <a href="#T:CoreTweet.Streaming.WarningMessage">Overview</a>
+        <a href="#T:CoreTweet.Error">Overview</a>
       </p>
       <p>
-        <a href="#T:CoreTweet.Streaming.WarningMessage:Signature">Signature</a>
+        <a href="#T:CoreTweet.Error:Signature">Signature</a>
       </p>
       <p>
-        <a href="#T:CoreTweet.Streaming.WarningMessage:Docs">Remarks</a>
+        <a href="#T:CoreTweet.Error:Docs">Remarks</a>
       </p>
       <p>
         <a href="#Members">Members</a>
       </p>
       <p>
-        <a href="#T:CoreTweet.Streaming.WarningMessage:Members">Member Details</a>
+        <a href="#T:CoreTweet.Error:Members">Member Details</a>
       </p>
     </div>
-    <h1 class="PageTitle" id="T:CoreTweet.Streaming.WarningMessage">WarningMessage  Class</h1>
-    <p class="Summary" id="T:CoreTweet.Streaming.WarningMessage:Summary">
+    <h1 class="PageTitle" id="T:CoreTweet.Error">Error  Class</h1>
+    <p class="Summary" id="T:CoreTweet.Error:Summary">
       <span class="NotEntered"></span>
     </p>
     <div>
       <h2>Syntax</h2>
-      <div class="Signature" id="T:CoreTweet.Streaming.WarningMessage:Signature">public class  <b>WarningMessage</b> : <a href="../CoreTweet.Streaming/StreamingMessage.html">StreamingMessage</a></div>
+      <div class="Signature" id="T:CoreTweet.Error:Signature">public class  <b>Error</b> : <a href="../CoreTweet.Core/CoreBase.html">CoreTweet.Core.CoreBase</a></div>
     </div>
-    <div class="Remarks" id="T:CoreTweet.Streaming.WarningMessage:Docs">
+    <div class="Remarks" id="T:CoreTweet.Error:Docs">
       <h2 class="Section">Remarks</h2>
-      <div class="SectionBox" id="T:CoreTweet.Streaming.WarningMessage:Docs:Remarks">
+      <div class="SectionBox" id="T:CoreTweet.Error:Docs:Remarks">
         <span class="NotEntered"></span>
       </div>
       <h2 class="Section">Requirements</h2>
-      <div class="SectionBox" id="T:CoreTweet.Streaming.WarningMessage:Docs:Version Information">
-        <b>Namespace: </b>CoreTweet.Streaming<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5.0</div>
+      <div class="SectionBox" id="T:CoreTweet.Error:Docs:Version Information">
+        <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5.0</div>
       <h2 class="Section" id="Members">Members</h2>
       <div class="SectionBox" id="_Members">
         <p>
 								See Also: Inherited members from
-								<a href="../CoreTweet.Streaming/StreamingMessage.html">StreamingMessage</a>.
+								<a href="../CoreTweet.Core/CoreBase.html">CoreTweet.Core.CoreBase</a>.
 							</p>
         <h2 class="Section">Public Constructors</h2>
         <div class="SectionBox" id="Public Constructors">
@@ -239,7 +239,7 @@
                 <td>
                   <div>
                     <b>
-                      <a href="#C:CoreTweet.Streaming.WarningMessage()">WarningMessage</a>
+                      <a href="#C:CoreTweet.Error()">Error</a>
                     </b>()</div>
                 </td>
                 <td>
@@ -260,13 +260,16 @@
                 </td>
                 <td>
                   <b>
-                    <a href="#P:CoreTweet.Streaming.WarningMessage.Code">Code</a>
+                    <a href="#P:CoreTweet.Error.Code">Code</a>
                   </b>
                 </td>
                 <td>
                   <i>
-                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>
-                  </i>. <span class="NotEntered"></span></td>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>
+                  </i>. 
+            The machine-parseable code.
+            While the text for an error message may change, the codes will stay the same.
+            </td>
               </tr>
               <tr valign="top">
                 <td>[read-only]<div></div></td>
@@ -277,7 +280,7 @@
                 </td>
                 <td>
                   <i>
-                    <a href="../CoreTweet/Tokens.html">CoreTweet.Tokens</a>
+                    <a href="../CoreTweet/Tokens.html">Tokens</a>
                   </i>. <span class="NotEntered"></span> (<i>Inherited from <a href="../CoreTweet.Core/TokenIncluded.html">CoreTweet.Core.TokenIncluded</a>.</i>)</td>
               </tr>
               <tr valign="top">
@@ -287,40 +290,15 @@
                 </td>
                 <td>
                   <b>
-                    <a href="#P:CoreTweet.Streaming.WarningMessage.Message">Message</a>
+                    <a href="#P:CoreTweet.Error.Message">Message</a>
                   </b>
                 </td>
                 <td>
                   <i>
                     <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>
-                  </i>. <span class="NotEntered"></span></td>
-              </tr>
-              <tr valign="top">
-                <td>
-                  <div>
-                  </div>
-                </td>
-                <td>
-                  <b>
-                    <a href="#P:CoreTweet.Streaming.WarningMessage.PercentFull">PercentFull</a>
-                  </b>
-                </td>
-                <td>
-                  <i>
-                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>
-                  </i>. <span class="NotEntered"></span></td>
-              </tr>
-              <tr valign="top">
-                <td>[read-only]<div></div></td>
-                <td>
-                  <b>
-                    <a href="../CoreTweet.Streaming/StreamingMessage.html#P:CoreTweet.Streaming.StreamingMessage.Type">Type</a>
-                  </b>
-                </td>
-                <td>
-                  <i>
-                    <a href="../CoreTweet.Streaming/MessageType.html">MessageType</a>
-                  </i>. <span class="NotEntered"></span> (<i>Inherited from <a href="../CoreTweet.Streaming/StreamingMessage.html">StreamingMessage</a>.</i>)</td>
+                  </i>. 
+            The error message.
+            </td>
               </tr>
             </table>
           </div>
@@ -341,7 +319,7 @@
                 </td>
                 <td>
                   <i>
-                    <a href="../CoreTweet/Tokens.html">CoreTweet.Tokens</a>
+                    <a href="../CoreTweet/Tokens.html">Tokens</a>
                   </i>. 
             Gets or sets the oauth tokens.
              (<i>Inherited from <a href="../CoreTweet.Core/TokenIncluded.html">CoreTweet.Core.TokenIncluded</a>.</i>)</td>
@@ -351,83 +329,64 @@
         </div>
       </div>
     </div>
-    <div class="Members" id="T:CoreTweet.Streaming.WarningMessage:Members">
+    <div class="Members" id="T:CoreTweet.Error:Members">
       <h2 class="Section" id="MemberDetails">Member Details</h2>
       <div class="SectionBox" id="_MemberDetails">
-        <h3 id="C:CoreTweet.Streaming.WarningMessage()">WarningMessage Constructor</h3>
-        <blockquote id="C:CoreTweet.Streaming.WarningMessage():member">
+        <h3 id="C:CoreTweet.Error()">Error Constructor</h3>
+        <blockquote id="C:CoreTweet.Error():member">
           <p class="Summary">
             <span class="NotEntered"></span>
           </p>
           <h2>Syntax</h2>
-          <div class="Signature">public  <b>WarningMessage</b> ()</div>
+          <div class="Signature">public  <b>Error</b> ()</div>
           <h2 class="Section">Remarks</h2>
-          <div class="SectionBox" id="C:CoreTweet.Streaming.WarningMessage():Remarks">
+          <div class="SectionBox" id="C:CoreTweet.Error():Remarks">
             <span class="NotEntered"></span>
           </div>
           <h2 class="Section">Requirements</h2>
-          <div class="SectionBox" id="C:CoreTweet.Streaming.WarningMessage():Version Information">
-            <b>Namespace: </b>CoreTweet.Streaming<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5.0</div>
+          <div class="SectionBox" id="C:CoreTweet.Error():Version Information">
+            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5.0</div>
           <hr size="1" />
         </blockquote>
-        <h3 id="P:CoreTweet.Streaming.WarningMessage.Code">Code Property</h3>
-        <blockquote id="P:CoreTweet.Streaming.WarningMessage.Code:member">
+        <h3 id="P:CoreTweet.Error.Code">Code Property</h3>
+        <blockquote id="P:CoreTweet.Error.Code:member">
           <p class="Summary">
-            <span class="NotEntered"></span>
-          </p>
+            The machine-parseable code.
+            While the text for an error message may change, the codes will stay the same.
+            </p>
           <h2>Syntax</h2>
-          <div class="Signature">[Newtonsoft.Json.JsonProperty("code")]<br />public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>Code</b>  { get; set; }</div>
+          <div class="Signature">[Newtonsoft.Json.JsonProperty("code")]<br />public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> <b>Code</b>  { get; set; }</div>
           <h4 class="Subsection">Value</h4>
-          <blockquote class="SubsectionBox" id="P:CoreTweet.Streaming.WarningMessage.Code:Value">
+          <blockquote class="SubsectionBox" id="P:CoreTweet.Error.Code:Value">
             <span class="NotEntered"></span>
           </blockquote>
           <h2 class="Section">Remarks</h2>
-          <div class="SectionBox" id="P:CoreTweet.Streaming.WarningMessage.Code:Remarks">
+          <div class="SectionBox" id="P:CoreTweet.Error.Code:Remarks">
             <span class="NotEntered"></span>
           </div>
           <h2 class="Section">Requirements</h2>
-          <div class="SectionBox" id="P:CoreTweet.Streaming.WarningMessage.Code:Version Information">
-            <b>Namespace: </b>CoreTweet.Streaming<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5.0</div>
+          <div class="SectionBox" id="P:CoreTweet.Error.Code:Version Information">
+            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5.0</div>
           <hr size="1" />
         </blockquote>
-        <h3 id="P:CoreTweet.Streaming.WarningMessage.Message">Message Property</h3>
-        <blockquote id="P:CoreTweet.Streaming.WarningMessage.Message:member">
+        <h3 id="P:CoreTweet.Error.Message">Message Property</h3>
+        <blockquote id="P:CoreTweet.Error.Message:member">
           <p class="Summary">
-            <span class="NotEntered"></span>
-          </p>
+            The error message.
+            </p>
           <h2>Syntax</h2>
           <div class="Signature">[Newtonsoft.Json.JsonProperty("message")]<br />public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>Message</b>  { get; set; }</div>
           <h4 class="Subsection">Value</h4>
-          <blockquote class="SubsectionBox" id="P:CoreTweet.Streaming.WarningMessage.Message:Value">
+          <blockquote class="SubsectionBox" id="P:CoreTweet.Error.Message:Value">
             <span class="NotEntered"></span>
           </blockquote>
           <h2 class="Section">Remarks</h2>
-          <div class="SectionBox" id="P:CoreTweet.Streaming.WarningMessage.Message:Remarks">
+          <div class="SectionBox" id="P:CoreTweet.Error.Message:Remarks">
             <span class="NotEntered"></span>
           </div>
           <h2 class="Section">Requirements</h2>
-          <div class="SectionBox" id="P:CoreTweet.Streaming.WarningMessage.Message:Version Information">
-            <b>Namespace: </b>CoreTweet.Streaming<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5.0</div>
-          <hr size="1" />
-        </blockquote>
-        <h3 id="P:CoreTweet.Streaming.WarningMessage.PercentFull">PercentFull Property</h3>
-        <blockquote id="P:CoreTweet.Streaming.WarningMessage.PercentFull:member">
-          <p class="Summary">
-            <span class="NotEntered"></span>
-          </p>
-          <h2>Syntax</h2>
-          <div class="Signature">[Newtonsoft.Json.JsonProperty("percent_full")]<br />public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> <b>PercentFull</b>  { get; set; }</div>
-          <h4 class="Subsection">Value</h4>
-          <blockquote class="SubsectionBox" id="P:CoreTweet.Streaming.WarningMessage.PercentFull:Value">
-            <span class="NotEntered"></span>
-          </blockquote>
-          <h2 class="Section">Remarks</h2>
-          <div class="SectionBox" id="P:CoreTweet.Streaming.WarningMessage.PercentFull:Remarks">
-            <span class="NotEntered"></span>
-          </div>
-          <h2 class="Section">Requirements</h2>
-          <div class="SectionBox" id="P:CoreTweet.Streaming.WarningMessage.PercentFull:Version Information">
-            <b>Namespace: </b>CoreTweet.Streaming<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5.0</div>
+          <div class="SectionBox" id="P:CoreTweet.Error.Message:Version Information">
+            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5.0</div>
           <hr size="1" />
         </blockquote>
       </div>

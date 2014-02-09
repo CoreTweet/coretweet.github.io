@@ -207,11 +207,12 @@
     </div>
     <h1 class="PageTitle" id="T:CoreTweet.BoundingBox">BoundingBox  Class</h1>
     <p class="Summary" id="T:CoreTweet.BoundingBox:Summary">
-      <span class="NotEntered"></span>
-    </p>
+            Bounding box.
+            This class can easily be converted to a JSON with JsonConvert.SerializeObject.
+            </p>
     <div>
       <h2>Syntax</h2>
-      <div class="Signature" id="T:CoreTweet.BoundingBox:Signature">public class  <b>BoundingBox</b> : <a href="../CoreTweet.Core/CoreBase.html">CoreTweet.Core.CoreBase</a></div>
+      <div class="Signature" id="T:CoreTweet.BoundingBox:Signature">[Newtonsoft.Json.JsonObject]<br />public class  <b>BoundingBox</b> : <a href="../CoreTweet.Core/CoreBase.html">CoreTweet.Core.CoreBase</a>,	<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;Coordinates&gt;</a></div>
     </div>
     <div class="Remarks" id="T:CoreTweet.BoundingBox:Docs">
       <h2 class="Section">Remarks</h2>
@@ -220,7 +221,7 @@
       </div>
       <h2 class="Section">Requirements</h2>
       <div class="SectionBox" id="T:CoreTweet.BoundingBox:Docs:Version Information">
-        <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5132.5858</div>
+        <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5.0</div>
       <h2 class="Section" id="Members">Members</h2>
       <div class="SectionBox" id="_Members">
         <p>
@@ -265,7 +266,7 @@
                 </td>
                 <td>
                   <i>
-                    <a href="../CoreTweet/Coordinates.html">Coordinates</a>[]</i>. 
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Double">double</a>[][][]</i>. 
             A series of longitude and latitude points, defining a box which will contain the Place entity this bounding box is related to. Each point is an array in the form of [longitude, latitude]. Points are grouped into an array per bounding box. Bounding box arrays are wrapped in one additional array to be compatible with the polygon notation.
             </td>
               </tr>
@@ -280,6 +281,23 @@
                   <i>
                     <a href="../CoreTweet/Tokens.html">Tokens</a>
                   </i>. <span class="NotEntered"></span> (<i>Inherited from <a href="../CoreTweet.Core/TokenIncluded.html">CoreTweet.Core.TokenIncluded</a>.</i>)</td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                    <i>default property</i>
+                  </div>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#P:CoreTweet.BoundingBox.Item(System.Int32)">Item</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>)</td>
+                <td>
+                  <i>
+                    <a href="../CoreTweet/Coordinates.html">Coordinates</a>
+                  </i>. <span class="NotEntered"></span></td>
               </tr>
               <tr valign="top">
                 <td>
@@ -325,6 +343,186 @@
             </table>
           </div>
         </div>
+        <h2 class="Section">Public Methods</h2>
+        <div class="SectionBox" id="Public Methods">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:CoreTweet.BoundingBox.GetEnumerator()">GetEnumerator</a>
+                  </b>()<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.IEnumerator">IEnumerator</a></nobr><blockquote><span class="NotEntered"></span></blockquote></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <h2 class="Section">Explicitly Implemented Interface Members</h2>
+        <div class="SectionBox" id="Explicitly Implemented Interface Members">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <a href="#M:CoreTweet.BoundingBox.System#Collections#Generic#IEnumerable{CoreTweet#Coordinates}#GetEnumerator()">
+                    <b>IEnumerable&lt;CoreTweet.Coordinates&gt;.GetEnumerator</b>
+                  </a>
+                </td>
+                <td>
+                  <span class="NotEntered"></span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <h2 class="Section">Extension Methods</h2>
+        <div class="SectionBox" id="Extension Methods">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Alice.Extensions/EnumerableExtensions.html#M:Alice.Extensions.EnumerableExtensions.And``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0})">And&lt;T&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;T&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;T&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;T&gt;</a></nobr><blockquote><span class="NotEntered"></span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Alice.Extensions/EnumerableExtensions.html#M:Alice.Extensions.EnumerableExtensions.Conbinate``2(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``1})">Conbinate&lt;T1,T2&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;T1&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;T2&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;Tuple&lt;T1, T2&gt;&gt;</a></nobr><blockquote><span class="NotEntered"></span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Alice.Extensions/EnumerableExtensions.html#M:Alice.Extensions.EnumerableExtensions.Do``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})">Do&lt;T&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;T&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Action`1">Action&lt;T&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;T&gt;</a></nobr><blockquote><span class="NotEntered"></span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Alice.Extensions/EnumerableExtensions.html#M:Alice.Extensions.EnumerableExtensions.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})">ForEach&lt;T&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;T&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Action`1">Action&lt;T&gt;</a>)<blockquote><span class="NotEntered"></span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Alice.Extensions/EnumerableExtensions.html#M:Alice.Extensions.EnumerableExtensions.JoinToString``1(System.Collections.Generic.IEnumerable{``0})">JoinToString&lt;T&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;T&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a></nobr><blockquote><span class="NotEntered"></span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Alice.Extensions/EnumerableExtensions.html#M:Alice.Extensions.EnumerableExtensions.JoinToString``1(System.Collections.Generic.IEnumerable{``0},System.String)">JoinToString&lt;T&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;T&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a></nobr><blockquote><span class="NotEntered"></span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Alice.Extensions/EnumerableExtensions.html#M:Alice.Extensions.EnumerableExtensions.Or``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0})">Or&lt;T&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;T&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;T&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;T&gt;</a></nobr><blockquote><span class="NotEntered"></span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Alice.Extensions/EnumerableExtensions.html#M:Alice.Extensions.EnumerableExtensions.Randomize``1(System.Collections.Generic.IEnumerable{``0})">Randomize&lt;T&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;T&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;T&gt;</a></nobr><blockquote><span class="NotEntered"></span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Alice.Extensions/EnumerableExtensions.html#M:Alice.Extensions.EnumerableExtensions.Skip``1(System.Collections.Generic.IEnumerable{``0},System.Int32,System.Int32)">Skip&lt;T&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;T&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;T&gt;</a></nobr><blockquote><span class="NotEntered"></span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Alice.Extensions/EnumerableExtensions.html#M:Alice.Extensions.EnumerableExtensions.SkipWhile``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Int32,System.Boolean})">SkipWhile&lt;T&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;T&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`3">Func&lt;T, int, bool&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;T&gt;</a></nobr><blockquote><span class="NotEntered"></span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Alice.Extensions/EnumerableExtensions.html#M:Alice.Extensions.EnumerableExtensions.Split``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean})">Split&lt;T&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;T&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;T, bool&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;IEnumerable&lt;T&gt;&gt;</a></nobr><blockquote><span class="NotEntered"></span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Alice.Extensions/EnumerableExtensions.html#M:Alice.Extensions.EnumerableExtensions.Split``1(System.Collections.Generic.IEnumerable{``0},``0[])">Split&lt;T&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;T&gt;</a>, <b>params</b> <i title="To be added.">T</i>[])<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;IEnumerable&lt;T&gt;&gt;</a></nobr><blockquote><span class="NotEntered"></span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Alice.Extensions/EnumerableExtensions.html#M:Alice.Extensions.EnumerableExtensions.Split``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean},System.StringSplitOptions)">Split&lt;T&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;T&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;T, bool&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.StringSplitOptions">StringSplitOptions</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;IEnumerable&lt;T&gt;&gt;</a></nobr><blockquote><span class="NotEntered"></span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Alice.Extensions/EnumerableExtensions.html#M:Alice.Extensions.EnumerableExtensions.Split``1(System.Collections.Generic.IEnumerable{``0},``0[],System.StringSplitOptions)">Split&lt;T&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;T&gt;</a>, <i title="To be added.">T</i>[], <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.StringSplitOptions">StringSplitOptions</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;IEnumerable&lt;T&gt;&gt;</a></nobr><blockquote><span class="NotEntered"></span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Alice.Extensions/EnumerableExtensions.html#M:Alice.Extensions.EnumerableExtensions.Xor``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0})">Xor&lt;T&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;T&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;T&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;T&gt;</a></nobr><blockquote><span class="NotEntered"></span></blockquote></td>
+              </tr>
+            </table>
+          </div>
+        </div>
       </div>
     </div>
     <div class="Members" id="T:CoreTweet.BoundingBox:Members">
@@ -343,7 +541,7 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="C:CoreTweet.BoundingBox():Version Information">
-            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5132.5858</div>
+            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5.0</div>
           <hr size="1" />
         </blockquote>
         <h3 id="P:CoreTweet.BoundingBox.Coordinates">Coordinates Property</h3>
@@ -352,7 +550,7 @@
             A series of longitude and latitude points, defining a box which will contain the Place entity this bounding box is related to. Each point is an array in the form of [longitude, latitude]. Points are grouped into an array per bounding box. Bounding box arrays are wrapped in one additional array to be compatible with the polygon notation.
             </p>
           <h2>Syntax</h2>
-          <div class="Signature">[Newtonsoft.Json.JsonProperty("coordinates")]<br />public <a href="../CoreTweet/Coordinates.html">Coordinates</a>[] <b>Coordinates</b>  { get; set; }</div>
+          <div class="Signature">[Newtonsoft.Json.JsonProperty("coordinates")]<br />public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Double">double</a>[][][] <b>Coordinates</b>  { get; set; }</div>
           <h4 class="Subsection">Value</h4>
           <blockquote class="SubsectionBox" id="P:CoreTweet.BoundingBox.Coordinates:Value">
             <span class="NotEntered"></span>
@@ -363,7 +561,82 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="P:CoreTweet.BoundingBox.Coordinates:Version Information">
-            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5132.5858</div>
+            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:CoreTweet.BoundingBox.GetEnumerator()">GetEnumerator Method</h3>
+        <blockquote id="M:CoreTweet.BoundingBox.GetEnumerator():member">
+          <p class="Summary">
+            <span class="NotEntered"></span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.IEnumerator">IEnumerator</a> <b>GetEnumerator</b> ()</div>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.BoundingBox.GetEnumerator():Returns">
+            <span class="NotEntered"></span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:CoreTweet.BoundingBox.GetEnumerator():Remarks">
+            <span class="NotEntered"></span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:CoreTweet.BoundingBox.GetEnumerator():Version Information">
+            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:CoreTweet.BoundingBox.Item(System.Int32)">Item Property</h3>
+        <blockquote id="P:CoreTweet.BoundingBox.Item(System.Int32):member">
+          <p class="Summary">
+            <span class="NotEntered"></span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">
+            <p>
+              <i>This is the default property for this class.</i>
+            </p>public <a href="../CoreTweet/Coordinates.html">Coordinates</a> this [<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> index] { get; set; }</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="P:CoreTweet.BoundingBox.Item(System.Int32):Parameters">
+            <dl>
+              <dt>
+                <i>index</i>
+              </dt>
+              <dd>
+                <span class="NotEntered"></span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:CoreTweet.BoundingBox.Item(System.Int32):Value">
+            <span class="NotEntered"></span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:CoreTweet.BoundingBox.Item(System.Int32):Remarks">
+            <span class="NotEntered"></span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:CoreTweet.BoundingBox.Item(System.Int32):Version Information">
+            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:CoreTweet.BoundingBox.System#Collections#Generic#IEnumerable{CoreTweet#Coordinates}#GetEnumerator()">System.Collections.Generic.IEnumerable&lt;CoreTweet.Coordinates&gt;.GetEnumerator Method</h3>
+        <blockquote id="M:CoreTweet.BoundingBox.System#Collections#Generic#IEnumerable{CoreTweet#Coordinates}#GetEnumerator():member">
+          <p class="Summary">
+            <span class="NotEntered"></span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">
+            <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerator`1">IEnumerator&lt;Coordinates&gt;</a> <b>System.Collections.Generic.IEnumerable&lt;CoreTweet.Coordinates&gt;.GetEnumerator</b> ()</div>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.BoundingBox.System#Collections#Generic#IEnumerable{CoreTweet#Coordinates}#GetEnumerator():Returns">
+            <span class="NotEntered"></span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:CoreTweet.BoundingBox.System#Collections#Generic#IEnumerable{CoreTweet#Coordinates}#GetEnumerator():Remarks">
+            <span class="NotEntered"></span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:CoreTweet.BoundingBox.System#Collections#Generic#IEnumerable{CoreTweet#Coordinates}#GetEnumerator():Version Information">
+            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5.0</div>
           <hr size="1" />
         </blockquote>
         <h3 id="P:CoreTweet.BoundingBox.Type">Type Property</h3>
@@ -383,7 +656,7 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="P:CoreTweet.BoundingBox.Type:Version Information">
-            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5132.5858</div>
+            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5.0</div>
           <hr size="1" />
         </blockquote>
       </div>

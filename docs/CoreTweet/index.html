@@ -209,8 +209,9 @@
             <a href="./BoundingBox.html">BoundingBox</a>
           </td>
           <td>
-            <span class="NotEntered"></span>
-          </td>
+            Bounding box.
+            This class can easily be converted to a JSON with JsonConvert.SerializeObject.
+            </td>
         </tr>
         <tr valign="top">
           <td>
@@ -233,16 +234,20 @@
             <a href="./Contributors.html">Contributors</a>
           </td>
           <td>
-            <span class="NotEntered"></span>
-          </td>
+            Contributors.
+            An collection of brief user objects (usually only one)
+            indicating users who contributed to the authorship of the tweet,
+            on behalf of the official tweet author.
+            </td>
         </tr>
         <tr valign="top">
           <td>
             <a href="./Coordinates.html">Coordinates</a>
           </td>
           <td>
-            <span class="NotEntered"></span>
-          </td>
+            Coordinates.
+            Represents the geographic location with longitude and latitude points.
+            </td>
         </tr>
         <tr valign="top">
           <td>
@@ -257,8 +262,8 @@
             <a href="./DirectMessage.html">DirectMessage</a>
           </td>
           <td>
-            <span class="NotEntered"></span>
-          </td>
+            Direct message.
+            </td>
         </tr>
         <tr valign="top">
           <td>
@@ -279,6 +284,14 @@
         <tr valign="top">
           <td>
             <a href="./EnumerateMode.html">EnumerateMode</a>
+          </td>
+          <td>
+            <span class="NotEntered"></span>
+          </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./Error.html">Error</a>
           </td>
           <td>
             <span class="NotEntered"></span>
@@ -374,11 +387,23 @@
         </tr>
         <tr valign="top">
           <td>
-            <a href="./Place.html">Place</a>
+            <a href="./ParsingException.html">ParsingException</a>
           </td>
           <td>
             <span class="NotEntered"></span>
           </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./Place.html">Place</a>
+          </td>
+          <td>
+            Places are specific, named locations with corresponding geo coordinates.
+            They can be attached to Tweets by specifying a place_id when tweeting.
+            Tweets associated with places are not necessarily issued from that location but could also potentially be about that location.
+            Places can be searched for. Tweets can also be found by place_id.
+            See About Geo Place Attributes for more information.
+            </td>
         </tr>
         <tr valign="top">
           <td>
@@ -449,8 +474,10 @@
             <a href="./Status.html">Status</a>
           </td>
           <td>
-            <span class="NotEntered"></span>
-          </td>
+            Tweets are the basic atomic building block of all things Twitter.
+            Users tweet Tweets, also known more generically as "status updates."
+            Tweets can be embedded, replied to, favorited, unfavorited and deleted.
+            </td>
         </tr>
         <tr valign="top">
           <td>
@@ -483,6 +510,14 @@
           <td>
             Trending topics for a specific WOEID
             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./TwitterException.html">TwitterException</a>
+          </td>
+          <td>
+            <span class="NotEntered"></span>
+          </td>
         </tr>
         <tr valign="top">
           <td>
