@@ -220,7 +220,7 @@
       </div>
       <h2 class="Section">Requirements</h2>
       <div class="SectionBox" id="T:CoreTweet.ParsingException:Docs:Version Information">
-        <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5.0</div>
+        <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.7.23841</div>
       <h2 class="Section" id="Members">Members</h2>
       <div class="SectionBox" id="_Members">
         <p>
@@ -239,8 +239,8 @@
                 <td>
                   <div>
                     <b>
-                      <a href="#C:CoreTweet.ParsingException(System.String,System.String)">ParsingException</a>
-                    </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)</div>
+                      <a href="#C:CoreTweet.ParsingException(System.String,System.String,System.Exception)">ParsingException</a>
+                    </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Exception">Exception</a>)</div>
                 </td>
                 <td>
                   <span class="NotEntered"></span>
@@ -264,7 +264,7 @@
                   <i>
                     <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>
                   </i>. 
-            The data which causes an exception.
+            The JSON which causes an exception.
             </td>
               </tr>
             </table>
@@ -275,15 +275,15 @@
     <div class="Members" id="T:CoreTweet.ParsingException:Members">
       <h2 class="Section" id="MemberDetails">Member Details</h2>
       <div class="SectionBox" id="_MemberDetails">
-        <h3 id="C:CoreTweet.ParsingException(System.String,System.String)">ParsingException Constructor</h3>
-        <blockquote id="C:CoreTweet.ParsingException(System.String,System.String):member">
+        <h3 id="C:CoreTweet.ParsingException(System.String,System.String,System.Exception)">ParsingException Constructor</h3>
+        <blockquote id="C:CoreTweet.ParsingException(System.String,System.String,System.Exception):member">
           <p class="Summary">
             <span class="NotEntered"></span>
           </p>
           <h2>Syntax</h2>
-          <div class="Signature">public  <b>ParsingException</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> message, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> data)</div>
+          <div class="Signature">public  <b>ParsingException</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> message, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> data, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Exception">Exception</a> innerException)</div>
           <h4 class="Subsection">Parameters</h4>
-          <blockquote class="SubsectionBox" id="C:CoreTweet.ParsingException(System.String,System.String):Parameters">
+          <blockquote class="SubsectionBox" id="C:CoreTweet.ParsingException(System.String,System.String,System.Exception):Parameters">
             <dl>
               <dt>
                 <i>message</i>
@@ -297,27 +297,33 @@
               <dd>
                 <span class="NotEntered"></span>
               </dd>
+              <dt>
+                <i>innerException</i>
+              </dt>
+              <dd>
+                <span class="NotEntered"></span>
+              </dd>
             </dl>
           </blockquote>
           <h2 class="Section">Remarks</h2>
-          <div class="SectionBox" id="C:CoreTweet.ParsingException(System.String,System.String):Remarks">
+          <div class="SectionBox" id="C:CoreTweet.ParsingException(System.String,System.String,System.Exception):Remarks">
             <span class="NotEntered"></span>
           </div>
           <h2 class="Section">Requirements</h2>
-          <div class="SectionBox" id="C:CoreTweet.ParsingException(System.String,System.String):Version Information">
-            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5.0</div>
+          <div class="SectionBox" id="C:CoreTweet.ParsingException(System.String,System.String,System.Exception):Version Information">
+            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.7.23841</div>
           <hr size="1" />
         </blockquote>
         <h3 id="P:CoreTweet.ParsingException.Data">Data Property</h3>
         <blockquote id="P:CoreTweet.ParsingException.Data:member">
           <p class="Summary">
-            The data which causes an exception.
+            The JSON which causes an exception.
             </p>
           <h2>Syntax</h2>
           <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>Data</b>  { get; }</div>
           <h4 class="Subsection">Value</h4>
           <blockquote class="SubsectionBox" id="P:CoreTweet.ParsingException.Data:Value">
-            The data.
+            The json.
             </blockquote>
           <h2 class="Section">Remarks</h2>
           <div class="SectionBox" id="P:CoreTweet.ParsingException.Data:Remarks">
@@ -325,7 +331,7 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="P:CoreTweet.ParsingException.Data:Version Information">
-            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.5.0</div>
+            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.7.23841</div>
           <hr size="1" />
         </blockquote>
       </div>
