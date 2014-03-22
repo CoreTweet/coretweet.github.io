@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>CoreTweet.ParsingException</title>
+    <title>CoreTweet.OAuth2</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <style>
       a { text-decoration: none }
@@ -190,147 +190,132 @@
       <a href="../index.html">CoreTweet</a> : <a href="index.html">CoreTweet Namespace</a></div>
     <div class="SideBar">
       <p>
-        <a href="#T:CoreTweet.ParsingException">Overview</a>
+        <a href="#T:CoreTweet.OAuth2">Overview</a>
       </p>
       <p>
-        <a href="#T:CoreTweet.ParsingException:Signature">Signature</a>
+        <a href="#T:CoreTweet.OAuth2:Signature">Signature</a>
       </p>
       <p>
-        <a href="#T:CoreTweet.ParsingException:Docs">Remarks</a>
+        <a href="#T:CoreTweet.OAuth2:Docs">Remarks</a>
       </p>
       <p>
         <a href="#Members">Members</a>
       </p>
       <p>
-        <a href="#T:CoreTweet.ParsingException:Members">Member Details</a>
+        <a href="#T:CoreTweet.OAuth2:Members">Member Details</a>
       </p>
     </div>
-    <h1 class="PageTitle" id="T:CoreTweet.ParsingException">ParsingException  Class</h1>
-    <p class="Summary" id="T:CoreTweet.ParsingException:Summary">
+    <h1 class="PageTitle" id="T:CoreTweet.OAuth2">OAuth2  Class</h1>
+    <p class="Summary" id="T:CoreTweet.OAuth2:Summary">
       <span class="NotEntered"></span>
     </p>
     <div>
       <h2>Syntax</h2>
-      <div class="Signature" id="T:CoreTweet.ParsingException:Signature">public class  <b>ParsingException</b> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Exception">Exception</a></div>
+      <div class="Signature" id="T:CoreTweet.OAuth2:Signature">public static class  <b>OAuth2</b></div>
     </div>
-    <div class="Remarks" id="T:CoreTweet.ParsingException:Docs">
+    <div class="Remarks" id="T:CoreTweet.OAuth2:Docs">
       <h2 class="Section">Remarks</h2>
-      <div class="SectionBox" id="T:CoreTweet.ParsingException:Docs:Remarks">
+      <div class="SectionBox" id="T:CoreTweet.OAuth2:Docs:Remarks">
         <span class="NotEntered"></span>
       </div>
       <h2 class="Section">Requirements</h2>
-      <div class="SectionBox" id="T:CoreTweet.ParsingException:Docs:Version Information">
+      <div class="SectionBox" id="T:CoreTweet.OAuth2:Docs:Version Information">
         <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
       <h2 class="Section" id="Members">Members</h2>
       <div class="SectionBox" id="_Members">
         <p>
 								See Also: Inherited members from
-								<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Exception">Exception</a>.
+								<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a>.
 							</p>
-        <h2 class="Section">Public Constructors</h2>
-        <div class="SectionBox" id="Public Constructors">
+        <h2 class="Section">Public Methods</h2>
+        <div class="SectionBox" id="Public Methods">
           <div class="SubsectionBox">
             <table class="TypeMembers">
               <tr valign="top">
                 <td>
-                  <div>
-                  </div>
+                  <div>static </div>
                 </td>
-                <td>
-                  <div>
-                    <b>
-                      <a href="#C:CoreTweet.ParsingException(System.String,System.String,System.Exception)">ParsingException</a>
-                    </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Exception">Exception</a>)</div>
-                </td>
-                <td>
-                  <span class="NotEntered"></span>
-                </td>
-              </tr>
-            </table>
-          </div>
-        </div>
-        <h2 class="Section">Public Properties</h2>
-        <div class="SectionBox" id="Public Properties">
-          <div class="SubsectionBox">
-            <table class="TypeMembers">
-              <tr valign="top">
-                <td>[read-only]<div></div></td>
-                <td>
+                <td colspan="2">
                   <b>
-                    <a href="#P:CoreTweet.ParsingException.Json">Json</a>
-                  </b>
-                </td>
+                    <a href="#M:CoreTweet.OAuth2.GetToken(System.String,System.String)">GetToken</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="../CoreTweet/OAuth2Token.html">OAuth2Token</a></nobr><blockquote>
+            Gets the OAuth 2 Bearer Token.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
                 <td>
-                  <i>
-                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>
-                  </i>. 
-            The JSON which causes an exception.
-            </td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:CoreTweet.OAuth2.InvalidateToken(CoreTweet.OAuth2Token)">InvalidateToken</a>
+                  </b>(<i>this</i> <a href="../CoreTweet/OAuth2Token.html">OAuth2Token</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a></nobr><blockquote>
+            Invalidates the OAuth 2 Bearer Token.
+            </blockquote></td>
               </tr>
             </table>
           </div>
         </div>
       </div>
     </div>
-    <div class="Members" id="T:CoreTweet.ParsingException:Members">
+    <div class="Members" id="T:CoreTweet.OAuth2:Members">
       <h2 class="Section" id="MemberDetails">Member Details</h2>
       <div class="SectionBox" id="_MemberDetails">
-        <h3 id="C:CoreTweet.ParsingException(System.String,System.String,System.Exception)">ParsingException Constructor</h3>
-        <blockquote id="C:CoreTweet.ParsingException(System.String,System.String,System.Exception):member">
+        <h3 id="M:CoreTweet.OAuth2.GetToken(System.String,System.String)">GetToken Method</h3>
+        <blockquote id="M:CoreTweet.OAuth2.GetToken(System.String,System.String):member">
           <p class="Summary">
-            <span class="NotEntered"></span>
-          </p>
+            Gets the OAuth 2 Bearer Token.
+            </p>
           <h2>Syntax</h2>
-          <div class="Signature">public  <b>ParsingException</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> message, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> data, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Exception">Exception</a> innerException)</div>
+          <div class="Signature">public static <a href="../CoreTweet/OAuth2Token.html">OAuth2Token</a> <b>GetToken</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> consumerKey, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> consumerSecret)</div>
           <h4 class="Subsection">Parameters</h4>
-          <blockquote class="SubsectionBox" id="C:CoreTweet.ParsingException(System.String,System.String,System.Exception):Parameters">
+          <blockquote class="SubsectionBox" id="M:CoreTweet.OAuth2.GetToken(System.String,System.String):Parameters">
             <dl>
               <dt>
-                <i>message</i>
+                <i>consumerKey</i>
               </dt>
-              <dd>
-                <span class="NotEntered"></span>
-              </dd>
+              <dd>Consumer key.</dd>
               <dt>
-                <i>data</i>
+                <i>consumerSecret</i>
               </dt>
-              <dd>
-                <span class="NotEntered"></span>
-              </dd>
-              <dt>
-                <i>innerException</i>
-              </dt>
-              <dd>
-                <span class="NotEntered"></span>
-              </dd>
+              <dd>Consumer secret.</dd>
             </dl>
           </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.OAuth2.GetToken(System.String,System.String):Returns">The tokens.</blockquote>
           <h2 class="Section">Remarks</h2>
-          <div class="SectionBox" id="C:CoreTweet.ParsingException(System.String,System.String,System.Exception):Remarks">
+          <div class="SectionBox" id="M:CoreTweet.OAuth2.GetToken(System.String,System.String):Remarks">
             <span class="NotEntered"></span>
           </div>
           <h2 class="Section">Requirements</h2>
-          <div class="SectionBox" id="C:CoreTweet.ParsingException(System.String,System.String,System.Exception):Version Information">
+          <div class="SectionBox" id="M:CoreTweet.OAuth2.GetToken(System.String,System.String):Version Information">
             <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
           <hr size="1" />
         </blockquote>
-        <h3 id="P:CoreTweet.ParsingException.Json">Json Property</h3>
-        <blockquote id="P:CoreTweet.ParsingException.Json:member">
+        <h3 id="M:CoreTweet.OAuth2.InvalidateToken(CoreTweet.OAuth2Token)">InvalidateToken Method</h3>
+        <blockquote id="M:CoreTweet.OAuth2.InvalidateToken(CoreTweet.OAuth2Token):member">
           <p class="Summary">
-            The JSON which causes an exception.
+            Invalidates the OAuth 2 Bearer Token.
             </p>
           <h2>Syntax</h2>
-          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>Json</b>  { get; }</div>
-          <h4 class="Subsection">Value</h4>
-          <blockquote class="SubsectionBox" id="P:CoreTweet.ParsingException.Json:Value">
-            The json.
-            </blockquote>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>InvalidateToken</b> (<i>this</i> <a href="../CoreTweet/OAuth2Token.html">OAuth2Token</a> tokens)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.OAuth2.InvalidateToken(CoreTweet.OAuth2Token):Parameters">
+            <dl>
+              <dt>
+                <i>tokens</i>
+              </dt>
+              <dd>An instance of OAuth2Tokens.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.OAuth2.InvalidateToken(CoreTweet.OAuth2Token):Returns">The invalidated token.</blockquote>
           <h2 class="Section">Remarks</h2>
-          <div class="SectionBox" id="P:CoreTweet.ParsingException.Json:Remarks">
+          <div class="SectionBox" id="M:CoreTweet.OAuth2.InvalidateToken(CoreTweet.OAuth2Token):Remarks">
             <span class="NotEntered"></span>
           </div>
           <h2 class="Section">Requirements</h2>
-          <div class="SectionBox" id="P:CoreTweet.ParsingException.Json:Version Information">
+          <div class="SectionBox" id="M:CoreTweet.OAuth2.InvalidateToken(CoreTweet.OAuth2Token):Version Information">
             <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
           <hr size="1" />
         </blockquote>

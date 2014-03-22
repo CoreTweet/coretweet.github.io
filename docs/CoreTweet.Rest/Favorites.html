@@ -209,7 +209,7 @@
     <p class="Summary" id="T:CoreTweet.Rest.Favorites:Summary">GET/POST favorites</p>
     <div>
       <h2>Syntax</h2>
-      <div class="Signature" id="T:CoreTweet.Rest.Favorites:Signature">public class  <b>Favorites</b> : <a href="../CoreTweet.Core/TokenIncluded.html">CoreTweet.Core.TokenIncluded</a></div>
+      <div class="Signature" id="T:CoreTweet.Rest.Favorites:Signature">public class  <b>Favorites</b> : <a href="../CoreTweet.Core/ApiProviderBase.html">CoreTweet.Core.ApiProviderBase</a></div>
     </div>
     <div class="Remarks" id="T:CoreTweet.Rest.Favorites:Docs">
       <h2 class="Section">Remarks</h2>
@@ -218,12 +218,12 @@
       </div>
       <h2 class="Section">Requirements</h2>
       <div class="SectionBox" id="T:CoreTweet.Rest.Favorites:Docs:Version Information">
-        <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.7.23841</div>
+        <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
       <h2 class="Section" id="Members">Members</h2>
       <div class="SectionBox" id="_Members">
         <p>
 								See Also: Inherited members from
-								<a href="../CoreTweet.Core/TokenIncluded.html">CoreTweet.Core.TokenIncluded</a>.
+								<a href="../CoreTweet.Core/ApiProviderBase.html">CoreTweet.Core.ApiProviderBase</a>.
 							</p>
         <h2 class="Section">Public Properties</h2>
         <div class="SectionBox" id="Public Properties">
@@ -233,13 +233,15 @@
                 <td>[read-only]<div></div></td>
                 <td>
                   <b>
-                    <a href="../CoreTweet.Core/TokenIncluded.html#P:CoreTweet.Core.TokenIncluded.IncludedTokens">IncludedTokens</a>
+                    <a href="../CoreTweet.Core/ApiProviderBase.html#P:CoreTweet.Core.ApiProviderBase.IncludedTokens">IncludedTokens</a>
                   </b>
                 </td>
                 <td>
                   <i>
-                    <a href="../CoreTweet/Tokens.html">CoreTweet.Tokens</a>
-                  </i>. <span class="NotEntered"></span> (<i>Inherited from <a href="../CoreTweet.Core/TokenIncluded.html">CoreTweet.Core.TokenIncluded</a>.</i>)</td>
+                    <a href="../CoreTweet.Core/TokensBase.html">CoreTweet.Core.TokensBase</a>
+                  </i>. 
+            Gets the tokens being used in this instance.
+             (<i>Inherited from <a href="../CoreTweet.Core/ApiProviderBase.html">CoreTweet.Core.ApiProviderBase</a>.</i>)</td>
               </tr>
             </table>
           </div>
@@ -255,15 +257,15 @@
                 </td>
                 <td>
                   <b>
-                    <a href="../CoreTweet.Core/TokenIncluded.html#P:CoreTweet.Core.TokenIncluded.Tokens">Tokens</a>
+                    <a href="../CoreTweet.Core/ApiProviderBase.html#P:CoreTweet.Core.ApiProviderBase.Tokens">Tokens</a>
                   </b>
                 </td>
                 <td>
                   <i>
-                    <a href="../CoreTweet/Tokens.html">CoreTweet.Tokens</a>
+                    <a href="../CoreTweet.Core/TokensBase.html">CoreTweet.Core.TokensBase</a>
                   </i>. 
             Gets or sets the oauth tokens.
-             (<i>Inherited from <a href="../CoreTweet.Core/TokenIncluded.html">CoreTweet.Core.TokenIncluded</a>.</i>)</td>
+             (<i>Inherited from <a href="../CoreTweet.Core/ApiProviderBase.html">CoreTweet.Core.ApiProviderBase</a>.</i>)</td>
               </tr>
             </table>
           </div>
@@ -279,8 +281,38 @@
                 </td>
                 <td colspan="2">
                   <b>
+                    <a href="#M:CoreTweet.Rest.Favorites.Create(System.Collections.Generic.IDictionary{System.String,System.Object})">Create</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IDictionary`2">IDictionary&lt;string, object&gt;</a>)<nobr> : <a href="../CoreTweet/Status.html">CoreTweet.Status</a></nobr><blockquote><span class="NotEntered"></span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
                     <a href="#M:CoreTweet.Rest.Favorites.Create(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">Create</a>
                   </b>(<b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;string, object&gt;&gt;</a>[])<nobr> : <a href="../CoreTweet/Status.html">CoreTweet.Status</a></nobr><blockquote><p>Favorites the status specified in the ID parameter as the authenticating user. Returns the favorite status when successful.</p><p>Avaliable parameters: </p><p><i>long id (required)</i> : The numerical ID of the desired status.</p><p><i>bool include_entities (optional)</i> : The entities node will be omitted when set to false.</p></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:CoreTweet.Rest.Favorites.Create``1(``0)">Create&lt;T&gt;</a>
+                  </b>(<i title="To be added.">T</i>)<nobr> : <a href="../CoreTweet/Status.html">CoreTweet.Status</a></nobr><blockquote><span class="NotEntered"></span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:CoreTweet.Rest.Favorites.Destroy(System.Collections.Generic.IDictionary{System.String,System.Object})">Destroy</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IDictionary`2">IDictionary&lt;string, object&gt;</a>)<nobr> : <a href="../CoreTweet/Status.html">CoreTweet.Status</a></nobr><blockquote><span class="NotEntered"></span></blockquote></td>
               </tr>
               <tr valign="top">
                 <td>
@@ -299,8 +331,38 @@
                 </td>
                 <td colspan="2">
                   <b>
+                    <a href="#M:CoreTweet.Rest.Favorites.Destroy``1(``0)">Destroy&lt;T&gt;</a>
+                  </b>(<i title="To be added.">T</i>)<nobr> : <a href="../CoreTweet/Status.html">CoreTweet.Status</a></nobr><blockquote><span class="NotEntered"></span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:CoreTweet.Rest.Favorites.List(System.Collections.Generic.IDictionary{System.String,System.Object})">List</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IDictionary`2">IDictionary&lt;string, object&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;CoreTweet.Status&gt;</a></nobr><blockquote><span class="NotEntered"></span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
                     <a href="#M:CoreTweet.Rest.Favorites.List(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">List</a>
                   </b>(<b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;string, object&gt;&gt;</a>[])<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;CoreTweet.Status&gt;</a></nobr><blockquote><p>Returns the 20 most recent Tweets favorited by the authenticating or specified user.</p><p>Avaliable parameters: </p><p><i>long id (optional)</i> : The ID of the user for whom to return results for.</p><p><i>string screen_name (optonal)</i> : The screen name of the user for whom to return results for.</p><p><i>int count (optional)</i> : Specifies the number of records to retrieve. Must be less than or equal to 200. Defaults to 20.</p><p><i>int since_id (optional)</i> : Returns results with an ID greater than (that is, more recent than) the specified ID. There are limits to the number of Tweets which can be accessed through the API. If the limit of Tweets has occured since the since_id, the since_id will be forced to the oldest ID available.</p><p><i>int max_id (optional)</i> : Returns results with an ID less than (that is, older than) or equal to the specified ID.</p><p><i>bool include_entities (optional)</i> : The entities node will be omitted when set to false.</p></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:CoreTweet.Rest.Favorites.List``1(``0)">List&lt;T&gt;</a>
+                  </b>(<i title="To be added.">T</i>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;CoreTweet.Status&gt;</a></nobr><blockquote><span class="NotEntered"></span></blockquote></td>
               </tr>
             </table>
           </div>
@@ -310,6 +372,37 @@
     <div class="Members" id="T:CoreTweet.Rest.Favorites:Members">
       <h2 class="Section" id="MemberDetails">Member Details</h2>
       <div class="SectionBox" id="_MemberDetails">
+        <h3 id="M:CoreTweet.Rest.Favorites.Create(System.Collections.Generic.IDictionary{System.String,System.Object})">Create Method</h3>
+        <blockquote id="M:CoreTweet.Rest.Favorites.Create(System.Collections.Generic.IDictionary{System.String,System.Object}):member">
+          <p class="Summary">
+            <span class="NotEntered"></span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../CoreTweet/Status.html">CoreTweet.Status</a> <b>Create</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IDictionary`2">IDictionary&lt;string, object&gt;</a> parameters)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Favorites.Create(System.Collections.Generic.IDictionary{System.String,System.Object}):Parameters">
+            <dl>
+              <dt>
+                <i>parameters</i>
+              </dt>
+              <dd>
+                <span class="NotEntered"></span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Favorites.Create(System.Collections.Generic.IDictionary{System.String,System.Object}):Returns">
+            <span class="NotEntered"></span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Favorites.Create(System.Collections.Generic.IDictionary{System.String,System.Object}):Remarks">
+            <span class="NotEntered"></span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Favorites.Create(System.Collections.Generic.IDictionary{System.String,System.Object}):Version Information">
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
+          <hr size="1" />
+        </blockquote>
         <h3 id="M:CoreTweet.Rest.Favorites.Create(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">Create Method</h3>
         <blockquote id="M:CoreTweet.Rest.Favorites.Create(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):member">
           <p class="Summary">
@@ -341,7 +434,80 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:CoreTweet.Rest.Favorites.Create(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Version Information">
-            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.7.23841</div>
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:CoreTweet.Rest.Favorites.Create``1(``0)">Create&lt;T&gt; Generic Method</h3>
+        <blockquote id="M:CoreTweet.Rest.Favorites.Create``1(``0):member">
+          <p class="Summary">
+            <span class="NotEntered"></span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../CoreTweet/Status.html">CoreTweet.Status</a> <b>Create&lt;T&gt;</b> (<i title="To be added.">T</i> parameters)</div>
+          <h4 class="Subsection">Type Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Favorites.Create``1(``0):Type Parameters">
+            <dl>
+              <dt>
+                <i>T</i>
+              </dt>
+              <dd>
+                <span class="NotEntered"></span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Favorites.Create``1(``0):Parameters">
+            <dl>
+              <dt>
+                <i>parameters</i>
+              </dt>
+              <dd>
+                <span class="NotEntered"></span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Favorites.Create``1(``0):Returns">
+            <span class="NotEntered"></span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Favorites.Create``1(``0):Remarks">
+            <span class="NotEntered"></span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Favorites.Create``1(``0):Version Information">
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:CoreTweet.Rest.Favorites.Destroy(System.Collections.Generic.IDictionary{System.String,System.Object})">Destroy Method</h3>
+        <blockquote id="M:CoreTweet.Rest.Favorites.Destroy(System.Collections.Generic.IDictionary{System.String,System.Object}):member">
+          <p class="Summary">
+            <span class="NotEntered"></span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../CoreTweet/Status.html">CoreTweet.Status</a> <b>Destroy</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IDictionary`2">IDictionary&lt;string, object&gt;</a> parameters)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Favorites.Destroy(System.Collections.Generic.IDictionary{System.String,System.Object}):Parameters">
+            <dl>
+              <dt>
+                <i>parameters</i>
+              </dt>
+              <dd>
+                <span class="NotEntered"></span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Favorites.Destroy(System.Collections.Generic.IDictionary{System.String,System.Object}):Returns">
+            <span class="NotEntered"></span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Favorites.Destroy(System.Collections.Generic.IDictionary{System.String,System.Object}):Remarks">
+            <span class="NotEntered"></span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Favorites.Destroy(System.Collections.Generic.IDictionary{System.String,System.Object}):Version Information">
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:CoreTweet.Rest.Favorites.Destroy(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">Destroy Method</h3>
@@ -376,7 +542,80 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:CoreTweet.Rest.Favorites.Destroy(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Version Information">
-            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.7.23841</div>
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:CoreTweet.Rest.Favorites.Destroy``1(``0)">Destroy&lt;T&gt; Generic Method</h3>
+        <blockquote id="M:CoreTweet.Rest.Favorites.Destroy``1(``0):member">
+          <p class="Summary">
+            <span class="NotEntered"></span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../CoreTweet/Status.html">CoreTweet.Status</a> <b>Destroy&lt;T&gt;</b> (<i title="To be added.">T</i> parameters)</div>
+          <h4 class="Subsection">Type Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Favorites.Destroy``1(``0):Type Parameters">
+            <dl>
+              <dt>
+                <i>T</i>
+              </dt>
+              <dd>
+                <span class="NotEntered"></span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Favorites.Destroy``1(``0):Parameters">
+            <dl>
+              <dt>
+                <i>parameters</i>
+              </dt>
+              <dd>
+                <span class="NotEntered"></span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Favorites.Destroy``1(``0):Returns">
+            <span class="NotEntered"></span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Favorites.Destroy``1(``0):Remarks">
+            <span class="NotEntered"></span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Favorites.Destroy``1(``0):Version Information">
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:CoreTweet.Rest.Favorites.List(System.Collections.Generic.IDictionary{System.String,System.Object})">List Method</h3>
+        <blockquote id="M:CoreTweet.Rest.Favorites.List(System.Collections.Generic.IDictionary{System.String,System.Object}):member">
+          <p class="Summary">
+            <span class="NotEntered"></span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;CoreTweet.Status&gt;</a> <b>List</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IDictionary`2">IDictionary&lt;string, object&gt;</a> parameters)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Favorites.List(System.Collections.Generic.IDictionary{System.String,System.Object}):Parameters">
+            <dl>
+              <dt>
+                <i>parameters</i>
+              </dt>
+              <dd>
+                <span class="NotEntered"></span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Favorites.List(System.Collections.Generic.IDictionary{System.String,System.Object}):Returns">
+            <span class="NotEntered"></span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Favorites.List(System.Collections.Generic.IDictionary{System.String,System.Object}):Remarks">
+            <span class="NotEntered"></span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Favorites.List(System.Collections.Generic.IDictionary{System.String,System.Object}):Version Information">
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:CoreTweet.Rest.Favorites.List(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">List Method</h3>
@@ -418,7 +657,49 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:CoreTweet.Rest.Favorites.List(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Version Information">
-            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.7.23841</div>
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:CoreTweet.Rest.Favorites.List``1(``0)">List&lt;T&gt; Generic Method</h3>
+        <blockquote id="M:CoreTweet.Rest.Favorites.List``1(``0):member">
+          <p class="Summary">
+            <span class="NotEntered"></span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;CoreTweet.Status&gt;</a> <b>List&lt;T&gt;</b> (<i title="To be added.">T</i> parameters)</div>
+          <h4 class="Subsection">Type Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Favorites.List``1(``0):Type Parameters">
+            <dl>
+              <dt>
+                <i>T</i>
+              </dt>
+              <dd>
+                <span class="NotEntered"></span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Favorites.List``1(``0):Parameters">
+            <dl>
+              <dt>
+                <i>parameters</i>
+              </dt>
+              <dd>
+                <span class="NotEntered"></span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Favorites.List``1(``0):Returns">
+            <span class="NotEntered"></span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Favorites.List``1(``0):Remarks">
+            <span class="NotEntered"></span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Favorites.List``1(``0):Version Information">
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
           <hr size="1" />
         </blockquote>
       </div>

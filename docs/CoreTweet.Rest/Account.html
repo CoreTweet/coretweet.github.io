@@ -209,7 +209,7 @@
     <p class="Summary" id="T:CoreTweet.Rest.Account:Summary">GET/POST account</p>
     <div>
       <h2>Syntax</h2>
-      <div class="Signature" id="T:CoreTweet.Rest.Account:Signature">public class  <b>Account</b> : <a href="../CoreTweet.Core/TokenIncluded.html">CoreTweet.Core.TokenIncluded</a></div>
+      <div class="Signature" id="T:CoreTweet.Rest.Account:Signature">public class  <b>Account</b> : <a href="../CoreTweet.Core/ApiProviderBase.html">CoreTweet.Core.ApiProviderBase</a></div>
     </div>
     <div class="Remarks" id="T:CoreTweet.Rest.Account:Docs">
       <h2 class="Section">Remarks</h2>
@@ -218,12 +218,12 @@
       </div>
       <h2 class="Section">Requirements</h2>
       <div class="SectionBox" id="T:CoreTweet.Rest.Account:Docs:Version Information">
-        <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.7.23841</div>
+        <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
       <h2 class="Section" id="Members">Members</h2>
       <div class="SectionBox" id="_Members">
         <p>
 								See Also: Inherited members from
-								<a href="../CoreTweet.Core/TokenIncluded.html">CoreTweet.Core.TokenIncluded</a>.
+								<a href="../CoreTweet.Core/ApiProviderBase.html">CoreTweet.Core.ApiProviderBase</a>.
 							</p>
         <h2 class="Section">Public Properties</h2>
         <div class="SectionBox" id="Public Properties">
@@ -233,13 +233,15 @@
                 <td>[read-only]<div></div></td>
                 <td>
                   <b>
-                    <a href="../CoreTweet.Core/TokenIncluded.html#P:CoreTweet.Core.TokenIncluded.IncludedTokens">IncludedTokens</a>
+                    <a href="../CoreTweet.Core/ApiProviderBase.html#P:CoreTweet.Core.ApiProviderBase.IncludedTokens">IncludedTokens</a>
                   </b>
                 </td>
                 <td>
                   <i>
-                    <a href="../CoreTweet/Tokens.html">CoreTweet.Tokens</a>
-                  </i>. <span class="NotEntered"></span> (<i>Inherited from <a href="../CoreTweet.Core/TokenIncluded.html">CoreTweet.Core.TokenIncluded</a>.</i>)</td>
+                    <a href="../CoreTweet.Core/TokensBase.html">CoreTweet.Core.TokensBase</a>
+                  </i>. 
+            Gets the tokens being used in this instance.
+             (<i>Inherited from <a href="../CoreTweet.Core/ApiProviderBase.html">CoreTweet.Core.ApiProviderBase</a>.</i>)</td>
               </tr>
             </table>
           </div>
@@ -255,15 +257,15 @@
                 </td>
                 <td>
                   <b>
-                    <a href="../CoreTweet.Core/TokenIncluded.html#P:CoreTweet.Core.TokenIncluded.Tokens">Tokens</a>
+                    <a href="../CoreTweet.Core/ApiProviderBase.html#P:CoreTweet.Core.ApiProviderBase.Tokens">Tokens</a>
                   </b>
                 </td>
                 <td>
                   <i>
-                    <a href="../CoreTweet/Tokens.html">CoreTweet.Tokens</a>
+                    <a href="../CoreTweet.Core/TokensBase.html">CoreTweet.Core.TokensBase</a>
                   </i>. 
             Gets or sets the oauth tokens.
-             (<i>Inherited from <a href="../CoreTweet.Core/TokenIncluded.html">CoreTweet.Core.TokenIncluded</a>.</i>)</td>
+             (<i>Inherited from <a href="../CoreTweet.Core/ApiProviderBase.html">CoreTweet.Core.ApiProviderBase</a>.</i>)</td>
               </tr>
             </table>
           </div>
@@ -279,8 +281,8 @@
                 </td>
                 <td colspan="2">
                   <b>
-                    <a href="#M:CoreTweet.Rest.Account.RateLimitStatus(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">RateLimitStatus</a>
-                  </b>(<b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;string, object&gt;&gt;</a>[])<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IDictionary`2">IDictionary&lt;string, IDictionary&lt;string, CoreTweet.RateLimit&gt;&gt;</a></nobr><blockquote><span class="NotEntered"></span></blockquote></td>
+                    <a href="#M:CoreTweet.Rest.Account.Settings(System.Collections.Generic.IDictionary{System.String,System.Object})">Settings</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IDictionary`2">IDictionary&lt;string, object&gt;</a>)<nobr> : <a href="../CoreTweet/Setting.html">CoreTweet.Setting</a></nobr><blockquote><span class="NotEntered"></span></blockquote></td>
               </tr>
               <tr valign="top">
                 <td>
@@ -299,8 +301,48 @@
                 </td>
                 <td colspan="2">
                   <b>
+                    <a href="#M:CoreTweet.Rest.Account.Settings``1(``0)">Settings&lt;T&gt;</a>
+                  </b>(<i title="To be added.">T</i>)<nobr> : <a href="../CoreTweet/Setting.html">CoreTweet.Setting</a></nobr><blockquote><span class="NotEntered"></span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:CoreTweet.Rest.Account.UpdateDeliveryService(System.Collections.Generic.IDictionary{System.String,System.Object})">UpdateDeliveryService</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IDictionary`2">IDictionary&lt;string, object&gt;</a>)<blockquote><span class="NotEntered"></span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
                     <a href="#M:CoreTweet.Rest.Account.UpdateDeliveryService(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">UpdateDeliveryService</a>
                   </b>(<b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;string, object&gt;&gt;</a>[])<blockquote><p>Sets which device Twitter delivers updates to for the authenticating user. Sending none as the device parameter will disable SMS updates.</p><p>Avaliable parameters: </p><p><i>string device (required)</i> : Must be one of: sms, none.</p><p><i>bool include_entities (optional)</i> : When set to true, each tweet will include a node called "entities,". This node offers a variety of metadata about the tweet in a discreet structure, including: user_mentions, urls, and hashtags. While entities are opt-in on timelines at present, they will be made a default component of output in the future. See Tweet Entities for more detail on entities.</p></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:CoreTweet.Rest.Account.UpdateDeliveryService``1(``0)">UpdateDeliveryService&lt;T&gt;</a>
+                  </b>(<i title="To be added.">T</i>)<blockquote><span class="NotEntered"></span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:CoreTweet.Rest.Account.UpdateProfile(System.Collections.Generic.IDictionary{System.String,System.Object})">UpdateProfile</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IDictionary`2">IDictionary&lt;string, object&gt;</a>)<nobr> : <a href="../CoreTweet/User.html">CoreTweet.User</a></nobr><blockquote><span class="NotEntered"></span></blockquote></td>
               </tr>
               <tr valign="top">
                 <td>
@@ -319,8 +361,48 @@
                 </td>
                 <td colspan="2">
                   <b>
+                    <a href="#M:CoreTweet.Rest.Account.UpdateProfile``1(``0)">UpdateProfile&lt;T&gt;</a>
+                  </b>(<i title="To be added.">T</i>)<nobr> : <a href="../CoreTweet/User.html">CoreTweet.User</a></nobr><blockquote><span class="NotEntered"></span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:CoreTweet.Rest.Account.UpdateProfileBackgroundImage(System.Collections.Generic.IDictionary{System.String,System.Object})">UpdateProfileBackgroundImage</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IDictionary`2">IDictionary&lt;string, object&gt;</a>)<nobr> : <a href="../CoreTweet/User.html">CoreTweet.User</a></nobr><blockquote><span class="NotEntered"></span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
                     <a href="#M:CoreTweet.Rest.Account.UpdateProfileBackgroundImage(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">UpdateProfileBackgroundImage</a>
-                  </b>(<b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;string, object&gt;&gt;</a>[])<nobr> : <a href="../CoreTweet/User.html">CoreTweet.User</a></nobr><blockquote><p>Updates the authenticating user's profile background image. This method can also be used to enable or disable the profile background image.</p><p>Although each parameter is marked as optional, at least one of image, tile or use must be provided when making this request.</p><p>Avaliable parameters: </p><p><i>string image (optional)</i> : The background image for the profile, base64-encoded. Must be a valid GIF, JPG, or PNG image of less than 800 kilobytes in size. Images with width larger than 2048 pixels will be forcibly scaled down. The image must be provided as raw multipart data, not a URL.</p><p><i>bool tile (optional)</i> : Whether or not to tile the background image. If set to true, t or 1 the background image will be displayed tiled. The image will not be tiled otherwise.</p><p><i>bool include_entities (optional)</i> : The entities node will not be included when set to false.</p><p><i>bool skip_status (optional)</i> : When set to true, statuses will not be included in the returned user objects.</p><p><i>bool use (optional)</i> : Determines whether to display the profile background image or not. When set to true, the background image will be displayed if an image is being uploaded with the request, or has been uploaded previously. An error will be returned if you try to use a background image when one is not being uploaded or does not exist. If this parameter is defined but set to anything other than true, the background image will stop being used.</p></blockquote></td>
+                  </b>(<b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;string, object&gt;&gt;</a>[])<nobr> : <a href="../CoreTweet/User.html">CoreTweet.User</a></nobr><blockquote><span class="NotEntered"></span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:CoreTweet.Rest.Account.UpdateProfileBackgroundImage``1(``0)">UpdateProfileBackgroundImage&lt;T&gt;</a>
+                  </b>(<i title="To be added.">T</i>)<nobr> : <a href="../CoreTweet/User.html">CoreTweet.User</a></nobr><blockquote><span class="NotEntered"></span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:CoreTweet.Rest.Account.UpdateProfileBanner(System.Collections.Generic.IDictionary{System.String,System.Object})">UpdateProfileBanner</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IDictionary`2">IDictionary&lt;string, object&gt;</a>)<blockquote><span class="NotEntered"></span></blockquote></td>
               </tr>
               <tr valign="top">
                 <td>
@@ -330,7 +412,27 @@
                 <td colspan="2">
                   <b>
                     <a href="#M:CoreTweet.Rest.Account.UpdateProfileBanner(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">UpdateProfileBanner</a>
-                  </b>(<b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;string, object&gt;&gt;</a>[])<blockquote><p>Uploads a profile banner on behalf of the authenticating user. For best results, upload an image that is exactly 1252px by 626px and smaller than 5MB. Images will be resized for a number of display options. Users with an uploaded profile banner will have a profile_banner_url node in their Users objects. More information about sizing variations can be found in User Profile Images and Banners and GET users/profile_banner.</p><p>Profile banner images are processed asynchronously. The profile_banner_url and its variant sizes will not necessary be available directly after upload.</p><p>Avaliable parameters: </p><p><i>string banner (required)</i> : The Base64-encoded or raw image data being uploaded as the user's new profile banner.</p><p><i>string width (optional)</i> : The width of the preferred section of the image being uploaded in pixels. Use with height, offset_left, and offset_top to select the desired region of the image to use.</p><p><i>string height (optional)</i> : The height of the preferred section of the image being uploaded in pixels. Use with width, offset_left, and offset_top to select the desired region of the image to use.</p><p><i>string offset_left (optional)</i> : The number of pixels by which to offset the uploaded image from the left. Use with height, width, and offset_top to select the desired region of the image to use.</p><p><i>string offset_top (optional)</i> : The number of pixels by which to offset the uploaded image from the top. Use with height, width, and offset_left to select the desired region of the image to use.</p></blockquote></td>
+                  </b>(<b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;string, object&gt;&gt;</a>[])<blockquote><span class="NotEntered"></span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:CoreTweet.Rest.Account.UpdateProfileBanner``1(``0)">UpdateProfileBanner&lt;T&gt;</a>
+                  </b>(<i title="To be added.">T</i>)<blockquote><span class="NotEntered"></span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:CoreTweet.Rest.Account.UpdateProfileColors(System.Collections.Generic.IDictionary{System.String,System.Object})">UpdateProfileColors</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IDictionary`2">IDictionary&lt;string, object&gt;</a>)<nobr> : <a href="../CoreTweet/User.html">CoreTweet.User</a></nobr><blockquote><span class="NotEntered"></span></blockquote></td>
               </tr>
               <tr valign="top">
                 <td>
@@ -349,8 +451,48 @@
                 </td>
                 <td colspan="2">
                   <b>
+                    <a href="#M:CoreTweet.Rest.Account.UpdateProfileColors``1(``0)">UpdateProfileColors&lt;T&gt;</a>
+                  </b>(<i title="To be added.">T</i>)<nobr> : <a href="../CoreTweet/User.html">CoreTweet.User</a></nobr><blockquote><span class="NotEntered"></span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:CoreTweet.Rest.Account.UpdateProfileImage(System.Collections.Generic.IDictionary{System.String,System.Object})">UpdateProfileImage</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IDictionary`2">IDictionary&lt;string, object&gt;</a>)<nobr> : <a href="../CoreTweet/User.html">CoreTweet.User</a></nobr><blockquote><span class="NotEntered"></span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
                     <a href="#M:CoreTweet.Rest.Account.UpdateProfileImage(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">UpdateProfileImage</a>
-                  </b>(<b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;string, object&gt;&gt;</a>[])<nobr> : <a href="../CoreTweet/User.html">CoreTweet.User</a></nobr><blockquote><p>Updates the authenticating user's profile image. Note that this method expects raw multipart data, not a URL to an image.</p><p>This method asynchronously processes the uploaded file before updating the user's profile image URL. You can either update your local cache the next time you request the user's information, or, at least 5 seconds after uploading the image, ask for the updated URL using GET users/show.</p><p>Avaliable parameters: </p><p><i>string image (required)</i> : The avatar image for the profile, base64-encoded. Must be a valid GIF, JPG, or PNG image of less than 700 kilobytes in size. Images with width larger than 500 pixels will be scaled down. Animated GIFs will be converted to a static GIF of the first frame, removing the animation.</p><p><i>bool include_entities (optional)</i> : The entities node will not be included when set to false.</p><p><i>bool skip_status (optional)</i> : When set to true, statuses will not be included in the returned user objects.</p></blockquote></td>
+                  </b>(<b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;string, object&gt;&gt;</a>[])<nobr> : <a href="../CoreTweet/User.html">CoreTweet.User</a></nobr><blockquote><span class="NotEntered"></span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:CoreTweet.Rest.Account.UpdateProfileImage``1(``0)">UpdateProfileImage&lt;T&gt;</a>
+                  </b>(<i title="To be added.">T</i>)<nobr> : <a href="../CoreTweet/User.html">CoreTweet.User</a></nobr><blockquote><span class="NotEntered"></span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:CoreTweet.Rest.Account.VerifyCredentials(System.Collections.Generic.IDictionary{System.String,System.Object})">VerifyCredentials</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IDictionary`2">IDictionary&lt;string, object&gt;</a>)<nobr> : <a href="../CoreTweet/User.html">CoreTweet.User</a></nobr><blockquote><span class="NotEntered"></span></blockquote></td>
               </tr>
               <tr valign="top">
                 <td>
@@ -368,6 +510,16 @@
             </p><p><i>bool skip_status (optional)</i> : When set to true, statuses will not be included in the returned user objects.
             </p></blockquote></td>
               </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:CoreTweet.Rest.Account.VerifyCredentials``1(``0)">VerifyCredentials&lt;T&gt;</a>
+                  </b>(<i title="To be added.">T</i>)<nobr> : <a href="../CoreTweet/User.html">CoreTweet.User</a></nobr><blockquote><span class="NotEntered"></span></blockquote></td>
+              </tr>
             </table>
           </div>
         </div>
@@ -376,15 +528,15 @@
     <div class="Members" id="T:CoreTweet.Rest.Account:Members">
       <h2 class="Section" id="MemberDetails">Member Details</h2>
       <div class="SectionBox" id="_MemberDetails">
-        <h3 id="M:CoreTweet.Rest.Account.RateLimitStatus(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">RateLimitStatus Method</h3>
-        <blockquote id="M:CoreTweet.Rest.Account.RateLimitStatus(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):member">
+        <h3 id="M:CoreTweet.Rest.Account.Settings(System.Collections.Generic.IDictionary{System.String,System.Object})">Settings Method</h3>
+        <blockquote id="M:CoreTweet.Rest.Account.Settings(System.Collections.Generic.IDictionary{System.String,System.Object}):member">
           <p class="Summary">
             <span class="NotEntered"></span>
           </p>
           <h2>Syntax</h2>
-          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IDictionary`2">IDictionary&lt;string, IDictionary&lt;string, CoreTweet.RateLimit&gt;&gt;</a> <b>RateLimitStatus</b> (<b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;string, object&gt;&gt;</a>[] parameters)</div>
+          <div class="Signature">public <a href="../CoreTweet/Setting.html">CoreTweet.Setting</a> <b>Settings</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IDictionary`2">IDictionary&lt;string, object&gt;</a> parameters)</div>
           <h4 class="Subsection">Parameters</h4>
-          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Account.RateLimitStatus(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Parameters">
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Account.Settings(System.Collections.Generic.IDictionary{System.String,System.Object}):Parameters">
             <dl>
               <dt>
                 <i>parameters</i>
@@ -395,16 +547,16 @@
             </dl>
           </blockquote>
           <h4 class="Subsection">Returns</h4>
-          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Account.RateLimitStatus(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Returns">
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Account.Settings(System.Collections.Generic.IDictionary{System.String,System.Object}):Returns">
             <span class="NotEntered"></span>
           </blockquote>
           <h2 class="Section">Remarks</h2>
-          <div class="SectionBox" id="M:CoreTweet.Rest.Account.RateLimitStatus(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Remarks">
+          <div class="SectionBox" id="M:CoreTweet.Rest.Account.Settings(System.Collections.Generic.IDictionary{System.String,System.Object}):Remarks">
             <span class="NotEntered"></span>
           </div>
           <h2 class="Section">Requirements</h2>
-          <div class="SectionBox" id="M:CoreTweet.Rest.Account.RateLimitStatus(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Version Information">
-            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.7.23841</div>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Account.Settings(System.Collections.Generic.IDictionary{System.String,System.Object}):Version Information">
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:CoreTweet.Rest.Account.Settings(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">Settings Method</h3>
@@ -448,7 +600,76 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:CoreTweet.Rest.Account.Settings(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Version Information">
-            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.7.23841</div>
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:CoreTweet.Rest.Account.Settings``1(``0)">Settings&lt;T&gt; Generic Method</h3>
+        <blockquote id="M:CoreTweet.Rest.Account.Settings``1(``0):member">
+          <p class="Summary">
+            <span class="NotEntered"></span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../CoreTweet/Setting.html">CoreTweet.Setting</a> <b>Settings&lt;T&gt;</b> (<i title="To be added.">T</i> parameters)</div>
+          <h4 class="Subsection">Type Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Account.Settings``1(``0):Type Parameters">
+            <dl>
+              <dt>
+                <i>T</i>
+              </dt>
+              <dd>
+                <span class="NotEntered"></span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Account.Settings``1(``0):Parameters">
+            <dl>
+              <dt>
+                <i>parameters</i>
+              </dt>
+              <dd>
+                <span class="NotEntered"></span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Account.Settings``1(``0):Returns">
+            <span class="NotEntered"></span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Account.Settings``1(``0):Remarks">
+            <span class="NotEntered"></span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Account.Settings``1(``0):Version Information">
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:CoreTweet.Rest.Account.UpdateDeliveryService(System.Collections.Generic.IDictionary{System.String,System.Object})">UpdateDeliveryService Method</h3>
+        <blockquote id="M:CoreTweet.Rest.Account.UpdateDeliveryService(System.Collections.Generic.IDictionary{System.String,System.Object}):member">
+          <p class="Summary">
+            <span class="NotEntered"></span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>UpdateDeliveryService</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IDictionary`2">IDictionary&lt;string, object&gt;</a> parameters)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Account.UpdateDeliveryService(System.Collections.Generic.IDictionary{System.String,System.Object}):Parameters">
+            <dl>
+              <dt>
+                <i>parameters</i>
+              </dt>
+              <dd>
+                <span class="NotEntered"></span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Account.UpdateDeliveryService(System.Collections.Generic.IDictionary{System.String,System.Object}):Remarks">
+            <span class="NotEntered"></span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Account.UpdateDeliveryService(System.Collections.Generic.IDictionary{System.String,System.Object}):Version Information">
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:CoreTweet.Rest.Account.UpdateDeliveryService(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">UpdateDeliveryService Method</h3>
@@ -480,7 +701,76 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:CoreTweet.Rest.Account.UpdateDeliveryService(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Version Information">
-            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.7.23841</div>
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:CoreTweet.Rest.Account.UpdateDeliveryService``1(``0)">UpdateDeliveryService&lt;T&gt; Generic Method</h3>
+        <blockquote id="M:CoreTweet.Rest.Account.UpdateDeliveryService``1(``0):member">
+          <p class="Summary">
+            <span class="NotEntered"></span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>UpdateDeliveryService&lt;T&gt;</b> (<i title="To be added.">T</i> parameters)</div>
+          <h4 class="Subsection">Type Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Account.UpdateDeliveryService``1(``0):Type Parameters">
+            <dl>
+              <dt>
+                <i>T</i>
+              </dt>
+              <dd>
+                <span class="NotEntered"></span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Account.UpdateDeliveryService``1(``0):Parameters">
+            <dl>
+              <dt>
+                <i>parameters</i>
+              </dt>
+              <dd>
+                <span class="NotEntered"></span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Account.UpdateDeliveryService``1(``0):Remarks">
+            <span class="NotEntered"></span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Account.UpdateDeliveryService``1(``0):Version Information">
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:CoreTweet.Rest.Account.UpdateProfile(System.Collections.Generic.IDictionary{System.String,System.Object})">UpdateProfile Method</h3>
+        <blockquote id="M:CoreTweet.Rest.Account.UpdateProfile(System.Collections.Generic.IDictionary{System.String,System.Object}):member">
+          <p class="Summary">
+            <span class="NotEntered"></span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../CoreTweet/User.html">CoreTweet.User</a> <b>UpdateProfile</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IDictionary`2">IDictionary&lt;string, object&gt;</a> parameters)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Account.UpdateProfile(System.Collections.Generic.IDictionary{System.String,System.Object}):Parameters">
+            <dl>
+              <dt>
+                <i>parameters</i>
+              </dt>
+              <dd>
+                <span class="NotEntered"></span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Account.UpdateProfile(System.Collections.Generic.IDictionary{System.String,System.Object}):Returns">
+            <span class="NotEntered"></span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Account.UpdateProfile(System.Collections.Generic.IDictionary{System.String,System.Object}):Remarks">
+            <span class="NotEntered"></span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Account.UpdateProfile(System.Collections.Generic.IDictionary{System.String,System.Object}):Version Information">
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:CoreTweet.Rest.Account.UpdateProfile(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">UpdateProfile Method</h3>
@@ -524,25 +814,86 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:CoreTweet.Rest.Account.UpdateProfile(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Version Information">
-            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.7.23841</div>
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:CoreTweet.Rest.Account.UpdateProfile``1(``0)">UpdateProfile&lt;T&gt; Generic Method</h3>
+        <blockquote id="M:CoreTweet.Rest.Account.UpdateProfile``1(``0):member">
+          <p class="Summary">
+            <span class="NotEntered"></span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../CoreTweet/User.html">CoreTweet.User</a> <b>UpdateProfile&lt;T&gt;</b> (<i title="To be added.">T</i> parameters)</div>
+          <h4 class="Subsection">Type Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Account.UpdateProfile``1(``0):Type Parameters">
+            <dl>
+              <dt>
+                <i>T</i>
+              </dt>
+              <dd>
+                <span class="NotEntered"></span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Account.UpdateProfile``1(``0):Parameters">
+            <dl>
+              <dt>
+                <i>parameters</i>
+              </dt>
+              <dd>
+                <span class="NotEntered"></span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Account.UpdateProfile``1(``0):Returns">
+            <span class="NotEntered"></span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Account.UpdateProfile``1(``0):Remarks">
+            <span class="NotEntered"></span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Account.UpdateProfile``1(``0):Version Information">
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:CoreTweet.Rest.Account.UpdateProfileBackgroundImage(System.Collections.Generic.IDictionary{System.String,System.Object})">UpdateProfileBackgroundImage Method</h3>
+        <blockquote id="M:CoreTweet.Rest.Account.UpdateProfileBackgroundImage(System.Collections.Generic.IDictionary{System.String,System.Object}):member">
+          <p class="Summary">
+            <span class="NotEntered"></span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../CoreTweet/User.html">CoreTweet.User</a> <b>UpdateProfileBackgroundImage</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IDictionary`2">IDictionary&lt;string, object&gt;</a> parameters)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Account.UpdateProfileBackgroundImage(System.Collections.Generic.IDictionary{System.String,System.Object}):Parameters">
+            <dl>
+              <dt>
+                <i>parameters</i>
+              </dt>
+              <dd>
+                <span class="NotEntered"></span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Account.UpdateProfileBackgroundImage(System.Collections.Generic.IDictionary{System.String,System.Object}):Returns">
+            <span class="NotEntered"></span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Account.UpdateProfileBackgroundImage(System.Collections.Generic.IDictionary{System.String,System.Object}):Remarks">
+            <span class="NotEntered"></span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Account.UpdateProfileBackgroundImage(System.Collections.Generic.IDictionary{System.String,System.Object}):Version Information">
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:CoreTweet.Rest.Account.UpdateProfileBackgroundImage(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">UpdateProfileBackgroundImage Method</h3>
         <blockquote id="M:CoreTweet.Rest.Account.UpdateProfileBackgroundImage(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):member">
           <p class="Summary">
-            <p>Updates the authenticating user's profile background image. This method can also be used to enable or disable the profile background image.</p>
-            <p>Although each parameter is marked as optional, at least one of image, tile or use must be provided when making this request.</p>
-            <p>Avaliable parameters: </p>
-            <p>
-              <i>string image (optional)</i> : The background image for the profile, base64-encoded. Must be a valid GIF, JPG, or PNG image of less than 800 kilobytes in size. Images with width larger than 2048 pixels will be forcibly scaled down. The image must be provided as raw multipart data, not a URL.</p>
-            <p>
-              <i>bool tile (optional)</i> : Whether or not to tile the background image. If set to true, t or 1 the background image will be displayed tiled. The image will not be tiled otherwise.</p>
-            <p>
-              <i>bool include_entities (optional)</i> : The entities node will not be included when set to false.</p>
-            <p>
-              <i>bool skip_status (optional)</i> : When set to true, statuses will not be included in the returned user objects.</p>
-            <p>
-              <i>bool use (optional)</i> : Determines whether to display the profile background image or not. When set to true, the background image will be displayed if an image is being uploaded with the request, or has been uploaded previously. An error will be returned if you try to use a background image when one is not being uploaded or does not exist. If this parameter is defined but set to anything other than true, the background image will stop being used.</p>
+            <span class="NotEntered"></span>
           </p>
           <h2>Syntax</h2>
           <div class="Signature">public <a href="../CoreTweet/User.html">CoreTweet.User</a> <b>UpdateProfileBackgroundImage</b> (<b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;string, object&gt;&gt;</a>[] parameters)</div>
@@ -553,37 +904,96 @@
                 <i>parameters</i>
               </dt>
               <dd>
-            Parameters.
-            </dd>
+                <span class="NotEntered"></span>
+              </dd>
             </dl>
           </blockquote>
           <h4 class="Subsection">Returns</h4>
-          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Account.UpdateProfileBackgroundImage(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Returns">The profile.</blockquote>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Account.UpdateProfileBackgroundImage(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Returns">
+            <span class="NotEntered"></span>
+          </blockquote>
           <h2 class="Section">Remarks</h2>
           <div class="SectionBox" id="M:CoreTweet.Rest.Account.UpdateProfileBackgroundImage(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Remarks">
             <span class="NotEntered"></span>
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:CoreTweet.Rest.Account.UpdateProfileBackgroundImage(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Version Information">
-            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.7.23841</div>
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:CoreTweet.Rest.Account.UpdateProfileBackgroundImage``1(``0)">UpdateProfileBackgroundImage&lt;T&gt; Generic Method</h3>
+        <blockquote id="M:CoreTweet.Rest.Account.UpdateProfileBackgroundImage``1(``0):member">
+          <p class="Summary">
+            <span class="NotEntered"></span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../CoreTweet/User.html">CoreTweet.User</a> <b>UpdateProfileBackgroundImage&lt;T&gt;</b> (<i title="To be added.">T</i> parameters)</div>
+          <h4 class="Subsection">Type Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Account.UpdateProfileBackgroundImage``1(``0):Type Parameters">
+            <dl>
+              <dt>
+                <i>T</i>
+              </dt>
+              <dd>
+                <span class="NotEntered"></span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Account.UpdateProfileBackgroundImage``1(``0):Parameters">
+            <dl>
+              <dt>
+                <i>parameters</i>
+              </dt>
+              <dd>
+                <span class="NotEntered"></span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Account.UpdateProfileBackgroundImage``1(``0):Returns">
+            <span class="NotEntered"></span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Account.UpdateProfileBackgroundImage``1(``0):Remarks">
+            <span class="NotEntered"></span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Account.UpdateProfileBackgroundImage``1(``0):Version Information">
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:CoreTweet.Rest.Account.UpdateProfileBanner(System.Collections.Generic.IDictionary{System.String,System.Object})">UpdateProfileBanner Method</h3>
+        <blockquote id="M:CoreTweet.Rest.Account.UpdateProfileBanner(System.Collections.Generic.IDictionary{System.String,System.Object}):member">
+          <p class="Summary">
+            <span class="NotEntered"></span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>UpdateProfileBanner</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IDictionary`2">IDictionary&lt;string, object&gt;</a> parameters)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Account.UpdateProfileBanner(System.Collections.Generic.IDictionary{System.String,System.Object}):Parameters">
+            <dl>
+              <dt>
+                <i>parameters</i>
+              </dt>
+              <dd>
+                <span class="NotEntered"></span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Account.UpdateProfileBanner(System.Collections.Generic.IDictionary{System.String,System.Object}):Remarks">
+            <span class="NotEntered"></span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Account.UpdateProfileBanner(System.Collections.Generic.IDictionary{System.String,System.Object}):Version Information">
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:CoreTweet.Rest.Account.UpdateProfileBanner(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">UpdateProfileBanner Method</h3>
         <blockquote id="M:CoreTweet.Rest.Account.UpdateProfileBanner(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):member">
           <p class="Summary">
-            <p>Uploads a profile banner on behalf of the authenticating user. For best results, upload an image that is exactly 1252px by 626px and smaller than 5MB. Images will be resized for a number of display options. Users with an uploaded profile banner will have a profile_banner_url node in their Users objects. More information about sizing variations can be found in User Profile Images and Banners and GET users/profile_banner.</p>
-            <p>Profile banner images are processed asynchronously. The profile_banner_url and its variant sizes will not necessary be available directly after upload.</p>
-            <p>Avaliable parameters: </p>
-            <p>
-              <i>string banner (required)</i> : The Base64-encoded or raw image data being uploaded as the user's new profile banner.</p>
-            <p>
-              <i>string width (optional)</i> : The width of the preferred section of the image being uploaded in pixels. Use with height, offset_left, and offset_top to select the desired region of the image to use.</p>
-            <p>
-              <i>string height (optional)</i> : The height of the preferred section of the image being uploaded in pixels. Use with width, offset_left, and offset_top to select the desired region of the image to use.</p>
-            <p>
-              <i>string offset_left (optional)</i> : The number of pixels by which to offset the uploaded image from the left. Use with height, width, and offset_top to select the desired region of the image to use.</p>
-            <p>
-              <i>string offset_top (optional)</i> : The number of pixels by which to offset the uploaded image from the top. Use with height, width, and offset_left to select the desired region of the image to use.</p>
+            <span class="NotEntered"></span>
           </p>
           <h2>Syntax</h2>
           <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>UpdateProfileBanner</b> (<b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;string, object&gt;&gt;</a>[] parameters)</div>
@@ -594,8 +1004,8 @@
                 <i>parameters</i>
               </dt>
               <dd>
-            Parameters.
-            </dd>
+                <span class="NotEntered"></span>
+              </dd>
             </dl>
           </blockquote>
           <h2 class="Section">Remarks</h2>
@@ -604,7 +1014,76 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:CoreTweet.Rest.Account.UpdateProfileBanner(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Version Information">
-            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.7.23841</div>
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:CoreTweet.Rest.Account.UpdateProfileBanner``1(``0)">UpdateProfileBanner&lt;T&gt; Generic Method</h3>
+        <blockquote id="M:CoreTweet.Rest.Account.UpdateProfileBanner``1(``0):member">
+          <p class="Summary">
+            <span class="NotEntered"></span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>UpdateProfileBanner&lt;T&gt;</b> (<i title="To be added.">T</i> parameters)</div>
+          <h4 class="Subsection">Type Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Account.UpdateProfileBanner``1(``0):Type Parameters">
+            <dl>
+              <dt>
+                <i>T</i>
+              </dt>
+              <dd>
+                <span class="NotEntered"></span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Account.UpdateProfileBanner``1(``0):Parameters">
+            <dl>
+              <dt>
+                <i>parameters</i>
+              </dt>
+              <dd>
+                <span class="NotEntered"></span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Account.UpdateProfileBanner``1(``0):Remarks">
+            <span class="NotEntered"></span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Account.UpdateProfileBanner``1(``0):Version Information">
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:CoreTweet.Rest.Account.UpdateProfileColors(System.Collections.Generic.IDictionary{System.String,System.Object})">UpdateProfileColors Method</h3>
+        <blockquote id="M:CoreTweet.Rest.Account.UpdateProfileColors(System.Collections.Generic.IDictionary{System.String,System.Object}):member">
+          <p class="Summary">
+            <span class="NotEntered"></span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../CoreTweet/User.html">CoreTweet.User</a> <b>UpdateProfileColors</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IDictionary`2">IDictionary&lt;string, object&gt;</a> parameters)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Account.UpdateProfileColors(System.Collections.Generic.IDictionary{System.String,System.Object}):Parameters">
+            <dl>
+              <dt>
+                <i>parameters</i>
+              </dt>
+              <dd>
+                <span class="NotEntered"></span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Account.UpdateProfileColors(System.Collections.Generic.IDictionary{System.String,System.Object}):Returns">
+            <span class="NotEntered"></span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Account.UpdateProfileColors(System.Collections.Generic.IDictionary{System.String,System.Object}):Remarks">
+            <span class="NotEntered"></span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Account.UpdateProfileColors(System.Collections.Generic.IDictionary{System.String,System.Object}):Version Information">
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:CoreTweet.Rest.Account.UpdateProfileColors(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">UpdateProfileColors Method</h3>
@@ -648,21 +1127,86 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:CoreTweet.Rest.Account.UpdateProfileColors(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Version Information">
-            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.7.23841</div>
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:CoreTweet.Rest.Account.UpdateProfileColors``1(``0)">UpdateProfileColors&lt;T&gt; Generic Method</h3>
+        <blockquote id="M:CoreTweet.Rest.Account.UpdateProfileColors``1(``0):member">
+          <p class="Summary">
+            <span class="NotEntered"></span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../CoreTweet/User.html">CoreTweet.User</a> <b>UpdateProfileColors&lt;T&gt;</b> (<i title="To be added.">T</i> parameters)</div>
+          <h4 class="Subsection">Type Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Account.UpdateProfileColors``1(``0):Type Parameters">
+            <dl>
+              <dt>
+                <i>T</i>
+              </dt>
+              <dd>
+                <span class="NotEntered"></span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Account.UpdateProfileColors``1(``0):Parameters">
+            <dl>
+              <dt>
+                <i>parameters</i>
+              </dt>
+              <dd>
+                <span class="NotEntered"></span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Account.UpdateProfileColors``1(``0):Returns">
+            <span class="NotEntered"></span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Account.UpdateProfileColors``1(``0):Remarks">
+            <span class="NotEntered"></span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Account.UpdateProfileColors``1(``0):Version Information">
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:CoreTweet.Rest.Account.UpdateProfileImage(System.Collections.Generic.IDictionary{System.String,System.Object})">UpdateProfileImage Method</h3>
+        <blockquote id="M:CoreTweet.Rest.Account.UpdateProfileImage(System.Collections.Generic.IDictionary{System.String,System.Object}):member">
+          <p class="Summary">
+            <span class="NotEntered"></span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../CoreTweet/User.html">CoreTweet.User</a> <b>UpdateProfileImage</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IDictionary`2">IDictionary&lt;string, object&gt;</a> parameters)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Account.UpdateProfileImage(System.Collections.Generic.IDictionary{System.String,System.Object}):Parameters">
+            <dl>
+              <dt>
+                <i>parameters</i>
+              </dt>
+              <dd>
+                <span class="NotEntered"></span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Account.UpdateProfileImage(System.Collections.Generic.IDictionary{System.String,System.Object}):Returns">
+            <span class="NotEntered"></span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Account.UpdateProfileImage(System.Collections.Generic.IDictionary{System.String,System.Object}):Remarks">
+            <span class="NotEntered"></span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Account.UpdateProfileImage(System.Collections.Generic.IDictionary{System.String,System.Object}):Version Information">
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:CoreTweet.Rest.Account.UpdateProfileImage(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">UpdateProfileImage Method</h3>
         <blockquote id="M:CoreTweet.Rest.Account.UpdateProfileImage(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):member">
           <p class="Summary">
-            <p>Updates the authenticating user's profile image. Note that this method expects raw multipart data, not a URL to an image.</p>
-            <p>This method asynchronously processes the uploaded file before updating the user's profile image URL. You can either update your local cache the next time you request the user's information, or, at least 5 seconds after uploading the image, ask for the updated URL using GET users/show.</p>
-            <p>Avaliable parameters: </p>
-            <p>
-              <i>string image (required)</i> : The avatar image for the profile, base64-encoded. Must be a valid GIF, JPG, or PNG image of less than 700 kilobytes in size. Images with width larger than 500 pixels will be scaled down. Animated GIFs will be converted to a static GIF of the first frame, removing the animation.</p>
-            <p>
-              <i>bool include_entities (optional)</i> : The entities node will not be included when set to false.</p>
-            <p>
-              <i>bool skip_status (optional)</i> : When set to true, statuses will not be included in the returned user objects.</p>
+            <span class="NotEntered"></span>
           </p>
           <h2>Syntax</h2>
           <div class="Signature">public <a href="../CoreTweet/User.html">CoreTweet.User</a> <b>UpdateProfileImage</b> (<b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;string, object&gt;&gt;</a>[] parameters)</div>
@@ -673,19 +1217,94 @@
                 <i>parameters</i>
               </dt>
               <dd>
-            Parameters.
-            </dd>
+                <span class="NotEntered"></span>
+              </dd>
             </dl>
           </blockquote>
           <h4 class="Subsection">Returns</h4>
-          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Account.UpdateProfileImage(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Returns">The profile.</blockquote>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Account.UpdateProfileImage(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Returns">
+            <span class="NotEntered"></span>
+          </blockquote>
           <h2 class="Section">Remarks</h2>
           <div class="SectionBox" id="M:CoreTweet.Rest.Account.UpdateProfileImage(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Remarks">
             <span class="NotEntered"></span>
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:CoreTweet.Rest.Account.UpdateProfileImage(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Version Information">
-            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.7.23841</div>
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:CoreTweet.Rest.Account.UpdateProfileImage``1(``0)">UpdateProfileImage&lt;T&gt; Generic Method</h3>
+        <blockquote id="M:CoreTweet.Rest.Account.UpdateProfileImage``1(``0):member">
+          <p class="Summary">
+            <span class="NotEntered"></span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../CoreTweet/User.html">CoreTweet.User</a> <b>UpdateProfileImage&lt;T&gt;</b> (<i title="To be added.">T</i> parameters)</div>
+          <h4 class="Subsection">Type Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Account.UpdateProfileImage``1(``0):Type Parameters">
+            <dl>
+              <dt>
+                <i>T</i>
+              </dt>
+              <dd>
+                <span class="NotEntered"></span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Account.UpdateProfileImage``1(``0):Parameters">
+            <dl>
+              <dt>
+                <i>parameters</i>
+              </dt>
+              <dd>
+                <span class="NotEntered"></span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Account.UpdateProfileImage``1(``0):Returns">
+            <span class="NotEntered"></span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Account.UpdateProfileImage``1(``0):Remarks">
+            <span class="NotEntered"></span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Account.UpdateProfileImage``1(``0):Version Information">
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:CoreTweet.Rest.Account.VerifyCredentials(System.Collections.Generic.IDictionary{System.String,System.Object})">VerifyCredentials Method</h3>
+        <blockquote id="M:CoreTweet.Rest.Account.VerifyCredentials(System.Collections.Generic.IDictionary{System.String,System.Object}):member">
+          <p class="Summary">
+            <span class="NotEntered"></span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../CoreTweet/User.html">CoreTweet.User</a> <b>VerifyCredentials</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IDictionary`2">IDictionary&lt;string, object&gt;</a> parameters)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Account.VerifyCredentials(System.Collections.Generic.IDictionary{System.String,System.Object}):Parameters">
+            <dl>
+              <dt>
+                <i>parameters</i>
+              </dt>
+              <dd>
+                <span class="NotEntered"></span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Account.VerifyCredentials(System.Collections.Generic.IDictionary{System.String,System.Object}):Returns">
+            <span class="NotEntered"></span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Account.VerifyCredentials(System.Collections.Generic.IDictionary{System.String,System.Object}):Remarks">
+            <span class="NotEntered"></span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Account.VerifyCredentials(System.Collections.Generic.IDictionary{System.String,System.Object}):Version Information">
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:CoreTweet.Rest.Account.VerifyCredentials(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">VerifyCredentials Method</h3>
@@ -729,7 +1348,49 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:CoreTweet.Rest.Account.VerifyCredentials(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Version Information">
-            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.7.23841</div>
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:CoreTweet.Rest.Account.VerifyCredentials``1(``0)">VerifyCredentials&lt;T&gt; Generic Method</h3>
+        <blockquote id="M:CoreTweet.Rest.Account.VerifyCredentials``1(``0):member">
+          <p class="Summary">
+            <span class="NotEntered"></span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../CoreTweet/User.html">CoreTweet.User</a> <b>VerifyCredentials&lt;T&gt;</b> (<i title="To be added.">T</i> parameters)</div>
+          <h4 class="Subsection">Type Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Account.VerifyCredentials``1(``0):Type Parameters">
+            <dl>
+              <dt>
+                <i>T</i>
+              </dt>
+              <dd>
+                <span class="NotEntered"></span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Account.VerifyCredentials``1(``0):Parameters">
+            <dl>
+              <dt>
+                <i>parameters</i>
+              </dt>
+              <dd>
+                <span class="NotEntered"></span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Account.VerifyCredentials``1(``0):Returns">
+            <span class="NotEntered"></span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Account.VerifyCredentials``1(``0):Remarks">
+            <span class="NotEntered"></span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Account.VerifyCredentials``1(``0):Version Information">
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
           <hr size="1" />
         </blockquote>
       </div>

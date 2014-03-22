@@ -209,7 +209,7 @@
     <p class="Summary" id="T:CoreTweet.Rest.Lists:Summary">GET/POST lists</p>
     <div>
       <h2>Syntax</h2>
-      <div class="Signature" id="T:CoreTweet.Rest.Lists:Signature">public class  <b>Lists</b> : <a href="../CoreTweet.Core/TokenIncluded.html">CoreTweet.Core.TokenIncluded</a></div>
+      <div class="Signature" id="T:CoreTweet.Rest.Lists:Signature">public class  <b>Lists</b> : <a href="../CoreTweet.Core/ApiProviderBase.html">CoreTweet.Core.ApiProviderBase</a></div>
     </div>
     <div class="Remarks" id="T:CoreTweet.Rest.Lists:Docs">
       <h2 class="Section">Remarks</h2>
@@ -218,12 +218,12 @@
       </div>
       <h2 class="Section">Requirements</h2>
       <div class="SectionBox" id="T:CoreTweet.Rest.Lists:Docs:Version Information">
-        <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.7.23841</div>
+        <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
       <h2 class="Section" id="Members">Members</h2>
       <div class="SectionBox" id="_Members">
         <p>
 								See Also: Inherited members from
-								<a href="../CoreTweet.Core/TokenIncluded.html">CoreTweet.Core.TokenIncluded</a>.
+								<a href="../CoreTweet.Core/ApiProviderBase.html">CoreTweet.Core.ApiProviderBase</a>.
 							</p>
         <h2 class="Section">Public Properties</h2>
         <div class="SectionBox" id="Public Properties">
@@ -233,13 +233,15 @@
                 <td>[read-only]<div></div></td>
                 <td>
                   <b>
-                    <a href="../CoreTweet.Core/TokenIncluded.html#P:CoreTweet.Core.TokenIncluded.IncludedTokens">IncludedTokens</a>
+                    <a href="../CoreTweet.Core/ApiProviderBase.html#P:CoreTweet.Core.ApiProviderBase.IncludedTokens">IncludedTokens</a>
                   </b>
                 </td>
                 <td>
                   <i>
-                    <a href="../CoreTweet/Tokens.html">CoreTweet.Tokens</a>
-                  </i>. <span class="NotEntered"></span> (<i>Inherited from <a href="../CoreTweet.Core/TokenIncluded.html">CoreTweet.Core.TokenIncluded</a>.</i>)</td>
+                    <a href="../CoreTweet.Core/TokensBase.html">CoreTweet.Core.TokensBase</a>
+                  </i>. 
+            Gets the tokens being used in this instance.
+             (<i>Inherited from <a href="../CoreTweet.Core/ApiProviderBase.html">CoreTweet.Core.ApiProviderBase</a>.</i>)</td>
               </tr>
               <tr valign="top">
                 <td>[read-only]<div></div></td>
@@ -279,15 +281,15 @@
                 </td>
                 <td>
                   <b>
-                    <a href="../CoreTweet.Core/TokenIncluded.html#P:CoreTweet.Core.TokenIncluded.Tokens">Tokens</a>
+                    <a href="../CoreTweet.Core/ApiProviderBase.html#P:CoreTweet.Core.ApiProviderBase.Tokens">Tokens</a>
                   </b>
                 </td>
                 <td>
                   <i>
-                    <a href="../CoreTweet/Tokens.html">CoreTweet.Tokens</a>
+                    <a href="../CoreTweet.Core/TokensBase.html">CoreTweet.Core.TokensBase</a>
                   </i>. 
             Gets or sets the oauth tokens.
-             (<i>Inherited from <a href="../CoreTweet.Core/TokenIncluded.html">CoreTweet.Core.TokenIncluded</a>.</i>)</td>
+             (<i>Inherited from <a href="../CoreTweet.Core/ApiProviderBase.html">CoreTweet.Core.ApiProviderBase</a>.</i>)</td>
               </tr>
             </table>
           </div>
@@ -303,8 +305,38 @@
                 </td>
                 <td colspan="2">
                   <b>
+                    <a href="#M:CoreTweet.Rest.Lists.Create(System.Collections.Generic.IDictionary{System.String,System.Object})">Create</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IDictionary`2">IDictionary&lt;string, object&gt;</a>)<nobr> : <a href="../CoreTweet/List.html">CoreTweet.List</a></nobr><blockquote><span class="NotEntered"></span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
                     <a href="#M:CoreTweet.Rest.Lists.Create(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">Create</a>
                   </b>(<b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;string, object&gt;&gt;</a>[])<nobr> : <a href="../CoreTweet/List.html">CoreTweet.List</a></nobr><blockquote><p>Creates a new list for the authenticated user. Note that you can't create more than 20 lists per account.</p><p>Avaliable parameters: </p><p><i>string name (required)</i> : The name for the list.A list's name must start with a letter and can consist only of 25 or fewer letters, numbers, "-", or "_" characters.</p><p><i>string mode (optional)</i> : Whether your list is public or private. Values can be public or private. If no mode is specified the list will be public.</p><p><i>string description (optional)</i> : The description to give the list.</p></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:CoreTweet.Rest.Lists.Create``1(``0)">Create&lt;T&gt;</a>
+                  </b>(<i title="To be added.">T</i>)<nobr> : <a href="../CoreTweet/List.html">CoreTweet.List</a></nobr><blockquote><span class="NotEntered"></span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:CoreTweet.Rest.Lists.Destroy(System.Collections.Generic.IDictionary{System.String,System.Object})">Destroy</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IDictionary`2">IDictionary&lt;string, object&gt;</a>)<nobr> : <a href="../CoreTweet/List.html">CoreTweet.List</a></nobr><blockquote><span class="NotEntered"></span></blockquote></td>
               </tr>
               <tr valign="top">
                 <td>
@@ -323,8 +355,48 @@
                 </td>
                 <td colspan="2">
                   <b>
+                    <a href="#M:CoreTweet.Rest.Lists.Destroy``1(``0)">Destroy&lt;T&gt;</a>
+                  </b>(<i title="To be added.">T</i>)<nobr> : <a href="../CoreTweet/List.html">CoreTweet.List</a></nobr><blockquote><span class="NotEntered"></span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:CoreTweet.Rest.Lists.EnumerateMemberships(CoreTweet.EnumerateMode,System.Collections.Generic.IDictionary{System.String,System.Object})">EnumerateMemberships</a>
+                  </b>(<a href="../CoreTweet/EnumerateMode.html">CoreTweet.EnumerateMode</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IDictionary`2">IDictionary&lt;string, object&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;CoreTweet.User&gt;</a></nobr><blockquote><span class="NotEntered"></span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
                     <a href="#M:CoreTweet.Rest.Lists.EnumerateMemberships(CoreTweet.EnumerateMode,System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">EnumerateMemberships</a>
                   </b>(<a href="../CoreTweet/EnumerateMode.html">CoreTweet.EnumerateMode</a>, <b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;string, object&gt;&gt;</a>[])<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;CoreTweet.User&gt;</a></nobr><blockquote><p>Returns the lists the specified user has been added to. If user_id or screen_name are not provided the memberships for the authenticating user are returned.</p><a href="javascript:alert(&quot;Documentation not found.&quot;)">https://dev.twitter.com/docs/misc/cursoring</a><p>Avaliable parameters: </p><p><i>string sereen_name (optional)</i> : The screen name of the user for whom to return results for. Helpful for disambiguating when a valid screen name is also a user ID.</p><p><i>long user_id (optional)</i> : The ID of the user for whom to return results for. Helpful for disambiguating when a valid user ID is also a valid screen name.</p><p><i>bool filter_to_owned_lists (optional)</i> : When set to true, will return just lists the authenticating user owns, and the user represented by user_id or screen_name is a member of.</p><p><i>long cursor (optional)</i> : The first cursor. If not be specified, enumerating starts from the first page.</p></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:CoreTweet.Rest.Lists.EnumerateMemberships``1(CoreTweet.EnumerateMode,``0)">EnumerateMemberships&lt;T&gt;</a>
+                  </b>(<a href="../CoreTweet/EnumerateMode.html">CoreTweet.EnumerateMode</a>, <i title="To be added.">T</i>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;CoreTweet.User&gt;</a></nobr><blockquote><span class="NotEntered"></span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:CoreTweet.Rest.Lists.EnumerateSubscriptions(CoreTweet.EnumerateMode,System.Collections.Generic.IDictionary{System.String,System.Object})">EnumerateSubscriptions</a>
+                  </b>(<a href="../CoreTweet/EnumerateMode.html">CoreTweet.EnumerateMode</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IDictionary`2">IDictionary&lt;string, object&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;CoreTweet.User&gt;</a></nobr><blockquote><span class="NotEntered"></span></blockquote></td>
               </tr>
               <tr valign="top">
                 <td>
@@ -343,8 +415,48 @@
                 </td>
                 <td colspan="2">
                   <b>
+                    <a href="#M:CoreTweet.Rest.Lists.EnumerateSubscriptions``1(CoreTweet.EnumerateMode,``0)">EnumerateSubscriptions&lt;T&gt;</a>
+                  </b>(<a href="../CoreTweet/EnumerateMode.html">CoreTweet.EnumerateMode</a>, <i title="To be added.">T</i>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;CoreTweet.User&gt;</a></nobr><blockquote><span class="NotEntered"></span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:CoreTweet.Rest.Lists.List(System.Collections.Generic.IDictionary{System.String,System.Object})">List</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IDictionary`2">IDictionary&lt;string, object&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;CoreTweet.List&gt;</a></nobr><blockquote><span class="NotEntered"></span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
                     <a href="#M:CoreTweet.Rest.Lists.List(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">List</a>
                   </b>(<b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;string, object&gt;&gt;</a>[])<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;CoreTweet.List&gt;</a></nobr><blockquote><p>Returns all lists the authenticating or specified user subscribes to, including their own. The user is specified using the user_id or screen_name parameters. If no user is given, the authenticating user is used.</p><p>This method used to be GET lists in version 1.0 of the API and has been renamed for consistency with other call.</p><p>Avaliable parameters: </p><p><i>long user_id (optional)</i> : The ID of the user for whom to return results for. Helpful for disambiguating when a valid user ID is also a valid screen name.</p><p><i>string screen_name (optional)</i> : The screen name of the user for whom to return results for. Helpful for disambiguating when a valid screen name is also a user ID.</p></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:CoreTweet.Rest.Lists.List``1(``0)">List&lt;T&gt;</a>
+                  </b>(<i title="To be added.">T</i>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;CoreTweet.List&gt;</a></nobr><blockquote><span class="NotEntered"></span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:CoreTweet.Rest.Lists.Memberships(System.Collections.Generic.IDictionary{System.String,System.Object})">Memberships</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IDictionary`2">IDictionary&lt;string, object&gt;</a>)<nobr> : <a href="../CoreTweet/Cursored`1.html">CoreTweet.Cursored&lt;CoreTweet.User&gt;</a></nobr><blockquote><span class="NotEntered"></span></blockquote></td>
               </tr>
               <tr valign="top">
                 <td>
@@ -363,8 +475,48 @@
                 </td>
                 <td colspan="2">
                   <b>
+                    <a href="#M:CoreTweet.Rest.Lists.Memberships``1(``0)">Memberships&lt;T&gt;</a>
+                  </b>(<i title="To be added.">T</i>)<nobr> : <a href="../CoreTweet/Cursored`1.html">CoreTweet.Cursored&lt;CoreTweet.User&gt;</a></nobr><blockquote><span class="NotEntered"></span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:CoreTweet.Rest.Lists.Show(System.Collections.Generic.IDictionary{System.String,System.Object})">Show</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IDictionary`2">IDictionary&lt;string, object&gt;</a>)<nobr> : <a href="../CoreTweet/List.html">CoreTweet.List</a></nobr><blockquote><span class="NotEntered"></span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
                     <a href="#M:CoreTweet.Rest.Lists.Show(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">Show</a>
                   </b>(<b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;string, object&gt;&gt;</a>[])<nobr> : <a href="../CoreTweet/List.html">CoreTweet.List</a></nobr><blockquote><p>Returns the specified list. Private lists will only be shown if the authenticated user owns the specified list.</p><p>Note: Either a list_id or a slug is required. If providing a list_slug, an owner_screen_name or owner_id is also required.</p><p>Avaliable parameters: </p><p><i>long list_id (required)</i> : The numerical id of the list.</p><p><i>string slug (required)</i> : You can identify a list by its slug instead of its numerical id. If you decide to do so, note that you'll also have to specify the list owner using the owner_id or owner_screen_name parameters.</p><p><i>string owner_screen_name (optional)</i> : The screen name of the user who owns the list being requested by a slug.</p><p><i>long owner_id (optional)</i> : The user ID of the user who owns the list being requested by a slug.</p></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:CoreTweet.Rest.Lists.Show``1(``0)">Show&lt;T&gt;</a>
+                  </b>(<i title="To be added.">T</i>)<nobr> : <a href="../CoreTweet/List.html">CoreTweet.List</a></nobr><blockquote><span class="NotEntered"></span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:CoreTweet.Rest.Lists.Statuses(System.Collections.Generic.IDictionary{System.String,System.Object})">Statuses</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IDictionary`2">IDictionary&lt;string, object&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;CoreTweet.Status&gt;</a></nobr><blockquote><span class="NotEntered"></span></blockquote></td>
               </tr>
               <tr valign="top">
                 <td>
@@ -383,6 +535,26 @@
                 </td>
                 <td colspan="2">
                   <b>
+                    <a href="#M:CoreTweet.Rest.Lists.Statuses``1(``0)">Statuses&lt;T&gt;</a>
+                  </b>(<i title="To be added.">T</i>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;CoreTweet.Status&gt;</a></nobr><blockquote><span class="NotEntered"></span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:CoreTweet.Rest.Lists.Subscriptions(System.Collections.Generic.IDictionary{System.String,System.Object})">Subscriptions</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IDictionary`2">IDictionary&lt;string, object&gt;</a>)<nobr> : <a href="../CoreTweet/Cursored`1.html">CoreTweet.Cursored&lt;CoreTweet.List&gt;</a></nobr><blockquote><span class="NotEntered"></span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
                     <a href="#M:CoreTweet.Rest.Lists.Subscriptions(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">Subscriptions</a>
                   </b>(<b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;string, object&gt;&gt;</a>[])<nobr> : <a href="../CoreTweet/Cursored`1.html">CoreTweet.Cursored&lt;CoreTweet.List&gt;</a></nobr><blockquote><p>Obtain a collection of the lists the specified user is subscribed to, 20 lists per page by default. Does not include the user's own lists.</p><p>Note: A user_id or screen_name must be provided.</p><p>Avaliable parameters: </p><p><i>long user_id (optional)</i> : The ID of the user for whom to return results for. Helpful for disambiguating when a valid user ID is also a valid screen name.</p><p><i>string screen_name (optional)</i> : The screen name of the user for whom to return results for. Helpful for disambiguating when a valid screen name is also a user ID.</p><p><i>int count (optional)</i> : The amount of results to return per page. Defaults to 20. Maximum of 1,000 when using cursors.</p><p><i>long cursor (optional)</i> : Breaks the results into pages. A single page contains 20 lists. Provide a value of -1 to begin paging. Provide values as returned in the response body's next_cursor and previous_cursor attributes to page back and forth in the list. It is recommended to always use cursors when the method supports them.</p></blockquote></td>
               </tr>
@@ -393,8 +565,38 @@
                 </td>
                 <td colspan="2">
                   <b>
-                    <a href="#M:CoreTweet.Rest.Lists.Update(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}})">Update</a>
-                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;string, object&gt;&gt;</a>)<nobr> : <a href="../CoreTweet/List.html">CoreTweet.List</a></nobr><blockquote><p></p><p>Avaliable parameters: </p></blockquote></td>
+                    <a href="#M:CoreTweet.Rest.Lists.Subscriptions``1(``0)">Subscriptions&lt;T&gt;</a>
+                  </b>(<i title="To be added.">T</i>)<nobr> : <a href="../CoreTweet/Cursored`1.html">CoreTweet.Cursored&lt;CoreTweet.List&gt;</a></nobr><blockquote><span class="NotEntered"></span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:CoreTweet.Rest.Lists.Update(System.Collections.Generic.IDictionary{System.String,System.Object})">Update</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IDictionary`2">IDictionary&lt;string, object&gt;</a>)<nobr> : <a href="../CoreTweet/List.html">CoreTweet.List</a></nobr><blockquote><span class="NotEntered"></span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:CoreTweet.Rest.Lists.Update(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">Update</a>
+                  </b>(<b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;string, object&gt;&gt;</a>[])<nobr> : <a href="../CoreTweet/List.html">CoreTweet.List</a></nobr><blockquote><p>Updates the specified list. The authenticated user must own the list to be able to update it.</p><p>Note: Either a list_id or a slug is required. If providing a list_slug, an owner_screen_name or owner_id is also required.</p><p>Avaliable parameters: </p><p><i>long list_id (required)</i> : The numerical id of the list.</p><p><i>string slug (required)</i> : You can identify a list by its slug instead of its numerical id. If you decide to do so, note that you'll also have to specify the list owner using the owner_id or owner_screen_name parameters.</p><p><i>string name (optional)</i> : The name for the list.</p><p><i>string mode (optional)</i> : Whether your list is public or private. Values can be public or private. If no mode is specified the list will be public.</p><p><i>string description (optional)</i> : The description to give the list.</p><p><i>string owner_screen_name (optional)</i> : The screen name of the user who owns the list being requested by a slug.</p><p><i>long owner_id (optional)</i> : The user ID of the user who owns the list being requested by a slug.</p></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:CoreTweet.Rest.Lists.Update``1(``0)">Update&lt;T&gt;</a>
+                  </b>(<i title="To be added.">T</i>)<nobr> : <a href="../CoreTweet/List.html">CoreTweet.List</a></nobr><blockquote><span class="NotEntered"></span></blockquote></td>
               </tr>
             </table>
           </div>
@@ -404,6 +606,37 @@
     <div class="Members" id="T:CoreTweet.Rest.Lists:Members">
       <h2 class="Section" id="MemberDetails">Member Details</h2>
       <div class="SectionBox" id="_MemberDetails">
+        <h3 id="M:CoreTweet.Rest.Lists.Create(System.Collections.Generic.IDictionary{System.String,System.Object})">Create Method</h3>
+        <blockquote id="M:CoreTweet.Rest.Lists.Create(System.Collections.Generic.IDictionary{System.String,System.Object}):member">
+          <p class="Summary">
+            <span class="NotEntered"></span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../CoreTweet/List.html">CoreTweet.List</a> <b>Create</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IDictionary`2">IDictionary&lt;string, object&gt;</a> parameters)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Lists.Create(System.Collections.Generic.IDictionary{System.String,System.Object}):Parameters">
+            <dl>
+              <dt>
+                <i>parameters</i>
+              </dt>
+              <dd>
+                <span class="NotEntered"></span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Lists.Create(System.Collections.Generic.IDictionary{System.String,System.Object}):Returns">
+            <span class="NotEntered"></span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Lists.Create(System.Collections.Generic.IDictionary{System.String,System.Object}):Remarks">
+            <span class="NotEntered"></span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Lists.Create(System.Collections.Generic.IDictionary{System.String,System.Object}):Version Information">
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
+          <hr size="1" />
+        </blockquote>
         <h3 id="M:CoreTweet.Rest.Lists.Create(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">Create Method</h3>
         <blockquote id="M:CoreTweet.Rest.Lists.Create(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):member">
           <p class="Summary">
@@ -437,7 +670,80 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:CoreTweet.Rest.Lists.Create(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Version Information">
-            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.7.23841</div>
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:CoreTweet.Rest.Lists.Create``1(``0)">Create&lt;T&gt; Generic Method</h3>
+        <blockquote id="M:CoreTweet.Rest.Lists.Create``1(``0):member">
+          <p class="Summary">
+            <span class="NotEntered"></span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../CoreTweet/List.html">CoreTweet.List</a> <b>Create&lt;T&gt;</b> (<i title="To be added.">T</i> parameters)</div>
+          <h4 class="Subsection">Type Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Lists.Create``1(``0):Type Parameters">
+            <dl>
+              <dt>
+                <i>T</i>
+              </dt>
+              <dd>
+                <span class="NotEntered"></span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Lists.Create``1(``0):Parameters">
+            <dl>
+              <dt>
+                <i>parameters</i>
+              </dt>
+              <dd>
+                <span class="NotEntered"></span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Lists.Create``1(``0):Returns">
+            <span class="NotEntered"></span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Lists.Create``1(``0):Remarks">
+            <span class="NotEntered"></span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Lists.Create``1(``0):Version Information">
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:CoreTweet.Rest.Lists.Destroy(System.Collections.Generic.IDictionary{System.String,System.Object})">Destroy Method</h3>
+        <blockquote id="M:CoreTweet.Rest.Lists.Destroy(System.Collections.Generic.IDictionary{System.String,System.Object}):member">
+          <p class="Summary">
+            <span class="NotEntered"></span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../CoreTweet/List.html">CoreTweet.List</a> <b>Destroy</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IDictionary`2">IDictionary&lt;string, object&gt;</a> parameters)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Lists.Destroy(System.Collections.Generic.IDictionary{System.String,System.Object}):Parameters">
+            <dl>
+              <dt>
+                <i>parameters</i>
+              </dt>
+              <dd>
+                <span class="NotEntered"></span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Lists.Destroy(System.Collections.Generic.IDictionary{System.String,System.Object}):Returns">
+            <span class="NotEntered"></span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Lists.Destroy(System.Collections.Generic.IDictionary{System.String,System.Object}):Remarks">
+            <span class="NotEntered"></span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Lists.Destroy(System.Collections.Generic.IDictionary{System.String,System.Object}):Version Information">
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:CoreTweet.Rest.Lists.Destroy(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">Destroy Method</h3>
@@ -470,7 +776,86 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:CoreTweet.Rest.Lists.Destroy(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Version Information">
-            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.7.23841</div>
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:CoreTweet.Rest.Lists.Destroy``1(``0)">Destroy&lt;T&gt; Generic Method</h3>
+        <blockquote id="M:CoreTweet.Rest.Lists.Destroy``1(``0):member">
+          <p class="Summary">
+            <span class="NotEntered"></span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../CoreTweet/List.html">CoreTweet.List</a> <b>Destroy&lt;T&gt;</b> (<i title="To be added.">T</i> parameters)</div>
+          <h4 class="Subsection">Type Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Lists.Destroy``1(``0):Type Parameters">
+            <dl>
+              <dt>
+                <i>T</i>
+              </dt>
+              <dd>
+                <span class="NotEntered"></span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Lists.Destroy``1(``0):Parameters">
+            <dl>
+              <dt>
+                <i>parameters</i>
+              </dt>
+              <dd>
+                <span class="NotEntered"></span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Lists.Destroy``1(``0):Returns">
+            <span class="NotEntered"></span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Lists.Destroy``1(``0):Remarks">
+            <span class="NotEntered"></span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Lists.Destroy``1(``0):Version Information">
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:CoreTweet.Rest.Lists.EnumerateMemberships(CoreTweet.EnumerateMode,System.Collections.Generic.IDictionary{System.String,System.Object})">EnumerateMemberships Method</h3>
+        <blockquote id="M:CoreTweet.Rest.Lists.EnumerateMemberships(CoreTweet.EnumerateMode,System.Collections.Generic.IDictionary{System.String,System.Object}):member">
+          <p class="Summary">
+            <span class="NotEntered"></span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;CoreTweet.User&gt;</a> <b>EnumerateMemberships</b> (<a href="../CoreTweet/EnumerateMode.html">CoreTweet.EnumerateMode</a> mode, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IDictionary`2">IDictionary&lt;string, object&gt;</a> parameters)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Lists.EnumerateMemberships(CoreTweet.EnumerateMode,System.Collections.Generic.IDictionary{System.String,System.Object}):Parameters">
+            <dl>
+              <dt>
+                <i>mode</i>
+              </dt>
+              <dd>
+                <span class="NotEntered"></span>
+              </dd>
+              <dt>
+                <i>parameters</i>
+              </dt>
+              <dd>
+                <span class="NotEntered"></span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Lists.EnumerateMemberships(CoreTweet.EnumerateMode,System.Collections.Generic.IDictionary{System.String,System.Object}):Returns">
+            <span class="NotEntered"></span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Lists.EnumerateMemberships(CoreTweet.EnumerateMode,System.Collections.Generic.IDictionary{System.String,System.Object}):Remarks">
+            <span class="NotEntered"></span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Lists.EnumerateMemberships(CoreTweet.EnumerateMode,System.Collections.Generic.IDictionary{System.String,System.Object}):Version Information">
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:CoreTweet.Rest.Lists.EnumerateMemberships(CoreTweet.EnumerateMode,System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">EnumerateMemberships Method</h3>
@@ -515,7 +900,92 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:CoreTweet.Rest.Lists.EnumerateMemberships(CoreTweet.EnumerateMode,System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Version Information">
-            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.7.23841</div>
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:CoreTweet.Rest.Lists.EnumerateMemberships``1(CoreTweet.EnumerateMode,``0)">EnumerateMemberships&lt;T&gt; Generic Method</h3>
+        <blockquote id="M:CoreTweet.Rest.Lists.EnumerateMemberships``1(CoreTweet.EnumerateMode,``0):member">
+          <p class="Summary">
+            <span class="NotEntered"></span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;CoreTweet.User&gt;</a> <b>EnumerateMemberships&lt;T&gt;</b> (<a href="../CoreTweet/EnumerateMode.html">CoreTweet.EnumerateMode</a> mode, <i title="To be added.">T</i> parameters)</div>
+          <h4 class="Subsection">Type Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Lists.EnumerateMemberships``1(CoreTweet.EnumerateMode,``0):Type Parameters">
+            <dl>
+              <dt>
+                <i>T</i>
+              </dt>
+              <dd>
+                <span class="NotEntered"></span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Lists.EnumerateMemberships``1(CoreTweet.EnumerateMode,``0):Parameters">
+            <dl>
+              <dt>
+                <i>mode</i>
+              </dt>
+              <dd>
+                <span class="NotEntered"></span>
+              </dd>
+              <dt>
+                <i>parameters</i>
+              </dt>
+              <dd>
+                <span class="NotEntered"></span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Lists.EnumerateMemberships``1(CoreTweet.EnumerateMode,``0):Returns">
+            <span class="NotEntered"></span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Lists.EnumerateMemberships``1(CoreTweet.EnumerateMode,``0):Remarks">
+            <span class="NotEntered"></span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Lists.EnumerateMemberships``1(CoreTweet.EnumerateMode,``0):Version Information">
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:CoreTweet.Rest.Lists.EnumerateSubscriptions(CoreTweet.EnumerateMode,System.Collections.Generic.IDictionary{System.String,System.Object})">EnumerateSubscriptions Method</h3>
+        <blockquote id="M:CoreTweet.Rest.Lists.EnumerateSubscriptions(CoreTweet.EnumerateMode,System.Collections.Generic.IDictionary{System.String,System.Object}):member">
+          <p class="Summary">
+            <span class="NotEntered"></span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;CoreTweet.User&gt;</a> <b>EnumerateSubscriptions</b> (<a href="../CoreTweet/EnumerateMode.html">CoreTweet.EnumerateMode</a> mode, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IDictionary`2">IDictionary&lt;string, object&gt;</a> parameters)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Lists.EnumerateSubscriptions(CoreTweet.EnumerateMode,System.Collections.Generic.IDictionary{System.String,System.Object}):Parameters">
+            <dl>
+              <dt>
+                <i>mode</i>
+              </dt>
+              <dd>
+                <span class="NotEntered"></span>
+              </dd>
+              <dt>
+                <i>parameters</i>
+              </dt>
+              <dd>
+                <span class="NotEntered"></span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Lists.EnumerateSubscriptions(CoreTweet.EnumerateMode,System.Collections.Generic.IDictionary{System.String,System.Object}):Returns">
+            <span class="NotEntered"></span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Lists.EnumerateSubscriptions(CoreTweet.EnumerateMode,System.Collections.Generic.IDictionary{System.String,System.Object}):Remarks">
+            <span class="NotEntered"></span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Lists.EnumerateSubscriptions(CoreTweet.EnumerateMode,System.Collections.Generic.IDictionary{System.String,System.Object}):Version Information">
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:CoreTweet.Rest.Lists.EnumerateSubscriptions(CoreTweet.EnumerateMode,System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">EnumerateSubscriptions Method</h3>
@@ -560,7 +1030,86 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:CoreTweet.Rest.Lists.EnumerateSubscriptions(CoreTweet.EnumerateMode,System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Version Information">
-            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.7.23841</div>
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:CoreTweet.Rest.Lists.EnumerateSubscriptions``1(CoreTweet.EnumerateMode,``0)">EnumerateSubscriptions&lt;T&gt; Generic Method</h3>
+        <blockquote id="M:CoreTweet.Rest.Lists.EnumerateSubscriptions``1(CoreTweet.EnumerateMode,``0):member">
+          <p class="Summary">
+            <span class="NotEntered"></span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;CoreTweet.User&gt;</a> <b>EnumerateSubscriptions&lt;T&gt;</b> (<a href="../CoreTweet/EnumerateMode.html">CoreTweet.EnumerateMode</a> mode, <i title="To be added.">T</i> parameters)</div>
+          <h4 class="Subsection">Type Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Lists.EnumerateSubscriptions``1(CoreTweet.EnumerateMode,``0):Type Parameters">
+            <dl>
+              <dt>
+                <i>T</i>
+              </dt>
+              <dd>
+                <span class="NotEntered"></span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Lists.EnumerateSubscriptions``1(CoreTweet.EnumerateMode,``0):Parameters">
+            <dl>
+              <dt>
+                <i>mode</i>
+              </dt>
+              <dd>
+                <span class="NotEntered"></span>
+              </dd>
+              <dt>
+                <i>parameters</i>
+              </dt>
+              <dd>
+                <span class="NotEntered"></span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Lists.EnumerateSubscriptions``1(CoreTweet.EnumerateMode,``0):Returns">
+            <span class="NotEntered"></span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Lists.EnumerateSubscriptions``1(CoreTweet.EnumerateMode,``0):Remarks">
+            <span class="NotEntered"></span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Lists.EnumerateSubscriptions``1(CoreTweet.EnumerateMode,``0):Version Information">
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:CoreTweet.Rest.Lists.List(System.Collections.Generic.IDictionary{System.String,System.Object})">List Method</h3>
+        <blockquote id="M:CoreTweet.Rest.Lists.List(System.Collections.Generic.IDictionary{System.String,System.Object}):member">
+          <p class="Summary">
+            <span class="NotEntered"></span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;CoreTweet.List&gt;</a> <b>List</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IDictionary`2">IDictionary&lt;string, object&gt;</a> parameters)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Lists.List(System.Collections.Generic.IDictionary{System.String,System.Object}):Parameters">
+            <dl>
+              <dt>
+                <i>parameters</i>
+              </dt>
+              <dd>
+                <span class="NotEntered"></span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Lists.List(System.Collections.Generic.IDictionary{System.String,System.Object}):Returns">
+            <span class="NotEntered"></span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Lists.List(System.Collections.Generic.IDictionary{System.String,System.Object}):Remarks">
+            <span class="NotEntered"></span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Lists.List(System.Collections.Generic.IDictionary{System.String,System.Object}):Version Information">
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:CoreTweet.Rest.Lists.List(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">List Method</h3>
@@ -595,7 +1144,49 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:CoreTweet.Rest.Lists.List(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Version Information">
-            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.7.23841</div>
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:CoreTweet.Rest.Lists.List``1(``0)">List&lt;T&gt; Generic Method</h3>
+        <blockquote id="M:CoreTweet.Rest.Lists.List``1(``0):member">
+          <p class="Summary">
+            <span class="NotEntered"></span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;CoreTweet.List&gt;</a> <b>List&lt;T&gt;</b> (<i title="To be added.">T</i> parameters)</div>
+          <h4 class="Subsection">Type Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Lists.List``1(``0):Type Parameters">
+            <dl>
+              <dt>
+                <i>T</i>
+              </dt>
+              <dd>
+                <span class="NotEntered"></span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Lists.List``1(``0):Parameters">
+            <dl>
+              <dt>
+                <i>parameters</i>
+              </dt>
+              <dd>
+                <span class="NotEntered"></span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Lists.List``1(``0):Returns">
+            <span class="NotEntered"></span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Lists.List``1(``0):Remarks">
+            <span class="NotEntered"></span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Lists.List``1(``0):Version Information">
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
           <hr size="1" />
         </blockquote>
         <h3 id="P:CoreTweet.Rest.Lists.Members">Members Property</h3>
@@ -615,7 +1206,38 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="P:CoreTweet.Rest.Lists.Members:Version Information">
-            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.7.23841</div>
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:CoreTweet.Rest.Lists.Memberships(System.Collections.Generic.IDictionary{System.String,System.Object})">Memberships Method</h3>
+        <blockquote id="M:CoreTweet.Rest.Lists.Memberships(System.Collections.Generic.IDictionary{System.String,System.Object}):member">
+          <p class="Summary">
+            <span class="NotEntered"></span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../CoreTweet/Cursored`1.html">CoreTweet.Cursored&lt;CoreTweet.User&gt;</a> <b>Memberships</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IDictionary`2">IDictionary&lt;string, object&gt;</a> parameters)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Lists.Memberships(System.Collections.Generic.IDictionary{System.String,System.Object}):Parameters">
+            <dl>
+              <dt>
+                <i>parameters</i>
+              </dt>
+              <dd>
+                <span class="NotEntered"></span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Lists.Memberships(System.Collections.Generic.IDictionary{System.String,System.Object}):Returns">
+            <span class="NotEntered"></span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Lists.Memberships(System.Collections.Generic.IDictionary{System.String,System.Object}):Remarks">
+            <span class="NotEntered"></span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Lists.Memberships(System.Collections.Generic.IDictionary{System.String,System.Object}):Version Information">
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:CoreTweet.Rest.Lists.Memberships(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">Memberships Method</h3>
@@ -654,7 +1276,80 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:CoreTweet.Rest.Lists.Memberships(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Version Information">
-            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.7.23841</div>
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:CoreTweet.Rest.Lists.Memberships``1(``0)">Memberships&lt;T&gt; Generic Method</h3>
+        <blockquote id="M:CoreTweet.Rest.Lists.Memberships``1(``0):member">
+          <p class="Summary">
+            <span class="NotEntered"></span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../CoreTweet/Cursored`1.html">CoreTweet.Cursored&lt;CoreTweet.User&gt;</a> <b>Memberships&lt;T&gt;</b> (<i title="To be added.">T</i> parameters)</div>
+          <h4 class="Subsection">Type Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Lists.Memberships``1(``0):Type Parameters">
+            <dl>
+              <dt>
+                <i>T</i>
+              </dt>
+              <dd>
+                <span class="NotEntered"></span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Lists.Memberships``1(``0):Parameters">
+            <dl>
+              <dt>
+                <i>parameters</i>
+              </dt>
+              <dd>
+                <span class="NotEntered"></span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Lists.Memberships``1(``0):Returns">
+            <span class="NotEntered"></span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Lists.Memberships``1(``0):Remarks">
+            <span class="NotEntered"></span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Lists.Memberships``1(``0):Version Information">
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:CoreTweet.Rest.Lists.Show(System.Collections.Generic.IDictionary{System.String,System.Object})">Show Method</h3>
+        <blockquote id="M:CoreTweet.Rest.Lists.Show(System.Collections.Generic.IDictionary{System.String,System.Object}):member">
+          <p class="Summary">
+            <span class="NotEntered"></span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../CoreTweet/List.html">CoreTweet.List</a> <b>Show</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IDictionary`2">IDictionary&lt;string, object&gt;</a> parameters)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Lists.Show(System.Collections.Generic.IDictionary{System.String,System.Object}):Parameters">
+            <dl>
+              <dt>
+                <i>parameters</i>
+              </dt>
+              <dd>
+                <span class="NotEntered"></span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Lists.Show(System.Collections.Generic.IDictionary{System.String,System.Object}):Returns">
+            <span class="NotEntered"></span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Lists.Show(System.Collections.Generic.IDictionary{System.String,System.Object}):Remarks">
+            <span class="NotEntered"></span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Lists.Show(System.Collections.Generic.IDictionary{System.String,System.Object}):Version Information">
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:CoreTweet.Rest.Lists.Show(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">Show Method</h3>
@@ -693,7 +1388,80 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:CoreTweet.Rest.Lists.Show(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Version Information">
-            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.7.23841</div>
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:CoreTweet.Rest.Lists.Show``1(``0)">Show&lt;T&gt; Generic Method</h3>
+        <blockquote id="M:CoreTweet.Rest.Lists.Show``1(``0):member">
+          <p class="Summary">
+            <span class="NotEntered"></span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../CoreTweet/List.html">CoreTweet.List</a> <b>Show&lt;T&gt;</b> (<i title="To be added.">T</i> parameters)</div>
+          <h4 class="Subsection">Type Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Lists.Show``1(``0):Type Parameters">
+            <dl>
+              <dt>
+                <i>T</i>
+              </dt>
+              <dd>
+                <span class="NotEntered"></span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Lists.Show``1(``0):Parameters">
+            <dl>
+              <dt>
+                <i>parameters</i>
+              </dt>
+              <dd>
+                <span class="NotEntered"></span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Lists.Show``1(``0):Returns">
+            <span class="NotEntered"></span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Lists.Show``1(``0):Remarks">
+            <span class="NotEntered"></span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Lists.Show``1(``0):Version Information">
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:CoreTweet.Rest.Lists.Statuses(System.Collections.Generic.IDictionary{System.String,System.Object})">Statuses Method</h3>
+        <blockquote id="M:CoreTweet.Rest.Lists.Statuses(System.Collections.Generic.IDictionary{System.String,System.Object}):member">
+          <p class="Summary">
+            <span class="NotEntered"></span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;CoreTweet.Status&gt;</a> <b>Statuses</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IDictionary`2">IDictionary&lt;string, object&gt;</a> parameters)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Lists.Statuses(System.Collections.Generic.IDictionary{System.String,System.Object}):Parameters">
+            <dl>
+              <dt>
+                <i>parameters</i>
+              </dt>
+              <dd>
+                <span class="NotEntered"></span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Lists.Statuses(System.Collections.Generic.IDictionary{System.String,System.Object}):Returns">
+            <span class="NotEntered"></span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Lists.Statuses(System.Collections.Generic.IDictionary{System.String,System.Object}):Remarks">
+            <span class="NotEntered"></span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Lists.Statuses(System.Collections.Generic.IDictionary{System.String,System.Object}):Version Information">
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:CoreTweet.Rest.Lists.Statuses(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">Statuses Method</h3>
@@ -724,7 +1492,49 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:CoreTweet.Rest.Lists.Statuses(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Version Information">
-            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.7.23841</div>
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:CoreTweet.Rest.Lists.Statuses``1(``0)">Statuses&lt;T&gt; Generic Method</h3>
+        <blockquote id="M:CoreTweet.Rest.Lists.Statuses``1(``0):member">
+          <p class="Summary">
+            <span class="NotEntered"></span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;CoreTweet.Status&gt;</a> <b>Statuses&lt;T&gt;</b> (<i title="To be added.">T</i> parameters)</div>
+          <h4 class="Subsection">Type Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Lists.Statuses``1(``0):Type Parameters">
+            <dl>
+              <dt>
+                <i>T</i>
+              </dt>
+              <dd>
+                <span class="NotEntered"></span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Lists.Statuses``1(``0):Parameters">
+            <dl>
+              <dt>
+                <i>parameters</i>
+              </dt>
+              <dd>
+                <span class="NotEntered"></span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Lists.Statuses``1(``0):Returns">
+            <span class="NotEntered"></span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Lists.Statuses``1(``0):Remarks">
+            <span class="NotEntered"></span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Lists.Statuses``1(``0):Version Information">
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
           <hr size="1" />
         </blockquote>
         <h3 id="P:CoreTweet.Rest.Lists.Subscribers">Subscribers Property</h3>
@@ -744,7 +1554,38 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="P:CoreTweet.Rest.Lists.Subscribers:Version Information">
-            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.7.23841</div>
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:CoreTweet.Rest.Lists.Subscriptions(System.Collections.Generic.IDictionary{System.String,System.Object})">Subscriptions Method</h3>
+        <blockquote id="M:CoreTweet.Rest.Lists.Subscriptions(System.Collections.Generic.IDictionary{System.String,System.Object}):member">
+          <p class="Summary">
+            <span class="NotEntered"></span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../CoreTweet/Cursored`1.html">CoreTweet.Cursored&lt;CoreTweet.List&gt;</a> <b>Subscriptions</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IDictionary`2">IDictionary&lt;string, object&gt;</a> parameters)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Lists.Subscriptions(System.Collections.Generic.IDictionary{System.String,System.Object}):Parameters">
+            <dl>
+              <dt>
+                <i>parameters</i>
+              </dt>
+              <dd>
+                <span class="NotEntered"></span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Lists.Subscriptions(System.Collections.Generic.IDictionary{System.String,System.Object}):Returns">
+            <span class="NotEntered"></span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Lists.Subscriptions(System.Collections.Generic.IDictionary{System.String,System.Object}):Remarks">
+            <span class="NotEntered"></span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Lists.Subscriptions(System.Collections.Generic.IDictionary{System.String,System.Object}):Version Information">
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:CoreTweet.Rest.Lists.Subscriptions(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">Subscriptions Method</h3>
@@ -783,20 +1624,107 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:CoreTweet.Rest.Lists.Subscriptions(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Version Information">
-            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.7.23841</div>
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
           <hr size="1" />
         </blockquote>
-        <h3 id="M:CoreTweet.Rest.Lists.Update(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}})">Update Method</h3>
-        <blockquote id="M:CoreTweet.Rest.Lists.Update(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}):member">
+        <h3 id="M:CoreTweet.Rest.Lists.Subscriptions``1(``0)">Subscriptions&lt;T&gt; Generic Method</h3>
+        <blockquote id="M:CoreTweet.Rest.Lists.Subscriptions``1(``0):member">
           <p class="Summary">
-            <p>
-            </p>
-            <p>Avaliable parameters: </p>
+            <span class="NotEntered"></span>
           </p>
           <h2>Syntax</h2>
-          <div class="Signature">public <a href="../CoreTweet/List.html">CoreTweet.List</a> <b>Update</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;string, object&gt;&gt;</a> parameters)</div>
+          <div class="Signature">public <a href="../CoreTweet/Cursored`1.html">CoreTweet.Cursored&lt;CoreTweet.List&gt;</a> <b>Subscriptions&lt;T&gt;</b> (<i title="To be added.">T</i> parameters)</div>
+          <h4 class="Subsection">Type Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Lists.Subscriptions``1(``0):Type Parameters">
+            <dl>
+              <dt>
+                <i>T</i>
+              </dt>
+              <dd>
+                <span class="NotEntered"></span>
+              </dd>
+            </dl>
+          </blockquote>
           <h4 class="Subsection">Parameters</h4>
-          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Lists.Update(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}):Parameters">
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Lists.Subscriptions``1(``0):Parameters">
+            <dl>
+              <dt>
+                <i>parameters</i>
+              </dt>
+              <dd>
+                <span class="NotEntered"></span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Lists.Subscriptions``1(``0):Returns">
+            <span class="NotEntered"></span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Lists.Subscriptions``1(``0):Remarks">
+            <span class="NotEntered"></span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Lists.Subscriptions``1(``0):Version Information">
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:CoreTweet.Rest.Lists.Update(System.Collections.Generic.IDictionary{System.String,System.Object})">Update Method</h3>
+        <blockquote id="M:CoreTweet.Rest.Lists.Update(System.Collections.Generic.IDictionary{System.String,System.Object}):member">
+          <p class="Summary">
+            <span class="NotEntered"></span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../CoreTweet/List.html">CoreTweet.List</a> <b>Update</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IDictionary`2">IDictionary&lt;string, object&gt;</a> parameters)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Lists.Update(System.Collections.Generic.IDictionary{System.String,System.Object}):Parameters">
+            <dl>
+              <dt>
+                <i>parameters</i>
+              </dt>
+              <dd>
+                <span class="NotEntered"></span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Lists.Update(System.Collections.Generic.IDictionary{System.String,System.Object}):Returns">
+            <span class="NotEntered"></span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Lists.Update(System.Collections.Generic.IDictionary{System.String,System.Object}):Remarks">
+            <span class="NotEntered"></span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Lists.Update(System.Collections.Generic.IDictionary{System.String,System.Object}):Version Information">
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:CoreTweet.Rest.Lists.Update(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[])">Update Method</h3>
+        <blockquote id="M:CoreTweet.Rest.Lists.Update(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):member">
+          <p class="Summary">
+            <p>Updates the specified list. The authenticated user must own the list to be able to update it.</p>
+            <p>Note: Either a list_id or a slug is required. If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
+            <p>Avaliable parameters: </p>
+            <p>
+              <i>long list_id (required)</i> : The numerical id of the list.</p>
+            <p>
+              <i>string slug (required)</i> : You can identify a list by its slug instead of its numerical id. If you decide to do so, note that you'll also have to specify the list owner using the owner_id or owner_screen_name parameters.</p>
+            <p>
+              <i>string name (optional)</i> : The name for the list.</p>
+            <p>
+              <i>string mode (optional)</i> : Whether your list is public or private. Values can be public or private. If no mode is specified the list will be public.</p>
+            <p>
+              <i>string description (optional)</i> : The description to give the list.</p>
+            <p>
+              <i>string owner_screen_name (optional)</i> : The screen name of the user who owns the list being requested by a slug.</p>
+            <p>
+              <i>long owner_id (optional)</i> : The user ID of the user who owns the list being requested by a slug.</p>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../CoreTweet/List.html">CoreTweet.List</a> <b>Update</b> (<b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;string, object&gt;&gt;</a>[] parameters)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Lists.Update(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Parameters">
             <dl>
               <dt>
                 <i>parameters</i>
@@ -807,14 +1735,56 @@
             </dl>
           </blockquote>
           <h4 class="Subsection">Returns</h4>
-          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Lists.Update(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}):Returns">The list.</blockquote>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Lists.Update(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Returns">The list.</blockquote>
           <h2 class="Section">Remarks</h2>
-          <div class="SectionBox" id="M:CoreTweet.Rest.Lists.Update(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}):Remarks">
+          <div class="SectionBox" id="M:CoreTweet.Rest.Lists.Update(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Remarks">
             <span class="NotEntered"></span>
           </div>
           <h2 class="Section">Requirements</h2>
-          <div class="SectionBox" id="M:CoreTweet.Rest.Lists.Update(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}):Version Information">
-            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.1.7.23841</div>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Lists.Update(System.Linq.Expressions.Expression{System.Func{System.String,System.Object}}[]):Version Information">
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:CoreTweet.Rest.Lists.Update``1(``0)">Update&lt;T&gt; Generic Method</h3>
+        <blockquote id="M:CoreTweet.Rest.Lists.Update``1(``0):member">
+          <p class="Summary">
+            <span class="NotEntered"></span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../CoreTweet/List.html">CoreTweet.List</a> <b>Update&lt;T&gt;</b> (<i title="To be added.">T</i> parameters)</div>
+          <h4 class="Subsection">Type Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Lists.Update``1(``0):Type Parameters">
+            <dl>
+              <dt>
+                <i>T</i>
+              </dt>
+              <dd>
+                <span class="NotEntered"></span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Lists.Update``1(``0):Parameters">
+            <dl>
+              <dt>
+                <i>parameters</i>
+              </dt>
+              <dd>
+                <span class="NotEntered"></span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:CoreTweet.Rest.Lists.Update``1(``0):Returns">
+            <span class="NotEntered"></span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Lists.Update``1(``0):Remarks">
+            <span class="NotEntered"></span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:CoreTweet.Rest.Lists.Update``1(``0):Version Information">
+            <b>Namespace: </b>CoreTweet.Rest<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
           <hr size="1" />
         </blockquote>
       </div>

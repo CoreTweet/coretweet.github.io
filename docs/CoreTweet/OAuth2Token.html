@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>CoreTweet.Tokens</title>
+    <title>CoreTweet.OAuth2Token</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <style>
       a { text-decoration: none }
@@ -190,36 +190,36 @@
       <a href="../index.html">CoreTweet</a> : <a href="index.html">CoreTweet Namespace</a></div>
     <div class="SideBar">
       <p>
-        <a href="#T:CoreTweet.Tokens">Overview</a>
+        <a href="#T:CoreTweet.OAuth2Token">Overview</a>
       </p>
       <p>
-        <a href="#T:CoreTweet.Tokens:Signature">Signature</a>
+        <a href="#T:CoreTweet.OAuth2Token:Signature">Signature</a>
       </p>
       <p>
-        <a href="#T:CoreTweet.Tokens:Docs">Remarks</a>
+        <a href="#T:CoreTweet.OAuth2Token:Docs">Remarks</a>
       </p>
       <p>
         <a href="#Members">Members</a>
       </p>
       <p>
-        <a href="#T:CoreTweet.Tokens:Members">Member Details</a>
+        <a href="#T:CoreTweet.OAuth2Token:Members">Member Details</a>
       </p>
     </div>
-    <h1 class="PageTitle" id="T:CoreTweet.Tokens">Tokens  Class</h1>
-    <p class="Summary" id="T:CoreTweet.Tokens:Summary">
-            The OAuth tokens.
+    <h1 class="PageTitle" id="T:CoreTweet.OAuth2Token">OAuth2Token  Class</h1>
+    <p class="Summary" id="T:CoreTweet.OAuth2Token:Summary">
+            The OAuth2 token, which is usually used for Application-only authentication.
             </p>
     <div>
       <h2>Syntax</h2>
-      <div class="Signature" id="T:CoreTweet.Tokens:Signature">public class  <b>Tokens</b> : <a href="../CoreTweet.Core/TokensBase.html">CoreTweet.Core.TokensBase</a></div>
+      <div class="Signature" id="T:CoreTweet.OAuth2Token:Signature">public class  <b>OAuth2Token</b> : <a href="../CoreTweet.Core/TokensBase.html">CoreTweet.Core.TokensBase</a></div>
     </div>
-    <div class="Remarks" id="T:CoreTweet.Tokens:Docs">
+    <div class="Remarks" id="T:CoreTweet.OAuth2Token:Docs">
       <h2 class="Section">Remarks</h2>
-      <div class="SectionBox" id="T:CoreTweet.Tokens:Docs:Remarks">
+      <div class="SectionBox" id="T:CoreTweet.OAuth2Token:Docs:Remarks">
         <span class="NotEntered"></span>
       </div>
       <h2 class="Section">Requirements</h2>
-      <div class="SectionBox" id="T:CoreTweet.Tokens:Docs:Version Information">
+      <div class="SectionBox" id="T:CoreTweet.OAuth2Token:Docs:Version Information">
         <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
       <h2 class="Section" id="Members">Members</h2>
       <div class="SectionBox" id="_Members">
@@ -239,7 +239,7 @@
                 <td>
                   <div>
                     <b>
-                      <a href="#C:CoreTweet.Tokens()">Tokens</a>
+                      <a href="#C:CoreTweet.OAuth2Token()">OAuth2Token</a>
                     </b>()</div>
                 </td>
                 <td>
@@ -254,8 +254,8 @@
                 <td>
                   <div>
                     <b>
-                      <a href="#C:CoreTweet.Tokens(CoreTweet.Tokens)">Tokens</a>
-                    </b>(<a href="../CoreTweet/Tokens.html">Tokens</a>)</div>
+                      <a href="#C:CoreTweet.OAuth2Token(CoreTweet.OAuth2Token)">OAuth2Token</a>
+                    </b>(<a href="../CoreTweet/OAuth2Token.html">OAuth2Token</a>)</div>
                 </td>
                 <td>
                   <span class="NotEntered"></span>
@@ -269,40 +269,6 @@
           <div class="SubsectionBox">
             <table class="TypeMembers">
               <tr valign="top">
-                <td>
-                  <div>
-                  </div>
-                </td>
-                <td>
-                  <b>
-                    <a href="#P:CoreTweet.Tokens.AccessToken">AccessToken</a>
-                  </b>
-                </td>
-                <td>
-                  <i>
-                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>
-                  </i>. 
-            The access token.
-            </td>
-              </tr>
-              <tr valign="top">
-                <td>
-                  <div>
-                  </div>
-                </td>
-                <td>
-                  <b>
-                    <a href="#P:CoreTweet.Tokens.AccessTokenSecret">AccessTokenSecret</a>
-                  </b>
-                </td>
-                <td>
-                  <i>
-                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>
-                  </i>. 
-            The access token secret.
-            </td>
-              </tr>
-              <tr valign="top">
                 <td>[read-only]<div></div></td>
                 <td>
                   <b>
@@ -315,6 +281,23 @@
                   </i>. 
             Rest/Account
              (<i>Inherited from <a href="../CoreTweet.Core/TokensBase.html">CoreTweet.Core.TokensBase</a>.</i>)</td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#P:CoreTweet.OAuth2Token.BearerToken">BearerToken</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>
+                  </i>. 
+            The access token.
+            </td>
               </tr>
               <tr valign="top">
                 <td>[read-only]<div></div></td>
@@ -491,23 +474,6 @@
              (<i>Inherited from <a href="../CoreTweet.Core/TokensBase.html">CoreTweet.Core.TokensBase</a>.</i>)</td>
               </tr>
               <tr valign="top">
-                <td>
-                  <div>
-                  </div>
-                </td>
-                <td>
-                  <b>
-                    <a href="#P:CoreTweet.Tokens.ScreenName">ScreenName</a>
-                  </b>
-                </td>
-                <td>
-                  <i>
-                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>
-                  </i>. 
-            The screen name
-            </td>
-              </tr>
-              <tr valign="top">
                 <td>[read-only]<div></div></td>
                 <td>
                   <b>
@@ -564,23 +530,6 @@
              (<i>Inherited from <a href="../CoreTweet.Core/TokensBase.html">CoreTweet.Core.TokensBase</a>.</i>)</td>
               </tr>
               <tr valign="top">
-                <td>
-                  <div>
-                  </div>
-                </td>
-                <td>
-                  <b>
-                    <a href="#P:CoreTweet.Tokens.UserID">UserID</a>
-                  </b>
-                </td>
-                <td>
-                  <i>
-                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int64">long</a>
-                  </i>. 
-            The user ID.
-            </td>
-              </tr>
-              <tr valign="top">
                 <td>[read-only]<div></div></td>
                 <td>
                   <b>
@@ -607,9 +556,9 @@
                 </td>
                 <td colspan="2">
                   <b>
-                    <a href="#M:CoreTweet.Tokens.Create(System.String,System.String,System.String,System.String,System.Int64,System.String)">Create</a>
-                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int64">long</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="../CoreTweet/Tokens.html">Tokens</a></nobr><blockquote>
-            Make an instance of Tokens.
+                    <a href="#M:CoreTweet.OAuth2Token.Create(System.String,System.String,System.String)">Create</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="../CoreTweet/OAuth2Token.html">OAuth2Token</a></nobr><blockquote>
+            Make an instance of OAuth2Tokens.
             </blockquote></td>
               </tr>
               <tr valign="top">
@@ -648,15 +597,22 @@
             Sends a request to the specified url with the specified parameters.
              (<i>Inherited from <a href="../CoreTweet.Core/TokensBase.html">CoreTweet.Core.TokensBase</a>.</i>)</blockquote></td>
               </tr>
+            </table>
+          </div>
+        </div>
+        <h2 class="Section">Extension Methods</h2>
+        <div class="SectionBox" id="Extension Methods">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
               <tr valign="top">
                 <td>
-                  <div>override </div>
+                  <div>static </div>
                 </td>
                 <td colspan="2">
                   <b>
-                    <a href="#M:CoreTweet.Tokens.ToString()">ToString</a>
-                  </b>()<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a></nobr><blockquote>
-            Returns a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> that represents the current <a href="../CoreTweet/Tokens.html">CoreTweet.Tokens</a>.
+                    <a href="../CoreTweet/OAuth2.html#M:CoreTweet.OAuth2.InvalidateToken(CoreTweet.OAuth2Token)">InvalidateToken</a>
+                  </b>(<i>this</i> <a href="../CoreTweet/OAuth2Token.html">OAuth2Token</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a></nobr><blockquote>
+            Invalidates the OAuth 2 Bearer Token.
             </blockquote></td>
               </tr>
             </table>
@@ -664,34 +620,34 @@
         </div>
       </div>
     </div>
-    <div class="Members" id="T:CoreTweet.Tokens:Members">
+    <div class="Members" id="T:CoreTweet.OAuth2Token:Members">
       <h2 class="Section" id="MemberDetails">Member Details</h2>
       <div class="SectionBox" id="_MemberDetails">
-        <h3 id="C:CoreTweet.Tokens()">Tokens Constructor</h3>
-        <blockquote id="C:CoreTweet.Tokens():member">
+        <h3 id="C:CoreTweet.OAuth2Token()">OAuth2Token Constructor</h3>
+        <blockquote id="C:CoreTweet.OAuth2Token():member">
           <p class="Summary">
             <span class="NotEntered"></span>
           </p>
           <h2>Syntax</h2>
-          <div class="Signature">public  <b>Tokens</b> ()</div>
+          <div class="Signature">public  <b>OAuth2Token</b> ()</div>
           <h2 class="Section">Remarks</h2>
-          <div class="SectionBox" id="C:CoreTweet.Tokens():Remarks">
+          <div class="SectionBox" id="C:CoreTweet.OAuth2Token():Remarks">
             <span class="NotEntered"></span>
           </div>
           <h2 class="Section">Requirements</h2>
-          <div class="SectionBox" id="C:CoreTweet.Tokens():Version Information">
+          <div class="SectionBox" id="C:CoreTweet.OAuth2Token():Version Information">
             <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
           <hr size="1" />
         </blockquote>
-        <h3 id="C:CoreTweet.Tokens(CoreTweet.Tokens)">Tokens Constructor</h3>
-        <blockquote id="C:CoreTweet.Tokens(CoreTweet.Tokens):member">
+        <h3 id="C:CoreTweet.OAuth2Token(CoreTweet.OAuth2Token)">OAuth2Token Constructor</h3>
+        <blockquote id="C:CoreTweet.OAuth2Token(CoreTweet.OAuth2Token):member">
           <p class="Summary">
             <span class="NotEntered"></span>
           </p>
           <h2>Syntax</h2>
-          <div class="Signature">public  <b>Tokens</b> (<a href="../CoreTweet/Tokens.html">Tokens</a> e)</div>
+          <div class="Signature">public  <b>OAuth2Token</b> (<a href="../CoreTweet/OAuth2Token.html">OAuth2Token</a> e)</div>
           <h4 class="Subsection">Parameters</h4>
-          <blockquote class="SubsectionBox" id="C:CoreTweet.Tokens(CoreTweet.Tokens):Parameters">
+          <blockquote class="SubsectionBox" id="C:CoreTweet.OAuth2Token(CoreTweet.OAuth2Token):Parameters">
             <dl>
               <dt>
                 <i>e</i>
@@ -702,172 +658,68 @@
             </dl>
           </blockquote>
           <h2 class="Section">Remarks</h2>
-          <div class="SectionBox" id="C:CoreTweet.Tokens(CoreTweet.Tokens):Remarks">
+          <div class="SectionBox" id="C:CoreTweet.OAuth2Token(CoreTweet.OAuth2Token):Remarks">
             <span class="NotEntered"></span>
           </div>
           <h2 class="Section">Requirements</h2>
-          <div class="SectionBox" id="C:CoreTweet.Tokens(CoreTweet.Tokens):Version Information">
+          <div class="SectionBox" id="C:CoreTweet.OAuth2Token(CoreTweet.OAuth2Token):Version Information">
             <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
           <hr size="1" />
         </blockquote>
-        <h3 id="P:CoreTweet.Tokens.AccessToken">AccessToken Property</h3>
-        <blockquote id="P:CoreTweet.Tokens.AccessToken:member">
+        <h3 id="P:CoreTweet.OAuth2Token.BearerToken">BearerToken Property</h3>
+        <blockquote id="P:CoreTweet.OAuth2Token.BearerToken:member">
           <p class="Summary">
             The access token.
             </p>
           <h2>Syntax</h2>
-          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>AccessToken</b>  { get; set; }</div>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>BearerToken</b>  { get; set; }</div>
           <h4 class="Subsection">Value</h4>
-          <blockquote class="SubsectionBox" id="P:CoreTweet.Tokens.AccessToken:Value">
+          <blockquote class="SubsectionBox" id="P:CoreTweet.OAuth2Token.BearerToken:Value">
             <span class="NotEntered"></span>
           </blockquote>
           <h2 class="Section">Remarks</h2>
-          <div class="SectionBox" id="P:CoreTweet.Tokens.AccessToken:Remarks">
+          <div class="SectionBox" id="P:CoreTweet.OAuth2Token.BearerToken:Remarks">
             <span class="NotEntered"></span>
           </div>
           <h2 class="Section">Requirements</h2>
-          <div class="SectionBox" id="P:CoreTweet.Tokens.AccessToken:Version Information">
+          <div class="SectionBox" id="P:CoreTweet.OAuth2Token.BearerToken:Version Information">
             <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
           <hr size="1" />
         </blockquote>
-        <h3 id="P:CoreTweet.Tokens.AccessTokenSecret">AccessTokenSecret Property</h3>
-        <blockquote id="P:CoreTweet.Tokens.AccessTokenSecret:member">
+        <h3 id="M:CoreTweet.OAuth2Token.Create(System.String,System.String,System.String)">Create Method</h3>
+        <blockquote id="M:CoreTweet.OAuth2Token.Create(System.String,System.String,System.String):member">
           <p class="Summary">
-            The access token secret.
+            Make an instance of OAuth2Tokens.
             </p>
           <h2>Syntax</h2>
-          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>AccessTokenSecret</b>  { get; set; }</div>
-          <h4 class="Subsection">Value</h4>
-          <blockquote class="SubsectionBox" id="P:CoreTweet.Tokens.AccessTokenSecret:Value">
-            <span class="NotEntered"></span>
-          </blockquote>
-          <h2 class="Section">Remarks</h2>
-          <div class="SectionBox" id="P:CoreTweet.Tokens.AccessTokenSecret:Remarks">
-            <span class="NotEntered"></span>
-          </div>
-          <h2 class="Section">Requirements</h2>
-          <div class="SectionBox" id="P:CoreTweet.Tokens.AccessTokenSecret:Version Information">
-            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
-          <hr size="1" />
-        </blockquote>
-        <h3 id="M:CoreTweet.Tokens.Create(System.String,System.String,System.String,System.String,System.Int64,System.String)">Create Method</h3>
-        <blockquote id="M:CoreTweet.Tokens.Create(System.String,System.String,System.String,System.String,System.Int64,System.String):member">
-          <p class="Summary">
-            Make an instance of Tokens.
-            </p>
-          <h2>Syntax</h2>
-          <div class="Signature">public static <a href="../CoreTweet/Tokens.html">Tokens</a> <b>Create</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> consumerKey, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> consumerSecret, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> accessToken, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> accessSecret, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int64">long</a> userID, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> screenName)</div>
+          <div class="Signature">public static <a href="../CoreTweet/OAuth2Token.html">OAuth2Token</a> <b>Create</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> consumerKey, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> consumerSecret, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> bearer)</div>
           <h4 class="Subsection">Parameters</h4>
-          <blockquote class="SubsectionBox" id="M:CoreTweet.Tokens.Create(System.String,System.String,System.String,System.String,System.Int64,System.String):Parameters">
+          <blockquote class="SubsectionBox" id="M:CoreTweet.OAuth2Token.Create(System.String,System.String,System.String):Parameters">
             <dl>
               <dt>
                 <i>consumerKey</i>
               </dt>
-              <dd>
-                <span class="NotEntered"></span>
-              </dd>
+              <dd>Consumer key.</dd>
               <dt>
                 <i>consumerSecret</i>
               </dt>
-              <dd>
-                <span class="NotEntered"></span>
-              </dd>
+              <dd>Consumer secret.</dd>
               <dt>
-                <i>accessToken</i>
+                <i>bearer</i>
               </dt>
-              <dd>
-                <span class="NotEntered"></span>
-              </dd>
-              <dt>
-                <i>accessSecret</i>
-              </dt>
-              <dd>
-                <span class="NotEntered"></span>
-              </dd>
-              <dt>
-                <i>userID</i>
-              </dt>
-              <dd>
-                <span class="NotEntered"></span>
-              </dd>
-              <dt>
-                <i>screenName</i>
-              </dt>
-              <dd>
-                <span class="NotEntered"></span>
-              </dd>
+              <dd>Bearer token</dd>
             </dl>
           </blockquote>
           <h4 class="Subsection">Returns</h4>
-          <blockquote class="SubsectionBox" id="M:CoreTweet.Tokens.Create(System.String,System.String,System.String,System.String,System.Int64,System.String):Returns">
+          <blockquote class="SubsectionBox" id="M:CoreTweet.OAuth2Token.Create(System.String,System.String,System.String):Returns">
             <span class="NotEntered"></span>
           </blockquote>
           <h2 class="Section">Remarks</h2>
-          <div class="SectionBox" id="M:CoreTweet.Tokens.Create(System.String,System.String,System.String,System.String,System.Int64,System.String):Remarks">
+          <div class="SectionBox" id="M:CoreTweet.OAuth2Token.Create(System.String,System.String,System.String):Remarks">
             <span class="NotEntered"></span>
           </div>
           <h2 class="Section">Requirements</h2>
-          <div class="SectionBox" id="M:CoreTweet.Tokens.Create(System.String,System.String,System.String,System.String,System.Int64,System.String):Version Information">
-            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
-          <hr size="1" />
-        </blockquote>
-        <h3 id="P:CoreTweet.Tokens.ScreenName">ScreenName Property</h3>
-        <blockquote id="P:CoreTweet.Tokens.ScreenName:member">
-          <p class="Summary">
-            The screen name
-            </p>
-          <h2>Syntax</h2>
-          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>ScreenName</b>  { get; set; }</div>
-          <h4 class="Subsection">Value</h4>
-          <blockquote class="SubsectionBox" id="P:CoreTweet.Tokens.ScreenName:Value">
-            <span class="NotEntered"></span>
-          </blockquote>
-          <h2 class="Section">Remarks</h2>
-          <div class="SectionBox" id="P:CoreTweet.Tokens.ScreenName:Remarks">
-            <span class="NotEntered"></span>
-          </div>
-          <h2 class="Section">Requirements</h2>
-          <div class="SectionBox" id="P:CoreTweet.Tokens.ScreenName:Version Information">
-            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
-          <hr size="1" />
-        </blockquote>
-        <h3 id="M:CoreTweet.Tokens.ToString()">ToString Method</h3>
-        <blockquote id="M:CoreTweet.Tokens.ToString():member">
-          <p class="Summary">
-            Returns a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> that represents the current <a href="../CoreTweet/Tokens.html">CoreTweet.Tokens</a>.
-            </p>
-          <h2>Syntax</h2>
-          <div class="Signature">public override <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>ToString</b> ()</div>
-          <h4 class="Subsection">Returns</h4>
-          <blockquote class="SubsectionBox" id="M:CoreTweet.Tokens.ToString():Returns">
-            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> that represents the current <a href="../CoreTweet/Tokens.html">CoreTweet.Tokens</a>.
-            </blockquote>
-          <h2 class="Section">Remarks</h2>
-          <div class="SectionBox" id="M:CoreTweet.Tokens.ToString():Remarks">
-            <span class="NotEntered"></span>
-          </div>
-          <h2 class="Section">Requirements</h2>
-          <div class="SectionBox" id="M:CoreTweet.Tokens.ToString():Version Information">
-            <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
-          <hr size="1" />
-        </blockquote>
-        <h3 id="P:CoreTweet.Tokens.UserID">UserID Property</h3>
-        <blockquote id="P:CoreTweet.Tokens.UserID:member">
-          <p class="Summary">
-            The user ID.
-            </p>
-          <h2>Syntax</h2>
-          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int64">long</a> <b>UserID</b>  { get; set; }</div>
-          <h4 class="Subsection">Value</h4>
-          <blockquote class="SubsectionBox" id="P:CoreTweet.Tokens.UserID:Value">
-            <span class="NotEntered"></span>
-          </blockquote>
-          <h2 class="Section">Remarks</h2>
-          <div class="SectionBox" id="P:CoreTweet.Tokens.UserID:Remarks">
-            <span class="NotEntered"></span>
-          </div>
-          <h2 class="Section">Requirements</h2>
-          <div class="SectionBox" id="P:CoreTweet.Tokens.UserID:Version Information">
+          <div class="SectionBox" id="M:CoreTweet.OAuth2Token.Create(System.String,System.String,System.String):Version Information">
             <b>Namespace: </b>CoreTweet<br /><b>Assembly: </b>CoreTweet (in CoreTweet.dll)<br /><b>Assembly Versions: </b>0.2.0.27400</div>
           <hr size="1" />
         </blockquote>
