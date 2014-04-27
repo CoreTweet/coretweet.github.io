@@ -1,8 +1,6 @@
 var searchData=
 [
   ['parameters',['Parameters',['../classCoreTweet_1_1Streaming_1_1StreamingParameters.html#a6dd0f06cfad71455efc0414e57055a60',1,'CoreTweet::Streaming::StreamingParameters']]],
-  ['parse',['Parse',['../classCoreTweet_1_1Streaming_1_1StreamingMessage.html#a6e0c6952664f9c5b6c8af363bc35fa3b',1,'CoreTweet::Streaming::StreamingMessage']]],
-  ['parsingexception',['ParsingException',['../classCoreTweet_1_1ParsingException.html#a992677eeb81efd6c0cb0b2d1901b31d7',1,'CoreTweet::ParsingException']]],
   ['parsingexception',['ParsingException',['../classCoreTweet_1_1ParsingException.html',1,'CoreTweet']]],
   ['percentfull',['PercentFull',['../classCoreTweet_1_1Streaming_1_1WarningMessage.html#ac36f544c06cb1e39e4f0749d5e0c7c9c',1,'CoreTweet::Streaming::WarningMessage']]],
   ['phone',['Phone',['../classCoreTweet_1_1GeoAttributes.html#aefc0c88e7074d4e8d9b52081d3a1f38c',1,'CoreTweet::GeoAttributes']]],
@@ -38,6 +36,5 @@ var searchData=
   ['profiletextcolor',['ProfileTextColor',['../classCoreTweet_1_1User.html#a1d5646cad4cefe645ab3e060279a187f',1,'CoreTweet::User']]],
   ['property',['Property',['../classCoreTweet_1_1Property.html',1,'CoreTweet']]],
   ['providername',['ProviderName',['../classCoreTweet_1_1Embed.html#a5d955fbfd8c037268f78208f94fc1c7f',1,'CoreTweet::Embed']]],
-  ['providerurl',['ProviderUrl',['../classCoreTweet_1_1Embed.html#a3a2e5b064f9c13c17c7e0f0410010f17',1,'CoreTweet::Embed']]],
-  ['public',['Public',['../namespaceCoreTweet_1_1Streaming.html#a8c5eb73c0291bd14af419ba8318ccbf7a3d067bedfe2f4677470dd6ccf64d05ed',1,'CoreTweet::Streaming']]]
+  ['providerurl',['ProviderUrl',['../classCoreTweet_1_1Embed.html#a3a2e5b064f9c13c17c7e0f0410010f17',1,'CoreTweet::Embed']]]
 ];
