@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="core-48x48.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">CoreTweet
-   &#160;<span id="projectnumber">0.2.3</span>
+   &#160;<span id="projectnumber">0.3.0</span>
    </div>
    <div id="projectbrief">Yet another .NET Twitter Library</div>
   </td>
@@ -147,6 +147,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1fe2cbe42020cc4f794fb4eeda75a9a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0440ffe424db4c92f32eb939d9d1dc34"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Rest_1_1Account.html#a0440ffe424db4c92f32eb939d9d1dc34">UpdateProfileBanner&lt; T &gt;</a> (T parameters)</td></tr>
 <tr class="separator:a0440ffe424db4c92f32eb939d9d1dc34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d29284430ee23de33ce77b36949e78e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Rest_1_1Account.html#a8d29284430ee23de33ce77b36949e78e">RemoveProfileBanner</a> (params Expression&lt; Func&lt; string, object &gt;&gt;[] parameters)</td></tr>
+<tr class="separator:a8d29284430ee23de33ce77b36949e78e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeeb96b4a01f91691cd29cc46ec2e4059"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Rest_1_1Account.html#aeeb96b4a01f91691cd29cc46ec2e4059">RemoveProfileBanner</a> (IDictionary&lt; string, object &gt; parameters)</td></tr>
+<tr class="separator:aeeb96b4a01f91691cd29cc46ec2e4059"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24a3fedc1dbf9f67d5810a145a946a92"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Rest_1_1Account.html#a24a3fedc1dbf9f67d5810a145a946a92">RemoveProfileBanner&lt; T &gt;</a> (T parameters)</td></tr>
+<tr class="separator:a24a3fedc1dbf9f67d5810a145a946a92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8f25ef544127cc94982a35ce16b378b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCoreTweet_1_1User.html">User</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Rest_1_1Account.html#ab8f25ef544127cc94982a35ce16b378b">UpdateProfileColors</a> (params Expression&lt; Func&lt; string, object &gt;&gt;[] parameters)</td></tr>
 <tr class="separator:ab8f25ef544127cc94982a35ce16b378b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32bb3d133edd5b06d8e0660e23ddfbb2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCoreTweet_1_1User.html">User</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Rest_1_1Account.html#a32bb3d133edd5b06d8e0660e23ddfbb2">UpdateProfileColors</a> (IDictionary&lt; string, object &gt; parameters)</td></tr>
@@ -170,6 +176,87 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>GET/POST account</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a8d29284430ee23de33ce77b36949e78e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CoreTweet.Rest.Account.RemoveProfileBanner </td>
+          <td>(</td>
+          <td class="paramtype">params Expression&lt; Func&lt; string, object &gt;&gt;[]&#160;</td>
+          <td class="paramname"><em>parameters</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p></p>
+<p>Removes the uploaded profile banner for the authenticating user. Returns HTTP 200 upon success.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>Parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aeeb96b4a01f91691cd29cc46ec2e4059"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CoreTweet.Rest.Account.RemoveProfileBanner </td>
+          <td>(</td>
+          <td class="paramtype">IDictionary&lt; string, object &gt;&#160;</td>
+          <td class="paramname"><em>parameters</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a24a3fedc1dbf9f67d5810a145a946a92"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classCoreTweet_1_1Rest_1_1Account.html#a8d29284430ee23de33ce77b36949e78e">CoreTweet.Rest.Account.RemoveProfileBanner</a>&lt; T &gt; </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>parameters</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="ad696962db0f3a27d5122cd0c08534002"></a>
 <div class="memitem">
 <div class="memproto">
@@ -877,7 +964,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 6 2014 22:48:39 for CoreTweet by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Apr 28 2014 00:22:42 for CoreTweet by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

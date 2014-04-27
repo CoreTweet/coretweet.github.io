@@ -29,6 +29,7 @@ var searchData=
   ['user',['User',['../classCoreTweet_1_1User.html',1,'CoreTweet']]],
   ['user',['User',['../classCoreTweet_1_1List.html#a3bc7ddc1d6459d0302e3c0d42b7afbdf',1,'CoreTweet.List.User()'],['../classCoreTweet_1_1Status.html#a2c741499612bf1af94ed9798a3973a12',1,'CoreTweet.Status.User()'],['../namespaceCoreTweet_1_1Streaming.html#a8c5eb73c0291bd14af419ba8318ccbf7a8f9bfe9d1345237cb3b2b205864da075',1,'CoreTweet.Streaming.User()']]],
   ['user_2ecs',['User.cs',['../User_8cs.html',1,'']]],
+  ['useragent',['UserAgent',['../classCoreTweet_1_1Core_1_1TokensBase.html#af3ed649906544986fefff78181899640',1,'CoreTweet::Core::TokensBase']]],
   ['userid',['UserID',['../classCoreTweet_1_1Tokens.html#a1c01100e343f7685b1438731b0937cc9',1,'CoreTweet.Tokens.UserID()'],['../classCoreTweet_1_1Streaming_1_1IDMessage.html#a8435d5a3392834a62f21cc130c6d57f9',1,'CoreTweet.Streaming.IDMessage.UserID()']]],
   ['usermention',['UserMention',['../classCoreTweet_1_1UserMention.html',1,'CoreTweet']]],
   ['usermentions',['UserMentions',['../classCoreTweet_1_1Entity.html#a816f5de1c081271e650cbbad905f92a2',1,'CoreTweet::Entity']]],

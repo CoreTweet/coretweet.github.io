@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="core-48x48.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">CoreTweet
-   &#160;<span id="projectnumber">0.2.3</span>
+   &#160;<span id="projectnumber">0.3.0</span>
    </div>
    <div id="projectbrief">Yet another .NET Twitter Library</div>
   </td>
@@ -99,15 +99,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a1c3d250d7c30c56ce8c11b75a93140e6"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classCoreTweet_1_1OAuth2Token.html">OAuth2Token</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1OAuth2.html#a1c3d250d7c30c56ce8c11b75a93140e6">GetToken</a> (string consumerKey, string consumerSecret)</td></tr>
-<tr class="memdesc:a1c3d250d7c30c56ce8c11b75a93140e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the <a class="el" href="classCoreTweet_1_1OAuth.html">OAuth</a> 2 Bearer Token.  <a href="#a1c3d250d7c30c56ce8c11b75a93140e6">More...</a><br/></td></tr>
-<tr class="separator:a1c3d250d7c30c56ce8c11b75a93140e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab926c3547ce42e6bd9f0c6ff04f079fb"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classCoreTweet_1_1OAuth2Token.html">OAuth2Token</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1OAuth2.html#ab926c3547ce42e6bd9f0c6ff04f079fb">GetToken</a> (string consumerKey, string consumerSecret, IWebProxy proxy=null)</td></tr>
+<tr class="memdesc:ab926c3547ce42e6bd9f0c6ff04f079fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the <a class="el" href="classCoreTweet_1_1OAuth.html">OAuth</a> 2 Bearer Token.  <a href="#ab926c3547ce42e6bd9f0c6ff04f079fb">More...</a><br/></td></tr>
+<tr class="separator:ab926c3547ce42e6bd9f0c6ff04f079fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d50f73421c47bebb4e199106ddd76fa"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1OAuth2.html#a8d50f73421c47bebb4e199106ddd76fa">InvalidateToken</a> (this <a class="el" href="classCoreTweet_1_1OAuth2Token.html">OAuth2Token</a> tokens)</td></tr>
 <tr class="memdesc:a8d50f73421c47bebb4e199106ddd76fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invalidates the <a class="el" href="classCoreTweet_1_1OAuth.html">OAuth</a> 2 Bearer Token.  <a href="#a8d50f73421c47bebb4e199106ddd76fa">More...</a><br/></td></tr>
 <tr class="separator:a8d50f73421c47bebb4e199106ddd76fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a1c3d250d7c30c56ce8c11b75a93140e6"></a>
+<a class="anchor" id="ab926c3547ce42e6bd9f0c6ff04f079fb"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -124,7 +124,13 @@ Static Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>consumerSecret</em>&#160;</td>
+          <td class="paramname"><em>consumerSecret</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IWebProxy&#160;</td>
+          <td class="paramname"><em>proxy</em> = <code>null</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -144,6 +150,7 @@ Static Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">consumerKey</td><td>Consumer key.</td></tr>
     <tr><td class="paramname">consumerSecret</td><td>Consumer secret.</td></tr>
+    <tr><td class="paramname">proxy</td><td>Proxy information for the request.</td></tr>
   </table>
   </dd>
 </dl>
@@ -190,7 +197,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 6 2014 22:48:38 for CoreTweet by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Apr 28 2014 00:22:42 for CoreTweet by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

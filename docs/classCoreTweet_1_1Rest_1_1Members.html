@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="core-48x48.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">CoreTweet
-   &#160;<span id="projectnumber">0.2.3</span>
+   &#160;<span id="projectnumber">0.3.0</span>
    </div>
    <div id="projectbrief">Yet another .NET Twitter Library</div>
   </td>
@@ -278,8 +278,8 @@ Additional Inherited Members</h2></td></tr>
 <p>Avaliable parameters: </p>
 <p><em>long list_id (required)</em>  : The numerical id of the list.</p>
 <p><em>string slug (required)</em>  : You can identify a list by its slug instead of its numerical id. If you decide to do so, note that you'll also have to specify the list owner using the owner_id or owner_screen_name parameters.</p>
-<p><em>string user_id (optional)</em>  : A comma separated list of user IDs, up to 100 are allowed in a single request.</p>
-<p><em>string screen_name (optional)</em>  : A comma separated list of screen names, up to 100 are allowed in a single request.</p>
+<p><em>string, IEnumerable&lt;long&gt; user_id (optional)</em>  : A list of user IDs or comma separated string of ones, up to 100 are allowed in a single request.</p>
+<p><em>string, IEnumerable&lt;string&gt; screen_name (optional)</em>  : A list of screen names or comma separated string of ones, up to 100 are allowed in a single request.</p>
 <p><em>string owner_screen_name (optional)</em>  : The screen name of the user who owns the list being requested by a slug.</p>
 <p><em>long owner_id (optional)</em>  : The user ID of the user who owns the list being requested by a slug.</p>
 <dl class="section return"><dt>Returns</dt><dd>The list.</dd></dl>
@@ -459,8 +459,8 @@ Additional Inherited Members</h2></td></tr>
 <p>Avaliable parameters: </p>
 <p><em>long list_id (required)</em>  : The numerical id of the list.</p>
 <p><em>string slug (required)</em>  : You can identify a list by its slug instead of its numerical id. If you decide to do so, note that you'll also have to specify the list owner using the owner_id or owner_screen_name parameters.</p>
-<p><em>string user_id (optional)</em>  : A comma separated list of user IDs, up to 100 are allowed in a single request.</p>
-<p><em>string screen_name (optional)</em>  : A comma separated list of screen names, up to 100 are allowed in a single request.</p>
+<p><em>string, IEnumerable&lt;long&gt; user_id (optional)</em>  : A list of user IDs or comma separated string of ones, up to 100 are allowed in a single request.</p>
+<p><em>string, IEnumerable&lt;string&gt; screen_name (optional)</em>  : A list of screen names or comma separated string of ones, up to 100 are allowed in a single request.</p>
 <p><em>string owner_screen_name (optional)</em>  : The screen name of the user who owns the list being requested by a slug.</p>
 <p><em>long owner_id (optional)</em>  : The user ID of the user who owns the list being requested by a slug.</p>
 <dl class="section return"><dt>Returns</dt><dd>The list.</dd></dl>
@@ -830,7 +830,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 6 2014 22:48:39 for CoreTweet by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Apr 28 2014 00:22:42 for CoreTweet by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

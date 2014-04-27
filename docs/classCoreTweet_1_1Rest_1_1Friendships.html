@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="core-48x48.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">CoreTweet
-   &#160;<span id="projectnumber">0.2.3</span>
+   &#160;<span id="projectnumber">0.3.0</span>
    </div>
    <div id="projectbrief">Yet another .NET Twitter Library</div>
   </td>
@@ -697,8 +697,8 @@ Additional Inherited Members</h2></td></tr>
 <p></p>
 <p>Returns the relationships of the authenticating user to the comma-separated list of up to 100 screen_names or user_ids provided. Values for connections can be: following, following_requested, followed_by, none.</p>
 <p>Avaliable parameters: </p>
-<p><em>string screen_name (optional)</em>  : A comma separated list of screen names, up to 100 are allowed in a single request.</p>
-<p><em>string user_id (ooptional)</em>  : A comma separated list of user IDs, up to 100 are allowed in a single request.</p>
+<p><em>string, IEnumerable&lt;string&gt; screen_name (optional)</em>  : A list of screen names or comma separated string of ones, up to 100 are allowed in a single request.</p>
+<p><em>string, IEnumerable&lt;long&gt; user_id (ooptional)</em>  : A list of user IDs or comma separated string of ones, up to 100 are allowed in a single request.</p>
 <dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="classCoreTweet_1_1Rest_1_1Friendships.html" title="GET/POST Friendships">Friendships</a>.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1110,7 +1110,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 6 2014 22:48:39 for CoreTweet by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Apr 28 2014 00:22:42 for CoreTweet by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

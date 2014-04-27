@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="core-48x48.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">CoreTweet
-   &#160;<span id="projectnumber">0.2.3</span>
+   &#160;<span id="projectnumber">0.3.0</span>
    </div>
    <div id="projectbrief">Yet another .NET Twitter Library</div>
   </td>
@@ -105,15 +105,15 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:aec6420dcc7ae7c4fe30363e75875171a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classCoreTweet_1_1OAuth_1_1OAuthSession.html">OAuthSession</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1OAuth.html#aec6420dcc7ae7c4fe30363e75875171a">Authorize</a> (string consumerKey, string consumerSecret, string oauthCallback=null)</td></tr>
-<tr class="memdesc:aec6420dcc7ae7c4fe30363e75875171a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates the authorize URI. Then call GetTokens(string) after get the pin code.  <a href="#aec6420dcc7ae7c4fe30363e75875171a">More...</a><br/></td></tr>
-<tr class="separator:aec6420dcc7ae7c4fe30363e75875171a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a279cc1d3ea5bff92b2b64c8c3c95b055"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classCoreTweet_1_1OAuth_1_1OAuthSession.html">OAuthSession</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1OAuth.html#a279cc1d3ea5bff92b2b64c8c3c95b055">Authorize</a> (string consumerKey, string consumerSecret, string oauthCallback=null, IWebProxy proxy=null)</td></tr>
+<tr class="memdesc:a279cc1d3ea5bff92b2b64c8c3c95b055"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates the authorize URI. Then call GetTokens(string) after get the pin code.  <a href="#a279cc1d3ea5bff92b2b64c8c3c95b055">More...</a><br/></td></tr>
+<tr class="separator:a279cc1d3ea5bff92b2b64c8c3c95b055"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac930779d0ea387a7b6e9a8664e988916"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classCoreTweet_1_1Tokens.html">Tokens</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1OAuth.html#ac930779d0ea387a7b6e9a8664e988916">GetTokens</a> (this <a class="el" href="classCoreTweet_1_1OAuth_1_1OAuthSession.html">OAuthSession</a> session, string pin)</td></tr>
 <tr class="memdesc:ac930779d0ea387a7b6e9a8664e988916"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the <a class="el" href="classCoreTweet_1_1OAuth.html">OAuth</a> tokens. Be sure to call GenerateAuthUri(string,string) before call this.  <a href="#ac930779d0ea387a7b6e9a8664e988916">More...</a><br/></td></tr>
 <tr class="separator:ac930779d0ea387a7b6e9a8664e988916"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="aec6420dcc7ae7c4fe30363e75875171a"></a>
+<a class="anchor" id="a279cc1d3ea5bff92b2b64c8c3c95b055"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -136,7 +136,13 @@ Static Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>oauthCallback</em> = <code>null</code>&#160;</td>
+          <td class="paramname"><em>oauthCallback</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IWebProxy&#160;</td>
+          <td class="paramname"><em>proxy</em> = <code>null</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -158,6 +164,7 @@ Static Public Member Functions</h2></td></tr>
     <tr><td class="paramname">consumerKey</td><td>Consumer key. </td></tr>
     <tr><td class="paramname">consumerSecret</td><td>Consumer secret. </td></tr>
     <tr><td class="paramname">oauthCallback</td><td>For <a class="el" href="classCoreTweet_1_1OAuth.html">OAuth</a> 1.0a compliance this parameter is required. The value you specify here will be used as the URL a user is redirected to should they approve your application's access to their account. Set this to oob for out-of-band pin mode. This is also how you specify custom callbacks for use in desktop/mobile applications.Always send an oauth_callback on this step, regardless of a pre-registered callback.</td></tr>
+    <tr><td class="paramname">proxy</td><td>Proxy information for the request. </td></tr>
   </table>
   </dd>
 </dl>
@@ -214,7 +221,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 6 2014 22:48:38 for CoreTweet by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Apr 28 2014 00:22:42 for CoreTweet by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

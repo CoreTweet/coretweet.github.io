@@ -22,5 +22,6 @@ var searchData=
   ['profilesidebarfillcolor',['ProfileSidebarFillColor',['../classCoreTweet_1_1User.html#a4adb58ec9d286239af6eacfdc8ab531f',1,'CoreTweet::User']]],
   ['profiletextcolor',['ProfileTextColor',['../classCoreTweet_1_1User.html#a1d5646cad4cefe645ab3e060279a187f',1,'CoreTweet::User']]],
   ['providername',['ProviderName',['../classCoreTweet_1_1Embed.html#a5d955fbfd8c037268f78208f94fc1c7f',1,'CoreTweet::Embed']]],
-  ['providerurl',['ProviderUrl',['../classCoreTweet_1_1Embed.html#a3a2e5b064f9c13c17c7e0f0410010f17',1,'CoreTweet::Embed']]]
+  ['providerurl',['ProviderUrl',['../classCoreTweet_1_1Embed.html#a3a2e5b064f9c13c17c7e0f0410010f17',1,'CoreTweet::Embed']]],
+  ['proxy',['Proxy',['../classCoreTweet_1_1Core_1_1TokensBase.html#af199496bc6432dc1199c6bcba31012ba',1,'CoreTweet.Core.TokensBase.Proxy()'],['../classCoreTweet_1_1OAuth_1_1OAuthSession.html#adb493c30711a6576aadb01c42cbb5f5b',1,'CoreTweet.OAuth.OAuthSession.Proxy()']]]
 ];
