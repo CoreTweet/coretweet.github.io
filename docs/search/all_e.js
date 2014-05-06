@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['parameters',['Parameters',['../classCoreTweet_1_1Streaming_1_1StreamingParameters.html#a6dd0f06cfad71455efc0414e57055a60',1,'CoreTweet::Streaming::StreamingParameters']]],
+  ['parameters',['Parameters',['../classCoreTweet_1_1Streaming_1_1StreamingParameters.html#a129d146c4dbd7dee683dd15580ac7458',1,'CoreTweet::Streaming::StreamingParameters']]],
   ['parsingexception',['ParsingException',['../classCoreTweet_1_1ParsingException.html',1,'CoreTweet']]],
   ['percentfull',['PercentFull',['../classCoreTweet_1_1Streaming_1_1WarningMessage.html#ac36f544c06cb1e39e4f0749d5e0c7c9c',1,'CoreTweet::Streaming::WarningMessage']]],
   ['phone',['Phone',['../classCoreTweet_1_1GeoAttributes.html#aefc0c88e7074d4e8d9b52081d3a1f38c',1,'CoreTweet::GeoAttributes']]],
@@ -9,22 +9,27 @@ var searchData=
   ['place',['Place',['../classCoreTweet_1_1Place.html',1,'CoreTweet']]],
   ['place',['Place',['../classCoreTweet_1_1Status.html#aa5baf856f53420ed5b494dba1e65b461',1,'CoreTweet.Status.Place()'],['../classCoreTweet_1_1Rest_1_1Trends.html#a2bae6b1fda0a5a3ba5429fac3286245f',1,'CoreTweet.Rest.Trends.Place(params Expression&lt; Func&lt; string, object &gt;&gt;[] parameters)'],['../classCoreTweet_1_1Rest_1_1Trends.html#a76053d43b6a4366a2c65a965cc2fa31f',1,'CoreTweet.Rest.Trends.Place(IDictionary&lt; string, object &gt; parameters)']]],
   ['place_3c_20t_20_3e',['Place&lt; T &gt;',['../classCoreTweet_1_1Rest_1_1Trends.html#abcade7fe3ba3cbe0adba63ad9cddbfb3',1,'CoreTweet::Rest::Trends']]],
+  ['placeasync',['PlaceAsync',['../classCoreTweet_1_1Rest_1_1Trends.html#a0ec096e28c0e1c117410fd1a96cc18cc',1,'CoreTweet.Rest.Trends.PlaceAsync(params Expression&lt; Func&lt; string, object &gt;&gt;[] parameters)'],['../classCoreTweet_1_1Rest_1_1Trends.html#abcd2d4c7671ec92870b1a3d6ab53406d',1,'CoreTweet.Rest.Trends.PlaceAsync(IDictionary&lt; string, object &gt; parameters, CancellationToken cancellationToken=default(CancellationToken))']]],
+  ['placeasync_3c_20t_20_3e',['PlaceAsync&lt; T &gt;',['../classCoreTweet_1_1Rest_1_1Trends.html#a4fa2a6fe63bc27a54036cace81b6c52a',1,'CoreTweet::Rest::Trends']]],
   ['places',['Places',['../classCoreTweet_1_1GeoResult.html#ab81915b0e52af732d5723e1a924c16db',1,'CoreTweet::GeoResult']]],
   ['places_2ecs',['Places.cs',['../Places_8cs.html',1,'']]],
   ['placetype',['PlaceType',['../classCoreTweet_1_1Place.html#a8091a4f2ec4967d378c75ab614ab02a0',1,'CoreTweet::Place']]],
   ['possiblysensitive',['PossiblySensitive',['../classCoreTweet_1_1Status.html#ae965f8b70522afd497c972b91899dd95',1,'CoreTweet::Status']]],
   ['post',['Post',['../namespaceCoreTweet.html#a6e05c1dcaf2cf8e4ece975f7d3af0e26a03d947a2158373c3b9d74325850cb8b9',1,'CoreTweet']]],
   ['postalcode',['PostalCode',['../classCoreTweet_1_1GeoAttributes.html#a065780272914343fcfcf2229267dcfb1',1,'CoreTweet::GeoAttributes']]],
-  ['postnoresponse',['PostNoResponse',['../namespaceCoreTweet.html#a6e05c1dcaf2cf8e4ece975f7d3af0e26add7a412f436b68f6b693e928d5c3a5ae',1,'CoreTweet']]],
   ['previous',['Previous',['../namespaceCoreTweet.html#a3cb7681ad32c9fadc094714125a3d30aadd1f775e443ff3b9a89270713580a51b',1,'CoreTweet']]],
   ['previouscursor',['PreviousCursor',['../classCoreTweet_1_1Cursored_3_01T_01_4.html#a8d2e33f4b5a419bc8f921376b0ed9462',1,'CoreTweet::Cursored&lt; T &gt;']]],
   ['privacy',['Privacy',['../classCoreTweet_1_1Rest_1_1Help.html#a1ada1ba1bab143614c0d9d181ef6911f',1,'CoreTweet.Rest.Help.Privacy(params Expression&lt; Func&lt; string, object &gt;&gt;[] parameters)'],['../classCoreTweet_1_1Rest_1_1Help.html#a7bd96fb30e0d79eb85f35af9d708d98f',1,'CoreTweet.Rest.Help.Privacy(IDictionary&lt; string, object &gt; parameters)']]],
   ['privacy_3c_20t_20_3e',['Privacy&lt; T &gt;',['../classCoreTweet_1_1Rest_1_1Help.html#ad0f841bb214531c2f8e83326b9315055',1,'CoreTweet::Rest::Help']]],
+  ['privacyasync',['PrivacyAsync',['../classCoreTweet_1_1Rest_1_1Help.html#ac2e6a183b1c9ce90e9cb46eab07fe231',1,'CoreTweet.Rest.Help.PrivacyAsync(params Expression&lt; Func&lt; string, object &gt;&gt;[] parameters)'],['../classCoreTweet_1_1Rest_1_1Help.html#aaa66f97a4b108bd0e2a39cc37bb29921',1,'CoreTweet.Rest.Help.PrivacyAsync(IDictionary&lt; string, object &gt; parameters, CancellationToken cancellationToken=default(CancellationToken))']]],
+  ['privacyasync_3c_20t_20_3e',['PrivacyAsync&lt; T &gt;',['../classCoreTweet_1_1Rest_1_1Help.html#a701615afdaac2fcf89c21100428ea241',1,'CoreTweet::Rest::Help']]],
   ['profilebackgroundcolor',['ProfileBackgroundColor',['../classCoreTweet_1_1User.html#ad84ca25dba025d36b2ae9a36699328ae',1,'CoreTweet::User']]],
   ['profilebackgroundimageurl',['ProfileBackgroundImageUrl',['../classCoreTweet_1_1User.html#a1dc0b4e4ae3e00d50c03a548ce668ee8',1,'CoreTweet::User']]],
   ['profilebackgroundimageurlhttps',['ProfileBackgroundImageUrlHttps',['../classCoreTweet_1_1User.html#a925785cff9a6ad4c2ee4eedf8613c2e3',1,'CoreTweet::User']]],
   ['profilebanner',['ProfileBanner',['../classCoreTweet_1_1Rest_1_1Users.html#a4fcaa9f699c506a1837b4de8323c9ada',1,'CoreTweet.Rest.Users.ProfileBanner(params Expression&lt; Func&lt; string, object &gt;&gt;[] parameters)'],['../classCoreTweet_1_1Rest_1_1Users.html#ac945f40b84666fd162d5cdfdfd02d95f',1,'CoreTweet.Rest.Users.ProfileBanner(IDictionary&lt; string, object &gt; parameters)']]],
   ['profilebanner_3c_20t_20_3e',['ProfileBanner&lt; T &gt;',['../classCoreTweet_1_1Rest_1_1Users.html#a8a199bc1037e891eb4df2392f4706cac',1,'CoreTweet::Rest::Users']]],
+  ['profilebannerasync',['ProfileBannerAsync',['../classCoreTweet_1_1Rest_1_1Users.html#a5434a64c70f503eb2ff8dcfa7c83b4c5',1,'CoreTweet.Rest.Users.ProfileBannerAsync(params Expression&lt; Func&lt; string, object &gt;&gt;[] parameters)'],['../classCoreTweet_1_1Rest_1_1Users.html#a463fd9499e442dda095f061ad75b2867',1,'CoreTweet.Rest.Users.ProfileBannerAsync(IDictionary&lt; string, object &gt; parameters, CancellationToken cancellationToken=default(CancellationToken))']]],
+  ['profilebannerasync_3c_20t_20_3e',['ProfileBannerAsync&lt; T &gt;',['../classCoreTweet_1_1Rest_1_1Users.html#acedbb663488e35fb6f188d779897c0ba',1,'CoreTweet::Rest::Users']]],
   ['profilebannersize',['ProfileBannerSize',['../classCoreTweet_1_1ProfileBannerSize.html',1,'CoreTweet']]],
   ['profilebannersizes',['ProfileBannerSizes',['../classCoreTweet_1_1ProfileBannerSizes.html',1,'CoreTweet']]],
   ['profilebannerurl',['ProfileBannerUrl',['../classCoreTweet_1_1User.html#a01deb164c7b9a2cc557f5c0a89ea84a2',1,'CoreTweet::User']]],
@@ -38,5 +43,5 @@ var searchData=
   ['property_2ecs',['Property.cs',['../Property_8cs.html',1,'']]],
   ['providername',['ProviderName',['../classCoreTweet_1_1Embed.html#a5d955fbfd8c037268f78208f94fc1c7f',1,'CoreTweet::Embed']]],
   ['providerurl',['ProviderUrl',['../classCoreTweet_1_1Embed.html#a3a2e5b064f9c13c17c7e0f0410010f17',1,'CoreTweet::Embed']]],
-  ['proxy',['Proxy',['../classCoreTweet_1_1Core_1_1TokensBase.html#af199496bc6432dc1199c6bcba31012ba',1,'CoreTweet.Core.TokensBase.Proxy()'],['../classCoreTweet_1_1OAuth_1_1OAuthSession.html#adb493c30711a6576aadb01c42cbb5f5b',1,'CoreTweet.OAuth.OAuthSession.Proxy()']]]
+  ['proxy',['Proxy',['../classCoreTweet_1_1ConnectionOptions.html#ac6d2c92915d5cc835ef559ed9c090745',1,'CoreTweet::ConnectionOptions']]]
 ];

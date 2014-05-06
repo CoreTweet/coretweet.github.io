@@ -1,9 +1,10 @@
 var searchData=
 [
   ['cacheage',['CacheAge',['../classCoreTweet_1_1Embed.html#a1e26e407fe59401b766469a1a649bb3b',1,'CoreTweet::Embed']]],
-  ['candm',['CanDm',['../classCoreTweet_1_1Friendship.html#a97de309472a33eaa44df3369c48230de',1,'CoreTweet::Friendship']]],
+  ['candm',['CanDM',['../classCoreTweet_1_1Friendship.html#ac376759d30a496487d904d7565ca40a0',1,'CoreTweet::Friendship']]],
   ['charactersreservedpermedia',['CharactersReservedPerMedia',['../classCoreTweet_1_1Configurations.html#afdd5aae5f91794e209e132f7dca7b016',1,'CoreTweet::Configurations']]],
   ['code',['Code',['../classCoreTweet_1_1Error.html#afd6cef3f6a2cbbb54b567e946aa7ad84',1,'CoreTweet.Error.Code()'],['../classCoreTweet_1_1Language.html#aadcb16b8861d9a44cdb0cb90c7909dcf',1,'CoreTweet.Language.Code()'],['../classCoreTweet_1_1Streaming_1_1DisconnectMessage.html#ab0108d43a35f07f1559c700c1e901022',1,'CoreTweet.Streaming.DisconnectMessage.Code()'],['../classCoreTweet_1_1Streaming_1_1WarningMessage.html#ae475e727a2352e1734f57965b7856022',1,'CoreTweet.Streaming.WarningMessage.Code()']]],
+  ['connectionoptions',['ConnectionOptions',['../classCoreTweet_1_1Core_1_1TokensBase.html#afc7d25b53b614ebd57f66e3cb36caf14',1,'CoreTweet.Core.TokensBase.ConnectionOptions()'],['../classCoreTweet_1_1OAuth_1_1OAuthSession.html#a862005fc3b485e80c861e912a33b2887',1,'CoreTweet.OAuth.OAuthSession.ConnectionOptions()']]],
   ['connections',['Connections',['../classCoreTweet_1_1Friendship.html#a2923d2a9cd834cf5491b6c19708a2a1f',1,'CoreTweet::Friendship']]],
   ['consumerkey',['ConsumerKey',['../classCoreTweet_1_1Core_1_1TokensBase.html#a80586cc16e684e67c2e8aea6e0a33e38',1,'CoreTweet.Core.TokensBase.ConsumerKey()'],['../classCoreTweet_1_1OAuth_1_1OAuthSession.html#a913ed1542c819041f5c7f6a1c389c219',1,'CoreTweet.OAuth.OAuthSession.ConsumerKey()']]],
   ['consumersecret',['ConsumerSecret',['../classCoreTweet_1_1Core_1_1TokensBase.html#a620c955c87532fa296e913497edc3c36',1,'CoreTweet.Core.TokensBase.ConsumerSecret()'],['../classCoreTweet_1_1OAuth_1_1OAuthSession.html#a361d923d6937c42e635809ed9ab804fe',1,'CoreTweet.OAuth.OAuthSession.ConsumerSecret()']]],

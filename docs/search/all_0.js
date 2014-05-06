@@ -4,6 +4,7 @@ var searchData=
   ['accesstokensecret',['AccessTokenSecret',['../classCoreTweet_1_1Tokens.html#a5d4e9084f700ba8e59dd8d2801e9775a',1,'CoreTweet::Tokens']]],
   ['account',['Account',['../classCoreTweet_1_1Rest_1_1Account.html',1,'CoreTweet::Rest']]],
   ['account',['Account',['../classCoreTweet_1_1Core_1_1TokensBase.html#a837672558c29295755be1c1007c4dd5b',1,'CoreTweet::Core::TokensBase']]],
+  ['account_2easync_2ecs',['Account.Async.cs',['../Account_8Async_8cs.html',1,'']]],
   ['account_2ecs',['Account.cs',['../Account_8cs.html',1,'']]],
   ['adminlogout',['AdminLogout',['../namespaceCoreTweet_1_1Streaming.html#a8a261ff0c83f88d7ee1d03e64a9d5258a6e168fdf89545e2a01578e87edcc9d4d',1,'CoreTweet::Streaming']]],
   ['allreplies',['AllReplies',['../classCoreTweet_1_1Friendship.html#a92d7e4563c954d30f79fd07017988620',1,'CoreTweet::Friendship']]],
@@ -16,10 +17,13 @@ var searchData=
   ['assemblyinfo_2ecs',['AssemblyInfo.cs',['../AssemblyInfo_8cs.html',1,'']]],
   ['attribute_2ecs',['Attribute.cs',['../Attribute_8cs.html',1,'']]],
   ['attributes',['Attributes',['../classCoreTweet_1_1Place.html#ae309ad815bcc3356e48dbc32d2caea0c',1,'CoreTweet::Place']]],
-  ['authorize',['Authorize',['../classCoreTweet_1_1OAuth.html#a279cc1d3ea5bff92b2b64c8c3c95b055',1,'CoreTweet::OAuth']]],
+  ['authorize',['Authorize',['../classCoreTweet_1_1OAuth.html#a8be0e2bd8819aa4113103bdcb251a56f',1,'CoreTweet::OAuth']]],
+  ['authorizeasync',['AuthorizeAsync',['../classCoreTweet_1_1OAuth.html#a24b09669136bf2e502972d5df354f33a',1,'CoreTweet::OAuth']]],
   ['authorizeuri',['AuthorizeUri',['../classCoreTweet_1_1OAuth_1_1OAuthSession.html#a7a025edd4f6de8e1b826f5e0d8431015',1,'CoreTweet::OAuth::OAuthSession']]],
   ['authorname',['AuthorName',['../classCoreTweet_1_1Embed.html#ab724be69da24625ea593b28c2e481258',1,'CoreTweet::Embed']]],
   ['authorurl',['AuthorUrl',['../classCoreTweet_1_1Embed.html#a8f1fbbbdcb71ea99fd071e93e142152c',1,'CoreTweet::Embed']]],
   ['avaliable',['Avaliable',['../classCoreTweet_1_1Rest_1_1Trends.html#aed4c36260fed16a84e84011d5c01e001',1,'CoreTweet.Rest.Trends.Avaliable(params Expression&lt; Func&lt; string, object &gt;&gt;[] parameters)'],['../classCoreTweet_1_1Rest_1_1Trends.html#a535f1bbcc6da140c67a3794f7379a585',1,'CoreTweet.Rest.Trends.Avaliable(IDictionary&lt; string, object &gt; parameters)']]],
-  ['avaliable_3c_20t_20_3e',['Avaliable&lt; T &gt;',['../classCoreTweet_1_1Rest_1_1Trends.html#abbfc057dbfb9681868c390a0b673d162',1,'CoreTweet::Rest::Trends']]]
+  ['avaliable_3c_20t_20_3e',['Avaliable&lt; T &gt;',['../classCoreTweet_1_1Rest_1_1Trends.html#abbfc057dbfb9681868c390a0b673d162',1,'CoreTweet::Rest::Trends']]],
+  ['avaliableasync',['AvaliableAsync',['../classCoreTweet_1_1Rest_1_1Trends.html#a10d737a6f54d745ca1f11cfb65431272',1,'CoreTweet.Rest.Trends.AvaliableAsync(params Expression&lt; Func&lt; string, object &gt;&gt;[] parameters)'],['../classCoreTweet_1_1Rest_1_1Trends.html#ab72b80997f7d0dcbf795532ba4d24abd',1,'CoreTweet.Rest.Trends.AvaliableAsync(IDictionary&lt; string, object &gt; parameters, CancellationToken cancellationToken=default(CancellationToken))']]],
+  ['avaliableasync_3c_20t_20_3e',['AvaliableAsync&lt; T &gt;',['../classCoreTweet_1_1Rest_1_1Trends.html#aca864486636ca0ca4ee7e04f13884f04',1,'CoreTweet::Rest::Trends']]]
 ];

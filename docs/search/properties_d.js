@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['parameters',['Parameters',['../classCoreTweet_1_1Streaming_1_1StreamingParameters.html#a6dd0f06cfad71455efc0414e57055a60',1,'CoreTweet::Streaming::StreamingParameters']]],
+  ['parameters',['Parameters',['../classCoreTweet_1_1Streaming_1_1StreamingParameters.html#a129d146c4dbd7dee683dd15580ac7458',1,'CoreTweet::Streaming::StreamingParameters']]],
   ['percentfull',['PercentFull',['../classCoreTweet_1_1Streaming_1_1WarningMessage.html#ac36f544c06cb1e39e4f0749d5e0c7c9c',1,'CoreTweet::Streaming::WarningMessage']]],
   ['phone',['Phone',['../classCoreTweet_1_1GeoAttributes.html#aefc0c88e7074d4e8d9b52081d3a1f38c',1,'CoreTweet::GeoAttributes']]],
   ['photosizelimit',['PhotoSizeLimit',['../classCoreTweet_1_1Configurations.html#aa6cf3c5df3e7bf725325ca8e5dd45a57',1,'CoreTweet::Configurations']]],
@@ -23,5 +23,5 @@ var searchData=
   ['profiletextcolor',['ProfileTextColor',['../classCoreTweet_1_1User.html#a1d5646cad4cefe645ab3e060279a187f',1,'CoreTweet::User']]],
   ['providername',['ProviderName',['../classCoreTweet_1_1Embed.html#a5d955fbfd8c037268f78208f94fc1c7f',1,'CoreTweet::Embed']]],
   ['providerurl',['ProviderUrl',['../classCoreTweet_1_1Embed.html#a3a2e5b064f9c13c17c7e0f0410010f17',1,'CoreTweet::Embed']]],
-  ['proxy',['Proxy',['../classCoreTweet_1_1Core_1_1TokensBase.html#af199496bc6432dc1199c6bcba31012ba',1,'CoreTweet.Core.TokensBase.Proxy()'],['../classCoreTweet_1_1OAuth_1_1OAuthSession.html#adb493c30711a6576aadb01c42cbb5f5b',1,'CoreTweet.OAuth.OAuthSession.Proxy()']]]
+  ['proxy',['Proxy',['../classCoreTweet_1_1ConnectionOptions.html#ac6d2c92915d5cc835ef559ed9c090745',1,'CoreTweet::ConnectionOptions']]]
 ];

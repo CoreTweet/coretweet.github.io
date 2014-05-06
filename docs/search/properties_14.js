@@ -7,5 +7,5 @@ var searchData=
   ['withheldcopyright',['WithheldCopyright',['../classCoreTweet_1_1Status.html#ad61a0ee96dea40e52d1f459e07e33a29',1,'CoreTweet::Status']]],
   ['withheldincountries',['WithheldInCountries',['../classCoreTweet_1_1Status.html#abd9e5f925a0db3fcc5812869c5ce11c5',1,'CoreTweet.Status.WithheldInCountries()'],['../classCoreTweet_1_1User.html#aa861516f3cf39efc04a062f443371779',1,'CoreTweet.User.WithheldInCountries()'],['../classCoreTweet_1_1Streaming_1_1IDMessage.html#a2f4ecf2d143defb63ca237cfb4ab9eb9',1,'CoreTweet.Streaming.IDMessage.WithheldInCountries()']]],
   ['withheldscope',['WithheldScope',['../classCoreTweet_1_1Status.html#afafeff0272ab0f4d9a54009639cdf039',1,'CoreTweet.Status.WithheldScope()'],['../classCoreTweet_1_1User.html#a689c3aeef76653c9afb3973bb74bc3d4',1,'CoreTweet.User.WithheldScope()']]],
-  ['woeid',['WoeID',['../classCoreTweet_1_1Location.html#a11248312111aaf83cbd64eb9a22c5fc9',1,'CoreTweet::Location']]]
+  ['woeid',['WoeId',['../classCoreTweet_1_1Location.html#a085467bfb233099898d0bc8392b8ad7c',1,'CoreTweet::Location']]]
 ];

@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['readwritetimeout',['ReadWriteTimeout',['../classCoreTweet_1_1ConnectionOptions.html#a27fc2d9dfd131b46bb9d957e01473cd2',1,'CoreTweet::ConnectionOptions']]],
   ['reason',['Reason',['../classCoreTweet_1_1Streaming_1_1DisconnectMessage.html#af82c476d39b0dd384585c5c0abd25677',1,'CoreTweet::Streaming::DisconnectMessage']]],
   ['recipient',['Recipient',['../classCoreTweet_1_1DirectMessage.html#ab6a0c34c991d96a73db5294dbfe6dab9',1,'CoreTweet::DirectMessage']]],
   ['region',['Region',['../classCoreTweet_1_1GeoAttributes.html#a12d9bc05434efffe1bc70c090a74f14a',1,'CoreTweet::GeoAttributes']]],
