@@ -1,6 +1,7 @@
 var searchData=
 [
   ['category',['Category',['../classCoreTweet_1_1Category.html',1,'CoreTweet']]],
+  ['categoryresponse',['CategoryResponse',['../classCoreTweet_1_1CategoryResponse.html',1,'CoreTweet']]],
   ['configurations',['Configurations',['../classCoreTweet_1_1Configurations.html',1,'CoreTweet']]],
   ['connectionoptions',['ConnectionOptions',['../classCoreTweet_1_1ConnectionOptions.html',1,'CoreTweet']]],
   ['contributors',['Contributors',['../classCoreTweet_1_1Contributors.html',1,'CoreTweet']]],

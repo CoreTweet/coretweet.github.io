@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="core-48x48.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">CoreTweet
-   &#160;<span id="projectnumber">0.3.1</span>
+   &#160;<span id="projectnumber">0.3.2</span>
    </div>
    <div id="projectbrief">Yet another .NET Twitter Library</div>
   </td>
@@ -102,7 +102,8 @@ Inheritance diagram for CoreTweet.Embed:</div>
  <div class="center">
   <img src="classCoreTweet_1_1Embed.png" usemap="#CoreTweet.Embed_map" alt=""/>
   <map id="CoreTweet.Embed_map" name="CoreTweet.Embed_map">
-<area href="classCoreTweet_1_1Core_1_1CoreBase.html" title="The base class of twitter objects. " alt="CoreTweet.Core.CoreBase" shape="rect" coords="0,0,165,24"/>
+<area href="classCoreTweet_1_1Core_1_1CoreBase.html" title="The base class of twitter objects. " alt="CoreTweet.Core.CoreBase" shape="rect" coords="0,0,204,24"/>
+<area href="interfaceCoreTweet_1_1Core_1_1ITwitterResponse.html" alt="CoreTweet.Core.ITwitterResponse" shape="rect" coords="214,0,418,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -141,6 +142,11 @@ Properties</h2></td></tr>
 <tr class="memitem:a1e26e407fe59401b766469a1a649bb3b"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Embed.html#a1e26e407fe59401b766469a1a649bb3b">CacheAge</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a1e26e407fe59401b766469a1a649bb3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The age of the cache.  <a href="#a1e26e407fe59401b766469a1a649bb3b">More...</a><br /></td></tr>
 <tr class="separator:a1e26e407fe59401b766469a1a649bb3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a389b5eb4b8224478f6cdba0268f66969"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCoreTweet_1_1RateLimit.html">RateLimit</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Embed.html#a389b5eb4b8224478f6cdba0268f66969">RateLimit</a><code> [get, set]</code></td></tr>
+<tr class="separator:a389b5eb4b8224478f6cdba0268f66969"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header properties_interfaceCoreTweet_1_1Core_1_1ITwitterResponse"><td colspan="2" onclick="javascript:toggleInherit('properties_interfaceCoreTweet_1_1Core_1_1ITwitterResponse')"><img src="closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="interfaceCoreTweet_1_1Core_1_1ITwitterResponse.html">CoreTweet.Core.ITwitterResponse</a></td></tr>
+<tr class="memitem:a51b492846bd6cb9b388d1ffca2a23169 inherit properties_interfaceCoreTweet_1_1Core_1_1ITwitterResponse"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCoreTweet_1_1RateLimit.html">RateLimit</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceCoreTweet_1_1Core_1_1ITwitterResponse.html#a51b492846bd6cb9b388d1ffca2a23169">RateLimit</a><code> [get, set]</code></td></tr>
+<tr class="separator:a51b492846bd6cb9b388d1ffca2a23169 inherit properties_interfaceCoreTweet_1_1Core_1_1ITwitterResponse"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -148,9 +154,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a24d02c61dc738f6e35086c7b42952294 inherit pub_static_methods_classCoreTweet_1_1Core_1_1CoreBase"><td class="memItemLeft" align="right" valign="top">static T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Core_1_1CoreBase.html#a24d02c61dc738f6e35086c7b42952294">Convert&lt; T &gt;</a> (<a class="el" href="classCoreTweet_1_1Core_1_1TokensBase.html">TokensBase</a> tokens, string json, string jsonPath=&quot;&quot;)</td></tr>
 <tr class="memdesc:a24d02c61dc738f6e35086c7b42952294 inherit pub_static_methods_classCoreTweet_1_1Core_1_1CoreBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the json to a twitter object of the specified type.  <a href="#a24d02c61dc738f6e35086c7b42952294">More...</a><br /></td></tr>
 <tr class="separator:a24d02c61dc738f6e35086c7b42952294 inherit pub_static_methods_classCoreTweet_1_1Core_1_1CoreBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afffa68041e911934372766e9a9014983 inherit pub_static_methods_classCoreTweet_1_1Core_1_1CoreBase"><td class="memItemLeft" align="right" valign="top">static IEnumerable&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Core_1_1CoreBase.html#afffa68041e911934372766e9a9014983">ConvertArray&lt; T &gt;</a> (<a class="el" href="classCoreTweet_1_1Core_1_1TokensBase.html">TokensBase</a> tokens, string json, string jsonPath)</td></tr>
-<tr class="memdesc:afffa68041e911934372766e9a9014983 inherit pub_static_methods_classCoreTweet_1_1Core_1_1CoreBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the json to a twitter object of the specified type. This is used for APIs that return an array.  <a href="#afffa68041e911934372766e9a9014983">More...</a><br /></td></tr>
-<tr class="separator:afffa68041e911934372766e9a9014983 inherit pub_static_methods_classCoreTweet_1_1Core_1_1CoreBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b972da176de8e43680f988c5d9cf84b inherit pub_static_methods_classCoreTweet_1_1Core_1_1CoreBase"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classCoreTweet_1_1List.html">List</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Core_1_1CoreBase.html#a5b972da176de8e43680f988c5d9cf84b">ConvertArray&lt; T &gt;</a> (<a class="el" href="classCoreTweet_1_1Core_1_1TokensBase.html">TokensBase</a> tokens, string json, string jsonPath)</td></tr>
+<tr class="memdesc:a5b972da176de8e43680f988c5d9cf84b inherit pub_static_methods_classCoreTweet_1_1Core_1_1CoreBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the json to a twitter object of the specified type. This is used for APIs that return an array.  <a href="#a5b972da176de8e43680f988c5d9cf84b">More...</a><br /></td></tr>
+<tr class="separator:a5b972da176de8e43680f988c5d9cf84b inherit pub_static_methods_classCoreTweet_1_1Core_1_1CoreBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Property Documentation</h2>
 <a class="anchor" id="ab724be69da24625ea593b28c2e481258"></a>
@@ -314,6 +320,26 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a389b5eb4b8224478f6cdba0268f66969"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classCoreTweet_1_1RateLimit.html">RateLimit</a> CoreTweet.Embed.RateLimit</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="aa3781766d7f803c37cab06cfb5ebd14c"></a>
 <div class="memitem">
 <div class="memproto">
@@ -412,7 +438,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 6 2014 22:07:43 for CoreTweet by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue May 20 2014 20:46:38 for CoreTweet by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

@@ -10,5 +10,6 @@ var searchData=
   ['message',['Message',['../classCoreTweet_1_1Error.html#ad7c94c9e61b002f8563781a7f4e95f58',1,'CoreTweet.Error.Message()'],['../classCoreTweet_1_1Streaming_1_1WarningMessage.html#a405ae47dfa001f357547566a21a7a643',1,'CoreTweet.Streaming.WarningMessage.Message()'],['../classCoreTweet_1_1Streaming_1_1EnvelopesMessage.html#a1369457218f34289af6e940247f80394',1,'CoreTweet.Streaming.EnvelopesMessage.Message()']]],
   ['mobile',['Mobile',['../classCoreTweet_1_1ProfileBannerSizes.html#ae64a74190ff44edf7209d31cbb0845c4',1,'CoreTweet::ProfileBannerSizes']]],
   ['mobileretina',['MobileRetina',['../classCoreTweet_1_1ProfileBannerSizes.html#a1fd558442678b6af417ed96f5628c93b',1,'CoreTweet::ProfileBannerSizes']]],
-  ['mode',['Mode',['../classCoreTweet_1_1List.html#a73a33ee31656258d7a2c4f4389fb9ed5',1,'CoreTweet::List']]]
+  ['mode',['Mode',['../classCoreTweet_1_1List.html#a73a33ee31656258d7a2c4f4389fb9ed5',1,'CoreTweet::List']]],
+  ['mutes',['Mutes',['../classCoreTweet_1_1Core_1_1TokensBase.html#a79c914a9aa691618280a8ede80ff122f',1,'CoreTweet::Core::TokensBase']]]
 ];
