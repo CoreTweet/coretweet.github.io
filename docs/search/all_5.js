@@ -1,8 +1,9 @@
 var searchData=
 [
   ['favorite',['Favorite',['../namespaceCoreTweet_1_1Streaming.html#a41edacb4832607d7589e10e59d07fb06a01165dcf77c191e6c69b31d98b0ec6ff',1,'CoreTweet::Streaming']]],
-  ['favorites',['Favorites',['../classCoreTweet_1_1Rest_1_1Favorites.html',1,'CoreTweet::Rest']]],
+  ['favoritecount',['FavoriteCount',['../classCoreTweet_1_1Status.html#acdb5b9f5307a49290419c0f0b16c3a14',1,'CoreTweet::Status']]],
   ['favorites',['Favorites',['../classCoreTweet_1_1Core_1_1TokensBase.html#a7bb8bd71208074b1c631bb802bbf2322',1,'CoreTweet::Core::TokensBase']]],
+  ['favorites',['Favorites',['../classCoreTweet_1_1Rest_1_1Favorites.html',1,'CoreTweet::Rest']]],
   ['favorites_2easync_2ecs',['Favorites.Async.cs',['../Favorites_8Async_8cs.html',1,'']]],
   ['favorites_2ecs',['Favorites.cs',['../Favorites_8cs.html',1,'']]],
   ['favouritescount',['FavouritesCount',['../classCoreTweet_1_1User.html#ae4095f9babf18a7f3713aec8fb8a3dd4',1,'CoreTweet::User']]],
@@ -21,8 +22,8 @@ var searchData=
   ['friends_2ecs',['Friends.cs',['../Friends_8cs.html',1,'']]],
   ['friendscount',['FriendsCount',['../classCoreTweet_1_1User.html#a135ff7540ae37c83d757c7b610cb31e0',1,'CoreTweet::User']]],
   ['friendship',['Friendship',['../classCoreTweet_1_1Friendship.html',1,'CoreTweet']]],
-  ['friendships',['Friendships',['../classCoreTweet_1_1Rest_1_1Friendships.html',1,'CoreTweet::Rest']]],
   ['friendships',['Friendships',['../classCoreTweet_1_1Core_1_1TokensBase.html#a93fa80c1c43006dbaca3a6e4a7d8b01b',1,'CoreTweet::Core::TokensBase']]],
+  ['friendships',['Friendships',['../classCoreTweet_1_1Rest_1_1Friendships.html',1,'CoreTweet::Rest']]],
   ['friendships_2easync_2ecs',['Friendships.Async.cs',['../Friendships_8Async_8cs.html',1,'']]],
   ['friendships_2ecs',['Friendships.cs',['../Friendships_8cs.html',1,'']]],
   ['friendsmessage',['FriendsMessage',['../classCoreTweet_1_1Streaming_1_1FriendsMessage.html',1,'CoreTweet::Streaming']]],

@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="core-48x48.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">CoreTweet
-   &#160;<span id="projectnumber">0.3.2</span>
+   &#160;<span id="projectnumber">0.3.3</span>
    </div>
    <div id="projectbrief">Yet another .NET Twitter Library</div>
   </td>
@@ -103,14 +103,17 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Streaming_1_1StatusMessage.html">CoreTweet.Streaming.StatusMessage</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classCoreTweet_1_1Status.html" title="Tweets are the basic atomic building block of all things Twitter. Users tweet Tweets, also known more generically as &quot;status updates.&quot; Tweets can be embedded, replied to, favorited, unfavorited and deleted. ">Status</a> message.  <a href="classCoreTweet_1_1Streaming_1_1StatusMessage.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Streaming_1_1DirectMessageMessage.html">CoreTweet.Streaming.DirectMessageMessage</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Direct message message  <a href="classCoreTweet_1_1Streaming_1_1DirectMessageMessage.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Streaming_1_1FriendsMessage.html">CoreTweet.Streaming.FriendsMessage</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Message contains ids of friends.  <a href="classCoreTweet_1_1Streaming_1_1FriendsMessage.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Streaming_1_1LimitMessage.html">CoreTweet.Streaming.LimitMessage</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Message that notices limit.  <a href="classCoreTweet_1_1Streaming_1_1LimitMessage.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Streaming_1_1IDMessage.html">CoreTweet.Streaming.IDMessage</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Message contains ids.  <a href="classCoreTweet_1_1Streaming_1_1IDMessage.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Streaming_1_1IdMessage.html">CoreTweet.Streaming.IdMessage</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Message contains ids.  <a href="classCoreTweet_1_1Streaming_1_1IdMessage.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Streaming_1_1DisconnectMessage.html">CoreTweet.Streaming.DisconnectMessage</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Message published when Twitter disconnects the stream.  <a href="classCoreTweet_1_1Streaming_1_1DisconnectMessage.html#details">More...</a><br /></td></tr>
@@ -180,22 +183,24 @@ Enumerations</h2></td></tr>
 <tr class="memdesc:a41edacb4832607d7589e10e59d07fb06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event code.  <a href="namespaceCoreTweet_1_1Streaming.html#a41edacb4832607d7589e10e59d07fb06">More...</a><br /></td></tr>
 <tr class="separator:a41edacb4832607d7589e10e59d07fb06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0f1a921dcf3d18048a7d11193abe829"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceCoreTweet_1_1Streaming.html#ae0f1a921dcf3d18048a7d11193abe829">CoreTweet.Streaming.MessageType</a> { <br />
-&#160;&#160;<a class="el" href="namespaceCoreTweet_1_1Streaming.html#ae0f1a921dcf3d18048a7d11193abe829af2a6c498fb90ee345d997f888fce3b18">CoreTweet.Streaming.MessageType.Delete</a>, 
+&#160;&#160;<a class="el" href="namespaceCoreTweet_1_1Streaming.html#ae0f1a921dcf3d18048a7d11193abe829ae42b1ddb992e0386d2d1d7ee56519072">CoreTweet.Streaming.MessageType.DeleteStatus</a>, 
+<a class="el" href="namespaceCoreTweet_1_1Streaming.html#ae0f1a921dcf3d18048a7d11193abe829a094a1ea1c6e2ac5196da861d8aaa6e20">CoreTweet.Streaming.MessageType.DeleteDirectMessage</a>, 
 <a class="el" href="namespaceCoreTweet_1_1Streaming.html#ae0f1a921dcf3d18048a7d11193abe829a9a81847ffa4181702d857ba4738bf258">CoreTweet.Streaming.MessageType.ScrubGeo</a>, 
 <a class="el" href="namespaceCoreTweet_1_1Streaming.html#ae0f1a921dcf3d18048a7d11193abe829acc5c59375ea1aff5f4a66d098dffce64">CoreTweet.Streaming.MessageType.StatusWithheld</a>, 
-<a class="el" href="namespaceCoreTweet_1_1Streaming.html#ae0f1a921dcf3d18048a7d11193abe829adac0b63f2ed6c985845edadc7345067b">CoreTweet.Streaming.MessageType.UserWithheld</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespaceCoreTweet_1_1Streaming.html#ae0f1a921dcf3d18048a7d11193abe829a42ae25231906c83927831e0ef7c317ac">CoreTweet.Streaming.MessageType.Disconnect</a>, 
+&#160;&#160;<a class="el" href="namespaceCoreTweet_1_1Streaming.html#ae0f1a921dcf3d18048a7d11193abe829adac0b63f2ed6c985845edadc7345067b">CoreTweet.Streaming.MessageType.UserWithheld</a>, 
+<a class="el" href="namespaceCoreTweet_1_1Streaming.html#ae0f1a921dcf3d18048a7d11193abe829a42ae25231906c83927831e0ef7c317ac">CoreTweet.Streaming.MessageType.Disconnect</a>, 
 <a class="el" href="namespaceCoreTweet_1_1Streaming.html#ae0f1a921dcf3d18048a7d11193abe829a0eaadb4fcb48a0a0ed7bc9868be9fbaa">CoreTweet.Streaming.MessageType.Warning</a>, 
 <a class="el" href="namespaceCoreTweet_1_1Streaming.html#ae0f1a921dcf3d18048a7d11193abe829aa4ecfc70574394990cf17bd83df499f7">CoreTweet.Streaming.MessageType.Event</a>, 
-<a class="el" href="namespaceCoreTweet_1_1Streaming.html#ae0f1a921dcf3d18048a7d11193abe829afa9218f2927bf28f67029569c2c86b58">CoreTweet.Streaming.MessageType.Envelopes</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespaceCoreTweet_1_1Streaming.html#ae0f1a921dcf3d18048a7d11193abe829a686e697538050e4664636337cc3b834f">CoreTweet.Streaming.MessageType.Create</a>, 
+&#160;&#160;<a class="el" href="namespaceCoreTweet_1_1Streaming.html#ae0f1a921dcf3d18048a7d11193abe829afa9218f2927bf28f67029569c2c86b58">CoreTweet.Streaming.MessageType.Envelopes</a>, 
+<a class="el" href="namespaceCoreTweet_1_1Streaming.html#ae0f1a921dcf3d18048a7d11193abe829a686e697538050e4664636337cc3b834f">CoreTweet.Streaming.MessageType.Create</a>, 
+<a class="el" href="namespaceCoreTweet_1_1Streaming.html#ae0f1a921dcf3d18048a7d11193abe829aca99d58e2aaa4d9f953455542f5a829a">CoreTweet.Streaming.MessageType.DirectMesssage</a>, 
 <a class="el" href="namespaceCoreTweet_1_1Streaming.html#ae0f1a921dcf3d18048a7d11193abe829a3d594614f445f6b00014e9b77730b833">CoreTweet.Streaming.MessageType.Friends</a>, 
-<a class="el" href="namespaceCoreTweet_1_1Streaming.html#ae0f1a921dcf3d18048a7d11193abe829a80d2677cf518f4d04320042f4ea6c146">CoreTweet.Streaming.MessageType.Limit</a>, 
-<a class="el" href="namespaceCoreTweet_1_1Streaming.html#ae0f1a921dcf3d18048a7d11193abe829aa1595abbb4c3a326636dd178757cd6c1">CoreTweet.Streaming.MessageType.Control</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespaceCoreTweet_1_1Streaming.html#ae0f1a921dcf3d18048a7d11193abe829a318d38c70a7646cb3d37ccc427f4d18a">CoreTweet.Streaming.MessageType.RawJson</a>
+&#160;&#160;<a class="el" href="namespaceCoreTweet_1_1Streaming.html#ae0f1a921dcf3d18048a7d11193abe829a80d2677cf518f4d04320042f4ea6c146">CoreTweet.Streaming.MessageType.Limit</a>, 
+<a class="el" href="namespaceCoreTweet_1_1Streaming.html#ae0f1a921dcf3d18048a7d11193abe829aa1595abbb4c3a326636dd178757cd6c1">CoreTweet.Streaming.MessageType.Control</a>, 
+<a class="el" href="namespaceCoreTweet_1_1Streaming.html#ae0f1a921dcf3d18048a7d11193abe829a318d38c70a7646cb3d37ccc427f4d18a">CoreTweet.Streaming.MessageType.RawJson</a>
 <br />
  }</td></tr>
 <tr class="memdesc:ae0f1a921dcf3d18048a7d11193abe829"><td class="mdescLeft">&#160;</td><td class="mdescRight">Message type.  <a href="namespaceCoreTweet_1_1Streaming.html#ae0f1a921dcf3d18048a7d11193abe829">More...</a><br /></td></tr>
@@ -210,7 +215,7 @@ Enumerations</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 20 2014 20:46:38 for CoreTweet by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat May 31 2014 23:10:00 for CoreTweet by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

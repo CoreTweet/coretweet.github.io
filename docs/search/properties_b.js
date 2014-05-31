@@ -1,9 +1,10 @@
 var searchData=
 [
   ['maxmediaperupload',['MaxMediaPerUpload',['../classCoreTweet_1_1Configurations.html#a51f523f0ec28f2f5cebcc6ce08559b89',1,'CoreTweet::Configurations']]],
-  ['media',['Media',['../classCoreTweet_1_1Entity.html#a16bda42ebbf82feffe7c3256a8c2e085',1,'CoreTweet::Entity']]],
-  ['mediaurl',['MediaUrl',['../classCoreTweet_1_1Media.html#a8d0ba46bac95836315f979b4914495f9',1,'CoreTweet::Media']]],
-  ['mediaurlhttps',['MediaUrlHttps',['../classCoreTweet_1_1Media.html#a267727a4daa6b8ae46c95139e17a14d1',1,'CoreTweet::Media']]],
+  ['media',['Media',['../classCoreTweet_1_1Core_1_1TokensBase.html#afd14cf37320d111d4b7f3996a2389356',1,'CoreTweet.Core.TokensBase.Media()'],['../classCoreTweet_1_1Entities.html#a97ef03bfaac0371ed999cb257efc7593',1,'CoreTweet.Entities.Media()']]],
+  ['mediaid',['MediaId',['../classCoreTweet_1_1MediaUploadResult.html#ae60f08a403e880f9743bb9d352e74739',1,'CoreTweet::MediaUploadResult']]],
+  ['mediaurl',['MediaUrl',['../classCoreTweet_1_1MediaEntity.html#a5dceedc7a73565449aa78f8124a289fa',1,'CoreTweet::MediaEntity']]],
+  ['mediaurlhttps',['MediaUrlHttps',['../classCoreTweet_1_1MediaEntity.html#ad5e976b301f8157afc7d26418de048e6',1,'CoreTweet::MediaEntity']]],
   ['medium',['Medium',['../classCoreTweet_1_1MediaSizes.html#a49eb12408addef9a91c2b555728cd446',1,'CoreTweet::MediaSizes']]],
   ['membercount',['MemberCount',['../classCoreTweet_1_1List.html#af54e2cf0dac1ee1d88f7a2e9c7a8936f',1,'CoreTweet::List']]],
   ['members',['Members',['../classCoreTweet_1_1Rest_1_1Lists.html#ad516e6594d2f59a55aa17b5da6a94f6b',1,'CoreTweet::Rest::Lists']]],

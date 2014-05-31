@@ -1,7 +1,7 @@
 var searchData=
 [
   ['cacheage',['CacheAge',['../classCoreTweet_1_1Embed.html#a1e26e407fe59401b766469a1a649bb3b',1,'CoreTweet::Embed']]],
-  ['canconvert',['CanConvert',['../classCoreTweet_1_1Core_1_1UriConverter.html#a7348118329b550f6d7dcc5fb060b77cb',1,'CoreTweet.Core.UriConverter.CanConvert()'],['../classCoreTweet_1_1Core_1_1DateTimeOffsetConverter.html#a032404d14b86adb38c3f222575ef19bf',1,'CoreTweet.Core.DateTimeOffsetConverter.CanConvert()']]],
+  ['canconvert',['CanConvert',['../classCoreTweet_1_1Core_1_1UriConverter.html#a7348118329b550f6d7dcc5fb060b77cb',1,'CoreTweet.Core.UriConverter.CanConvert()'],['../classCoreTweet_1_1Core_1_1DateTimeOffsetConverter.html#a032404d14b86adb38c3f222575ef19bf',1,'CoreTweet.Core.DateTimeOffsetConverter.CanConvert()'],['../classCoreTweet_1_1Core_1_1ContributorsConverter.html#a100ead0e8c8cd901b957ea613373f864',1,'CoreTweet.Core.ContributorsConverter.CanConvert()']]],
   ['candm',['CanDM',['../classCoreTweet_1_1Friendship.html#ac376759d30a496487d904d7565ca40a0',1,'CoreTweet::Friendship']]],
   ['category',['Category',['../classCoreTweet_1_1Category.html',1,'CoreTweet']]],
   ['categoryresponse',['CategoryResponse',['../classCoreTweet_1_1CategoryResponse.html',1,'CoreTweet']]],
@@ -33,6 +33,7 @@ var searchData=
   ['contributors_3c_20t_20_3e',['Contributors&lt; T &gt;',['../classCoreTweet_1_1Rest_1_1Users.html#acbcf8bcbc9f02d3d5874d5934875922a',1,'CoreTweet::Rest::Users']]],
   ['contributorsasync',['ContributorsAsync',['../classCoreTweet_1_1Rest_1_1Users.html#ae060eb03479d1805b5fc00d012eb606c',1,'CoreTweet.Rest.Users.ContributorsAsync(params Expression&lt; Func&lt; string, object &gt;&gt;[] parameters)'],['../classCoreTweet_1_1Rest_1_1Users.html#ac21293bb609a143b652bacad499403a7',1,'CoreTweet.Rest.Users.ContributorsAsync(IDictionary&lt; string, object &gt; parameters, CancellationToken cancellationToken=default(CancellationToken))']]],
   ['contributorsasync_3c_20t_20_3e',['ContributorsAsync&lt; T &gt;',['../classCoreTweet_1_1Rest_1_1Users.html#a830448a06d0ad6c9aa0c3a8a7d96160a',1,'CoreTweet::Rest::Users']]],
+  ['contributorsconverter',['ContributorsConverter',['../classCoreTweet_1_1Core_1_1ContributorsConverter.html',1,'CoreTweet::Core']]],
   ['control',['Control',['../namespaceCoreTweet_1_1Streaming.html#ae0f1a921dcf3d18048a7d11193abe829aa1595abbb4c3a326636dd178757cd6c1',1,'CoreTweet::Streaming']]],
   ['controlmessage',['ControlMessage',['../classCoreTweet_1_1Streaming_1_1ControlMessage.html',1,'CoreTweet::Streaming']]],
   ['controlrequest',['ControlRequest',['../namespaceCoreTweet_1_1Streaming.html#a8a261ff0c83f88d7ee1d03e64a9d5258a93361601a12cf7edff0c5047c653cb15',1,'CoreTweet::Streaming']]],

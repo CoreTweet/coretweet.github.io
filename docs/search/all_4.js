@@ -3,9 +3,10 @@ var searchData=
   ['embed',['Embed',['../classCoreTweet_1_1Embed.html',1,'CoreTweet']]],
   ['embed_2ecs',['Embed.cs',['../Embed_8cs.html',1,'']]],
   ['endtime',['EndTime',['../classCoreTweet_1_1SleepTime.html#a9e3f570c37634f1ae171b31ec5c33748',1,'CoreTweet::SleepTime']]],
-  ['entities',['Entities',['../classCoreTweet_1_1Status.html#ab918b746ac375991b28b473c12478d93',1,'CoreTweet.Status.Entities()'],['../classCoreTweet_1_1DirectMessage.html#a8385bd2468d6ed6443b6d6a6dd0355a6',1,'CoreTweet.DirectMessage.Entities()'],['../classCoreTweet_1_1User.html#a01a3bd6492f135387854f1e96acc493a',1,'CoreTweet.User.Entities()']]],
+  ['entities',['Entities',['../classCoreTweet_1_1Entities.html',1,'CoreTweet']]],
+  ['entities',['Entities',['../classCoreTweet_1_1Status.html#accbd914e96ae0b0bc336eb5a87fcde75',1,'CoreTweet.Status.Entities()'],['../classCoreTweet_1_1DirectMessage.html#a5e44d69f44fb4476889e41f82800ddf4',1,'CoreTweet.DirectMessage.Entities()'],['../classCoreTweet_1_1User.html#aa7bee36dba3b11a4019057e332a5bde2',1,'CoreTweet.User.Entities()']]],
+  ['entities_2ecs',['Entities.cs',['../Entities_8cs.html',1,'']]],
   ['entity',['Entity',['../classCoreTweet_1_1Entity.html',1,'CoreTweet']]],
-  ['entity_2ecs',['Entity.cs',['../Entity_8cs.html',1,'']]],
   ['enumerate',['Enumerate',['../classCoreTweet_1_1Rest_1_1Members.html#a03e4becd605c69f4cfc83a3b06fdb189',1,'CoreTweet.Rest.Members.Enumerate(EnumerateMode mode, params Expression&lt; Func&lt; string, object &gt;&gt;[] parameters)'],['../classCoreTweet_1_1Rest_1_1Members.html#a9747c87a2247f5917a96c15618b2e153',1,'CoreTweet.Rest.Members.Enumerate(EnumerateMode mode, IDictionary&lt; string, object &gt; parameters)']]],
   ['enumerate_3c_20t_20_3e',['Enumerate&lt; T &gt;',['../classCoreTweet_1_1Rest_1_1Members.html#aad3f8e6cbc2ad46744166f2acca358f7',1,'CoreTweet::Rest::Members']]],
   ['enumerateids',['EnumerateIds',['../classCoreTweet_1_1Rest_1_1Blocks.html#a05de339d6ce5f0176d6a19333a3fdf78',1,'CoreTweet.Rest.Blocks.EnumerateIds(EnumerateMode mode, params Expression&lt; Func&lt; string, object &gt;&gt;[] parameters)'],['../classCoreTweet_1_1Rest_1_1Blocks.html#aa68de76352ea66a1973d5bb96d557ed7',1,'CoreTweet.Rest.Blocks.EnumerateIds(EnumerateMode mode, IDictionary&lt; string, object &gt; parameters)'],['../classCoreTweet_1_1Rest_1_1Followers.html#a4212dc7f0e68775f6404c840f4bb975f',1,'CoreTweet.Rest.Followers.EnumerateIds(EnumerateMode mode, params Expression&lt; Func&lt; string, object &gt;&gt;[] parameters)'],['../classCoreTweet_1_1Rest_1_1Followers.html#a79d9fce74aaada71ca97c632c1cd39f0',1,'CoreTweet.Rest.Followers.EnumerateIds(EnumerateMode mode, IDictionary&lt; string, object &gt; parameters)'],['../classCoreTweet_1_1Rest_1_1Friends.html#a330aad313c5ef4e4117e402ac374f6f2',1,'CoreTweet.Rest.Friends.EnumerateIds(EnumerateMode mode, params Expression&lt; Func&lt; string, object &gt;&gt;[] parameters)'],['../classCoreTweet_1_1Rest_1_1Friends.html#aae58e28bf1a455b48f6921d0ab1a4806',1,'CoreTweet.Rest.Friends.EnumerateIds(EnumerateMode mode, IDictionary&lt; string, object &gt; parameters)'],['../classCoreTweet_1_1Rest_1_1MutesUsers.html#ac8a8c8de116766cc4069f76829cd72f8',1,'CoreTweet.Rest.MutesUsers.EnumerateIds(EnumerateMode mode, params Expression&lt; Func&lt; string, object &gt;&gt;[] parameters)'],['../classCoreTweet_1_1Rest_1_1MutesUsers.html#a1fbc71136eb692779ed4a30567f6f4fc',1,'CoreTweet.Rest.MutesUsers.EnumerateIds(EnumerateMode mode, IDictionary&lt; string, object &gt; parameters)']]],
@@ -34,8 +35,9 @@ var searchData=
   ['eventmessage',['EventMessage',['../classCoreTweet_1_1Streaming_1_1EventMessage.html',1,'CoreTweet::Streaming']]],
   ['eventtargettype',['EventTargetType',['../namespaceCoreTweet_1_1Streaming.html#aef46a890b8a505198f96d60ba21797f5',1,'CoreTweet::Streaming']]],
   ['exceptions_2ecs',['Exceptions.cs',['../Exceptions_8cs.html',1,'']]],
-  ['expandedurl',['ExpandedUrl',['../classCoreTweet_1_1Media.html#a2c181013467eec06cfc725472991352f',1,'CoreTweet.Media.ExpandedUrl()'],['../classCoreTweet_1_1Url.html#a960794ce43b3df1f65eb3fe99c97d881',1,'CoreTweet.Url.ExpandedUrl()']]],
+  ['expandedurl',['ExpandedUrl',['../classCoreTweet_1_1UrlEntity.html#a187a7a8efeaf32c24f7966748b86ea00',1,'CoreTweet::UrlEntity']]],
   ['expressionparameters',['ExpressionParameters',['../classCoreTweet_1_1Tests_1_1Benchmarks.html#a097826e4d30c372a1941f77c0b3a0aa1',1,'CoreTweet::Tests::Benchmarks']]],
+  ['extendedentities',['ExtendedEntities',['../classCoreTweet_1_1Status.html#a596e88604ad90dc45f8e5e2d9a599263',1,'CoreTweet::Status']]],
   ['extension',['Extension',['../classCoreTweet_1_1Streaming_1_1Reactive_1_1Extension.html',1,'CoreTweet::Streaming::Reactive']]],
   ['extensions_2ecs',['Extensions.cs',['../Extensions_8cs.html',1,'']]]
 ];

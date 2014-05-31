@@ -14,5 +14,6 @@ var searchData=
   ['streamingmessage',['StreamingMessage',['../classCoreTweet_1_1Streaming_1_1StreamingMessage.html',1,'CoreTweet::Streaming']]],
   ['streamingparameters',['StreamingParameters',['../classCoreTweet_1_1Streaming_1_1StreamingParameters.html',1,'CoreTweet::Streaming']]],
   ['stringresponse',['StringResponse',['../classCoreTweet_1_1StringResponse.html',1,'CoreTweet']]],
-  ['subscribers',['Subscribers',['../classCoreTweet_1_1Rest_1_1Subscribers.html',1,'CoreTweet::Rest']]]
+  ['subscribers',['Subscribers',['../classCoreTweet_1_1Rest_1_1Subscribers.html',1,'CoreTweet::Rest']]],
+  ['symbolentity',['SymbolEntity',['../classCoreTweet_1_1SymbolEntity.html',1,'CoreTweet']]]
 ];

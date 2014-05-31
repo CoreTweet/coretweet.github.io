@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.7"/>
-<title>CoreTweet: CoreTweet.HashTag Class Reference</title>
+<title>CoreTweet: CoreTweet.UserMentionEntity Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="core-48x48.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">CoreTweet
-   &#160;<span id="projectnumber">0.3.2</span>
+   &#160;<span id="projectnumber">0.3.3</span>
    </div>
    <div id="projectbrief">Yet another .NET Twitter Library</div>
   </td>
@@ -85,35 +85,43 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespaceCoreTweet.html">CoreTweet</a></li><li class="navelem"><a class="el" href="classCoreTweet_1_1HashTag.html">HashTag</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespaceCoreTweet.html">CoreTweet</a></li><li class="navelem"><a class="el" href="classCoreTweet_1_1UserMentionEntity.html">UserMentionEntity</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#properties">Properties</a> &#124;
-<a href="classCoreTweet_1_1HashTag-members.html">List of all members</a>  </div>
+<a href="classCoreTweet_1_1UserMentionEntity-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">CoreTweet.HashTag Class Reference</div>  </div>
+<div class="title">CoreTweet.UserMentionEntity Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="dynheader">
-Inheritance diagram for CoreTweet.HashTag:</div>
+Inheritance diagram for CoreTweet.UserMentionEntity:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="classCoreTweet_1_1HashTag.png" usemap="#CoreTweet.HashTag_map" alt=""/>
-  <map id="CoreTweet.HashTag_map" name="CoreTweet.HashTag_map">
-<area href="classCoreTweet_1_1Core_1_1CoreBase.html" title="The base class of twitter objects. " alt="CoreTweet.Core.CoreBase" shape="rect" coords="0,0,165,24"/>
+  <img src="classCoreTweet_1_1UserMentionEntity.png" usemap="#CoreTweet.UserMentionEntity_map" alt=""/>
+  <map id="CoreTweet.UserMentionEntity_map" name="CoreTweet.UserMentionEntity_map">
+<area href="classCoreTweet_1_1Entity.html" alt="CoreTweet.Entity" shape="rect" coords="0,56,179,80"/>
+<area href="classCoreTweet_1_1Core_1_1CoreBase.html" title="The base class of twitter objects. " alt="CoreTweet.Core.CoreBase" shape="rect" coords="0,0,179,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:aec19c30c656d8b537d37bce6c6caf657"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1HashTag.html#aec19c30c656d8b537d37bce6c6caf657">Text</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:aec19c30c656d8b537d37bce6c6caf657"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the hashtag, minus the leading '#' character.  <a href="#aec19c30c656d8b537d37bce6c6caf657">More...</a><br /></td></tr>
-<tr class="separator:aec19c30c656d8b537d37bce6c6caf657"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee1b21acb1894aea9047b2c5771a4a5e"><td class="memItemLeft" align="right" valign="top">int[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1HashTag.html#aee1b21acb1894aea9047b2c5771a4a5e">Indices</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:aee1b21acb1894aea9047b2c5771a4a5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">An array of integers indicating the offsets within the Tweet text where the hashtag begins and ends. The first integer represents the location of the # character in the Tweet text string. The second integer represents the location of the first character after the hashtag. Therefore the difference between the two numbers will be the length of the hashtag name plus one (for the '#' character).  <a href="#aee1b21acb1894aea9047b2c5771a4a5e">More...</a><br /></td></tr>
-<tr class="separator:aee1b21acb1894aea9047b2c5771a4a5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27cec224217a27e922909bbeae574537"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1UserMentionEntity.html#a27cec224217a27e922909bbeae574537">Id</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a27cec224217a27e922909bbeae574537"><td class="mdescLeft">&#160;</td><td class="mdescRight">ID of the mentioned user, as an integer.  <a href="#a27cec224217a27e922909bbeae574537">More...</a><br /></td></tr>
+<tr class="separator:a27cec224217a27e922909bbeae574537"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefad9f95bbbac2fef41df5584fab7e25"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1UserMentionEntity.html#aefad9f95bbbac2fef41df5584fab7e25">Name</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:aefad9f95bbbac2fef41df5584fab7e25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display name of the referenced user.  <a href="#aefad9f95bbbac2fef41df5584fab7e25">More...</a><br /></td></tr>
+<tr class="separator:aefad9f95bbbac2fef41df5584fab7e25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a861a7b4e371d5e70183147b9cfdb2bab"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1UserMentionEntity.html#a861a7b4e371d5e70183147b9cfdb2bab">ScreenName</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a861a7b4e371d5e70183147b9cfdb2bab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Screen name of the referenced user.  <a href="#a861a7b4e371d5e70183147b9cfdb2bab">More...</a><br /></td></tr>
+<tr class="separator:a861a7b4e371d5e70183147b9cfdb2bab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header properties_classCoreTweet_1_1Entity"><td colspan="2" onclick="javascript:toggleInherit('properties_classCoreTweet_1_1Entity')"><img src="closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="classCoreTweet_1_1Entity.html">CoreTweet.Entity</a></td></tr>
+<tr class="memitem:a8b45a075759947114c37adc907f5c039 inherit properties_classCoreTweet_1_1Entity"><td class="memItemLeft" align="right" valign="top">int[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Entity.html#a8b45a075759947114c37adc907f5c039">Indices</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a8b45a075759947114c37adc907f5c039 inherit properties_classCoreTweet_1_1Entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">An array of integers indicating the offsets within the Tweet text where this entity begins and ends.  <a href="#a8b45a075759947114c37adc907f5c039">More...</a><br /></td></tr>
+<tr class="separator:a8b45a075759947114c37adc907f5c039 inherit properties_classCoreTweet_1_1Entity"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -126,7 +134,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a5b972da176de8e43680f988c5d9cf84b inherit pub_static_methods_classCoreTweet_1_1Core_1_1CoreBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Property Documentation</h2>
-<a class="anchor" id="aee1b21acb1894aea9047b2c5771a4a5e"></a>
+<a class="anchor" id="a27cec224217a27e922909bbeae574537"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -134,7 +142,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int [] CoreTweet.HashTag.Indices</td>
+          <td class="memname">long CoreTweet.UserMentionEntity.Id</td>
         </tr>
       </table>
   </td>
@@ -144,11 +152,11 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>An array of integers indicating the offsets within the Tweet text where the hashtag begins and ends. The first integer represents the location of the # character in the Tweet text string. The second integer represents the location of the first character after the hashtag. Therefore the difference between the two numbers will be the length of the hashtag name plus one (for the '#' character). </p>
+<p>ID of the mentioned user, as an integer. </p>
 
 </div>
 </div>
-<a class="anchor" id="aec19c30c656d8b537d37bce6c6caf657"></a>
+<a class="anchor" id="aefad9f95bbbac2fef41df5584fab7e25"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -156,7 +164,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">string CoreTweet.HashTag.Text</td>
+          <td class="memname">string CoreTweet.UserMentionEntity.Name</td>
         </tr>
       </table>
   </td>
@@ -166,17 +174,39 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Name of the hashtag, minus the leading '#' character. </p>
+<p>Display name of the referenced user. </p>
+
+</div>
+</div>
+<a class="anchor" id="a861a7b4e371d5e70183147b9cfdb2bab"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string CoreTweet.UserMentionEntity.ScreenName</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Screen name of the referenced user. </p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>CoreTweet/Objects/<a class="el" href="Entity_8cs.html">Entity.cs</a></li>
+<li>CoreTweet/Objects/<a class="el" href="Entities_8cs.html">Entities.cs</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 20 2014 20:46:38 for CoreTweet by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat May 31 2014 23:10:00 for CoreTweet by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

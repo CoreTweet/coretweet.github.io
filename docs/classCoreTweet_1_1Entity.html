@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="core-48x48.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">CoreTweet
-   &#160;<span id="projectnumber">0.3.2</span>
+   &#160;<span id="projectnumber">0.3.3</span>
    </div>
    <div id="projectbrief">Yet another .NET Twitter Library</div>
   </td>
@@ -102,24 +102,19 @@ Inheritance diagram for CoreTweet.Entity:</div>
  <div class="center">
   <img src="classCoreTweet_1_1Entity.png" usemap="#CoreTweet.Entity_map" alt=""/>
   <map id="CoreTweet.Entity_map" name="CoreTweet.Entity_map">
-<area href="classCoreTweet_1_1Core_1_1CoreBase.html" title="The base class of twitter objects. " alt="CoreTweet.Core.CoreBase" shape="rect" coords="0,0,165,24"/>
+<area href="classCoreTweet_1_1Core_1_1CoreBase.html" title="The base class of twitter objects. " alt="CoreTweet.Core.CoreBase" shape="rect" coords="189,0,368,24"/>
+<area href="classCoreTweet_1_1SymbolEntity.html" alt="CoreTweet.SymbolEntity" shape="rect" coords="0,112,179,136"/>
+<area href="classCoreTweet_1_1UrlEntity.html" alt="CoreTweet.UrlEntity" shape="rect" coords="189,112,368,136"/>
+<area href="classCoreTweet_1_1UserMentionEntity.html" alt="CoreTweet.UserMentionEntity" shape="rect" coords="378,112,557,136"/>
+<area href="classCoreTweet_1_1MediaEntity.html" alt="CoreTweet.MediaEntity" shape="rect" coords="189,168,368,192"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:adfd2af891491324fac2528f64f5e4b7d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCoreTweet_1_1HashTag.html">HashTag</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Entity.html#adfd2af891491324fac2528f64f5e4b7d">HashTags</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:adfd2af891491324fac2528f64f5e4b7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents hashtags which have been parsed out of the Tweet text.  <a href="#adfd2af891491324fac2528f64f5e4b7d">More...</a><br /></td></tr>
-<tr class="separator:adfd2af891491324fac2528f64f5e4b7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16bda42ebbf82feffe7c3256a8c2e085"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCoreTweet_1_1Media.html">Media</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Entity.html#a16bda42ebbf82feffe7c3256a8c2e085">Media</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a16bda42ebbf82feffe7c3256a8c2e085"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents media elements uploaded with the Tweet.  <a href="#a16bda42ebbf82feffe7c3256a8c2e085">More...</a><br /></td></tr>
-<tr class="separator:a16bda42ebbf82feffe7c3256a8c2e085"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac54743e4c10ae2006bf343522e0ede35"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCoreTweet_1_1Url.html">Url</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Entity.html#ac54743e4c10ae2006bf343522e0ede35">Urls</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:ac54743e4c10ae2006bf343522e0ede35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents URLs included in the text of a Tweet or within textual fields of a user object.  <a href="#ac54743e4c10ae2006bf343522e0ede35">More...</a><br /></td></tr>
-<tr class="separator:ac54743e4c10ae2006bf343522e0ede35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a816f5de1c081271e650cbbad905f92a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCoreTweet_1_1UserMention.html">UserMention</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Entity.html#a816f5de1c081271e650cbbad905f92a2">UserMentions</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a816f5de1c081271e650cbbad905f92a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents other Twitter users mentioned in the text of the Tweet.  <a href="#a816f5de1c081271e650cbbad905f92a2">More...</a><br /></td></tr>
-<tr class="separator:a816f5de1c081271e650cbbad905f92a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b45a075759947114c37adc907f5c039"><td class="memItemLeft" align="right" valign="top">int[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Entity.html#a8b45a075759947114c37adc907f5c039">Indices</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a8b45a075759947114c37adc907f5c039"><td class="mdescLeft">&#160;</td><td class="mdescRight">An array of integers indicating the offsets within the Tweet text where this entity begins and ends.  <a href="#a8b45a075759947114c37adc907f5c039">More...</a><br /></td></tr>
+<tr class="separator:a8b45a075759947114c37adc907f5c039"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -132,7 +127,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a5b972da176de8e43680f988c5d9cf84b inherit pub_static_methods_classCoreTweet_1_1Core_1_1CoreBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Property Documentation</h2>
-<a class="anchor" id="adfd2af891491324fac2528f64f5e4b7d"></a>
+<a class="anchor" id="a8b45a075759947114c37adc907f5c039"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -140,7 +135,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classCoreTweet_1_1HashTag.html">HashTag</a> [] CoreTweet.Entity.HashTags</td>
+          <td class="memname">int [] CoreTweet.Entity.Indices</td>
         </tr>
       </table>
   </td>
@@ -150,83 +145,17 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Represents hashtags which have been parsed out of the Tweet text. </p>
-
-</div>
-</div>
-<a class="anchor" id="a16bda42ebbf82feffe7c3256a8c2e085"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classCoreTweet_1_1Media.html">Media</a> [] CoreTweet.Entity.Media</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Represents media elements uploaded with the Tweet. </p>
-
-</div>
-</div>
-<a class="anchor" id="ac54743e4c10ae2006bf343522e0ede35"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classCoreTweet_1_1Url.html">Url</a> [] CoreTweet.Entity.Urls</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Represents URLs included in the text of a Tweet or within textual fields of a user object. </p>
-
-</div>
-</div>
-<a class="anchor" id="a816f5de1c081271e650cbbad905f92a2"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classCoreTweet_1_1UserMention.html">UserMention</a> [] CoreTweet.Entity.UserMentions</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Represents other Twitter users mentioned in the text of the Tweet. </p>
+<p>An array of integers indicating the offsets within the Tweet text where this entity begins and ends. </p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>CoreTweet/Objects/<a class="el" href="Entity_8cs.html">Entity.cs</a></li>
+<li>CoreTweet/Objects/<a class="el" href="Entities_8cs.html">Entities.cs</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 20 2014 20:46:38 for CoreTweet by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat May 31 2014 23:10:00 for CoreTweet by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>
