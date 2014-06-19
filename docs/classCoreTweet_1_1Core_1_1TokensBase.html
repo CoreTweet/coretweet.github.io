@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="core-48x48.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">CoreTweet
-   &#160;<span id="projectnumber">0.3.3</span>
+   &#160;<span id="projectnumber">0.3.4</span>
    </div>
    <div id="projectbrief">Yet another .NET Twitter Library</div>
   </td>
@@ -98,7 +98,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>The <a class="el" href="classCoreTweet_1_1OAuth.html">OAuth</a> tokens  
+<p>Represents an <a class="el" href="classCoreTweet_1_1OAuth.html" title="Provides a set of static (Shared in Visual Basic) methods for OAuth authentication. ">OAuth</a> token. This is an <code>abstract</code> class.  
  <a href="classCoreTweet_1_1Core_1_1TokensBase.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for CoreTweet.Core.TokensBase:</div>
@@ -107,29 +107,32 @@ Inheritance diagram for CoreTweet.Core.TokensBase:</div>
   <img src="classCoreTweet_1_1Core_1_1TokensBase.png" usemap="#CoreTweet.Core.TokensBase_map" alt=""/>
   <map id="CoreTweet.Core.TokensBase_map" name="CoreTweet.Core.TokensBase_map">
 <area href="classCoreTweet_1_1OAuth2Token.html" title="The OAuth2 token, which is usually used for Application-only authentication. " alt="CoreTweet.OAuth2Token" shape="rect" coords="0,56,177,80"/>
-<area href="classCoreTweet_1_1Tokens.html" title="The OAuth tokens. " alt="CoreTweet.Tokens" shape="rect" coords="187,56,364,80"/>
+<area href="classCoreTweet_1_1Tokens.html" title="Represents the OAuth tokens. " alt="CoreTweet.Tokens" shape="rect" coords="187,56,364,80"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a3d379984e8027fad910c7db46fa4e450"><td class="memItemLeft" align="right" valign="top">Task&lt; <a class="el" href="classCoreTweet_1_1AsyncResponse.html">AsyncResponse</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Core_1_1TokensBase.html#a3d379984e8027fad910c7db46fa4e450">SendRequestAsync</a> (<a class="el" href="namespaceCoreTweet.html#a6e05c1dcaf2cf8e4ece975f7d3af0e26">MethodType</a> type, string url, CancellationToken cancellationToken=default(CancellationToken), params Expression&lt; Func&lt; string, object &gt;&gt;[] parameters)</td></tr>
-<tr class="memdesc:a3d379984e8027fad910c7db46fa4e450"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a request to the specified url with the specified parameters.  <a href="#a3d379984e8027fad910c7db46fa4e450">More...</a><br /></td></tr>
+<tr class="memdesc:a3d379984e8027fad910c7db46fa4e450"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a request to the specified url with the specified parameters as an asynchronous operation.  <a href="#a3d379984e8027fad910c7db46fa4e450">More...</a><br /></td></tr>
 <tr class="separator:a3d379984e8027fad910c7db46fa4e450"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0937c2818cfb63f4be098fd943589807"><td class="memItemLeft" align="right" valign="top">Task&lt; <a class="el" href="classCoreTweet_1_1AsyncResponse.html">AsyncResponse</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Core_1_1TokensBase.html#a0937c2818cfb63f4be098fd943589807">SendRequestAsync&lt; T &gt;</a> (<a class="el" href="namespaceCoreTweet.html#a6e05c1dcaf2cf8e4ece975f7d3af0e26">MethodType</a> type, string url, T parameters, CancellationToken cancellationToken=default(CancellationToken))</td></tr>
-<tr class="memdesc:a0937c2818cfb63f4be098fd943589807"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a request to the specified url with the specified parameters.  <a href="#a0937c2818cfb63f4be098fd943589807">More...</a><br /></td></tr>
+<tr class="memdesc:a0937c2818cfb63f4be098fd943589807"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a request to the specified url with the specified parameters as an asynchronous operation.  <a href="#a0937c2818cfb63f4be098fd943589807">More...</a><br /></td></tr>
 <tr class="separator:a0937c2818cfb63f4be098fd943589807"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2838cc78a5963d68dc902b88be3d5a07"><td class="memItemLeft" align="right" valign="top">Task&lt; <a class="el" href="classCoreTweet_1_1AsyncResponse.html">AsyncResponse</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Core_1_1TokensBase.html#a2838cc78a5963d68dc902b88be3d5a07">SendRequestAsync</a> (<a class="el" href="namespaceCoreTweet.html#a6e05c1dcaf2cf8e4ece975f7d3af0e26">MethodType</a> type, string url, IDictionary&lt; string, object &gt; parameters, CancellationToken cancellationToken=default(CancellationToken))</td></tr>
-<tr class="memdesc:a2838cc78a5963d68dc902b88be3d5a07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a request to the specified url with the specified parameters.  <a href="#a2838cc78a5963d68dc902b88be3d5a07">More...</a><br /></td></tr>
+<tr class="memdesc:a2838cc78a5963d68dc902b88be3d5a07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a request to the specified url with the specified parameters as an asynchronous operation.  <a href="#a2838cc78a5963d68dc902b88be3d5a07">More...</a><br /></td></tr>
 <tr class="separator:a2838cc78a5963d68dc902b88be3d5a07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d652a3e4e1d39ca7e7279c57cecdd94"><td class="memItemLeft" align="right" valign="top">Task&lt; <a class="el" href="classCoreTweet_1_1AsyncResponse.html">AsyncResponse</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Core_1_1TokensBase.html#a9d652a3e4e1d39ca7e7279c57cecdd94">SendStreamingRequestAsync</a> (<a class="el" href="namespaceCoreTweet.html#a6e05c1dcaf2cf8e4ece975f7d3af0e26">MethodType</a> type, string url, IEnumerable&lt; KeyValuePair&lt; string, object &gt;&gt; parameters, CancellationToken cancellationToken=default(CancellationToken))</td></tr>
+<tr class="memdesc:a9d652a3e4e1d39ca7e7279c57cecdd94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a streaming request to the specified url with the specified parameters as an asynchronous operation.  <a href="#a9d652a3e4e1d39ca7e7279c57cecdd94">More...</a><br /></td></tr>
 <tr class="separator:a9d652a3e4e1d39ca7e7279c57cecdd94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b27f1f12146875e9b0ab0e991e8894b"><td class="memItemLeft" align="right" valign="top">Task&lt; <a class="el" href="classCoreTweet_1_1AsyncResponse.html">AsyncResponse</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Core_1_1TokensBase.html#a5b27f1f12146875e9b0ab0e991e8894b">SendRequestAsyncImpl</a> (<a class="el" href="namespaceCoreTweet.html#a6e05c1dcaf2cf8e4ece975f7d3af0e26">MethodType</a> type, string url, IEnumerable&lt; KeyValuePair&lt; string, object &gt;&gt; parameters, CancellationToken cancellationToken)</td></tr>
+<tr class="memdesc:a5b27f1f12146875e9b0ab0e991e8894b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a streaming request to the specified url with the specified parameters as an asynchronous operation.  <a href="#a5b27f1f12146875e9b0ab0e991e8894b">More...</a><br /></td></tr>
 <tr class="separator:a5b27f1f12146875e9b0ab0e991e8894b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3d516bb48b2cd126a3c2820bf4a847f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Core_1_1TokensBase.html#ae3d516bb48b2cd126a3c2820bf4a847f">TokensBase</a> ()</td></tr>
+<tr class="memdesc:ae3d516bb48b2cd126a3c2820bf4a847f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new instance of the <a class="el" href="classCoreTweet_1_1Core_1_1TokensBase.html" title="Represents an OAuth token. This is an abstract class. ">CoreTweet.Core.TokensBase</a> class.  <a href="#ae3d516bb48b2cd126a3c2820bf4a847f">More...</a><br /></td></tr>
 <tr class="separator:ae3d516bb48b2cd126a3c2820bf4a847f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39d8f0f62be18072869f43fdb0eed62f"><td class="memItemLeft" align="right" valign="top">abstract string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Core_1_1TokensBase.html#a39d8f0f62be18072869f43fdb0eed62f">CreateAuthorizationHeader</a> (<a class="el" href="namespaceCoreTweet.html#a6e05c1dcaf2cf8e4ece975f7d3af0e26">MethodType</a> type, string url, IEnumerable&lt; KeyValuePair&lt; string, object &gt;&gt; parameters)</td></tr>
-<tr class="memdesc:a39d8f0f62be18072869f43fdb0eed62f"><td class="mdescLeft">&#160;</td><td class="mdescRight">When overridden in a descendant class, creates string for Authorization header.  <a href="#a39d8f0f62be18072869f43fdb0eed62f">More...</a><br /></td></tr>
+<tr class="memdesc:a39d8f0f62be18072869f43fdb0eed62f"><td class="mdescLeft">&#160;</td><td class="mdescRight">When overridden in a descendant class, creates a string for Authorization header.  <a href="#a39d8f0f62be18072869f43fdb0eed62f">More...</a><br /></td></tr>
 <tr class="separator:a39d8f0f62be18072869f43fdb0eed62f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7b226d241132b4a8d4250aadbfa0931"><td class="memItemLeft" align="right" valign="top">HttpWebResponse&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Core_1_1TokensBase.html#af7b226d241132b4a8d4250aadbfa0931">SendRequest</a> (<a class="el" href="namespaceCoreTweet.html#a6e05c1dcaf2cf8e4ece975f7d3af0e26">MethodType</a> type, string url, params Expression&lt; Func&lt; string, object &gt;&gt;[] parameters)</td></tr>
 <tr class="memdesc:af7b226d241132b4a8d4250aadbfa0931"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a request to the specified url with the specified parameters.  <a href="#af7b226d241132b4a8d4250aadbfa0931">More...</a><br /></td></tr>
@@ -141,76 +144,77 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a415e63d855770b9ec03d7d8252c111ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a request to the specified url with the specified parameters.  <a href="#a415e63d855770b9ec03d7d8252c111ef">More...</a><br /></td></tr>
 <tr class="separator:a415e63d855770b9ec03d7d8252c111ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb742969e56fbf21b835d8ac3bb71c07"><td class="memItemLeft" align="right" valign="top">HttpWebResponse&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Core_1_1TokensBase.html#adb742969e56fbf21b835d8ac3bb71c07">SendStreamingRequest</a> (<a class="el" href="namespaceCoreTweet.html#a6e05c1dcaf2cf8e4ece975f7d3af0e26">MethodType</a> type, string url, IEnumerable&lt; KeyValuePair&lt; string, object &gt;&gt; parameters)</td></tr>
+<tr class="memdesc:adb742969e56fbf21b835d8ac3bb71c07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a streaming request to the specified url with the specified parameters.  <a href="#adb742969e56fbf21b835d8ac3bb71c07">More...</a><br /></td></tr>
 <tr class="separator:adb742969e56fbf21b835d8ac3bb71c07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:a80586cc16e684e67c2e8aea6e0a33e38"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Core_1_1TokensBase.html#a80586cc16e684e67c2e8aea6e0a33e38">ConsumerKey</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a80586cc16e684e67c2e8aea6e0a33e38"><td class="mdescLeft">&#160;</td><td class="mdescRight">The consumer key.  <a href="#a80586cc16e684e67c2e8aea6e0a33e38">More...</a><br /></td></tr>
+<tr class="memdesc:a80586cc16e684e67c2e8aea6e0a33e38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the consumer key.  <a href="#a80586cc16e684e67c2e8aea6e0a33e38">More...</a><br /></td></tr>
 <tr class="separator:a80586cc16e684e67c2e8aea6e0a33e38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a620c955c87532fa296e913497edc3c36"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Core_1_1TokensBase.html#a620c955c87532fa296e913497edc3c36">ConsumerSecret</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a620c955c87532fa296e913497edc3c36"><td class="mdescLeft">&#160;</td><td class="mdescRight">The consumer secret.  <a href="#a620c955c87532fa296e913497edc3c36">More...</a><br /></td></tr>
+<tr class="memdesc:a620c955c87532fa296e913497edc3c36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the consumer secret.  <a href="#a620c955c87532fa296e913497edc3c36">More...</a><br /></td></tr>
 <tr class="separator:a620c955c87532fa296e913497edc3c36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a837672558c29295755be1c1007c4dd5b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCoreTweet_1_1Rest_1_1Account.html">Account</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Core_1_1TokensBase.html#a837672558c29295755be1c1007c4dd5b">Account</a><code> [get]</code></td></tr>
-<tr class="memdesc:a837672558c29295755be1c1007c4dd5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rest/Account  <a href="#a837672558c29295755be1c1007c4dd5b">More...</a><br /></td></tr>
+<tr class="memdesc:a837672558c29295755be1c1007c4dd5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the wrapper of account.  <a href="#a837672558c29295755be1c1007c4dd5b">More...</a><br /></td></tr>
 <tr class="separator:a837672558c29295755be1c1007c4dd5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82101a08497db82fd72ee14ae8e56f9d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCoreTweet_1_1Rest_1_1Blocks.html">Blocks</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Core_1_1TokensBase.html#a82101a08497db82fd72ee14ae8e56f9d">Blocks</a><code> [get]</code></td></tr>
-<tr class="memdesc:a82101a08497db82fd72ee14ae8e56f9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rest/Blocks  <a href="#a82101a08497db82fd72ee14ae8e56f9d">More...</a><br /></td></tr>
+<tr class="memdesc:a82101a08497db82fd72ee14ae8e56f9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the wrapper of blocks.  <a href="#a82101a08497db82fd72ee14ae8e56f9d">More...</a><br /></td></tr>
 <tr class="separator:a82101a08497db82fd72ee14ae8e56f9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab06eee18f84f81c105213bb2297206cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCoreTweet_1_1Rest_1_1DirectMessages.html">DirectMessages</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Core_1_1TokensBase.html#ab06eee18f84f81c105213bb2297206cd">DirectMessages</a><code> [get]</code></td></tr>
-<tr class="memdesc:ab06eee18f84f81c105213bb2297206cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rest/Direct messages.  <a href="#ab06eee18f84f81c105213bb2297206cd">More...</a><br /></td></tr>
+<tr class="memdesc:ab06eee18f84f81c105213bb2297206cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the wrapper of direct_messages.  <a href="#ab06eee18f84f81c105213bb2297206cd">More...</a><br /></td></tr>
 <tr class="separator:ab06eee18f84f81c105213bb2297206cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7bb8bd71208074b1c631bb802bbf2322"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCoreTweet_1_1Rest_1_1Favorites.html">Favorites</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Core_1_1TokensBase.html#a7bb8bd71208074b1c631bb802bbf2322">Favorites</a><code> [get]</code></td></tr>
-<tr class="memdesc:a7bb8bd71208074b1c631bb802bbf2322"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rest/Favorites.  <a href="#a7bb8bd71208074b1c631bb802bbf2322">More...</a><br /></td></tr>
+<tr class="memdesc:a7bb8bd71208074b1c631bb802bbf2322"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the wrapper of favorites.  <a href="#a7bb8bd71208074b1c631bb802bbf2322">More...</a><br /></td></tr>
 <tr class="separator:a7bb8bd71208074b1c631bb802bbf2322"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7fed41148b7b07ea205f5a66b16b5cf4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCoreTweet_1_1Rest_1_1Friends.html">Friends</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Core_1_1TokensBase.html#a7fed41148b7b07ea205f5a66b16b5cf4">Friends</a><code> [get]</code></td></tr>
-<tr class="memdesc:a7fed41148b7b07ea205f5a66b16b5cf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rest/Friends.  <a href="#a7fed41148b7b07ea205f5a66b16b5cf4">More...</a><br /></td></tr>
+<tr class="memdesc:a7fed41148b7b07ea205f5a66b16b5cf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the wrapper of friends.  <a href="#a7fed41148b7b07ea205f5a66b16b5cf4">More...</a><br /></td></tr>
 <tr class="separator:a7fed41148b7b07ea205f5a66b16b5cf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66994f851b9a2cf13fc8cd50d91b5b89"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCoreTweet_1_1Rest_1_1Followers.html">Followers</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Core_1_1TokensBase.html#a66994f851b9a2cf13fc8cd50d91b5b89">Followers</a><code> [get]</code></td></tr>
-<tr class="memdesc:a66994f851b9a2cf13fc8cd50d91b5b89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rest/Followers  <a href="#a66994f851b9a2cf13fc8cd50d91b5b89">More...</a><br /></td></tr>
+<tr class="memdesc:a66994f851b9a2cf13fc8cd50d91b5b89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the wrapper of followers.  <a href="#a66994f851b9a2cf13fc8cd50d91b5b89">More...</a><br /></td></tr>
 <tr class="separator:a66994f851b9a2cf13fc8cd50d91b5b89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93fa80c1c43006dbaca3a6e4a7d8b01b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCoreTweet_1_1Rest_1_1Friendships.html">Friendships</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Core_1_1TokensBase.html#a93fa80c1c43006dbaca3a6e4a7d8b01b">Friendships</a><code> [get]</code></td></tr>
-<tr class="memdesc:a93fa80c1c43006dbaca3a6e4a7d8b01b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rest/Friendships.  <a href="#a93fa80c1c43006dbaca3a6e4a7d8b01b">More...</a><br /></td></tr>
+<tr class="memdesc:a93fa80c1c43006dbaca3a6e4a7d8b01b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the wrapper of friendships.  <a href="#a93fa80c1c43006dbaca3a6e4a7d8b01b">More...</a><br /></td></tr>
 <tr class="separator:a93fa80c1c43006dbaca3a6e4a7d8b01b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9bc1ad5a49dc25c3bdf01e9aeb7ac42c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCoreTweet_1_1Rest_1_1Geo.html">Geo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Core_1_1TokensBase.html#a9bc1ad5a49dc25c3bdf01e9aeb7ac42c">Geo</a><code> [get]</code></td></tr>
-<tr class="memdesc:a9bc1ad5a49dc25c3bdf01e9aeb7ac42c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rest/Geo.  <a href="#a9bc1ad5a49dc25c3bdf01e9aeb7ac42c">More...</a><br /></td></tr>
+<tr class="memdesc:a9bc1ad5a49dc25c3bdf01e9aeb7ac42c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the wrapper of geo.  <a href="#a9bc1ad5a49dc25c3bdf01e9aeb7ac42c">More...</a><br /></td></tr>
 <tr class="separator:a9bc1ad5a49dc25c3bdf01e9aeb7ac42c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23eab5f215c508d6e56895671dd51a30"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCoreTweet_1_1Rest_1_1Help.html">Help</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Core_1_1TokensBase.html#a23eab5f215c508d6e56895671dd51a30">Help</a><code> [get]</code></td></tr>
-<tr class="memdesc:a23eab5f215c508d6e56895671dd51a30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rest/Help.  <a href="#a23eab5f215c508d6e56895671dd51a30">More...</a><br /></td></tr>
+<tr class="memdesc:a23eab5f215c508d6e56895671dd51a30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the wrapper of help.  <a href="#a23eab5f215c508d6e56895671dd51a30">More...</a><br /></td></tr>
 <tr class="separator:a23eab5f215c508d6e56895671dd51a30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39a7715161d53f4376624131efe06393"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCoreTweet_1_1Rest_1_1Lists.html">Lists</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Core_1_1TokensBase.html#a39a7715161d53f4376624131efe06393">Lists</a><code> [get]</code></td></tr>
-<tr class="memdesc:a39a7715161d53f4376624131efe06393"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rest/Lists.  <a href="#a39a7715161d53f4376624131efe06393">More...</a><br /></td></tr>
+<tr class="memdesc:a39a7715161d53f4376624131efe06393"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the wrapper of lists.  <a href="#a39a7715161d53f4376624131efe06393">More...</a><br /></td></tr>
 <tr class="separator:a39a7715161d53f4376624131efe06393"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd14cf37320d111d4b7f3996a2389356"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCoreTweet_1_1Rest_1_1Media.html">Media</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Core_1_1TokensBase.html#afd14cf37320d111d4b7f3996a2389356">Media</a><code> [get]</code></td></tr>
-<tr class="memdesc:afd14cf37320d111d4b7f3996a2389356"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rest/Media.  <a href="#afd14cf37320d111d4b7f3996a2389356">More...</a><br /></td></tr>
+<tr class="memdesc:afd14cf37320d111d4b7f3996a2389356"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the wrapper of media.  <a href="#afd14cf37320d111d4b7f3996a2389356">More...</a><br /></td></tr>
 <tr class="separator:afd14cf37320d111d4b7f3996a2389356"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79c914a9aa691618280a8ede80ff122f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCoreTweet_1_1Rest_1_1Mutes.html">Mutes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Core_1_1TokensBase.html#a79c914a9aa691618280a8ede80ff122f">Mutes</a><code> [get]</code></td></tr>
-<tr class="memdesc:a79c914a9aa691618280a8ede80ff122f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rest/Mutes.  <a href="#a79c914a9aa691618280a8ede80ff122f">More...</a><br /></td></tr>
+<tr class="memdesc:a79c914a9aa691618280a8ede80ff122f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the wrapper of mutes.  <a href="#a79c914a9aa691618280a8ede80ff122f">More...</a><br /></td></tr>
 <tr class="separator:a79c914a9aa691618280a8ede80ff122f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a238727d95236b8c5844fad01dee2a91e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCoreTweet_1_1Rest_1_1Search.html">Search</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Core_1_1TokensBase.html#a238727d95236b8c5844fad01dee2a91e">Search</a><code> [get]</code></td></tr>
-<tr class="memdesc:a238727d95236b8c5844fad01dee2a91e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rest/Search.  <a href="#a238727d95236b8c5844fad01dee2a91e">More...</a><br /></td></tr>
+<tr class="memdesc:a238727d95236b8c5844fad01dee2a91e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the wrapper of search.  <a href="#a238727d95236b8c5844fad01dee2a91e">More...</a><br /></td></tr>
 <tr class="separator:a238727d95236b8c5844fad01dee2a91e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae45c7638f8558867afc80bd8b5fe19b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCoreTweet_1_1Rest_1_1SavedSearches.html">SavedSearches</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Core_1_1TokensBase.html#ae45c7638f8558867afc80bd8b5fe19b0">SavedSearches</a><code> [get]</code></td></tr>
-<tr class="memdesc:ae45c7638f8558867afc80bd8b5fe19b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rest/Saved searches.  <a href="#ae45c7638f8558867afc80bd8b5fe19b0">More...</a><br /></td></tr>
+<tr class="memdesc:ae45c7638f8558867afc80bd8b5fe19b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the wrapper of saved_searches.  <a href="#ae45c7638f8558867afc80bd8b5fe19b0">More...</a><br /></td></tr>
 <tr class="separator:ae45c7638f8558867afc80bd8b5fe19b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:affcfb44f4a9080d50f6474545595ae69"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCoreTweet_1_1Rest_1_1Statuses.html">Statuses</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Core_1_1TokensBase.html#affcfb44f4a9080d50f6474545595ae69">Statuses</a><code> [get]</code></td></tr>
-<tr class="memdesc:affcfb44f4a9080d50f6474545595ae69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rest/Statuses.  <a href="#affcfb44f4a9080d50f6474545595ae69">More...</a><br /></td></tr>
+<tr class="memdesc:affcfb44f4a9080d50f6474545595ae69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the wrapper of statuses.  <a href="#affcfb44f4a9080d50f6474545595ae69">More...</a><br /></td></tr>
 <tr class="separator:affcfb44f4a9080d50f6474545595ae69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9bb4c925177b369dc50a97734eeaf215"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCoreTweet_1_1Rest_1_1Trends.html">Trends</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Core_1_1TokensBase.html#a9bb4c925177b369dc50a97734eeaf215">Trends</a><code> [get]</code></td></tr>
-<tr class="memdesc:a9bb4c925177b369dc50a97734eeaf215"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rest/Trends.  <a href="#a9bb4c925177b369dc50a97734eeaf215">More...</a><br /></td></tr>
+<tr class="memdesc:a9bb4c925177b369dc50a97734eeaf215"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the wrapper of trends.  <a href="#a9bb4c925177b369dc50a97734eeaf215">More...</a><br /></td></tr>
 <tr class="separator:a9bb4c925177b369dc50a97734eeaf215"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a481ee207e4c8579a311fa3463ed965f4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCoreTweet_1_1Rest_1_1Users.html">Users</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Core_1_1TokensBase.html#a481ee207e4c8579a311fa3463ed965f4">Users</a><code> [get]</code></td></tr>
-<tr class="memdesc:a481ee207e4c8579a311fa3463ed965f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rest/Users.  <a href="#a481ee207e4c8579a311fa3463ed965f4">More...</a><br /></td></tr>
+<tr class="memdesc:a481ee207e4c8579a311fa3463ed965f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the wrapper of users.  <a href="#a481ee207e4c8579a311fa3463ed965f4">More...</a><br /></td></tr>
 <tr class="separator:a481ee207e4c8579a311fa3463ed965f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaca3159ce0ca51979ad01d60252649e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingApi.html">StreamingApi</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Core_1_1TokensBase.html#aaca3159ce0ca51979ad01d60252649e5">Streaming</a><code> [get]</code></td></tr>
-<tr class="memdesc:aaca3159ce0ca51979ad01d60252649e5"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="namespaceCoreTweet_1_1Streaming.html">Streaming</a> API.  <a href="#aaca3159ce0ca51979ad01d60252649e5">More...</a><br /></td></tr>
+<tr class="memdesc:aaca3159ce0ca51979ad01d60252649e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the wrapper of the <a class="el" href="namespaceCoreTweet_1_1Streaming.html">Streaming</a> API.  <a href="#aaca3159ce0ca51979ad01d60252649e5">More...</a><br /></td></tr>
 <tr class="separator:aaca3159ce0ca51979ad01d60252649e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc7d25b53b614ebd57f66e3cb36caf14"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCoreTweet_1_1ConnectionOptions.html">ConnectionOptions</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Core_1_1TokensBase.html#afc7d25b53b614ebd57f66e3cb36caf14">ConnectionOptions</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:afc7d25b53b614ebd57f66e3cb36caf14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets options of connection.  <a href="#afc7d25b53b614ebd57f66e3cb36caf14">More...</a><br /></td></tr>
+<tr class="memdesc:afc7d25b53b614ebd57f66e3cb36caf14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the options of the connection.  <a href="#afc7d25b53b614ebd57f66e3cb36caf14">More...</a><br /></td></tr>
 <tr class="separator:afc7d25b53b614ebd57f66e3cb36caf14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The <a class="el" href="classCoreTweet_1_1OAuth.html">OAuth</a> tokens </p>
+<div class="textblock"><p>Represents an <a class="el" href="classCoreTweet_1_1OAuth.html" title="Provides a set of static (Shared in Visual Basic) methods for OAuth authentication. ">OAuth</a> token. This is an <code>abstract</code> class. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ae3d516bb48b2cd126a3c2820bf4a847f"></a>
 <div class="memitem">
@@ -232,6 +236,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Initializes a new instance of the <a class="el" href="classCoreTweet_1_1Core_1_1TokensBase.html" title="Represents an OAuth token. This is an abstract class. ">CoreTweet.Core.TokensBase</a> class. </p>
 
 </div>
 </div>
@@ -274,16 +280,16 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>When overridden in a descendant class, creates string for Authorization header. </p>
+<p>When overridden in a descendant class, creates a string for Authorization header. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">type</td><td>Type of HTTP request.</td></tr>
-    <tr><td class="paramname">url</td><td>URL.</td></tr>
-    <tr><td class="paramname">parameters</td><td>Parameters.</td></tr>
+    <tr><td class="paramname">url</td><td>The URL.</td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>String for Authorization header.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A string for Authorization header.</dd></dl>
 
 <p>Implemented in <a class="el" href="classCoreTweet_1_1Tokens.html#a48652f6cb2b5674be701deae05251e01">CoreTweet.Tokens</a>, and <a class="el" href="classCoreTweet_1_1OAuth2Token.html#afa8083dd37011053b2448a9c7acc9c71">CoreTweet.OAuth2Token</a>.</p>
 
@@ -328,15 +334,15 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Sends a request to the specified url with the specified parameters. </p>
-<dl class="section return"><dt>Returns</dt><dd>The stream. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">type</td><td>Type of HTTP request. </td></tr>
-    <tr><td class="paramname">url</td><td>URL. </td></tr>
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">type</td><td>The type of HTTP request.</td></tr>
+    <tr><td class="paramname">url</td><td>The URL.</td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>A stream.</dd></dl>
 
 </div>
 </div>
@@ -379,15 +385,15 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Sends a request to the specified url with the specified parameters. </p>
-<dl class="section return"><dt>Returns</dt><dd>The stream. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">type</td><td>Type of HTTP request. </td></tr>
-    <tr><td class="paramname">url</td><td>URL. </td></tr>
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">type</td><td>The type of HTTP request.</td></tr>
+    <tr><td class="paramname">url</td><td>The URL.</td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>A stream.</dd></dl>
 
 </div>
 </div>
@@ -430,15 +436,15 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Sends a request to the specified url with the specified parameters. </p>
-<dl class="section return"><dt>Returns</dt><dd>The stream. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">type</td><td>Type of HTTP request. </td></tr>
-    <tr><td class="paramname">url</td><td>URL. </td></tr>
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">type</td><td>The type of HTTP request.</td></tr>
+    <tr><td class="paramname">url</td><td>The URL.</td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>A stream.</dd></dl>
 
 </div>
 </div>
@@ -486,17 +492,18 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Sends a request to the specified url with the specified parameters. </p>
-<dl class="section return"><dt>Returns</dt><dd>The stream. </dd></dl>
+<p>Sends a request to the specified url with the specified parameters as an asynchronous operation. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">type</td><td>Type of HTTP request. </td></tr>
-    <tr><td class="paramname">url</td><td>URL. </td></tr>
-    <tr><td class="paramname">cancellationToken</td><td>Cancellation token. </td></tr>
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">type</td><td>The type of HTTP request.</td></tr>
+    <tr><td class="paramname">url</td><td>The URL.</td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns a stream.</p>
 
 </div>
 </div>
@@ -544,17 +551,18 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Sends a request to the specified url with the specified parameters. </p>
-<dl class="section return"><dt>Returns</dt><dd>The stream. </dd></dl>
+<p>Sends a request to the specified url with the specified parameters as an asynchronous operation. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">type</td><td>Type of HTTP request. </td></tr>
-    <tr><td class="paramname">url</td><td>URL. </td></tr>
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
-    <tr><td class="paramname">cancellationToken</td><td>Cancellation token. </td></tr>
+    <tr><td class="paramname">type</td><td>The type of HTTP request.</td></tr>
+    <tr><td class="paramname">url</td><td>The URL.</td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns a stream.</p>
 
 </div>
 </div>
@@ -602,17 +610,18 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Sends a request to the specified url with the specified parameters. </p>
-<dl class="section return"><dt>Returns</dt><dd>The stream. </dd></dl>
+<p>Sends a request to the specified url with the specified parameters as an asynchronous operation. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">type</td><td>Type of HTTP request. </td></tr>
-    <tr><td class="paramname">url</td><td>URL. </td></tr>
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
-    <tr><td class="paramname">cancellationToken</td><td>Cancellation token. </td></tr>
+    <tr><td class="paramname">type</td><td>The type of HTTP request.</td></tr>
+    <tr><td class="paramname">url</td><td>The URL.</td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns a stream.</p>
 
 </div>
 </div>
@@ -660,6 +669,19 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Sends a streaming request to the specified url with the specified parameters as an asynchronous operation. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>The type of HTTP request.</td></tr>
+    <tr><td class="paramname">url</td><td>The URL.</td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns a stream.</p>
+
 </div>
 </div>
 <a class="anchor" id="adb742969e56fbf21b835d8ac3bb71c07"></a>
@@ -699,6 +721,17 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Sends a streaming request to the specified url with the specified parameters. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>The type of HTTP request.</td></tr>
+    <tr><td class="paramname">url</td><td>The URL.</td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A stream.</dd></dl>
 
 </div>
 </div>
@@ -746,6 +779,19 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Sends a streaming request to the specified url with the specified parameters as an asynchronous operation. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>The type of HTTP request.</td></tr>
+    <tr><td class="paramname">url</td><td>The URL.</td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns a stream.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Property Documentation</h2>
@@ -767,7 +813,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Rest/Account </p>
+<p>Gets the wrapper of account. </p>
 
 </div>
 </div>
@@ -789,7 +835,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Rest/Blocks </p>
+<p>Gets the wrapper of blocks. </p>
 
 </div>
 </div>
@@ -811,7 +857,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Gets or sets options of connection. </p>
+<p>Gets or sets the options of the connection. </p>
 
 </div>
 </div>
@@ -833,7 +879,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>The consumer key. </p>
+<p>Gets or sets the consumer key. </p>
 
 </div>
 </div>
@@ -855,7 +901,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>The consumer secret. </p>
+<p>Gets or sets the consumer secret. </p>
 
 </div>
 </div>
@@ -877,7 +923,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Rest/Direct messages. </p>
+<p>Gets the wrapper of direct_messages. </p>
 
 </div>
 </div>
@@ -899,7 +945,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Rest/Favorites. </p>
+<p>Gets the wrapper of favorites. </p>
 
 </div>
 </div>
@@ -921,7 +967,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Rest/Followers </p>
+<p>Gets the wrapper of followers. </p>
 
 </div>
 </div>
@@ -943,7 +989,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Rest/Friends. </p>
+<p>Gets the wrapper of friends. </p>
 
 </div>
 </div>
@@ -965,7 +1011,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Rest/Friendships. </p>
+<p>Gets the wrapper of friendships. </p>
 
 </div>
 </div>
@@ -987,7 +1033,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Rest/Geo. </p>
+<p>Gets the wrapper of geo. </p>
 
 </div>
 </div>
@@ -1009,7 +1055,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Rest/Help. </p>
+<p>Gets the wrapper of help. </p>
 
 </div>
 </div>
@@ -1031,7 +1077,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Rest/Lists. </p>
+<p>Gets the wrapper of lists. </p>
 
 </div>
 </div>
@@ -1053,7 +1099,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Rest/Media. </p>
+<p>Gets the wrapper of media. </p>
 
 </div>
 </div>
@@ -1075,7 +1121,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Rest/Mutes. </p>
+<p>Gets the wrapper of mutes. </p>
 
 </div>
 </div>
@@ -1097,7 +1143,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Rest/Saved searches. </p>
+<p>Gets the wrapper of saved_searches. </p>
 
 </div>
 </div>
@@ -1119,7 +1165,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Rest/Search. </p>
+<p>Gets the wrapper of search. </p>
 
 </div>
 </div>
@@ -1141,7 +1187,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Rest/Statuses. </p>
+<p>Gets the wrapper of statuses. </p>
 
 </div>
 </div>
@@ -1163,7 +1209,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="namespaceCoreTweet_1_1Streaming.html">Streaming</a> API. </p>
+<p>Gets the wrapper of the <a class="el" href="namespaceCoreTweet_1_1Streaming.html">Streaming</a> API. </p>
 
 </div>
 </div>
@@ -1185,7 +1231,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Rest/Trends. </p>
+<p>Gets the wrapper of trends. </p>
 
 </div>
 </div>
@@ -1207,7 +1253,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Rest/Users. </p>
+<p>Gets the wrapper of users. </p>
 
 </div>
 </div>
@@ -1218,7 +1264,7 @@ Properties</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat May 31 2014 23:10:00 for CoreTweet by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 20 2014 00:31:19 for CoreTweet by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="core-48x48.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">CoreTweet
-   &#160;<span id="projectnumber">0.3.3</span>
+   &#160;<span id="projectnumber">0.3.4</span>
    </div>
    <div id="projectbrief">Yet another .NET Twitter Library</div>
   </td>
@@ -97,7 +97,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>GET/POST <a class="el" href="classCoreTweet_1_1Rest_1_1Friendships.html" title="GET/POST Friendships">Friendships</a> 
+<p>Provides a set of methods for the wrapper of GET/POST friendships.  
  <a href="classCoreTweet_1_1Rest_1_1Friendships.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for CoreTweet.Rest.Friendships:</div>
@@ -105,7 +105,7 @@ Inheritance diagram for CoreTweet.Rest.Friendships:</div>
  <div class="center">
   <img src="classCoreTweet_1_1Rest_1_1Friendships.png" usemap="#CoreTweet.Rest.Friendships_map" alt=""/>
   <map id="CoreTweet.Rest.Friendships_map" name="CoreTweet.Rest.Friendships_map">
-<area href="classCoreTweet_1_1Core_1_1ApiProviderBase.html" title="Base class of API providers. " alt="CoreTweet.Core.ApiProviderBase" shape="rect" coords="0,0,205,24"/>
+<area href="classCoreTweet_1_1Core_1_1ApiProviderBase.html" title="Provides a Twitter API wrapper. This is an abstract class. " alt="CoreTweet.Core.ApiProviderBase" shape="rect" coords="0,0,205,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -231,7 +231,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a8f9003e34c6f19f561b10b1f14098ec1 inherit properties_classCoreTweet_1_1Core_1_1ApiProviderBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>GET/POST <a class="el" href="classCoreTweet_1_1Rest_1_1Friendships.html" title="GET/POST Friendships">Friendships</a></p>
+<div class="textblock"><p>Provides a set of methods for the wrapper of GET/POST friendships. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a89b9f7a91b4c791b5dd5df49c626bfd1"></a>
 <div class="memitem">
@@ -257,20 +257,21 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Allows the authenticating users to follow the user specified in the ID parameter.</p>
-<p>Returns the befriended user in the requested format when successful. Returns a string describing the failure condition when unsuccessful. If you are already friends with the user a HTTP 403 may be returned, though for performance reasons you may get a 200 OK message even if the friendship already exists.</p>
+<p>Returns the befriended user in the requested format when successful.</p>
+<p>Returns a string describing the failure condition when unsuccessful.</p>
 <p>Actions taken in this method are asynchronous and changes will be eventually consistent.</p>
 <p>Note: Providing either screen_name or user_id is required.</p>
-<p>Avaliable parameters: </p>
-<p><em>string screen_name (optional)</em>  : The screen name of the user for whom to befriend.</p>
-<p><em>long user_id (optional)</em>  : The ID of the user for whom to befriend.</p>
-<p><em>bool follow (optional)</em>  : Enable notifications for the target user.</p>
-<dl class="section return"><dt>Returns</dt><dd>The user.</dd></dl>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> screen_name (optional)</p>
+<p>- <code>long</code> user_id (optional)</p>
+<p>- <code>bool</code> follow (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The user.</dd></dl>
 
 </div>
 </div>
@@ -296,6 +297,24 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Allows the authenticating users to follow the user specified in the ID parameter.</p>
+<p>Returns the befriended user in the requested format when successful.</p>
+<p>Returns a string describing the failure condition when unsuccessful.</p>
+<p>Actions taken in this method are asynchronous and changes will be eventually consistent.</p>
+<p>Note: Providing either screen_name or user_id is required.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> screen_name (optional)</p>
+<p>- <code>long</code> user_id (optional)</p>
+<p>- <code>bool</code> follow (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The user.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a098adb35dc188efe86817309f0d79e24"></a>
@@ -319,6 +338,24 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Allows the authenticating users to follow the user specified in the ID parameter.</p>
+<p>Returns the befriended user in the requested format when successful.</p>
+<p>Returns a string describing the failure condition when unsuccessful.</p>
+<p>Actions taken in this method are asynchronous and changes will be eventually consistent.</p>
+<p>Note: Providing either screen_name or user_id is required.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> screen_name (optional)</p>
+<p>- <code>long</code> user_id (optional)</p>
+<p>- <code>bool</code> follow (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The user.</dd></dl>
 
 </div>
 </div>
@@ -345,21 +382,23 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Allows the authenticating users to follow the user specified in the ID parameter.</p>
-<p>Returns the befriended user in the requested format when successful. Returns a string describing the failure condition when unsuccessful. If you are already friends with the user a HTTP 403 may be returned, though for performance reasons you may get a 200 OK message even if the friendship already exists.</p>
+<p>Allows the authenticating users to follow the user specified in the ID parameter as an asynchronous operation.</p>
+<p>Returns the befriended user in the requested format when successful.</p>
+<p>Returns a string describing the failure condition when unsuccessful.</p>
 <p>Actions taken in this method are asynchronous and changes will be eventually consistent.</p>
 <p>Note: Providing either screen_name or user_id is required.</p>
-<p>Avaliable parameters: </p>
-<p><em>string screen_name (optional)</em>  : The screen name of the user for whom to befriend.</p>
-<p><em>long user_id (optional)</em>  : The ID of the user for whom to befriend.</p>
-<p><em>bool follow (optional)</em>  : Enable notifications for the target user.</p>
-<dl class="section return"><dt>Returns</dt><dd>The user.</dd></dl>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> screen_name (optional)</p>
+<p>- <code>long</code> user_id (optional)</p>
+<p>- <code>bool</code> follow (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the user.</p>
 
 </div>
 </div>
@@ -395,6 +434,26 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Allows the authenticating users to follow the user specified in the ID parameter as an asynchronous operation.</p>
+<p>Returns the befriended user in the requested format when successful.</p>
+<p>Returns a string describing the failure condition when unsuccessful.</p>
+<p>Actions taken in this method are asynchronous and changes will be eventually consistent.</p>
+<p>Note: Providing either screen_name or user_id is required.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> screen_name (optional)</p>
+<p>- <code>long</code> user_id (optional)</p>
+<p>- <code>bool</code> follow (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the user.</p>
+
 </div>
 </div>
 <a class="anchor" id="ac75ee4d65ec0d426400f27df8cfa2416"></a>
@@ -429,6 +488,26 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Allows the authenticating users to follow the user specified in the ID parameter as an asynchronous operation.</p>
+<p>Returns the befriended user in the requested format when successful.</p>
+<p>Returns a string describing the failure condition when unsuccessful.</p>
+<p>Actions taken in this method are asynchronous and changes will be eventually consistent.</p>
+<p>Note: Providing either screen_name or user_id is required.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> screen_name (optional)</p>
+<p>- <code>long</code> user_id (optional)</p>
+<p>- <code>bool</code> follow (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the user.</p>
+
 </div>
 </div>
 <a class="anchor" id="a98800b300dcd2468dd8c67b109da9630"></a>
@@ -455,19 +534,20 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Allows the authenticating user to unfollow the user specified in the ID parameter.</p>
-<p>Returns the unfollowed user in the requested format when successful. Returns a string describing the failure condition when unsuccessful.</p>
+<p>Returns the unfollowed user in the requested format when successful.</p>
+<p>Returns a string describing the failure condition when unsuccessful.</p>
 <p>Actions taken in this method are asynchronous and changes will be eventually consistent.</p>
 <p>Note: Providing either screen_name or user_id is required.</p>
-<p>Avaliable parameters: </p>
-<p><em>string screen_name (optional)</em>  : The screen name of the user for whom to unfollow.</p>
-<p><em>long user_id (optional)</em>  : The ID of the user for whom to unfollow.</p>
-<dl class="section return"><dt>Returns</dt><dd>The user.</dd></dl>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> screen_name (optional)</p>
+<p>- <code>long</code> user_id (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The user.</dd></dl>
 
 </div>
 </div>
@@ -493,6 +573,23 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Allows the authenticating user to unfollow the user specified in the ID parameter.</p>
+<p>Returns the unfollowed user in the requested format when successful.</p>
+<p>Returns a string describing the failure condition when unsuccessful.</p>
+<p>Actions taken in this method are asynchronous and changes will be eventually consistent.</p>
+<p>Note: Providing either screen_name or user_id is required.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> screen_name (optional)</p>
+<p>- <code>long</code> user_id (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The user.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="af0909cebb2af22feddfc2b83c440b4cf"></a>
@@ -516,6 +613,23 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Allows the authenticating user to unfollow the user specified in the ID parameter.</p>
+<p>Returns the unfollowed user in the requested format when successful.</p>
+<p>Returns a string describing the failure condition when unsuccessful.</p>
+<p>Actions taken in this method are asynchronous and changes will be eventually consistent.</p>
+<p>Note: Providing either screen_name or user_id is required.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> screen_name (optional)</p>
+<p>- <code>long</code> user_id (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The user.</dd></dl>
 
 </div>
 </div>
@@ -542,20 +656,22 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Allows the authenticating user to unfollow the user specified in the ID parameter.</p>
-<p>Returns the unfollowed user in the requested format when successful. Returns a string describing the failure condition when unsuccessful.</p>
+<p>Allows the authenticating user to unfollow the user specified in the ID parameter as an asynchronous operation.</p>
+<p>Returns the unfollowed user in the requested format when successful.</p>
+<p>Returns a string describing the failure condition when unsuccessful.</p>
 <p>Actions taken in this method are asynchronous and changes will be eventually consistent.</p>
 <p>Note: Providing either screen_name or user_id is required.</p>
-<p>Avaliable parameters: </p>
-<p><em>string screen_name (optional)</em>  : The screen name of the user for whom to unfollow.</p>
-<p><em>long user_id (optional)</em>  : The ID of the user for whom to unfollow.</p>
-<dl class="section return"><dt>Returns</dt><dd>The user.</dd></dl>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> screen_name (optional)</p>
+<p>- <code>long</code> user_id (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the user.</p>
 
 </div>
 </div>
@@ -591,6 +707,25 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Allows the authenticating user to unfollow the user specified in the ID parameter as an asynchronous operation.</p>
+<p>Returns the unfollowed user in the requested format when successful.</p>
+<p>Returns a string describing the failure condition when unsuccessful.</p>
+<p>Actions taken in this method are asynchronous and changes will be eventually consistent.</p>
+<p>Note: Providing either screen_name or user_id is required.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> screen_name (optional)</p>
+<p>- <code>long</code> user_id (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the user.</p>
+
 </div>
 </div>
 <a class="anchor" id="af862e2a041a624337f7591c2b046c1d8"></a>
@@ -624,6 +759,25 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Allows the authenticating user to unfollow the user specified in the ID parameter as an asynchronous operation.</p>
+<p>Returns the unfollowed user in the requested format when successful.</p>
+<p>Returns a string describing the failure condition when unsuccessful.</p>
+<p>Actions taken in this method are asynchronous and changes will be eventually consistent.</p>
+<p>Note: Providing either screen_name or user_id is required.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> screen_name (optional)</p>
+<p>- <code>long</code> user_id (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the user.</p>
 
 </div>
 </div>
@@ -661,15 +815,16 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Enumerate numeric IDs for every user who has a pending request to follow the authenticating user.</p>
-<p>Avaliable parameters: </p>
-<p><em>long cursor (semi-optional)</em>  : Causes the list of connections to be broken into pages of no more than 5000 IDs at a time. The number of IDs returned is not guaranteed to be 5000 as suspended users are filtered out after connections are queried. If no cursor is provided, a value of -1 will be assumed, which is the first "page." The response from the API will include a previous_cursor and next_cursor to allow paging back and forth. See Using cursors to navigate collections for more information.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> cursor (semi-optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">mode</td><td>Specify whether enumerating goes to the next page or the previous.</td></tr>
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The IDs.</dd></dl>
 
 </div>
 </div>
@@ -705,6 +860,19 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Enumerate numeric IDs for every user who has a pending request to follow the authenticating user.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> cursor (semi-optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mode</td><td>Specify whether enumerating goes to the next page or the previous.</td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The IDs.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a3a68cf7fa0183966e5814b667cde7a51"></a>
@@ -738,6 +906,19 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Enumerate numeric IDs for every user who has a pending request to follow the authenticating user.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> cursor (semi-optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mode</td><td>Specify whether enumerating goes to the next page or the previous.</td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The IDs.</dd></dl>
 
 </div>
 </div>
@@ -776,14 +957,15 @@ Additional Inherited Members</h2></td></tr>
 <p></p>
 <p>Enumerate numeric IDs for every protected user for whom the authenticating user has a pending follow request.</p>
 <p>Avaliable parameters: </p>
-<p><em>long cursor (semi-optional)</em>  : Causes the list of connections to be broken into pages of no more than 5000 IDs at a time. The number of IDs returned is not guaranteed to be 5000 as suspended users are filtered out after connections are queried. If no cursor is provided, a value of -1 will be assumed, which is the first "page." The response from the API will include a previous_cursor and next_cursor to allow paging back and forth. See Using cursors to navigate collections for more information.</p>
+<p>- <code>long</code> cursor (semi-optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">mode</td><td>Specify whether enumerating goes to the next page or the previous.</td></tr>
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The IDs.</dd></dl>
 
 </div>
 </div>
@@ -819,6 +1001,19 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Enumerate numeric IDs for every protected user for whom the authenticating user has a pending follow request.</p>
+<p>Avaliable parameters: </p>
+<p>- <code>long</code> cursor (semi-optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mode</td><td>Specify whether enumerating goes to the next page or the previous.</td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The IDs.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="abd0379d3c0da8e1c6a22b1eb9115ea61"></a>
@@ -853,6 +1048,19 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Enumerate numeric IDs for every protected user for whom the authenticating user has a pending follow request.</p>
+<p>Avaliable parameters: </p>
+<p>- <code>long</code> cursor (semi-optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mode</td><td>Specify whether enumerating goes to the next page or the previous.</td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The IDs.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="acc4da8e940d37caa056a77bdfc06521d"></a>
@@ -879,16 +1087,15 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns a collection of numeric IDs for every user who has a pending request to follow the authenticating user.</p>
-<p>Avaliable parameters: </p>
-<p><em>long cursor (semi-optional)</em>  : Causes the list of connections to be broken into pages of no more than 5000 IDs at a time. The number of IDs returned is not guaranteed to be 5000 as suspended users are filtered out after connections are queried. If no cursor is provided, a value of -1 will be assumed, which is the first "page." The response from the API will include a previous_cursor and next_cursor to allow paging back and forth. See Using cursors to navigate collections for more information.</p>
+<p>Avaliable parameters:</p>
+<p><code>long</code> cursor (semi-optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>IDs.</dd></dl>
-<p>https://dev.twitter.com/docs/misc/cursoring </p>
+<dl class="section return"><dt>Returns</dt><dd>The Ids.</dd></dl>
 
 </div>
 </div>
@@ -914,6 +1121,18 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns a collection of numeric IDs for every user who has a pending request to follow the authenticating user.</p>
+<p>Avaliable parameters:</p>
+<p><code>long</code> cursor (semi-optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The Ids.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a0162ddd8bb1b67e5afe718877f1a3961"></a>
@@ -937,6 +1156,18 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Returns a collection of numeric IDs for every user who has a pending request to follow the authenticating user.</p>
+<p>Avaliable parameters:</p>
+<p><code>long</code> cursor (semi-optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The Ids.</dd></dl>
 
 </div>
 </div>
@@ -963,17 +1194,17 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Returns a collection of numeric IDs for every user who has a pending request to follow the authenticating user.</p>
-<p>Avaliable parameters: </p>
-<p><em>long cursor (semi-optional)</em>  : Causes the list of connections to be broken into pages of no more than 5000 IDs at a time. The number of IDs returned is not guaranteed to be 5000 as suspended users are filtered out after connections are queried. If no cursor is provided, a value of -1 will be assumed, which is the first "page." The response from the API will include a previous_cursor and next_cursor to allow paging back and forth. See Using cursors to navigate collections for more information.</p>
+<p>Returns a collection of numeric IDs for every user who has a pending request to follow the authenticating user as an asynchronous operation.</p>
+<p>Avaliable parameters:</p>
+<p><code>long</code> cursor (semi-optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>IDs.</dd></dl>
-<p>https://dev.twitter.com/docs/misc/cursoring </p>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the IDs.</p>
 
 </div>
 </div>
@@ -1009,6 +1240,20 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns a collection of numeric IDs for every user who has a pending request to follow the authenticating user as an asynchronous operation.</p>
+<p>Avaliable parameters:</p>
+<p><code>long</code> cursor (semi-optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the IDs.</p>
+
 </div>
 </div>
 <a class="anchor" id="a8364dcefdf4846af4a3310ea17463841"></a>
@@ -1043,6 +1288,20 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns a collection of numeric IDs for every user who has a pending request to follow the authenticating user as an asynchronous operation.</p>
+<p>Avaliable parameters:</p>
+<p><code>long</code> cursor (semi-optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the IDs.</p>
+
 </div>
 </div>
 <a class="anchor" id="a0dfa221ddc507bd08097ec688345ac34"></a>
@@ -1068,17 +1327,18 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Returns the relationships of the authenticating user to the comma-separated list of up to 100 screen_names or user_ids provided. Values for connections can be: following, following_requested, followed_by, none.</p>
-<p>Avaliable parameters: </p>
-<p><em>string, IEnumerable&lt;string&gt; screen_name (optional)</em>  : A list of screen names or comma separated string of ones, up to 100 are allowed in a single request.</p>
-<p><em>string, IEnumerable&lt;long&gt; user_id (ooptional)</em>  : A list of user IDs or comma separated string of ones, up to 100 are allowed in a single request.</p>
-<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="classCoreTweet_1_1Rest_1_1Friendships.html" title="GET/POST Friendships">Friendships</a>.</dd></dl>
+<p>Returns the relationships of the authenticating user to the comma-separated list of up to 100 screen_names or user_ids provided.</p>
+<p>Values for connections can be: following, following_requested, followed_by, none.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> / IEnumerable&lt;string&gt; screen_name (optional)</p>
+<p>- <code>string</code> / IEnumerable&lt;long&gt; user_id (ooptional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="classCoreTweet_1_1Rest_1_1Friendships.html" title="Provides a set of methods for the wrapper of GET/POST friendships. ">Friendships</a>.</dd></dl>
 
 </div>
 </div>
@@ -1104,6 +1364,20 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns the relationships of the authenticating user to the comma-separated list of up to 100 screen_names or user_ids provided.</p>
+<p>Values for connections can be: following, following_requested, followed_by, none.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> / IEnumerable&lt;string&gt; screen_name (optional)</p>
+<p>- <code>string</code> / IEnumerable&lt;long&gt; user_id (ooptional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="classCoreTweet_1_1Rest_1_1Friendships.html" title="Provides a set of methods for the wrapper of GET/POST friendships. ">Friendships</a>.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="af2597817e4a0cc5b41955891f13bfeee"></a>
@@ -1127,6 +1401,20 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Returns the relationships of the authenticating user to the comma-separated list of up to 100 screen_names or user_ids provided.</p>
+<p>Values for connections can be: following, following_requested, followed_by, none.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> / IEnumerable&lt;string&gt; screen_name (optional)</p>
+<p>- <code>string</code> / IEnumerable&lt;long&gt; user_id (ooptional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="classCoreTweet_1_1Rest_1_1Friendships.html" title="Provides a set of methods for the wrapper of GET/POST friendships. ">Friendships</a>.</dd></dl>
 
 </div>
 </div>
@@ -1153,17 +1441,19 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Returns the relationships of the authenticating user to the comma-separated list of up to 100 screen_names or user_ids provided. Values for connections can be: following, following_requested, followed_by, none.</p>
-<p>Avaliable parameters: </p>
-<p><em>string, IEnumerable&lt;string&gt; screen_name (optional)</em>  : A list of screen names or comma separated string of ones, up to 100 are allowed in a single request.</p>
-<p><em>string, IEnumerable&lt;long&gt; user_id (ooptional)</em>  : A list of user IDs or comma separated string of ones, up to 100 are allowed in a single request.</p>
-<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="classCoreTweet_1_1Rest_1_1Friendships.html" title="GET/POST Friendships">Friendships</a>.</dd></dl>
+<p>Returns the relationships of the authenticating user to the comma-separated list of up to 100 screen_names or user_ids provided as an asynchronous operation.</p>
+<p>Values for connections can be: following, following_requested, followed_by, none.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> / IEnumerable&lt;string&gt; screen_name (optional)</p>
+<p>- <code>string</code> / IEnumerable&lt;long&gt; user_id (ooptional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the <a class="el" href="classCoreTweet_1_1Rest_1_1Friendships.html" title="Provides a set of methods for the wrapper of GET/POST friendships. ">Friendships</a>.</p>
 
 </div>
 </div>
@@ -1199,6 +1489,22 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns the relationships of the authenticating user to the comma-separated list of up to 100 screen_names or user_ids provided as an asynchronous operation.</p>
+<p>Values for connections can be: following, following_requested, followed_by, none.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> / IEnumerable&lt;string&gt; screen_name (optional)</p>
+<p>- <code>string</code> / IEnumerable&lt;long&gt; user_id (ooptional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the <a class="el" href="classCoreTweet_1_1Rest_1_1Friendships.html" title="Provides a set of methods for the wrapper of GET/POST friendships. ">Friendships</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a18e8522abfa9b34ce2bbc969e210160c"></a>
@@ -1233,6 +1539,22 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns the relationships of the authenticating user to the comma-separated list of up to 100 screen_names or user_ids provided as an asynchronous operation.</p>
+<p>Values for connections can be: following, following_requested, followed_by, none.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> / IEnumerable&lt;string&gt; screen_name (optional)</p>
+<p>- <code>string</code> / IEnumerable&lt;long&gt; user_id (ooptional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the <a class="el" href="classCoreTweet_1_1Rest_1_1Friendships.html" title="Provides a set of methods for the wrapper of GET/POST friendships. ">Friendships</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a61392df1674587f1430cfa0f2c02dead"></a>
@@ -1261,13 +1583,13 @@ Additional Inherited Members</h2></td></tr>
 <p>Returns a collection of user_ids that the currently authenticated user does not want to receive retweets from.</p>
 <p>Use POST friendships/update to set the "no retweets" status for a given user account on behalf of the current user.</p>
 <p>Avaliable parameters: Nothing.</p>
-<dl class="section return"><dt>Returns</dt><dd>IDs. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The Ids.</dd></dl>
 
 </div>
 </div>
@@ -1293,6 +1615,18 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns a collection of user_ids that the currently authenticated user does not want to receive retweets from.</p>
+<p>Use POST friendships/update to set the "no retweets" status for a given user account on behalf of the current user.</p>
+<p>Avaliable parameters: Nothing.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The Ids.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a99006a606b75bc3cf5c8bdce6660230a"></a>
@@ -1316,6 +1650,18 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Returns a collection of user_ids that the currently authenticated user does not want to receive retweets from.</p>
+<p>Use POST friendships/update to set the "no retweets" status for a given user account on behalf of the current user.</p>
+<p>Avaliable parameters: Nothing.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The Ids.</dd></dl>
 
 </div>
 </div>
@@ -1342,16 +1688,17 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Returns a collection of user_ids that the currently authenticated user does not want to receive retweets from.</p>
+<p>Returns a collection of user_ids that the currently authenticated user does not want to receive retweets from as an asynchronous operation.</p>
 <p>Use POST friendships/update to set the "no retweets" status for a given user account on behalf of the current user.</p>
 <p>Avaliable parameters: Nothing.</p>
-<dl class="section return"><dt>Returns</dt><dd>IDs. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the IDs.</p>
 
 </div>
 </div>
@@ -1387,6 +1734,20 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns a collection of user_ids that the currently authenticated user does not want to receive retweets from as an asynchronous operation.</p>
+<p>Use POST friendships/update to set the "no retweets" status for a given user account on behalf of the current user.</p>
+<p>Avaliable parameters: Nothing.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the IDs.</p>
+
 </div>
 </div>
 <a class="anchor" id="aac58ff35cf04e6628a72ce48aa5085d4"></a>
@@ -1421,6 +1782,20 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns a collection of user_ids that the currently authenticated user does not want to receive retweets from as an asynchronous operation.</p>
+<p>Use POST friendships/update to set the "no retweets" status for a given user account on behalf of the current user.</p>
+<p>Avaliable parameters: Nothing.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the IDs.</p>
+
 </div>
 </div>
 <a class="anchor" id="a54f27b3a6e9e39278156c3c7c7f0f6a2"></a>
@@ -1448,15 +1823,14 @@ Additional Inherited Members</h2></td></tr>
 <p></p>
 <p>Returns a collection of numeric IDs for every protected user for whom the authenticating user has a pending follow request.</p>
 <p>Avaliable parameters: </p>
-<p><em>long cursor (semi-optional)</em>  : Causes the list of connections to be broken into pages of no more than 5000 IDs at a time. The number of IDs returned is not guaranteed to be 5000 as suspended users are filtered out after connections are queried. If no cursor is provided, a value of -1 will be assumed, which is the first "page."The response from the API will include a previous_cursor and next_cursor to allow paging back and forth. See Using cursors to navigate collections for more information.</p>
+<p>- <code>long</code> cursor (semi-optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>IDs.</dd></dl>
-<p>https://dev.twitter.com/docs/misc/cursoring </p>
+<dl class="section return"><dt>Returns</dt><dd>The IDs.</dd></dl>
 
 </div>
 </div>
@@ -1482,6 +1856,18 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns a collection of numeric IDs for every protected user for whom the authenticating user has a pending follow request.</p>
+<p>Avaliable parameters: </p>
+<p>- <code>long</code> cursor (semi-optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The IDs.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="af14745c70fdc264d67be965664033f1f"></a>
@@ -1505,6 +1891,18 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Returns a collection of numeric IDs for every protected user for whom the authenticating user has a pending follow request.</p>
+<p>Avaliable parameters: </p>
+<p>- <code>long</code> cursor (semi-optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The IDs.</dd></dl>
 
 </div>
 </div>
@@ -1531,17 +1929,17 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Returns a collection of numeric IDs for every protected user for whom the authenticating user has a pending follow request.</p>
+<p>Returns a collection of numeric IDs for every protected user for whom the authenticating user has a pending follow request as an asynchronous operation.</p>
 <p>Avaliable parameters: </p>
-<p><em>long cursor (semi-optional)</em>  : Causes the list of connections to be broken into pages of no more than 5000 IDs at a time. The number of IDs returned is not guaranteed to be 5000 as suspended users are filtered out after connections are queried. If no cursor is provided, a value of -1 will be assumed, which is the first "page."The response from the API will include a previous_cursor and next_cursor to allow paging back and forth. See Using cursors to navigate collections for more information.</p>
+<p>- <code>long</code> cursor (semi-optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>IDs.</dd></dl>
-<p>https://dev.twitter.com/docs/misc/cursoring </p>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the IDs.</p>
 
 </div>
 </div>
@@ -1577,6 +1975,20 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns a collection of numeric IDs for every protected user for whom the authenticating user has a pending follow request as an asynchronous operation.</p>
+<p>Avaliable parameters: </p>
+<p>- <code>long</code> cursor (semi-optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the IDs.</p>
+
 </div>
 </div>
 <a class="anchor" id="a691ccba46bcbc80c6471d79a706490e7"></a>
@@ -1611,6 +2023,20 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns a collection of numeric IDs for every protected user for whom the authenticating user has a pending follow request as an asynchronous operation.</p>
+<p>Avaliable parameters: </p>
+<p>- <code>long</code> cursor (semi-optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the IDs.</p>
+
 </div>
 </div>
 <a class="anchor" id="a43113921ef1612c505dafa732c7e93e4"></a>
@@ -1638,18 +2064,18 @@ Additional Inherited Members</h2></td></tr>
 <p></p>
 <p>Returns detailed information about the relationship between two arbitrary users.</p>
 <p>Note: At least one source and one target, whether specified by IDs or screen_names, should be provided to this method.</p>
-<p>Avaliable parameters: </p>
-<p><em>long source_id (optional)</em>  : The user_id of the subject user.</p>
-<p><em>string source_screen_name (optional)</em>  : The screen_name of the subject user.</p>
-<p><em>long target_id (optional)</em>  : The user_id of the target user.</p>
-<p><em>string target_screen_name (optional)</em>  : The screen_name of the target user.</p>
-<dl class="section return"><dt>Returns</dt><dd>The relationship.</dd></dl>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> source_id (optional)</p>
+<p>- <code>string</code> source_screen_name (optional)</p>
+<p>- <code>long</code> target_id (optional)</p>
+<p>- <code>string</code> target_screen_name (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The relationship.</dd></dl>
 
 </div>
 </div>
@@ -1675,6 +2101,22 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns detailed information about the relationship between two arbitrary users.</p>
+<p>Note: At least one source and one target, whether specified by IDs or screen_names, should be provided to this method.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> source_id (optional)</p>
+<p>- <code>string</code> source_screen_name (optional)</p>
+<p>- <code>long</code> target_id (optional)</p>
+<p>- <code>string</code> target_screen_name (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The relationship.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a73079d555707a1b87975029065703f10"></a>
@@ -1698,6 +2140,22 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Returns detailed information about the relationship between two arbitrary users.</p>
+<p>Note: At least one source and one target, whether specified by IDs or screen_names, should be provided to this method.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> source_id (optional)</p>
+<p>- <code>string</code> source_screen_name (optional)</p>
+<p>- <code>long</code> target_id (optional)</p>
+<p>- <code>string</code> target_screen_name (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The relationship.</dd></dl>
 
 </div>
 </div>
@@ -1724,20 +2182,21 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Returns detailed information about the relationship between two arbitrary users.</p>
+<p>Returns detailed information about the relationship between two arbitrary users as an asynchronous operation.</p>
 <p>Note: At least one source and one target, whether specified by IDs or screen_names, should be provided to this method.</p>
-<p>Avaliable parameters: </p>
-<p><em>long source_id (optional)</em>  : The user_id of the subject user.</p>
-<p><em>string source_screen_name (optional)</em>  : The screen_name of the subject user.</p>
-<p><em>long target_id (optional)</em>  : The user_id of the target user.</p>
-<p><em>string target_screen_name (optional)</em>  : The screen_name of the target user.</p>
-<dl class="section return"><dt>Returns</dt><dd>The relationship.</dd></dl>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> source_id (optional)</p>
+<p>- <code>string</code> source_screen_name (optional)</p>
+<p>- <code>long</code> target_id (optional)</p>
+<p>- <code>string</code> target_screen_name (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the <a class="el" href="classCoreTweet_1_1Rest_1_1Friendships.html" title="Provides a set of methods for the wrapper of GET/POST friendships. ">Friendships</a>.</p>
 
 </div>
 </div>
@@ -1773,6 +2232,24 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns detailed information about the relationship between two arbitrary users as an asynchronous operation.</p>
+<p>Note: At least one source and one target, whether specified by IDs or screen_names, should be provided to this method.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> source_id (optional)</p>
+<p>- <code>string</code> source_screen_name (optional)</p>
+<p>- <code>long</code> target_id (optional)</p>
+<p>- <code>string</code> target_screen_name (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the <a class="el" href="classCoreTweet_1_1Rest_1_1Friendships.html" title="Provides a set of methods for the wrapper of GET/POST friendships. ">Friendships</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="acf13eab45f4ad40ae75d2a27940115a8"></a>
@@ -1807,6 +2284,24 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns detailed information about the relationship between two arbitrary users as an asynchronous operation.</p>
+<p>Note: At least one source and one target, whether specified by IDs or screen_names, should be provided to this method.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> source_id (optional)</p>
+<p>- <code>string</code> source_screen_name (optional)</p>
+<p>- <code>long</code> target_id (optional)</p>
+<p>- <code>string</code> target_screen_name (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the <a class="el" href="classCoreTweet_1_1Rest_1_1Friendships.html" title="Provides a set of methods for the wrapper of GET/POST friendships. ">Friendships</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a5b76714199417d5b726da630e3e592bd"></a>
@@ -1835,19 +2330,17 @@ Additional Inherited Members</h2></td></tr>
 <p>Allows one to enable or disable retweets and device notifications from the specified user.</p>
 <p>Note: Providing either screen_name or user_id is required.</p>
 <p>Avaliable parameters: </p>
-<p><em>string screen_name (optional)</em>  : The screen name of the user for whom to befriend.</p>
-<p><em>long user_id (optional)</em>  : The ID of the user for whom to befriend.</p>
-<p>/// </p>
-<p><em></em>  :</p>
-<p><em>bool device (optional)</em>  : Enable/disable device notifications from the target user.</p>
-<p><em>bool retweets (optional)</em>  : Enable/disable retweets from the target user.</p>
-<dl class="section return"><dt>Returns</dt><dd>The relationship.</dd></dl>
+<p>- <code>string</code> screen_name (optional)</p>
+<p>- <code>long</code> user_id (optional)</p>
+<p>- <code>bool</code> device (optional)</p>
+<p>- <code>bool</code> retweets (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The relationship.</dd></dl>
 
 </div>
 </div>
@@ -1873,6 +2366,22 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Allows one to enable or disable retweets and device notifications from the specified user.</p>
+<p>Note: Providing either screen_name or user_id is required.</p>
+<p>Avaliable parameters: </p>
+<p>- <code>string</code> screen_name (optional)</p>
+<p>- <code>long</code> user_id (optional)</p>
+<p>- <code>bool</code> device (optional)</p>
+<p>- <code>bool</code> retweets (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The relationship.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="af40f788d3cb8a79686ddc20f35013eb6"></a>
@@ -1896,6 +2405,22 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Allows one to enable or disable retweets and device notifications from the specified user.</p>
+<p>Note: Providing either screen_name or user_id is required.</p>
+<p>Avaliable parameters: </p>
+<p>- <code>string</code> screen_name (optional)</p>
+<p>- <code>long</code> user_id (optional)</p>
+<p>- <code>bool</code> device (optional)</p>
+<p>- <code>bool</code> retweets (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The relationship.</dd></dl>
 
 </div>
 </div>
@@ -1922,22 +2447,21 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Allows one to enable or disable retweets and device notifications from the specified user.</p>
+<p>Allows one to enable or disable retweets and device notifications from the specified user as an asynchronous operation.</p>
 <p>Note: Providing either screen_name or user_id is required.</p>
 <p>Avaliable parameters: </p>
-<p><em>string screen_name (optional)</em>  : The screen name of the user for whom to befriend.</p>
-<p><em>long user_id (optional)</em>  : The ID of the user for whom to befriend.</p>
-<p>/// </p>
-<p><em></em>  :</p>
-<p><em>bool device (optional)</em>  : Enable/disable device notifications from the target user.</p>
-<p><em>bool retweets (optional)</em>  : Enable/disable retweets from the target user.</p>
-<dl class="section return"><dt>Returns</dt><dd>The relationship.</dd></dl>
+<p>- <code>string</code> screen_name (optional)</p>
+<p>- <code>long</code> user_id (optional)</p>
+<p>- <code>bool</code> device (optional)</p>
+<p>- <code>bool</code> retweets (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the <a class="el" href="classCoreTweet_1_1Rest_1_1Friendships.html" title="Provides a set of methods for the wrapper of GET/POST friendships. ">Friendships</a>.</p>
 
 </div>
 </div>
@@ -1973,6 +2497,24 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Allows one to enable or disable retweets and device notifications from the specified user as an asynchronous operation.</p>
+<p>Note: Providing either screen_name or user_id is required.</p>
+<p>Avaliable parameters: </p>
+<p>- <code>string</code> screen_name (optional)</p>
+<p>- <code>long</code> user_id (optional)</p>
+<p>- <code>bool</code> device (optional)</p>
+<p>- <code>bool</code> retweets (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the <a class="el" href="classCoreTweet_1_1Rest_1_1Friendships.html" title="Provides a set of methods for the wrapper of GET/POST friendships. ">Friendships</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a60a3df5622b86ffa59c84793754c64fc"></a>
@@ -2007,6 +2549,24 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Allows one to enable or disable retweets and device notifications from the specified user as an asynchronous operation.</p>
+<p>Note: Providing either screen_name or user_id is required.</p>
+<p>Avaliable parameters: </p>
+<p>- <code>string</code> screen_name (optional)</p>
+<p>- <code>long</code> user_id (optional)</p>
+<p>- <code>bool</code> device (optional)</p>
+<p>- <code>bool</code> retweets (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the <a class="el" href="classCoreTweet_1_1Rest_1_1Friendships.html" title="Provides a set of methods for the wrapper of GET/POST friendships. ">Friendships</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
@@ -2016,7 +2576,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat May 31 2014 23:10:00 for CoreTweet by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 20 2014 00:31:19 for CoreTweet by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="core-48x48.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">CoreTweet
-   &#160;<span id="projectnumber">0.3.3</span>
+   &#160;<span id="projectnumber">0.3.4</span>
    </div>
    <div id="projectbrief">Yet another .NET Twitter Library</div>
   </td>
@@ -97,7 +97,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>GET/POST account 
+<p>Provides a set of methods for the wrapper of GET/POST account.  
  <a href="classCoreTweet_1_1Rest_1_1Account.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for CoreTweet.Rest.Account:</div>
@@ -105,7 +105,7 @@ Inheritance diagram for CoreTweet.Rest.Account:</div>
  <div class="center">
   <img src="classCoreTweet_1_1Rest_1_1Account.png" usemap="#CoreTweet.Rest.Account_map" alt=""/>
   <map id="CoreTweet.Rest.Account_map" name="CoreTweet.Rest.Account_map">
-<area href="classCoreTweet_1_1Core_1_1ApiProviderBase.html" title="Base class of API providers. " alt="CoreTweet.Core.ApiProviderBase" shape="rect" coords="0,0,205,24"/>
+<area href="classCoreTweet_1_1Core_1_1ApiProviderBase.html" title="Provides a Twitter API wrapper. This is an abstract class. " alt="CoreTweet.Core.ApiProviderBase" shape="rect" coords="0,0,205,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -228,7 +228,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a8f9003e34c6f19f561b10b1f14098ec1 inherit properties_classCoreTweet_1_1Core_1_1ApiProviderBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>GET/POST account</p>
+<div class="textblock"><p>Provides a set of methods for the wrapper of GET/POST account. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a8d29284430ee23de33ce77b36949e78e"></a>
 <div class="memitem">
@@ -253,10 +253,10 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Removes the uploaded profile banner for the authenticating user. Returns HTTP 200 upon success.</p>
+<p>Removes the uploaded profile banner for the authenticating user.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters.</td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
@@ -285,6 +285,15 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Removes the uploaded profile banner for the authenticating user.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="a24a3fedc1dbf9f67d5810a145a946a92"></a>
@@ -308,6 +317,15 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Removes the uploaded profile banner for the authenticating user.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -334,13 +352,14 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Removes the uploaded profile banner for the authenticating user. Returns HTTP 200 upon success.</p>
+<p>Removes the uploaded profile banner for the authenticating user as an asynchronous operation.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters.</td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
 
 </div>
 </div>
@@ -376,6 +395,17 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Removes the uploaded profile banner for the authenticating user as an asynchronous operation.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a5e23ddc8f90b34a8382ae1378e0bc00b"></a>
@@ -410,6 +440,17 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Removes the uploaded profile banner for the authenticating user as an asynchronous operation.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="ad696962db0f3a27d5122cd0c08534002"></a>
@@ -437,19 +478,19 @@ Additional Inherited Members</h2></td></tr>
 <p></p>
 <p>Returns settings (including current trend, geo and sleep time information) for the authenticating user or updates the authenticating user's settings.</p>
 <p>Avaliable parameters: </p>
-<p><em>int trend_location_woeid (optional)</em>  : The Yahoo! Where On Earth ID to use as the user's default trend location. Global information is available by using 1 as the WOEID. The woeid must be one of the locations returned by GET trends/available.</p>
-<p><em>bool sleep_time_enabled (optional)</em>  : When set to true, will enable sleep time for the user. Sleep time is the time when push or SMS notifications should not be sent to the user.</p>
-<p><em>int start_sleep_time (optional)</em>  : The hour that sleep time should begin if it is enabled. The value for this parameter should be provided in ISO8601 format (i.e. 00-23). The time is considered to be in the same timezone as the user's time_zone setting.</p>
-<p><em>int end_sleep_time (optional)</em>  : The hour that sleep time should end if it is enabled. The value for this parameter should be provided in ISO8601 format (i.e. 00-23). The time is considered to be in the same timezone as the user's time_zone setting.</p>
-<p><em>string time_zone (optional)</em>  : The timezone dates and times should be displayed in for the user. The timezone must be one of the Rails <a class="el" href="classCoreTweet_1_1TimeZone.html">TimeZone</a> names.</p>
-<p><em>string lang (optional)</em>  : The language which Twitter should render in for this user. The language must be specified by the appropriate two letter ISO 639-1 representation. Currently supported languages are provided by GET help/languages.</p>
-<dl class="section return"><dt>Returns</dt><dd>Settings. </dd></dl>
+<p>- <code>int</code> trend_location_woeid (optional)</p>
+<p>- <code>bool</code> sleep_time_enabled (optional)</p>
+<p>- <code>int</code> start_sleep_time (optional)</p>
+<p>- <code>int</code> end_sleep_time (optional)</p>
+<p>- <code>string</code> time_zone (optional)</p>
+<p>- <code>string</code> lang (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The settings of the user.</dd></dl>
 
 </div>
 </div>
@@ -475,6 +516,23 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns settings (including current trend, geo and sleep time information) for the authenticating user or updates the authenticating user's settings.</p>
+<p>Avaliable parameters: </p>
+<p>- <code>int</code> trend_location_woeid (optional)</p>
+<p>- <code>bool</code> sleep_time_enabled (optional)</p>
+<p>- <code>int</code> start_sleep_time (optional)</p>
+<p>- <code>int</code> end_sleep_time (optional)</p>
+<p>- <code>string</code> time_zone (optional)</p>
+<p>- <code>string</code> lang (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The settings of the user.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a8b55be41191423a8e345d2de39f5fb14"></a>
@@ -498,6 +556,23 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Returns settings (including current trend, geo and sleep time information) for the authenticating user or updates the authenticating user's settings.</p>
+<p>Avaliable parameters: </p>
+<p>- <code>int</code> trend_location_woeid (optional)</p>
+<p>- <code>bool</code> sleep_time_enabled (optional)</p>
+<p>- <code>int</code> start_sleep_time (optional)</p>
+<p>- <code>int</code> end_sleep_time (optional)</p>
+<p>- <code>string</code> time_zone (optional)</p>
+<p>- <code>string</code> lang (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The settings of the user.</dd></dl>
 
 </div>
 </div>
@@ -524,21 +599,22 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Returns settings (including current trend, geo and sleep time information) for the authenticating user or updates the authenticating user's settings.</p>
+<p>Returns settings (including current trend, geo and sleep time information) for the authenticating user or updates the authenticating user's settings as an asynchronous operation.</p>
 <p>Avaliable parameters: </p>
-<p><em>int trend_location_woeid (optional)</em>  : The Yahoo! Where On Earth ID to use as the user's default trend location. Global information is available by using 1 as the WOEID. The woeid must be one of the locations returned by GET trends/available.</p>
-<p><em>bool sleep_time_enabled (optional)</em>  : When set to true, will enable sleep time for the user. Sleep time is the time when push or SMS notifications should not be sent to the user.</p>
-<p><em>int start_sleep_time (optional)</em>  : The hour that sleep time should begin if it is enabled. The value for this parameter should be provided in ISO8601 format (i.e. 00-23). The time is considered to be in the same timezone as the user's time_zone setting.</p>
-<p><em>int end_sleep_time (optional)</em>  : The hour that sleep time should end if it is enabled. The value for this parameter should be provided in ISO8601 format (i.e. 00-23). The time is considered to be in the same timezone as the user's time_zone setting.</p>
-<p><em>string time_zone (optional)</em>  : The timezone dates and times should be displayed in for the user. The timezone must be one of the Rails <a class="el" href="classCoreTweet_1_1TimeZone.html">TimeZone</a> names.</p>
-<p><em>string lang (optional)</em>  : The language which Twitter should render in for this user. The language must be specified by the appropriate two letter ISO 639-1 representation. Currently supported languages are provided by GET help/languages.</p>
-<dl class="section return"><dt>Returns</dt><dd>Settings. </dd></dl>
+<p>- <code>int</code> trend_location_woeid (optional)</p>
+<p>- <code>bool</code> sleep_time_enabled (optional)</p>
+<p>- <code>int</code> start_sleep_time (optional)</p>
+<p>- <code>int</code> end_sleep_time (optional)</p>
+<p>- <code>string</code> time_zone (optional)</p>
+<p>- <code>string</code> lang (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the settings of the user.</p>
 
 </div>
 </div>
@@ -574,6 +650,25 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns settings (including current trend, geo and sleep time information) for the authenticating user or updates the authenticating user's settings as an asynchronous operation.</p>
+<p>Avaliable parameters: </p>
+<p>- <code>int</code> trend_location_woeid (optional)</p>
+<p>- <code>bool</code> sleep_time_enabled (optional)</p>
+<p>- <code>int</code> start_sleep_time (optional)</p>
+<p>- <code>int</code> end_sleep_time (optional)</p>
+<p>- <code>string</code> time_zone (optional)</p>
+<p>- <code>string</code> lang (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the settings of the user.</p>
+
 </div>
 </div>
 <a class="anchor" id="a55986e7a2f34da1511096301c2bbb7ac"></a>
@@ -608,6 +703,25 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns settings (including current trend, geo and sleep time information) for the authenticating user or updates the authenticating user's settings as an asynchronous operation.</p>
+<p>Avaliable parameters: </p>
+<p>- <code>int</code> trend_location_woeid (optional)</p>
+<p>- <code>bool</code> sleep_time_enabled (optional)</p>
+<p>- <code>int</code> start_sleep_time (optional)</p>
+<p>- <code>int</code> end_sleep_time (optional)</p>
+<p>- <code>string</code> time_zone (optional)</p>
+<p>- <code>string</code> lang (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the settings of the user.</p>
+
 </div>
 </div>
 <a class="anchor" id="aeffc2037411f78381bc71aa303a829d9"></a>
@@ -633,13 +747,14 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Sets which device Twitter delivers updates to for the authenticating user. Sending none as the device parameter will disable SMS updates.</p>
+<p>Sets which device Twitter delivers updates to for the authenticating user.</p>
+<p>Sending none as the device parameter will disable SMS updates.</p>
 <p>Avaliable parameters: </p>
-<p><em>string device (required)</em>  : Must be one of: sms, none.</p>
-<p><em>bool include_entities (optional)</em>  : When set to true, each tweet will include a node called "entities,". This node offers a variety of metadata about the tweet in a discreet structure, including: user_mentions, urls, and hashtags. While entities are opt-in on timelines at present, they will be made a default component of output in the future. See Tweet <a class="el" href="classCoreTweet_1_1Entities.html">Entities</a> for more detail on entities.</p>
+<p>- <code>string</code> device (required)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
@@ -668,6 +783,19 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Sets which device Twitter delivers updates to for the authenticating user.</p>
+<p>Sending none as the device parameter will disable SMS updates.</p>
+<p>Avaliable parameters: </p>
+<p>- <code>string</code> device (required)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="ab7822756779a17674998f57ab82184bf"></a>
@@ -691,6 +819,19 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Sets which device Twitter delivers updates to for the authenticating user.</p>
+<p>Sending none as the device parameter will disable SMS updates.</p>
+<p>Avaliable parameters: </p>
+<p>- <code>string</code> device (required)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -717,16 +858,18 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Sets which device Twitter delivers updates to for the authenticating user. Sending none as the device parameter will disable SMS updates.</p>
+<p>Sets which device Twitter delivers updates to for the authenticating user as an asynchronous operation.</p>
+<p>Sending none as the device parameter will disable SMS updates.</p>
 <p>Avaliable parameters: </p>
-<p><em>string device (required)</em>  : Must be one of: sms, none.</p>
-<p><em>bool include_entities (optional)</em>  : When set to true, each tweet will include a node called "entities,". This node offers a variety of metadata about the tweet in a discreet structure, including: user_mentions, urls, and hashtags. While entities are opt-in on timelines at present, they will be made a default component of output in the future. See Tweet <a class="el" href="classCoreTweet_1_1Entities.html">Entities</a> for more detail on entities.</p>
+<p>- <code>string</code> device (required)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
 
 </div>
 </div>
@@ -762,6 +905,21 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Sets which device Twitter delivers updates to for the authenticating user as an asynchronous operation.</p>
+<p>Sending none as the device parameter will disable SMS updates.</p>
+<p>Avaliable parameters: </p>
+<p>- <code>string</code> device (required)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a31dc41b26eb4dcd008c726170c7df88e"></a>
@@ -796,6 +954,21 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Sets which device Twitter delivers updates to for the authenticating user as an asynchronous operation.</p>
+<p>Sending none as the device parameter will disable SMS updates.</p>
+<p>Avaliable parameters: </p>
+<p>- <code>string</code> device (required)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a98780543e67a252426123131f67ccdae"></a>
@@ -821,21 +994,22 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Sets values that users are able to set under the "Account" tab of their settings page. Only the parameters specified will be updated.</p>
-<p>Avaliable parameters: </p>
-<p><em>string name (optional)</em>  : Full name associated with the profile. Maximum of 20 characters.</p>
-<p><em>string url (optional)</em>  : URL associated with the profile. Will be prepended with "http://" if not present. Maximum of 100 characters.</p>
-<p><em>string location (optional)</em>  : The city or country describing where the user of the account is located. The contents are not normalized or geocoded in any way. Maximum of 30 characters.</p>
-<p><em>string description (optional)</em>  : A description of the user owning the account. Maximum of 160 characters.</p>
-<p><em>bool include_entities (optional)</em>  : The entities node will not be included when set to false.</p>
-<p><em>bool skip_status (optional) </em> : When set to true, statuses will not be included in the returned user objects.</p>
-<dl class="section return"><dt>Returns</dt><dd>The profile. </dd></dl>
+<p>Sets values that users are able to set under the "Account" tab of their settings page.</p>
+<p>Only the parameters specified will be updated.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> name (optional)</p>
+<p>- <code>string</code> url (optional)</p>
+<p>- <code>string</code> location (optional)</p>
+<p>- <code>string</code> description (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<p>- <code>bool</code> skip_status (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The user object.</dd></dl>
 
 </div>
 </div>
@@ -861,6 +1035,24 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Sets values that users are able to set under the "Account" tab of their settings page.</p>
+<p>Only the parameters specified will be updated.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> name (optional)</p>
+<p>- <code>string</code> url (optional)</p>
+<p>- <code>string</code> location (optional)</p>
+<p>- <code>string</code> description (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<p>- <code>bool</code> skip_status (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The user object.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a2d9a464c5da5bbb20f4be1f06e80b284"></a>
@@ -884,6 +1076,24 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Sets values that users are able to set under the "Account" tab of their settings page.</p>
+<p>Only the parameters specified will be updated.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> name (optional)</p>
+<p>- <code>string</code> url (optional)</p>
+<p>- <code>string</code> location (optional)</p>
+<p>- <code>string</code> description (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<p>- <code>bool</code> skip_status (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The user object.</dd></dl>
 
 </div>
 </div>
@@ -910,21 +1120,23 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Sets values that users are able to set under the "Account" tab of their settings page. Only the parameters specified will be updated.</p>
-<p>Avaliable parameters: </p>
-<p><em>string name (optional)</em>  : Full name associated with the profile. Maximum of 20 characters.</p>
-<p><em>string url (optional)</em>  : URL associated with the profile. Will be prepended with "http://" if not present. Maximum of 100 characters.</p>
-<p><em>string location (optional)</em>  : The city or country describing where the user of the account is located. The contents are not normalized or geocoded in any way. Maximum of 30 characters.</p>
-<p><em>string description (optional)</em>  : A description of the user owning the account. Maximum of 160 characters.</p>
-<p><em>bool include_entities (optional)</em>  : The entities node will not be included when set to false.</p>
-<p><em>bool skip_status (optional) </em> : When set to true, statuses will not be included in the returned user objects.</p>
-<dl class="section return"><dt>Returns</dt><dd>The profile. </dd></dl>
+<p>Sets values that users are able to set under the "Account" tab of their settings page as an asynchronous operation.</p>
+<p>Only the parameters specified will be updated.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> name (optional)</p>
+<p>- <code>string</code> url (optional)</p>
+<p>- <code>string</code> location (optional)</p>
+<p>- <code>string</code> description (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<p>- <code>bool</code> skip_status (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the settings of the user.</p>
 
 </div>
 </div>
@@ -960,6 +1172,26 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Sets values that users are able to set under the "Account" tab of their settings page as an asynchronous operation.</p>
+<p>Only the parameters specified will be updated.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> name (optional)</p>
+<p>- <code>string</code> url (optional)</p>
+<p>- <code>string</code> location (optional)</p>
+<p>- <code>string</code> description (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<p>- <code>bool</code> skip_status (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the settings of the user.</p>
+
 </div>
 </div>
 <a class="anchor" id="abc6df14892f771cf8649b8d32e407aa4"></a>
@@ -994,6 +1226,26 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Sets values that users are able to set under the "Account" tab of their settings page as an asynchronous operation.</p>
+<p>Only the parameters specified will be updated.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> name (optional)</p>
+<p>- <code>string</code> url (optional)</p>
+<p>- <code>string</code> location (optional)</p>
+<p>- <code>string</code> description (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<p>- <code>bool</code> skip_status (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the settings of the user.</p>
+
 </div>
 </div>
 <a class="anchor" id="a7d3473e60cf4fa618fe45eb753477df6"></a>
@@ -1019,21 +1271,22 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Updates the authenticating user's profile background image. This method can also be used to enable or disable the profile background image.</p>
+<p>Updates the authenticating user's profile background image.</p>
+<p>This method can also be used to enable or disable the profile background image.</p>
 <p>Although each parameter is marked as optional, at least one of image, tile or use must be provided when making this request.</p>
-<p>Avaliable parameters: </p>
-<p><em>Stream,IEnumerable&lt;byte&gt;,FileInfo image (optional)</em>  : The background image for the profile, base64-encoded. Must be a valid GIF, JPG, or PNG image of less than 800 kilobytes in size. Images with width larger than 2048 pixels will be forcibly scaled down. The image must be provided as raw multipart data, not a URL.</p>
-<p><em>bool tile (optional)</em>  : Whether or not to tile the background image. If set to true, t or 1 the background image will be displayed tiled. The image will not be tiled otherwise.</p>
-<p><em>bool include_entities (optional)</em>  : The entities node will not be included when set to false.</p>
-<p><em>bool skip_status (optional)</em>  : When set to true, statuses will not be included in the returned user objects.</p>
-<p><em>bool use (optional)</em>  : Determines whether to display the profile background image or not. When set to true, the background image will be displayed if an image is being uploaded with the request, or has been uploaded previously. An error will be returned if you try to use a background image when one is not being uploaded or does not exist. If this parameter is defined but set to anything other than true, the background image will stop being used.</p>
-<dl class="section return"><dt>Returns</dt><dd>The profile.</dd></dl>
+<p>Avaliable parameters:</p>
+<p>- <code>Stream</code> / <code>IEnumerable&lt;byte&gt;</code> / <code>FileInfo</code> image (optional)</p>
+<p>- <code>bool</code> tile (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<p>- <code>bool</code> skip_status (optional)</p>
+<p>- <code>bool</code> use (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The user object.</dd></dl>
 
 </div>
 </div>
@@ -1059,6 +1312,24 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Updates the authenticating user's profile background image.</p>
+<p>This method can also be used to enable or disable the profile background image.</p>
+<p>Although each parameter is marked as optional, at least one of image, tile or use must be provided when making this request.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>Stream</code> / <code>IEnumerable&lt;byte&gt;</code> / <code>FileInfo</code> image (optional)</p>
+<p>- <code>bool</code> tile (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<p>- <code>bool</code> skip_status (optional)</p>
+<p>- <code>bool</code> use (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The user object.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a472e475b48ba9d2f61e75de2b36e9783"></a>
@@ -1082,6 +1353,24 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Updates the authenticating user's profile background image.</p>
+<p>This method can also be used to enable or disable the profile background image.</p>
+<p>Although each parameter is marked as optional, at least one of image, tile or use must be provided when making this request.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>Stream</code> / <code>IEnumerable&lt;byte&gt;</code> / <code>FileInfo</code> image (optional)</p>
+<p>- <code>bool</code> tile (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<p>- <code>bool</code> skip_status (optional)</p>
+<p>- <code>bool</code> use (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The user object.</dd></dl>
 
 </div>
 </div>
@@ -1108,21 +1397,23 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Updates the authenticating user's profile background image. This method can also be used to enable or disable the profile background image.</p>
+<p>Updates the authenticating user's profile background image as an asynchronous operation.</p>
+<p>This method can also be used to enable or disable the profile background image.</p>
 <p>Although each parameter is marked as optional, at least one of image, tile or use must be provided when making this request.</p>
-<p>Avaliable parameters: </p>
-<p><em>Stream,IEnumerable&lt;byte&gt;,FileInfo image (optional)</em>  : The background image for the profile, base64-encoded. Must be a valid GIF, JPG, or PNG image of less than 800 kilobytes in size. Images with width larger than 2048 pixels will be forcibly scaled down. The image must be provided as raw multipart data, not a URL.</p>
-<p><em>bool tile (optional)</em>  : Whether or not to tile the background image. If set to true, t or 1 the background image will be displayed tiled. The image will not be tiled otherwise.</p>
-<p><em>bool include_entities (optional)</em>  : The entities node will not be included when set to false.</p>
-<p><em>bool skip_status (optional)</em>  : When set to true, statuses will not be included in the returned user objects.</p>
-<p><em>bool use (optional)</em>  : Determines whether to display the profile background image or not. When set to true, the background image will be displayed if an image is being uploaded with the request, or has been uploaded previously. An error will be returned if you try to use a background image when one is not being uploaded or does not exist. If this parameter is defined but set to anything other than true, the background image will stop being used.</p>
-<dl class="section return"><dt>Returns</dt><dd>The profile.</dd></dl>
+<p>Avaliable parameters:</p>
+<p>- <code>Stream</code> / <code>IEnumerable&lt;byte&gt;</code> / <code>FileInfo</code> image (optional)</p>
+<p>- <code>bool</code> tile (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<p>- <code>bool</code> skip_status (optional)</p>
+<p>- <code>bool</code> use (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the user object.</p>
 
 </div>
 </div>
@@ -1158,6 +1449,26 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Updates the authenticating user's profile background image as an asynchronous operation.</p>
+<p>This method can also be used to enable or disable the profile background image.</p>
+<p>Although each parameter is marked as optional, at least one of image, tile or use must be provided when making this request.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>Stream</code> / <code>IEnumerable&lt;byte&gt;</code> / <code>FileInfo</code> image (optional)</p>
+<p>- <code>bool</code> tile (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<p>- <code>bool</code> skip_status (optional)</p>
+<p>- <code>bool</code> use (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the user object.</p>
+
 </div>
 </div>
 <a class="anchor" id="aede7b80337904311955145af7ef39321"></a>
@@ -1192,6 +1503,26 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Updates the authenticating user's profile background image as an asynchronous operation.</p>
+<p>This method can also be used to enable or disable the profile background image.</p>
+<p>Although each parameter is marked as optional, at least one of image, tile or use must be provided when making this request.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>Stream</code> / <code>IEnumerable&lt;byte&gt;</code> / <code>FileInfo</code> image (optional)</p>
+<p>- <code>bool</code> tile (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<p>- <code>bool</code> skip_status (optional)</p>
+<p>- <code>bool</code> use (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the user object.</p>
+
 </div>
 </div>
 <a class="anchor" id="a91a0784b3655c9aac545e0a6fa36d1ca"></a>
@@ -1217,17 +1548,21 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Uploads a profile banner on behalf of the authenticating user. For best results, upload an image that is exactly 1252px by 626px and smaller than 5MB. Images will be resized for a number of display options. <a class="el" href="classCoreTweet_1_1Rest_1_1Users.html" title="GET/POST users">Users</a> with an uploaded profile banner will have a profile_banner_url node in their <a class="el" href="classCoreTweet_1_1Rest_1_1Users.html" title="GET/POST users">Users</a> objects. More information about sizing variations can be found in <a class="el" href="classCoreTweet_1_1User.html" title="A user. ">User</a> Profile Images and Banners and GET users/profile_banner.</p>
-<p>Profile banner images are processed asynchronously. The profile_banner_url and its variant sizes will not necessary be available directly after upload.</p>
-<p>Avaliable parameters: </p>
-<p><em>Stream,IEnumerable&lt;byte&gt;,FileInfo banner (required)</em>  : The Base64-encoded or raw image data being uploaded as the user's new profile banner.</p>
-<p><em>string width (optional)</em>  : The width of the preferred section of the image being uploaded in pixels. Use with height, offset_left, and offset_top to select the desired region of the image to use.</p>
-<p><em>string height (optional)</em>  : The height of the preferred section of the image being uploaded in pixels. Use with width, offset_left, and offset_top to select the desired region of the image to use.</p>
-<p><em>string offset_left (optional)</em>  : The number of pixels by which to offset the uploaded image from the left. Use with height, width, and offset_top to select the desired region of the image to use.</p>
-<p><em>string offset_top (optional)</em>  : The number of pixels by which to offset the uploaded image from the top. Use with height, width, and offset_left to select the desired region of the image to use.</p>
+<p>Uploads a profile banner on behalf of the authenticating user.</p>
+<p>For best results, upload an &lt;3MB image that is exactly 1500px by 500px.</p>
+<p>Images will be resized for a number of display options. <a class="el" href="classCoreTweet_1_1Rest_1_1Users.html" title="Provides a set of methods for the wrapper of GET/POST users. ">Users</a> with an uploaded profile banner will have a profile_banner_url node in their <a class="el" href="classCoreTweet_1_1Rest_1_1Users.html" title="Provides a set of methods for the wrapper of GET/POST users. ">Users</a> objects.</p>
+<p>More information about sizing variations can be found in <a href="https://dev.twitter.com/docs/user-profile-images-and-banners">https://dev.twitter.com/docs/user-profile-images-and-banners</a>.</p>
+<p>Profile banner images are processed asynchronously.</p>
+<p>The profile_banner_url and its variant sizes will not necessary be available directly after upload.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>Stream</code> / <code>IEnumerable&lt;byte&gt;</code> / <code>FileInfo</code> banner (required)</p>
+<p>- <code>string</code> width (optional)</p>
+<p>- <code>string</code> height (optional)</p>
+<p>- <code>string</code> offset_left (optional)</p>
+<p>- <code>string</code> offset_top (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1256,6 +1591,26 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Uploads a profile banner on behalf of the authenticating user.</p>
+<p>For best results, upload an &lt;3MB image that is exactly 1500px by 500px.</p>
+<p>Images will be resized for a number of display options. <a class="el" href="classCoreTweet_1_1Rest_1_1Users.html" title="Provides a set of methods for the wrapper of GET/POST users. ">Users</a> with an uploaded profile banner will have a profile_banner_url node in their <a class="el" href="classCoreTweet_1_1Rest_1_1Users.html" title="Provides a set of methods for the wrapper of GET/POST users. ">Users</a> objects.</p>
+<p>More information about sizing variations can be found in <a href="https://dev.twitter.com/docs/user-profile-images-and-banners">https://dev.twitter.com/docs/user-profile-images-and-banners</a>.</p>
+<p>Profile banner images are processed asynchronously.</p>
+<p>The profile_banner_url and its variant sizes will not necessary be available directly after upload.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>Stream</code> / <code>IEnumerable&lt;byte&gt;</code> / <code>FileInfo</code> banner (required)</p>
+<p>- <code>string</code> width (optional)</p>
+<p>- <code>string</code> height (optional)</p>
+<p>- <code>string</code> offset_left (optional)</p>
+<p>- <code>string</code> offset_top (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="a0440ffe424db4c92f32eb939d9d1dc34"></a>
@@ -1279,6 +1634,26 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Uploads a profile banner on behalf of the authenticating user.</p>
+<p>For best results, upload an &lt;3MB image that is exactly 1500px by 500px.</p>
+<p>Images will be resized for a number of display options. <a class="el" href="classCoreTweet_1_1Rest_1_1Users.html" title="Provides a set of methods for the wrapper of GET/POST users. ">Users</a> with an uploaded profile banner will have a profile_banner_url node in their <a class="el" href="classCoreTweet_1_1Rest_1_1Users.html" title="Provides a set of methods for the wrapper of GET/POST users. ">Users</a> objects.</p>
+<p>More information about sizing variations can be found in <a href="https://dev.twitter.com/docs/user-profile-images-and-banners">https://dev.twitter.com/docs/user-profile-images-and-banners</a>.</p>
+<p>Profile banner images are processed asynchronously.</p>
+<p>The profile_banner_url and its variant sizes will not necessary be available directly after upload.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>Stream</code> / <code>IEnumerable&lt;byte&gt;</code> / <code>FileInfo</code> banner (required)</p>
+<p>- <code>string</code> width (optional)</p>
+<p>- <code>string</code> height (optional)</p>
+<p>- <code>string</code> offset_left (optional)</p>
+<p>- <code>string</code> offset_top (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1305,20 +1680,25 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Uploads a profile banner on behalf of the authenticating user. For best results, upload an image that is exactly 1252px by 626px and smaller than 5MB. Images will be resized for a number of display options. <a class="el" href="classCoreTweet_1_1Rest_1_1Users.html" title="GET/POST users">Users</a> with an uploaded profile banner will have a profile_banner_url node in their <a class="el" href="classCoreTweet_1_1Rest_1_1Users.html" title="GET/POST users">Users</a> objects. More information about sizing variations can be found in <a class="el" href="classCoreTweet_1_1User.html" title="A user. ">User</a> Profile Images and Banners and GET users/profile_banner.</p>
-<p>Profile banner images are processed asynchronously. The profile_banner_url and its variant sizes will not necessary be available directly after upload.</p>
-<p>Avaliable parameters: </p>
-<p><em>Stream,IEnumerable&lt;byte&gt;,FileInfo banner (required)</em>  : The Base64-encoded or raw image data being uploaded as the user's new profile banner.</p>
-<p><em>string width (optional)</em>  : The width of the preferred section of the image being uploaded in pixels. Use with height, offset_left, and offset_top to select the desired region of the image to use.</p>
-<p><em>string height (optional)</em>  : The height of the preferred section of the image being uploaded in pixels. Use with width, offset_left, and offset_top to select the desired region of the image to use.</p>
-<p><em>string offset_left (optional)</em>  : The number of pixels by which to offset the uploaded image from the left. Use with height, width, and offset_top to select the desired region of the image to use.</p>
-<p><em>string offset_top (optional)</em>  : The number of pixels by which to offset the uploaded image from the top. Use with height, width, and offset_left to select the desired region of the image to use.</p>
+<p>Uploads a profile banner on behalf of the authenticating user as an asynchronous operation.</p>
+<p>For best results, upload an &lt;3MB image that is exactly 1500px by 500px.</p>
+<p>Images will be resized for a number of display options. <a class="el" href="classCoreTweet_1_1Rest_1_1Users.html" title="Provides a set of methods for the wrapper of GET/POST users. ">Users</a> with an uploaded profile banner will have a profile_banner_url node in their <a class="el" href="classCoreTweet_1_1Rest_1_1Users.html" title="Provides a set of methods for the wrapper of GET/POST users. ">Users</a> objects.</p>
+<p>More information about sizing variations can be found in <a href="https://dev.twitter.com/docs/user-profile-images-and-banners">https://dev.twitter.com/docs/user-profile-images-and-banners</a>.</p>
+<p>Profile banner images are processed asynchronously.</p>
+<p>The profile_banner_url and its variant sizes will not necessary be available directly after upload.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>Stream</code> / <code>IEnumerable&lt;byte&gt;</code> / <code>FileInfo</code> banner (required)</p>
+<p>- <code>string</code> width (optional)</p>
+<p>- <code>string</code> height (optional)</p>
+<p>- <code>string</code> offset_left (optional)</p>
+<p>- <code>string</code> offset_top (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
 
 </div>
 </div>
@@ -1354,6 +1734,28 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Uploads a profile banner on behalf of the authenticating user as an asynchronous operation.</p>
+<p>For best results, upload an &lt;3MB image that is exactly 1500px by 500px.</p>
+<p>Images will be resized for a number of display options. <a class="el" href="classCoreTweet_1_1Rest_1_1Users.html" title="Provides a set of methods for the wrapper of GET/POST users. ">Users</a> with an uploaded profile banner will have a profile_banner_url node in their <a class="el" href="classCoreTweet_1_1Rest_1_1Users.html" title="Provides a set of methods for the wrapper of GET/POST users. ">Users</a> objects.</p>
+<p>More information about sizing variations can be found in <a href="https://dev.twitter.com/docs/user-profile-images-and-banners">https://dev.twitter.com/docs/user-profile-images-and-banners</a>.</p>
+<p>Profile banner images are processed asynchronously.</p>
+<p>The profile_banner_url and its variant sizes will not necessary be available directly after upload.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>Stream</code> / <code>IEnumerable&lt;byte&gt;</code> / <code>FileInfo</code> banner (required)</p>
+<p>- <code>string</code> width (optional)</p>
+<p>- <code>string</code> height (optional)</p>
+<p>- <code>string</code> offset_left (optional)</p>
+<p>- <code>string</code> offset_top (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="abc257bd58f8d4a50ee1626b3f975f995"></a>
@@ -1388,6 +1790,28 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Uploads a profile banner on behalf of the authenticating user as an asynchronous operation.</p>
+<p>For best results, upload an &lt;3MB image that is exactly 1500px by 500px.</p>
+<p>Images will be resized for a number of display options. <a class="el" href="classCoreTweet_1_1Rest_1_1Users.html" title="Provides a set of methods for the wrapper of GET/POST users. ">Users</a> with an uploaded profile banner will have a profile_banner_url node in their <a class="el" href="classCoreTweet_1_1Rest_1_1Users.html" title="Provides a set of methods for the wrapper of GET/POST users. ">Users</a> objects.</p>
+<p>More information about sizing variations can be found in <a href="https://dev.twitter.com/docs/user-profile-images-and-banners">https://dev.twitter.com/docs/user-profile-images-and-banners</a>.</p>
+<p>Profile banner images are processed asynchronously.</p>
+<p>The profile_banner_url and its variant sizes will not necessary be available directly after upload.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>Stream</code> / <code>IEnumerable&lt;byte&gt;</code> / <code>FileInfo</code> banner (required)</p>
+<p>- <code>string</code> width (optional)</p>
+<p>- <code>string</code> height (optional)</p>
+<p>- <code>string</code> offset_left (optional)</p>
+<p>- <code>string</code> offset_top (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="ab8f25ef544127cc94982a35ce16b378b"></a>
@@ -1413,22 +1837,23 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Sets one or more hex values that control the color scheme of the authenticating user's profile page on twitter.com. Each parameter's value must be a valid hexidecimal value, and may be either three or six characters (ex: #fff or #ffffff).</p>
-<p>Avaliable parameters: </p>
-<p><em>string profile_background_color (optional)</em>  : Profile background color.</p>
-<p><em>string profile_link_color (optional)</em>  : Profile link color.</p>
-<p><em>string profile_sidebar_border_color (optional)</em>  : Profile sidebar's border color.</p>
-<p><em>string profile_sidebar_fill_color (optional)</em>  : Profile sidebar's background color.</p>
-<p><em>string profile_text_color (optional)</em>  : Profile text color.</p>
-<p><em>bool include_entities (optional)</em>  : The entities node will not be included when set to false.</p>
-<p><em>bool skip_status (optional)</em>  : When set to true, statuses will not be included in the returned user objects.</p>
-<dl class="section return"><dt>Returns</dt><dd>The profile.</dd></dl>
+<p>Sets one or more hex values that control the color scheme of the authenticating user's profile page on twitter.com.</p>
+<p>Each parameter's value must be a valid hexidecimal value, and may be either three or six characters (ex: #fff or #ffffff).</p>
+<p>Avaliable parameters:</p>
+<p><code>string</code> profile_background_color (optional)</p>
+<p><code>string</code> profile_link_color (optional)</p>
+<p><code>string</code> profile_sidebar_border_color (optional)</p>
+<p><code>string</code> profile_sidebar_fill_color (optional)</p>
+<p><code>string</code> profile_text_color (optional)</p>
+<p><code>bool</code> include_entities (optional)</p>
+<p><code>bool</code> skip_status (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The user object.</dd></dl>
 
 </div>
 </div>
@@ -1454,6 +1879,25 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Sets one or more hex values that control the color scheme of the authenticating user's profile page on twitter.com.</p>
+<p>Each parameter's value must be a valid hexidecimal value, and may be either three or six characters (ex: #fff or #ffffff).</p>
+<p>Avaliable parameters:</p>
+<p><code>string</code> profile_background_color (optional)</p>
+<p><code>string</code> profile_link_color (optional)</p>
+<p><code>string</code> profile_sidebar_border_color (optional)</p>
+<p><code>string</code> profile_sidebar_fill_color (optional)</p>
+<p><code>string</code> profile_text_color (optional)</p>
+<p><code>bool</code> include_entities (optional)</p>
+<p><code>bool</code> skip_status (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The user object.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a4cf6c2f66af908205e5c2d129a242c5e"></a>
@@ -1477,6 +1921,25 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Sets one or more hex values that control the color scheme of the authenticating user's profile page on twitter.com.</p>
+<p>Each parameter's value must be a valid hexidecimal value, and may be either three or six characters (ex: #fff or #ffffff).</p>
+<p>Avaliable parameters:</p>
+<p><code>string</code> profile_background_color (optional)</p>
+<p><code>string</code> profile_link_color (optional)</p>
+<p><code>string</code> profile_sidebar_border_color (optional)</p>
+<p><code>string</code> profile_sidebar_fill_color (optional)</p>
+<p><code>string</code> profile_text_color (optional)</p>
+<p><code>bool</code> include_entities (optional)</p>
+<p><code>bool</code> skip_status (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The user object.</dd></dl>
 
 </div>
 </div>
@@ -1503,22 +1966,24 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Sets one or more hex values that control the color scheme of the authenticating user's profile page on twitter.com. Each parameter's value must be a valid hexidecimal value, and may be either three or six characters (ex: #fff or #ffffff).</p>
-<p>Avaliable parameters: </p>
-<p><em>string profile_background_color (optional)</em>  : Profile background color.</p>
-<p><em>string profile_link_color (optional)</em>  : Profile link color.</p>
-<p><em>string profile_sidebar_border_color (optional)</em>  : Profile sidebar's border color.</p>
-<p><em>string profile_sidebar_fill_color (optional)</em>  : Profile sidebar's background color.</p>
-<p><em>string profile_text_color (optional)</em>  : Profile text color.</p>
-<p><em>bool include_entities (optional)</em>  : The entities node will not be included when set to false.</p>
-<p><em>bool skip_status (optional)</em>  : When set to true, statuses will not be included in the returned user objects.</p>
-<dl class="section return"><dt>Returns</dt><dd>The profile.</dd></dl>
+<p>Sets one or more hex values that control the color scheme of the authenticating user's profile page on twitter.com as an asynchronous operation.</p>
+<p>Each parameter's value must be a valid hexidecimal value, and may be either three or six characters (ex: #fff or #ffffff).</p>
+<p>Avaliable parameters:</p>
+<p><code>string</code> profile_background_color (optional)</p>
+<p><code>string</code> profile_link_color (optional)</p>
+<p><code>string</code> profile_sidebar_border_color (optional)</p>
+<p><code>string</code> profile_sidebar_fill_color (optional)</p>
+<p><code>string</code> profile_text_color (optional)</p>
+<p><code>bool</code> include_entities (optional)</p>
+<p><code>bool</code> skip_status (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the user object.</p>
 
 </div>
 </div>
@@ -1554,6 +2019,27 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Sets one or more hex values that control the color scheme of the authenticating user's profile page on twitter.com as an asynchronous operation.</p>
+<p>Each parameter's value must be a valid hexidecimal value, and may be either three or six characters (ex: #fff or #ffffff).</p>
+<p>Avaliable parameters:</p>
+<p><code>string</code> profile_background_color (optional)</p>
+<p><code>string</code> profile_link_color (optional)</p>
+<p><code>string</code> profile_sidebar_border_color (optional)</p>
+<p><code>string</code> profile_sidebar_fill_color (optional)</p>
+<p><code>string</code> profile_text_color (optional)</p>
+<p><code>bool</code> include_entities (optional)</p>
+<p><code>bool</code> skip_status (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the user object.</p>
+
 </div>
 </div>
 <a class="anchor" id="ad05d91059eb5177ba137d59de64d04b9"></a>
@@ -1588,6 +2074,27 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Sets one or more hex values that control the color scheme of the authenticating user's profile page on twitter.com.</p>
+<p>Each parameter's value must be a valid hexidecimal value, and may be either three or six characters (ex: #fff or #ffffff).</p>
+<p>Avaliable parameters:</p>
+<p><code>string</code> profile_background_color (optional)</p>
+<p><code>string</code> profile_link_color (optional)</p>
+<p><code>string</code> profile_sidebar_border_color (optional)</p>
+<p><code>string</code> profile_sidebar_fill_color (optional)</p>
+<p><code>string</code> profile_text_color (optional)</p>
+<p><code>bool</code> include_entities (optional)</p>
+<p><code>bool</code> skip_status (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the user object.</p>
+
 </div>
 </div>
 <a class="anchor" id="a53cbf770e2d01cf99aa62eeec366d064"></a>
@@ -1613,19 +2120,21 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Updates the authenticating user's profile image. Note that this method expects raw multipart data, not a URL to an image.</p>
-<p>This method asynchronously processes the uploaded file before updating the user's profile image URL. You can either update your local cache the next time you request the user's information, or, at least 5 seconds after uploading the image, ask for the updated URL using GET users/show.</p>
-<p>Avaliable parameters: </p>
-<p><em>Stream,IEnumerable&lt;byte&gt;,FileInfo image (required)</em>  : The avatar image for the profile, base64-encoded. Must be a valid GIF, JPG, or PNG image of less than 700 kilobytes in size. Images with width larger than 500 pixels will be scaled down. Animated GIFs will be converted to a static GIF of the first frame, removing the animation.</p>
-<p><em>bool include_entities (optional)</em>  : The entities node will not be included when set to false.</p>
-<p><em>bool skip_status (optional)</em>  : When set to true, statuses will not be included in the returned user objects.</p>
-<dl class="section return"><dt>Returns</dt><dd>The profile.</dd></dl>
+<p>Updates the authenticating user's profile image.</p>
+<p>Note that this method expects raw multipart data, not a URL to an image.</p>
+<p>This method asynchronously processes the uploaded file before updating the user's profile image URL.</p>
+<p>You can either update your local cache the next time you request the user's information, or, at least 5 seconds after uploading the image, ask for the updated URL using GET users/show.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>Stream</code> / <code>IEnumerable&lt;byte&gt;</code> / <code>FileInfo</code> image (required)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<p>- <code>bool</code> skip_status (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The user object.</dd></dl>
 
 </div>
 </div>
@@ -1651,6 +2160,23 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Updates the authenticating user's profile image.</p>
+<p>Note that this method expects raw multipart data, not a URL to an image.</p>
+<p>This method asynchronously processes the uploaded file before updating the user's profile image URL.</p>
+<p>You can either update your local cache the next time you request the user's information, or, at least 5 seconds after uploading the image, ask for the updated URL using GET users/show.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>Stream</code> / <code>IEnumerable&lt;byte&gt;</code> / <code>FileInfo</code> image (required)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<p>- <code>bool</code> skip_status (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The user object.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a742d3efaad1bee0fc1befa5ff6a20a66"></a>
@@ -1674,6 +2200,23 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Updates the authenticating user's profile image.</p>
+<p>Note that this method expects raw multipart data, not a URL to an image.</p>
+<p>This method asynchronously processes the uploaded file before updating the user's profile image URL.</p>
+<p>You can either update your local cache the next time you request the user's information, or, at least 5 seconds after uploading the image, ask for the updated URL using GET users/show.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>Stream</code> / <code>IEnumerable&lt;byte&gt;</code> / <code>FileInfo</code> image (required)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<p>- <code>bool</code> skip_status (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The user object.</dd></dl>
 
 </div>
 </div>
@@ -1700,19 +2243,22 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Updates the authenticating user's profile image. Note that this method expects raw multipart data, not a URL to an image.</p>
-<p>This method asynchronously processes the uploaded file before updating the user's profile image URL. You can either update your local cache the next time you request the user's information, or, at least 5 seconds after uploading the image, ask for the updated URL using GET users/show.</p>
-<p>Avaliable parameters: </p>
-<p><em>Stream,IEnumerable&lt;byte&gt;,FileInfo image (required)</em>  : The avatar image for the profile, base64-encoded. Must be a valid GIF, JPG, or PNG image of less than 700 kilobytes in size. Images with width larger than 500 pixels will be scaled down. Animated GIFs will be converted to a static GIF of the first frame, removing the animation.</p>
-<p><em>bool include_entities (optional)</em>  : The entities node will not be included when set to false.</p>
-<p><em>bool skip_status (optional)</em>  : When set to true, statuses will not be included in the returned user objects.</p>
-<dl class="section return"><dt>Returns</dt><dd>The profile.</dd></dl>
+<p>Updates the authenticating user's profile image as an asynchronous operation.</p>
+<p>Note that this method expects raw multipart data, not a URL to an image.</p>
+<p>This method asynchronously processes the uploaded file before updating the user's profile image URL.</p>
+<p>You can either update your local cache the next time you request the user's information, or, at least 5 seconds after uploading the image, ask for the updated URL using GET users/show.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>Stream</code> / <code>IEnumerable&lt;byte&gt;</code> / <code>FileInfo</code> image (required)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<p>- <code>bool</code> skip_status (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the user object.</p>
 
 </div>
 </div>
@@ -1748,6 +2294,25 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Updates the authenticating user's profile image as an asynchronous operation.</p>
+<p>Note that this method expects raw multipart data, not a URL to an image.</p>
+<p>This method asynchronously processes the uploaded file before updating the user's profile image URL.</p>
+<p>You can either update your local cache the next time you request the user's information, or, at least 5 seconds after uploading the image, ask for the updated URL using GET users/show.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>Stream</code> / <code>IEnumerable&lt;byte&gt;</code> / <code>FileInfo</code> image (required)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<p>- <code>bool</code> skip_status (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the user object.</p>
+
 </div>
 </div>
 <a class="anchor" id="a2eeb16ddffecc2027fd4b36602555cee"></a>
@@ -1782,6 +2347,25 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Updates the authenticating user's profile image as an asynchronous operation.</p>
+<p>Note that this method expects raw multipart data, not a URL to an image.</p>
+<p>This method asynchronously processes the uploaded file before updating the user's profile image URL.</p>
+<p>You can either update your local cache the next time you request the user's information, or, at least 5 seconds after uploading the image, ask for the updated URL using GET users/show.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>Stream</code> / <code>IEnumerable&lt;byte&gt;</code> / <code>FileInfo</code> image (required)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<p>- <code>bool</code> skip_status (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the user object.</p>
+
 </div>
 </div>
 <a class="anchor" id="a98ee34e474861b21720c86febdf26ab3"></a>
@@ -1807,17 +2391,18 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Returns an HTTP 200 OK response code and a representation of the requesting user if authentication was successful; returns a 401 status code and an error message if not. Use this method to test if supplied user credentials are valid. </p>
-<p>Available parameters: </p>
-<p><em>bool include_entities (optional)</em>  : The entities node will not be included when set to false. </p>
-<p><em>bool skip_status (optional)</em>  : When set to true, statuses will not be included in the returned user objects. </p>
-<dl class="section return"><dt>Returns</dt><dd>The user data of you. </dd></dl>
+<p>Returns a representation of the requesting user if authentication was successful.</p>
+<p>Use this method to test if supplied user credentials are valid.</p>
+<p>Available parameters:</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<p>- <code>bool</code> skip_status (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The user object.</dd></dl>
 
 </div>
 </div>
@@ -1843,6 +2428,20 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns a representation of the requesting user if authentication was successful.</p>
+<p>Use this method to test if supplied user credentials are valid.</p>
+<p>Available parameters:</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<p>- <code>bool</code> skip_status (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The user object.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="ada286db57eafe77e33822d73597266ce"></a>
@@ -1866,6 +2465,20 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Returns a representation of the requesting user if authentication was successful.</p>
+<p>Use this method to test if supplied user credentials are valid.</p>
+<p>Available parameters:</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<p>- <code>bool</code> skip_status (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The user object.</dd></dl>
 
 </div>
 </div>
@@ -1892,17 +2505,19 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Returns an HTTP 200 OK response code and a representation of the requesting user if authentication was successful; returns a 401 status code and an error message if not. Use this method to test if supplied user credentials are valid. </p>
-<p>Available parameters: </p>
-<p><em>bool include_entities (optional)</em>  : The entities node will not be included when set to false. </p>
-<p><em>bool skip_status (optional)</em>  : When set to true, statuses will not be included in the returned user objects. </p>
-<dl class="section return"><dt>Returns</dt><dd>The user data of you. </dd></dl>
+<p>Returns a representation of the requesting user if authentication was successful as an asynchronous operation.</p>
+<p>Use this method to test if supplied user credentials are valid.</p>
+<p>Available parameters:</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<p>- <code>bool</code> skip_status (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the user object.</p>
 
 </div>
 </div>
@@ -1938,6 +2553,22 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns a representation of the requesting user if authentication was successful as an asynchronous operation.</p>
+<p>Use this method to test if supplied user credentials are valid.</p>
+<p>Available parameters:</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<p>- <code>bool</code> skip_status (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the user object.</p>
+
 </div>
 </div>
 <a class="anchor" id="a94c7d1e62442234adc6be0e7a057048c"></a>
@@ -1972,6 +2603,22 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns a representation of the requesting user if authentication was successful as an asynchronous operation.</p>
+<p>Use this method to test if supplied user credentials are valid.</p>
+<p>Available parameters:</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<p>- <code>bool</code> skip_status (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the user object.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
@@ -1981,7 +2628,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat May 31 2014 23:10:00 for CoreTweet by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 20 2014 00:31:19 for CoreTweet by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

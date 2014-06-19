@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="core-48x48.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">CoreTweet
-   &#160;<span id="projectnumber">0.3.3</span>
+   &#160;<span id="projectnumber">0.3.4</span>
    </div>
    <div id="projectbrief">Yet another .NET Twitter Library</div>
   </td>
@@ -97,7 +97,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>GET/POST geo 
+<p>Provides a set of methods for the wrapper of GET/POST geo.  
  <a href="classCoreTweet_1_1Rest_1_1Geo.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for CoreTweet.Rest.Geo:</div>
@@ -105,7 +105,7 @@ Inheritance diagram for CoreTweet.Rest.Geo:</div>
  <div class="center">
   <img src="classCoreTweet_1_1Rest_1_1Geo.png" usemap="#CoreTweet.Rest.Geo_map" alt=""/>
   <map id="CoreTweet.Rest.Geo_map" name="CoreTweet.Rest.Geo_map">
-<area href="classCoreTweet_1_1Core_1_1ApiProviderBase.html" title="Base class of API providers. " alt="CoreTweet.Core.ApiProviderBase" shape="rect" coords="0,0,205,24"/>
+<area href="classCoreTweet_1_1Core_1_1ApiProviderBase.html" title="Provides a Twitter API wrapper. This is an abstract class. " alt="CoreTweet.Core.ApiProviderBase" shape="rect" coords="0,0,205,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -168,7 +168,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a8f9003e34c6f19f561b10b1f14098ec1 inherit properties_classCoreTweet_1_1Core_1_1ApiProviderBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>GET/POST geo</p>
+<div class="textblock"><p>Provides a set of methods for the wrapper of GET/POST geo. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="ac3b317bd96dd6fa30adc9114e833f5fa"></a>
 <div class="memitem">
@@ -195,14 +195,14 @@ Additional Inherited Members</h2></td></tr>
 <p></p>
 <p>Returns all the information about a known place.</p>
 <p>Avaliable parameters: </p>
-<p><em>string place_id (required)</em>  : A place in the world. These IDs can be retrieved from geo/reverse_geocode.</p>
-<dl class="section return"><dt>Returns</dt><dd>The geo.</dd></dl>
+<p><code>string</code> place_id (required)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The geo.</dd></dl>
 
 </div>
 </div>
@@ -228,6 +228,18 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns all the information about a known place.</p>
+<p>Avaliable parameters: </p>
+<p><code>string</code> place_id (required)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The geo.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a8f16c048ea92234a667b612114279cac"></a>
@@ -251,6 +263,18 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Returns all the information about a known place.</p>
+<p>Avaliable parameters: </p>
+<p><code>string</code> place_id (required)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The geo.</dd></dl>
 
 </div>
 </div>
@@ -277,16 +301,17 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Returns all the information about a known place.</p>
+<p>Returns all the information about a known place as an asynchronous operation.</p>
 <p>Avaliable parameters: </p>
-<p><em>string place_id (required)</em>  : A place in the world. These IDs can be retrieved from geo/reverse_geocode.</p>
-<dl class="section return"><dt>Returns</dt><dd>The geo.</dd></dl>
+<p><code>string</code> place_id (required)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the geo.</p>
 
 </div>
 </div>
@@ -322,6 +347,20 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns all the information about a known place as an asynchronous operation.</p>
+<p>Avaliable parameters: </p>
+<p><code>string</code> place_id (required)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the geo.</p>
+
 </div>
 </div>
 <a class="anchor" id="ae9569aff6b04eeb2b132cd5008848cb3"></a>
@@ -356,6 +395,20 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns all the information about a known place as an asynchronous operation.</p>
+<p>Avaliable parameters: </p>
+<p><code>string</code> place_id (required)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the geo.</p>
+
 </div>
 </div>
 <a class="anchor" id="a1527b45d028e77f377757a66bac3ff75"></a>
@@ -383,19 +436,19 @@ Additional Inherited Members</h2></td></tr>
 <p></p>
 <p>Given a latitude and a longitude, searches for up to 20 places that can be used as a place_id when updating a status.</p>
 <p>This request is an informative call and will deliver generalized results about geography.</p>
-<p>Avaliable parameters: </p>
-<p><em>double lat (required)</em>  : The latitude to search around. This parameter will be ignored unless it is inside the range -90.0 to +90.0 (North is positive) inclusive. It will also be ignored if there isn't a corresponding long parameter.</p>
-<p><em>double long (required)</em>  : The longitude to search around. The valid ranges for longitude is -180.0 to +180.0 (East is positive) inclusive. This parameter will be ignored if outside that range, if it is not a number, if geo_enabled is disabled, or if there not a corresponding lat parameter.</p>
-<p><em>string accuracy (optional)</em>  : A hint on the "region" in which to search. If a number, then this is a radius in meters, but it can also take a string that is suffixed with ft to specify feet. If this is not passed in, then it is assumed to be 0m. If coming from a device, in practice, this value is whatever accuracy the device has measuring its location (whether it be coming from a GPS, WiFi triangulation, etc.).</p>
-<p><em>string granularity (optional)</em>  : This is the minimal granularity of place types to return and must be one of: poi, neighborhood, city, admin or country. If no granularity is provided for the request neighborhood is assumed. <a class="el" href="classCoreTweet_1_1Setting.html">Setting</a> this to city, for example, will find places which have a type of city, admin or country.</p>
-<p><em>int max_results (optional)</em>  : A hint as to the number of results to return. This does not guarantee that the number of results returned will equal max_results, but instead informs how many "nearby" results to return. Ideally, only pass in the number of places you intend to display to the user here.</p>
-<dl class="section return"><dt>Returns</dt><dd>Places.</dd></dl>
+<p>Avaliable parameters:</p>
+<p>- <code>double</code> lat (required)</p>
+<p>- <code>double</code> long (required)</p>
+<p>- <code>string</code> accuracy (optional)</p>
+<p>- <code>string</code> granularity (optional)</p>
+<p>- <code>int</code> max_results (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>Places.</dd></dl>
 
 </div>
 </div>
@@ -421,6 +474,23 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Given a latitude and a longitude, searches for up to 20 places that can be used as a place_id when updating a status.</p>
+<p>This request is an informative call and will deliver generalized results about geography.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>double</code> lat (required)</p>
+<p>- <code>double</code> long (required)</p>
+<p>- <code>string</code> accuracy (optional)</p>
+<p>- <code>string</code> granularity (optional)</p>
+<p>- <code>int</code> max_results (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Places.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="ab68403d3abe3ad76848547f782bdd3b1"></a>
@@ -444,6 +514,23 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Given a latitude and a longitude, searches for up to 20 places that can be used as a place_id when updating a status.</p>
+<p>This request is an informative call and will deliver generalized results about geography.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>double</code> lat (required)</p>
+<p>- <code>double</code> long (required)</p>
+<p>- <code>string</code> accuracy (optional)</p>
+<p>- <code>string</code> granularity (optional)</p>
+<p>- <code>int</code> max_results (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Places.</dd></dl>
 
 </div>
 </div>
@@ -470,21 +557,22 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Given a latitude and a longitude, searches for up to 20 places that can be used as a place_id when updating a status.</p>
+<p>Given a latitude and a longitude, searches for up to 20 places that can be used as a place_id when updating a status as an asynchronous operation.</p>
 <p>This request is an informative call and will deliver generalized results about geography.</p>
-<p>Avaliable parameters: </p>
-<p><em>double lat (required)</em>  : The latitude to search around. This parameter will be ignored unless it is inside the range -90.0 to +90.0 (North is positive) inclusive. It will also be ignored if there isn't a corresponding long parameter.</p>
-<p><em>double long (required)</em>  : The longitude to search around. The valid ranges for longitude is -180.0 to +180.0 (East is positive) inclusive. This parameter will be ignored if outside that range, if it is not a number, if geo_enabled is disabled, or if there not a corresponding lat parameter.</p>
-<p><em>string accuracy (optional)</em>  : A hint on the "region" in which to search. If a number, then this is a radius in meters, but it can also take a string that is suffixed with ft to specify feet. If this is not passed in, then it is assumed to be 0m. If coming from a device, in practice, this value is whatever accuracy the device has measuring its location (whether it be coming from a GPS, WiFi triangulation, etc.).</p>
-<p><em>string granularity (optional)</em>  : This is the minimal granularity of place types to return and must be one of: poi, neighborhood, city, admin or country. If no granularity is provided for the request neighborhood is assumed. <a class="el" href="classCoreTweet_1_1Setting.html">Setting</a> this to city, for example, will find places which have a type of city, admin or country.</p>
-<p><em>int max_results (optional)</em>  : A hint as to the number of results to return. This does not guarantee that the number of results returned will equal max_results, but instead informs how many "nearby" results to return. Ideally, only pass in the number of places you intend to display to the user here.</p>
-<dl class="section return"><dt>Returns</dt><dd>Places.</dd></dl>
+<p>Avaliable parameters:</p>
+<p>- <code>double</code> lat (required)</p>
+<p>- <code>double</code> long (required)</p>
+<p>- <code>string</code> accuracy (optional)</p>
+<p>- <code>string</code> granularity (optional)</p>
+<p>- <code>int</code> max_results (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the places.</p>
 
 </div>
 </div>
@@ -520,6 +608,25 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Given a latitude and a longitude, searches for up to 20 places that can be used as a place_id when updating a status as an asynchronous operation.</p>
+<p>This request is an informative call and will deliver generalized results about geography.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>double</code> lat (required)</p>
+<p>- <code>double</code> long (required)</p>
+<p>- <code>string</code> accuracy (optional)</p>
+<p>- <code>string</code> granularity (optional)</p>
+<p>- <code>int</code> max_results (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the places.</p>
+
 </div>
 </div>
 <a class="anchor" id="a9672a260df9fa8dbdfdd0774354d5569"></a>
@@ -554,6 +661,25 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Given a latitude and a longitude, searches for up to 20 places that can be used as a place_id when updating a status as an asynchronous operation.</p>
+<p>This request is an informative call and will deliver generalized results about geography.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>double</code> lat (required)</p>
+<p>- <code>double</code> long (required)</p>
+<p>- <code>string</code> accuracy (optional)</p>
+<p>- <code>string</code> granularity (optional)</p>
+<p>- <code>int</code> max_results (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the places.</p>
+
 </div>
 </div>
 <a class="anchor" id="a8bcd9f4cc0a6ac6bf622e6c457bbba7e"></a>
@@ -579,27 +705,30 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p><a class="el" href="classCoreTweet_1_1Rest_1_1Search.html" title="GET search">Search</a> for places that can be attached to a statuses/update. Given a latitude and a longitude pair, an IP address, or a name, this request will return a list of all the valid places that can be used as the place_id when updating a status.</p>
+<p><a class="el" href="classCoreTweet_1_1Rest_1_1Search.html" title="Provides a set of methods for the wrapper of GET search. ">Search</a> for places that can be attached to a statuses/update.</p>
+<p>Given a latitude and a longitude pair, an IP address, or a name, this request will return a list of all the valid places that can be used as the place_id when updating a status.</p>
 <p>Conceptually, a query can be made from the user's location, retrieve a list of places, have the user validate the location he or she is at, and then send the ID of this location with a call to POST statuses/update.</p>
-<p>This is the recommended method to use find places that can be attached to statuses/update. Unlike GET geo/reverse_geocode which provides raw data access, this endpoint can potentially re-order places with regards to the user who is authenticated. This approach is also preferred for interactive place matching with the user.</p>
+<p>This is the recommended method to use find places that can be attached to statuses/update.</p>
+<p>Unlike GET geo/reverse_geocode which provides raw data access, this endpoint can potentially re-order places with regards to the user who is authenticated.</p>
+<p>This approach is also preferred for interactive place matching with the user.</p>
 <p>Note: At least one of the following parameters must be provided to this resource: lat, long, ip, or query</p>
-<p>Avaliable parameters: </p>
-<p><em>double lat (optional)</em>  : The latitude to search around. This parameter will be ignored unless it is inside the range -90.0 to +90.0 (North is positive) inclusive. It will also be ignored if there isn't a corresponding long parameter.</p>
-<p><em>double long (optional)</em>  : The longitude to search around. The valid ranges for longitude is -180.0 to +180.0 (East is positive) inclusive. This parameter will be ignored if outside that range, if it is not a number, if geo_enabled is disabled, or if there not a corresponding lat parameter.</p>
-<p><em>string query (optional)</em>  : Free-form text to match against while executing a geo-based query, best suited for finding nearby locations by name. Remember to URL encode the query.</p>
-<p><em>string ip (optional)</em>  : An IP address. Used when attempting to fix geolocation based off of the user's IP address.</p>
-<p><em>string granularity (optional)</em>  : This is the minimal granularity of place types to return and must be one of: poi, neighborhood, city, admin or country. If no granularity is provided for the request neighborhood is assumed. <a class="el" href="classCoreTweet_1_1Setting.html">Setting</a> this to city, for example, will find places which have a type of city, admin or country.</p>
-<p><em>string accuracy (optional)</em>  : A hint on the "region" in which to search. If a number, then this is a radius in meters, but it can also take a string that is suffixed with ft to specify feet. If this is not passed in, then it is assumed to be 0m. If coming from a device, in practice, this value is whatever accuracy the device has measuring its location (whether it be coming from a GPS, WiFi triangulation, etc.).</p>
-<p><em>int max_results (optional)</em>  : A hint as to the number of results to return. This does not guarantee that the number of results returned will equal max_results, but instead informs how many "nearby" results to return. Ideally, only pass in the number of places you intend to display to the user here.</p>
-<p><em>string contained_within (optional)</em>  : This is the place_id which you would like to restrict the search results to. <a class="el" href="classCoreTweet_1_1Setting.html">Setting</a> this value means only places within the given place_id will be found.</p>
-<p><em>string attribute:street_address (optional)</em>  : This parameter searches for places which have this given street address. There are other well-known, and application specific attributes available. Custom attributes are also permitted.</p>
-<dl class="section return"><dt>Returns</dt><dd>Places.</dd></dl>
+<p>Avaliable parameters:</p>
+<p>- <code>double</code> lat (optional)</p>
+<p>- <code>double</code> long (optional)</p>
+<p>- <code>string</code> query (optional)</p>
+<p>- <code>string</code> ip (optional)</p>
+<p>- <code>string</code> granularity (optional)</p>
+<p>- <code>string</code> accuracy (optional)</p>
+<p>- <code>int</code> max_results (optional)</p>
+<p>- <code>string</code> contained_within (optional)</p>
+<p>- <code>string</code> attribute:street_address (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>Places.</dd></dl>
 
 </div>
 </div>
@@ -625,6 +754,32 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p><a class="el" href="classCoreTweet_1_1Rest_1_1Search.html" title="Provides a set of methods for the wrapper of GET search. ">Search</a> for places that can be attached to a statuses/update.</p>
+<p>Given a latitude and a longitude pair, an IP address, or a name, this request will return a list of all the valid places that can be used as the place_id when updating a status.</p>
+<p>Conceptually, a query can be made from the user's location, retrieve a list of places, have the user validate the location he or she is at, and then send the ID of this location with a call to POST statuses/update.</p>
+<p>This is the recommended method to use find places that can be attached to statuses/update.</p>
+<p>Unlike GET geo/reverse_geocode which provides raw data access, this endpoint can potentially re-order places with regards to the user who is authenticated.</p>
+<p>This approach is also preferred for interactive place matching with the user.</p>
+<p>Note: At least one of the following parameters must be provided to this resource: lat, long, ip, or query</p>
+<p>Avaliable parameters:</p>
+<p>- <code>double</code> lat (optional)</p>
+<p>- <code>double</code> long (optional)</p>
+<p>- <code>string</code> query (optional)</p>
+<p>- <code>string</code> ip (optional)</p>
+<p>- <code>string</code> granularity (optional)</p>
+<p>- <code>string</code> accuracy (optional)</p>
+<p>- <code>int</code> max_results (optional)</p>
+<p>- <code>string</code> contained_within (optional)</p>
+<p>- <code>string</code> attribute:street_address (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Places.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a8c81911de61109ddce7fcfd030adb93b"></a>
@@ -648,6 +803,32 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p><a class="el" href="classCoreTweet_1_1Rest_1_1Search.html" title="Provides a set of methods for the wrapper of GET search. ">Search</a> for places that can be attached to a statuses/update.</p>
+<p>Given a latitude and a longitude pair, an IP address, or a name, this request will return a list of all the valid places that can be used as the place_id when updating a status.</p>
+<p>Conceptually, a query can be made from the user's location, retrieve a list of places, have the user validate the location he or she is at, and then send the ID of this location with a call to POST statuses/update.</p>
+<p>This is the recommended method to use find places that can be attached to statuses/update.</p>
+<p>Unlike GET geo/reverse_geocode which provides raw data access, this endpoint can potentially re-order places with regards to the user who is authenticated.</p>
+<p>This approach is also preferred for interactive place matching with the user.</p>
+<p>Note: At least one of the following parameters must be provided to this resource: lat, long, ip, or query</p>
+<p>Avaliable parameters:</p>
+<p>- <code>double</code> lat (optional)</p>
+<p>- <code>double</code> long (optional)</p>
+<p>- <code>string</code> query (optional)</p>
+<p>- <code>string</code> ip (optional)</p>
+<p>- <code>string</code> granularity (optional)</p>
+<p>- <code>string</code> accuracy (optional)</p>
+<p>- <code>int</code> max_results (optional)</p>
+<p>- <code>string</code> contained_within (optional)</p>
+<p>- <code>string</code> attribute:street_address (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Places.</dd></dl>
 
 </div>
 </div>
@@ -674,27 +855,31 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p><a class="el" href="classCoreTweet_1_1Rest_1_1Search.html" title="GET search">Search</a> for places that can be attached to a statuses/update. Given a latitude and a longitude pair, an IP address, or a name, this request will return a list of all the valid places that can be used as the place_id when updating a status.</p>
+<p><a class="el" href="classCoreTweet_1_1Rest_1_1Search.html" title="Provides a set of methods for the wrapper of GET search. ">Search</a> for places that can be attached to a statuses/update as an asynchronous operation.</p>
+<p>Given a latitude and a longitude pair, an IP address, or a name, this request will return a list of all the valid places that can be used as the place_id when updating a status.</p>
 <p>Conceptually, a query can be made from the user's location, retrieve a list of places, have the user validate the location he or she is at, and then send the ID of this location with a call to POST statuses/update.</p>
-<p>This is the recommended method to use find places that can be attached to statuses/update. Unlike GET geo/reverse_geocode which provides raw data access, this endpoint can potentially re-order places with regards to the user who is authenticated. This approach is also preferred for interactive place matching with the user.</p>
+<p>This is the recommended method to use find places that can be attached to statuses/update.</p>
+<p>Unlike GET geo/reverse_geocode which provides raw data access, this endpoint can potentially re-order places with regards to the user who is authenticated.</p>
+<p>This approach is also preferred for interactive place matching with the user.</p>
 <p>Note: At least one of the following parameters must be provided to this resource: lat, long, ip, or query</p>
-<p>Avaliable parameters: </p>
-<p><em>double lat (optional)</em>  : The latitude to search around. This parameter will be ignored unless it is inside the range -90.0 to +90.0 (North is positive) inclusive. It will also be ignored if there isn't a corresponding long parameter.</p>
-<p><em>double long (optional)</em>  : The longitude to search around. The valid ranges for longitude is -180.0 to +180.0 (East is positive) inclusive. This parameter will be ignored if outside that range, if it is not a number, if geo_enabled is disabled, or if there not a corresponding lat parameter.</p>
-<p><em>string query (optional)</em>  : Free-form text to match against while executing a geo-based query, best suited for finding nearby locations by name. Remember to URL encode the query.</p>
-<p><em>string ip (optional)</em>  : An IP address. Used when attempting to fix geolocation based off of the user's IP address.</p>
-<p><em>string granularity (optional)</em>  : This is the minimal granularity of place types to return and must be one of: poi, neighborhood, city, admin or country. If no granularity is provided for the request neighborhood is assumed. <a class="el" href="classCoreTweet_1_1Setting.html">Setting</a> this to city, for example, will find places which have a type of city, admin or country.</p>
-<p><em>string accuracy (optional)</em>  : A hint on the "region" in which to search. If a number, then this is a radius in meters, but it can also take a string that is suffixed with ft to specify feet. If this is not passed in, then it is assumed to be 0m. If coming from a device, in practice, this value is whatever accuracy the device has measuring its location (whether it be coming from a GPS, WiFi triangulation, etc.).</p>
-<p><em>int max_results (optional)</em>  : A hint as to the number of results to return. This does not guarantee that the number of results returned will equal max_results, but instead informs how many "nearby" results to return. Ideally, only pass in the number of places you intend to display to the user here.</p>
-<p><em>string contained_within (optional)</em>  : This is the place_id which you would like to restrict the search results to. <a class="el" href="classCoreTweet_1_1Setting.html">Setting</a> this value means only places within the given place_id will be found.</p>
-<p><em>string attribute:street_address (optional)</em>  : This parameter searches for places which have this given street address. There are other well-known, and application specific attributes available. Custom attributes are also permitted.</p>
-<dl class="section return"><dt>Returns</dt><dd>Places.</dd></dl>
+<p>Avaliable parameters:</p>
+<p>- <code>double</code> lat (optional)</p>
+<p>- <code>double</code> long (optional)</p>
+<p>- <code>string</code> query (optional)</p>
+<p>- <code>string</code> ip (optional)</p>
+<p>- <code>string</code> granularity (optional)</p>
+<p>- <code>string</code> accuracy (optional)</p>
+<p>- <code>int</code> max_results (optional)</p>
+<p>- <code>string</code> contained_within (optional)</p>
+<p>- <code>string</code> attribute:street_address (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the places.</p>
 
 </div>
 </div>
@@ -730,6 +915,34 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p><a class="el" href="classCoreTweet_1_1Rest_1_1Search.html" title="Provides a set of methods for the wrapper of GET search. ">Search</a> for places that can be attached to a statuses/update as an asynchronous operation.</p>
+<p>Given a latitude and a longitude pair, an IP address, or a name, this request will return a list of all the valid places that can be used as the place_id when updating a status.</p>
+<p>Conceptually, a query can be made from the user's location, retrieve a list of places, have the user validate the location he or she is at, and then send the ID of this location with a call to POST statuses/update.</p>
+<p>This is the recommended method to use find places that can be attached to statuses/update.</p>
+<p>Unlike GET geo/reverse_geocode which provides raw data access, this endpoint can potentially re-order places with regards to the user who is authenticated.</p>
+<p>This approach is also preferred for interactive place matching with the user.</p>
+<p>Note: At least one of the following parameters must be provided to this resource: lat, long, ip, or query</p>
+<p>Avaliable parameters:</p>
+<p>- <code>double</code> lat (optional)</p>
+<p>- <code>double</code> long (optional)</p>
+<p>- <code>string</code> query (optional)</p>
+<p>- <code>string</code> ip (optional)</p>
+<p>- <code>string</code> granularity (optional)</p>
+<p>- <code>string</code> accuracy (optional)</p>
+<p>- <code>int</code> max_results (optional)</p>
+<p>- <code>string</code> contained_within (optional)</p>
+<p>- <code>string</code> attribute:street_address (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the places.</p>
+
 </div>
 </div>
 <a class="anchor" id="a0f577861bd392659bf4605584085bb60"></a>
@@ -764,6 +977,34 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p><a class="el" href="classCoreTweet_1_1Rest_1_1Search.html" title="Provides a set of methods for the wrapper of GET search. ">Search</a> for places that can be attached to a statuses/update as an asynchronous operation.</p>
+<p>Given a latitude and a longitude pair, an IP address, or a name, this request will return a list of all the valid places that can be used as the place_id when updating a status.</p>
+<p>Conceptually, a query can be made from the user's location, retrieve a list of places, have the user validate the location he or she is at, and then send the ID of this location with a call to POST statuses/update.</p>
+<p>This is the recommended method to use find places that can be attached to statuses/update.</p>
+<p>Unlike GET geo/reverse_geocode which provides raw data access, this endpoint can potentially re-order places with regards to the user who is authenticated.</p>
+<p>This approach is also preferred for interactive place matching with the user.</p>
+<p>Note: At least one of the following parameters must be provided to this resource: lat, long, ip, or query</p>
+<p>Avaliable parameters:</p>
+<p>- <code>double</code> lat (optional)</p>
+<p>- <code>double</code> long (optional)</p>
+<p>- <code>string</code> query (optional)</p>
+<p>- <code>string</code> ip (optional)</p>
+<p>- <code>string</code> granularity (optional)</p>
+<p>- <code>string</code> accuracy (optional)</p>
+<p>- <code>int</code> max_results (optional)</p>
+<p>- <code>string</code> contained_within (optional)</p>
+<p>- <code>string</code> attribute:street_address (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the places.</p>
+
 </div>
 </div>
 <a class="anchor" id="a7cb6ed227e3bfef49ad769aa0ba6424a"></a>
@@ -790,21 +1031,21 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Locates places near the given coordinates which are similar in name.</p>
-<p>Conceptually you would use this method to get a list of known places to choose from first. Then, if the desired place doesn't exist, make a request to POST geo/place to create a new one.</p>
+<p>Conceptually you would use this method to get a list of known places to choose from first.</p>
+<p>Then, if the desired place doesn't exist, make a request to POST geo/place to create a new one.</p>
 <p>The token contained in the response is the token needed to be able to create a new place.</p>
 <p>Avaliable parameters: </p>
-<p><em>double lat (required)</em>  : The latitude to search around. This parameter will be ignored unless it is inside the range -90.0 to +90.0 (North is positive) inclusive. It will also be ignored if there isn't a corresponding long parameter.</p>
-<p><em>double long (required)</em>  : The longitude to search around. The valid ranges for longitude is -180.0 to +180.0 (East is positive) inclusive. This parameter will be ignored if outside that range, if it is not a number, if geo_enabled is disabled, or if there not a corresponding lat parameter.</p>
-<p><em>string name (required)</em>  : The name a place is known as.</p>
-<p><em>string contained_within (optional)</em>  : This is the place_id which you would like to restrict the search results to. <a class="el" href="classCoreTweet_1_1Setting.html">Setting</a> this value means only places within the given place_id will be found. Specify a place_id. For example, to scope all results to places within "San Francisco, CA USA", you would specify a place_id of "5a110d312052166f"</p>
-<p><em>string attribute:street_address (optional)</em>  : This parameter searches for places which have this given street address. There are other well-known, and application specific attributes available. Custom attributes are also permitted.</p>
-<dl class="section return"><dt>Returns</dt><dd>Places and the token.</dd></dl>
+<p>- <code>double</code> lat (required)</p>
+<p>- <code>double</code> long (required)</p>
+<p>- <code>string</code> contained_within (optional)</p>
+<p>- <code>string</code> street_address (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>Places and the token.</dd></dl>
 
 </div>
 </div>
@@ -830,6 +1071,24 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Locates places near the given coordinates which are similar in name.</p>
+<p>Conceptually you would use this method to get a list of known places to choose from first.</p>
+<p>Then, if the desired place doesn't exist, make a request to POST geo/place to create a new one.</p>
+<p>The token contained in the response is the token needed to be able to create a new place.</p>
+<p>Avaliable parameters: </p>
+<p>- <code>double</code> lat (required)</p>
+<p>- <code>double</code> long (required)</p>
+<p>- <code>string</code> contained_within (optional)</p>
+<p>- <code>string</code> street_address (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Places and the token.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a97eb85b3c83bb7168070f87dd185da36"></a>
@@ -853,6 +1112,24 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Locates places near the given coordinates which are similar in name.</p>
+<p>Conceptually you would use this method to get a list of known places to choose from first.</p>
+<p>Then, if the desired place doesn't exist, make a request to POST geo/place to create a new one.</p>
+<p>The token contained in the response is the token needed to be able to create a new place.</p>
+<p>Avaliable parameters: </p>
+<p>- <code>double</code> lat (required)</p>
+<p>- <code>double</code> long (required)</p>
+<p>- <code>string</code> contained_within (optional)</p>
+<p>- <code>string</code> street_address (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Places and the token.</dd></dl>
 
 </div>
 </div>
@@ -879,22 +1156,23 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Locates places near the given coordinates which are similar in name.</p>
-<p>Conceptually you would use this method to get a list of known places to choose from first. Then, if the desired place doesn't exist, make a request to POST geo/place to create a new one.</p>
+<p>Locates places near the given coordinates which are similar in name as an asynchronous operation.</p>
+<p>Conceptually you would use this method to get a list of known places to choose from first.</p>
+<p>Then, if the desired place doesn't exist, make a request to POST geo/place to create a new one.</p>
 <p>The token contained in the response is the token needed to be able to create a new place.</p>
 <p>Avaliable parameters: </p>
-<p><em>double lat (required)</em>  : The latitude to search around. This parameter will be ignored unless it is inside the range -90.0 to +90.0 (North is positive) inclusive. It will also be ignored if there isn't a corresponding long parameter.</p>
-<p><em>double long (required)</em>  : The longitude to search around. The valid ranges for longitude is -180.0 to +180.0 (East is positive) inclusive. This parameter will be ignored if outside that range, if it is not a number, if geo_enabled is disabled, or if there not a corresponding lat parameter.</p>
-<p><em>string name (required)</em>  : The name a place is known as.</p>
-<p><em>string contained_within (optional)</em>  : This is the place_id which you would like to restrict the search results to. <a class="el" href="classCoreTweet_1_1Setting.html">Setting</a> this value means only places within the given place_id will be found. Specify a place_id. For example, to scope all results to places within "San Francisco, CA USA", you would specify a place_id of "5a110d312052166f"</p>
-<p><em>string attribute:street_address (optional)</em>  : This parameter searches for places which have this given street address. There are other well-known, and application specific attributes available. Custom attributes are also permitted.</p>
-<dl class="section return"><dt>Returns</dt><dd>Places and the token.</dd></dl>
+<p>- <code>double</code> lat (required)</p>
+<p>- <code>double</code> long (required)</p>
+<p>- <code>string</code> contained_within (optional)</p>
+<p>- <code>string</code> street_address (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the places and the token.</p>
 
 </div>
 </div>
@@ -930,6 +1208,26 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Locates places near the given coordinates which are similar in name as an asynchronous operation.</p>
+<p>Conceptually you would use this method to get a list of known places to choose from first.</p>
+<p>Then, if the desired place doesn't exist, make a request to POST geo/place to create a new one.</p>
+<p>The token contained in the response is the token needed to be able to create a new place.</p>
+<p>Avaliable parameters: </p>
+<p>- <code>double</code> lat (required)</p>
+<p>- <code>double</code> long (required)</p>
+<p>- <code>string</code> contained_within (optional)</p>
+<p>- <code>string</code> street_address (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the places and the token.</p>
+
 </div>
 </div>
 <a class="anchor" id="a6eb2b0c0afc792ed9b51517103bfb752"></a>
@@ -964,6 +1262,26 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Locates places near the given coordinates which are similar in name as an asynchronous operation.</p>
+<p>Conceptually you would use this method to get a list of known places to choose from first.</p>
+<p>Then, if the desired place doesn't exist, make a request to POST geo/place to create a new one.</p>
+<p>The token contained in the response is the token needed to be able to create a new place.</p>
+<p>Avaliable parameters: </p>
+<p>- <code>double</code> lat (required)</p>
+<p>- <code>double</code> long (required)</p>
+<p>- <code>string</code> contained_within (optional)</p>
+<p>- <code>string</code> street_address (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the places and the token.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
@@ -973,7 +1291,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat May 31 2014 23:10:00 for CoreTweet by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 20 2014 00:31:19 for CoreTweet by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

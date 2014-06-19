@@ -1,7 +1,7 @@
 var searchData=
 [
   ['cacheage',['CacheAge',['../classCoreTweet_1_1Embed.html#a1e26e407fe59401b766469a1a649bb3b',1,'CoreTweet::Embed']]],
-  ['canconvert',['CanConvert',['../classCoreTweet_1_1Core_1_1UriConverter.html#a7348118329b550f6d7dcc5fb060b77cb',1,'CoreTweet.Core.UriConverter.CanConvert()'],['../classCoreTweet_1_1Core_1_1DateTimeOffsetConverter.html#a032404d14b86adb38c3f222575ef19bf',1,'CoreTweet.Core.DateTimeOffsetConverter.CanConvert()'],['../classCoreTweet_1_1Core_1_1ContributorsConverter.html#a100ead0e8c8cd901b957ea613373f864',1,'CoreTweet.Core.ContributorsConverter.CanConvert()']]],
+  ['canconvert',['CanConvert',['../classCoreTweet_1_1Core_1_1UriConverter.html#a3f9194a95828277c4668339ae185cc38',1,'CoreTweet.Core.UriConverter.CanConvert()'],['../classCoreTweet_1_1Core_1_1DateTimeOffsetConverter.html#a032404d14b86adb38c3f222575ef19bf',1,'CoreTweet.Core.DateTimeOffsetConverter.CanConvert()'],['../classCoreTweet_1_1Core_1_1ContributorsConverter.html#a100ead0e8c8cd901b957ea613373f864',1,'CoreTweet.Core.ContributorsConverter.CanConvert()']]],
   ['candm',['CanDM',['../classCoreTweet_1_1Friendship.html#ac376759d30a496487d904d7565ca40a0',1,'CoreTweet::Friendship']]],
   ['category',['Category',['../classCoreTweet_1_1Category.html',1,'CoreTweet']]],
   ['categoryresponse',['CategoryResponse',['../classCoreTweet_1_1CategoryResponse.html',1,'CoreTweet']]],
@@ -21,8 +21,8 @@ var searchData=
   ['connectionoptions',['ConnectionOptions',['../classCoreTweet_1_1Core_1_1TokensBase.html#afc7d25b53b614ebd57f66e3cb36caf14',1,'CoreTweet.Core.TokensBase.ConnectionOptions()'],['../classCoreTweet_1_1OAuth_1_1OAuthSession.html#a862005fc3b485e80c861e912a33b2887',1,'CoreTweet.OAuth.OAuthSession.ConnectionOptions()'],['../classCoreTweet_1_1ConnectionOptions.html#a086bd209d456b92a97ba6d62c2e0cf88',1,'CoreTweet.ConnectionOptions.ConnectionOptions()']]],
   ['connectionoptions_2ecs',['ConnectionOptions.cs',['../ConnectionOptions_8cs.html',1,'']]],
   ['connections',['Connections',['../classCoreTweet_1_1Friendship.html#a2923d2a9cd834cf5491b6c19708a2a1f',1,'CoreTweet::Friendship']]],
-  ['consumerkey',['ConsumerKey',['../classCoreTweet_1_1Core_1_1TokensBase.html#a80586cc16e684e67c2e8aea6e0a33e38',1,'CoreTweet.Core.TokensBase.ConsumerKey()'],['../classCoreTweet_1_1OAuth_1_1OAuthSession.html#a913ed1542c819041f5c7f6a1c389c219',1,'CoreTweet.OAuth.OAuthSession.ConsumerKey()'],['../classCoreTweet_1_1Tests_1_1Data.html#a2c95c91123d7e08220422d379f8e1c70',1,'CoreTweet.Tests.Data.ConsumerKey()']]],
-  ['consumersecret',['ConsumerSecret',['../classCoreTweet_1_1Core_1_1TokensBase.html#a620c955c87532fa296e913497edc3c36',1,'CoreTweet.Core.TokensBase.ConsumerSecret()'],['../classCoreTweet_1_1OAuth_1_1OAuthSession.html#a361d923d6937c42e635809ed9ab804fe',1,'CoreTweet.OAuth.OAuthSession.ConsumerSecret()'],['../classCoreTweet_1_1Tests_1_1Data.html#ae59ededa9899a1513b0248c3c4742fbf',1,'CoreTweet.Tests.Data.ConsumerSecret()']]],
+  ['consumerkey',['ConsumerKey',['../classCoreTweet_1_1Core_1_1TokensBase.html#a80586cc16e684e67c2e8aea6e0a33e38',1,'CoreTweet.Core.TokensBase.ConsumerKey()'],['../classCoreTweet_1_1OAuth_1_1OAuthSession.html#a913ed1542c819041f5c7f6a1c389c219',1,'CoreTweet.OAuth.OAuthSession.ConsumerKey()']]],
+  ['consumersecret',['ConsumerSecret',['../classCoreTweet_1_1Core_1_1TokensBase.html#a620c955c87532fa296e913497edc3c36',1,'CoreTweet.Core.TokensBase.ConsumerSecret()'],['../classCoreTweet_1_1OAuth_1_1OAuthSession.html#a361d923d6937c42e635809ed9ab804fe',1,'CoreTweet.OAuth.OAuthSession.ConsumerSecret()']]],
   ['containedwithin',['ContainedWithin',['../classCoreTweet_1_1Place.html#a27d19cf0e66ae81aa8eacdca2002afb3',1,'CoreTweet::Place']]],
   ['contributees',['Contributees',['../classCoreTweet_1_1Rest_1_1Users.html#a44b79d168fc9dcb70743c64e69f2717b',1,'CoreTweet.Rest.Users.Contributees(params Expression&lt; Func&lt; string, object &gt;&gt;[] parameters)'],['../classCoreTweet_1_1Rest_1_1Users.html#ae31c9c314cab909d5178fc6abd5835ed',1,'CoreTweet.Rest.Users.Contributees(IDictionary&lt; string, object &gt; parameters)']]],
   ['contributees_3c_20t_20_3e',['Contributees&lt; T &gt;',['../classCoreTweet_1_1Rest_1_1Users.html#affb74fb8c46da5b186647e20eff78111',1,'CoreTweet::Rest::Users']]],
@@ -41,8 +41,8 @@ var searchData=
   ['convert_3c_20t_20_3e',['Convert&lt; T &gt;',['../classCoreTweet_1_1Core_1_1CoreBase.html#a24d02c61dc738f6e35086c7b42952294',1,'CoreTweet::Core::CoreBase']]],
   ['convertarray_3c_20t_20_3e',['ConvertArray&lt; T &gt;',['../classCoreTweet_1_1Core_1_1CoreBase.html#a5b972da176de8e43680f988c5d9cf84b',1,'CoreTweet::Core::CoreBase']]],
   ['converters_2ecs',['Converters.cs',['../Converters_8cs.html',1,'']]],
-  ['coordinates',['Coordinates',['../classCoreTweet_1_1BoundingBox.html#a646ed8fb107812c60c0b48e10f257402',1,'CoreTweet.BoundingBox.Coordinates()'],['../classCoreTweet_1_1Status.html#ada461cd3f92398c327d69f3048c2950b',1,'CoreTweet.Status.Coordinates()'],['../classCoreTweet_1_1Coordinates.html#a2a39c0ee3e5871eeccd73f82b0056872',1,'CoreTweet.Coordinates.Coordinates()'],['../classCoreTweet_1_1Coordinates.html#a3e5001da0ace7776e739f8c2cb707321',1,'CoreTweet.Coordinates.Coordinates(double longtitude, double latitude)']]],
   ['coordinates',['Coordinates',['../classCoreTweet_1_1Coordinates.html',1,'CoreTweet']]],
+  ['coordinates',['Coordinates',['../classCoreTweet_1_1BoundingBox.html#a646ed8fb107812c60c0b48e10f257402',1,'CoreTweet.BoundingBox.Coordinates()'],['../classCoreTweet_1_1Status.html#ada461cd3f92398c327d69f3048c2950b',1,'CoreTweet.Status.Coordinates()'],['../classCoreTweet_1_1Coordinates.html#a2a39c0ee3e5871eeccd73f82b0056872',1,'CoreTweet.Coordinates.Coordinates()'],['../classCoreTweet_1_1Coordinates.html#a3e5001da0ace7776e739f8c2cb707321',1,'CoreTweet.Coordinates.Coordinates(double longtitude, double latitude)']]],
   ['core',['Core',['../namespaceCoreTweet_1_1Core.html',1,'CoreTweet']]],
   ['corebase',['CoreBase',['../classCoreTweet_1_1Core_1_1CoreBase.html',1,'CoreTweet::Core']]],
   ['corebase_2ecs',['CoreBase.cs',['../CoreBase_8cs.html',1,'']]],
@@ -65,6 +65,5 @@ var searchData=
   ['cursored_3c_20t_20_3e',['Cursored&lt; T &gt;',['../classCoreTweet_1_1Cursored_3_01T_01_4.html',1,'CoreTweet']]],
   ['reactive',['Reactive',['../namespaceCoreTweet_1_1Streaming_1_1Reactive.html',1,'CoreTweet::Streaming']]],
   ['rest',['Rest',['../namespaceCoreTweet_1_1Rest.html',1,'CoreTweet']]],
-  ['streaming',['Streaming',['../namespaceCoreTweet_1_1Streaming.html',1,'CoreTweet']]],
-  ['tests',['Tests',['../namespaceCoreTweet_1_1Tests.html',1,'CoreTweet']]]
+  ['streaming',['Streaming',['../namespaceCoreTweet_1_1Streaming.html',1,'CoreTweet']]]
 ];

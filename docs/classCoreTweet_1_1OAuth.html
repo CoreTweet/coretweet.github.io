@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="core-48x48.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">CoreTweet
-   &#160;<span id="projectnumber">0.3.3</span>
+   &#160;<span id="projectnumber">0.3.4</span>
    </div>
    <div id="projectbrief">Yet another .NET Twitter Library</div>
   </td>
@@ -97,28 +97,30 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">CoreTweet.OAuth Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Provides a set of static (Shared in Visual Basic) methods for <a class="el" href="classCoreTweet_1_1OAuth.html" title="Provides a set of static (Shared in Visual Basic) methods for OAuth authentication. ">OAuth</a> authentication.  
+ <a href="classCoreTweet_1_1OAuth.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1OAuth_1_1OAuthSession.html">OAuthSession</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents an <a class="el" href="classCoreTweet_1_1OAuth.html" title="Provides a set of static (Shared in Visual Basic) methods for OAuth authentication. ">OAuth</a> session.  <a href="classCoreTweet_1_1OAuth_1_1OAuthSession.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a24b09669136bf2e502972d5df354f33a"><td class="memItemLeft" align="right" valign="top">static Task&lt; <a class="el" href="classCoreTweet_1_1OAuth_1_1OAuthSession.html">OAuthSession</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1OAuth.html#a24b09669136bf2e502972d5df354f33a">AuthorizeAsync</a> (string consumerKey, string consumerSecret, string oauthCallback=&quot;oob&quot;, ConnectionOptions options=null, CancellationToken cancellationToken=default(CancellationToken))</td></tr>
-<tr class="memdesc:a24b09669136bf2e502972d5df354f33a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates the authorize URI. Then call GetTokens(string) after get the pin code.  <a href="#a24b09669136bf2e502972d5df354f33a">More...</a><br /></td></tr>
 <tr class="separator:a24b09669136bf2e502972d5df354f33a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a248433b126033aa3879b6c729fccbda9"><td class="memItemLeft" align="right" valign="top">static Task&lt; <a class="el" href="classCoreTweet_1_1Tokens.html">Tokens</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1OAuth.html#a248433b126033aa3879b6c729fccbda9">GetTokensAsync</a> (this <a class="el" href="classCoreTweet_1_1OAuth_1_1OAuthSession.html">OAuthSession</a> session, string pin, CancellationToken cancellationToken=default(CancellationToken))</td></tr>
-<tr class="memdesc:a248433b126033aa3879b6c729fccbda9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the <a class="el" href="classCoreTweet_1_1OAuth.html">OAuth</a> tokens. Be sure to call GenerateAuthUri(string,string) before call this.  <a href="#a248433b126033aa3879b6c729fccbda9">More...</a><br /></td></tr>
 <tr class="separator:a248433b126033aa3879b6c729fccbda9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8be0e2bd8819aa4113103bdcb251a56f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classCoreTweet_1_1OAuth_1_1OAuthSession.html">OAuthSession</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1OAuth.html#a8be0e2bd8819aa4113103bdcb251a56f">Authorize</a> (string consumerKey, string consumerSecret, string oauthCallback=&quot;oob&quot;, ConnectionOptions options=null)</td></tr>
-<tr class="memdesc:a8be0e2bd8819aa4113103bdcb251a56f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates the authorize URI. Then call GetTokens(string) after get the pin code.  <a href="#a8be0e2bd8819aa4113103bdcb251a56f">More...</a><br /></td></tr>
 <tr class="separator:a8be0e2bd8819aa4113103bdcb251a56f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac930779d0ea387a7b6e9a8664e988916"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classCoreTweet_1_1Tokens.html">Tokens</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1OAuth.html#ac930779d0ea387a7b6e9a8664e988916">GetTokens</a> (this <a class="el" href="classCoreTweet_1_1OAuth_1_1OAuthSession.html">OAuthSession</a> session, string pin)</td></tr>
-<tr class="memdesc:ac930779d0ea387a7b6e9a8664e988916"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the <a class="el" href="classCoreTweet_1_1OAuth.html">OAuth</a> tokens. Be sure to call GenerateAuthUri(string,string) before call this.  <a href="#ac930779d0ea387a7b6e9a8664e988916">More...</a><br /></td></tr>
 <tr class="separator:ac930779d0ea387a7b6e9a8664e988916"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Provides a set of static (Shared in Visual Basic) methods for <a class="el" href="classCoreTweet_1_1OAuth.html" title="Provides a set of static (Shared in Visual Basic) methods for OAuth authentication. ">OAuth</a> authentication. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a8be0e2bd8819aa4113103bdcb251a56f"></a>
 <div class="memitem">
 <div class="memproto">
@@ -163,17 +165,19 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Generates the authorize URI. Then call GetTokens(string) after get the pin code. </p>
-<dl class="section return"><dt>Returns</dt><dd>The authorize URI. </dd></dl>
+<p></p>
+<p>Generates the authorize URI.</p>
+<p>Then call <a class="el" href="classCoreTweet_1_1OAuth.html#ac930779d0ea387a7b6e9a8664e988916">CoreTweet.OAuth.GetTokens</a> after get the pin code.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">consumerKey</td><td>Consumer key. </td></tr>
-    <tr><td class="paramname">consumerSecret</td><td>Consumer secret. </td></tr>
-    <tr><td class="paramname">oauthCallback</td><td>For <a class="el" href="classCoreTweet_1_1OAuth.html">OAuth</a> 1.0a compliance this parameter is required. The value you specify here will be used as the URL a user is redirected to should they approve your application's access to their account. Set this to oob for out-of-band pin mode. This is also how you specify custom callbacks for use in desktop/mobile applications.Always send an oauth_callback on this step, regardless of a pre-registered callback.</td></tr>
-    <tr><td class="paramname">proxy</td><td>Proxy information for the request. </td></tr>
+    <tr><td class="paramname">consumerKey</td><td>The Consumer key.</td></tr>
+    <tr><td class="paramname">consumerSecret</td><td>The Consumer secret.</td></tr>
+    <tr><td class="paramname">oauthCallback</td><td>For <a class="el" href="classCoreTweet_1_1OAuth.html" title="Provides a set of static (Shared in Visual Basic) methods for OAuth authentication. ">OAuth</a> 1.0a compliance this parameter is required.The value you specify here will be used as the URL a user is redirected to should they approve your application's access to their account.Set this to oob for out-of-band pin mode.This is also how you specify custom callbacks for use in desktop/mobile applications.Always send an oauth_callback on this step, regardless of a pre-registered callback.</td></tr>
+    <tr><td class="paramname">options</td><td>The connection options for the request.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The authorize URI.</dd></dl>
 
 </div>
 </div>
@@ -227,18 +231,21 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Generates the authorize URI. Then call GetTokens(string) after get the pin code. </p>
-<dl class="section return"><dt>Returns</dt><dd>The authorize URI. </dd></dl>
+<p></p>
+<p>Generates the authorize URI as an asynchronous operation.</p>
+<p>Then call <a class="el" href="classCoreTweet_1_1OAuth.html#a248433b126033aa3879b6c729fccbda9">CoreTweet.OAuth.GetTokensAsync</a> after get the pin code.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">consumerKey</td><td>Consumer key. </td></tr>
-    <tr><td class="paramname">consumerSecret</td><td>Consumer secret. </td></tr>
-    <tr><td class="paramname">oauthCallback</td><td>For <a class="el" href="classCoreTweet_1_1OAuth.html">OAuth</a> 1.0a compliance this parameter is required. The value you specify here will be used as the URL a user is redirected to should they approve your application's access to their account. Set this to oob for out-of-band pin mode. This is also how you specify custom callbacks for use in desktop/mobile applications.Always send an oauth_callback on this step, regardless of a pre-registered callback.</td></tr>
-    <tr><td class="paramname">proxy</td><td>Proxy information for the request. </td></tr>
-    <tr><td class="paramname">cancellationToken</td><td>Cancellation token. </td></tr>
+    <tr><td class="paramname">consumerKey</td><td>The consumer key.</td></tr>
+    <tr><td class="paramname">consumerSecret</td><td>The consumer secret.</td></tr>
+    <tr><td class="paramname">oauthCallback</td><td>For <a class="el" href="classCoreTweet_1_1OAuth.html" title="Provides a set of static (Shared in Visual Basic) methods for OAuth authentication. ">OAuth</a> 1.0a compliance this parameter is required.The value you specify here will be used as the URL a user is redirected to should they approve your application's access to their account.Set this to oob for out-of-band pin mode.This is also how you specify custom callbacks for use in desktop/mobile applications.Always send an oauth_callback on this step, regardless of a pre-registered callback.</td></tr>
+    <tr><td class="paramname">options</td><td>The connection options for the request.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the authorize URI.</p>
 
 </div>
 </div>
@@ -274,15 +281,17 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Gets the <a class="el" href="classCoreTweet_1_1OAuth.html">OAuth</a> tokens. Be sure to call GenerateAuthUri(string,string) before call this. </p>
+<p></p>
+<p>Gets the <a class="el" href="classCoreTweet_1_1OAuth.html" title="Provides a set of static (Shared in Visual Basic) methods for OAuth authentication. ">OAuth</a> tokens.</p>
+<p>Be sure to call <a class="el" href="classCoreTweet_1_1OAuth.html#a8be0e2bd8819aa4113103bdcb251a56f">CoreTweet.OAuth.Authorize</a> before call this method.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pin</td><td>Pin code. </td></tr>
-    <tr><td class="paramname">session</td><td><a class="el" href="classCoreTweet_1_1OAuth.html">OAuth</a> session. </td></tr>
+    <tr><td class="paramname">session</td><td>The <a class="el" href="classCoreTweet_1_1OAuth.html" title="Provides a set of static (Shared in Visual Basic) methods for OAuth authentication. ">OAuth</a> session.</td></tr>
+    <tr><td class="paramname">pin</td><td>The pin code.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The tokens. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The tokens.</dd></dl>
 
 </div>
 </div>
@@ -324,21 +333,19 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Gets the <a class="el" href="classCoreTweet_1_1OAuth.html">OAuth</a> tokens. Be sure to call GenerateAuthUri(string,string) before call this. </p>
+<p></p>
+<p>Gets the <a class="el" href="classCoreTweet_1_1OAuth.html" title="Provides a set of static (Shared in Visual Basic) methods for OAuth authentication. ">OAuth</a> tokens as an asynchronous operation.</p>
+<p>Be sure to call <a class="el" href="classCoreTweet_1_1OAuth.html#a24b09669136bf2e502972d5df354f33a">CoreTweet.OAuth.AuthorizeAsync</a> before call this method.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pin</td><td>Pin code. </td></tr>
-    <tr><td class="paramname">session</td><td><a class="el" href="classCoreTweet_1_1OAuth.html">OAuth</a> session. <dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">cancellationToken</td><td>Cancellation token. </td></tr>
+    <tr><td class="paramname">session</td><td>The <a class="el" href="classCoreTweet_1_1OAuth.html" title="Provides a set of static (Shared in Visual Basic) methods for OAuth authentication. ">OAuth</a> session.</td></tr>
+    <tr><td class="paramname">pin</td><td>The pin code.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The tokens. </dd></dl>
-</td></tr>
-  </table>
-  </dd>
-</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the tokens.</p>
 
 </div>
 </div>
@@ -349,7 +356,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat May 31 2014 23:10:00 for CoreTweet by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 20 2014 00:31:19 for CoreTweet by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

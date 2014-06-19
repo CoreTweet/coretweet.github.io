@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="core-48x48.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">CoreTweet
-   &#160;<span id="projectnumber">0.3.3</span>
+   &#160;<span id="projectnumber">0.3.4</span>
    </div>
    <div id="projectbrief">Yet another .NET Twitter Library</div>
   </td>
@@ -96,45 +96,48 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">CoreTweet.UrlEntity Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Represents a URL object that contains the string for display and the raw URL.  
+ <a href="classCoreTweet_1_1UrlEntity.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for CoreTweet.UrlEntity:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="classCoreTweet_1_1UrlEntity.png" usemap="#CoreTweet.UrlEntity_map" alt=""/>
   <map id="CoreTweet.UrlEntity_map" name="CoreTweet.UrlEntity_map">
-<area href="classCoreTweet_1_1Entity.html" alt="CoreTweet.Entity" shape="rect" coords="0,56,165,80"/>
-<area href="classCoreTweet_1_1Core_1_1CoreBase.html" title="The base class of twitter objects. " alt="CoreTweet.Core.CoreBase" shape="rect" coords="0,0,165,24"/>
-<area href="classCoreTweet_1_1MediaEntity.html" alt="CoreTweet.MediaEntity" shape="rect" coords="0,168,165,192"/>
+<area href="classCoreTweet_1_1Entity.html" title="Represents an entity object in the content posted on Twitter. This is an abstract class..." alt="CoreTweet.Entity" shape="rect" coords="0,56,165,80"/>
+<area href="classCoreTweet_1_1Core_1_1CoreBase.html" title="Represents a Twitter object. This is an abstract class. " alt="CoreTweet.Core.CoreBase" shape="rect" coords="0,0,165,24"/>
+<area href="classCoreTweet_1_1MediaEntity.html" title="Represents a media object that contains the URLs, sizes and type of the media. " alt="CoreTweet.MediaEntity" shape="rect" coords="0,168,165,192"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:ae70f22e362dfe16215136885d23ccc5e"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1UrlEntity.html#ae70f22e362dfe16215136885d23ccc5e">DisplayUrl</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:ae70f22e362dfe16215136885d23ccc5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Version of the URL to display to clients.  <a href="#ae70f22e362dfe16215136885d23ccc5e">More...</a><br /></td></tr>
+<tr class="memdesc:ae70f22e362dfe16215136885d23ccc5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the URL to display on clients.  <a href="#ae70f22e362dfe16215136885d23ccc5e">More...</a><br /></td></tr>
 <tr class="separator:ae70f22e362dfe16215136885d23ccc5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a187a7a8efeaf32c24f7966748b86ea00"><td class="memItemLeft" align="right" valign="top">Uri&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1UrlEntity.html#a187a7a8efeaf32c24f7966748b86ea00">ExpandedUrl</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a187a7a8efeaf32c24f7966748b86ea00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Expanded version of display_url.  <a href="#a187a7a8efeaf32c24f7966748b86ea00">More...</a><br /></td></tr>
+<tr class="memdesc:a187a7a8efeaf32c24f7966748b86ea00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the expanded version of <a class="el" href="classCoreTweet_1_1UrlEntity.html#ae70f22e362dfe16215136885d23ccc5e" title="Gets or sets the URL to display on clients. ">CoreTweet.UrlEntity.DisplayUrl</a>.  <a href="#a187a7a8efeaf32c24f7966748b86ea00">More...</a><br /></td></tr>
 <tr class="separator:a187a7a8efeaf32c24f7966748b86ea00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a862da26cad9957682ded8c74a2c3b6eb"><td class="memItemLeft" align="right" valign="top">Uri&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1UrlEntity.html#a862da26cad9957682ded8c74a2c3b6eb">Url</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a862da26cad9957682ded8c74a2c3b6eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapped URL, corresponding to the value embedded directly into the raw Tweet text, and the values for the indices parameter.  <a href="#a862da26cad9957682ded8c74a2c3b6eb">More...</a><br /></td></tr>
+<tr class="memdesc:a862da26cad9957682ded8c74a2c3b6eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the wrapped URL, corresponding to the value embedded directly into the raw Tweet text, and the values for the indices parameter.  <a href="#a862da26cad9957682ded8c74a2c3b6eb">More...</a><br /></td></tr>
 <tr class="separator:a862da26cad9957682ded8c74a2c3b6eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header properties_classCoreTweet_1_1Entity"><td colspan="2" onclick="javascript:toggleInherit('properties_classCoreTweet_1_1Entity')"><img src="closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="classCoreTweet_1_1Entity.html">CoreTweet.Entity</a></td></tr>
 <tr class="memitem:a8b45a075759947114c37adc907f5c039 inherit properties_classCoreTweet_1_1Entity"><td class="memItemLeft" align="right" valign="top">int[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Entity.html#a8b45a075759947114c37adc907f5c039">Indices</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a8b45a075759947114c37adc907f5c039 inherit properties_classCoreTweet_1_1Entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">An array of integers indicating the offsets within the Tweet text where this entity begins and ends.  <a href="#a8b45a075759947114c37adc907f5c039">More...</a><br /></td></tr>
 <tr class="separator:a8b45a075759947114c37adc907f5c039 inherit properties_classCoreTweet_1_1Entity"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_static_methods_classCoreTweet_1_1Core_1_1CoreBase"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classCoreTweet_1_1Core_1_1CoreBase')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classCoreTweet_1_1Core_1_1CoreBase.html">CoreTweet.Core.CoreBase</a></td></tr>
 <tr class="memitem:a24d02c61dc738f6e35086c7b42952294 inherit pub_static_methods_classCoreTweet_1_1Core_1_1CoreBase"><td class="memItemLeft" align="right" valign="top">static T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Core_1_1CoreBase.html#a24d02c61dc738f6e35086c7b42952294">Convert&lt; T &gt;</a> (<a class="el" href="classCoreTweet_1_1Core_1_1TokensBase.html">TokensBase</a> tokens, string json, string jsonPath=&quot;&quot;)</td></tr>
-<tr class="memdesc:a24d02c61dc738f6e35086c7b42952294 inherit pub_static_methods_classCoreTweet_1_1Core_1_1CoreBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the json to a twitter object of the specified type.  <a href="#a24d02c61dc738f6e35086c7b42952294">More...</a><br /></td></tr>
+<tr class="memdesc:a24d02c61dc738f6e35086c7b42952294 inherit pub_static_methods_classCoreTweet_1_1Core_1_1CoreBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the JSON to a twitter object of the specified type.  <a href="#a24d02c61dc738f6e35086c7b42952294">More...</a><br /></td></tr>
 <tr class="separator:a24d02c61dc738f6e35086c7b42952294 inherit pub_static_methods_classCoreTweet_1_1Core_1_1CoreBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b972da176de8e43680f988c5d9cf84b inherit pub_static_methods_classCoreTweet_1_1Core_1_1CoreBase"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classCoreTweet_1_1List.html">List</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Core_1_1CoreBase.html#a5b972da176de8e43680f988c5d9cf84b">ConvertArray&lt; T &gt;</a> (<a class="el" href="classCoreTweet_1_1Core_1_1TokensBase.html">TokensBase</a> tokens, string json, string jsonPath)</td></tr>
-<tr class="memdesc:a5b972da176de8e43680f988c5d9cf84b inherit pub_static_methods_classCoreTweet_1_1Core_1_1CoreBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the json to a twitter object of the specified type. This is used for APIs that return an array.  <a href="#a5b972da176de8e43680f988c5d9cf84b">More...</a><br /></td></tr>
 <tr class="separator:a5b972da176de8e43680f988c5d9cf84b inherit pub_static_methods_classCoreTweet_1_1Core_1_1CoreBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Property Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Represents a URL object that contains the string for display and the raw URL. </p>
+</div><h2 class="groupheader">Property Documentation</h2>
 <a class="anchor" id="ae70f22e362dfe16215136885d23ccc5e"></a>
 <div class="memitem">
 <div class="memproto">
@@ -153,7 +156,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Version of the URL to display to clients. </p>
+<p>Gets or sets the URL to display on clients. </p>
 
 </div>
 </div>
@@ -175,7 +178,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Expanded version of display_url. </p>
+<p>Gets or sets the expanded version of <a class="el" href="classCoreTweet_1_1UrlEntity.html#ae70f22e362dfe16215136885d23ccc5e" title="Gets or sets the URL to display on clients. ">CoreTweet.UrlEntity.DisplayUrl</a>. </p>
 
 </div>
 </div>
@@ -197,7 +200,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Wrapped URL, corresponding to the value embedded directly into the raw Tweet text, and the values for the indices parameter. </p>
+<p>Gets or sets the wrapped URL, corresponding to the value embedded directly into the raw Tweet text, and the values for the indices parameter. </p>
 
 </div>
 </div>
@@ -207,7 +210,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat May 31 2014 23:10:00 for CoreTweet by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 20 2014 00:31:19 for CoreTweet by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="core-48x48.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">CoreTweet
-   &#160;<span id="projectnumber">0.3.3</span>
+   &#160;<span id="projectnumber">0.3.4</span>
    </div>
    <div id="projectbrief">Yet another .NET Twitter Library</div>
   </td>
@@ -97,7 +97,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>GET/POST saved_searches  
+<p>Provides a set of methods for the wrapper of GET/POST saved_searches.  
  <a href="classCoreTweet_1_1Rest_1_1SavedSearches.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for CoreTweet.Rest.SavedSearches:</div>
@@ -105,7 +105,7 @@ Inheritance diagram for CoreTweet.Rest.SavedSearches:</div>
  <div class="center">
   <img src="classCoreTweet_1_1Rest_1_1SavedSearches.png" usemap="#CoreTweet.Rest.SavedSearches_map" alt=""/>
   <map id="CoreTweet.Rest.SavedSearches_map" name="CoreTweet.Rest.SavedSearches_map">
-<area href="classCoreTweet_1_1Core_1_1ApiProviderBase.html" title="Base class of API providers. " alt="CoreTweet.Core.ApiProviderBase" shape="rect" coords="0,0,205,24"/>
+<area href="classCoreTweet_1_1Core_1_1ApiProviderBase.html" title="Provides a Twitter API wrapper. This is an abstract class. " alt="CoreTweet.Core.ApiProviderBase" shape="rect" coords="0,0,205,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -171,7 +171,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a8f9003e34c6f19f561b10b1f14098ec1 inherit properties_classCoreTweet_1_1Core_1_1ApiProviderBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>GET/POST saved_searches </p>
+<div class="textblock"><p>Provides a set of methods for the wrapper of GET/POST saved_searches. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a30cc5f01cb49cd99e617589b4c80adb3"></a>
 <div class="memitem">
@@ -196,17 +196,17 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Create a new saved search for the authenticated user. A user may only have 25 saved searches.</p>
-<p>Avaliable parameters: </p>
-<p><em>string query (required)</em>  : The query of the search the user would like to save.</p>
-<dl class="section return"><dt>Returns</dt><dd>The saved search.</dd></dl>
+<p>Create a new saved search for the authenticated user.</p>
+<p>A user may only have 25 saved searches.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> query (required)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">tokens</td><td><a class="el" href="classCoreTweet_1_1Tokens.html" title="The OAuth tokens. ">Tokens</a>. </td></tr>
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The Parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The saved search.</dd></dl>
 
 </div>
 </div>
@@ -232,6 +232,19 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Create a new saved search for the authenticated user.</p>
+<p>A user may only have 25 saved searches.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> query (required)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The Parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The saved search.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a85491cc9ab43533006ad53b2f48a7cb4"></a>
@@ -255,6 +268,19 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Create a new saved search for the authenticated user.</p>
+<p>A user may only have 25 saved searches.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> query (required)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The Parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The saved search.</dd></dl>
 
 </div>
 </div>
@@ -281,17 +307,18 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Create a new saved search for the authenticated user. A user may only have 25 saved searches.</p>
-<p>Avaliable parameters: </p>
-<p><em>string query (required)</em>  : The query of the search the user would like to save.</p>
-<dl class="section return"><dt>Returns</dt><dd>The saved search.</dd></dl>
+<p>Create a new saved search for the authenticated user as an asynchronous operation.</p>
+<p>A user may only have 25 saved searches.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> query (required)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">tokens</td><td><a class="el" href="classCoreTweet_1_1Tokens.html" title="The OAuth tokens. ">Tokens</a>. </td></tr>
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The Parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the saved search.</p>
 
 </div>
 </div>
@@ -327,6 +354,21 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Create a new saved search for the authenticated user as an asynchronous operation.</p>
+<p>A user may only have 25 saved searches.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> query (required)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The Parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the saved search.</p>
+
 </div>
 </div>
 <a class="anchor" id="a937534125a4e85333a254cc3504eafe4"></a>
@@ -361,6 +403,21 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Create a new saved search for the authenticated user as an asynchronous operation.</p>
+<p>A user may only have 25 saved searches.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> query (required)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The Parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the saved search.</p>
+
 </div>
 </div>
 <a class="anchor" id="a00ee3e9c42858930d1ea7790a06eb73c"></a>
@@ -386,17 +443,17 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Destroys a saved search for the authenticating user. The authenticating user must be the owner of saved search id being destroyed.</p>
-<p>Avaliable parameters: </p>
-<p><em>long id (required)</em>  : The ID of the saved search.</p>
-<dl class="section return"><dt>Returns</dt><dd>The saved search.</dd></dl>
+<p>Destroys a saved search for the authenticating user.</p>
+<p>The authenticating user must be the owner of saved search id being destroyed.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> id (required)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">tokens</td><td><a class="el" href="classCoreTweet_1_1Tokens.html" title="The OAuth tokens. ">Tokens</a>. </td></tr>
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The Parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The saved search.</dd></dl>
 
 </div>
 </div>
@@ -422,6 +479,19 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Destroys a saved search for the authenticating user.</p>
+<p>The authenticating user must be the owner of saved search id being destroyed.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> id (required)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The Parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The saved search.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a21b88e46418c15d55b3753b8af7129a0"></a>
@@ -445,6 +515,19 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Destroys a saved search for the authenticating user.</p>
+<p>The authenticating user must be the owner of saved search id being destroyed.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> id (required)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The Parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The saved search.</dd></dl>
 
 </div>
 </div>
@@ -471,17 +554,18 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Destroys a saved search for the authenticating user. The authenticating user must be the owner of saved search id being destroyed.</p>
-<p>Avaliable parameters: </p>
-<p><em>long id (required)</em>  : The ID of the saved search.</p>
-<dl class="section return"><dt>Returns</dt><dd>The saved search.</dd></dl>
+<p>Destroys a saved search for the authenticating user as an asynchronous operation.</p>
+<p>The authenticating user must be the owner of saved search id being destroyed.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> id (required)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">tokens</td><td><a class="el" href="classCoreTweet_1_1Tokens.html" title="The OAuth tokens. ">Tokens</a>. </td></tr>
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The Parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the saved search.</p>
 
 </div>
 </div>
@@ -517,6 +601,21 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Destroys a saved search for the authenticating user as an asynchronous operation.</p>
+<p>The authenticating user must be the owner of saved search id being destroyed.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> id (required)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The Parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the saved search.</p>
+
 </div>
 </div>
 <a class="anchor" id="ad4558b5f46787b0c19c1484e7e8202a7"></a>
@@ -551,6 +650,21 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Destroys a saved search for the authenticating user as an asynchronous operation.</p>
+<p>The authenticating user must be the owner of saved search id being destroyed.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> id (required)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The Parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the saved search.</p>
+
 </div>
 </div>
 <a class="anchor" id="a620a99895bb17e425d79039db8651222"></a>
@@ -577,15 +691,14 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns the authenticated user's saved search queries.</p>
-<p>Avaliable parameters: Nothing. </p>
-<dl class="section return"><dt>Returns</dt><dd>Saved searches.</dd></dl>
+<p>Avaliable parameters: Nothing.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">tokens</td><td><a class="el" href="classCoreTweet_1_1Tokens.html" title="The OAuth tokens. ">Tokens</a>. </td></tr>
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The Parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The saved searches.</dd></dl>
 
 </div>
 </div>
@@ -611,6 +724,17 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns the authenticated user's saved search queries.</p>
+<p>Avaliable parameters: Nothing.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The Parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The saved searches.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="ac0d6e90f46a749c0c509142e2a7a082e"></a>
@@ -634,6 +758,17 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Returns the authenticated user's saved search queries.</p>
+<p>Avaliable parameters: Nothing.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The Parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The saved searches.</dd></dl>
 
 </div>
 </div>
@@ -660,16 +795,16 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Returns the authenticated user's saved search queries.</p>
-<p>Avaliable parameters: Nothing. </p>
-<dl class="section return"><dt>Returns</dt><dd>Saved searches.</dd></dl>
+<p>Returns the authenticated user's saved search queries as an asynchronous operation.</p>
+<p>Avaliable parameters: Nothing.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">tokens</td><td><a class="el" href="classCoreTweet_1_1Tokens.html" title="The OAuth tokens. ">Tokens</a>. </td></tr>
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the saved searches.</p>
 
 </div>
 </div>
@@ -705,6 +840,19 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns the authenticated user's saved search queries as an asynchronous operation.</p>
+<p>Avaliable parameters: Nothing.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the saved searches.</p>
+
 </div>
 </div>
 <a class="anchor" id="a2a378dd6dfca3f5bba6f5a56538fc174"></a>
@@ -739,6 +887,19 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns the authenticated user's saved search queries as an asynchronous operation.</p>
+<p>Avaliable parameters: Nothing.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the saved searches.</p>
+
 </div>
 </div>
 <a class="anchor" id="a96ce29b53b17d6cba9840d2bf955fcbc"></a>
@@ -764,17 +925,17 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Retrieve the information for the saved search represented by the given id. The authenticating user must be the owner of saved search ID being requested.</p>
-<p>Avaliable parameters: </p>
-<p><em>long id (required)</em>  : The ID of the saved search.</p>
-<dl class="section return"><dt>Returns</dt><dd>The saved search.</dd></dl>
+<p>Retrieve the information for the saved search represented by the given id.</p>
+<p>The authenticating user must be the owner of saved search ID being requested.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> id (required)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">tokens</td><td><a class="el" href="classCoreTweet_1_1Tokens.html" title="The OAuth tokens. ">Tokens</a>. </td></tr>
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The Parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The saved search.</dd></dl>
 
 </div>
 </div>
@@ -800,6 +961,19 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Retrieve the information for the saved search represented by the given id.</p>
+<p>The authenticating user must be the owner of saved search ID being requested.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> id (required)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The Parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The saved search.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a9e48cfa013f5621e1676cb134b75a9c7"></a>
@@ -823,6 +997,19 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Retrieve the information for the saved search represented by the given id.</p>
+<p>The authenticating user must be the owner of saved search ID being requested.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> id (required)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The Parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The saved search.</dd></dl>
 
 </div>
 </div>
@@ -849,17 +1036,18 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Retrieve the information for the saved search represented by the given id. The authenticating user must be the owner of saved search ID being requested.</p>
-<p>Avaliable parameters: </p>
-<p><em>long id (required)</em>  : The ID of the saved search.</p>
-<dl class="section return"><dt>Returns</dt><dd>The saved search.</dd></dl>
+<p>Retrieve the information for the saved search represented by the given id as an asynchronous operation.</p>
+<p>The authenticating user must be the owner of saved search ID being requested.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> id (required)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">tokens</td><td><a class="el" href="classCoreTweet_1_1Tokens.html" title="The OAuth tokens. ">Tokens</a>. </td></tr>
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the saved search.</p>
 
 </div>
 </div>
@@ -895,6 +1083,21 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Retrieve the information for the saved search represented by the given id as an asynchronous operation.</p>
+<p>The authenticating user must be the owner of saved search ID being requested.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> id (required)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the saved search.</p>
+
 </div>
 </div>
 <a class="anchor" id="a32f80edb429f56cbd13c51819575c8cd"></a>
@@ -929,6 +1132,21 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Retrieve the information for the saved search represented by the given id as an asynchronous operation.</p>
+<p>The authenticating user must be the owner of saved search ID being requested.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> id (required)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the saved search.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
@@ -938,7 +1156,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat May 31 2014 23:10:00 for CoreTweet by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 20 2014 00:31:20 for CoreTweet by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

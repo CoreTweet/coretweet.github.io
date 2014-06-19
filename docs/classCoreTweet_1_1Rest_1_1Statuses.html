@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="core-48x48.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">CoreTweet
-   &#160;<span id="projectnumber">0.3.3</span>
+   &#160;<span id="projectnumber">0.3.4</span>
    </div>
    <div id="projectbrief">Yet another .NET Twitter Library</div>
   </td>
@@ -97,7 +97,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>GET/POST statuses 
+<p>Provides a set of methods for the wrapper of GET/POST statuses.  
  <a href="classCoreTweet_1_1Rest_1_1Statuses.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for CoreTweet.Rest.Statuses:</div>
@@ -105,7 +105,7 @@ Inheritance diagram for CoreTweet.Rest.Statuses:</div>
  <div class="center">
   <img src="classCoreTweet_1_1Rest_1_1Statuses.png" usemap="#CoreTweet.Rest.Statuses_map" alt=""/>
   <map id="CoreTweet.Rest.Statuses_map" name="CoreTweet.Rest.Statuses_map">
-<area href="classCoreTweet_1_1Core_1_1ApiProviderBase.html" title="Base class of API providers. " alt="CoreTweet.Core.ApiProviderBase" shape="rect" coords="0,0,205,24"/>
+<area href="classCoreTweet_1_1Core_1_1ApiProviderBase.html" title="Provides a Twitter API wrapper. This is an abstract class. " alt="CoreTweet.Core.ApiProviderBase" shape="rect" coords="0,0,205,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -282,7 +282,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a8f9003e34c6f19f561b10b1f14098ec1 inherit properties_classCoreTweet_1_1Core_1_1ApiProviderBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>GET/POST statuses</p>
+<div class="textblock"><p>Provides a set of methods for the wrapper of GET/POST statuses. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a14d9a8bc917dc3a6f01b631a675e9703"></a>
 <div class="memitem">
@@ -307,17 +307,19 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Destroys the status specified by the required ID parameter. The authenticating user must be the author of the specified status. Returns the destroyed status if successful.</p>
-<p>Avaliable parameters: </p>
-<p><em>long id (required)</em>  : The numerical ID of the desired status.</p>
-<p><em>bool trim_user (optional)</em>  : When set to true, each tweet returned in a timeline will include a user object including only the status authors numerical ID. Omit this parameter to receive the complete user object.</p>
-<dl class="section return"><dt>Returns</dt><dd>The destroied status.</dd></dl>
+<p>Destroys the status specified by the required ID parameter.</p>
+<p>The authenticating user must be the author of the specified status.</p>
+<p>Returns the destroyed status if successful.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> id (required)</p>
+<p>- <code>bool</code> trim_user (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The destroied status.</dd></dl>
 
 </div>
 </div>
@@ -343,6 +345,21 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Destroys the status specified by the required ID parameter.</p>
+<p>The authenticating user must be the author of the specified status.</p>
+<p>Returns the destroyed status if successful.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> id (required)</p>
+<p>- <code>bool</code> trim_user (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The destroied status.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a519d6de9b91c7e8a5657965d25b10b19"></a>
@@ -366,6 +383,21 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Destroys the status specified by the required ID parameter.</p>
+<p>The authenticating user must be the author of the specified status.</p>
+<p>Returns the destroyed status if successful.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> id (required)</p>
+<p>- <code>bool</code> trim_user (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The destroied status.</dd></dl>
 
 </div>
 </div>
@@ -392,17 +424,20 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Destroys the status specified by the required ID parameter. The authenticating user must be the author of the specified status. Returns the destroyed status if successful.</p>
-<p>Avaliable parameters: </p>
-<p><em>long id (required)</em>  : The numerical ID of the desired status.</p>
-<p><em>bool trim_user (optional)</em>  : When set to true, each tweet returned in a timeline will include a user object including only the status authors numerical ID. Omit this parameter to receive the complete user object.</p>
-<dl class="section return"><dt>Returns</dt><dd>The destroied status.</dd></dl>
+<p>Destroys the status specified by the required ID parameter as an asynchronous operation.</p>
+<p>The authenticating user must be the author of the specified status.</p>
+<p>Returns the destroyed status if successful.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> id (required)</p>
+<p>- <code>bool</code> trim_user (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the destroied status.</p>
 
 </div>
 </div>
@@ -438,6 +473,23 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Destroys the status specified by the required ID parameter as an asynchronous operation.</p>
+<p>The authenticating user must be the author of the specified status.</p>
+<p>Returns the destroyed status if successful.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> id (required)</p>
+<p>- <code>bool</code> trim_user (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the destroied status.</p>
+
 </div>
 </div>
 <a class="anchor" id="ad72d00e795d7609c6c8737a3c56c4e00"></a>
@@ -471,6 +523,23 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Destroys the status specified by the required ID parameter as an asynchronous operation.</p>
+<p>The authenticating user must be the author of the specified status.</p>
+<p>Returns the destroyed status if successful.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> id (required)</p>
+<p>- <code>bool</code> trim_user (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the destroied status.</p>
 
 </div>
 </div>
@@ -507,20 +576,20 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Enumerates a collection of user IDs belonging to users who have retweeted the tweet specified by the id parameter.</p>
+<p>Enumerates a collection of up to 100 user IDs belonging to users who have retweeted the tweet specified by the id parameter.</p>
 <p>This method offers similar data to GET statuses/retweets/:id and replaces API v1's GET statuses/:id/retweeted_by/ids method.</p>
-<dl class="section see"><dt>See also</dt><dd>https://dev.twitter.com/docs/api/1.1/get/statuses/retweeters/ids</dd></dl>
-<p>Avaliable parameters: </p>
-<p><em>long id (required)</em>  : The numerical ID of the desired status.</p>
-<p><em>long cursor (optional)</em>  : The first cursor. If not be specified, enumerating starts from the first page.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> id (required)</p>
+<p>- <code>long</code> cursor (semi-optional)</p>
+<p>Don't use stringify_ids</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">mode</td><td>Specify whether enumerating goes to the next page or the previous.</td></tr>
-    <tr><td class="paramname">parameters</td><td>Parameters.</td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>IDs.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The IDs.</dd></dl>
 
 </div>
 </div>
@@ -556,6 +625,22 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Enumerates a collection of up to 100 user IDs belonging to users who have retweeted the tweet specified by the id parameter.</p>
+<p>This method offers similar data to GET statuses/retweets/:id and replaces API v1's GET statuses/:id/retweeted_by/ids method.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> id (required)</p>
+<p>- <code>long</code> cursor (semi-optional)</p>
+<p>Don't use stringify_ids</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mode</td><td>Specify whether enumerating goes to the next page or the previous.</td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The IDs.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a0cb82cfe484e1867839eff56e78c0d72"></a>
@@ -590,6 +675,22 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Enumerates a collection of up to 100 user IDs belonging to users who have retweeted the tweet specified by the id parameter.</p>
+<p>This method offers similar data to GET statuses/retweets/:id and replaces API v1's GET statuses/:id/retweeted_by/ids method.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> id (required)</p>
+<p>- <code>long</code> cursor (semi-optional)</p>
+<p>Don't use stringify_ids</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mode</td><td>Specify whether enumerating goes to the next page or the previous.</td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The IDs.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a3e917ac55bdae5ff6e3d03cc021e0e95"></a>
@@ -615,19 +716,21 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Returns a collection of the most recent Tweets and retweets posted by the authenticating user and the users they follow. The home timeline is central to how most users interact with the Twitter service. Up to 800 Tweets are obtainable on the home timeline. It is more volatile for users that follow many users or follow users who tweet frequently.</p>
-<p>Avaliable parameters: </p>
-<p><em>int count (optional)</em>  : Specifies the number of tweets to try and retrieve, up to a maximum of 200. The value of count is best thought of as a limit to the number of tweets to return because suspended or deleted content is removed after the count has been applied. We include retweets in the count, even if include_rts is not supplied. It is recommended you always send include_rts=1 when using this API method.</p>
-<p><em>int since_id(optional)</em>  : Returns results with an ID greater than (that is, more recent than) the specified ID. There are limits to the number of Tweets which can be accessed through the API. If the limit of Tweets has occured since the since_id, the since_id will be forced to the oldest ID available.</p>
-<p><em>int max_id (optional)</em>  : Returns results with an ID less than (that is, older than) or equal to the specified ID.</p>
-<p><em>bool trim_user (optional)</em>  : When set to true, t or 1, each tweet returned in a timeline will include a user object including only the status authors numerical ID. Omit this parameter to receive the complete user object.</p>
-<p><em>bool contributor_details (optional)</em>  : This parameter enhances the contributors element of the status response to include the screen_name of the contributor. By default only the user_id of the contributor is included.</p>
-<p><em>bool include_entities (optional)</em>  : The entities node will be disincluded when set to false.</p>
-<p><em>bool exclude_replies (optional)</em>  : This parameter will prevent replies from appearing in the returned timeline. Using exclude_replies with the count parameter will mean you will receive up-to count tweets — this is because the count parameter retrieves that many tweets before filtering out retweets and replies. This parameter is only supported for JSON and XML responses.</p>
+<p>Returns a collection of the most recent Tweets and retweets posted by the authenticating user and the users they follow.</p>
+<p>The home timeline is central to how most users interact with the Twitter service.</p>
+<p>Up to 800 Tweets are obtainable on the home timeline.</p>
+<p>It is more volatile for users that follow many users or follow users who tweet frequently.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>int</code> count (optional)</p>
+<p>- <code>int</code> since_id(optional)</p>
+<p>- <code>int</code> max_id (optional)</p>
+<p>- <code>bool</code> trim_user (optional)</p>
+<p>- <code>bool</code> contributor_details (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<p>- <code>bool</code> exclude_replies (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">tokens</td><td><a class="el" href="classCoreTweet_1_1OAuth.html">OAuth</a> <a class="el" href="classCoreTweet_1_1Tokens.html" title="The OAuth tokens. ">Tokens</a>.</td></tr>
-    <tr><td class="paramname">parameters</td><td>Parameters.</td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
@@ -657,6 +760,27 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns a collection of the most recent Tweets and retweets posted by the authenticating user and the users they follow.</p>
+<p>The home timeline is central to how most users interact with the Twitter service.</p>
+<p>Up to 800 Tweets are obtainable on the home timeline.</p>
+<p>It is more volatile for users that follow many users or follow users who tweet frequently.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>int</code> count (optional)</p>
+<p>- <code>int</code> since_id(optional)</p>
+<p>- <code>int</code> max_id (optional)</p>
+<p>- <code>bool</code> trim_user (optional)</p>
+<p>- <code>bool</code> contributor_details (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<p>- <code>bool</code> exclude_replies (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The statuses.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a41a17d5ce8dc932b824c3a58d104ec65"></a>
@@ -680,6 +804,27 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Returns a collection of the most recent Tweets and retweets posted by the authenticating user and the users they follow.</p>
+<p>The home timeline is central to how most users interact with the Twitter service.</p>
+<p>Up to 800 Tweets are obtainable on the home timeline.</p>
+<p>It is more volatile for users that follow many users or follow users who tweet frequently.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>int</code> count (optional)</p>
+<p>- <code>int</code> since_id(optional)</p>
+<p>- <code>int</code> max_id (optional)</p>
+<p>- <code>bool</code> trim_user (optional)</p>
+<p>- <code>bool</code> contributor_details (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<p>- <code>bool</code> exclude_replies (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The statuses.</dd></dl>
 
 </div>
 </div>
@@ -706,23 +851,26 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Returns a collection of the most recent Tweets and retweets posted by the authenticating user and the users they follow. The home timeline is central to how most users interact with the Twitter service. Up to 800 Tweets are obtainable on the home timeline. It is more volatile for users that follow many users or follow users who tweet frequently.</p>
-<p>Avaliable parameters: </p>
-<p><em>int count (optional)</em>  : Specifies the number of tweets to try and retrieve, up to a maximum of 200. The value of count is best thought of as a limit to the number of tweets to return because suspended or deleted content is removed after the count has been applied. We include retweets in the count, even if include_rts is not supplied. It is recommended you always send include_rts=1 when using this API method.</p>
-<p><em>int since_id(optional)</em>  : Returns results with an ID greater than (that is, more recent than) the specified ID. There are limits to the number of Tweets which can be accessed through the API. If the limit of Tweets has occured since the since_id, the since_id will be forced to the oldest ID available.</p>
-<p><em>int max_id (optional)</em>  : Returns results with an ID less than (that is, older than) or equal to the specified ID.</p>
-<p><em>bool trim_user (optional)</em>  : When set to true, t or 1, each tweet returned in a timeline will include a user object including only the status authors numerical ID. Omit this parameter to receive the complete user object.</p>
-<p><em>bool contributor_details (optional)</em>  : This parameter enhances the contributors element of the status response to include the screen_name of the contributor. By default only the user_id of the contributor is included.</p>
-<p><em>bool include_entities (optional)</em>  : The entities node will be disincluded when set to false.</p>
-<p><em>bool exclude_replies (optional)</em>  : This parameter will prevent replies from appearing in the returned timeline. Using exclude_replies with the count parameter will mean you will receive up-to count tweets — this is because the count parameter retrieves that many tweets before filtering out retweets and replies. This parameter is only supported for JSON and XML responses.</p>
+<p>Returns a collection of the most recent Tweets and retweets posted by the authenticating user and the users they follow as an asynchronous operation.</p>
+<p>The home timeline is central to how most users interact with the Twitter service.</p>
+<p>Up to 800 Tweets are obtainable on the home timeline.</p>
+<p>It is more volatile for users that follow many users or follow users who tweet frequently.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>int</code> count (optional)</p>
+<p>- <code>int</code> since_id(optional)</p>
+<p>- <code>int</code> max_id (optional)</p>
+<p>- <code>bool</code> trim_user (optional)</p>
+<p>- <code>bool</code> contributor_details (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<p>- <code>bool</code> exclude_replies (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">tokens</td><td><a class="el" href="classCoreTweet_1_1OAuth.html">OAuth</a> <a class="el" href="classCoreTweet_1_1Tokens.html" title="The OAuth tokens. ">Tokens</a>.</td></tr>
-    <tr><td class="paramname">parameters</td><td>Parameters.</td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The statuses.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the statuses.</p>
 
 </div>
 </div>
@@ -758,6 +906,29 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns a collection of the most recent Tweets and retweets posted by the authenticating user and the users they follow as an asynchronous operation.</p>
+<p>The home timeline is central to how most users interact with the Twitter service.</p>
+<p>Up to 800 Tweets are obtainable on the home timeline.</p>
+<p>It is more volatile for users that follow many users or follow users who tweet frequently.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>int</code> count (optional)</p>
+<p>- <code>int</code> since_id(optional)</p>
+<p>- <code>int</code> max_id (optional)</p>
+<p>- <code>bool</code> trim_user (optional)</p>
+<p>- <code>bool</code> contributor_details (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<p>- <code>bool</code> exclude_replies (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the statuses.</p>
+
 </div>
 </div>
 <a class="anchor" id="ad84f97768f2bebb06f7359dfdb5558d8"></a>
@@ -792,6 +963,29 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns a collection of the most recent Tweets and retweets posted by the authenticating user and the users they follow as an asynchronous operation.</p>
+<p>The home timeline is central to how most users interact with the Twitter service.</p>
+<p>Up to 800 Tweets are obtainable on the home timeline.</p>
+<p>It is more volatile for users that follow many users or follow users who tweet frequently.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>int</code> count (optional)</p>
+<p>- <code>int</code> since_id(optional)</p>
+<p>- <code>int</code> max_id (optional)</p>
+<p>- <code>bool</code> trim_user (optional)</p>
+<p>- <code>bool</code> contributor_details (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<p>- <code>bool</code> exclude_replies (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the statuses.</p>
+
 </div>
 </div>
 <a class="anchor" id="a955a0108f28721b6fac128390e7acf51"></a>
@@ -817,17 +1011,16 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Returns fully-hydrated tweet objects for up to 100 tweets per request, as specified by comma-separated values passed to the id parameter. </p>
+<p>Returns fully-hydrated tweet objects for up to 100 tweets per request, as specified by comma-separated values passed to the id parameter.</p>
 <p>This method is especially useful to get the details (hydrate) a collection of Tweet IDs.</p>
-<dl class="section see"><dt>See also</dt><dd>https://dev.twitter.com/docs/api/1.1/get/statuses/lookup</dd></dl>
-<p>Avaliable parameters: </p>
-<p><em>string, IEnumerable&lt;long&gt; id(required)</em>  : A list of tweet IDs or comma separated string of ones, up to 100 are allowed in a single request.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> / <code>IEnumerbale&lt;long&gt;</code> id (required)</p>
 <p>Example Values: 20, 432656548536401920</p>
-<p><em>bool trim_user (optional)</em>  : When set to true, each tweet returned in a timeline will include a user object including only the status authors numerical ID. Omit this parameter to receive the complete user object.</p>
-<p><em>bool include_entities (optional)</em>  : The entities node will be disincluded when set to false.</p>
+<p>- <code>bool</code> trim_user (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters.</td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
@@ -857,6 +1050,22 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns fully-hydrated tweet objects for up to 100 tweets per request, as specified by comma-separated values passed to the id parameter.</p>
+<p>This method is especially useful to get the details (hydrate) a collection of Tweet IDs.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> / <code>IEnumerbale&lt;long&gt;</code> id (required)</p>
+<p>Example Values: 20, 432656548536401920</p>
+<p>- <code>bool</code> trim_user (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The statuses.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="afc5f8f6bbc0c1efd7076b90ce4e64b71"></a>
@@ -880,6 +1089,22 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Returns fully-hydrated tweet objects for up to 100 tweets per request, as specified by comma-separated values passed to the id parameter.</p>
+<p>This method is especially useful to get the details (hydrate) a collection of Tweet IDs.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> / <code>IEnumerbale&lt;long&gt;</code> id (required)</p>
+<p>Example Values: 20, 432656548536401920</p>
+<p>- <code>bool</code> trim_user (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The statuses.</dd></dl>
 
 </div>
 </div>
@@ -906,21 +1131,21 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Returns fully-hydrated tweet objects for up to 100 tweets per request, as specified by comma-separated values passed to the id parameter. </p>
+<p>Returns fully-hydrated tweet objects for up to 100 tweets per request, as specified by comma-separated values passed to the id parameter as an asynchronous operation.</p>
 <p>This method is especially useful to get the details (hydrate) a collection of Tweet IDs.</p>
-<dl class="section see"><dt>See also</dt><dd>https://dev.twitter.com/docs/api/1.1/get/statuses/lookup</dd></dl>
-<p>Avaliable parameters: </p>
-<p><em>string, IEnumerable&lt;long&gt; id(required)</em>  : A list of tweet IDs or comma separated string of ones, up to 100 are allowed in a single request.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> / <code>IEnumerbale&lt;long&gt;</code> id (required)</p>
 <p>Example Values: 20, 432656548536401920</p>
-<p><em>bool trim_user (optional)</em>  : When set to true, each tweet returned in a timeline will include a user object including only the status authors numerical ID. Omit this parameter to receive the complete user object.</p>
-<p><em>bool include_entities (optional)</em>  : The entities node will be disincluded when set to false.</p>
+<p>- <code>bool</code> trim_user (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters.</td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The statuses.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the statuses.</p>
 
 </div>
 </div>
@@ -956,6 +1181,24 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns fully-hydrated tweet objects for up to 100 tweets per request, as specified by comma-separated values passed to the id parameter as an asynchronous operation.</p>
+<p>This method is especially useful to get the details (hydrate) a collection of Tweet IDs.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> / <code>IEnumerbale&lt;long&gt;</code> id (required)</p>
+<p>Example Values: 20, 432656548536401920</p>
+<p>- <code>bool</code> trim_user (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the statuses.</p>
+
 </div>
 </div>
 <a class="anchor" id="a8e9cf6b42f57b001f729237d45ac23c7"></a>
@@ -990,6 +1233,24 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns fully-hydrated tweet objects for up to 100 tweets per request, as specified by comma-separated values passed to the id parameter as an asynchronous operation.</p>
+<p>This method is especially useful to get the details (hydrate) a collection of Tweet IDs.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> / <code>IEnumerbale&lt;long&gt;</code> id (required)</p>
+<p>Example Values: 20, 432656548536401920</p>
+<p>- <code>bool</code> trim_user (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the statuses.</p>
+
 </div>
 </div>
 <a class="anchor" id="a07ee424908c1a5be83f4e32b050c1dc2"></a>
@@ -1015,19 +1276,19 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Returns the 20 most recent mentions (tweets containing a users's ) for the authenticating user. The timeline returned is the equivalent of the one seen when you view your mentions on twitter.com. This method can only return up to 800 tweets. See Working with Timelines for instructions on traversing timelines.</p>
-<dl class="section see"><dt>See also</dt><dd>https://dev.twitter.com/docs/working-with-timelines</dd></dl>
-<p>Avaliable parameters: </p>
-<p><em>int count (optional)</em>  : Specifies the number of tweets to try and retrieve, up to a maximum of 200. The value of count is best thought of as a limit to the number of tweets to return because suspended or deleted content is removed after the count has been applied. We include retweets in the count, even if include_rts is not supplied. It is recommended you always send include_rts=1 when using this API method.</p>
-<p><em>int since_id(optional)</em>  : Returns results with an ID greater than (that is, more recent than) the specified ID. There are limits to the number of Tweets which can be accessed through the API. If the limit of Tweets has occured since the since_id, the since_id will be forced to the oldest ID available.</p>
-<p><em>int max_id (optional)</em>  : Returns results with an ID less than (that is, older than) or equal to the specified ID.</p>
-<p><em>bool trim_user (optional)</em>  : When set to true, each tweet returned in a timeline will include a user object including only the status authors numerical ID. Omit this parameter to receive the complete user object.</p>
-<p><em>bool contributor_details (optional)</em>  : This parameter enhances the contributors element of the status response to include the screen_name of the contributor. By default only the user_id of the contributor is included.</p>
-<p><em>bool include_entities (optional)</em>  : The entities node will be disincluded when set to false.</p>
+<p>Returns the 20 most recent mentions (tweets containing a users's ) for the authenticating user.</p>
+<p>The timeline returned is the equivalent of the one seen when you view your mentions on twitter.com.</p>
+<p>This method can only return up to 800 tweets.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>int</code> count (optional)</p>
+<p>- <code>int</code> since_id(optional)</p>
+<p>- <code>int</code> max_id (optional)</p>
+<p>- <code>bool</code> trim_user (optional)</p>
+<p>- <code>bool</code> contributor_details (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">tokens</td><td><a class="el" href="classCoreTweet_1_1OAuth.html">OAuth</a> <a class="el" href="classCoreTweet_1_1Tokens.html" title="The OAuth tokens. ">Tokens</a>.</td></tr>
-    <tr><td class="paramname">parameters</td><td>Parameters.</td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1057,6 +1318,25 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns the 20 most recent mentions (tweets containing a users's ) for the authenticating user.</p>
+<p>The timeline returned is the equivalent of the one seen when you view your mentions on twitter.com.</p>
+<p>This method can only return up to 800 tweets.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>int</code> count (optional)</p>
+<p>- <code>int</code> since_id(optional)</p>
+<p>- <code>int</code> max_id (optional)</p>
+<p>- <code>bool</code> trim_user (optional)</p>
+<p>- <code>bool</code> contributor_details (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The statuses.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a1734261bff00a13f195824a02df37949"></a>
@@ -1080,6 +1360,25 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Returns the 20 most recent mentions (tweets containing a users's ) for the authenticating user.</p>
+<p>The timeline returned is the equivalent of the one seen when you view your mentions on twitter.com.</p>
+<p>This method can only return up to 800 tweets.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>int</code> count (optional)</p>
+<p>- <code>int</code> since_id(optional)</p>
+<p>- <code>int</code> max_id (optional)</p>
+<p>- <code>bool</code> trim_user (optional)</p>
+<p>- <code>bool</code> contributor_details (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The statuses.</dd></dl>
 
 </div>
 </div>
@@ -1106,23 +1405,24 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Returns the 20 most recent mentions (tweets containing a users's ) for the authenticating user. The timeline returned is the equivalent of the one seen when you view your mentions on twitter.com. This method can only return up to 800 tweets. See Working with Timelines for instructions on traversing timelines.</p>
-<dl class="section see"><dt>See also</dt><dd>https://dev.twitter.com/docs/working-with-timelines</dd></dl>
-<p>Avaliable parameters: </p>
-<p><em>int count (optional)</em>  : Specifies the number of tweets to try and retrieve, up to a maximum of 200. The value of count is best thought of as a limit to the number of tweets to return because suspended or deleted content is removed after the count has been applied. We include retweets in the count, even if include_rts is not supplied. It is recommended you always send include_rts=1 when using this API method.</p>
-<p><em>int since_id(optional)</em>  : Returns results with an ID greater than (that is, more recent than) the specified ID. There are limits to the number of Tweets which can be accessed through the API. If the limit of Tweets has occured since the since_id, the since_id will be forced to the oldest ID available.</p>
-<p><em>int max_id (optional)</em>  : Returns results with an ID less than (that is, older than) or equal to the specified ID.</p>
-<p><em>bool trim_user (optional)</em>  : When set to true, each tweet returned in a timeline will include a user object including only the status authors numerical ID. Omit this parameter to receive the complete user object.</p>
-<p><em>bool contributor_details (optional)</em>  : This parameter enhances the contributors element of the status response to include the screen_name of the contributor. By default only the user_id of the contributor is included.</p>
-<p><em>bool include_entities (optional)</em>  : The entities node will be disincluded when set to false.</p>
+<p>Returns the 20 most recent mentions (tweets containing a users's ) for the authenticating user as an asynchronous operation.</p>
+<p>The timeline returned is the equivalent of the one seen when you view your mentions on twitter.com.</p>
+<p>This method can only return up to 800 tweets.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>int</code> count (optional)</p>
+<p>- <code>int</code> since_id(optional)</p>
+<p>- <code>int</code> max_id (optional)</p>
+<p>- <code>bool</code> trim_user (optional)</p>
+<p>- <code>bool</code> contributor_details (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">tokens</td><td><a class="el" href="classCoreTweet_1_1OAuth.html">OAuth</a> <a class="el" href="classCoreTweet_1_1Tokens.html" title="The OAuth tokens. ">Tokens</a>.</td></tr>
-    <tr><td class="paramname">parameters</td><td>Parameters.</td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The statuses.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the statuses.</p>
 
 </div>
 </div>
@@ -1158,6 +1458,27 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns the 20 most recent mentions (tweets containing a users's ) for the authenticating user as an asynchronous operation.</p>
+<p>The timeline returned is the equivalent of the one seen when you view your mentions on twitter.com.</p>
+<p>This method can only return up to 800 tweets.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>int</code> count (optional)</p>
+<p>- <code>int</code> since_id(optional)</p>
+<p>- <code>int</code> max_id (optional)</p>
+<p>- <code>bool</code> trim_user (optional)</p>
+<p>- <code>bool</code> contributor_details (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the statuses.</p>
+
 </div>
 </div>
 <a class="anchor" id="a3cbee9aa944156a5b9232192fbaf5855"></a>
@@ -1192,6 +1513,27 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns the 20 most recent mentions (tweets containing a users's ) for the authenticating user as an asynchronous operation.</p>
+<p>The timeline returned is the equivalent of the one seen when you view your mentions on twitter.com.</p>
+<p>This method can only return up to 800 tweets.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>int</code> count (optional)</p>
+<p>- <code>int</code> since_id(optional)</p>
+<p>- <code>int</code> max_id (optional)</p>
+<p>- <code>bool</code> trim_user (optional)</p>
+<p>- <code>bool</code> contributor_details (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the statuses.</p>
+
 </div>
 </div>
 <a class="anchor" id="a40596045c6e3fd623de5457e272ba7d6"></a>
@@ -1217,24 +1559,25 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Returns information allowing the creation of an embedded representation of a Tweet on third party sites. See the oEmbed specification for information about the response format.</p>
-<p>While this endpoint allows a bit of customization for the final appearance of the embedded Tweet, be aware that the appearance of the rendered Tweet may change over time to be consistent with Twitter's Display Requirements. Do not rely on any class or id parameters to stay constant in the returned markup.</p>
-<p>Avaliable parameters: </p>
-<p><em>long id (required)</em>  : The Tweet/status ID to return embed code for.</p>
-<p><em>int maxwidth (optional)</em>  : The maximum width in pixels that the embed should be rendered at. This value is constrained to be between 250 and 550 pixels. Note that Twitter does not support the oEmbed maxheight parameter. Tweets are fundamentally text, and are therefore of unpredictable height that cannot be scaled like an image or video. Relatedly, the oEmbed response will not provide a value for height. Implementations that need consistent heights for Tweets should refer to the hide_thread and hide_media parameters below.</p>
-<p><em>bool hide_media (optional)</em>  : Specifies whether the embedded Tweet should automatically expand images which were uploaded via POST statuses/update_with_media. When set to either true, t or 1 images will not be expanded. Defaults to false.</p>
-<p><em>bool hide_thread (optional)</em>  : Specifies whether the embedded Tweet should automatically show the original message in the case that the embedded Tweet is a reply. When set to either true, t or 1 the original Tweet will not be shown. Defaults to false.</p>
-<p><em>bool omit_script (optional)</em>  : Specifies whether the embedded Tweet HTML should include a "script" element pointing to widgets.js. In cases where a page already includes widgets.js, setting this value to true will prevent a redundant script element from being included. When set to either true, t or 1 the "script" element will not be included in the embed HTML, meaning that pages must include a reference to widgets.js manually. Defaults to false.</p>
-<p><em>string align (optional)</em>  : Specifies whether the embedded Tweet should be left aligned, right aligned, or centered in the page. Valid values are left, right, center, and none. Defaults to none, meaning no alignment styles are specified for the Tweet.</p>
-<p><em>string related (optional)</em>  : A value for the TWT related parameter, as described in Web Intents. This value will be forwarded to all Web Intents calls.</p>
-<p><em>string lang (optional)</em>  : <a class="el" href="classCoreTweet_1_1Language.html">Language</a> code for the rendered embed. This will affect the text and localization of the rendered HTML.</p>
-<dl class="section return"><dt>Returns</dt><dd>The HTML code and more.</dd></dl>
+<p>Returns information allowing the creation of an embedded representation of a Tweet on third party sites.</p>
+<p>While this endpoint allows a bit of customization for the final appearance of the embedded Tweet, be aware that the appearance of the rendered Tweet may change over time to be consistent with Twitter's Display Requirements.</p>
+<p>Do not rely on any class or id parameters to stay constant in the returned markup.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> id (required)</p>
+<p>- <code>int</code> maxwidth (optional)</p>
+<p>- <code>bool</code> hide_media (optional)</p>
+<p>- <code>bool</code> hide_thread (optional)</p>
+<p>- <code>bool</code> omit_script (optional)</p>
+<p>- <code>string</code> align (optional)</p>
+<p>- <code>string</code> related (optional)</p>
+<p>- <code>string</code> lang (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The HTML code and more.</dd></dl>
 
 </div>
 </div>
@@ -1260,6 +1603,27 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns information allowing the creation of an embedded representation of a Tweet on third party sites.</p>
+<p>While this endpoint allows a bit of customization for the final appearance of the embedded Tweet, be aware that the appearance of the rendered Tweet may change over time to be consistent with Twitter's Display Requirements.</p>
+<p>Do not rely on any class or id parameters to stay constant in the returned markup.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> id (required)</p>
+<p>- <code>int</code> maxwidth (optional)</p>
+<p>- <code>bool</code> hide_media (optional)</p>
+<p>- <code>bool</code> hide_thread (optional)</p>
+<p>- <code>bool</code> omit_script (optional)</p>
+<p>- <code>string</code> align (optional)</p>
+<p>- <code>string</code> related (optional)</p>
+<p>- <code>string</code> lang (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The HTML code and more.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a405e28418787b586f765653e63ae73c1"></a>
@@ -1283,6 +1647,27 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Returns information allowing the creation of an embedded representation of a Tweet on third party sites.</p>
+<p>While this endpoint allows a bit of customization for the final appearance of the embedded Tweet, be aware that the appearance of the rendered Tweet may change over time to be consistent with Twitter's Display Requirements.</p>
+<p>Do not rely on any class or id parameters to stay constant in the returned markup.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> id (required)</p>
+<p>- <code>int</code> maxwidth (optional)</p>
+<p>- <code>bool</code> hide_media (optional)</p>
+<p>- <code>bool</code> hide_thread (optional)</p>
+<p>- <code>bool</code> omit_script (optional)</p>
+<p>- <code>string</code> align (optional)</p>
+<p>- <code>string</code> related (optional)</p>
+<p>- <code>string</code> lang (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The HTML code and more.</dd></dl>
 
 </div>
 </div>
@@ -1309,24 +1694,26 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Returns information allowing the creation of an embedded representation of a Tweet on third party sites. See the oEmbed specification for information about the response format.</p>
-<p>While this endpoint allows a bit of customization for the final appearance of the embedded Tweet, be aware that the appearance of the rendered Tweet may change over time to be consistent with Twitter's Display Requirements. Do not rely on any class or id parameters to stay constant in the returned markup.</p>
-<p>Avaliable parameters: </p>
-<p><em>long id (required)</em>  : The Tweet/status ID to return embed code for.</p>
-<p><em>int maxwidth (optional)</em>  : The maximum width in pixels that the embed should be rendered at. This value is constrained to be between 250 and 550 pixels. Note that Twitter does not support the oEmbed maxheight parameter. Tweets are fundamentally text, and are therefore of unpredictable height that cannot be scaled like an image or video. Relatedly, the oEmbed response will not provide a value for height. Implementations that need consistent heights for Tweets should refer to the hide_thread and hide_media parameters below.</p>
-<p><em>bool hide_media (optional)</em>  : Specifies whether the embedded Tweet should automatically expand images which were uploaded via POST statuses/update_with_media. When set to either true, t or 1 images will not be expanded. Defaults to false.</p>
-<p><em>bool hide_thread (optional)</em>  : Specifies whether the embedded Tweet should automatically show the original message in the case that the embedded Tweet is a reply. When set to either true, t or 1 the original Tweet will not be shown. Defaults to false.</p>
-<p><em>bool omit_script (optional)</em>  : Specifies whether the embedded Tweet HTML should include a "script" element pointing to widgets.js. In cases where a page already includes widgets.js, setting this value to true will prevent a redundant script element from being included. When set to either true, t or 1 the "script" element will not be included in the embed HTML, meaning that pages must include a reference to widgets.js manually. Defaults to false.</p>
-<p><em>string align (optional)</em>  : Specifies whether the embedded Tweet should be left aligned, right aligned, or centered in the page. Valid values are left, right, center, and none. Defaults to none, meaning no alignment styles are specified for the Tweet.</p>
-<p><em>string related (optional)</em>  : A value for the TWT related parameter, as described in Web Intents. This value will be forwarded to all Web Intents calls.</p>
-<p><em>string lang (optional)</em>  : <a class="el" href="classCoreTweet_1_1Language.html">Language</a> code for the rendered embed. This will affect the text and localization of the rendered HTML.</p>
-<dl class="section return"><dt>Returns</dt><dd>The HTML code and more.</dd></dl>
+<p>Returns information allowing the creation of an embedded representation of a Tweet on third party sitesas an asynchronous operation.</p>
+<p>While this endpoint allows a bit of customization for the final appearance of the embedded Tweet, be aware that the appearance of the rendered Tweet may change over time to be consistent with Twitter's Display Requirements.</p>
+<p>Do not rely on any class or id parameters to stay constant in the returned markup.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> id (required)</p>
+<p>- <code>int</code> maxwidth (optional)</p>
+<p>- <code>bool</code> hide_media (optional)</p>
+<p>- <code>bool</code> hide_thread (optional)</p>
+<p>- <code>bool</code> omit_script (optional)</p>
+<p>- <code>string</code> align (optional)</p>
+<p>- <code>string</code> related (optional)</p>
+<p>- <code>string</code> lang (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the HTML code and more.</p>
 
 </div>
 </div>
@@ -1362,6 +1749,29 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns information allowing the creation of an embedded representation of a Tweet on third party sites as an asynchronous operation.</p>
+<p>While this endpoint allows a bit of customization for the final appearance of the embedded Tweet, be aware that the appearance of the rendered Tweet may change over time to be consistent with Twitter's Display Requirements.</p>
+<p>Do not rely on any class or id parameters to stay constant in the returned markup.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> id (required)</p>
+<p>- <code>int</code> maxwidth (optional)</p>
+<p>- <code>bool</code> hide_media (optional)</p>
+<p>- <code>bool</code> hide_thread (optional)</p>
+<p>- <code>bool</code> omit_script (optional)</p>
+<p>- <code>string</code> align (optional)</p>
+<p>- <code>string</code> related (optional)</p>
+<p>- <code>string</code> lang (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the HTML code and more.</p>
+
 </div>
 </div>
 <a class="anchor" id="a42f9971322e17596b8345ca2dbfc2e15"></a>
@@ -1396,6 +1806,29 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns information allowing the creation of an embedded representation of a Tweet on third party sites as an asynchronous operation.</p>
+<p>While this endpoint allows a bit of customization for the final appearance of the embedded Tweet, be aware that the appearance of the rendered Tweet may change over time to be consistent with Twitter's Display Requirements.</p>
+<p>Do not rely on any class or id parameters to stay constant in the returned markup.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> id (required)</p>
+<p>- <code>int</code> maxwidth (optional)</p>
+<p>- <code>bool</code> hide_media (optional)</p>
+<p>- <code>bool</code> hide_thread (optional)</p>
+<p>- <code>bool</code> omit_script (optional)</p>
+<p>- <code>string</code> align (optional)</p>
+<p>- <code>string</code> related (optional)</p>
+<p>- <code>string</code> lang (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the HTML code and more.</p>
+
 </div>
 </div>
 <a class="anchor" id="a5df370d966e87fb61af1c0344db817ff"></a>
@@ -1422,16 +1855,16 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Retweets a tweet. Returns the original tweet with retweet details embedded.</p>
-<p>Avaliable parameters: </p>
-<p><em>long id (required)</em>  : The numerical ID of the desired status.</p>
-<p><em>bool trim_user (optional)</em>  : When set to true, each tweet returned in a timeline will include a user object including only the status authors numerical ID. Omit this parameter to receive the complete user object.</p>
-<dl class="section return"><dt>Returns</dt><dd>The retweeted status.</dd></dl>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> id (required)</p>
+<p>- <code>bool</code> trim_user (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The retweeted status.</dd></dl>
 
 </div>
 </div>
@@ -1457,6 +1890,19 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Retweets a tweet. Returns the original tweet with retweet details embedded.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> id (required)</p>
+<p>- <code>bool</code> trim_user (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The retweeted status.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a396be2b7bde7f401427140ec864a1ec3"></a>
@@ -1480,6 +1926,19 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Retweets a tweet. Returns the original tweet with retweet details embedded.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> id (required)</p>
+<p>- <code>bool</code> trim_user (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The retweeted status.</dd></dl>
 
 </div>
 </div>
@@ -1506,17 +1965,18 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Retweets a tweet. Returns the original tweet with retweet details embedded.</p>
-<p>Avaliable parameters: </p>
-<p><em>long id (required)</em>  : The numerical ID of the desired status.</p>
-<p><em>bool trim_user (optional)</em>  : When set to true, each tweet returned in a timeline will include a user object including only the status authors numerical ID. Omit this parameter to receive the complete user object.</p>
-<dl class="section return"><dt>Returns</dt><dd>The retweeted status.</dd></dl>
+<p>Retweets a tweet. Returns the original tweet with retweet details embedded as an asynchronous operation.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> id (required)</p>
+<p>- <code>bool</code> trim_user (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the retweeted status.</p>
 
 </div>
 </div>
@@ -1552,6 +2012,21 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Retweets a tweet. Returns the original tweet with retweet details embedded as an asynchronous operation.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> id (required)</p>
+<p>- <code>bool</code> trim_user (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the retweeted status.</p>
+
 </div>
 </div>
 <a class="anchor" id="ab08adab4b1b5cd39960810db31887353"></a>
@@ -1586,6 +2061,21 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Retweets a tweet. Returns the original tweet with retweet details embedded as an asynchronous operation.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> id (required)</p>
+<p>- <code>bool</code> trim_user (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the retweeted status.</p>
+
 </div>
 </div>
 <a class="anchor" id="a7eb1b17dea284582685f2a07ec64cab6"></a>
@@ -1613,17 +2103,17 @@ Additional Inherited Members</h2></td></tr>
 <p></p>
 <p>Returns a collection of up to 100 user IDs belonging to users who have retweeted the tweet specified by the id parameter.</p>
 <p>This method offers similar data to GET statuses/retweets/:id and replaces API v1's GET statuses/:id/retweeted_by/ids method.</p>
-<dl class="section see"><dt>See also</dt><dd>https://dev.twitter.com/docs/api/1.1/get/statuses/retweeters/ids</dd></dl>
-<p>Avaliable parameters: </p>
-<p><em>long id (required)</em>  : The numerical ID of the desired status.</p>
-<p><em>long cursor (semi-optional)</em>  : Causes the list of IDs to be broken into pages of no more than 100 IDs at a time. The number of IDs returned is not guaranteed to be 100 as suspended users are filtered out after connections are queried. If no cursor is provided, a value of -1 will be assumed, which is the first "page."</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> id (required)</p>
+<p>- <code>long</code> cursor (semi-optional)</p>
+<p>Don't use stringify_ids</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters.</td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>IDs.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The IDs.</dd></dl>
 
 </div>
 </div>
@@ -1649,6 +2139,21 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns a collection of up to 100 user IDs belonging to users who have retweeted the tweet specified by the id parameter.</p>
+<p>This method offers similar data to GET statuses/retweets/:id and replaces API v1's GET statuses/:id/retweeted_by/ids method.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> id (required)</p>
+<p>- <code>long</code> cursor (semi-optional)</p>
+<p>Don't use stringify_ids</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The IDs.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="af5be9a22d81b49ab91d2193a56875b02"></a>
@@ -1672,6 +2177,21 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Returns a collection of up to 100 user IDs belonging to users who have retweeted the tweet specified by the id parameter.</p>
+<p>This method offers similar data to GET statuses/retweets/:id and replaces API v1's GET statuses/:id/retweeted_by/ids method.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> id (required)</p>
+<p>- <code>long</code> cursor (semi-optional)</p>
+<p>Don't use stringify_ids</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The IDs.</dd></dl>
 
 </div>
 </div>
@@ -1698,19 +2218,20 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Returns a collection of up to 100 user IDs belonging to users who have retweeted the tweet specified by the id parameter.</p>
+<p>Returns a collection of up to 100 user IDs belonging to users who have retweeted the tweet specified by the id parameter as an asynchronous operation.</p>
 <p>This method offers similar data to GET statuses/retweets/:id and replaces API v1's GET statuses/:id/retweeted_by/ids method.</p>
-<dl class="section see"><dt>See also</dt><dd>https://dev.twitter.com/docs/api/1.1/get/statuses/retweeters/ids</dd></dl>
-<p>Avaliable parameters: </p>
-<p><em>long id (required)</em>  : The numerical ID of the desired status.</p>
-<p><em>long cursor (semi-optional)</em>  : Causes the list of IDs to be broken into pages of no more than 100 IDs at a time. The number of IDs returned is not guaranteed to be 100 as suspended users are filtered out after connections are queried. If no cursor is provided, a value of -1 will be assumed, which is the first "page."</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> id (required)</p>
+<p>- <code>long</code> cursor (semi-optional)</p>
+<p>Don't use stringify_ids</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters.</td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>IDs.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the IDs.</p>
 
 </div>
 </div>
@@ -1746,6 +2267,23 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns a collection of up to 100 user IDs belonging to users who have retweeted the tweet specified by the id parameter as an asynchronous operation.</p>
+<p>This method offers similar data to GET statuses/retweets/:id and replaces API v1's GET statuses/:id/retweeted_by/ids method.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> id (required)</p>
+<p>- <code>long</code> cursor (semi-optional)</p>
+<p>Don't use stringify_ids</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the IDs.</p>
+
 </div>
 </div>
 <a class="anchor" id="affc62af1b009cf08fa4de9953f67c149"></a>
@@ -1780,6 +2318,23 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns a collection of up to 100 user IDs belonging to users who have retweeted the tweet specified by the id parameter as an asynchronous operation.</p>
+<p>This method offers similar data to GET statuses/retweets/:id and replaces API v1's GET statuses/:id/retweeted_by/ids method.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> id (required)</p>
+<p>- <code>long</code> cursor (semi-optional)</p>
+<p>Don't use stringify_ids</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the IDs.</p>
+
 </div>
 </div>
 <a class="anchor" id="a872b28477291279188a38dd1913012f1"></a>
@@ -1806,17 +2361,17 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns up to 100 of the first retweets of a given tweet.</p>
-<p>Avaliable parameters: </p>
-<p><em>long id (required)</em>  : The numerical ID of the desired Tweet.</p>
-<p><em>bool trim_user (optional)</em>  : When set to true, each tweet returned in a timeline will include a user object including only the status authors numerical ID. Omit this parameter to receive the complete user object.</p>
-<p><em>int count (optional)</em>  : Specifies the number of records to retrieve. Must be less than or equal to 100.</p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classCoreTweet_1_1Rest_1_1Statuses.html" title="GET/POST statuses">Statuses</a>.</dd></dl>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> id (required)</p>
+<p>- <code>bool</code> trim_user (optional)</p>
+<p>- <code>int</code> count (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The statuses.</dd></dl>
 
 </div>
 </div>
@@ -1842,6 +2397,20 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns up to 100 of the first retweets of a given tweet.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> id (required)</p>
+<p>- <code>bool</code> trim_user (optional)</p>
+<p>- <code>int</code> count (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The statuses.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a6820d5a4a90c537ca2f8e8bee6fe3b8e"></a>
@@ -1865,6 +2434,20 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Returns up to 100 of the first retweets of a given tweet.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> id (required)</p>
+<p>- <code>bool</code> trim_user (optional)</p>
+<p>- <code>int</code> count (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The statuses.</dd></dl>
 
 </div>
 </div>
@@ -1891,18 +2474,19 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Returns up to 100 of the first retweets of a given tweet.</p>
-<p>Avaliable parameters: </p>
-<p><em>long id (required)</em>  : The numerical ID of the desired Tweet.</p>
-<p><em>bool trim_user (optional)</em>  : When set to true, each tweet returned in a timeline will include a user object including only the status authors numerical ID. Omit this parameter to receive the complete user object.</p>
-<p><em>int count (optional)</em>  : Specifies the number of records to retrieve. Must be less than or equal to 100.</p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classCoreTweet_1_1Rest_1_1Statuses.html" title="GET/POST statuses">Statuses</a>.</dd></dl>
+<p>Returns up to 100 of the first retweets of a given tweet as an asynchronous operation.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> id (required)</p>
+<p>- <code>bool</code> trim_user (optional)</p>
+<p>- <code>int</code> count (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the statuses.</p>
 
 </div>
 </div>
@@ -1938,6 +2522,22 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns up to 100 of the first retweets of a given tweet as an asynchronous operation.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> id (required)</p>
+<p>- <code>bool</code> trim_user (optional)</p>
+<p>- <code>int</code> count (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the statuses.</p>
+
 </div>
 </div>
 <a class="anchor" id="a14e13cf58ccc4a9cc3ef63f3cf23b72b"></a>
@@ -1972,6 +2572,22 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns up to 100 of the first retweets of a given tweet as an asynchronous operation.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> id (required)</p>
+<p>- <code>bool</code> trim_user (optional)</p>
+<p>- <code>int</code> count (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the statuses.</p>
+
 </div>
 </div>
 <a class="anchor" id="aaa63f8d213b15c1f63e593d0abbfe667"></a>
@@ -1997,19 +2613,18 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Returns the most recent tweets authored by the authenticating user that have recently been retweeted by others. This timeline is a subset of the user's GET statuses/user_timeline.</p>
-<dl class="section see"><dt>See also</dt><dd>https://dev.twitter.com/docs/working-with-timelines</dd></dl>
-<p>Avaliable parameters: </p>
-<p><em>int count (optional)</em>  : Specifies the number of tweets to try and retrieve, up to a maximum of 200. The value of count is best thought of as a limit to the number of tweets to return because suspended or deleted content is removed after the count has been applied. We include retweets in the count, even if include_rts is not supplied. It is recommended you always send include_rts=1 when using this API method.</p>
-<p><em>int since_id(optional)</em>  : Returns results with an ID greater than (that is, more recent than) the specified ID. There are limits to the number of Tweets which can be accessed through the API. If the limit of Tweets has occured since the since_id, the since_id will be forced to the oldest ID available.</p>
-<p><em>int max_id (optional)</em>  : Returns results with an ID less than (that is, older than) or equal to the specified ID.</p>
-<p><em>bool trim_user (optional)</em>  : When set to true, each tweet returned in a timeline will include a user object including only the status authors numerical ID. Omit this parameter to receive the complete user object.</p>
-<p><em>bool include_entities (optional)</em>  : The tweet entities node will be disincluded when set to false.</p>
-<p><em>bool include_user_entities (optional)</em>  :The user entities node will be disincluded when set to false..</p>
+<p>Returns the most recent tweets authored by the authenticating user that have recently been retweeted by others.</p>
+<p>This timeline is a subset of the user's GET statuses/user_timeline.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>int</code> count (optional)</p>
+<p>- <code>int</code> since_id(optional)</p>
+<p>- <code>int</code> max_id (optional)</p>
+<p>- <code>bool</code> trim_user (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<p>- <code>bool</code> include_user_entities (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">tokens</td><td><a class="el" href="classCoreTweet_1_1OAuth.html">OAuth</a> <a class="el" href="classCoreTweet_1_1Tokens.html" title="The OAuth tokens. ">Tokens</a>.</td></tr>
-    <tr><td class="paramname">parameters</td><td>Parameters.</td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2039,6 +2654,24 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns the most recent tweets authored by the authenticating user that have recently been retweeted by others.</p>
+<p>This timeline is a subset of the user's GET statuses/user_timeline.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>int</code> count (optional)</p>
+<p>- <code>int</code> since_id(optional)</p>
+<p>- <code>int</code> max_id (optional)</p>
+<p>- <code>bool</code> trim_user (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<p>- <code>bool</code> include_user_entities (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The statuses.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a649f57724a039851a5d33601d299aae9"></a>
@@ -2062,6 +2695,24 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Returns the most recent tweets authored by the authenticating user that have recently been retweeted by others.</p>
+<p>This timeline is a subset of the user's GET statuses/user_timeline.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>int</code> count (optional)</p>
+<p>- <code>int</code> since_id(optional)</p>
+<p>- <code>int</code> max_id (optional)</p>
+<p>- <code>bool</code> trim_user (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<p>- <code>bool</code> include_user_entities (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The statuses.</dd></dl>
 
 </div>
 </div>
@@ -2088,23 +2739,23 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Returns the most recent tweets authored by the authenticating user that have recently been retweeted by others. This timeline is a subset of the user's GET statuses/user_timeline.</p>
-<dl class="section see"><dt>See also</dt><dd>https://dev.twitter.com/docs/working-with-timelines</dd></dl>
-<p>Avaliable parameters: </p>
-<p><em>int count (optional)</em>  : Specifies the number of tweets to try and retrieve, up to a maximum of 200. The value of count is best thought of as a limit to the number of tweets to return because suspended or deleted content is removed after the count has been applied. We include retweets in the count, even if include_rts is not supplied. It is recommended you always send include_rts=1 when using this API method.</p>
-<p><em>int since_id(optional)</em>  : Returns results with an ID greater than (that is, more recent than) the specified ID. There are limits to the number of Tweets which can be accessed through the API. If the limit of Tweets has occured since the since_id, the since_id will be forced to the oldest ID available.</p>
-<p><em>int max_id (optional)</em>  : Returns results with an ID less than (that is, older than) or equal to the specified ID.</p>
-<p><em>bool trim_user (optional)</em>  : When set to true, each tweet returned in a timeline will include a user object including only the status authors numerical ID. Omit this parameter to receive the complete user object.</p>
-<p><em>bool include_entities (optional)</em>  : The tweet entities node will be disincluded when set to false.</p>
-<p><em>bool include_user_entities (optional)</em>  :The user entities node will be disincluded when set to false..</p>
+<p>Returns the most recent tweets authored by the authenticating user that have recently been retweeted by others as an asynchronous operation.</p>
+<p>This timeline is a subset of the user's GET statuses/user_timeline.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>int</code> count (optional)</p>
+<p>- <code>int</code> since_id(optional)</p>
+<p>- <code>int</code> max_id (optional)</p>
+<p>- <code>bool</code> trim_user (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<p>- <code>bool</code> include_user_entities (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">tokens</td><td><a class="el" href="classCoreTweet_1_1OAuth.html">OAuth</a> <a class="el" href="classCoreTweet_1_1Tokens.html" title="The OAuth tokens. ">Tokens</a>.</td></tr>
-    <tr><td class="paramname">parameters</td><td>Parameters.</td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The statuses.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the statuses.</p>
 
 </div>
 </div>
@@ -2140,6 +2791,26 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns the most recent tweets authored by the authenticating user that have recently been retweeted by others as an asynchronous operation.</p>
+<p>This timeline is a subset of the user's GET statuses/user_timeline.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>int</code> count (optional)</p>
+<p>- <code>int</code> since_id(optional)</p>
+<p>- <code>int</code> max_id (optional)</p>
+<p>- <code>bool</code> trim_user (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<p>- <code>bool</code> include_user_entities (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the statuses.</p>
+
 </div>
 </div>
 <a class="anchor" id="ad8f8e39954f00fc8f1ba72ae5ee3b57e"></a>
@@ -2174,6 +2845,26 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns the most recent tweets authored by the authenticating user that have recently been retweeted by others as an asynchronous operation.</p>
+<p>This timeline is a subset of the user's GET statuses/user_timeline.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>int</code> count (optional)</p>
+<p>- <code>int</code> since_id(optional)</p>
+<p>- <code>int</code> max_id (optional)</p>
+<p>- <code>bool</code> trim_user (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<p>- <code>bool</code> include_user_entities (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the statuses.</p>
+
 </div>
 </div>
 <a class="anchor" id="a1fb4e91ff93b4cdc05c0a453c80d2fe1"></a>
@@ -2199,18 +2890,19 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Returns a single Tweet, specified by the id parameter. The Tweet's author will also be embedded within the tweet.</p>
-<p>Avaliable parameters: </p>
-<p><em>long id (required)</em>  : The numerical ID of the desired Tweet.</p>
-<p><em>bool trim_user (optional)</em>  : When set to true, each tweet returned in a timeline will include a user object including only the status authors numerical ID. Omit this parameter to receive the complete user object.</p>
-<p><em>bool include_entities (optional)</em>  : The entities node will be disincluded when set to false.</p>
-<dl class="section return"><dt>Returns</dt><dd>The status.</dd></dl>
+<p>Returns a single Tweet, specified by the id parameter.</p>
+<p>The Tweet's author will also be embedded within the tweet.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> id (required)</p>
+<p>- <code>bool</code> trim_user (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The status.</dd></dl>
 
 </div>
 </div>
@@ -2236,6 +2928,21 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns a single Tweet, specified by the id parameter.</p>
+<p>The Tweet's author will also be embedded within the tweet.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> id (required)</p>
+<p>- <code>bool</code> trim_user (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The status.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a2dcf89d6b0b17fb974caaa79aad7edd6"></a>
@@ -2259,6 +2966,21 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Returns a single Tweet, specified by the id parameter.</p>
+<p>The Tweet's author will also be embedded within the tweet.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> id (required)</p>
+<p>- <code>bool</code> trim_user (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The status.</dd></dl>
 
 </div>
 </div>
@@ -2285,18 +3007,20 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Returns a single Tweet, specified by the id parameter. The Tweet's author will also be embedded within the tweet.</p>
-<p>Avaliable parameters: </p>
-<p><em>long id (required)</em>  : The numerical ID of the desired Tweet.</p>
-<p><em>bool trim_user (optional)</em>  : When set to true, each tweet returned in a timeline will include a user object including only the status authors numerical ID. Omit this parameter to receive the complete user object.</p>
-<p><em>bool include_entities (optional)</em>  : The entities node will be disincluded when set to false.</p>
-<dl class="section return"><dt>Returns</dt><dd>The status.</dd></dl>
+<p>Returns a single Tweet, specified by the id parameter as an asynchronous operation.</p>
+<p>The Tweet's author will also be embedded within the tweet.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> id (required)</p>
+<p>- <code>bool</code> trim_user (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the status.</p>
 
 </div>
 </div>
@@ -2332,6 +3056,23 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns a single Tweet, specified by the id parameter as an asynchronous operation.</p>
+<p>The Tweet's author will also be embedded within the tweet.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> id (required)</p>
+<p>- <code>bool</code> trim_user (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the status.</p>
+
 </div>
 </div>
 <a class="anchor" id="aa9d599c02afa30b1f7b905ef458ce73a"></a>
@@ -2366,6 +3107,23 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns a single Tweet, specified by the id parameter as an asynchronous operation.</p>
+<p>The Tweet's author will also be embedded within the tweet.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> id (required)</p>
+<p>- <code>bool</code> trim_user (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the status.</p>
+
 </div>
 </div>
 <a class="anchor" id="aca1d3d8536bbb675fa8bc68f974efdd0"></a>
@@ -2391,24 +3149,28 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Updates the authenticating user's current status, also known as tweeting. To upload an image to accompany the tweet, use POST statuses/update_with_media.</p>
-<p>For each parameters attempt, the parameters text is compared with the authenticating user's recent tweets. Any attempt that would result in duplication will be blocked, resulting in a 403 error. Therefore, a user cannot submit the same status twice in a row.</p>
-<p>While not rate limited by the API a user is limited in the number of tweets they can create at a time. If the number of updates posted by the user reaches the current allowed limit this method will return an HTTP 403 error.</p>
-<p>Avaliable parameters: </p>
-<p><em>string status (required)</em>  : The text of your status parameters, typically up to 140 characters. URL encode as necessary. t.co link wrapping may effect character counts.</p>
-<p><em>long in_reply_to_status_id (optional)</em>  : The ID of an existing status that the parameters is in reply to.</p>
-<p><em>double lat (optional)</em>  : The latitude of the location this tweet refers to. This parameter will be ignored unless it is inside the range -90.0 to +90.0 (North is positive) inclusive. It will also be ignored if there isn't a corresponding long parameter.</p>
-<p><em>double long (optional)</em>  : The longitude of the location this tweet refers to. The valid ranges for longitude is -180.0 to +180.0 (East is positive) inclusive. This parameter will be ignored if outside that range, if it is not a number, if geo_enabled is disabled, or if there not a corresponding lat parameter.</p>
-<p><em>string place_id (optional)</em>  : A place in the world. These IDs can be retrieved from GET geo/reverse_geocode.</p>
-<p><em>bool display_coordinates (optional)</em>  : Whether or not to put a pin on the exact coordinates a tweet has been sent from.</p>
-<p><em>bool trim_user (optional)</em>  : When set to true, each tweet returned in a timeline will include a user object including only the status authors numerical ID. Omit this parameter to receive the complete user object.</p>
-<dl class="section return"><dt>Returns</dt><dd>The updated status.</dd></dl>
+<p>Updates the authenticating user's current status, also known as tweeting.</p>
+<p>To upload an image to accompany the tweet, use POST statuses/update_with_media.</p>
+<p>For each parameters attempt, the parameters text is compared with the authenticating user's recent tweets.</p>
+<p>Any attempt that would result in duplication will be blocked, resulting in a 403 error.</p>
+<p>Therefore, a user cannot submit the same status twice in a row.</p>
+<p>While not rate limited by the API a user is limited in the number of tweets they can create at a time.</p>
+<p>If the number of updates posted by the user reaches the current allowed limit this method will return an HTTP 403 error.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> status (required)</p>
+<p>- <code>long</code> in_reply_to_status_id (optional)</p>
+<p>- <code>double</code> lat (optional)</p>
+<p>- <code>double</code> long (optional)</p>
+<p>- <code>string</code> place_id (optional)</p>
+<p>- <code>bool</code> display_coordinates (optional)</p>
+<p>- <code>bool</code> trim_user (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The updated status.</dd></dl>
 
 </div>
 </div>
@@ -2434,6 +3196,30 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Updates the authenticating user's current status, also known as tweeting.</p>
+<p>To upload an image to accompany the tweet, use POST statuses/update_with_media.</p>
+<p>For each parameters attempt, the parameters text is compared with the authenticating user's recent tweets.</p>
+<p>Any attempt that would result in duplication will be blocked, resulting in a 403 error.</p>
+<p>Therefore, a user cannot submit the same status twice in a row.</p>
+<p>While not rate limited by the API a user is limited in the number of tweets they can create at a time.</p>
+<p>If the number of updates posted by the user reaches the current allowed limit this method will return an HTTP 403 error.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> status (required)</p>
+<p>- <code>long</code> in_reply_to_status_id (optional)</p>
+<p>- <code>double</code> lat (optional)</p>
+<p>- <code>double</code> long (optional)</p>
+<p>- <code>string</code> place_id (optional)</p>
+<p>- <code>bool</code> display_coordinates (optional)</p>
+<p>- <code>bool</code> trim_user (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The updated status.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a020eedc8386e46628fc32eda4c3fae8f"></a>
@@ -2457,6 +3243,30 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Updates the authenticating user's current status, also known as tweeting.</p>
+<p>To upload an image to accompany the tweet, use POST statuses/update_with_media.</p>
+<p>For each parameters attempt, the parameters text is compared with the authenticating user's recent tweets.</p>
+<p>Any attempt that would result in duplication will be blocked, resulting in a 403 error.</p>
+<p>Therefore, a user cannot submit the same status twice in a row.</p>
+<p>While not rate limited by the API a user is limited in the number of tweets they can create at a time.</p>
+<p>If the number of updates posted by the user reaches the current allowed limit this method will return an HTTP 403 error.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> status (required)</p>
+<p>- <code>long</code> in_reply_to_status_id (optional)</p>
+<p>- <code>double</code> lat (optional)</p>
+<p>- <code>double</code> long (optional)</p>
+<p>- <code>string</code> place_id (optional)</p>
+<p>- <code>bool</code> display_coordinates (optional)</p>
+<p>- <code>bool</code> trim_user (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The updated status.</dd></dl>
 
 </div>
 </div>
@@ -2483,24 +3293,29 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Updates the authenticating user's current status, also known as tweeting. To upload an image to accompany the tweet, use POST statuses/update_with_media.</p>
-<p>For each parameters attempt, the parameters text is compared with the authenticating user's recent tweets. Any attempt that would result in duplication will be blocked, resulting in a 403 error. Therefore, a user cannot submit the same status twice in a row.</p>
-<p>While not rate limited by the API a user is limited in the number of tweets they can create at a time. If the number of updates posted by the user reaches the current allowed limit this method will return an HTTP 403 error.</p>
-<p>Avaliable parameters: </p>
-<p><em>string status (required)</em>  : The text of your status parameters, typically up to 140 characters. URL encode as necessary. t.co link wrapping may effect character counts.</p>
-<p><em>long in_reply_to_status_id (optional)</em>  : The ID of an existing status that the parameters is in reply to.</p>
-<p><em>double lat (optional)</em>  : The latitude of the location this tweet refers to. This parameter will be ignored unless it is inside the range -90.0 to +90.0 (North is positive) inclusive. It will also be ignored if there isn't a corresponding long parameter.</p>
-<p><em>double long (optional)</em>  : The longitude of the location this tweet refers to. The valid ranges for longitude is -180.0 to +180.0 (East is positive) inclusive. This parameter will be ignored if outside that range, if it is not a number, if geo_enabled is disabled, or if there not a corresponding lat parameter.</p>
-<p><em>string place_id (optional)</em>  : A place in the world. These IDs can be retrieved from GET geo/reverse_geocode.</p>
-<p><em>bool display_coordinates (optional)</em>  : Whether or not to put a pin on the exact coordinates a tweet has been sent from.</p>
-<p><em>bool trim_user (optional)</em>  : When set to true, each tweet returned in a timeline will include a user object including only the status authors numerical ID. Omit this parameter to receive the complete user object.</p>
-<dl class="section return"><dt>Returns</dt><dd>The updated status.</dd></dl>
+<p>Updates the authenticating user's current status, also known as tweeting as an asynchronous operation.</p>
+<p>To upload an image to accompany the tweet, use POST statuses/update_with_media.</p>
+<p>For each parameters attempt, the parameters text is compared with the authenticating user's recent tweets.</p>
+<p>Any attempt that would result in duplication will be blocked, resulting in a 403 error.</p>
+<p>Therefore, a user cannot submit the same status twice in a row.</p>
+<p>While not rate limited by the API a user is limited in the number of tweets they can create at a time.</p>
+<p>If the number of updates posted by the user reaches the current allowed limit this method will return an HTTP 403 error.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> status (required)</p>
+<p>- <code>long</code> in_reply_to_status_id (optional)</p>
+<p>- <code>double</code> lat (optional)</p>
+<p>- <code>double</code> long (optional)</p>
+<p>- <code>string</code> place_id (optional)</p>
+<p>- <code>bool</code> display_coordinates (optional)</p>
+<p>- <code>bool</code> trim_user (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the updated status.</p>
 
 </div>
 </div>
@@ -2536,6 +3351,32 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Updates the authenticating user's current status, also known as tweeting as an asynchronous operation.</p>
+<p>To upload an image to accompany the tweet, use POST statuses/update_with_media.</p>
+<p>For each parameters attempt, the parameters text is compared with the authenticating user's recent tweets.</p>
+<p>Any attempt that would result in duplication will be blocked, resulting in a 403 error.</p>
+<p>Therefore, a user cannot submit the same status twice in a row.</p>
+<p>While not rate limited by the API a user is limited in the number of tweets they can create at a time.</p>
+<p>If the number of updates posted by the user reaches the current allowed limit this method will return an HTTP 403 error.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> status (required)</p>
+<p>- <code>long</code> in_reply_to_status_id (optional)</p>
+<p>- <code>double</code> lat (optional)</p>
+<p>- <code>double</code> long (optional)</p>
+<p>- <code>string</code> place_id (optional)</p>
+<p>- <code>bool</code> display_coordinates (optional)</p>
+<p>- <code>bool</code> trim_user (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the updated status.</p>
+
 </div>
 </div>
 <a class="anchor" id="ae3990cc7e40d1a7bd7246bc0ed660b02"></a>
@@ -2570,6 +3411,32 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Updates the authenticating user's current status, also known as tweeting as an asynchronous operation.</p>
+<p>To upload an image to accompany the tweet, use POST statuses/update_with_media.</p>
+<p>For each parameters attempt, the parameters text is compared with the authenticating user's recent tweets.</p>
+<p>Any attempt that would result in duplication will be blocked, resulting in a 403 error.</p>
+<p>Therefore, a user cannot submit the same status twice in a row.</p>
+<p>While not rate limited by the API a user is limited in the number of tweets they can create at a time.</p>
+<p>If the number of updates posted by the user reaches the current allowed limit this method will return an HTTP 403 error.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> status (required)</p>
+<p>- <code>long</code> in_reply_to_status_id (optional)</p>
+<p>- <code>double</code> lat (optional)</p>
+<p>- <code>double</code> long (optional)</p>
+<p>- <code>string</code> place_id (optional)</p>
+<p>- <code>bool</code> display_coordinates (optional)</p>
+<p>- <code>bool</code> trim_user (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the updated status.</p>
+
 </div>
 </div>
 <a class="anchor" id="aae319f457cf04b14b4ef12f918111bf3"></a>
@@ -2596,25 +3463,28 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Updates the authenticating user's current status, uploading an image.</p>
-<p>For each parameters attempt, the parameters text is compared with the authenticating user's recent tweets. Any attempt that would result in duplication will be blocked, resulting in a 403 error. Therefore, a user cannot submit the same status twice in a row.</p>
-<p>While not rate limited by the API a user is limited in the number of tweets they can create at a time. If the number of updates posted by the user reaches the current allowed limit this method will return an HTTP 403 error.</p>
-<p>Avaliable parameters: </p>
-<p><em>string status (required)</em>  : The text of your status parameters, typically up to 140 characters. URL encode as necessary. t.co link wrapping may effect character counts.</p>
-<p><em>Stream,IEnumerable&lt;byte&gt;,FileInfo media (required)</em>  : Supported image formats are PNG, JPG and GIF. Animated GIFs are not supported.</p>
-<p><em>bool possibly_sensitive (optional)</em>  : Set to true for content which may not be suitable for every audience.</p>
-<p><em>long in_reply_to_status_id (optional)</em>  : The ID of an existing status that the parameters is in reply to.</p>
-<p><em>double lat (optional)</em>  : The latitude of the location this tweet refers to. This parameter will be ignored unless it is inside the range -90.0 to +90.0 (North is positive) inclusive. It will also be ignored if there isn't a corresponding long parameter.</p>
-<p><em>double long (optional)</em>  : The longitude of the location this tweet refers to. The valid ranges for longitude is -180.0 to +180.0 (East is positive) inclusive. This parameter will be ignored if outside that range, if it is not a number, if geo_enabled is disabled, or if there not a corresponding lat parameter.</p>
-<p><em>string place_id (optional)</em>  : A place in the world. These IDs can be retrieved from GET geo/reverse_geocode.</p>
-<p><em>bool display_coordinates (optional)</em>  : Whether or not to put a pin on the exact coordinates a tweet has been sent from.</p>
-<p><em>bool trim_user (optional)</em>  : When set to true, each tweet returned in a timeline will include a user object including only the status authors numerical ID. Omit this parameter to receive the complete user object.</p>
-<dl class="section return"><dt>Returns</dt><dd>The updated status.</dd></dl>
+<p>For each parameters attempt, the parameters text is compared with the authenticating user's recent tweets.</p>
+<p>Any attempt that would result in duplication will be blocked, resulting in a 403 error.</p>
+<p>Therefore, a user cannot submit the same status twice in a row.</p>
+<p>While not rate limited by the API a user is limited in the number of tweets they can create at a time.</p>
+<p>If the number of updates posted by the user reaches the current allowed limit this method will return an HTTP 403 error.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> status (required)</p>
+<p>- <code>Stream</code> / <code>IEnumerable&lt;byte&gt;</code> / <code>FileInfo</code> media (required)</p>
+<p>- <code>bool</code> possibly_sensitive (optional)</p>
+<p>- <code>long</code> in_reply_to_status_id (optional)</p>
+<p>- <code>double</code> lat (optional)</p>
+<p>- <code>double</code> long (optional)</p>
+<p>- <code>string</code> place_id (optional)</p>
+<p>- <code>bool</code> display_coordinates (optional)</p>
+<p>- <code>bool</code> trim_user (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The updated status.</dd></dl>
 
 </div>
 </div>
@@ -2640,6 +3510,31 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Updates the authenticating user's current status, uploading an image.</p>
+<p>For each parameters attempt, the parameters text is compared with the authenticating user's recent tweets.</p>
+<p>Any attempt that would result in duplication will be blocked, resulting in a 403 error.</p>
+<p>Therefore, a user cannot submit the same status twice in a row.</p>
+<p>While not rate limited by the API a user is limited in the number of tweets they can create at a time.</p>
+<p>If the number of updates posted by the user reaches the current allowed limit this method will return an HTTP 403 error.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> status (required)</p>
+<p>- <code>Stream</code> / <code>IEnumerable&lt;byte&gt;</code> / <code>FileInfo</code> media (required)</p>
+<p>- <code>bool</code> possibly_sensitive (optional)</p>
+<p>- <code>long</code> in_reply_to_status_id (optional)</p>
+<p>- <code>double</code> lat (optional)</p>
+<p>- <code>double</code> long (optional)</p>
+<p>- <code>string</code> place_id (optional)</p>
+<p>- <code>bool</code> display_coordinates (optional)</p>
+<p>- <code>bool</code> trim_user (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The updated status.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="afb1bb1dcc2ec2dbf2981f06c72a01e8c"></a>
@@ -2663,6 +3558,31 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Updates the authenticating user's current status, uploading an image.</p>
+<p>For each parameters attempt, the parameters text is compared with the authenticating user's recent tweets.</p>
+<p>Any attempt that would result in duplication will be blocked, resulting in a 403 error.</p>
+<p>Therefore, a user cannot submit the same status twice in a row.</p>
+<p>While not rate limited by the API a user is limited in the number of tweets they can create at a time.</p>
+<p>If the number of updates posted by the user reaches the current allowed limit this method will return an HTTP 403 error.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> status (required)</p>
+<p>- <code>Stream</code> / <code>IEnumerable&lt;byte&gt;</code> / <code>FileInfo</code> media (required)</p>
+<p>- <code>bool</code> possibly_sensitive (optional)</p>
+<p>- <code>long</code> in_reply_to_status_id (optional)</p>
+<p>- <code>double</code> lat (optional)</p>
+<p>- <code>double</code> long (optional)</p>
+<p>- <code>string</code> place_id (optional)</p>
+<p>- <code>bool</code> display_coordinates (optional)</p>
+<p>- <code>bool</code> trim_user (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The updated status.</dd></dl>
 
 </div>
 </div>
@@ -2689,26 +3609,30 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Updates the authenticating user's current status, uploading an image.</p>
-<p>For each parameters attempt, the parameters text is compared with the authenticating user's recent tweets. Any attempt that would result in duplication will be blocked, resulting in a 403 error. Therefore, a user cannot submit the same status twice in a row.</p>
-<p>While not rate limited by the API a user is limited in the number of tweets they can create at a time. If the number of updates posted by the user reaches the current allowed limit this method will return an HTTP 403 error.</p>
-<p>Avaliable parameters: </p>
-<p><em>string status (required)</em>  : The text of your status parameters, typically up to 140 characters. URL encode as necessary. t.co link wrapping may effect character counts.</p>
-<p><em>Stream,IEnumerable&lt;byte&gt;,FileInfo media (required)</em>  : Supported image formats are PNG, JPG and GIF. Animated GIFs are not supported.</p>
-<p><em>bool possibly_sensitive (optional)</em>  : Set to true for content which may not be suitable for every audience.</p>
-<p><em>long in_reply_to_status_id (optional)</em>  : The ID of an existing status that the parameters is in reply to.</p>
-<p><em>double lat (optional)</em>  : The latitude of the location this tweet refers to. This parameter will be ignored unless it is inside the range -90.0 to +90.0 (North is positive) inclusive. It will also be ignored if there isn't a corresponding long parameter.</p>
-<p><em>double long (optional)</em>  : The longitude of the location this tweet refers to. The valid ranges for longitude is -180.0 to +180.0 (East is positive) inclusive. This parameter will be ignored if outside that range, if it is not a number, if geo_enabled is disabled, or if there not a corresponding lat parameter.</p>
-<p><em>string place_id (optional)</em>  : A place in the world. These IDs can be retrieved from GET geo/reverse_geocode.</p>
-<p><em>bool display_coordinates (optional)</em>  : Whether or not to put a pin on the exact coordinates a tweet has been sent from.</p>
-<p><em>bool trim_user (optional)</em>  : When set to true, each tweet returned in a timeline will include a user object including only the status authors numerical ID. Omit this parameter to receive the complete user object.</p>
-<dl class="section return"><dt>Returns</dt><dd>The updated status.</dd></dl>
+<p>Updates the authenticating user's current status, uploading an image as an asynchronous operation.</p>
+<p>For each parameters attempt, the parameters text is compared with the authenticating user's recent tweets.</p>
+<p>Any attempt that would result in duplication will be blocked, resulting in a 403 error.</p>
+<p>Therefore, a user cannot submit the same status twice in a row.</p>
+<p>While not rate limited by the API a user is limited in the number of tweets they can create at a time.</p>
+<p>If the number of updates posted by the user reaches the current allowed limit this method will return an HTTP 403 error.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> status (required)</p>
+<p>- <code>Stream</code> / <code>IEnumerable&lt;byte&gt;</code> / <code>FileInfo</code> media (required)</p>
+<p>- <code>bool</code> possibly_sensitive (optional)</p>
+<p>- <code>long</code> in_reply_to_status_id (optional)</p>
+<p>- <code>double</code> lat (optional)</p>
+<p>- <code>double</code> long (optional)</p>
+<p>- <code>string</code> place_id (optional)</p>
+<p>- <code>bool</code> display_coordinates (optional)</p>
+<p>- <code>bool</code> trim_user (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the updated status.</p>
 
 </div>
 </div>
@@ -2744,6 +3668,33 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Updates the authenticating user's current status, uploading an image as an asynchronous operation.</p>
+<p>For each parameters attempt, the parameters text is compared with the authenticating user's recent tweets.</p>
+<p>Any attempt that would result in duplication will be blocked, resulting in a 403 error.</p>
+<p>Therefore, a user cannot submit the same status twice in a row.</p>
+<p>While not rate limited by the API a user is limited in the number of tweets they can create at a time.</p>
+<p>If the number of updates posted by the user reaches the current allowed limit this method will return an HTTP 403 error.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> status (required)</p>
+<p>- <code>Stream</code> / <code>IEnumerable&lt;byte&gt;</code> / <code>FileInfo</code> media (required)</p>
+<p>- <code>bool</code> possibly_sensitive (optional)</p>
+<p>- <code>long</code> in_reply_to_status_id (optional)</p>
+<p>- <code>double</code> lat (optional)</p>
+<p>- <code>double</code> long (optional)</p>
+<p>- <code>string</code> place_id (optional)</p>
+<p>- <code>bool</code> display_coordinates (optional)</p>
+<p>- <code>bool</code> trim_user (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the updated status.</p>
+
 </div>
 </div>
 <a class="anchor" id="a626feaccfb36ad8ef678e0abf002c8f0"></a>
@@ -2778,6 +3729,33 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Updates the authenticating user's current status, uploading an image as an asynchronous operation.</p>
+<p>For each parameters attempt, the parameters text is compared with the authenticating user's recent tweets.</p>
+<p>Any attempt that would result in duplication will be blocked, resulting in a 403 error.</p>
+<p>Therefore, a user cannot submit the same status twice in a row.</p>
+<p>While not rate limited by the API a user is limited in the number of tweets they can create at a time.</p>
+<p>If the number of updates posted by the user reaches the current allowed limit this method will return an HTTP 403 error.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> status (required)</p>
+<p>- <code>Stream</code> / <code>IEnumerable&lt;byte&gt;</code> / <code>FileInfo</code> media (required)</p>
+<p>- <code>bool</code> possibly_sensitive (optional)</p>
+<p>- <code>long</code> in_reply_to_status_id (optional)</p>
+<p>- <code>double</code> lat (optional)</p>
+<p>- <code>double</code> long (optional)</p>
+<p>- <code>string</code> place_id (optional)</p>
+<p>- <code>bool</code> display_coordinates (optional)</p>
+<p>- <code>bool</code> trim_user (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the updated status.</p>
+
 </div>
 </div>
 <a class="anchor" id="a990cac5c4079ad919bf819b423534af4"></a>
@@ -2803,21 +3781,24 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Returns a collection of the most recent Tweets posted by the user indicated by the screen_name or user_id parameters. <a class="el" href="classCoreTweet_1_1User.html" title="A user. ">User</a> timelines belonging to protected users may only be requested when the authenticated user either "owns" the timeline or is an approved follower of the owner. The timeline returned is the equivalent of the one seen when you view a user's profile on twitter.com. This method can only return up to 3,200 of a user's most recent Tweets. Native retweets of other statuses by the user is included in this total, regardless of whether include_rts is set to false when requesting this resource.</p>
+<p>Returns a collection of the most recent Tweets posted by the user indicated by the screen_name or user_id parameters.</p>
+<p><a class="el" href="classCoreTweet_1_1User.html" title="Represents a user. ">User</a> timelines belonging to protected users may only be requested when the authenticated user either "owns" the timeline or is an approved follower of the owner.</p>
+<p>The timeline returned is the equivalent of the one seen when you view a user's profile on twitter.com.</p>
+<p>This method can only return up to 3,200 of a user's most recent Tweets.</p>
+<p>Native retweets of other statuses by the user is included in this total, regardless of whether include_rts is set to false when requesting this resource.</p>
 <p>Avaliable parameters: </p>
-<p><em>int user_id (optional)</em>  : The ID of the user for whom to return results for.</p>
-<p><em>string screen_name (optional)</em>  : The screen name of the user for whom to return results for.</p>
-<p><em>int count (optional)</em>  : Specifies the number of tweets to try and retrieve, up to a maximum of 200. The value of count is best thought of as a limit to the number of tweets to return because suspended or deleted content is removed after the count has been applied. We include retweets in the count, even if include_rts is not supplied. It is recommended you always send include_rts=1 when using this API method.</p>
-<p><em>int since_id(optional)</em>  : Returns results with an ID greater than (that is, more recent than) the specified ID. There are limits to the number of Tweets which can be accessed through the API. If the limit of Tweets has occured since the since_id, the since_id will be forced to the oldest ID available.</p>
-<p><em>int max_id (optional)</em>  : Returns results with an ID less than (that is, older than) or equal to the specified ID.</p>
-<p><em>bool trim_user (optional)</em>  : When set to true, t or 1, each tweet returned in a timeline will include a user object including only the status authors numerical ID. Omit this parameter to receive the complete user object.</p>
-<p><em>bool contributor_details (optional)</em>  : This parameter enhances the contributors element of the status response to include the screen_name of the contributor. By default only the user_id of the contributor is included.</p>
-<p><em>bool include_rts (optional)</em>  : When set to false, the timeline will strip any native retweets (though they will still count toward both the maximal length of the timeline and the slice selected by the count parameter). Note: If you're using the trim_user parameter in conjunction with include_rts, the retweets will still contain a full user object.</p>
-<p><em>bool exclude_replies (optional)</em>  : This parameter will prevent replies from appearing in the returned timeline. Using exclude_replies with the count parameter will mean you will receive up-to count tweets — this is because the count parameter retrieves that many tweets before filtering out retweets and replies. This parameter is only supported for JSON and XML responses.</p>
+<p>- <code>int</code> user_id (optional)</p>
+<p>- <code>string</code> screen_name (optional)</p>
+<p>- <code>int</code> count (optional)</p>
+<p>- <code>int</code> since_id(optional)</p>
+<p>- <code>int</code> max_id (optional)</p>
+<p>- <code>bool</code> trim_user (optional)</p>
+<p>- <code>bool</code> contributor_details (optional)</p>
+<p>- <code>bool</code> include_rts (optional)</p>
+<p>- <code>bool</code> exclude_replies (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">tokens</td><td><a class="el" href="classCoreTweet_1_1OAuth.html">OAuth</a> <a class="el" href="classCoreTweet_1_1Tokens.html" title="The OAuth tokens. ">Tokens</a>.</td></tr>
-    <tr><td class="paramname">parameters</td><td>Parameters.</td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2847,6 +3828,30 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns a collection of the most recent Tweets posted by the user indicated by the screen_name or user_id parameters.</p>
+<p><a class="el" href="classCoreTweet_1_1User.html" title="Represents a user. ">User</a> timelines belonging to protected users may only be requested when the authenticated user either "owns" the timeline or is an approved follower of the owner.</p>
+<p>The timeline returned is the equivalent of the one seen when you view a user's profile on twitter.com.</p>
+<p>This method can only return up to 3,200 of a user's most recent Tweets.</p>
+<p>Native retweets of other statuses by the user is included in this total, regardless of whether include_rts is set to false when requesting this resource.</p>
+<p>Avaliable parameters: </p>
+<p>- <code>int</code> user_id (optional)</p>
+<p>- <code>string</code> screen_name (optional)</p>
+<p>- <code>int</code> count (optional)</p>
+<p>- <code>int</code> since_id(optional)</p>
+<p>- <code>int</code> max_id (optional)</p>
+<p>- <code>bool</code> trim_user (optional)</p>
+<p>- <code>bool</code> contributor_details (optional)</p>
+<p>- <code>bool</code> include_rts (optional)</p>
+<p>- <code>bool</code> exclude_replies (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The statuses.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a8df48759cfddf655140a62ace0a2d804"></a>
@@ -2870,6 +3875,30 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Returns a collection of the most recent Tweets posted by the user indicated by the screen_name or user_id parameters.</p>
+<p><a class="el" href="classCoreTweet_1_1User.html" title="Represents a user. ">User</a> timelines belonging to protected users may only be requested when the authenticated user either "owns" the timeline or is an approved follower of the owner.</p>
+<p>The timeline returned is the equivalent of the one seen when you view a user's profile on twitter.com.</p>
+<p>This method can only return up to 3,200 of a user's most recent Tweets.</p>
+<p>Native retweets of other statuses by the user is included in this total, regardless of whether include_rts is set to false when requesting this resource.</p>
+<p>Avaliable parameters: </p>
+<p>- <code>int</code> user_id (optional)</p>
+<p>- <code>string</code> screen_name (optional)</p>
+<p>- <code>int</code> count (optional)</p>
+<p>- <code>int</code> since_id(optional)</p>
+<p>- <code>int</code> max_id (optional)</p>
+<p>- <code>bool</code> trim_user (optional)</p>
+<p>- <code>bool</code> contributor_details (optional)</p>
+<p>- <code>bool</code> include_rts (optional)</p>
+<p>- <code>bool</code> exclude_replies (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The statuses.</dd></dl>
 
 </div>
 </div>
@@ -2896,25 +3925,29 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Returns a collection of the most recent Tweets posted by the user indicated by the screen_name or user_id parameters. <a class="el" href="classCoreTweet_1_1User.html" title="A user. ">User</a> timelines belonging to protected users may only be requested when the authenticated user either "owns" the timeline or is an approved follower of the owner. The timeline returned is the equivalent of the one seen when you view a user's profile on twitter.com. This method can only return up to 3,200 of a user's most recent Tweets. Native retweets of other statuses by the user is included in this total, regardless of whether include_rts is set to false when requesting this resource.</p>
+<p>Returns a collection of the most recent Tweets posted by the user indicated by the screen_name or user_id parameters as an asynchronous operation.</p>
+<p><a class="el" href="classCoreTweet_1_1User.html" title="Represents a user. ">User</a> timelines belonging to protected users may only be requested when the authenticated user either "owns" the timeline or is an approved follower of the owner.</p>
+<p>The timeline returned is the equivalent of the one seen when you view a user's profile on twitter.com.</p>
+<p>This method can only return up to 3,200 of a user's most recent Tweets.</p>
+<p>Native retweets of other statuses by the user is included in this total, regardless of whether include_rts is set to false when requesting this resource.</p>
 <p>Avaliable parameters: </p>
-<p><em>int user_id (optional)</em>  : The ID of the user for whom to return results for.</p>
-<p><em>string screen_name (optional)</em>  : The screen name of the user for whom to return results for.</p>
-<p><em>int count (optional)</em>  : Specifies the number of tweets to try and retrieve, up to a maximum of 200. The value of count is best thought of as a limit to the number of tweets to return because suspended or deleted content is removed after the count has been applied. We include retweets in the count, even if include_rts is not supplied. It is recommended you always send include_rts=1 when using this API method.</p>
-<p><em>int since_id(optional)</em>  : Returns results with an ID greater than (that is, more recent than) the specified ID. There are limits to the number of Tweets which can be accessed through the API. If the limit of Tweets has occured since the since_id, the since_id will be forced to the oldest ID available.</p>
-<p><em>int max_id (optional)</em>  : Returns results with an ID less than (that is, older than) or equal to the specified ID.</p>
-<p><em>bool trim_user (optional)</em>  : When set to true, t or 1, each tweet returned in a timeline will include a user object including only the status authors numerical ID. Omit this parameter to receive the complete user object.</p>
-<p><em>bool contributor_details (optional)</em>  : This parameter enhances the contributors element of the status response to include the screen_name of the contributor. By default only the user_id of the contributor is included.</p>
-<p><em>bool include_rts (optional)</em>  : When set to false, the timeline will strip any native retweets (though they will still count toward both the maximal length of the timeline and the slice selected by the count parameter). Note: If you're using the trim_user parameter in conjunction with include_rts, the retweets will still contain a full user object.</p>
-<p><em>bool exclude_replies (optional)</em>  : This parameter will prevent replies from appearing in the returned timeline. Using exclude_replies with the count parameter will mean you will receive up-to count tweets — this is because the count parameter retrieves that many tweets before filtering out retweets and replies. This parameter is only supported for JSON and XML responses.</p>
+<p>- <code>int</code> user_id (optional)</p>
+<p>- <code>string</code> screen_name (optional)</p>
+<p>- <code>int</code> count (optional)</p>
+<p>- <code>int</code> since_id(optional)</p>
+<p>- <code>int</code> max_id (optional)</p>
+<p>- <code>bool</code> trim_user (optional)</p>
+<p>- <code>bool</code> contributor_details (optional)</p>
+<p>- <code>bool</code> include_rts (optional)</p>
+<p>- <code>bool</code> exclude_replies (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">tokens</td><td><a class="el" href="classCoreTweet_1_1OAuth.html">OAuth</a> <a class="el" href="classCoreTweet_1_1Tokens.html" title="The OAuth tokens. ">Tokens</a>.</td></tr>
-    <tr><td class="paramname">parameters</td><td>Parameters.</td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The statuses.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the statuses.</p>
 
 </div>
 </div>
@@ -2950,6 +3983,32 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns a collection of the most recent Tweets posted by the user indicated by the screen_name or user_id parameters as an asynchronous operation.</p>
+<p><a class="el" href="classCoreTweet_1_1User.html" title="Represents a user. ">User</a> timelines belonging to protected users may only be requested when the authenticated user either "owns" the timeline or is an approved follower of the owner.</p>
+<p>The timeline returned is the equivalent of the one seen when you view a user's profile on twitter.com.</p>
+<p>This method can only return up to 3,200 of a user's most recent Tweets.</p>
+<p>Native retweets of other statuses by the user is included in this total, regardless of whether include_rts is set to false when requesting this resource.</p>
+<p>Avaliable parameters: </p>
+<p>- <code>int</code> user_id (optional)</p>
+<p>- <code>string</code> screen_name (optional)</p>
+<p>- <code>int</code> count (optional)</p>
+<p>- <code>int</code> since_id(optional)</p>
+<p>- <code>int</code> max_id (optional)</p>
+<p>- <code>bool</code> trim_user (optional)</p>
+<p>- <code>bool</code> contributor_details (optional)</p>
+<p>- <code>bool</code> include_rts (optional)</p>
+<p>- <code>bool</code> exclude_replies (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the statuses.</p>
+
 </div>
 </div>
 <a class="anchor" id="ada21611d1f0ef1e60135978632014fc9"></a>
@@ -2984,6 +4043,32 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns a collection of the most recent Tweets posted by the user indicated by the screen_name or user_id parameters as an asynchronous operation.</p>
+<p><a class="el" href="classCoreTweet_1_1User.html" title="Represents a user. ">User</a> timelines belonging to protected users may only be requested when the authenticated user either "owns" the timeline or is an approved follower of the owner.</p>
+<p>The timeline returned is the equivalent of the one seen when you view a user's profile on twitter.com.</p>
+<p>This method can only return up to 3,200 of a user's most recent Tweets.</p>
+<p>Native retweets of other statuses by the user is included in this total, regardless of whether include_rts is set to false when requesting this resource.</p>
+<p>Avaliable parameters: </p>
+<p>- <code>int</code> user_id (optional)</p>
+<p>- <code>string</code> screen_name (optional)</p>
+<p>- <code>int</code> count (optional)</p>
+<p>- <code>int</code> since_id(optional)</p>
+<p>- <code>int</code> max_id (optional)</p>
+<p>- <code>bool</code> trim_user (optional)</p>
+<p>- <code>bool</code> contributor_details (optional)</p>
+<p>- <code>bool</code> include_rts (optional)</p>
+<p>- <code>bool</code> exclude_replies (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the statuses.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
@@ -2993,7 +4078,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat May 31 2014 23:10:00 for CoreTweet by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 20 2014 00:31:20 for CoreTweet by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

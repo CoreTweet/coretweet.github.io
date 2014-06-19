@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="core-48x48.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">CoreTweet
-   &#160;<span id="projectnumber">0.3.3</span>
+   &#160;<span id="projectnumber">0.3.4</span>
    </div>
    <div id="projectbrief">Yet another .NET Twitter Library</div>
   </td>
@@ -97,7 +97,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>GET/POST users 
+<p>Provides a set of methods for the wrapper of GET/POST users.  
  <a href="classCoreTweet_1_1Rest_1_1Users.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for CoreTweet.Rest.Users:</div>
@@ -105,7 +105,7 @@ Inheritance diagram for CoreTweet.Rest.Users:</div>
  <div class="center">
   <img src="classCoreTweet_1_1Rest_1_1Users.png" usemap="#CoreTweet.Rest.Users_map" alt=""/>
   <map id="CoreTweet.Rest.Users_map" name="CoreTweet.Rest.Users_map">
-<area href="classCoreTweet_1_1Core_1_1ApiProviderBase.html" title="Base class of API providers. " alt="CoreTweet.Core.ApiProviderBase" shape="rect" coords="0,0,205,24"/>
+<area href="classCoreTweet_1_1Core_1_1ApiProviderBase.html" title="Provides a Twitter API wrapper. This is an abstract class. " alt="CoreTweet.Core.ApiProviderBase" shape="rect" coords="0,0,205,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -240,7 +240,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a8f9003e34c6f19f561b10b1f14098ec1 inherit properties_classCoreTweet_1_1Core_1_1ApiProviderBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>GET/POST users</p>
+<div class="textblock"><p>Provides a set of methods for the wrapper of GET/POST users. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a44b79d168fc9dcb70743c64e69f2717b"></a>
 <div class="memitem">
@@ -267,18 +267,18 @@ Additional Inherited Members</h2></td></tr>
 <p></p>
 <p>Returns a collection of users that the specified user can "contribute" to.</p>
 <p>Note: A user_id or screen_name is required.</p>
-<p>Avaliable parameters: </p>
-<p><em>long user_id (optional)</em>  : The ID of the user for whom to return results for. Helpful for disambiguating when a valid user ID is also a valid screen name.</p>
-<p><em>string screen_name (optional)</em>  : The screen name of the user for whom to return results for.</p>
-<p><em>bool include_entities (optional)</em>  : The entities node will be disincluded when set to false.</p>
-<p><em>bool skip_status (optional)</em>  : When set to either true, t or 1 statuses will not be included in the returned user objects.</p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classCoreTweet_1_1Rest_1_1Users.html" title="GET/POST users">Users</a>.</dd></dl>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> user_id (optional)</p>
+<p>- <code>string</code> screen_name (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<p>- <code>bool</code> skip_status (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The users.</dd></dl>
 
 </div>
 </div>
@@ -304,6 +304,22 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns a collection of users that the specified user can "contribute" to.</p>
+<p>Note: A user_id or screen_name is required.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> user_id (optional)</p>
+<p>- <code>string</code> screen_name (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<p>- <code>bool</code> skip_status (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The users.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="affb74fb8c46da5b186647e20eff78111"></a>
@@ -327,6 +343,22 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Returns a collection of users that the specified user can "contribute" to.</p>
+<p>Note: A user_id or screen_name is required.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> user_id (optional)</p>
+<p>- <code>string</code> screen_name (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<p>- <code>bool</code> skip_status (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The users.</dd></dl>
 
 </div>
 </div>
@@ -353,20 +385,21 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Returns a collection of users that the specified user can "contribute" to.</p>
+<p>Returns a collection of users that the specified user can "contribute" to as an asynchronous operation.</p>
 <p>Note: A user_id or screen_name is required.</p>
-<p>Avaliable parameters: </p>
-<p><em>long user_id (optional)</em>  : The ID of the user for whom to return results for. Helpful for disambiguating when a valid user ID is also a valid screen name.</p>
-<p><em>string screen_name (optional)</em>  : The screen name of the user for whom to return results for.</p>
-<p><em>bool include_entities (optional)</em>  : The entities node will be disincluded when set to false.</p>
-<p><em>bool skip_status (optional)</em>  : When set to either true, t or 1 statuses will not be included in the returned user objects.</p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classCoreTweet_1_1Rest_1_1Users.html" title="GET/POST users">Users</a>.</dd></dl>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> user_id (optional)</p>
+<p>- <code>string</code> screen_name (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<p>- <code>bool</code> skip_status (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the users.</p>
 
 </div>
 </div>
@@ -402,6 +435,24 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns a collection of users that the specified user can "contribute" to as an asynchronous operation.</p>
+<p>Note: A user_id or screen_name is required.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> user_id (optional)</p>
+<p>- <code>string</code> screen_name (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<p>- <code>bool</code> skip_status (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the users.</p>
+
 </div>
 </div>
 <a class="anchor" id="a0534180db2d54efa6ff533fba01b2baa"></a>
@@ -436,6 +487,24 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns a collection of users that the specified user can "contribute" to as an asynchronous operation.</p>
+<p>Note: A user_id or screen_name is required.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> user_id (optional)</p>
+<p>- <code>string</code> screen_name (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<p>- <code>bool</code> skip_status (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the users.</p>
+
 </div>
 </div>
 <a class="anchor" id="a9a848d78b56dc9db3c4f10879f46dcf7"></a>
@@ -463,18 +532,18 @@ Additional Inherited Members</h2></td></tr>
 <p></p>
 <p>Returns a collection of users who can contribute to the specified account.</p>
 <p>Note: A user_id or screen_name is required.</p>
-<p>Avaliable parameters: </p>
-<p><em>long user_id (optional)</em>  : The ID of the user for whom to return results for.</p>
-<p><em>string screen_name (optional)</em>  : The screen name of the user for whom to return results for.</p>
-<p><em>bool include_entities (optional)</em>  : The entities node will be disincluded when set to false.</p>
-<p><em>bool skip_status (optional)</em>  : When set to either true, t or 1 statuses will not be included in the returned user objects.</p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classCoreTweet_1_1Rest_1_1Users.html" title="GET/POST users">Users</a>.</dd></dl>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> user_id (optional)</p>
+<p>- <code>string</code> screen_name (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<p>- <code>bool</code> skip_status (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The users.</dd></dl>
 
 </div>
 </div>
@@ -500,6 +569,22 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns a collection of users who can contribute to the specified account.</p>
+<p>Note: A user_id or screen_name is required.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> user_id (optional)</p>
+<p>- <code>string</code> screen_name (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<p>- <code>bool</code> skip_status (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The users.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="acbcf8bcbc9f02d3d5874d5934875922a"></a>
@@ -523,6 +608,22 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Returns a collection of users who can contribute to the specified account.</p>
+<p>Note: A user_id or screen_name is required.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> user_id (optional)</p>
+<p>- <code>string</code> screen_name (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<p>- <code>bool</code> skip_status (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The users.</dd></dl>
 
 </div>
 </div>
@@ -549,20 +650,21 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Returns a collection of users who can contribute to the specified account.</p>
+<p>Returns a collection of users who can contribute to the specified account as an asynchronous operation.</p>
 <p>Note: A user_id or screen_name is required.</p>
-<p>Avaliable parameters: </p>
-<p><em>long user_id (optional)</em>  : The ID of the user for whom to return results for.</p>
-<p><em>string screen_name (optional)</em>  : The screen name of the user for whom to return results for.</p>
-<p><em>bool include_entities (optional)</em>  : The entities node will be disincluded when set to false.</p>
-<p><em>bool skip_status (optional)</em>  : When set to either true, t or 1 statuses will not be included in the returned user objects.</p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classCoreTweet_1_1Rest_1_1Users.html" title="GET/POST users">Users</a>.</dd></dl>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> user_id (optional)</p>
+<p>- <code>string</code> screen_name (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<p>- <code>bool</code> skip_status (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the users.</p>
 
 </div>
 </div>
@@ -598,6 +700,24 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns a collection of users who can contribute to the specified account as an asynchronous operation.</p>
+<p>Note: A user_id or screen_name is required.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> user_id (optional)</p>
+<p>- <code>string</code> screen_name (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<p>- <code>bool</code> skip_status (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the users.</p>
+
 </div>
 </div>
 <a class="anchor" id="a830448a06d0ad6c9aa0c3a8a7d96160a"></a>
@@ -632,6 +752,24 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns a collection of users who can contribute to the specified account as an asynchronous operation.</p>
+<p>Note: A user_id or screen_name is required.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> user_id (optional)</p>
+<p>- <code>string</code> screen_name (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<p>- <code>bool</code> skip_status (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the users.</p>
+
 </div>
 </div>
 <a class="anchor" id="a584bea6c2b8df7f14dc5dd957c061c1d"></a>
@@ -660,17 +798,17 @@ Additional Inherited Members</h2></td></tr>
 <p>Returns fully-hydrated user objects for up to 100 users per request, as specified by comma-separated values passed to the user_id and/or screen_name parameters.</p>
 <p>This method is especially useful when used in conjunction with collections of user IDs returned from GET friends/ids and GET followers/ids.</p>
 <p>GET users/show is used to retrieve a single user object.</p>
-<p>Avaliable parameters: </p>
-<p><em>string, IEnumerable&lt;long&gt; user_id (optional)</em>  : A list of user IDs or comma separated string of ones, up to 100 are allowed in a single request. You are strongly encouraged to use a POST for larger requests.</p>
-<p><em>string, IEnumerable&lt;string&gt; screen_name (optional)</em>  : A list of screen names or comma separated string of ones, up to 100 are allowed in a single request. You are strongly encouraged to use a POST for larger (up to 100 screen names) requests.</p>
-<p><em>bool include_entities (optional)</em>  : The entities node that may appear within embedded statuses will be disincluded when set to false.</p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classCoreTweet_1_1Rest_1_1Users.html" title="GET/POST users">Users</a>.</dd></dl>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> / <code>IEnumerable&lt;long&gt;</code> user_id (optional)</p>
+<p>- <code>string</code> / <code>IEnumerable&lt;string&gt;</code> screen_name (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The users.</dd></dl>
 
 </div>
 </div>
@@ -696,6 +834,22 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns fully-hydrated user objects for up to 100 users per request, as specified by comma-separated values passed to the user_id and/or screen_name parameters.</p>
+<p>This method is especially useful when used in conjunction with collections of user IDs returned from GET friends/ids and GET followers/ids.</p>
+<p>GET users/show is used to retrieve a single user object.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> / <code>IEnumerable&lt;long&gt;</code> user_id (optional)</p>
+<p>- <code>string</code> / <code>IEnumerable&lt;string&gt;</code> screen_name (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The users.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a91e0444c98bda3c0790585ace79776f6"></a>
@@ -719,6 +873,22 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Returns fully-hydrated user objects for up to 100 users per request, as specified by comma-separated values passed to the user_id and/or screen_name parameters.</p>
+<p>This method is especially useful when used in conjunction with collections of user IDs returned from GET friends/ids and GET followers/ids.</p>
+<p>GET users/show is used to retrieve a single user object.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> / <code>IEnumerable&lt;long&gt;</code> user_id (optional)</p>
+<p>- <code>string</code> / <code>IEnumerable&lt;string&gt;</code> screen_name (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The users.</dd></dl>
 
 </div>
 </div>
@@ -745,20 +915,21 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Returns fully-hydrated user objects for up to 100 users per request, as specified by comma-separated values passed to the user_id and/or screen_name parameters.</p>
+<p>Returns fully-hydrated user objects for up to 100 users per request, as specified by comma-separated values passed to the user_id and/or screen_name parameters as an asynchronous operation.</p>
 <p>This method is especially useful when used in conjunction with collections of user IDs returned from GET friends/ids and GET followers/ids.</p>
 <p>GET users/show is used to retrieve a single user object.</p>
-<p>Avaliable parameters: </p>
-<p><em>string, IEnumerable&lt;long&gt; user_id (optional)</em>  : A list of user IDs or comma separated string of ones, up to 100 are allowed in a single request. You are strongly encouraged to use a POST for larger requests.</p>
-<p><em>string, IEnumerable&lt;string&gt; screen_name (optional)</em>  : A list of screen names or comma separated string of ones, up to 100 are allowed in a single request. You are strongly encouraged to use a POST for larger (up to 100 screen names) requests.</p>
-<p><em>bool include_entities (optional)</em>  : The entities node that may appear within embedded statuses will be disincluded when set to false.</p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classCoreTweet_1_1Rest_1_1Users.html" title="GET/POST users">Users</a>.</dd></dl>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> / <code>IEnumerable&lt;long&gt;</code> user_id (optional)</p>
+<p>- <code>string</code> / <code>IEnumerable&lt;string&gt;</code> screen_name (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the users.</p>
 
 </div>
 </div>
@@ -794,6 +965,24 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns fully-hydrated user objects for up to 100 users per request, as specified by comma-separated values passed to the user_id and/or screen_name parameters as an asynchronous operation.</p>
+<p>This method is especially useful when used in conjunction with collections of user IDs returned from GET friends/ids and GET followers/ids.</p>
+<p>GET users/show is used to retrieve a single user object.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> / <code>IEnumerable&lt;long&gt;</code> user_id (optional)</p>
+<p>- <code>string</code> / <code>IEnumerable&lt;string&gt;</code> screen_name (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the users.</p>
+
 </div>
 </div>
 <a class="anchor" id="a2f622a60f924dc03474c468788986184"></a>
@@ -828,6 +1017,24 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns fully-hydrated user objects for up to 100 users per request, as specified by comma-separated values passed to the user_id and/or screen_name parameters as an asynchronous operation.</p>
+<p>This method is especially useful when used in conjunction with collections of user IDs returned from GET friends/ids and GET followers/ids.</p>
+<p>GET users/show is used to retrieve a single user object.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> / <code>IEnumerable&lt;long&gt;</code> user_id (optional)</p>
+<p>- <code>string</code> / <code>IEnumerable&lt;string&gt;</code> screen_name (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the users.</p>
+
 </div>
 </div>
 <a class="anchor" id="a4fcaa9f699c506a1837b4de8323c9ada"></a>
@@ -853,18 +1060,20 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Returns the size of the specified user's profile banner. If the user has not uploaded a profile banner, a HTTP 404 will be served instead. This method can be used instead of string manipulation on the profile_banner_url returned in user objects as described in <a class="el" href="classCoreTweet_1_1User.html" title="A user. ">User</a> Profile Images and Banners.</p>
+<p>Returns the size of the specified user's profile banner.</p>
+<p>If the user has not uploaded a profile banner, a HTTP 404 will be served instead.</p>
+<p>This method can be used instead of string manipulation on the profile_banner_url returned in user objects as described in <a class="el" href="classCoreTweet_1_1User.html" title="Represents a user. ">User</a> Profile Images and Banners.</p>
 <p>Note: Always specify either an user_id or screen_name when requesting this method.</p>
-<p>Avaliable parameters: </p>
-<p><em>long id (optional)</em>  : The ID of the user for whom to return results for. Helpful for disambiguating when a valid user ID is also a valid screen name.</p>
-<p><em>string screen_name (optional)</em>  : The screen name of the user for whom to return results for. Helpful for disambiguating when a valid screen name is also a user ID.</p>
-<dl class="section return"><dt>Returns</dt><dd>The size.</dd></dl>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> id (optional)</p>
+<p>- <code>string</code> screen_name (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The sizes.</dd></dl>
 
 </div>
 </div>
@@ -890,6 +1099,22 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns the size of the specified user's profile banner.</p>
+<p>If the user has not uploaded a profile banner, a HTTP 404 will be served instead.</p>
+<p>This method can be used instead of string manipulation on the profile_banner_url returned in user objects as described in <a class="el" href="classCoreTweet_1_1User.html" title="Represents a user. ">User</a> Profile Images and Banners.</p>
+<p>Note: Always specify either an user_id or screen_name when requesting this method.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> id (optional)</p>
+<p>- <code>string</code> screen_name (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The sizes.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a8a199bc1037e891eb4df2392f4706cac"></a>
@@ -913,6 +1138,22 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Returns the size of the specified user's profile banner.</p>
+<p>If the user has not uploaded a profile banner, a HTTP 404 will be served instead.</p>
+<p>This method can be used instead of string manipulation on the profile_banner_url returned in user objects as described in <a class="el" href="classCoreTweet_1_1User.html" title="Represents a user. ">User</a> Profile Images and Banners.</p>
+<p>Note: Always specify either an user_id or screen_name when requesting this method.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> id (optional)</p>
+<p>- <code>string</code> screen_name (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The sizes.</dd></dl>
 
 </div>
 </div>
@@ -939,18 +1180,21 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Returns the size of the specified user's profile banner. If the user has not uploaded a profile banner, a HTTP 404 will be served instead. This method can be used instead of string manipulation on the profile_banner_url returned in user objects as described in <a class="el" href="classCoreTweet_1_1User.html" title="A user. ">User</a> Profile Images and Banners.</p>
+<p>Returns the size of the specified user's profile banner as an asynchronous operation.</p>
+<p>If the user has not uploaded a profile banner, a HTTP 404 will be served instead.</p>
+<p>This method can be used instead of string manipulation on the profile_banner_url returned in user objects as described in <a class="el" href="classCoreTweet_1_1User.html" title="Represents a user. ">User</a> Profile Images and Banners.</p>
 <p>Note: Always specify either an user_id or screen_name when requesting this method.</p>
-<p>Avaliable parameters: </p>
-<p><em>long id (optional)</em>  : The ID of the user for whom to return results for. Helpful for disambiguating when a valid user ID is also a valid screen name.</p>
-<p><em>string screen_name (optional)</em>  : The screen name of the user for whom to return results for. Helpful for disambiguating when a valid screen name is also a user ID.</p>
-<dl class="section return"><dt>Returns</dt><dd>The size.</dd></dl>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> id (optional)</p>
+<p>- <code>string</code> screen_name (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the sizes.</p>
 
 </div>
 </div>
@@ -986,6 +1230,24 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns the size of the specified user's profile banner as an asynchronous operation.</p>
+<p>If the user has not uploaded a profile banner, a HTTP 404 will be served instead.</p>
+<p>This method can be used instead of string manipulation on the profile_banner_url returned in user objects as described in <a class="el" href="classCoreTweet_1_1User.html" title="Represents a user. ">User</a> Profile Images and Banners.</p>
+<p>Note: Always specify either an user_id or screen_name when requesting this method.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> id (optional)</p>
+<p>- <code>string</code> screen_name (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the sizes.</p>
+
 </div>
 </div>
 <a class="anchor" id="acedbb663488e35fb6f188d779897c0ba"></a>
@@ -1020,6 +1282,24 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns the size of the specified user's profile banner as an asynchronous operation.</p>
+<p>If the user has not uploaded a profile banner, a HTTP 404 will be served instead.</p>
+<p>This method can be used instead of string manipulation on the profile_banner_url returned in user objects as described in <a class="el" href="classCoreTweet_1_1User.html" title="Represents a user. ">User</a> Profile Images and Banners.</p>
+<p>Note: Always specify either an user_id or screen_name when requesting this method.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> id (optional)</p>
+<p>- <code>string</code> screen_name (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the sizes.</p>
+
 </div>
 </div>
 <a class="anchor" id="a3ba408e7753a1709864f08db9f6c8262"></a>
@@ -1045,18 +1325,19 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Report the specified user as a spam account to Twitter. Additionally performs the equivalent of POST blocks/create on behalf of the authenticated user.</p>
+<p>Report the specified user as a spam account to Twitter.</p>
+<p>Additionally performs the equivalent of POST blocks/create on behalf of the authenticated user.</p>
 <p>Note: One of these parameters must be provided.</p>
-<p>Avaliable parameters: </p>
-<p><em>string screen_name (optional)</em>  : The ID or screen_name of the user you want to report as a spammer. Helpful for disambiguating when a valid screen name is also a user ID.</p>
-<p><em>long user_id (optional)</em>  : The ID of the user you want to report as a spammer. Helpful for disambiguating when a valid user ID is also a valid screen name.</p>
-<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="classCoreTweet_1_1User.html" title="A user. ">User</a>.</dd></dl>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> screen_name (optional)</p>
+<p>- <code>long</code> user_id (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The user.</dd></dl>
 
 </div>
 </div>
@@ -1081,6 +1362,60 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Report the specified user as a spam account to Twitter.</p>
+<p>Additionally performs the equivalent of POST blocks/create on behalf of the authenticated user.</p>
+<p>Note: One of these parameters must be provided.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> screen_name (optional)</p>
+<p>- <code>long</code> user_id (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The user.</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aea4db2523b104b1c81be0920b0d6c221"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classCoreTweet_1_1User.html">User</a> <a class="el" href="classCoreTweet_1_1Rest_1_1Users.html#a3ba408e7753a1709864f08db9f6c8262">CoreTweet.Rest.Users.ReportSpam</a>&lt; T &gt; </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>parameters</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p></p>
+<p>Report the specified user as a spam account to Twitter.</p>
+<p>Additionally performs the equivalent of POST blocks/create on behalf of the authenticated user.</p>
+<p>Note: One of these parameters must be provided.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> screen_name (optional)</p>
+<p>- <code>long</code> user_id (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The user.</dd></dl>
 
 </div>
 </div>
@@ -1116,29 +1451,22 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a class="anchor" id="aea4db2523b104b1c81be0920b0d6c221"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classCoreTweet_1_1User.html">User</a> <a class="el" href="classCoreTweet_1_1Rest_1_1Users.html#a3ba408e7753a1709864f08db9f6c8262">CoreTweet.Rest.Users.ReportSpam</a>&lt; T &gt; </td>
-          <td>(</td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>parameters</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
+<p></p>
+<p>Report the specified user as a spam account to Twitter.</p>
+<p>Additionally performs the equivalent of POST blocks/create on behalf of the authenticated user.</p>
+<p>Note: One of these parameters must be provided.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> screen_name (optional)</p>
+<p>- <code>long</code> user_id (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the user.</p>
 
 </div>
 </div>
@@ -1165,18 +1493,20 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Report the specified user as a spam account to Twitter. Additionally performs the equivalent of POST blocks/create on behalf of the authenticated user.</p>
+<p>Report the specified user as a spam account to Twitter.</p>
+<p>Additionally performs the equivalent of POST blocks/create on behalf of the authenticated user.</p>
 <p>Note: One of these parameters must be provided.</p>
-<p>Avaliable parameters: </p>
-<p><em>string screen_name (optional)</em>  : The ID or screen_name of the user you want to report as a spammer. Helpful for disambiguating when a valid screen name is also a user ID.</p>
-<p><em>long user_id (optional)</em>  : The ID of the user you want to report as a spammer. Helpful for disambiguating when a valid user ID is also a valid screen name.</p>
-<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="classCoreTweet_1_1User.html" title="A user. ">User</a>.</dd></dl>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> screen_name (optional)</p>
+<p>- <code>long</code> user_id (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the user.</p>
 
 </div>
 </div>
@@ -1212,6 +1542,23 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Report the specified user as a spam account to Twitter.</p>
+<p>Additionally performs the equivalent of POST blocks/create on behalf of the authenticated user.</p>
+<p>Note: One of these parameters must be provided.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> screen_name (optional)</p>
+<p>- <code>long</code> user_id (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the user.</p>
+
 </div>
 </div>
 <a class="anchor" id="a91ffc9c44a5852278cb5e0a4930c7226"></a>
@@ -1237,20 +1584,22 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Provides a simple, relevance-based search interface to public user accounts on Twitter. Try querying by topical interest, full name, company name, location, or other criteria. Exact match searches are not supported.</p>
+<p>Provides a simple, relevance-based search interface to public user accounts on Twitter.</p>
+<p>Try querying by topical interest, full name, company name, location, or other criteria.</p>
+<p>Exact match searches are not supported.</p>
 <p>Only the first 1,000 matching results are available.</p>
-<p>Avaliable parameters: </p>
-<p><em>string q (required)</em>  : The search query to run against people search.</p>
-<p><em>int page (optional)</em>  : Specifies the page of results to retrieve.</p>
-<p><em>int count (optional)</em>  : The number of potential user results to retrieve per page. This value has a maximum of 20.</p>
-<p><em>bool include_entities (optional)</em>  : The entities node will be disincluded from embedded tweet objects when set to false.</p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classCoreTweet_1_1Rest_1_1Users.html" title="GET/POST users">Users</a>.</dd></dl>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> q (required)</p>
+<p>- <code>int</code> page (optional)</p>
+<p>- <code>int</code> count (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The users.</dd></dl>
 
 </div>
 </div>
@@ -1276,6 +1625,24 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Provides a simple, relevance-based search interface to public user accounts on Twitter.</p>
+<p>Try querying by topical interest, full name, company name, location, or other criteria.</p>
+<p>Exact match searches are not supported.</p>
+<p>Only the first 1,000 matching results are available.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> q (required)</p>
+<p>- <code>int</code> page (optional)</p>
+<p>- <code>int</code> count (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The users.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a6e3938178da8fd310bcf3dab9a21cad3"></a>
@@ -1299,6 +1666,24 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Provides a simple, relevance-based search interface to public user accounts on Twitter.</p>
+<p>Try querying by topical interest, full name, company name, location, or other criteria.</p>
+<p>Exact match searches are not supported.</p>
+<p>Only the first 1,000 matching results are available.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> q (required)</p>
+<p>- <code>int</code> page (optional)</p>
+<p>- <code>int</code> count (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The users.</dd></dl>
 
 </div>
 </div>
@@ -1325,20 +1710,23 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Provides a simple, relevance-based search interface to public user accounts on Twitter. Try querying by topical interest, full name, company name, location, or other criteria. Exact match searches are not supported.</p>
+<p>Provides a simple, relevance-based search interface to public user accounts on Twitter as an asynchronous operation.</p>
+<p>Try querying by topical interest, full name, company name, location, or other criteria.</p>
+<p>Exact match searches are not supported.</p>
 <p>Only the first 1,000 matching results are available.</p>
-<p>Avaliable parameters: </p>
-<p><em>string q (required)</em>  : The search query to run against people search.</p>
-<p><em>int page (optional)</em>  : Specifies the page of results to retrieve.</p>
-<p><em>int count (optional)</em>  : The number of potential user results to retrieve per page. This value has a maximum of 20.</p>
-<p><em>bool include_entities (optional)</em>  : The entities node will be disincluded from embedded tweet objects when set to false.</p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classCoreTweet_1_1Rest_1_1Users.html" title="GET/POST users">Users</a>.</dd></dl>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> q (required)</p>
+<p>- <code>int</code> page (optional)</p>
+<p>- <code>int</code> count (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the users.</p>
 
 </div>
 </div>
@@ -1374,6 +1762,26 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Provides a simple, relevance-based search interface to public user accounts on Twitter as an asynchronous operation.</p>
+<p>Try querying by topical interest, full name, company name, location, or other criteria.</p>
+<p>Exact match searches are not supported.</p>
+<p>Only the first 1,000 matching results are available.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> q (required)</p>
+<p>- <code>int</code> page (optional)</p>
+<p>- <code>int</code> count (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the users.</p>
+
 </div>
 </div>
 <a class="anchor" id="a5b16476d96aa5e19bcb5d1fd9298825c"></a>
@@ -1408,6 +1816,26 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Provides a simple, relevance-based search interface to public user accounts on Twitter as an asynchronous operation.</p>
+<p>Try querying by topical interest, full name, company name, location, or other criteria.</p>
+<p>Exact match searches are not supported.</p>
+<p>Only the first 1,000 matching results are available.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> q (required)</p>
+<p>- <code>int</code> page (optional)</p>
+<p>- <code>int</code> count (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the users.</p>
+
 </div>
 </div>
 <a class="anchor" id="a657bd916d4c84e81bc7d55e1de1e0351"></a>
@@ -1433,19 +1861,20 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Returns a variety of information about the user specified by the required user_id or screen_name parameter. The author's most recent Tweet will be returned inline when possible.</p>
+<p>Returns a variety of information about the user specified by the required user_id or screen_name parameter.</p>
+<p>The author's most recent Tweet will be returned inline when possible.</p>
 <p>GET users/lookup is used to retrieve a bulk collection of user objects.</p>
-<p>Avaliable parameters: </p>
-<p><em>long user_id (required)</em>  : The ID of the user for whom to return results for. Either an id or screen_name is required for this method.</p>
-<p><em>string screen_name (required)</em>  : The screen name of the user for whom to return results for. Either a id or screen_name is required for this method.</p>
-<p><em>bool include_entities (optional)</em>  : The entities node will be disincluded when set to false.</p>
-<dl class="section return"><dt>Returns</dt><dd>The user.</dd></dl>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> user_id (required)</p>
+<p>- <code>string</code> screen_name (required)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The user.</dd></dl>
 
 </div>
 </div>
@@ -1471,6 +1900,22 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns a variety of information about the user specified by the required user_id or screen_name parameter.</p>
+<p>The author's most recent Tweet will be returned inline when possible.</p>
+<p>GET users/lookup is used to retrieve a bulk collection of user objects.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> user_id (required)</p>
+<p>- <code>string</code> screen_name (required)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The user.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a26edc28d27781b63daf0c9d971cdc639"></a>
@@ -1494,6 +1939,22 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Returns a variety of information about the user specified by the required user_id or screen_name parameter.</p>
+<p>The author's most recent Tweet will be returned inline when possible.</p>
+<p>GET users/lookup is used to retrieve a bulk collection of user objects.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> user_id (required)</p>
+<p>- <code>string</code> screen_name (required)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The user.</dd></dl>
 
 </div>
 </div>
@@ -1520,19 +1981,21 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Returns a variety of information about the user specified by the required user_id or screen_name parameter. The author's most recent Tweet will be returned inline when possible.</p>
+<p>Returns a variety of information about the user specified by the required user_id or screen_name parameter as an asynchronous operation.</p>
+<p>The author's most recent Tweet will be returned inline when possible.</p>
 <p>GET users/lookup is used to retrieve a bulk collection of user objects.</p>
-<p>Avaliable parameters: </p>
-<p><em>long user_id (required)</em>  : The ID of the user for whom to return results for. Either an id or screen_name is required for this method.</p>
-<p><em>string screen_name (required)</em>  : The screen name of the user for whom to return results for. Either a id or screen_name is required for this method.</p>
-<p><em>bool include_entities (optional)</em>  : The entities node will be disincluded when set to false.</p>
-<dl class="section return"><dt>Returns</dt><dd>The user.</dd></dl>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> user_id (required)</p>
+<p>- <code>string</code> screen_name (required)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the user.</p>
 
 </div>
 </div>
@@ -1568,6 +2031,24 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns a variety of information about the user specified by the required user_id or screen_name parameter as an asynchronous operation.</p>
+<p>The author's most recent Tweet will be returned inline when possible.</p>
+<p>GET users/lookup is used to retrieve a bulk collection of user objects.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> user_id (required)</p>
+<p>- <code>string</code> screen_name (required)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the user.</p>
+
 </div>
 </div>
 <a class="anchor" id="a778e806954a8df0ab51d361cdf1c58e0"></a>
@@ -1602,6 +2083,24 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns a variety of information about the user specified by the required user_id or screen_name parameter as an asynchronous operation.</p>
+<p>The author's most recent Tweet will be returned inline when possible.</p>
+<p>GET users/lookup is used to retrieve a bulk collection of user objects.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> user_id (required)</p>
+<p>- <code>string</code> screen_name (required)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the user.</p>
+
 </div>
 </div>
 <a class="anchor" id="abcbf72815a8fb72b0a96535fba8d366f"></a>
@@ -1628,15 +2127,15 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Access the users in a given category of the Twitter suggested user list and return their most recent status if they are not a protected user.</p>
-<p>Avaliable parameters: </p>
-<p><em>string slug (required)</em>  : The short name of list or a category</p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classCoreTweet_1_1Rest_1_1Users.html" title="GET/POST users">Users</a>.</dd></dl>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> slug (required)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The users.</dd></dl>
 
 </div>
 </div>
@@ -1662,6 +2161,18 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Access the users in a given category of the Twitter suggested user list and return their most recent status if they are not a protected user.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> slug (required)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The users.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a4b9a64aa2dc54fd0bca50c5406e3d774"></a>
@@ -1685,6 +2196,18 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Access the users in a given category of the Twitter suggested user list and return their most recent status if they are not a protected user.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> slug (required)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The users.</dd></dl>
 
 </div>
 </div>
@@ -1711,16 +2234,17 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Access the users in a given category of the Twitter suggested user list and return their most recent status if they are not a protected user.</p>
-<p>Avaliable parameters: </p>
-<p><em>string slug (required)</em>  : The short name of list or a category</p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classCoreTweet_1_1Rest_1_1Users.html" title="GET/POST users">Users</a>.</dd></dl>
+<p>Access the users in a given category of the Twitter suggested user list and return their most recent status if they are not a protected user as an asynchronous operation.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> slug (required)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the category.</p>
 
 </div>
 </div>
@@ -1756,6 +2280,20 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Access the users in a given category of the Twitter suggested user list and return their most recent status if they are not a protected user as an asynchronous operation.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> slug (required)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the category.</p>
+
 </div>
 </div>
 <a class="anchor" id="a599022d34ae0963b160220166cac5d2c"></a>
@@ -1790,6 +2328,20 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Access the users in a given category of the Twitter suggested user list and return their most recent status if they are not a protected user as an asynchronous operation.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> slug (required)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the category.</p>
+
 </div>
 </div>
 <a class="anchor" id="a9737a2673285027a4d4ad841d2425803"></a>
@@ -1817,15 +2369,15 @@ Additional Inherited Members</h2></td></tr>
 <p></p>
 <p>Access the users in a given category of the Twitter suggested user list.</p>
 <p>It is recommended that applications cache this data for no more than one hour.</p>
-<p><em>string slug (required)</em>  : The short name of list or a category</p>
-<p><em>string lang (optional)</em>  : Restricts the suggested categories to the requested language. The language must be specified by the appropriate two letter ISO 639-1 representation. Currently supported languages are provided by the GET help/languages API request. Unsupported language codes will receive English (en) results. If you use lang in this request, ensure you also include it when requesting the GET users/suggestions/:slug list.</p>
-<dl class="section return"><dt>Returns</dt><dd>The category.</dd></dl>
+<p>- <code>string</code> slug (required)</p>
+<p>- <code>string</code> lang (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The category.</dd></dl>
 
 </div>
 </div>
@@ -1851,6 +2403,19 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Access the users in a given category of the Twitter suggested user list.</p>
+<p>It is recommended that applications cache this data for no more than one hour.</p>
+<p>- <code>string</code> slug (required)</p>
+<p>- <code>string</code> lang (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The category.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a95bb5f56969d8583d3b67a1889016682"></a>
@@ -1874,6 +2439,19 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Access the users in a given category of the Twitter suggested user list.</p>
+<p>It is recommended that applications cache this data for no more than one hour.</p>
+<p>- <code>string</code> slug (required)</p>
+<p>- <code>string</code> lang (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The category.</dd></dl>
 
 </div>
 </div>
@@ -1900,17 +2478,18 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Access the users in a given category of the Twitter suggested user list.</p>
+<p>Access the users in a given category of the Twitter suggested user list as an asynchronous operation.</p>
 <p>It is recommended that applications cache this data for no more than one hour.</p>
-<p><em>string slug (required)</em>  : The short name of list or a category</p>
-<p><em>string lang (optional)</em>  : Restricts the suggested categories to the requested language. The language must be specified by the appropriate two letter ISO 639-1 representation. Currently supported languages are provided by the GET help/languages API request. Unsupported language codes will receive English (en) results. If you use lang in this request, ensure you also include it when requesting the GET users/suggestions/:slug list.</p>
-<dl class="section return"><dt>Returns</dt><dd>The category.</dd></dl>
+<p>- <code>string</code> slug (required)</p>
+<p>- <code>string</code> lang (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the category.</p>
 
 </div>
 </div>
@@ -1946,6 +2525,21 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Access the users in a given category of the Twitter suggested user list as an asynchronous operation.</p>
+<p>It is recommended that applications cache this data for no more than one hour.</p>
+<p>- <code>string</code> slug (required)</p>
+<p>- <code>string</code> lang (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the category.</p>
+
 </div>
 </div>
 <a class="anchor" id="a1ef8547e3dff2c2f763b4cd6dd8f27c4"></a>
@@ -1980,6 +2574,21 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Access the users in a given category of the Twitter suggested user list as an asynchronous operation.</p>
+<p>It is recommended that applications cache this data for no more than one hour.</p>
+<p>- <code>string</code> slug (required)</p>
+<p>- <code>string</code> lang (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the category.</p>
+
 </div>
 </div>
 <a class="anchor" id="a1816bbf35c834458bec4149541a9104f"></a>
@@ -2005,16 +2614,18 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Access to Twitter's suggested user list. This returns the list of suggested user categories. The category can be used in GET users/suggestions/:slug to get the users in that category.</p>
-<p>Avaliable parameters: </p>
-<p><em>string lang (optional)</em>  : Restricts the suggested categories to the requested language. The language must be specified by the appropriate two letter ISO 639-1 representation. Currently supported languages are provided by the GET help/languages API request. Unsupported language codes will receive English (en) results. If you use lang in this request, ensure you also include it when requesting the GET users/suggestions/:slug list.</p>
-<dl class="section return"><dt>Returns</dt><dd>Catgories.</dd></dl>
+<p>Access to Twitter's suggested user list.</p>
+<p>This returns the list of suggested user categories.</p>
+<p>The category can be used in GET users/suggestions/:slug to get the users in that category.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> lang (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The catgories.</dd></dl>
 
 </div>
 </div>
@@ -2040,6 +2651,20 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Access to Twitter's suggested user list.</p>
+<p>This returns the list of suggested user categories.</p>
+<p>The category can be used in GET users/suggestions/:slug to get the users in that category.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> lang (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The catgories.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a9a1cc2d5919d846b28cedd80699f6684"></a>
@@ -2063,6 +2688,20 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Access to Twitter's suggested user list.</p>
+<p>This returns the list of suggested user categories.</p>
+<p>The category can be used in GET users/suggestions/:slug to get the users in that category.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> lang (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The catgories.</dd></dl>
 
 </div>
 </div>
@@ -2089,16 +2728,19 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Access to Twitter's suggested user list. This returns the list of suggested user categories. The category can be used in GET users/suggestions/:slug to get the users in that category.</p>
-<p>Avaliable parameters: </p>
-<p><em>string lang (optional)</em>  : Restricts the suggested categories to the requested language. The language must be specified by the appropriate two letter ISO 639-1 representation. Currently supported languages are provided by the GET help/languages API request. Unsupported language codes will receive English (en) results. If you use lang in this request, ensure you also include it when requesting the GET users/suggestions/:slug list.</p>
-<dl class="section return"><dt>Returns</dt><dd>Catgories.</dd></dl>
+<p>Access to Twitter's suggested user list as an asynchronous operation.</p>
+<p>This returns the list of suggested user categories.</p>
+<p>The category can be used in GET users/suggestions/:slug to get the users in that category.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> lang (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the categories.</p>
 
 </div>
 </div>
@@ -2134,6 +2776,22 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Access to Twitter's suggested user list as an asynchronous operation.</p>
+<p>This returns the list of suggested user categories.</p>
+<p>The category can be used in GET users/suggestions/:slug to get the users in that category.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> lang (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the categories.</p>
+
 </div>
 </div>
 <a class="anchor" id="a5f5171f1ed65c977eef3d0f811afadd0"></a>
@@ -2168,6 +2826,22 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Access to Twitter's suggested user list as an asynchronous operation.</p>
+<p>This returns the list of suggested user categories.</p>
+<p>The category can be used in GET users/suggestions/:slug to get the users in that category.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> lang (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the categories.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
@@ -2177,7 +2851,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat May 31 2014 23:10:00 for CoreTweet by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 20 2014 00:31:20 for CoreTweet by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

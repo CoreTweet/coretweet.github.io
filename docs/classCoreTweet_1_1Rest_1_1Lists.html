@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="core-48x48.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">CoreTweet
-   &#160;<span id="projectnumber">0.3.3</span>
+   &#160;<span id="projectnumber">0.3.4</span>
    </div>
    <div id="projectbrief">Yet another .NET Twitter Library</div>
   </td>
@@ -98,7 +98,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>GET/POST lists 
+<p>Provides a set of methods for the wrapper of GET/POST lists.  
  <a href="classCoreTweet_1_1Rest_1_1Lists.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for CoreTweet.Rest.Lists:</div>
@@ -106,7 +106,7 @@ Inheritance diagram for CoreTweet.Rest.Lists:</div>
  <div class="center">
   <img src="classCoreTweet_1_1Rest_1_1Lists.png" usemap="#CoreTweet.Rest.Lists_map" alt=""/>
   <map id="CoreTweet.Rest.Lists_map" name="CoreTweet.Rest.Lists_map">
-<area href="classCoreTweet_1_1Core_1_1ApiProviderBase.html" title="Base class of API providers. " alt="CoreTweet.Core.ApiProviderBase" shape="rect" coords="0,0,205,24"/>
+<area href="classCoreTweet_1_1Core_1_1ApiProviderBase.html" title="Provides a Twitter API wrapper. This is an abstract class. " alt="CoreTweet.Core.ApiProviderBase" shape="rect" coords="0,0,205,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -227,8 +227,10 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:ad516e6594d2f59a55aa17b5da6a94f6b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCoreTweet_1_1Rest_1_1Members.html">Members</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Rest_1_1Lists.html#ad516e6594d2f59a55aa17b5da6a94f6b">Members</a><code> [get]</code></td></tr>
+<tr class="memdesc:ad516e6594d2f59a55aa17b5da6a94f6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the wrapper of lists/members  <a href="#ad516e6594d2f59a55aa17b5da6a94f6b">More...</a><br /></td></tr>
 <tr class="separator:ad516e6594d2f59a55aa17b5da6a94f6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23d0d8f6970dc482627f418bb0d846b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCoreTweet_1_1Rest_1_1Subscribers.html">Subscribers</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Rest_1_1Lists.html#a23d0d8f6970dc482627f418bb0d846b5">Subscribers</a><code> [get]</code></td></tr>
+<tr class="memdesc:a23d0d8f6970dc482627f418bb0d846b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the wrapper of lists/subscribers  <a href="#a23d0d8f6970dc482627f418bb0d846b5">More...</a><br /></td></tr>
 <tr class="separator:a23d0d8f6970dc482627f418bb0d846b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header properties_classCoreTweet_1_1Core_1_1ApiProviderBase"><td colspan="2" onclick="javascript:toggleInherit('properties_classCoreTweet_1_1Core_1_1ApiProviderBase')"><img src="closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="classCoreTweet_1_1Core_1_1ApiProviderBase.html">CoreTweet.Core.ApiProviderBase</a></td></tr>
 <tr class="memitem:a8f9003e34c6f19f561b10b1f14098ec1 inherit properties_classCoreTweet_1_1Core_1_1ApiProviderBase"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCoreTweet_1_1Core_1_1TokensBase.html">TokensBase</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Core_1_1ApiProviderBase.html#a8f9003e34c6f19f561b10b1f14098ec1">IncludedTokens</a><code> [get]</code></td></tr>
@@ -236,7 +238,7 @@ Properties</h2></td></tr>
 <tr class="separator:a8f9003e34c6f19f561b10b1f14098ec1 inherit properties_classCoreTweet_1_1Core_1_1ApiProviderBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>GET/POST lists</p>
+<div class="textblock"><p>Provides a set of methods for the wrapper of GET/POST lists. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a9afdf472ce5326d88c5b5f9b728185c4"></a>
 <div class="memitem">
@@ -261,18 +263,19 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Creates a new list for the authenticated user. Note that you can't create more than 20 lists per account.</p>
-<p>Avaliable parameters: </p>
-<p><em>string name (required)</em>  : The name for the list.A list's name must start with a letter and can consist only of 25 or fewer letters, numbers, "-", or "_" characters.</p>
-<p><em>string mode (optional)</em>  : Whether your list is public or private. Values can be public or private. If no mode is specified the list will be public.</p>
-<p><em>string description (optional)</em>  : The description to give the list.</p>
-<dl class="section return"><dt>Returns</dt><dd>The list.</dd></dl>
+<p>Creates a new list for the authenticated user.</p>
+<p>Note that you can't create more than 20 lists per account.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> name (required)</p>
+<p>- <code>string</code> mode (optional)</p>
+<p>- <code>string</code> description (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The list.</dd></dl>
 
 </div>
 </div>
@@ -298,6 +301,21 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Creates a new list for the authenticated user.</p>
+<p>Note that you can't create more than 20 lists per account.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> name (required)</p>
+<p>- <code>string</code> mode (optional)</p>
+<p>- <code>string</code> description (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The list.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a2a1b00e410ded2dafb1cf6d423d61666"></a>
@@ -321,6 +339,21 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Creates a new list for the authenticated user.</p>
+<p>Note that you can't create more than 20 lists per account.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> name (required)</p>
+<p>- <code>string</code> mode (optional)</p>
+<p>- <code>string</code> description (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The list.</dd></dl>
 
 </div>
 </div>
@@ -347,18 +380,20 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Creates a new list for the authenticated user. Note that you can't create more than 20 lists per account.</p>
-<p>Avaliable parameters: </p>
-<p><em>string name (required)</em>  : The name for the list.A list's name must start with a letter and can consist only of 25 or fewer letters, numbers, "-", or "_" characters.</p>
-<p><em>string mode (optional)</em>  : Whether your list is public or private. Values can be public or private. If no mode is specified the list will be public.</p>
-<p><em>string description (optional)</em>  : The description to give the list.</p>
-<dl class="section return"><dt>Returns</dt><dd>The list.</dd></dl>
+<p>Creates a new list for the authenticated user.</p>
+<p>Note that you can't create more than 20 lists per account.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> name (required)</p>
+<p>- <code>string</code> mode (optional)</p>
+<p>- <code>string</code> description (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the list.</p>
 
 </div>
 </div>
@@ -394,6 +429,23 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Creates a new list for the authenticated user.</p>
+<p>Note that you can't create more than 20 lists per account.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> name (required)</p>
+<p>- <code>string</code> mode (optional)</p>
+<p>- <code>string</code> description (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the list.</p>
+
 </div>
 </div>
 <a class="anchor" id="a344f33a488e401317af59af1651cc325"></a>
@@ -428,6 +480,23 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Creates a new list for the authenticated user.</p>
+<p>Note that you can't create more than 20 lists per account.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> name (required)</p>
+<p>- <code>string</code> mode (optional)</p>
+<p>- <code>string</code> description (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the list.</p>
+
 </div>
 </div>
 <a class="anchor" id="a94e51f9de3f36f7bbf4a12ecc1cd22ca"></a>
@@ -454,16 +523,17 @@ Properties</h2></td></tr>
 
 <p></p>
 <p>Deletes the specified list. The authenticated user must own the list to be able to destroy it.</p>
-<p>Note: Either a list_id or a slug is required. If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
-<p>Avaliable parameters: </p>
-<p><em>string owner_screen_name (optional)</em>  : The screen name of the user who owns the list being requested by a slug.</p>
-<dl class="section return"><dt>Returns</dt><dd>The destroied list.</dd></dl>
+<p>Note: Either a list_id or a slug is required.</p>
+<p>If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> owner_screen_name (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The destroied list.</dd></dl>
 
 </div>
 </div>
@@ -489,6 +559,20 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Deletes the specified list. The authenticated user must own the list to be able to destroy it.</p>
+<p>Note: Either a list_id or a slug is required.</p>
+<p>If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> owner_screen_name (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The destroied list.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a91740072bad6a20272a60b0107ebf564"></a>
@@ -512,6 +596,20 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Deletes the specified list. The authenticated user must own the list to be able to destroy it.</p>
+<p>Note: Either a list_id or a slug is required.</p>
+<p>If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> owner_screen_name (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The destroied list.</dd></dl>
 
 </div>
 </div>
@@ -539,16 +637,18 @@ Properties</h2></td></tr>
 
 <p></p>
 <p>Deletes the specified list. The authenticated user must own the list to be able to destroy it.</p>
-<p>Note: Either a list_id or a slug is required. If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
-<p>Avaliable parameters: </p>
-<p><em>string owner_screen_name (optional)</em>  : The screen name of the user who owns the list being requested by a slug.</p>
-<dl class="section return"><dt>Returns</dt><dd>The destroied list.</dd></dl>
+<p>Note: Either a list_id or a slug is required.</p>
+<p>If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> owner_screen_name (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the destroied list.</p>
 
 </div>
 </div>
@@ -584,6 +684,22 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Deletes the specified list. The authenticated user must own the list to be able to destroy it.</p>
+<p>Note: Either a list_id or a slug is required.</p>
+<p>If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> owner_screen_name (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the destroied list.</p>
+
 </div>
 </div>
 <a class="anchor" id="ac11d1b813fa7936a1bf7a0c7ecc70dad"></a>
@@ -617,6 +733,22 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Deletes the specified list. The authenticated user must own the list to be able to destroy it.</p>
+<p>Note: Either a list_id or a slug is required.</p>
+<p>If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> owner_screen_name (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the destroied list.</p>
 
 </div>
 </div>
@@ -653,21 +785,21 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Returns the lists the specified user has been added to. If user_id or screen_name are not provided the memberships for the authenticating user are returned.</p>
-<p>https://dev.twitter.com/docs/misc/cursoring </p>
+<p>Enumerates the lists the specified user has been added to.</p>
+<p>If user_id or screen_name are not provided the memberships for the authenticating user are returned.</p>
 <p>Avaliable parameters: </p>
-<p><em>string sereen_name (optional)</em>  : The screen name of the user for whom to return results for. Helpful for disambiguating when a valid screen name is also a user ID.</p>
-<p><em>long user_id (optional)</em>  : The ID of the user for whom to return results for. Helpful for disambiguating when a valid user ID is also a valid screen name.</p>
-<p><em>bool filter_to_owned_lists (optional)</em>  : When set to true, will return just lists the authenticating user owns, and the user represented by user_id or screen_name is a member of.</p>
-<p><em>long cursor (optional)</em>  : The first cursor. If not be specified, enumerating starts from the first page.</p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classCoreTweet_1_1Rest_1_1Users.html" title="GET/POST users">Users</a>. </dd></dl>
-<p>https://dev.twitter.com/docs/misc/cursoring </p><dl class="params"><dt>Parameters</dt><dd>
+<p>- <code>string</code> sereen_name (optional)</p>
+<p>- <code>long</code> user_id (optional)</p>
+<p>- <code>long</code> cursor (semi-optional)</p>
+<p>- <code>bool</code> filter_to_owned_lists (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">mode</td><td>Specify whether enumerating goes to the next page or the previous.</td></tr>
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The lists.</dd></dl>
 
 </div>
 </div>
@@ -703,6 +835,23 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Enumerates the lists the specified user has been added to.</p>
+<p>If user_id or screen_name are not provided the memberships for the authenticating user are returned.</p>
+<p>Avaliable parameters: </p>
+<p>- <code>string</code> sereen_name (optional)</p>
+<p>- <code>long</code> user_id (optional)</p>
+<p>- <code>long</code> cursor (semi-optional)</p>
+<p>- <code>bool</code> filter_to_owned_lists (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mode</td><td>Specify whether enumerating goes to the next page or the previous.</td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The lists.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a9e948b8aca7ea38f3aa1c195a9b8e6a7"></a>
@@ -736,6 +885,23 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Enumerates the lists the specified user has been added to.</p>
+<p>If user_id or screen_name are not provided the memberships for the authenticating user are returned.</p>
+<p>Avaliable parameters: </p>
+<p>- <code>string</code> sereen_name (optional)</p>
+<p>- <code>long</code> user_id (optional)</p>
+<p>- <code>long</code> cursor (semi-optional)</p>
+<p>- <code>bool</code> filter_to_owned_lists (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mode</td><td>Specify whether enumerating goes to the next page or the previous.</td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The lists.</dd></dl>
 
 </div>
 </div>
@@ -772,21 +938,22 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Enumerate lists the specified user is subscribed to, 20 lists per page by default. Does not include the user's own lists.</p>
+<p>Enumerate lists the specified user is subscribed to, 20 lists per page by default.</p>
+<p>Does not include the user's own lists.</p>
 <p>Note: A user_id or screen_name must be provided.</p>
-<p>Avaliable parameters: </p>
-<p><em>long user_id (optional)</em>  : The ID of the user for whom to return results for. Helpful for disambiguating when a valid user ID is also a valid screen name.</p>
-<p><em>string screen_name (optional)</em>  : The screen name of the user for whom to return results for. Helpful for disambiguating when a valid screen name is also a user ID.</p>
-<p><em>int count (optional)</em>  : The amount of results to return per page. Defaults to 20. Maximum of 1,000 when using cursors.</p>
-<p><em>long cursor (optional)</em>  : The first cursor. If not be specified, enumerating starts from the first page.</p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classCoreTweet_1_1Rest_1_1Users.html" title="GET/POST users">Users</a>. </dd></dl>
-<p>https://dev.twitter.com/docs/misc/cursoring </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> user_id (optional)</p>
+<p>- <code>string</code> screen_name (optional)</p>
+<p>- <code>int</code> count (optional)</p>
+<p>- <code>long</code> cursor (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">mode</td><td>Specify whether enumerating goes to the next page or the previous.</td></tr>
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The lists.</dd></dl>
 
 </div>
 </div>
@@ -822,6 +989,24 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Enumerate lists the specified user is subscribed to, 20 lists per page by default.</p>
+<p>Does not include the user's own lists.</p>
+<p>Note: A user_id or screen_name must be provided.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> user_id (optional)</p>
+<p>- <code>string</code> screen_name (optional)</p>
+<p>- <code>int</code> count (optional)</p>
+<p>- <code>long</code> cursor (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mode</td><td>Specify whether enumerating goes to the next page or the previous.</td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The lists.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a36f1831ff059fd8819eeca1f0dc2ea36"></a>
@@ -856,6 +1041,24 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Enumerate lists the specified user is subscribed to, 20 lists per page by default.</p>
+<p>Does not include the user's own lists.</p>
+<p>Note: A user_id or screen_name must be provided.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> user_id (optional)</p>
+<p>- <code>string</code> screen_name (optional)</p>
+<p>- <code>int</code> count (optional)</p>
+<p>- <code>long</code> cursor (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mode</td><td>Specify whether enumerating goes to the next page or the previous.</td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The lists.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a60f4d086c8db48f16b15fb7f0b537386"></a>
@@ -881,18 +1084,20 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Returns all lists the authenticating or specified user subscribes to, including their own. The user is specified using the user_id or screen_name parameters. If no user is given, the authenticating user is used.</p>
+<p>Returns all lists the authenticating or specified user subscribes to, including their own.</p>
+<p>The user is specified using the user_id or screen_name parameters.</p>
+<p>If no user is given, the authenticating user is used.</p>
 <p>This method used to be GET lists in version 1.0 of the API and has been renamed for consistency with other call.</p>
-<p>Avaliable parameters: </p>
-<p><em>long user_id (optional)</em>  : The ID of the user for whom to return results for. Helpful for disambiguating when a valid user ID is also a valid screen name.</p>
-<p><em>string screen_name (optional)</em>  : The screen name of the user for whom to return results for. Helpful for disambiguating when a valid screen name is also a user ID.</p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classCoreTweet_1_1Rest_1_1Lists.html" title="GET/POST lists">Lists</a>.</dd></dl>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> user_id (optional)</p>
+<p>- <code>string</code> screen_name (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The lists.</dd></dl>
 
 </div>
 </div>
@@ -918,6 +1123,22 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns all lists the authenticating or specified user subscribes to, including their own.</p>
+<p>The user is specified using the user_id or screen_name parameters.</p>
+<p>If no user is given, the authenticating user is used.</p>
+<p>This method used to be GET lists in version 1.0 of the API and has been renamed for consistency with other call.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> user_id (optional)</p>
+<p>- <code>string</code> screen_name (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The lists.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a9b5cfcbb90df1c4a46ea31e62f5ae31a"></a>
@@ -941,6 +1162,22 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Returns all lists the authenticating or specified user subscribes to, including their own.</p>
+<p>The user is specified using the user_id or screen_name parameters.</p>
+<p>If no user is given, the authenticating user is used.</p>
+<p>This method used to be GET lists in version 1.0 of the API and has been renamed for consistency with other call.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> user_id (optional)</p>
+<p>- <code>string</code> screen_name (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The lists.</dd></dl>
 
 </div>
 </div>
@@ -967,18 +1204,21 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Returns all lists the authenticating or specified user subscribes to, including their own. The user is specified using the user_id or screen_name parameters. If no user is given, the authenticating user is used.</p>
+<p>Returns all lists the authenticating or specified user subscribes to, including their own as an asynchronous operation.</p>
+<p>The user is specified using the user_id or screen_name parameters.</p>
+<p>If no user is given, the authenticating user is used.</p>
 <p>This method used to be GET lists in version 1.0 of the API and has been renamed for consistency with other call.</p>
-<p>Avaliable parameters: </p>
-<p><em>long user_id (optional)</em>  : The ID of the user for whom to return results for. Helpful for disambiguating when a valid user ID is also a valid screen name.</p>
-<p><em>string screen_name (optional)</em>  : The screen name of the user for whom to return results for. Helpful for disambiguating when a valid screen name is also a user ID.</p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classCoreTweet_1_1Rest_1_1Lists.html" title="GET/POST lists">Lists</a>.</dd></dl>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> user_id (optional)</p>
+<p>- <code>string</code> screen_name (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the lists.</p>
 
 </div>
 </div>
@@ -1014,6 +1254,24 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns all lists the authenticating or specified user subscribes to, including their own as an asynchronous operation.</p>
+<p>The user is specified using the user_id or screen_name parameters.</p>
+<p>If no user is given, the authenticating user is used.</p>
+<p>This method used to be GET lists in version 1.0 of the API and has been renamed for consistency with other call.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> user_id (optional)</p>
+<p>- <code>string</code> screen_name (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the lists.</p>
+
 </div>
 </div>
 <a class="anchor" id="aecec4961a3b2f932b9f17ce8cf605a20"></a>
@@ -1048,6 +1306,24 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns all lists the authenticating or specified user subscribes to, including their own as an asynchronous operation.</p>
+<p>The user is specified using the user_id or screen_name parameters.</p>
+<p>If no user is given, the authenticating user is used.</p>
+<p>This method used to be GET lists in version 1.0 of the API and has been renamed for consistency with other call.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> user_id (optional)</p>
+<p>- <code>string</code> screen_name (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the lists.</p>
+
 </div>
 </div>
 <a class="anchor" id="a76cca41c4eeef765fc7d706a14dd1bd9"></a>
@@ -1073,20 +1349,20 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Returns the lists the specified user has been added to. If user_id or screen_name are not provided the memberships for the authenticating user are returned.</p>
-<p>https://dev.twitter.com/docs/misc/cursoring </p>
+<p>Returns the lists the specified user has been added to.</p>
+<p>If user_id or screen_name are not provided the memberships for the authenticating user are returned.</p>
 <p>Avaliable parameters: </p>
-<p><em>string sereen_name (optional)</em>  : The screen name of the user for whom to return results for. Helpful for disambiguating when a valid screen name is also a user ID.</p>
-<p><em>long user_id (optional)</em>  : The ID of the user for whom to return results for. Helpful for disambiguating when a valid user ID is also a valid screen name.</p>
-<p><em>long cursor (semi-optional)</em>  : Breaks the results into pages. A single page contains 20 lists. Provide a value of -1 to begin paging. Provide values as returned in the response body's next_cursor and previous_cursor attributes to page back and forth in the list.</p>
-<p><em>bool filter_to_owned_lists (optional)</em>  : When set to true, will return just lists the authenticating user owns, and the user represented by user_id or screen_name is a member of.</p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classCoreTweet_1_1Rest_1_1Users.html" title="GET/POST users">Users</a>.</dd></dl>
+<p>- <code>string</code> sereen_name (optional)</p>
+<p>- <code>long</code> user_id (optional)</p>
+<p>- <code>long</code> cursor (semi-optional)</p>
+<p>- <code>bool</code> filter_to_owned_lists (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The users.</dd></dl>
 
 </div>
 </div>
@@ -1112,6 +1388,22 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns the lists the specified user has been added to.</p>
+<p>If user_id or screen_name are not provided the memberships for the authenticating user are returned.</p>
+<p>Avaliable parameters: </p>
+<p>- <code>string</code> sereen_name (optional)</p>
+<p>- <code>long</code> user_id (optional)</p>
+<p>- <code>long</code> cursor (semi-optional)</p>
+<p>- <code>bool</code> filter_to_owned_lists (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The users.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a262a83e6ad808640139410eecc7c6d36"></a>
@@ -1135,6 +1427,22 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Returns the lists the specified user has been added to.</p>
+<p>If user_id or screen_name are not provided the memberships for the authenticating user are returned.</p>
+<p>Avaliable parameters: </p>
+<p>- <code>string</code> sereen_name (optional)</p>
+<p>- <code>long</code> user_id (optional)</p>
+<p>- <code>long</code> cursor (semi-optional)</p>
+<p>- <code>bool</code> filter_to_owned_lists (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The lists.</dd></dl>
 
 </div>
 </div>
@@ -1161,20 +1469,21 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Returns the lists the specified user has been added to. If user_id or screen_name are not provided the memberships for the authenticating user are returned.</p>
-<p>https://dev.twitter.com/docs/misc/cursoring </p>
+<p>Returns the lists the specified user has been added to as an asynchronous operation.</p>
+<p>If user_id or screen_name are not provided the memberships for the authenticating user are returned.</p>
 <p>Avaliable parameters: </p>
-<p><em>string sereen_name (optional)</em>  : The screen name of the user for whom to return results for. Helpful for disambiguating when a valid screen name is also a user ID.</p>
-<p><em>long user_id (optional)</em>  : The ID of the user for whom to return results for. Helpful for disambiguating when a valid user ID is also a valid screen name.</p>
-<p><em>long cursor (semi-optional)</em>  : Breaks the results into pages. A single page contains 20 lists. Provide a value of -1 to begin paging. Provide values as returned in the response body's next_cursor and previous_cursor attributes to page back and forth in the list.</p>
-<p><em>bool filter_to_owned_lists (optional)</em>  : When set to true, will return just lists the authenticating user owns, and the user represented by user_id or screen_name is a member of.</p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classCoreTweet_1_1Rest_1_1Users.html" title="GET/POST users">Users</a>.</dd></dl>
+<p>- <code>string</code> sereen_name (optional)</p>
+<p>- <code>long</code> user_id (optional)</p>
+<p>- <code>long</code> cursor (semi-optional)</p>
+<p>- <code>bool</code> filter_to_owned_lists (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the users.</p>
 
 </div>
 </div>
@@ -1210,6 +1519,24 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns the lists the specified user has been added to as an asynchronous operation.</p>
+<p>If user_id or screen_name are not provided the memberships for the authenticating user are returned.</p>
+<p>Avaliable parameters: </p>
+<p>- <code>string</code> sereen_name (optional)</p>
+<p>- <code>long</code> user_id (optional)</p>
+<p>- <code>long</code> cursor (semi-optional)</p>
+<p>- <code>bool</code> filter_to_owned_lists (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the users.</p>
+
 </div>
 </div>
 <a class="anchor" id="ab74bc020e4685cc789f183fe5172127a"></a>
@@ -1244,6 +1571,24 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns the lists the specified user has been added to as an asynchronous operation.</p>
+<p>If user_id or screen_name are not provided the memberships for the authenticating user are returned.</p>
+<p>Avaliable parameters: </p>
+<p>- <code>string</code> sereen_name (optional)</p>
+<p>- <code>long</code> user_id (optional)</p>
+<p>- <code>long</code> cursor (semi-optional)</p>
+<p>- <code>bool</code> filter_to_owned_lists (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the users.</p>
+
 </div>
 </div>
 <a class="anchor" id="a2be65dcc70a640694058971c1dfda366"></a>
@@ -1269,20 +1614,22 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Returns the specified list. Private lists will only be shown if the authenticated user owns the specified list.</p>
-<p>Note: Either a list_id or a slug is required. If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
-<p>Avaliable parameters: </p>
-<p><em>long list_id (required)</em>  : The numerical id of the list.</p>
-<p><em>string slug (required)</em>  : You can identify a list by its slug instead of its numerical id. If you decide to do so, note that you'll also have to specify the list owner using the owner_id or owner_screen_name parameters.</p>
-<p><em>string owner_screen_name (optional)</em>  : The screen name of the user who owns the list being requested by a slug.</p>
-<p><em>long owner_id (optional)</em>  : The user ID of the user who owns the list being requested by a slug.</p>
-<dl class="section return"><dt>Returns</dt><dd>A list.</dd></dl>
+<p>Returns the specified list.</p>
+<p>Private lists will only be shown if the authenticated user owns the specified list.</p>
+<p>Note: Either a list_id or a slug is required.</p>
+<p>If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> list_id (required)</p>
+<p>- <code>string</code> slug (required)</p>
+<p>- <code>string</code> owner_screen_name (optional)</p>
+<p>- <code>long</code> owner_id (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The list.</dd></dl>
 
 </div>
 </div>
@@ -1308,6 +1655,24 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns the specified list.</p>
+<p>Private lists will only be shown if the authenticated user owns the specified list.</p>
+<p>Note: Either a list_id or a slug is required.</p>
+<p>If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> list_id (required)</p>
+<p>- <code>string</code> slug (required)</p>
+<p>- <code>string</code> owner_screen_name (optional)</p>
+<p>- <code>long</code> owner_id (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The list.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a0e7ad7fc603eaabbce41575026893690"></a>
@@ -1331,6 +1696,24 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Returns the specified list.</p>
+<p>Private lists will only be shown if the authenticated user owns the specified list.</p>
+<p>Note: Either a list_id or a slug is required.</p>
+<p>If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> list_id (required)</p>
+<p>- <code>string</code> slug (required)</p>
+<p>- <code>string</code> owner_screen_name (optional)</p>
+<p>- <code>long</code> owner_id (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The list.</dd></dl>
 
 </div>
 </div>
@@ -1357,20 +1740,23 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Returns the specified list. Private lists will only be shown if the authenticated user owns the specified list.</p>
-<p>Note: Either a list_id or a slug is required. If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
-<p>Avaliable parameters: </p>
-<p><em>long list_id (required)</em>  : The numerical id of the list.</p>
-<p><em>string slug (required)</em>  : You can identify a list by its slug instead of its numerical id. If you decide to do so, note that you'll also have to specify the list owner using the owner_id or owner_screen_name parameters.</p>
-<p><em>string owner_screen_name (optional)</em>  : The screen name of the user who owns the list being requested by a slug.</p>
-<p><em>long owner_id (optional)</em>  : The user ID of the user who owns the list being requested by a slug.</p>
-<dl class="section return"><dt>Returns</dt><dd>A list.</dd></dl>
+<p>Returns the specified list as an asynchronous operation.</p>
+<p>Private lists will only be shown if the authenticated user owns the specified list.</p>
+<p>Note: Either a list_id or a slug is required.</p>
+<p>If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> list_id (required)</p>
+<p>- <code>string</code> slug (required)</p>
+<p>- <code>string</code> owner_screen_name (optional)</p>
+<p>- <code>long</code> owner_id (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the lists.</p>
 
 </div>
 </div>
@@ -1406,6 +1792,26 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns the specified list as an asynchronous operation.</p>
+<p>Private lists will only be shown if the authenticated user owns the specified list.</p>
+<p>Note: Either a list_id or a slug is required.</p>
+<p>If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> list_id (required)</p>
+<p>- <code>string</code> slug (required)</p>
+<p>- <code>string</code> owner_screen_name (optional)</p>
+<p>- <code>long</code> owner_id (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the lists.</p>
+
 </div>
 </div>
 <a class="anchor" id="af2dcff073d85b77d8d56d2acc656df51"></a>
@@ -1440,6 +1846,26 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns the specified list as an asynchronous operation.</p>
+<p>Private lists will only be shown if the authenticated user owns the specified list.</p>
+<p>Note: Either a list_id or a slug is required.</p>
+<p>If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> list_id (required)</p>
+<p>- <code>string</code> slug (required)</p>
+<p>- <code>string</code> owner_screen_name (optional)</p>
+<p>- <code>long</code> owner_id (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the lists.</p>
+
 </div>
 </div>
 <a class="anchor" id="a6bb9100adfedc51013a788726cb08025"></a>
@@ -1465,25 +1891,28 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Returns tweet timeline for members of the specified list. Retweets are included by default. You can use the include_rts=false parameter to omit retweet objects.</p>
-<p>Note: Either a list_id or a slug is required. If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
-<p>Avaliable parameters: </p>
-<p><em>long list_id (required)</em>  : The numerical id of the list.</p>
-<p><em>string slug (required)</em>  : You can identify a list by its slug instead of its numerical id. If you decide to do so, note that you'll also have to specify the list owner using the owner_id or owner_screen_name parameters.</p>
-<p><em>string owner_screen_name (optional)</em>  : The screen name of the user who owns the list being requested by a slug.</p>
-<p><em>long owner_id (optional)</em>  : The user ID of the user who owns the list being requested by a slug.</p>
-<p><em>long since_id (optional)</em>  : Returns results with an ID greater than (that is, more recent than) the specified ID. There are limits to the number of Tweets which can be accessed through the API. If the limit of Tweets has occured since the since_id, the since_id will be forced to the oldest ID available.</p>
-<p><em>long max_id (optional)</em>  : Returns results with an ID less than (that is, older than) or equal to the specified ID.</p>
-<p><em>int count (optional)</em>  : Specifies the number of results to retrieve per page.</p>
-<p><em>bool include_entities (optional)</em>  : <a class="el" href="classCoreTweet_1_1Entities.html">Entities</a> are ON by default in API 1.1, each tweet includes a node called entities. This node offers a variety of metadata about the tweet in a discreet structure, including: user_mentions, urls, and hashtags. You can omit entities from the result by using include_entities=false.&lt;&gt; </p>
-<p><em>bool include_rts (optional)</em>  : When set to true, the list timeline will contain native retweets (if they exist) in addition to the standard stream of tweets. The output format of retweeted tweets is identical to the representation you see in home_timeline.</p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classCoreTweet_1_1Rest_1_1Statuses.html" title="GET/POST statuses">Statuses</a>.</dd></dl>
+<p>Returns tweet timeline for members of the specified list.</p>
+<p>Retweets are included by default.</p>
+<p>You can use the include_rts=false parameter to omit retweet objects.</p>
+<p>Note: Either a list_id or a slug is required.</p>
+<p>If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> list_id (required)</p>
+<p>- <code>string</code> slug (required)</p>
+<p>- <code>string</code> owner_screen_name (optional)</p>
+<p>- <code>long</code> owner_id (optional)</p>
+<p>- <code>long</code> since_id (optional)</p>
+<p>- <code>long</code> max_id (optional)</p>
+<p>- <code>int</code> count (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<p>- <code>bool</code> include_rts (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The statuses.</dd></dl>
 
 </div>
 </div>
@@ -1509,6 +1938,30 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns tweet timeline for members of the specified list.</p>
+<p>Retweets are included by default.</p>
+<p>You can use the include_rts=false parameter to omit retweet objects.</p>
+<p>Note: Either a list_id or a slug is required.</p>
+<p>If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> list_id (required)</p>
+<p>- <code>string</code> slug (required)</p>
+<p>- <code>string</code> owner_screen_name (optional)</p>
+<p>- <code>long</code> owner_id (optional)</p>
+<p>- <code>long</code> since_id (optional)</p>
+<p>- <code>long</code> max_id (optional)</p>
+<p>- <code>int</code> count (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<p>- <code>bool</code> include_rts (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The statuses.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a8d349c5b81c14f8bd77b915c7128499d"></a>
@@ -1532,6 +1985,30 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Returns tweet timeline for members of the specified list.</p>
+<p>Retweets are included by default.</p>
+<p>You can use the include_rts=false parameter to omit retweet objects.</p>
+<p>Note: Either a list_id or a slug is required.</p>
+<p>If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> list_id (required)</p>
+<p>- <code>string</code> slug (required)</p>
+<p>- <code>string</code> owner_screen_name (optional)</p>
+<p>- <code>long</code> owner_id (optional)</p>
+<p>- <code>long</code> since_id (optional)</p>
+<p>- <code>long</code> max_id (optional)</p>
+<p>- <code>int</code> count (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<p>- <code>bool</code> include_rts (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The statuses.</dd></dl>
 
 </div>
 </div>
@@ -1558,25 +2035,29 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Returns tweet timeline for members of the specified list. Retweets are included by default. You can use the include_rts=false parameter to omit retweet objects.</p>
-<p>Note: Either a list_id or a slug is required. If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
-<p>Avaliable parameters: </p>
-<p><em>long list_id (required)</em>  : The numerical id of the list.</p>
-<p><em>string slug (required)</em>  : You can identify a list by its slug instead of its numerical id. If you decide to do so, note that you'll also have to specify the list owner using the owner_id or owner_screen_name parameters.</p>
-<p><em>string owner_screen_name (optional)</em>  : The screen name of the user who owns the list being requested by a slug.</p>
-<p><em>long owner_id (optional)</em>  : The user ID of the user who owns the list being requested by a slug.</p>
-<p><em>long since_id (optional)</em>  : Returns results with an ID greater than (that is, more recent than) the specified ID. There are limits to the number of Tweets which can be accessed through the API. If the limit of Tweets has occured since the since_id, the since_id will be forced to the oldest ID available.</p>
-<p><em>long max_id (optional)</em>  : Returns results with an ID less than (that is, older than) or equal to the specified ID.</p>
-<p><em>int count (optional)</em>  : Specifies the number of results to retrieve per page.</p>
-<p><em>bool include_entities (optional)</em>  : <a class="el" href="classCoreTweet_1_1Entities.html">Entities</a> are ON by default in API 1.1, each tweet includes a node called entities. This node offers a variety of metadata about the tweet in a discreet structure, including: user_mentions, urls, and hashtags. You can omit entities from the result by using include_entities=false.&lt;&gt; </p>
-<p><em>bool include_rts (optional)</em>  : When set to true, the list timeline will contain native retweets (if they exist) in addition to the standard stream of tweets. The output format of retweeted tweets is identical to the representation you see in home_timeline.</p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classCoreTweet_1_1Rest_1_1Statuses.html" title="GET/POST statuses">Statuses</a>.</dd></dl>
+<p>Returns tweet timeline for members of the specified list.</p>
+<p>Retweets are included by default.</p>
+<p>You can use the include_rts=false parameter to omit retweet objects.</p>
+<p>Note: Either a list_id or a slug is required.</p>
+<p>If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> list_id (required)</p>
+<p>- <code>string</code> slug (required)</p>
+<p>- <code>string</code> owner_screen_name (optional)</p>
+<p>- <code>long</code> owner_id (optional)</p>
+<p>- <code>long</code> since_id (optional)</p>
+<p>- <code>long</code> max_id (optional)</p>
+<p>- <code>int</code> count (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<p>- <code>bool</code> include_rts (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the statuses.</p>
 
 </div>
 </div>
@@ -1612,6 +2093,32 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns tweet timeline for members of the specified list.</p>
+<p>Retweets are included by default.</p>
+<p>You can use the include_rts=false parameter to omit retweet objects.</p>
+<p>Note: Either a list_id or a slug is required.</p>
+<p>If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> list_id (required)</p>
+<p>- <code>string</code> slug (required)</p>
+<p>- <code>string</code> owner_screen_name (optional)</p>
+<p>- <code>long</code> owner_id (optional)</p>
+<p>- <code>long</code> since_id (optional)</p>
+<p>- <code>long</code> max_id (optional)</p>
+<p>- <code>int</code> count (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<p>- <code>bool</code> include_rts (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the statuses.</p>
+
 </div>
 </div>
 <a class="anchor" id="aab7d86efe9c3cfdd446e246065366c1c"></a>
@@ -1646,6 +2153,32 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns tweet timeline for members of the specified list.</p>
+<p>Retweets are included by default.</p>
+<p>You can use the include_rts=false parameter to omit retweet objects.</p>
+<p>Note: Either a list_id or a slug is required.</p>
+<p>If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> list_id (required)</p>
+<p>- <code>string</code> slug (required)</p>
+<p>- <code>string</code> owner_screen_name (optional)</p>
+<p>- <code>long</code> owner_id (optional)</p>
+<p>- <code>long</code> since_id (optional)</p>
+<p>- <code>long</code> max_id (optional)</p>
+<p>- <code>int</code> count (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<p>- <code>bool</code> include_rts (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the statuses.</p>
+
 </div>
 </div>
 <a class="anchor" id="a8c9a7cd93c3513dec403dfedfd88ceae"></a>
@@ -1671,20 +2204,21 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Obtain a collection of the lists the specified user is subscribed to, 20 lists per page by default. Does not include the user's own lists.</p>
+<p>Obtain a collection of the lists the specified user is subscribed to, 20 lists per page by default.</p>
+<p>Does not include the user's own lists.</p>
 <p>Note: A user_id or screen_name must be provided.</p>
-<p>Avaliable parameters: </p>
-<p><em>long user_id (optional)</em>  : The ID of the user for whom to return results for. Helpful for disambiguating when a valid user ID is also a valid screen name.</p>
-<p><em>string screen_name (optional)</em>  : The screen name of the user for whom to return results for. Helpful for disambiguating when a valid screen name is also a user ID.</p>
-<p><em>int count (optional)</em>  : The amount of results to return per page. Defaults to 20. Maximum of 1,000 when using cursors.</p>
-<p><em>long cursor (optional)</em>  : Breaks the results into pages. A single page contains 20 lists. Provide a value of -1 to begin paging. Provide values as returned in the response body's next_cursor and previous_cursor attributes to page back and forth in the list. It is recommended to always use cursors when the method supports them.</p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classCoreTweet_1_1Rest_1_1Lists.html" title="GET/POST lists">Lists</a>.</dd></dl>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> user_id (optional)</p>
+<p>- <code>string</code> screen_name (optional)</p>
+<p>- <code>int</code> count (optional)</p>
+<p>- <code>long</code> cursor (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The lists.</dd></dl>
 
 </div>
 </div>
@@ -1710,6 +2244,23 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Obtain a collection of the lists the specified user is subscribed to, 20 lists per page by default.</p>
+<p>Does not include the user's own lists.</p>
+<p>Note: A user_id or screen_name must be provided.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> user_id (optional)</p>
+<p>- <code>string</code> screen_name (optional)</p>
+<p>- <code>int</code> count (optional)</p>
+<p>- <code>long</code> cursor (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The lists.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a1e96036d2198ff342d1a2e444c44acb7"></a>
@@ -1733,6 +2284,23 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Obtain a collection of the lists the specified user is subscribed to, 20 lists per page by default.</p>
+<p>Does not include the user's own lists.</p>
+<p>Note: A user_id or screen_name must be provided.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> user_id (optional)</p>
+<p>- <code>string</code> screen_name (optional)</p>
+<p>- <code>int</code> count (optional)</p>
+<p>- <code>long</code> cursor (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The lists.</dd></dl>
 
 </div>
 </div>
@@ -1759,20 +2327,22 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Obtain a collection of the lists the specified user is subscribed to, 20 lists per page by default. Does not include the user's own lists.</p>
+<p>Obtain a collection of the lists the specified user is subscribed to, 20 lists per page by default as an asynchronous operation.</p>
+<p>Does not include the user's own lists.</p>
 <p>Note: A user_id or screen_name must be provided.</p>
-<p>Avaliable parameters: </p>
-<p><em>long user_id (optional)</em>  : The ID of the user for whom to return results for. Helpful for disambiguating when a valid user ID is also a valid screen name.</p>
-<p><em>string screen_name (optional)</em>  : The screen name of the user for whom to return results for. Helpful for disambiguating when a valid screen name is also a user ID.</p>
-<p><em>int count (optional)</em>  : The amount of results to return per page. Defaults to 20. Maximum of 1,000 when using cursors.</p>
-<p><em>long cursor (optional)</em>  : Breaks the results into pages. A single page contains 20 lists. Provide a value of -1 to begin paging. Provide values as returned in the response body's next_cursor and previous_cursor attributes to page back and forth in the list. It is recommended to always use cursors when the method supports them.</p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classCoreTweet_1_1Rest_1_1Lists.html" title="GET/POST lists">Lists</a>.</dd></dl>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> user_id (optional)</p>
+<p>- <code>string</code> screen_name (optional)</p>
+<p>- <code>int</code> count (optional)</p>
+<p>- <code>long</code> cursor (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the lists.</p>
 
 </div>
 </div>
@@ -1808,6 +2378,25 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Obtain a collection of the lists the specified user is subscribed to, 20 lists per page by default as an asynchronous operation.</p>
+<p>Does not include the user's own lists.</p>
+<p>Note: A user_id or screen_name must be provided.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> user_id (optional)</p>
+<p>- <code>string</code> screen_name (optional)</p>
+<p>- <code>int</code> count (optional)</p>
+<p>- <code>long</code> cursor (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the lists.</p>
+
 </div>
 </div>
 <a class="anchor" id="af71dec158ab724b95997fb805dc3affd"></a>
@@ -1842,6 +2431,25 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Obtain a collection of the lists the specified user is subscribed to, 20 lists per page by default as an asynchronous operation.</p>
+<p>Does not include the user's own lists.</p>
+<p>Note: A user_id or screen_name must be provided.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> user_id (optional)</p>
+<p>- <code>string</code> screen_name (optional)</p>
+<p>- <code>int</code> count (optional)</p>
+<p>- <code>long</code> cursor (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the lists.</p>
+
 </div>
 </div>
 <a class="anchor" id="a8b430835b3abab6cfff0ecc19696c01a"></a>
@@ -1867,23 +2475,25 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Updates the specified list. The authenticated user must own the list to be able to update it.</p>
-<p>Note: Either a list_id or a slug is required. If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
-<p>Avaliable parameters: </p>
-<p><em>long list_id (required)</em>  : The numerical id of the list.</p>
-<p><em>string slug (required)</em>  : You can identify a list by its slug instead of its numerical id. If you decide to do so, note that you'll also have to specify the list owner using the owner_id or owner_screen_name parameters.</p>
-<p><em>string name (optional)</em>  : The name for the list.</p>
-<p><em>string mode (optional)</em>  : Whether your list is public or private. Values can be public or private. If no mode is specified the list will be public.</p>
-<p><em>string description (optional)</em>  : The description to give the list.</p>
-<p><em>string owner_screen_name (optional)</em>  : The screen name of the user who owns the list being requested by a slug.</p>
-<p><em>long owner_id (optional)</em>  : The user ID of the user who owns the list being requested by a slug.</p>
-<dl class="section return"><dt>Returns</dt><dd>The list.</dd></dl>
+<p>Updates the specified list.</p>
+<p>The authenticated user must own the list to be able to update it.</p>
+<p>Note: Either a list_id or a slug is required.</p>
+<p>If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> list_id (required)</p>
+<p>- <code>string</code> slug (required)</p>
+<p>- <code>string</code> name (optional)</p>
+<p>- <code>string</code> mode (optional)</p>
+<p>- <code>string</code> description (optional)</p>
+<p>- <code>string</code> owner_screen_name (optional)</p>
+<p>- <code>long</code> owner_id (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The list.</dd></dl>
 
 </div>
 </div>
@@ -1909,6 +2519,27 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Updates the specified list.</p>
+<p>The authenticated user must own the list to be able to update it.</p>
+<p>Note: Either a list_id or a slug is required.</p>
+<p>If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> list_id (required)</p>
+<p>- <code>string</code> slug (required)</p>
+<p>- <code>string</code> name (optional)</p>
+<p>- <code>string</code> mode (optional)</p>
+<p>- <code>string</code> description (optional)</p>
+<p>- <code>string</code> owner_screen_name (optional)</p>
+<p>- <code>long</code> owner_id (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The list.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a712360e0719d3a0e575ddcbb11dca00b"></a>
@@ -1932,6 +2563,27 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Updates the specified list.</p>
+<p>The authenticated user must own the list to be able to update it.</p>
+<p>Note: Either a list_id or a slug is required.</p>
+<p>If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> list_id (required)</p>
+<p>- <code>string</code> slug (required)</p>
+<p>- <code>string</code> name (optional)</p>
+<p>- <code>string</code> mode (optional)</p>
+<p>- <code>string</code> description (optional)</p>
+<p>- <code>string</code> owner_screen_name (optional)</p>
+<p>- <code>long</code> owner_id (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The list.</dd></dl>
 
 </div>
 </div>
@@ -1958,23 +2610,26 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Updates the specified list. The authenticated user must own the list to be able to update it.</p>
-<p>Note: Either a list_id or a slug is required. If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
-<p>Avaliable parameters: </p>
-<p><em>long list_id (required)</em>  : The numerical id of the list.</p>
-<p><em>string slug (required)</em>  : You can identify a list by its slug instead of its numerical id. If you decide to do so, note that you'll also have to specify the list owner using the owner_id or owner_screen_name parameters.</p>
-<p><em>string name (optional)</em>  : The name for the list.</p>
-<p><em>string mode (optional)</em>  : Whether your list is public or private. Values can be public or private. If no mode is specified the list will be public.</p>
-<p><em>string description (optional)</em>  : The description to give the list.</p>
-<p><em>string owner_screen_name (optional)</em>  : The screen name of the user who owns the list being requested by a slug.</p>
-<p><em>long owner_id (optional)</em>  : The user ID of the user who owns the list being requested by a slug.</p>
-<dl class="section return"><dt>Returns</dt><dd>The list.</dd></dl>
+<p>Updates the specified list.</p>
+<p>The authenticated user must own the list to be able to update it.</p>
+<p>Note: Either a list_id or a slug is required.</p>
+<p>If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> list_id (required)</p>
+<p>- <code>string</code> slug (required)</p>
+<p>- <code>string</code> name (optional)</p>
+<p>- <code>string</code> mode (optional)</p>
+<p>- <code>string</code> description (optional)</p>
+<p>- <code>string</code> owner_screen_name (optional)</p>
+<p>- <code>long</code> owner_id (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the list.</p>
 
 </div>
 </div>
@@ -2010,6 +2665,29 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Updates the specified list.</p>
+<p>The authenticated user must own the list to be able to update it.</p>
+<p>Note: Either a list_id or a slug is required.</p>
+<p>If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> list_id (required)</p>
+<p>- <code>string</code> slug (required)</p>
+<p>- <code>string</code> name (optional)</p>
+<p>- <code>string</code> mode (optional)</p>
+<p>- <code>string</code> description (optional)</p>
+<p>- <code>string</code> owner_screen_name (optional)</p>
+<p>- <code>long</code> owner_id (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the list.</p>
+
 </div>
 </div>
 <a class="anchor" id="ac2570d5aa58d81d8a16ba47587fca4fe"></a>
@@ -2044,6 +2722,29 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Updates the specified list.</p>
+<p>The authenticated user must own the list to be able to update it.</p>
+<p>Note: Either a list_id or a slug is required.</p>
+<p>If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> list_id (required)</p>
+<p>- <code>string</code> slug (required)</p>
+<p>- <code>string</code> name (optional)</p>
+<p>- <code>string</code> mode (optional)</p>
+<p>- <code>string</code> description (optional)</p>
+<p>- <code>string</code> owner_screen_name (optional)</p>
+<p>- <code>long</code> owner_id (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the list.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Property Documentation</h2>
@@ -2065,6 +2766,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Gets the wrapper of lists/members </p>
+
 </div>
 </div>
 <a class="anchor" id="a23d0d8f6970dc482627f418bb0d846b5"></a>
@@ -2085,6 +2788,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Gets the wrapper of lists/subscribers </p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
@@ -2094,7 +2799,7 @@ Properties</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat May 31 2014 23:10:00 for CoreTweet by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 20 2014 00:31:19 for CoreTweet by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

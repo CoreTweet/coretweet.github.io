@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="core-48x48.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">CoreTweet
-   &#160;<span id="projectnumber">0.3.3</span>
+   &#160;<span id="projectnumber">0.3.4</span>
    </div>
    <div id="projectbrief">Yet another .NET Twitter Library</div>
   </td>
@@ -97,7 +97,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>Direct message.  
+<p>Represents a direct message.  
  <a href="classCoreTweet_1_1DirectMessage.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for CoreTweet.DirectMessage:</div>
@@ -105,44 +105,43 @@ Inheritance diagram for CoreTweet.DirectMessage:</div>
  <div class="center">
   <img src="classCoreTweet_1_1DirectMessage.png" usemap="#CoreTweet.DirectMessage_map" alt=""/>
   <map id="CoreTweet.DirectMessage_map" name="CoreTweet.DirectMessage_map">
-<area href="classCoreTweet_1_1Core_1_1CoreBase.html" title="The base class of twitter objects. " alt="CoreTweet.Core.CoreBase" shape="rect" coords="0,0,217,24"/>
-<area href="classCoreTweet_1_1DirectMessageResponse.html" alt="CoreTweet.DirectMessageResponse" shape="rect" coords="0,112,217,136"/>
+<area href="classCoreTweet_1_1Core_1_1CoreBase.html" title="Represents a Twitter object. This is an abstract class. " alt="CoreTweet.Core.CoreBase" shape="rect" coords="0,0,217,24"/>
+<area href="classCoreTweet_1_1DirectMessageResponse.html" title="Represents a direct message with rate limit. " alt="CoreTweet.DirectMessageResponse" shape="rect" coords="0,112,217,136"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:a2de655bb8f7111a5d8aad80ddd97a509"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1DirectMessage.html#a2de655bb8f7111a5d8aad80ddd97a509">Id</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a2de655bb8f7111a5d8aad80ddd97a509"><td class="mdescLeft">&#160;</td><td class="mdescRight">The integer representation of the unique identifier for this Direct message.  <a href="#a2de655bb8f7111a5d8aad80ddd97a509">More...</a><br /></td></tr>
+<tr class="memdesc:a2de655bb8f7111a5d8aad80ddd97a509"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the integer representation of the unique identifier for the Direct message.  <a href="#a2de655bb8f7111a5d8aad80ddd97a509">More...</a><br /></td></tr>
 <tr class="separator:a2de655bb8f7111a5d8aad80ddd97a509"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f583691c1ce690381584a08be9a5691"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCoreTweet_1_1User.html">User</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1DirectMessage.html#a4f583691c1ce690381584a08be9a5691">Sender</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a4f583691c1ce690381584a08be9a5691"><td class="mdescLeft">&#160;</td><td class="mdescRight">The sender of this Direct message.  <a href="#a4f583691c1ce690381584a08be9a5691">More...</a><br /></td></tr>
+<tr class="memdesc:a4f583691c1ce690381584a08be9a5691"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the sender of the Direct message.  <a href="#a4f583691c1ce690381584a08be9a5691">More...</a><br /></td></tr>
 <tr class="separator:a4f583691c1ce690381584a08be9a5691"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6a0c34c991d96a73db5294dbfe6dab9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCoreTweet_1_1User.html">User</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1DirectMessage.html#ab6a0c34c991d96a73db5294dbfe6dab9">Recipient</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:ab6a0c34c991d96a73db5294dbfe6dab9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Recipient of this Direct message.  <a href="#ab6a0c34c991d96a73db5294dbfe6dab9">More...</a><br /></td></tr>
+<tr class="memdesc:ab6a0c34c991d96a73db5294dbfe6dab9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the Recipient of the Direct message.  <a href="#ab6a0c34c991d96a73db5294dbfe6dab9">More...</a><br /></td></tr>
 <tr class="separator:ab6a0c34c991d96a73db5294dbfe6dab9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af71d8fc3f9a50cbe41e436a25373f098"><td class="memItemLeft" align="right" valign="top">DateTimeOffset&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1DirectMessage.html#af71d8fc3f9a50cbe41e436a25373f098">CreatedAt</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:af71d8fc3f9a50cbe41e436a25373f098"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time when this Direct message was created.  <a href="#af71d8fc3f9a50cbe41e436a25373f098">More...</a><br /></td></tr>
+<tr class="memdesc:af71d8fc3f9a50cbe41e436a25373f098"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the time when the Direct message was created.  <a href="#af71d8fc3f9a50cbe41e436a25373f098">More...</a><br /></td></tr>
 <tr class="separator:af71d8fc3f9a50cbe41e436a25373f098"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e44d69f44fb4476889e41f82800ddf4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCoreTweet_1_1Entities.html">Entities</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1DirectMessage.html#a5e44d69f44fb4476889e41f82800ddf4">Entities</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a5e44d69f44fb4476889e41f82800ddf4"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classCoreTweet_1_1Entities.html">Entities</a> which have been parsed out of the text of the Direct message.  <a href="#a5e44d69f44fb4476889e41f82800ddf4">More...</a><br /></td></tr>
+<tr class="memdesc:a5e44d69f44fb4476889e41f82800ddf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the entities which have been parsed out of the text of the Direct message.  <a href="#a5e44d69f44fb4476889e41f82800ddf4">More...</a><br /></td></tr>
 <tr class="separator:a5e44d69f44fb4476889e41f82800ddf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2fb4e2dddca8df579f2aa841e9baf12"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1DirectMessage.html#af2fb4e2dddca8df579f2aa841e9baf12">Text</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:af2fb4e2dddca8df579f2aa841e9baf12"><td class="mdescLeft">&#160;</td><td class="mdescRight">The actual UTF-8 text of the status update.  <a href="#af2fb4e2dddca8df579f2aa841e9baf12">More...</a><br /></td></tr>
+<tr class="memdesc:af2fb4e2dddca8df579f2aa841e9baf12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the actual text of the Direct message.  <a href="#af2fb4e2dddca8df579f2aa841e9baf12">More...</a><br /></td></tr>
 <tr class="separator:af2fb4e2dddca8df579f2aa841e9baf12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_static_methods_classCoreTweet_1_1Core_1_1CoreBase"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classCoreTweet_1_1Core_1_1CoreBase')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classCoreTweet_1_1Core_1_1CoreBase.html">CoreTweet.Core.CoreBase</a></td></tr>
 <tr class="memitem:a24d02c61dc738f6e35086c7b42952294 inherit pub_static_methods_classCoreTweet_1_1Core_1_1CoreBase"><td class="memItemLeft" align="right" valign="top">static T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Core_1_1CoreBase.html#a24d02c61dc738f6e35086c7b42952294">Convert&lt; T &gt;</a> (<a class="el" href="classCoreTweet_1_1Core_1_1TokensBase.html">TokensBase</a> tokens, string json, string jsonPath=&quot;&quot;)</td></tr>
-<tr class="memdesc:a24d02c61dc738f6e35086c7b42952294 inherit pub_static_methods_classCoreTweet_1_1Core_1_1CoreBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the json to a twitter object of the specified type.  <a href="#a24d02c61dc738f6e35086c7b42952294">More...</a><br /></td></tr>
+<tr class="memdesc:a24d02c61dc738f6e35086c7b42952294 inherit pub_static_methods_classCoreTweet_1_1Core_1_1CoreBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the JSON to a twitter object of the specified type.  <a href="#a24d02c61dc738f6e35086c7b42952294">More...</a><br /></td></tr>
 <tr class="separator:a24d02c61dc738f6e35086c7b42952294 inherit pub_static_methods_classCoreTweet_1_1Core_1_1CoreBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b972da176de8e43680f988c5d9cf84b inherit pub_static_methods_classCoreTweet_1_1Core_1_1CoreBase"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classCoreTweet_1_1List.html">List</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Core_1_1CoreBase.html#a5b972da176de8e43680f988c5d9cf84b">ConvertArray&lt; T &gt;</a> (<a class="el" href="classCoreTweet_1_1Core_1_1TokensBase.html">TokensBase</a> tokens, string json, string jsonPath)</td></tr>
-<tr class="memdesc:a5b972da176de8e43680f988c5d9cf84b inherit pub_static_methods_classCoreTweet_1_1Core_1_1CoreBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the json to a twitter object of the specified type. This is used for APIs that return an array.  <a href="#a5b972da176de8e43680f988c5d9cf84b">More...</a><br /></td></tr>
 <tr class="separator:a5b972da176de8e43680f988c5d9cf84b inherit pub_static_methods_classCoreTweet_1_1Core_1_1CoreBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Direct message. </p>
+<div class="textblock"><p>Represents a direct message. </p>
 </div><h2 class="groupheader">Property Documentation</h2>
 <a class="anchor" id="af71d8fc3f9a50cbe41e436a25373f098"></a>
 <div class="memitem">
@@ -162,7 +161,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Time when this Direct message was created. </p>
+<p>Gets or sets the time when the Direct message was created. </p>
 
 </div>
 </div>
@@ -184,7 +183,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="classCoreTweet_1_1Entities.html">Entities</a> which have been parsed out of the text of the Direct message. </p>
+<p>Gets or sets the entities which have been parsed out of the text of the Direct message. </p>
 
 </div>
 </div>
@@ -206,7 +205,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>The integer representation of the unique identifier for this Direct message. </p>
+<p>Gets or sets the integer representation of the unique identifier for the Direct message. </p>
 
 </div>
 </div>
@@ -228,7 +227,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>The Recipient of this Direct message. </p>
+<p>Gets or sets the Recipient of the Direct message. </p>
 
 </div>
 </div>
@@ -250,7 +249,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>The sender of this Direct message. </p>
+<p>Gets or sets the sender of the Direct message. </p>
 
 </div>
 </div>
@@ -272,8 +271,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>The actual UTF-8 text of the status update. </p>
-<p>The text. </p>
+<p>Gets or sets the actual text of the Direct message. </p>
 
 </div>
 </div>
@@ -283,7 +281,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat May 31 2014 23:10:00 for CoreTweet by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 20 2014 00:31:19 for CoreTweet by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

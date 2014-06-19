@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="core-48x48.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">CoreTweet
-   &#160;<span id="projectnumber">0.3.3</span>
+   &#160;<span id="projectnumber">0.3.4</span>
    </div>
    <div id="projectbrief">Yet another .NET Twitter Library</div>
   </td>
@@ -98,6 +98,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">CoreTweet.AsyncResponse Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Represents an asynchronous response.  
+ <a href="classCoreTweet_1_1AsyncResponse.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for CoreTweet.AsyncResponse:</div>
 <div class="dyncontent">
@@ -110,29 +113,39 @@ Inheritance diagram for CoreTweet.AsyncResponse:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a346c842098bae7e338f35d2e10ce46e0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1AsyncResponse.html#a346c842098bae7e338f35d2e10ce46e0">AsyncResponse</a> (HttpWebResponse source)</td></tr>
+<tr class="memdesc:a346c842098bae7e338f35d2e10ce46e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new instance of the <a class="el" href="classCoreTweet_1_1AsyncResponse.html" title="Represents an asynchronous response. ">CoreTweet.AsyncResponse</a> class with a specified source.  <a href="#a346c842098bae7e338f35d2e10ce46e0">More...</a><br /></td></tr>
 <tr class="separator:a346c842098bae7e338f35d2e10ce46e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adcfb5e4ced058c53a2a2cfcada769485"><td class="memItemLeft" align="right" valign="top">Stream&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1AsyncResponse.html#adcfb5e4ced058c53a2a2cfcada769485">GetResponseStream</a> ()</td></tr>
+<tr class="memdesc:adcfb5e4ced058c53a2a2cfcada769485"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the stream that is used to read the body of the response from the server.  <a href="#adcfb5e4ced058c53a2a2cfcada769485">More...</a><br /></td></tr>
 <tr class="separator:adcfb5e4ced058c53a2a2cfcada769485"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32e8840716968fb61ef951a20887c544"><td class="memItemLeft" align="right" valign="top">Task&lt; Stream &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1AsyncResponse.html#a32e8840716968fb61ef951a20887c544">GetResponseStreamAsync</a> ()</td></tr>
+<tr class="memdesc:a32e8840716968fb61ef951a20887c544"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the stream that is used to read the body of the response from the server as an asynchronous operation.  <a href="#a32e8840716968fb61ef951a20887c544">More...</a><br /></td></tr>
 <tr class="separator:a32e8840716968fb61ef951a20887c544"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a916b623894bfa9633fa835f620637b6c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1AsyncResponse.html#a916b623894bfa9633fa835f620637b6c">Dispose</a> ()</td></tr>
+<tr class="memdesc:a916b623894bfa9633fa835f620637b6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes the stream and releases all the resources.  <a href="#a916b623894bfa9633fa835f620637b6c">More...</a><br /></td></tr>
 <tr class="separator:a916b623894bfa9633fa835f620637b6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a92978f5ebd8e28e6010102e936d18e49"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1AsyncResponse.html#a92978f5ebd8e28e6010102e936d18e49">Dispose</a> (bool disposing)</td></tr>
+<tr class="memdesc:a92978f5ebd8e28e6010102e936d18e49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes the stream and releases all the resources.  <a href="#a92978f5ebd8e28e6010102e936d18e49">More...</a><br /></td></tr>
 <tr class="separator:a92978f5ebd8e28e6010102e936d18e49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:aee4be9518351aea31167b935bbe10590"><td class="memItemLeft" align="right" valign="top">HttpWebResponse&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1AsyncResponse.html#aee4be9518351aea31167b935bbe10590">Source</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:aee4be9518351aea31167b935bbe10590"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the source of the response.  <a href="#aee4be9518351aea31167b935bbe10590">More...</a><br /></td></tr>
 <tr class="separator:aee4be9518351aea31167b935bbe10590"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e28beb3e6f265448af0f9c052246b23"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1AsyncResponse.html#a2e28beb3e6f265448af0f9c052246b23">StatusCode</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a2e28beb3e6f265448af0f9c052246b23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the status code of the response.  <a href="#a2e28beb3e6f265448af0f9c052246b23">More...</a><br /></td></tr>
 <tr class="separator:a2e28beb3e6f265448af0f9c052246b23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaaea59b21345eff96f41600772c6487a"><td class="memItemLeft" align="right" valign="top">IDictionary&lt; string, string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1AsyncResponse.html#aaaea59b21345eff96f41600772c6487a">Headers</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:aaaea59b21345eff96f41600772c6487a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the headers of the response.  <a href="#aaaea59b21345eff96f41600772c6487a">More...</a><br /></td></tr>
 <tr class="separator:aaaea59b21345eff96f41600772c6487a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Represents an asynchronous response. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a346c842098bae7e338f35d2e10ce46e0"></a>
 <div class="memitem">
 <div class="memproto">
@@ -154,6 +167,14 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Initializes a new instance of the <a class="el" href="classCoreTweet_1_1AsyncResponse.html" title="Represents an asynchronous response. ">CoreTweet.AsyncResponse</a> class with a specified source. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">source</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -180,6 +201,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Closes the stream and releases all the resources. </p>
+
 </div>
 </div>
 <a class="anchor" id="a916b623894bfa9633fa835f620637b6c"></a>
@@ -202,6 +225,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Closes the stream and releases all the resources. </p>
 
 </div>
 </div>
@@ -226,6 +251,15 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Gets the stream that is used to read the body of the response from the server. </p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">System.PlatformNotSupportedException</td><td>The platform only supports asynchronous methods.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A System.IO.Stream containing the body of the response.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a32e8840716968fb61ef951a20887c544"></a>
@@ -249,6 +283,10 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Gets the stream that is used to read the body of the response from the server as an asynchronous operation. </p>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the System.IO.Stream containing the body of the response.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Property Documentation</h2>
@@ -270,6 +308,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Gets the headers of the response. </p>
+
 </div>
 </div>
 <a class="anchor" id="aee4be9518351aea31167b935bbe10590"></a>
@@ -289,6 +329,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Gets the source of the response. </p>
 
 </div>
 </div>
@@ -310,6 +352,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Gets the status code of the response. </p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -318,7 +362,7 @@ Properties</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat May 31 2014 23:10:00 for CoreTweet by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 20 2014 00:31:19 for CoreTweet by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

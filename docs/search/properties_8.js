@@ -4,7 +4,7 @@ var searchData=
   ['image',['Image',['../classCoreTweet_1_1MediaUploadResult.html#a529f64e60a7da307090d05961879d25b',1,'CoreTweet::MediaUploadResult']]],
   ['imagetype',['ImageType',['../classCoreTweet_1_1Image.html#a25f3e58e98a4bbfc154a5bc1008953b0',1,'CoreTweet::Image']]],
   ['includedtokens',['IncludedTokens',['../classCoreTweet_1_1Core_1_1ApiProviderBase.html#a8f9003e34c6f19f561b10b1f14098ec1',1,'CoreTweet::Core::ApiProviderBase']]],
-  ['indices',['Indices',['../classCoreTweet_1_1Entity.html#a8b45a075759947114c37adc907f5c039',1,'CoreTweet.Entity.Indices()'],['../classCoreTweet_1_1MediaEntity.html#aab4c539536f85043b2ace05ef27ebf4c',1,'CoreTweet.MediaEntity.Indices()']]],
+  ['indices',['Indices',['../classCoreTweet_1_1Entity.html#a8b45a075759947114c37adc907f5c039',1,'CoreTweet::Entity']]],
   ['infoname',['InfoName',['../classCoreTweet_1_1TimeZone.html#a85de653324c961dd38ce10c2872a611e',1,'CoreTweet::TimeZone']]],
   ['inreplytoscreenname',['InReplyToScreenName',['../classCoreTweet_1_1Status.html#a775e07cb466e4717abbea565ddd9b6f5',1,'CoreTweet::Status']]],
   ['inreplytostatusid',['InReplyToStatusId',['../classCoreTweet_1_1Status.html#ab30ff2c599d9ac5a4b8feee6c54763c3',1,'CoreTweet::Status']]],

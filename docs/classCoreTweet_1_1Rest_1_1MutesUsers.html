@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="core-48x48.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">CoreTweet
-   &#160;<span id="projectnumber">0.3.3</span>
+   &#160;<span id="projectnumber">0.3.4</span>
    </div>
    <div id="projectbrief">Yet another .NET Twitter Library</div>
   </td>
@@ -97,7 +97,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>GET/POST mutes/users 
+<p>Provides a set of methods for the wrapper of GET/POST mutes/users.  
  <a href="classCoreTweet_1_1Rest_1_1MutesUsers.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for CoreTweet.Rest.MutesUsers:</div>
@@ -105,7 +105,7 @@ Inheritance diagram for CoreTweet.Rest.MutesUsers:</div>
  <div class="center">
   <img src="classCoreTweet_1_1Rest_1_1MutesUsers.png" usemap="#CoreTweet.Rest.MutesUsers_map" alt=""/>
   <map id="CoreTweet.Rest.MutesUsers_map" name="CoreTweet.Rest.MutesUsers_map">
-<area href="classCoreTweet_1_1Core_1_1ApiProviderBase.html" title="Base class of API providers. " alt="CoreTweet.Core.ApiProviderBase" shape="rect" coords="0,0,205,24"/>
+<area href="classCoreTweet_1_1Core_1_1ApiProviderBase.html" title="Provides a Twitter API wrapper. This is an abstract class. " alt="CoreTweet.Core.ApiProviderBase" shape="rect" coords="0,0,205,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -180,7 +180,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a8f9003e34c6f19f561b10b1f14098ec1 inherit properties_classCoreTweet_1_1Core_1_1ApiProviderBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>GET/POST mutes/users</p>
+<div class="textblock"><p>Provides a set of methods for the wrapper of GET/POST mutes/users. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="afa756068c820aaffd922095925af87e5"></a>
 <div class="memitem">
@@ -205,20 +205,21 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p><a class="el" href="classCoreTweet_1_1Rest_1_1Mutes.html" title="GET/POST mutes">Mutes</a> the user specified in the ID parameter for the authenticating user.</p>
-<p>Returns the muted user in the requested format when successful. Returns a string describing the failure condition when unsuccessful.</p>
+<p><a class="el" href="classCoreTweet_1_1Rest_1_1Mutes.html" title="Provides a set of methods for the wrapper of GET/POST mutes. ">Mutes</a> the user specified in the ID parameter for the authenticating user.</p>
+<p>Returns the muted user in the requested format when successful.</p>
+<p>Returns a string describing the failure condition when unsuccessful.</p>
 <p>Actions taken in this method are asynchronous and changes will be eventually consistent.</p>
 <p>Note: Providing either screen_name or user_id is required.</p>
-<p>Avaliable parameters: </p>
-<p><em>string screen_name (optional)</em>  : The screen name of the potentially muted user. Helpful for disambiguating when a valid screen name is also a user ID.</p>
-<p><em>long user_id (optional)</em>  : The ID of the potentially muted user. Helpful for disambiguating when a valid user ID is also a valid screen name.</p>
-<dl class="section return"><dt>Returns</dt><dd>The user.</dd></dl>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> screen_name (optional)</p>
+<p>- <code>long</code> user_id (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The user.</dd></dl>
 
 </div>
 </div>
@@ -244,6 +245,23 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p><a class="el" href="classCoreTweet_1_1Rest_1_1Mutes.html" title="Provides a set of methods for the wrapper of GET/POST mutes. ">Mutes</a> the user specified in the ID parameter for the authenticating user.</p>
+<p>Returns the muted user in the requested format when successful.</p>
+<p>Returns a string describing the failure condition when unsuccessful.</p>
+<p>Actions taken in this method are asynchronous and changes will be eventually consistent.</p>
+<p>Note: Providing either screen_name or user_id is required.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> screen_name (optional)</p>
+<p>- <code>long</code> user_id (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The user.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a14809cf6b324c2f211c65f77a848a8b3"></a>
@@ -267,6 +285,23 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p><a class="el" href="classCoreTweet_1_1Rest_1_1Mutes.html" title="Provides a set of methods for the wrapper of GET/POST mutes. ">Mutes</a> the user specified in the ID parameter for the authenticating user.</p>
+<p>Returns the muted user in the requested format when successful.</p>
+<p>Returns a string describing the failure condition when unsuccessful.</p>
+<p>Actions taken in this method are asynchronous and changes will be eventually consistent.</p>
+<p>Note: Providing either screen_name or user_id is required.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> screen_name (optional)</p>
+<p>- <code>long</code> user_id (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The user.</dd></dl>
 
 </div>
 </div>
@@ -293,20 +328,22 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p><a class="el" href="classCoreTweet_1_1Rest_1_1Mutes.html" title="GET/POST mutes">Mutes</a> the user specified in the ID parameter for the authenticating user.</p>
-<p>Returns the muted user in the requested format when successful. Returns a string describing the failure condition when unsuccessful.</p>
+<p><a class="el" href="classCoreTweet_1_1Rest_1_1Mutes.html" title="Provides a set of methods for the wrapper of GET/POST mutes. ">Mutes</a> the user specified in the ID parameter for the authenticating user as an asynchronous operation.</p>
+<p>Returns the muted user in the requested format when successful.</p>
+<p>Returns a string describing the failure condition when unsuccessful.</p>
 <p>Actions taken in this method are asynchronous and changes will be eventually consistent.</p>
 <p>Note: Providing either screen_name or user_id is required.</p>
-<p>Avaliable parameters: </p>
-<p><em>string screen_name (optional)</em>  : The screen name of the potentially muted user. Helpful for disambiguating when a valid screen name is also a user ID.</p>
-<p><em>long user_id (optional)</em>  : The ID of the potentially muted user. Helpful for disambiguating when a valid user ID is also a valid screen name.</p>
-<dl class="section return"><dt>Returns</dt><dd>The user.</dd></dl>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> screen_name (optional)</p>
+<p>- <code>long</code> user_id (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the user.</p>
 
 </div>
 </div>
@@ -342,6 +379,25 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p><a class="el" href="classCoreTweet_1_1Rest_1_1Mutes.html" title="Provides a set of methods for the wrapper of GET/POST mutes. ">Mutes</a> the user specified in the ID parameter for the authenticating user as an asynchronous operation.</p>
+<p>Returns the muted user in the requested format when successful.</p>
+<p>Returns a string describing the failure condition when unsuccessful.</p>
+<p>Actions taken in this method are asynchronous and changes will be eventually consistent.</p>
+<p>Note: Providing either screen_name or user_id is required.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> screen_name (optional)</p>
+<p>- <code>long</code> user_id (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the user.</p>
+
 </div>
 </div>
 <a class="anchor" id="a452c1767412d6beeda8ca42f6693df96"></a>
@@ -376,6 +432,25 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p><a class="el" href="classCoreTweet_1_1Rest_1_1Mutes.html" title="Provides a set of methods for the wrapper of GET/POST mutes. ">Mutes</a> the user specified in the ID parameter for the authenticating user as an asynchronous operation.</p>
+<p>Returns the muted user in the requested format when successful.</p>
+<p>Returns a string describing the failure condition when unsuccessful.</p>
+<p>Actions taken in this method are asynchronous and changes will be eventually consistent.</p>
+<p>Note: Providing either screen_name or user_id is required.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> screen_name (optional)</p>
+<p>- <code>long</code> user_id (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the user.</p>
+
 </div>
 </div>
 <a class="anchor" id="a4e71e1922bb1cf4b5c25ac6f48acf8e1"></a>
@@ -402,19 +477,20 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Un-mutes the user specified in the ID parameter for the authenticating user.</p>
-<p>Returns the unmuted user in the requested format when successful. Returns a string describing the failure condition when unsuccessful.</p>
+<p>Returns the unmuted user in the requested format when successful.</p>
+<p>Returns a string describing the failure condition when unsuccessful.</p>
 <p>Actions taken in this method are asynchronous and changes will be eventually consistent.</p>
 <p>Note: Providing either screen_name or user_id is required.</p>
 <p>Avaliable parameters: </p>
-<p><em>string screen_name (optional)</em>  : The screen name of the potentially muted user. Helpful for disambiguating when a valid screen name is also a user ID.</p>
-<p><em>long user_id (optional)</em>  : The ID of the potentially muted user. Helpful for disambiguating when a valid user ID is also a valid screen name.</p>
-<dl class="section return"><dt>Returns</dt><dd>The user.</dd></dl>
+<p>- <code>string</code> screen_name (optional)</p>
+<p>- <code>long</code> user_id (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The user.</dd></dl>
 
 </div>
 </div>
@@ -440,6 +516,23 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Un-mutes the user specified in the ID parameter for the authenticating user.</p>
+<p>Returns the unmuted user in the requested format when successful.</p>
+<p>Returns a string describing the failure condition when unsuccessful.</p>
+<p>Actions taken in this method are asynchronous and changes will be eventually consistent.</p>
+<p>Note: Providing either screen_name or user_id is required.</p>
+<p>Avaliable parameters: </p>
+<p>- <code>string</code> screen_name (optional)</p>
+<p>- <code>long</code> user_id (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The user.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a60c164c34e30ab5bff0ebe78d1d3970f"></a>
@@ -463,6 +556,23 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Un-mutes the user specified in the ID parameter for the authenticating user.</p>
+<p>Returns the unmuted user in the requested format when successful.</p>
+<p>Returns a string describing the failure condition when unsuccessful.</p>
+<p>Actions taken in this method are asynchronous and changes will be eventually consistent.</p>
+<p>Note: Providing either screen_name or user_id is required.</p>
+<p>Avaliable parameters: </p>
+<p>- <code>string</code> screen_name (optional)</p>
+<p>- <code>long</code> user_id (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The user.</dd></dl>
 
 </div>
 </div>
@@ -489,20 +599,22 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Un-mutes the user specified in the ID parameter for the authenticating user.</p>
-<p>Returns the unmuted user in the requested format when successful. Returns a string describing the failure condition when unsuccessful.</p>
+<p>Un-mutes the user specified in the ID parameter for the authenticating user as an asynchronous operation.</p>
+<p>Returns the unmuted user in the requested format when successful.</p>
+<p>Returns a string describing the failure condition when unsuccessful.</p>
 <p>Actions taken in this method are asynchronous and changes will be eventually consistent.</p>
 <p>Note: Providing either screen_name or user_id is required.</p>
 <p>Avaliable parameters: </p>
-<p><em>string screen_name (optional)</em>  : The screen name of the potentially muted user. Helpful for disambiguating when a valid screen name is also a user ID.</p>
-<p><em>long user_id (optional)</em>  : The ID of the potentially muted user. Helpful for disambiguating when a valid user ID is also a valid screen name.</p>
-<dl class="section return"><dt>Returns</dt><dd>The user.</dd></dl>
+<p>- <code>string</code> screen_name (optional)</p>
+<p>- <code>long</code> user_id (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the user.</p>
 
 </div>
 </div>
@@ -538,6 +650,25 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Un-mutes the user specified in the ID parameter for the authenticating user as an asynchronous operation.</p>
+<p>Returns the unmuted user in the requested format when successful.</p>
+<p>Returns a string describing the failure condition when unsuccessful.</p>
+<p>Actions taken in this method are asynchronous and changes will be eventually consistent.</p>
+<p>Note: Providing either screen_name or user_id is required.</p>
+<p>Avaliable parameters: </p>
+<p>- <code>string</code> screen_name (optional)</p>
+<p>- <code>long</code> user_id (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the user.</p>
+
 </div>
 </div>
 <a class="anchor" id="a1cd2fd274d1007e6fb7e2524bbdc742b"></a>
@@ -571,6 +702,25 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Un-mutes the user specified in the ID parameter for the authenticating user as an asynchronous operation.</p>
+<p>Returns the unmuted user in the requested format when successful.</p>
+<p>Returns a string describing the failure condition when unsuccessful.</p>
+<p>Actions taken in this method are asynchronous and changes will be eventually consistent.</p>
+<p>Note: Providing either screen_name or user_id is required.</p>
+<p>Avaliable parameters: </p>
+<p>- <code>string</code> screen_name (optional)</p>
+<p>- <code>long</code> user_id (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the user.</p>
 
 </div>
 </div>
@@ -608,16 +758,16 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Enumerates numeric user ids the authenticating user has muted.</p>
-<dl class="section see"><dt>See also</dt><dd>https://dev.twitter.com/docs/api/1.1/get/mutes/users/ids</dd></dl>
-<p>Avaliable parameters: </p>
-<p><em>long cursor (optional)</em>  : Causes the list of IDs to be broken into pages of no more than 5000 IDs at a time. The number of IDs returned is not guaranteed to be 5000 as suspended users are filtered out. If no cursor is provided, a value of -1 will be assumed, which is the first "page."</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> cursor (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters.</td></tr>
+    <tr><td class="paramname">mode</td><td>Specify whether enumerating goes to the next page or the previous.</td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>IDs.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The IDs.</dd></dl>
 
 </div>
 </div>
@@ -653,6 +803,19 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Enumerates numeric user ids the authenticating user has muted.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> cursor (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mode</td><td>Specify whether enumerating goes to the next page or the previous.</td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The IDs.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a360c56fff1cdc3efaa36ee26aca89e45"></a>
@@ -686,6 +849,19 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Enumerates numeric user ids the authenticating user has muted.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> cursor (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mode</td><td>Specify whether enumerating goes to the next page or the previous.</td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The IDs.</dd></dl>
 
 </div>
 </div>
@@ -723,18 +899,18 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Enumerates user objects the authenticating user has muted.</p>
-<dl class="section see"><dt>See also</dt><dd>https://dev.twitter.com/docs/api/1.1/get/mutes/users/list</dd></dl>
-<p>Avaliable parameters: </p>
-<p><em>long cursor (optional)</em>  : Causes the list of IDs to be broken into pages of no more than 5000 IDs at a time. The number of IDs returned is not guaranteed to be 5000 as suspended users are filtered out after connections are queried. If no cursor is provided, a value of -1 will be assumed, which is the first "page."</p>
-<p><em>bool include_entities (optional)</em>  : The entities node will not be included when set to false.</p>
-<p><em>bool skip_status (optional)</em>  : When set to either true, t or 1 statuses will not be included in the returned user objects.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> cursor (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<p>- <code>bool</code> skip_status (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters.</td></tr>
+    <tr><td class="paramname">mode</td><td>Specify whether enumerating goes to the next page or the previous.</td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classCoreTweet_1_1Rest_1_1Users.html" title="GET/POST users">Users</a>.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The users.</dd></dl>
 
 </div>
 </div>
@@ -770,6 +946,21 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Enumerates user objects the authenticating user has muted.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> cursor (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<p>- <code>bool</code> skip_status (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mode</td><td>Specify whether enumerating goes to the next page or the previous.</td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The users.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a525a65b38e48f3ca506b2fabec7b0474"></a>
@@ -804,6 +995,21 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Enumerates user objects the authenticating user has muted.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> cursor (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<p>- <code>bool</code> skip_status (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mode</td><td>Specify whether enumerating goes to the next page or the previous.</td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The users.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="aa00d68f9aa0845178fdd00abcab5e8f7"></a>
@@ -830,16 +1036,15 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns an array of numeric user ids the authenticating user has muted.</p>
-<dl class="section see"><dt>See also</dt><dd>https://dev.twitter.com/docs/api/1.1/get/mutes/users/ids</dd></dl>
-<p>Avaliable parameters: </p>
-<p><em>long cursor (optional)</em>  : Causes the list of IDs to be broken into pages of no more than 5000 IDs at a time. The number of IDs returned is not guaranteed to be 5000 as suspended users are filtered out. If no cursor is provided, a value of -1 will be assumed, which is the first "page."</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> cursor (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters.</td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>IDs.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The IDs.</dd></dl>
 
 </div>
 </div>
@@ -865,6 +1070,18 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns an array of numeric user ids the authenticating user has muted.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> cursor (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The IDs.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a062bb8ac9baf3533bbf667b3db6dc706"></a>
@@ -888,6 +1105,18 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Returns an array of numeric user ids the authenticating user has muted.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> cursor (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The IDs.</dd></dl>
 
 </div>
 </div>
@@ -914,17 +1143,17 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Returns an array of numeric user ids the authenticating user has muted.</p>
-<dl class="section see"><dt>See also</dt><dd>https://dev.twitter.com/docs/api/1.1/get/mutes/users/ids</dd></dl>
-<p>Avaliable parameters: </p>
-<p><em>long cursor (optional)</em>  : Causes the list of IDs to be broken into pages of no more than 5000 IDs at a time. The number of IDs returned is not guaranteed to be 5000 as suspended users are filtered out. If no cursor is provided, a value of -1 will be assumed, which is the first "page."</p>
+<p>Returns an array of numeric user ids the authenticating user has muted as an asynchronous operation.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> cursor (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters.</td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>IDs.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the IDs.</p>
 
 </div>
 </div>
@@ -960,6 +1189,20 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns an array of numeric user ids the authenticating user has muted as an asynchronous operation.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> cursor (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the IDs.</p>
+
 </div>
 </div>
 <a class="anchor" id="ad845ea35d085df5a09bde3ef0992e347"></a>
@@ -994,6 +1237,20 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns an array of numeric user ids the authenticating user has muted as an asynchronous operation.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> cursor (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the IDs.</p>
+
 </div>
 </div>
 <a class="anchor" id="a74f18e054c65029e21033ae46bf19e04"></a>
@@ -1020,18 +1277,17 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns an array of user objects the authenticating user has muted.</p>
-<dl class="section see"><dt>See also</dt><dd>https://dev.twitter.com/docs/api/1.1/get/mutes/users/list</dd></dl>
-<p>Avaliable parameters: </p>
-<p><em>long cursor (optional)</em>  : Causes the list of IDs to be broken into pages of no more than 5000 IDs at a time. The number of IDs returned is not guaranteed to be 5000 as suspended users are filtered out after connections are queried. If no cursor is provided, a value of -1 will be assumed, which is the first "page."</p>
-<p><em>bool include_entities (optional)</em>  : The entities node will not be included when set to false.</p>
-<p><em>bool skip_status (optional)</em>  : When set to either true, t or 1 statuses will not be included in the returned user objects.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> cursor (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<p>- <code>bool</code> skip_status (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters.</td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classCoreTweet_1_1Rest_1_1Users.html" title="GET/POST users">Users</a>.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The users.</dd></dl>
 
 </div>
 </div>
@@ -1057,6 +1313,20 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns an array of user objects the authenticating user has muted.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> cursor (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<p>- <code>bool</code> skip_status (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The users.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="ae37f605529c1d06457d5f8395f18ecb1"></a>
@@ -1080,6 +1350,20 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Returns an array of user objects the authenticating user has muted.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> cursor (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<p>- <code>bool</code> skip_status (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The users.</dd></dl>
 
 </div>
 </div>
@@ -1106,19 +1390,19 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Returns an array of user objects the authenticating user has muted.</p>
-<dl class="section see"><dt>See also</dt><dd>https://dev.twitter.com/docs/api/1.1/get/mutes/users/list</dd></dl>
-<p>Avaliable parameters: </p>
-<p><em>long cursor (optional)</em>  : Causes the list of IDs to be broken into pages of no more than 5000 IDs at a time. The number of IDs returned is not guaranteed to be 5000 as suspended users are filtered out after connections are queried. If no cursor is provided, a value of -1 will be assumed, which is the first "page."</p>
-<p><em>bool include_entities (optional)</em>  : The entities node will not be included when set to false.</p>
-<p><em>bool skip_status (optional)</em>  : When set to either true, t or 1 statuses will not be included in the returned user objects.</p>
+<p>Returns an array of user objects the authenticating user has muted as an asynchronous operation.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> cursor (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<p>- <code>bool</code> skip_status (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters.</td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classCoreTweet_1_1Rest_1_1Users.html" title="GET/POST users">Users</a>.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the users.</p>
 
 </div>
 </div>
@@ -1154,6 +1438,22 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns an array of user objects the authenticating user has muted as an asynchronous operation.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> cursor (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<p>- <code>bool</code> skip_status (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the users.</p>
+
 </div>
 </div>
 <a class="anchor" id="aac2bbfd9ad1526f87925c15c5180fc97"></a>
@@ -1188,6 +1488,22 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns an array of user objects the authenticating user has muted as an asynchronous operation.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> cursor (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<p>- <code>bool</code> skip_status (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the users.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
@@ -1197,7 +1513,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat May 31 2014 23:10:00 for CoreTweet by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 20 2014 00:31:20 for CoreTweet by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

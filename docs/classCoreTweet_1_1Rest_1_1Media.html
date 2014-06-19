@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="core-48x48.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">CoreTweet
-   &#160;<span id="projectnumber">0.3.3</span>
+   &#160;<span id="projectnumber">0.3.4</span>
    </div>
    <div id="projectbrief">Yet another .NET Twitter Library</div>
   </td>
@@ -97,7 +97,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>POST media  
+<p>Provides a set of methods for the wrapper of POST media.  
  <a href="classCoreTweet_1_1Rest_1_1Media.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for CoreTweet.Rest.Media:</div>
@@ -105,7 +105,7 @@ Inheritance diagram for CoreTweet.Rest.Media:</div>
  <div class="center">
   <img src="classCoreTweet_1_1Rest_1_1Media.png" usemap="#CoreTweet.Rest.Media_map" alt=""/>
   <map id="CoreTweet.Rest.Media_map" name="CoreTweet.Rest.Media_map">
-<area href="classCoreTweet_1_1Core_1_1ApiProviderBase.html" title="Base class of API providers. " alt="CoreTweet.Core.ApiProviderBase" shape="rect" coords="0,0,205,24"/>
+<area href="classCoreTweet_1_1Core_1_1ApiProviderBase.html" title="Provides a Twitter API wrapper. This is an abstract class. " alt="CoreTweet.Core.ApiProviderBase" shape="rect" coords="0,0,205,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -132,7 +132,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a8f9003e34c6f19f561b10b1f14098ec1 inherit properties_classCoreTweet_1_1Core_1_1ApiProviderBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>POST media </p>
+<div class="textblock"><p>Provides a set of methods for the wrapper of POST media. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a1b0ce46d083ccb3018a47ac840a4e404"></a>
 <div class="memitem">
@@ -155,6 +155,18 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Uploads an image and gets the media_id attached with a status.</p>
+<p>Available parameters:</p>
+<p>- <code>Stream</code> / <code>IEnumerable&lt;byte&gt;</code> / FileInfo media (required)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The result for the uploaded media.</dd></dl>
 
 </div>
 </div>
@@ -180,6 +192,18 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Uploads an image and gets the media_id attached with a status.</p>
+<p>Available parameters:</p>
+<p>- <code>Stream</code> / <code>IEnumerable&lt;byte&gt;</code> / FileInfo media (required)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The result for the uploaded media.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a013788a9f44942c5fe393ed7b84d84b2"></a>
@@ -204,6 +228,18 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Uploads an image and gets the media_id attached with a status.</p>
+<p>Available parameters:</p>
+<p>- <code>Stream</code> / <code>IEnumerable&lt;byte&gt;</code> / FileInfo media (required)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The result for the uploaded media.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a95a59c290a7c4e9bf7398debf56ae7e4"></a>
@@ -227,6 +263,19 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Uploads an image and gets the media_id attached with a status as an asynchronous operation.</p>
+<p>Available parameters:</p>
+<p>- <code>Stream</code> / <code>IEnumerable&lt;byte&gt;</code> / FileInfo media (required)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the result for the uploaded media.</p>
 
 </div>
 </div>
@@ -262,6 +311,20 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Uploads an image and gets the media_id attached with a status as an asynchronous operation.</p>
+<p>Available parameters:</p>
+<p>- <code>Stream</code> / <code>IEnumerable&lt;byte&gt;</code> / FileInfo media (required)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the result for the uploaded media.</p>
+
 </div>
 </div>
 <a class="anchor" id="a93736384172dfa9d2e5ab70a515a050f"></a>
@@ -296,6 +359,20 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Uploads an image and gets the media_id attached with a status as an asynchronous operation.</p>
+<p>Available parameters:</p>
+<p>- <code>Stream</code> / <code>IEnumerable&lt;byte&gt;</code> / FileInfo media (required)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the result for the uploaded media.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
@@ -305,7 +382,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat May 31 2014 23:10:00 for CoreTweet by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 20 2014 00:31:19 for CoreTweet by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

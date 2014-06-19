@@ -17,7 +17,7 @@ var searchData=
   ['incoming_3c_20t_20_3e',['Incoming&lt; T &gt;',['../classCoreTweet_1_1Rest_1_1Friendships.html#a0162ddd8bb1b67e5afe718877f1a3961',1,'CoreTweet::Rest::Friendships']]],
   ['incomingasync',['IncomingAsync',['../classCoreTweet_1_1Rest_1_1Friendships.html#a947c9784d3aed97e7ca643bf3dbcea9e',1,'CoreTweet.Rest.Friendships.IncomingAsync(params Expression&lt; Func&lt; string, object &gt;&gt;[] parameters)'],['../classCoreTweet_1_1Rest_1_1Friendships.html#abf2efd7c6169e2c745a07c375bbb183c',1,'CoreTweet.Rest.Friendships.IncomingAsync(IDictionary&lt; string, object &gt; parameters, CancellationToken cancellationToken=default(CancellationToken))']]],
   ['incomingasync_3c_20t_20_3e',['IncomingAsync&lt; T &gt;',['../classCoreTweet_1_1Rest_1_1Friendships.html#a8364dcefdf4846af4a3310ea17463841',1,'CoreTweet::Rest::Friendships']]],
-  ['indices',['Indices',['../classCoreTweet_1_1Entity.html#a8b45a075759947114c37adc907f5c039',1,'CoreTweet.Entity.Indices()'],['../classCoreTweet_1_1MediaEntity.html#aab4c539536f85043b2ace05ef27ebf4c',1,'CoreTweet.MediaEntity.Indices()']]],
+  ['indices',['Indices',['../classCoreTweet_1_1Entity.html#a8b45a075759947114c37adc907f5c039',1,'CoreTweet::Entity']]],
   ['infoname',['InfoName',['../classCoreTweet_1_1TimeZone.html#a85de653324c961dd38ce10c2872a611e',1,'CoreTweet::TimeZone']]],
   ['inreplytoscreenname',['InReplyToScreenName',['../classCoreTweet_1_1Status.html#a775e07cb466e4717abbea565ddd9b6f5',1,'CoreTweet::Status']]],
   ['inreplytostatusid',['InReplyToStatusId',['../classCoreTweet_1_1Status.html#ab30ff2c599d9ac5a4b8feee6c54763c3',1,'CoreTweet::Status']]],

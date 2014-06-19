@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="core-48x48.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">CoreTweet
-   &#160;<span id="projectnumber">0.3.3</span>
+   &#160;<span id="projectnumber">0.3.4</span>
    </div>
    <div id="projectbrief">Yet another .NET Twitter Library</div>
   </td>
@@ -96,13 +96,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">CoreTweet.Rest.Members Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Provides a set of methods for the wrapper of GET/POST lists/members.  
+ <a href="classCoreTweet_1_1Rest_1_1Members.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for CoreTweet.Rest.Members:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="classCoreTweet_1_1Rest_1_1Members.png" usemap="#CoreTweet.Rest.Members_map" alt=""/>
   <map id="CoreTweet.Rest.Members_map" name="CoreTweet.Rest.Members_map">
-<area href="classCoreTweet_1_1Core_1_1ApiProviderBase.html" title="Base class of API providers. " alt="CoreTweet.Core.ApiProviderBase" shape="rect" coords="0,0,205,24"/>
+<area href="classCoreTweet_1_1Core_1_1ApiProviderBase.html" title="Provides a Twitter API wrapper. This is an abstract class. " alt="CoreTweet.Core.ApiProviderBase" shape="rect" coords="0,0,205,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -194,7 +197,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memdesc:a8f9003e34c6f19f561b10b1f14098ec1 inherit properties_classCoreTweet_1_1Core_1_1ApiProviderBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the tokens being used in this instance.  <a href="#a8f9003e34c6f19f561b10b1f14098ec1">More...</a><br /></td></tr>
 <tr class="separator:a8f9003e34c6f19f561b10b1f14098ec1 inherit properties_classCoreTweet_1_1Core_1_1ApiProviderBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Provides a set of methods for the wrapper of GET/POST lists/members. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="afa511e52d9101b104ec1415cc25dd950"></a>
 <div class="memitem">
 <div class="memproto">
@@ -218,22 +223,25 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Add a member to a list. The authenticated user must own the list to be able to add members to it. Note that lists can't have more than 500 members.</p>
-<p>Note: Either a list_id or a slug is required. If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
-<p>Avaliable parameters: </p>
-<p><em>long list_id (required)</em>  : The numerical id of the list.</p>
-<p><em>string slug (required)</em>  : You can identify a list by its slug instead of its numerical id. If you decide to do so, note that you'll also have to specify the list owner using the owner_id or owner_screen_name parameters.</p>
-<p><em>long user_id (required)</em>  : The ID of the user for whom to return results for. Helpful for disambiguating when a valid user ID is also a valid screen name.</p>
-<p><em>string screen_name (required)</em>  : The screen name of the user for whom to return results for. Helpful for disambiguating when a valid screen name is also a user ID.</p>
-<p><em>string owner_screen_name (optional)</em>  : The screen name of the user who owns the list being requested by a slug.</p>
-<p><em>long owner_id (optional)</em>  : The user ID of the user who owns the list being requested by a slug.</p>
-<dl class="section return"><dt>Returns</dt><dd>The list.</dd></dl>
+<p>Add a member to a list.</p>
+<p>The authenticated user must own the list to be able to add members to it.</p>
+<p>Note that lists can't have more than 500 members.</p>
+<p>Note: Either a list_id or a slug is required.</p>
+<p>If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> list_id (required)</p>
+<p>- <code>string</code> slug (required)</p>
+<p>- <code>long</code> user_id (required)</p>
+<p>- <code>string</code> screen_name (required)</p>
+<p>- <code>string</code> owner_screen_name (optional)</p>
+<p>- <code>long</code> owner_id (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The list.</dd></dl>
 
 </div>
 </div>
@@ -259,6 +267,27 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Add a member to a list.</p>
+<p>The authenticated user must own the list to be able to add members to it.</p>
+<p>Note that lists can't have more than 500 members.</p>
+<p>Note: Either a list_id or a slug is required.</p>
+<p>If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> list_id (required)</p>
+<p>- <code>string</code> slug (required)</p>
+<p>- <code>long</code> user_id (required)</p>
+<p>- <code>string</code> screen_name (required)</p>
+<p>- <code>string</code> owner_screen_name (optional)</p>
+<p>- <code>long</code> owner_id (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The list.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a51e5dfe0ad134e011236d373a6ee15c2"></a>
@@ -282,6 +311,27 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Add a member to a list.</p>
+<p>The authenticated user must own the list to be able to add members to it.</p>
+<p>Note that lists can't have more than 500 members.</p>
+<p>Note: Either a list_id or a slug is required.</p>
+<p>If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> list_id (required)</p>
+<p>- <code>string</code> slug (required)</p>
+<p>- <code>long</code> user_id (required)</p>
+<p>- <code>string</code> screen_name (required)</p>
+<p>- <code>string</code> owner_screen_name (optional)</p>
+<p>- <code>long</code> owner_id (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The list.</dd></dl>
 
 </div>
 </div>
@@ -308,23 +358,27 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Adds multiple members to a list, by specifying a comma-separated list of member ids or screen names. The authenticated user must own the list to be able to add members to it. Note that lists can't have more than 500 members, and you are limited to adding up to 100 members to a list at a time with this method.</p>
-<p>Please note that there can be issues with lists that rapidly remove and add memberships. Take care when using these methods such that you are not too rapidly switching between removals and adds on the same list.</p>
-<p>Note: Either a list_id or a slug is required. If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
-<p>Avaliable parameters: </p>
-<p><em>long list_id (required)</em>  : The numerical id of the list.</p>
-<p><em>string slug (required)</em>  : You can identify a list by its slug instead of its numerical id. If you decide to do so, note that you'll also have to specify the list owner using the owner_id or owner_screen_name parameters.</p>
-<p><em>string, IEnumerable&lt;long&gt; user_id (optional)</em>  : A list of user IDs or comma separated string of ones, up to 100 are allowed in a single request.</p>
-<p><em>string, IEnumerable&lt;string&gt; screen_name (optional)</em>  : A list of screen names or comma separated string of ones, up to 100 are allowed in a single request.</p>
-<p><em>string owner_screen_name (optional)</em>  : The screen name of the user who owns the list being requested by a slug.</p>
-<p><em>long owner_id (optional)</em>  : The user ID of the user who owns the list being requested by a slug.</p>
-<dl class="section return"><dt>Returns</dt><dd>The list.</dd></dl>
+<p>Adds multiple members to a list, by specifying a comma-separated list of member ids or screen names.</p>
+<p>The authenticated user must own the list to be able to add members to it.</p>
+<p>Note that lists can't have more than 500 members, and you are limited to adding up to 100 members to a list at a time with this method.</p>
+<p>Please note that there can be issues with lists that rapidly remove and add memberships.</p>
+<p>Take care when using these methods such that you are not too rapidly switching between removals and adds on the same list.</p>
+<p>Note: Either a list_id or a slug is required.</p>
+<p>If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> list_id (required)</p>
+<p>- <code>string</code> slug (required)</p>
+<p>- <code>string</code> / <code>IEnumerable&lt;long&gt;</code> user_id (optional)</p>
+<p>- <code>string</code> / <code>IEnumerable&lt;string&gt;</code> screen_name (optional)</p>
+<p>- <code>string</code> owner_screen_name (optional)</p>
+<p>- <code>long</code> owner_id (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The list.</dd></dl>
 
 </div>
 </div>
@@ -350,6 +404,29 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Adds multiple members to a list, by specifying a comma-separated list of member ids or screen names.</p>
+<p>The authenticated user must own the list to be able to add members to it.</p>
+<p>Note that lists can't have more than 500 members, and you are limited to adding up to 100 members to a list at a time with this method.</p>
+<p>Please note that there can be issues with lists that rapidly remove and add memberships.</p>
+<p>Take care when using these methods such that you are not too rapidly switching between removals and adds on the same list.</p>
+<p>Note: Either a list_id or a slug is required.</p>
+<p>If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> list_id (required)</p>
+<p>- <code>string</code> slug (required)</p>
+<p>- <code>string</code> / <code>IEnumerable&lt;long&gt;</code> user_id (optional)</p>
+<p>- <code>string</code> / <code>IEnumerable&lt;string&gt;</code> screen_name (optional)</p>
+<p>- <code>string</code> owner_screen_name (optional)</p>
+<p>- <code>long</code> owner_id (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The list.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a514a2415e9f313897cafac18fb9d7842"></a>
@@ -373,6 +450,29 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Adds multiple members to a list, by specifying a comma-separated list of member ids or screen names.</p>
+<p>The authenticated user must own the list to be able to add members to it.</p>
+<p>Note that lists can't have more than 500 members, and you are limited to adding up to 100 members to a list at a time with this method.</p>
+<p>Please note that there can be issues with lists that rapidly remove and add memberships.</p>
+<p>Take care when using these methods such that you are not too rapidly switching between removals and adds on the same list.</p>
+<p>Note: Either a list_id or a slug is required.</p>
+<p>If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> list_id (required)</p>
+<p>- <code>string</code> slug (required)</p>
+<p>- <code>string</code> / <code>IEnumerable&lt;long&gt;</code> user_id (optional)</p>
+<p>- <code>string</code> / <code>IEnumerable&lt;string&gt;</code> screen_name (optional)</p>
+<p>- <code>string</code> owner_screen_name (optional)</p>
+<p>- <code>long</code> owner_id (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The list.</dd></dl>
 
 </div>
 </div>
@@ -399,23 +499,28 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Adds multiple members to a list, by specifying a comma-separated list of member ids or screen names. The authenticated user must own the list to be able to add members to it. Note that lists can't have more than 500 members, and you are limited to adding up to 100 members to a list at a time with this method.</p>
-<p>Please note that there can be issues with lists that rapidly remove and add memberships. Take care when using these methods such that you are not too rapidly switching between removals and adds on the same list.</p>
-<p>Note: Either a list_id or a slug is required. If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
-<p>Avaliable parameters: </p>
-<p><em>long list_id (required)</em>  : The numerical id of the list.</p>
-<p><em>string slug (required)</em>  : You can identify a list by its slug instead of its numerical id. If you decide to do so, note that you'll also have to specify the list owner using the owner_id or owner_screen_name parameters.</p>
-<p><em>string, IEnumerable&lt;long&gt; user_id (optional)</em>  : A list of user IDs or comma separated string of ones, up to 100 are allowed in a single request.</p>
-<p><em>string, IEnumerable&lt;string&gt; screen_name (optional)</em>  : A list of screen names or comma separated string of ones, up to 100 are allowed in a single request.</p>
-<p><em>string owner_screen_name (optional)</em>  : The screen name of the user who owns the list being requested by a slug.</p>
-<p><em>long owner_id (optional)</em>  : The user ID of the user who owns the list being requested by a slug.</p>
-<dl class="section return"><dt>Returns</dt><dd>The list.</dd></dl>
+<p>Adds multiple members to a list, by specifying a comma-separated list of member ids or screen names as an asynchronous operation.</p>
+<p>The authenticated user must own the list to be able to add members to it.</p>
+<p>Note that lists can't have more than 500 members, and you are limited to adding up to 100 members to a list at a time with this method.</p>
+<p>Please note that there can be issues with lists that rapidly remove and add memberships.</p>
+<p>Take care when using these methods such that you are not too rapidly switching between removals and adds on the same list.</p>
+<p>Note: Either a list_id or a slug is required.</p>
+<p>If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> list_id (required)</p>
+<p>- <code>string</code> slug (required)</p>
+<p>- <code>string</code> / <code>IEnumerable&lt;long&gt;</code> user_id (optional)</p>
+<p>- <code>string</code> / <code>IEnumerable&lt;string&gt;</code> screen_name (optional)</p>
+<p>- <code>string</code> owner_screen_name (optional)</p>
+<p>- <code>long</code> owner_id (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the list.</p>
 
 </div>
 </div>
@@ -451,6 +556,31 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Adds multiple members to a list, by specifying a comma-separated list of member ids or screen names as an asynchronous operation.</p>
+<p>The authenticated user must own the list to be able to add members to it.</p>
+<p>Note that lists can't have more than 500 members, and you are limited to adding up to 100 members to a list at a time with this method.</p>
+<p>Please note that there can be issues with lists that rapidly remove and add memberships.</p>
+<p>Take care when using these methods such that you are not too rapidly switching between removals and adds on the same list.</p>
+<p>Note: Either a list_id or a slug is required.</p>
+<p>If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> list_id (required)</p>
+<p>- <code>string</code> slug (required)</p>
+<p>- <code>string</code> / <code>IEnumerable&lt;long&gt;</code> user_id (optional)</p>
+<p>- <code>string</code> / <code>IEnumerable&lt;string&gt;</code> screen_name (optional)</p>
+<p>- <code>string</code> owner_screen_name (optional)</p>
+<p>- <code>long</code> owner_id (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the list.</p>
+
 </div>
 </div>
 <a class="anchor" id="ac7ae567443f48c32796df8ae74fc9f7b"></a>
@@ -485,6 +615,31 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Adds multiple members to a list, by specifying a comma-separated list of member ids or screen names as an asynchronous operation.</p>
+<p>The authenticated user must own the list to be able to add members to it.</p>
+<p>Note that lists can't have more than 500 members, and you are limited to adding up to 100 members to a list at a time with this method.</p>
+<p>Please note that there can be issues with lists that rapidly remove and add memberships.</p>
+<p>Take care when using these methods such that you are not too rapidly switching between removals and adds on the same list.</p>
+<p>Note: Either a list_id or a slug is required.</p>
+<p>If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> list_id (required)</p>
+<p>- <code>string</code> slug (required)</p>
+<p>- <code>string</code> / <code>IEnumerable&lt;long&gt;</code> user_id (optional)</p>
+<p>- <code>string</code> / <code>IEnumerable&lt;string&gt;</code> screen_name (optional)</p>
+<p>- <code>string</code> owner_screen_name (optional)</p>
+<p>- <code>long</code> owner_id (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the list.</p>
+
 </div>
 </div>
 <a class="anchor" id="adc262acd88eb105debe48ead291b6358"></a>
@@ -510,22 +665,26 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Add a member to a list. The authenticated user must own the list to be able to add members to it. Note that lists can't have more than 500 members.</p>
-<p>Note: Either a list_id or a slug is required. If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
-<p>Avaliable parameters: </p>
-<p><em>long list_id (required)</em>  : The numerical id of the list.</p>
-<p><em>string slug (required)</em>  : You can identify a list by its slug instead of its numerical id. If you decide to do so, note that you'll also have to specify the list owner using the owner_id or owner_screen_name parameters.</p>
-<p><em>long user_id (required)</em>  : The ID of the user for whom to return results for. Helpful for disambiguating when a valid user ID is also a valid screen name.</p>
-<p><em>string screen_name (required)</em>  : The screen name of the user for whom to return results for. Helpful for disambiguating when a valid screen name is also a user ID.</p>
-<p><em>string owner_screen_name (optional)</em>  : The screen name of the user who owns the list being requested by a slug.</p>
-<p><em>long owner_id (optional)</em>  : The user ID of the user who owns the list being requested by a slug.</p>
-<dl class="section return"><dt>Returns</dt><dd>The list.</dd></dl>
+<p>Add a member to a list as an asynchronous operation.</p>
+<p>The authenticated user must own the list to be able to add members to it.</p>
+<p>Note that lists can't have more than 500 members.</p>
+<p>Note: Either a list_id or a slug is required.</p>
+<p>If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> list_id (required)</p>
+<p>- <code>string</code> slug (required)</p>
+<p>- <code>long</code> user_id (required)</p>
+<p>- <code>string</code> screen_name (required)</p>
+<p>- <code>string</code> owner_screen_name (optional)</p>
+<p>- <code>long</code> owner_id (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the list.</p>
 
 </div>
 </div>
@@ -561,6 +720,29 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Add a member to a list as an asynchronous operation.</p>
+<p>The authenticated user must own the list to be able to add members to it.</p>
+<p>Note that lists can't have more than 500 members.</p>
+<p>Note: Either a list_id or a slug is required.</p>
+<p>If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> list_id (required)</p>
+<p>- <code>string</code> slug (required)</p>
+<p>- <code>long</code> user_id (required)</p>
+<p>- <code>string</code> screen_name (required)</p>
+<p>- <code>string</code> owner_screen_name (optional)</p>
+<p>- <code>long</code> owner_id (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the list.</p>
+
 </div>
 </div>
 <a class="anchor" id="aad16d608be059f2fcea38efe541edcae"></a>
@@ -595,6 +777,29 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Add a member to a list as an asynchronous operation.</p>
+<p>The authenticated user must own the list to be able to add members to it.</p>
+<p>Note that lists can't have more than 500 members.</p>
+<p>Note: Either a list_id or a slug is required.</p>
+<p>If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> list_id (required)</p>
+<p>- <code>string</code> slug (required)</p>
+<p>- <code>long</code> user_id (required)</p>
+<p>- <code>string</code> screen_name (required)</p>
+<p>- <code>string</code> owner_screen_name (optional)</p>
+<p>- <code>long</code> owner_id (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the list.</p>
+
 </div>
 </div>
 <a class="anchor" id="a5291598ccca83ab477e62c29f8ffed7f"></a>
@@ -620,22 +825,24 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Removes the specified member from the list. The authenticated user must be the list's owner to remove members from the list.</p>
-<p>Note: Either a list_id or a slug is required. If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
-<p>Avaliable parameters: </p>
-<p><em>long list_id (required)</em>  : The numerical id of the list.</p>
-<p><em>string slug (required)</em>  : You can identify a list by its slug instead of its numerical id. If you decide to do so, note that you'll also have to specify the list owner using the owner_id or owner_screen_name parameters.</p>
-<p><em>long user_id (required)</em>  : The ID of the user to remove from the list. Helpful for disambiguating when a valid user ID is also a valid screen name.</p>
-<p><em>string screen_name (required)</em>  : The screen name of the user for whom to remove from the list. Helpful for disambiguating when a valid screen name is also a user ID.</p>
-<p><em>string owner_screen_name (optional)</em>  : The screen name of the user who owns the list being requested by a slug.</p>
-<p><em>long owner_id (optional)</em>  : The user ID of the user who owns the list being requested by a slug.</p>
-<dl class="section return"><dt>Returns</dt><dd>The list.</dd></dl>
+<p>Removes the specified member from the list.</p>
+<p>The authenticated user must be the list's owner to remove members from the list.</p>
+<p>Note: Either a list_id or a slug is required.</p>
+<p>If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> list_id (required)</p>
+<p>- <code>string</code> slug (required)</p>
+<p>- <code>long</code> user_id (required)</p>
+<p>- <code>string</code> screen_name (required)</p>
+<p>- <code>string</code> owner_screen_name (optional)</p>
+<p>- <code>long</code> owner_id (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The list.</dd></dl>
 
 </div>
 </div>
@@ -661,6 +868,26 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Removes the specified member from the list.</p>
+<p>The authenticated user must be the list's owner to remove members from the list.</p>
+<p>Note: Either a list_id or a slug is required.</p>
+<p>If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> list_id (required)</p>
+<p>- <code>string</code> slug (required)</p>
+<p>- <code>long</code> user_id (required)</p>
+<p>- <code>string</code> screen_name (required)</p>
+<p>- <code>string</code> owner_screen_name (optional)</p>
+<p>- <code>long</code> owner_id (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The list.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a2708a8434a91b0225de1a1ac8e361033"></a>
@@ -684,6 +911,26 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Removes the specified member from the list.</p>
+<p>The authenticated user must be the list's owner to remove members from the list.</p>
+<p>Note: Either a list_id or a slug is required.</p>
+<p>If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> list_id (required)</p>
+<p>- <code>string</code> slug (required)</p>
+<p>- <code>long</code> user_id (required)</p>
+<p>- <code>string</code> screen_name (required)</p>
+<p>- <code>string</code> owner_screen_name (optional)</p>
+<p>- <code>long</code> owner_id (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The list.</dd></dl>
 
 </div>
 </div>
@@ -710,23 +957,27 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Removes multiple members from a list, by specifying a comma-separated list of member ids or screen names. The authenticated user must own the list to be able to remove members from it. Note that lists can't have more than 500 members, and you are limited to removing up to 100 members to a list at a time with this method.</p>
-<p>Please note that there can be issues with lists that rapidly remove and add memberships. Take care when using these methods such that you are not too rapidly switching between removals and adds on the same list.</p>
-<p>Note: Either a list_id or a slug is required. If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
-<p>Avaliable parameters: </p>
-<p><em>long list_id (required)</em>  : The numerical id of the list.</p>
-<p><em>string slug (required)</em>  : You can identify a list by its slug instead of its numerical id. If you decide to do so, note that you'll also have to specify the list owner using the owner_id or owner_screen_name parameters.</p>
-<p><em>string, IEnumerable&lt;long&gt; user_id (optional)</em>  : A list of user IDs or comma separated string of ones, up to 100 are allowed in a single request.</p>
-<p><em>string, IEnumerable&lt;string&gt; screen_name (optional)</em>  : A list of screen names or comma separated string of ones, up to 100 are allowed in a single request.</p>
-<p><em>string owner_screen_name (optional)</em>  : The screen name of the user who owns the list being requested by a slug.</p>
-<p><em>long owner_id (optional)</em>  : The user ID of the user who owns the list being requested by a slug.</p>
-<dl class="section return"><dt>Returns</dt><dd>The list.</dd></dl>
+<p>Removes multiple members from a list, by specifying a comma-separated list of member ids or screen names.</p>
+<p>The authenticated user must own the list to be able to remove members from it.</p>
+<p>Note that lists can't have more than 500 members, and you are limited to removing up to 100 members to a list at a time with this method.</p>
+<p>Please note that there can be issues with lists that rapidly remove and add memberships.</p>
+<p>Take care when using these methods such that you are not too rapidly switching between removals and adds on the same list.</p>
+<p>Note: Either a list_id or a slug is required.</p>
+<p>If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> list_id (required)</p>
+<p>- <code>string</code> slug (required)</p>
+<p>- <code>string</code> / IEnumerable&lt;long&gt; user_id (optional)</p>
+<p>- <code>string</code> / IEnumerable&lt;string&gt; screen_name (optional)</p>
+<p>- <code>string</code> owner_screen_name (optional)</p>
+<p>- <code>long</code> owner_id (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The list.</dd></dl>
 
 </div>
 </div>
@@ -752,6 +1003,29 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Removes multiple members from a list, by specifying a comma-separated list of member ids or screen names.</p>
+<p>The authenticated user must own the list to be able to remove members from it.</p>
+<p>Note that lists can't have more than 500 members, and you are limited to removing up to 100 members to a list at a time with this method.</p>
+<p>Please note that there can be issues with lists that rapidly remove and add memberships.</p>
+<p>Take care when using these methods such that you are not too rapidly switching between removals and adds on the same list.</p>
+<p>Note: Either a list_id or a slug is required.</p>
+<p>If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> list_id (required)</p>
+<p>- <code>string</code> slug (required)</p>
+<p>- <code>string</code> / IEnumerable&lt;long&gt; user_id (optional)</p>
+<p>- <code>string</code> / IEnumerable&lt;string&gt; screen_name (optional)</p>
+<p>- <code>string</code> owner_screen_name (optional)</p>
+<p>- <code>long</code> owner_id (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The list.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a63e52a99898eed8664898146809e9a33"></a>
@@ -775,6 +1049,29 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Removes multiple members from a list, by specifying a comma-separated list of member ids or screen names.</p>
+<p>The authenticated user must own the list to be able to remove members from it.</p>
+<p>Note that lists can't have more than 500 members, and you are limited to removing up to 100 members to a list at a time with this method.</p>
+<p>Please note that there can be issues with lists that rapidly remove and add memberships.</p>
+<p>Take care when using these methods such that you are not too rapidly switching between removals and adds on the same list.</p>
+<p>Note: Either a list_id or a slug is required.</p>
+<p>If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> list_id (required)</p>
+<p>- <code>string</code> slug (required)</p>
+<p>- <code>string</code> / IEnumerable&lt;long&gt; user_id (optional)</p>
+<p>- <code>string</code> / IEnumerable&lt;string&gt; screen_name (optional)</p>
+<p>- <code>string</code> owner_screen_name (optional)</p>
+<p>- <code>long</code> owner_id (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The list.</dd></dl>
 
 </div>
 </div>
@@ -801,23 +1098,28 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Removes multiple members from a list, by specifying a comma-separated list of member ids or screen names. The authenticated user must own the list to be able to remove members from it. Note that lists can't have more than 500 members, and you are limited to removing up to 100 members to a list at a time with this method.</p>
-<p>Please note that there can be issues with lists that rapidly remove and add memberships. Take care when using these methods such that you are not too rapidly switching between removals and adds on the same list.</p>
-<p>Note: Either a list_id or a slug is required. If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
-<p>Avaliable parameters: </p>
-<p><em>long list_id (required)</em>  : The numerical id of the list.</p>
-<p><em>string slug (required)</em>  : You can identify a list by its slug instead of its numerical id. If you decide to do so, note that you'll also have to specify the list owner using the owner_id or owner_screen_name parameters.</p>
-<p><em>string, IEnumerable&lt;long&gt; user_id (optional)</em>  : A list of user IDs or comma separated string of ones, up to 100 are allowed in a single request.</p>
-<p><em>string, IEnumerable&lt;string&gt; screen_name (optional)</em>  : A list of screen names or comma separated string of ones, up to 100 are allowed in a single request.</p>
-<p><em>string owner_screen_name (optional)</em>  : The screen name of the user who owns the list being requested by a slug.</p>
-<p><em>long owner_id (optional)</em>  : The user ID of the user who owns the list being requested by a slug.</p>
-<dl class="section return"><dt>Returns</dt><dd>The list.</dd></dl>
+<p>Removes multiple members from a list, by specifying a comma-separated list of member ids or screen names as an asynchronous operation.</p>
+<p>The authenticated user must own the list to be able to remove members from it.</p>
+<p>Note that lists can't have more than 500 members, and you are limited to removing up to 100 members to a list at a time with this method.</p>
+<p>Please note that there can be issues with lists that rapidly remove and add memberships.</p>
+<p>Take care when using these methods such that you are not too rapidly switching between removals and adds on the same list.</p>
+<p>Note: Either a list_id or a slug is required.</p>
+<p>If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> list_id (required)</p>
+<p>- <code>string</code> slug (required)</p>
+<p>- <code>string</code> / IEnumerable&lt;long&gt; user_id (optional)</p>
+<p>- <code>string</code> / IEnumerable&lt;string&gt; screen_name (optional)</p>
+<p>- <code>string</code> owner_screen_name (optional)</p>
+<p>- <code>long</code> owner_id (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the list.</p>
 
 </div>
 </div>
@@ -853,6 +1155,31 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Removes multiple members from a list, by specifying a comma-separated list of member ids or screen names as an asynchronous operation.</p>
+<p>The authenticated user must own the list to be able to remove members from it.</p>
+<p>Note that lists can't have more than 500 members, and you are limited to removing up to 100 members to a list at a time with this method.</p>
+<p>Please note that there can be issues with lists that rapidly remove and add memberships.</p>
+<p>Take care when using these methods such that you are not too rapidly switching between removals and adds on the same list.</p>
+<p>Note: Either a list_id or a slug is required.</p>
+<p>If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> list_id (required)</p>
+<p>- <code>string</code> slug (required)</p>
+<p>- <code>string</code> / IEnumerable&lt;long&gt; user_id (optional)</p>
+<p>- <code>string</code> / IEnumerable&lt;string&gt; screen_name (optional)</p>
+<p>- <code>string</code> owner_screen_name (optional)</p>
+<p>- <code>long</code> owner_id (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the list.</p>
+
 </div>
 </div>
 <a class="anchor" id="a7f66066f1544ae79bcd7a60a1b39673a"></a>
@@ -887,6 +1214,31 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Removes multiple members from a list, by specifying a comma-separated list of member ids or screen names as an asynchronous operation.</p>
+<p>The authenticated user must own the list to be able to remove members from it.</p>
+<p>Note that lists can't have more than 500 members, and you are limited to removing up to 100 members to a list at a time with this method.</p>
+<p>Please note that there can be issues with lists that rapidly remove and add memberships.</p>
+<p>Take care when using these methods such that you are not too rapidly switching between removals and adds on the same list.</p>
+<p>Note: Either a list_id or a slug is required.</p>
+<p>If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> list_id (required)</p>
+<p>- <code>string</code> slug (required)</p>
+<p>- <code>string</code> / IEnumerable&lt;long&gt; user_id (optional)</p>
+<p>- <code>string</code> / IEnumerable&lt;string&gt; screen_name (optional)</p>
+<p>- <code>string</code> owner_screen_name (optional)</p>
+<p>- <code>long</code> owner_id (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the list.</p>
+
 </div>
 </div>
 <a class="anchor" id="a6c4cc68e51ffe5e025b123e615d6fa34"></a>
@@ -912,22 +1264,25 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Removes the specified member from the list. The authenticated user must be the list's owner to remove members from the list.</p>
-<p>Note: Either a list_id or a slug is required. If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
-<p>Avaliable parameters: </p>
-<p><em>long list_id (required)</em>  : The numerical id of the list.</p>
-<p><em>string slug (required)</em>  : You can identify a list by its slug instead of its numerical id. If you decide to do so, note that you'll also have to specify the list owner using the owner_id or owner_screen_name parameters.</p>
-<p><em>long user_id (required)</em>  : The ID of the user to remove from the list. Helpful for disambiguating when a valid user ID is also a valid screen name.</p>
-<p><em>string screen_name (required)</em>  : The screen name of the user for whom to remove from the list. Helpful for disambiguating when a valid screen name is also a user ID.</p>
-<p><em>string owner_screen_name (optional)</em>  : The screen name of the user who owns the list being requested by a slug.</p>
-<p><em>long owner_id (optional)</em>  : The user ID of the user who owns the list being requested by a slug.</p>
-<dl class="section return"><dt>Returns</dt><dd>The list.</dd></dl>
+<p>Removes the specified member from the list as an asynchronous operation.</p>
+<p>The authenticated user must be the list's owner to remove members from the list.</p>
+<p>Note: Either a list_id or a slug is required.</p>
+<p>If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> list_id (required)</p>
+<p>- <code>string</code> slug (required)</p>
+<p>- <code>long</code> user_id (required)</p>
+<p>- <code>string</code> screen_name (required)</p>
+<p>- <code>string</code> owner_screen_name (optional)</p>
+<p>- <code>long</code> owner_id (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the list.</p>
 
 </div>
 </div>
@@ -963,6 +1318,28 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Removes the specified member from the list as an asynchronous operation.</p>
+<p>The authenticated user must be the list's owner to remove members from the list.</p>
+<p>Note: Either a list_id or a slug is required.</p>
+<p>If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> list_id (required)</p>
+<p>- <code>string</code> slug (required)</p>
+<p>- <code>long</code> user_id (required)</p>
+<p>- <code>string</code> screen_name (required)</p>
+<p>- <code>string</code> owner_screen_name (optional)</p>
+<p>- <code>long</code> owner_id (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the list.</p>
+
 </div>
 </div>
 <a class="anchor" id="a7890052a09e3d7f7fd81546d4dbe04b3"></a>
@@ -996,6 +1373,28 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Removes the specified member from the list as an asynchronous operation.</p>
+<p>The authenticated user must be the list's owner to remove members from the list.</p>
+<p>Note: Either a list_id or a slug is required.</p>
+<p>If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> list_id (required)</p>
+<p>- <code>string</code> slug (required)</p>
+<p>- <code>long</code> user_id (required)</p>
+<p>- <code>string</code> screen_name (required)</p>
+<p>- <code>string</code> owner_screen_name (optional)</p>
+<p>- <code>long</code> owner_id (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the list.</p>
 
 </div>
 </div>
@@ -1032,23 +1431,25 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Returns the members of the specified list. Private list members will only be shown if the authenticated user owns the specified list.</p>
-<p>Note: Either a list_id or a slug is required. If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
-<p>The response from the API will include a previous_cursor and next_cursor to allow paging back and forth. See Using cursors to navigate collections for more information.</p>
-<p>Avaliable parameters: </p>
-<p><em>long list_id (required)</em>  : The numerical id of the list.</p>
-<p><em>string slug (required)</em>  : You can identify a list by its slug instead of its numerical id. If you decide to do so, note that you'll also have to specify the list owner using the owner_id or owner_screen_name parameters.</p>
-<p><em>string owner_sereen_name (optional)</em>  : The screen name of the user who owns the list being requested by a slug.</p>
-<p><em>long owner_id (optional)</em>  : The user ID of the user who owns the list being requested by a slug.</p>
-<p><em>long cursor (optional)</em>  : The first cursor. If not be specified, enumerating starts from the first page.</p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classCoreTweet_1_1Rest_1_1Users.html" title="GET/POST users">Users</a>. </dd></dl>
-<p>https://dev.twitter.com/docs/misc/cursoring </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Enumeates the members of the specified list.</p>
+<p>Private list members will only be shown if the authenticated user owns the specified list.</p>
+<p>Note: Either a list_id or a slug is required.</p>
+<p>If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
+<p>The response from the API will include a previous_cursor and next_cursor to allow paging back and forth.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> list_id (required)</p>
+<p>- <code>string</code> slug (required)</p>
+<p>- <code>string</code> owner_sereen_name (optional)</p>
+<p>- <code>long</code> owner_id (optional)</p>
+<p>- <code>long</code> cursor (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">mode</td><td>Specify whether enumerating goes to the next page or the previous.</td></tr>
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The users.</dd></dl>
 
 </div>
 </div>
@@ -1084,6 +1485,27 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Enumeates the members of the specified list.</p>
+<p>Private list members will only be shown if the authenticated user owns the specified list.</p>
+<p>Note: Either a list_id or a slug is required.</p>
+<p>If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
+<p>The response from the API will include a previous_cursor and next_cursor to allow paging back and forth.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> list_id (required)</p>
+<p>- <code>string</code> slug (required)</p>
+<p>- <code>string</code> owner_sereen_name (optional)</p>
+<p>- <code>long</code> owner_id (optional)</p>
+<p>- <code>long</code> cursor (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mode</td><td>Specify whether enumerating goes to the next page or the previous.</td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The users.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="aad3f8e6cbc2ad46744166f2acca358f7"></a>
@@ -1118,6 +1540,27 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Enumeates the members of the specified list.</p>
+<p>Private list members will only be shown if the authenticated user owns the specified list.</p>
+<p>Note: Either a list_id or a slug is required.</p>
+<p>If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
+<p>The response from the API will include a previous_cursor and next_cursor to allow paging back and forth.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> list_id (required)</p>
+<p>- <code>string</code> slug (required)</p>
+<p>- <code>string</code> owner_sereen_name (optional)</p>
+<p>- <code>long</code> owner_id (optional)</p>
+<p>- <code>long</code> cursor (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mode</td><td>Specify whether enumerating goes to the next page or the previous.</td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The users.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a3f1f3df82a2ebfcdfc224eca424e4e9d"></a>
@@ -1143,23 +1586,24 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Returns the members of the specified list. Private list members will only be shown if the authenticated user owns the specified list.</p>
-<p>Note: Either a list_id or a slug is required. If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
-<p>The response from the API will include a previous_cursor and next_cursor to allow paging back and forth. See Using cursors to navigate collections for more information.</p>
-<p>https://dev.twitter.com/docs/misc/cursoring </p>
-<p>Avaliable parameters: </p>
-<p><em>long list_id (required)</em>  : The numerical id of the list.</p>
-<p><em>string slug (required)</em>  : You can identify a list by its slug instead of its numerical id. If you decide to do so, note that you'll also have to specify the list owner using the owner_id or owner_screen_name parameters.</p>
-<p><em>string owner_sereen_name (optional)</em>  : The screen name of the user who owns the list being requested by a slug.</p>
-<p><em>long owner_id (optional)</em>  : The user ID of the user who owns the list being requested by a slug.</p>
-<p><em>long cursor (semi-optional)</em>  : Causes the collection of list members to be broken into "pages" of somewhat consistent size. If no cursor is provided, a value of -1 will be assumed, which is the first "page".</p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classCoreTweet_1_1Rest_1_1Users.html" title="GET/POST users">Users</a>.</dd></dl>
+<p>Returns the members of the specified list.</p>
+<p>Private list members will only be shown if the authenticated user owns the specified list.</p>
+<p>Note: Either a list_id or a slug is required.</p>
+<p>If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
+<p>The response from the API will include a previous_cursor and next_cursor to allow paging back and forth.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> list_id (required)</p>
+<p>- <code>string</code> slug (required)</p>
+<p>- <code>string</code> owner_sereen_name (optional)</p>
+<p>- <code>long</code> owner_id (optional)</p>
+<p>- <code>long</code> cursor (semi-optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The users.</dd></dl>
 
 </div>
 </div>
@@ -1185,6 +1629,26 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns the members of the specified list.</p>
+<p>Private list members will only be shown if the authenticated user owns the specified list.</p>
+<p>Note: Either a list_id or a slug is required.</p>
+<p>If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
+<p>The response from the API will include a previous_cursor and next_cursor to allow paging back and forth.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> list_id (required)</p>
+<p>- <code>string</code> slug (required)</p>
+<p>- <code>string</code> owner_sereen_name (optional)</p>
+<p>- <code>long</code> owner_id (optional)</p>
+<p>- <code>long</code> cursor (semi-optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The users.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="acfef16b079c692614907c27ef1c1b728"></a>
@@ -1208,6 +1672,26 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Returns the members of the specified list.</p>
+<p>Private list members will only be shown if the authenticated user owns the specified list.</p>
+<p>Note: Either a list_id or a slug is required.</p>
+<p>If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
+<p>The response from the API will include a previous_cursor and next_cursor to allow paging back and forth.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> list_id (required)</p>
+<p>- <code>string</code> slug (required)</p>
+<p>- <code>string</code> owner_sereen_name (optional)</p>
+<p>- <code>long</code> owner_id (optional)</p>
+<p>- <code>long</code> cursor (semi-optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The users.</dd></dl>
 
 </div>
 </div>
@@ -1234,23 +1718,25 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Returns the members of the specified list. Private list members will only be shown if the authenticated user owns the specified list.</p>
-<p>Note: Either a list_id or a slug is required. If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
-<p>The response from the API will include a previous_cursor and next_cursor to allow paging back and forth. See Using cursors to navigate collections for more information.</p>
-<p>https://dev.twitter.com/docs/misc/cursoring </p>
-<p>Avaliable parameters: </p>
-<p><em>long list_id (required)</em>  : The numerical id of the list.</p>
-<p><em>string slug (required)</em>  : You can identify a list by its slug instead of its numerical id. If you decide to do so, note that you'll also have to specify the list owner using the owner_id or owner_screen_name parameters.</p>
-<p><em>string owner_sereen_name (optional)</em>  : The screen name of the user who owns the list being requested by a slug.</p>
-<p><em>long owner_id (optional)</em>  : The user ID of the user who owns the list being requested by a slug.</p>
-<p><em>long cursor (semi-optional)</em>  : Causes the collection of list members to be broken into "pages" of somewhat consistent size. If no cursor is provided, a value of -1 will be assumed, which is the first "page".</p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classCoreTweet_1_1Rest_1_1Users.html" title="GET/POST users">Users</a>.</dd></dl>
+<p>Returns the members of the specified list as an asynchronous operation.</p>
+<p>Private list members will only be shown if the authenticated user owns the specified list.</p>
+<p>Note: Either a list_id or a slug is required.</p>
+<p>If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
+<p>The response from the API will include a previous_cursor and next_cursor to allow paging back and forth.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> list_id (required)</p>
+<p>- <code>string</code> slug (required)</p>
+<p>- <code>string</code> owner_sereen_name (optional)</p>
+<p>- <code>long</code> owner_id (optional)</p>
+<p>- <code>long</code> cursor (semi-optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the lists.</p>
 
 </div>
 </div>
@@ -1286,6 +1772,28 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns the members of the specified list as an asynchronous operation.</p>
+<p>Private list members will only be shown if the authenticated user owns the specified list.</p>
+<p>Note: Either a list_id or a slug is required.</p>
+<p>If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
+<p>The response from the API will include a previous_cursor and next_cursor to allow paging back and forth.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> list_id (required)</p>
+<p>- <code>string</code> slug (required)</p>
+<p>- <code>string</code> owner_sereen_name (optional)</p>
+<p>- <code>long</code> owner_id (optional)</p>
+<p>- <code>long</code> cursor (semi-optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the lists.</p>
+
 </div>
 </div>
 <a class="anchor" id="ab44d9ad3b4ac653f5442b6d4b5f0b008"></a>
@@ -1320,6 +1828,28 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns the members of the specified list as an asynchronous operation.</p>
+<p>Private list members will only be shown if the authenticated user owns the specified list.</p>
+<p>Note: Either a list_id or a slug is required.</p>
+<p>If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
+<p>The response from the API will include a previous_cursor and next_cursor to allow paging back and forth.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> list_id (required)</p>
+<p>- <code>string</code> slug (required)</p>
+<p>- <code>string</code> owner_sereen_name (optional)</p>
+<p>- <code>long</code> owner_id (optional)</p>
+<p>- <code>long</code> cursor (semi-optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the lists.</p>
+
 </div>
 </div>
 <a class="anchor" id="a96eea3e68306f5a64b11cac2304874a3"></a>
@@ -1346,21 +1876,22 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Check if the specified user is a member of the specified list.</p>
-<p>Note: Either a list_id or a slug is required. If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
-<p>Avaliable parameters: </p>
-<p><em>long list_id (required)</em>  : The numerical id of the list.</p>
-<p><em>string slug (required)</em>  : You can identify a list by its slug instead of its numerical id. If you decide to do so, note that you'll also have to specify the list owner using the owner_id or owner_screen_name parameters.</p>
-<p><em>string sereen_name (required)</em>  : The screen name of the user for whom to return results for. Helpful for disambiguating when a valid screen name is also a user ID.</p>
-<p><em>long user_id (required)</em>  : The ID of the user for whom to return results for. Helpful for disambiguating when a valid user ID is also a valid screen name.</p>
-<p><em>string owner_screen_name (optional)</em>  : The screen name of the user who owns the list being requested by a slug.</p>
-<p><em>long owner_id (optional)</em>  : The user ID of the user who owns the list being requested by a slug.</p>
-<dl class="section return"><dt>Returns</dt><dd>The user.</dd></dl>
+<p>Note: Either a list_id or a slug is required.</p>
+<p>If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> list_id (required)</p>
+<p>- <code>string</code> slug (required)</p>
+<p>- <code>string</code> sereen_name (required)</p>
+<p>- <code>long</code> user_id (required)</p>
+<p>- <code>string</code> owner_screen_name (optional)</p>
+<p>- <code>long</code> owner_id (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The user.</dd></dl>
 
 </div>
 </div>
@@ -1386,6 +1917,25 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Check if the specified user is a member of the specified list.</p>
+<p>Note: Either a list_id or a slug is required.</p>
+<p>If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> list_id (required)</p>
+<p>- <code>string</code> slug (required)</p>
+<p>- <code>string</code> sereen_name (required)</p>
+<p>- <code>long</code> user_id (required)</p>
+<p>- <code>string</code> owner_screen_name (optional)</p>
+<p>- <code>long</code> owner_id (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The user.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a08f244281f93d38ed7672cf983db8bd4"></a>
@@ -1409,6 +1959,25 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Check if the specified user is a member of the specified list.</p>
+<p>Note: Either a list_id or a slug is required.</p>
+<p>If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> list_id (required)</p>
+<p>- <code>string</code> slug (required)</p>
+<p>- <code>string</code> sereen_name (required)</p>
+<p>- <code>long</code> user_id (required)</p>
+<p>- <code>string</code> owner_screen_name (optional)</p>
+<p>- <code>long</code> owner_id (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The user.</dd></dl>
 
 </div>
 </div>
@@ -1435,22 +2004,24 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Check if the specified user is a member of the specified list.</p>
-<p>Note: Either a list_id or a slug is required. If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
-<p>Avaliable parameters: </p>
-<p><em>long list_id (required)</em>  : The numerical id of the list.</p>
-<p><em>string slug (required)</em>  : You can identify a list by its slug instead of its numerical id. If you decide to do so, note that you'll also have to specify the list owner using the owner_id or owner_screen_name parameters.</p>
-<p><em>string sereen_name (required)</em>  : The screen name of the user for whom to return results for. Helpful for disambiguating when a valid screen name is also a user ID.</p>
-<p><em>long user_id (required)</em>  : The ID of the user for whom to return results for. Helpful for disambiguating when a valid user ID is also a valid screen name.</p>
-<p><em>string owner_screen_name (optional)</em>  : The screen name of the user who owns the list being requested by a slug.</p>
-<p><em>long owner_id (optional)</em>  : The user ID of the user who owns the list being requested by a slug.</p>
-<dl class="section return"><dt>Returns</dt><dd>The user.</dd></dl>
+<p>Check if the specified user is a member of the specified list as an asynchronous operation.</p>
+<p>Note: Either a list_id or a slug is required.</p>
+<p>If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> list_id (required)</p>
+<p>- <code>string</code> slug (required)</p>
+<p>- <code>string</code> sereen_name (required)</p>
+<p>- <code>long</code> user_id (required)</p>
+<p>- <code>string</code> owner_screen_name (optional)</p>
+<p>- <code>long</code> owner_id (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the user.</p>
 
 </div>
 </div>
@@ -1486,6 +2057,27 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Check if the specified user is a member of the specified list as an asynchronous operation.</p>
+<p>Note: Either a list_id or a slug is required.</p>
+<p>If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> list_id (required)</p>
+<p>- <code>string</code> slug (required)</p>
+<p>- <code>string</code> sereen_name (required)</p>
+<p>- <code>long</code> user_id (required)</p>
+<p>- <code>string</code> owner_screen_name (optional)</p>
+<p>- <code>long</code> owner_id (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the user.</p>
+
 </div>
 </div>
 <a class="anchor" id="ace78839b6e5034b50bf522398857c9ca"></a>
@@ -1520,6 +2112,27 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Check if the specified user is a member of the specified list as an asynchronous operation.</p>
+<p>Note: Either a list_id or a slug is required.</p>
+<p>If providing a list_slug, an owner_screen_name or owner_id is also required.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>long</code> list_id (required)</p>
+<p>- <code>string</code> slug (required)</p>
+<p>- <code>string</code> sereen_name (required)</p>
+<p>- <code>long</code> user_id (required)</p>
+<p>- <code>string</code> owner_screen_name (optional)</p>
+<p>- <code>long</code> owner_id (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the user.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
@@ -1529,7 +2142,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat May 31 2014 23:10:00 for CoreTweet by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 20 2014 00:31:20 for CoreTweet by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

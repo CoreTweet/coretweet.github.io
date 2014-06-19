@@ -5,6 +5,5 @@ var searchData=
   ['placeresponse',['PlaceResponse',['../classCoreTweet_1_1PlaceResponse.html',1,'CoreTweet']]],
   ['profilebannersize',['ProfileBannerSize',['../classCoreTweet_1_1ProfileBannerSize.html',1,'CoreTweet']]],
   ['profilebannersizes',['ProfileBannerSizes',['../classCoreTweet_1_1ProfileBannerSizes.html',1,'CoreTweet']]],
-  ['program',['Program',['../classCoreTweet_1_1Tests_1_1Program.html',1,'CoreTweet::Tests']]],
   ['property',['Property',['../classCoreTweet_1_1Property.html',1,'CoreTweet']]]
 ];

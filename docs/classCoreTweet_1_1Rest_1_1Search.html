@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="core-48x48.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">CoreTweet
-   &#160;<span id="projectnumber">0.3.3</span>
+   &#160;<span id="projectnumber">0.3.4</span>
    </div>
    <div id="projectbrief">Yet another .NET Twitter Library</div>
   </td>
@@ -97,7 +97,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>GET search 
+<p>Provides a set of methods for the wrapper of GET search.  
  <a href="classCoreTweet_1_1Rest_1_1Search.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for CoreTweet.Rest.Search:</div>
@@ -105,7 +105,7 @@ Inheritance diagram for CoreTweet.Rest.Search:</div>
  <div class="center">
   <img src="classCoreTweet_1_1Rest_1_1Search.png" usemap="#CoreTweet.Rest.Search_map" alt=""/>
   <map id="CoreTweet.Rest.Search_map" name="CoreTweet.Rest.Search_map">
-<area href="classCoreTweet_1_1Core_1_1ApiProviderBase.html" title="Base class of API providers. " alt="CoreTweet.Core.ApiProviderBase" shape="rect" coords="0,0,205,24"/>
+<area href="classCoreTweet_1_1Core_1_1ApiProviderBase.html" title="Provides a Twitter API wrapper. This is an abstract class. " alt="CoreTweet.Core.ApiProviderBase" shape="rect" coords="0,0,205,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -132,7 +132,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a8f9003e34c6f19f561b10b1f14098ec1 inherit properties_classCoreTweet_1_1Core_1_1ApiProviderBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>GET search</p>
+<div class="textblock"><p>Provides a set of methods for the wrapper of GET search. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a976bc9ecfa39fdb29c1e97258569db2a"></a>
 <div class="memitem">
@@ -158,26 +158,26 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns a collection of relevant Tweets matching a specified query.</p>
-<p>Please note that Twitter's search service and, by extension, the <a class="el" href="classCoreTweet_1_1Rest_1_1Search.html" title="GET search">Search</a> API is not meant to be an exhaustive source of Tweets. Not all Tweets will be indexed or made available via the search interface.</p>
-<p>https://dev.twitter.com/docs/using-search </p>
-<p>Avaliable parameters: </p>
-<p><em>string q (required)</em>  : A UTF-8, URL-encoded search query of 1,000 characters maximum, including operators. Queries may additionally be limited by complexity.</p>
-<p><em>string geocode (optional)</em>  : Returns tweets by users located within a given radius of the given latitude/longitude. The location is preferentially taking from the Geotagging API, but will fall back to their Twitter profile. The parameter value is specified by "latitude,longitude,radius", where radius units must be specified as either "mi" (miles) or "km" (kilometers). Note that you cannot use the near operator via the API to geocode arbitrary locations; however you can use this geocode parameter to search near geocodes directly. A maximum of 1,000 distinct "sub-regions" will be considered when using the radius modifier.</p>
-<p><em>string lang (optional)</em>  : Restricts tweets to the given language, given by an ISO 639-1 code. <a class="el" href="classCoreTweet_1_1Language.html">Language</a> detection is best-effort.</p>
-<p><em>string locale (optional)</em>  : Specify the language of the query you are sending (only ja is currently effective). This is intended for language-specific consumers and the default should work in the majority of cases.</p>
-<p><em>string result_type (optional)</em>  : Optional. Specifies what type of search results you would prefer to receive. The current default is "mixed." Valid values include: * mixed: Include both popular and real time results in the response. * recent: return only the most recent results in the response. * popular: return only the most popular results in the response.</p>
-<p><em>int count (optional)</em>  : The number of tweets to return per page, up to a maximum of 100. Defaults to 15.</p>
-<p><em>string until (optional)</em>  : Returns tweets generated before the given date. Date should be formatted as YYYY-MM-DD. Keep in mind that the search index may not go back as far as the date you specify here.</p>
-<p><em>long since_id (optional)</em>  : Returns results with an ID greater than (that is, more recent than) the specified ID. There are limits to the number of Tweets which can be accessed through the API. If the limit of Tweets has occured since the since_id, the since_id will be forced to the oldest ID available.</p>
-<p><em>long max_id (optional)</em>  : Returns results with an ID less than (that is, older than) or equal to the specified ID.</p>
-<p><em>bool include_entities (optional)</em>  : The entities node will be disincluded when set to false.</p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classCoreTweet_1_1Rest_1_1Statuses.html" title="GET/POST statuses">Statuses</a>.</dd></dl>
+<p>Please note that Twitter's search service and, by extension, the <a class="el" href="classCoreTweet_1_1Rest_1_1Search.html" title="Provides a set of methods for the wrapper of GET search. ">Search</a> API is not meant to be an exhaustive source of Tweets.</p>
+<p>Not all Tweets will be indexed or made available via the search interface.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> q (required)</p>
+<p>- <code>string</code> geocode (optional)</p>
+<p>- <code>string</code> lang (optional)</p>
+<p>- <code>string</code> locale (optional)</p>
+<p>- <code>string</code> result_type (optional)</p>
+<p>- <code>int</code> count (optional)</p>
+<p>- <code>string</code> until (optional)</p>
+<p>- <code>long</code> since_id (optional)</p>
+<p>- <code>long</code> max_id (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The statuses.</dd></dl>
 
 </div>
 </div>
@@ -203,6 +203,29 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns a collection of relevant Tweets matching a specified query.</p>
+<p>Please note that Twitter's search service and, by extension, the <a class="el" href="classCoreTweet_1_1Rest_1_1Search.html" title="Provides a set of methods for the wrapper of GET search. ">Search</a> API is not meant to be an exhaustive source of Tweets.</p>
+<p>Not all Tweets will be indexed or made available via the search interface.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> q (required)</p>
+<p>- <code>string</code> geocode (optional)</p>
+<p>- <code>string</code> lang (optional)</p>
+<p>- <code>string</code> locale (optional)</p>
+<p>- <code>string</code> result_type (optional)</p>
+<p>- <code>int</code> count (optional)</p>
+<p>- <code>string</code> until (optional)</p>
+<p>- <code>long</code> since_id (optional)</p>
+<p>- <code>long</code> max_id (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The statuses.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a76a227a714d5a11eeb1fc83fcbc9ee7b"></a>
@@ -226,6 +249,29 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Returns a collection of relevant Tweets matching a specified query.</p>
+<p>Please note that Twitter's search service and, by extension, the <a class="el" href="classCoreTweet_1_1Rest_1_1Search.html" title="Provides a set of methods for the wrapper of GET search. ">Search</a> API is not meant to be an exhaustive source of Tweets.</p>
+<p>Not all Tweets will be indexed or made available via the search interface.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> q (required)</p>
+<p>- <code>string</code> geocode (optional)</p>
+<p>- <code>string</code> lang (optional)</p>
+<p>- <code>string</code> locale (optional)</p>
+<p>- <code>string</code> result_type (optional)</p>
+<p>- <code>int</code> count (optional)</p>
+<p>- <code>string</code> until (optional)</p>
+<p>- <code>long</code> since_id (optional)</p>
+<p>- <code>long</code> max_id (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The statuses.</dd></dl>
 
 </div>
 </div>
@@ -252,27 +298,28 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Returns a collection of relevant Tweets matching a specified query.</p>
-<p>Please note that Twitter's search service and, by extension, the <a class="el" href="classCoreTweet_1_1Rest_1_1Search.html" title="GET search">Search</a> API is not meant to be an exhaustive source of Tweets. Not all Tweets will be indexed or made available via the search interface.</p>
-<p>https://dev.twitter.com/docs/using-search </p>
-<p>Avaliable parameters: </p>
-<p><em>string q (required)</em>  : A UTF-8, URL-encoded search query of 1,000 characters maximum, including operators. Queries may additionally be limited by complexity.</p>
-<p><em>string geocode (optional)</em>  : Returns tweets by users located within a given radius of the given latitude/longitude. The location is preferentially taking from the Geotagging API, but will fall back to their Twitter profile. The parameter value is specified by "latitude,longitude,radius", where radius units must be specified as either "mi" (miles) or "km" (kilometers). Note that you cannot use the near operator via the API to geocode arbitrary locations; however you can use this geocode parameter to search near geocodes directly. A maximum of 1,000 distinct "sub-regions" will be considered when using the radius modifier.</p>
-<p><em>string lang (optional)</em>  : Restricts tweets to the given language, given by an ISO 639-1 code. <a class="el" href="classCoreTweet_1_1Language.html">Language</a> detection is best-effort.</p>
-<p><em>string locale (optional)</em>  : Specify the language of the query you are sending (only ja is currently effective). This is intended for language-specific consumers and the default should work in the majority of cases.</p>
-<p><em>string result_type (optional)</em>  : Optional. Specifies what type of search results you would prefer to receive. The current default is "mixed." Valid values include: * mixed: Include both popular and real time results in the response. * recent: return only the most recent results in the response. * popular: return only the most popular results in the response.</p>
-<p><em>int count (optional)</em>  : The number of tweets to return per page, up to a maximum of 100. Defaults to 15.</p>
-<p><em>string until (optional)</em>  : Returns tweets generated before the given date. Date should be formatted as YYYY-MM-DD. Keep in mind that the search index may not go back as far as the date you specify here.</p>
-<p><em>long since_id (optional)</em>  : Returns results with an ID greater than (that is, more recent than) the specified ID. There are limits to the number of Tweets which can be accessed through the API. If the limit of Tweets has occured since the since_id, the since_id will be forced to the oldest ID available.</p>
-<p><em>long max_id (optional)</em>  : Returns results with an ID less than (that is, older than) or equal to the specified ID.</p>
-<p><em>bool include_entities (optional)</em>  : The entities node will be disincluded when set to false.</p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classCoreTweet_1_1Rest_1_1Statuses.html" title="GET/POST statuses">Statuses</a>.</dd></dl>
+<p>Returns a collection of relevant Tweets matching a specified query as an asynchronous operation.</p>
+<p>Please note that Twitter's search service and, by extension, the <a class="el" href="classCoreTweet_1_1Rest_1_1Search.html" title="Provides a set of methods for the wrapper of GET search. ">Search</a> API is not meant to be an exhaustive source of Tweets.</p>
+<p>Not all Tweets will be indexed or made available via the search interface.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> q (required)</p>
+<p>- <code>string</code> geocode (optional)</p>
+<p>- <code>string</code> lang (optional)</p>
+<p>- <code>string</code> locale (optional)</p>
+<p>- <code>string</code> result_type (optional)</p>
+<p>- <code>int</code> count (optional)</p>
+<p>- <code>string</code> until (optional)</p>
+<p>- <code>long</code> since_id (optional)</p>
+<p>- <code>long</code> max_id (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the statuses.</p>
 
 </div>
 </div>
@@ -308,6 +355,31 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns a collection of relevant Tweets matching a specified query as an asynchronous operation.</p>
+<p>Please note that Twitter's search service and, by extension, the <a class="el" href="classCoreTweet_1_1Rest_1_1Search.html" title="Provides a set of methods for the wrapper of GET search. ">Search</a> API is not meant to be an exhaustive source of Tweets.</p>
+<p>Not all Tweets will be indexed or made available via the search interface.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> q (required)</p>
+<p>- <code>string</code> geocode (optional)</p>
+<p>- <code>string</code> lang (optional)</p>
+<p>- <code>string</code> locale (optional)</p>
+<p>- <code>string</code> result_type (optional)</p>
+<p>- <code>int</code> count (optional)</p>
+<p>- <code>string</code> until (optional)</p>
+<p>- <code>long</code> since_id (optional)</p>
+<p>- <code>long</code> max_id (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the statuses.</p>
+
 </div>
 </div>
 <a class="anchor" id="a3d06daf83ce19f82fd9aa67c538c9008"></a>
@@ -342,6 +414,31 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns a collection of relevant Tweets matching a specified query as an asynchronous operation.</p>
+<p>Please note that Twitter's search service and, by extension, the <a class="el" href="classCoreTweet_1_1Rest_1_1Search.html" title="Provides a set of methods for the wrapper of GET search. ">Search</a> API is not meant to be an exhaustive source of Tweets.</p>
+<p>Not all Tweets will be indexed or made available via the search interface.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code> q (required)</p>
+<p>- <code>string</code> geocode (optional)</p>
+<p>- <code>string</code> lang (optional)</p>
+<p>- <code>string</code> locale (optional)</p>
+<p>- <code>string</code> result_type (optional)</p>
+<p>- <code>int</code> count (optional)</p>
+<p>- <code>string</code> until (optional)</p>
+<p>- <code>long</code> since_id (optional)</p>
+<p>- <code>long</code> max_id (optional)</p>
+<p>- <code>bool</code> include_entities (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the statuses.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
@@ -351,7 +448,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat May 31 2014 23:10:00 for CoreTweet by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 20 2014 00:31:20 for CoreTweet by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

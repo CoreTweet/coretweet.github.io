@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="core-48x48.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">CoreTweet
-   &#160;<span id="projectnumber">0.3.3</span>
+   &#160;<span id="projectnumber">0.3.4</span>
    </div>
    <div id="projectbrief">Yet another .NET Twitter Library</div>
   </td>
@@ -97,7 +97,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>GET help 
+<p>Provides a set of methods for the wrapper of GET help.  
  <a href="classCoreTweet_1_1Rest_1_1Help.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for CoreTweet.Rest.Help:</div>
@@ -105,7 +105,7 @@ Inheritance diagram for CoreTweet.Rest.Help:</div>
  <div class="center">
   <img src="classCoreTweet_1_1Rest_1_1Help.png" usemap="#CoreTweet.Rest.Help_map" alt=""/>
   <map id="CoreTweet.Rest.Help_map" name="CoreTweet.Rest.Help_map">
-<area href="classCoreTweet_1_1Core_1_1ApiProviderBase.html" title="Base class of API providers. " alt="CoreTweet.Core.ApiProviderBase" shape="rect" coords="0,0,205,24"/>
+<area href="classCoreTweet_1_1Core_1_1ApiProviderBase.html" title="Provides a Twitter API wrapper. This is an abstract class. " alt="CoreTweet.Core.ApiProviderBase" shape="rect" coords="0,0,205,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -186,7 +186,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a8f9003e34c6f19f561b10b1f14098ec1 inherit properties_classCoreTweet_1_1Core_1_1ApiProviderBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>GET help</p>
+<div class="textblock"><p>Provides a set of methods for the wrapper of GET help. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a125cb0d4eecd8c491e26ecae2d253ba3"></a>
 <div class="memitem">
@@ -214,13 +214,13 @@ Additional Inherited Members</h2></td></tr>
 <p>Returns the current configuration used by Twitter including twitter.com slugs which are not usernames, maximum photo resolutions, and t.co URL lengths.</p>
 <p>It is recommended applications request this endpoint when they are loaded, but no more than once a day.</p>
 <p>Avaliable parameters: Nothing.</p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classCoreTweet_1_1Configurations.html">Configurations</a>.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classCoreTweet_1_1Configurations.html" title="Represents the current configuration used by Twitter including twitter.com slugs which are not userna...">Configurations</a>.</dd></dl>
 
 </div>
 </div>
@@ -246,6 +246,18 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns the current configuration used by Twitter including twitter.com slugs which are not usernames, maximum photo resolutions, and t.co URL lengths.</p>
+<p>It is recommended applications request this endpoint when they are loaded, but no more than once a day.</p>
+<p>Avaliable parameters: Nothing.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classCoreTweet_1_1Configurations.html" title="Represents the current configuration used by Twitter including twitter.com slugs which are not userna...">Configurations</a>.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="ab654a49df8e8aa2750d23c6d30e8adf9"></a>
@@ -269,6 +281,18 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Returns the current configuration used by Twitter including twitter.com slugs which are not usernames, maximum photo resolutions, and t.co URL lengths.</p>
+<p>It is recommended applications request this endpoint when they are loaded, but no more than once a day.</p>
+<p>Avaliable parameters: Nothing.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classCoreTweet_1_1Configurations.html" title="Represents the current configuration used by Twitter including twitter.com slugs which are not userna...">Configurations</a>.</dd></dl>
 
 </div>
 </div>
@@ -295,16 +319,17 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Returns the current configuration used by Twitter including twitter.com slugs which are not usernames, maximum photo resolutions, and t.co URL lengths.</p>
+<p>Returns the current configuration used by Twitter including twitter.com slugs which are not usernames, maximum photo resolutions, and t.co URL lengths as an asynchronous operation.</p>
 <p>It is recommended applications request this endpoint when they are loaded, but no more than once a day.</p>
 <p>Avaliable parameters: Nothing.</p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classCoreTweet_1_1Configurations.html">Configurations</a>.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the configurations.</p>
 
 </div>
 </div>
@@ -340,6 +365,20 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns the current configuration used by Twitter including twitter.com slugs which are not usernames, maximum photo resolutions, and t.co URL lengths as an asynchronous operation.</p>
+<p>It is recommended applications request this endpoint when they are loaded, but no more than once a day.</p>
+<p>Avaliable parameters: Nothing.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the configurations.</p>
+
 </div>
 </div>
 <a class="anchor" id="a45a5cec43ffbb51528c9e11220cf9b9b"></a>
@@ -374,6 +413,20 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns the current configuration used by Twitter including twitter.com slugs which are not usernames, maximum photo resolutions, and t.co URL lengths as an asynchronous operation.</p>
+<p>It is recommended applications request this endpoint when they are loaded, but no more than once a day.</p>
+<p>Avaliable parameters: Nothing.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the configurations.</p>
+
 </div>
 </div>
 <a class="anchor" id="a49affd516d3bdad85a53570054803aec"></a>
@@ -399,15 +452,16 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Returns the list of languages supported by Twitter along with their ISO 639-1 code. The ISO 639-1 code is the two letter value to use if you include lang with any of your requests.</p>
+<p>Returns the list of languages supported by Twitter along with their ISO 639-1 code.</p>
+<p>The ISO 639-1 code is the two letter value to use if you include lang with any of your requests.</p>
 <p>Avaliable parameters: Nothing.</p>
-<dl class="section return"><dt>Returns</dt><dd>Languages.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>Languages.</dd></dl>
 
 </div>
 </div>
@@ -433,6 +487,18 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns the list of languages supported by Twitter along with their ISO 639-1 code.</p>
+<p>The ISO 639-1 code is the two letter value to use if you include lang with any of your requests.</p>
+<p>Avaliable parameters: Nothing.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Languages.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a4f9b8acd235cf10b41c5b03301a48569"></a>
@@ -456,6 +522,18 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Returns the list of languages supported by Twitter along with their ISO 639-1 code.</p>
+<p>The ISO 639-1 code is the two letter value to use if you include lang with any of your requests.</p>
+<p>Avaliable parameters: Nothing.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Languages.</dd></dl>
 
 </div>
 </div>
@@ -482,15 +560,17 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Returns the list of languages supported by Twitter along with their ISO 639-1 code. The ISO 639-1 code is the two letter value to use if you include lang with any of your requests.</p>
+<p>Returns the list of languages supported by Twitter along with their ISO 639-1 code as an asynchronous operation.</p>
+<p>The ISO 639-1 code is the two letter value to use if you include lang with any of your requests.</p>
 <p>Avaliable parameters: Nothing.</p>
-<dl class="section return"><dt>Returns</dt><dd>Languages.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the languages.</p>
 
 </div>
 </div>
@@ -526,6 +606,20 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns the list of languages supported by Twitter along with their ISO 639-1 code as an asynchronous operation.</p>
+<p>The ISO 639-1 code is the two letter value to use if you include lang with any of your requests.</p>
+<p>Avaliable parameters: Nothing.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the languages.</p>
+
 </div>
 </div>
 <a class="anchor" id="a0e8042410db3d1a38f78d8e44dad5800"></a>
@@ -560,6 +654,20 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns the list of languages supported by Twitter along with their ISO 639-1 code as an asynchronous operation.</p>
+<p>The ISO 639-1 code is the two letter value to use if you include lang with any of your requests.</p>
+<p>Avaliable parameters: Nothing.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the languages.</p>
+
 </div>
 </div>
 <a class="anchor" id="a4a1af9728bec69a2b676d5b19a0d39f9"></a>
@@ -587,13 +695,13 @@ Additional Inherited Members</h2></td></tr>
 <p></p>
 <p>Returns Twitter's Privacy Policy.</p>
 <p>Avaliable parameters: Nothing.</p>
-<dl class="section return"><dt>Returns</dt><dd>The sentense.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The sentense.</dd></dl>
 
 </div>
 </div>
@@ -619,6 +727,17 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns Twitter's Privacy Policy.</p>
+<p>Avaliable parameters: Nothing.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The sentense.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="ab4cfbc91953d9aad1d8c10efd58022ff"></a>
@@ -642,6 +761,17 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Returns Twitter's Privacy Policy.</p>
+<p>Avaliable parameters: Nothing.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The sentense.</dd></dl>
 
 </div>
 </div>
@@ -668,15 +798,16 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Returns Twitter's Privacy Policy.</p>
+<p>Returns Twitter's Privacy Policy as an asynchronous operation.</p>
 <p>Avaliable parameters: Nothing.</p>
-<dl class="section return"><dt>Returns</dt><dd>The sentense.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the sentense.</p>
 
 </div>
 </div>
@@ -712,6 +843,19 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns Twitter's Privacy Policy as an asynchronous operation.</p>
+<p>Avaliable parameters: Nothing.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the sentense.</p>
+
 </div>
 </div>
 <a class="anchor" id="a26e65c158ef4e4c60cf3ab7b582235e5"></a>
@@ -746,6 +890,19 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns Twitter's Privacy Policy as an asynchronous operation.</p>
+<p>Avaliable parameters: Nothing.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the sentense.</p>
+
 </div>
 </div>
 <a class="anchor" id="ac3ac1190f5ff9e3ada0d2d53d5668e71"></a>
@@ -772,15 +929,15 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns the current rate limits for methods belonging to the specified resource families.</p>
-<p>Avaliable parameters: </p>
-<p><em>string, IEnumerable&lt;string&gt; resources (optional)</em>  : A list of resource families or comma separated string of ones you want to know the current rate limit disposition for. For best performance, only specify the resource families pertinent to your application.</p>
-<dl class="section return"><dt>Returns</dt><dd>The dictionary.</dd></dl>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code>string / <code>IEnumerable&lt;string&gt;</code> resources (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The dictionary.</dd></dl>
 
 </div>
 </div>
@@ -806,6 +963,18 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns the current rate limits for methods belonging to the specified resource families.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code>string / <code>IEnumerable&lt;string&gt;</code> resources (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The dictionary.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a4d230c05d3f06fe17911677cb231ddc4"></a>
@@ -829,6 +998,18 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Returns the current rate limits for methods belonging to the specified resource families.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code>string / <code>IEnumerable&lt;string&gt;</code> resources (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The dictionary.</dd></dl>
 
 </div>
 </div>
@@ -855,16 +1036,17 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Returns the current rate limits for methods belonging to the specified resource families.</p>
-<p>Avaliable parameters: </p>
-<p><em>string, IEnumerable&lt;string&gt; resources (optional)</em>  : A list of resource families or comma separated string of ones you want to know the current rate limit disposition for. For best performance, only specify the resource families pertinent to your application.</p>
-<dl class="section return"><dt>Returns</dt><dd>The dictionary.</dd></dl>
+<p>Returns the current rate limits for methods belonging to the specified resource families as an asynchronous operation.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code>string / <code>IEnumerable&lt;string&gt;</code> resources (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the dictionary.</p>
 
 </div>
 </div>
@@ -900,6 +1082,20 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns the current rate limits for methods belonging to the specified resource families as an asynchronous operation.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code>string / <code>IEnumerable&lt;string&gt;</code> resources (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the dictionary.</p>
+
 </div>
 </div>
 <a class="anchor" id="a662f380b4cc0d03bb37a245d8cd5cd03"></a>
@@ -934,6 +1130,20 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns the current rate limits for methods belonging to the specified resource families as an asynchronous operation.</p>
+<p>Avaliable parameters:</p>
+<p>- <code>string</code>string / <code>IEnumerable&lt;string&gt;</code> resources (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the dictionary.</p>
+
 </div>
 </div>
 <a class="anchor" id="a80c53d2048023ae44d66c8724d61ec3c"></a>
@@ -959,15 +1169,16 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Returns the Twitter Terms of Service in the requested format. These are not the same as the Developer Rules of the Road.</p>
+<p>Returns the Twitter Terms of Service in the requested format.</p>
+<p>These are not the same as the Developer Rules of the Road.</p>
 <p>Avaliable parameters: Nothing.</p>
-<dl class="section return"><dt>Returns</dt><dd>The sentense.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The sentense.</dd></dl>
 
 </div>
 </div>
@@ -993,6 +1204,18 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns the Twitter Terms of Service in the requested format.</p>
+<p>These are not the same as the Developer Rules of the Road.</p>
+<p>Avaliable parameters: Nothing.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The sentense.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a896f9896bebbacca23661e6eeba47288"></a>
@@ -1016,6 +1239,18 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Returns the Twitter Terms of Service in the requested format.</p>
+<p>These are not the same as the Developer Rules of the Road.</p>
+<p>Avaliable parameters: Nothing.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The sentense.</dd></dl>
 
 </div>
 </div>
@@ -1042,15 +1277,17 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Returns the Twitter Terms of Service in the requested format. These are not the same as the Developer Rules of the Road.</p>
+<p>Returns the Twitter Terms of Service in the requested format as an asynchronous operation.</p>
+<p>These are not the same as the Developer Rules of the Road.</p>
 <p>Avaliable parameters: Nothing.</p>
-<dl class="section return"><dt>Returns</dt><dd>The sentense.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the sentense.</p>
 
 </div>
 </div>
@@ -1086,6 +1323,20 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns the Twitter Terms of Service in the requested format as an asynchronous operation.</p>
+<p>These are not the same as the Developer Rules of the Road.</p>
+<p>Avaliable parameters: Nothing.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the sentense.</p>
+
 </div>
 </div>
 <a class="anchor" id="a0ede8ceedaffc81430b1f81e3806cda2"></a>
@@ -1120,6 +1371,20 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns the Twitter Terms of Service in the requested format as an asynchronous operation.</p>
+<p>These are not the same as the Developer Rules of the Road.</p>
+<p>Avaliable parameters: Nothing.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the sentense.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
@@ -1129,7 +1394,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat May 31 2014 23:10:00 for CoreTweet by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 20 2014 00:31:19 for CoreTweet by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

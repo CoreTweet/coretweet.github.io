@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="core-48x48.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">CoreTweet
-   &#160;<span id="projectnumber">0.3.3</span>
+   &#160;<span id="projectnumber">0.3.4</span>
    </div>
    <div id="projectbrief">Yet another .NET Twitter Library</div>
   </td>
@@ -97,7 +97,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>GET/POST direct_messages These endpoints require an access token with RWD permissions.  
+<p>Provides a set of methods for the wrapper of GET/POST direct_messages.  
  <a href="classCoreTweet_1_1Rest_1_1DirectMessages.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for CoreTweet.Rest.DirectMessages:</div>
@@ -105,7 +105,7 @@ Inheritance diagram for CoreTweet.Rest.DirectMessages:</div>
  <div class="center">
   <img src="classCoreTweet_1_1Rest_1_1DirectMessages.png" usemap="#CoreTweet.Rest.DirectMessages_map" alt=""/>
   <map id="CoreTweet.Rest.DirectMessages_map" name="CoreTweet.Rest.DirectMessages_map">
-<area href="classCoreTweet_1_1Core_1_1ApiProviderBase.html" title="Base class of API providers. " alt="CoreTweet.Core.ApiProviderBase" shape="rect" coords="0,0,205,24"/>
+<area href="classCoreTweet_1_1Core_1_1ApiProviderBase.html" title="Provides a Twitter API wrapper. This is an abstract class. " alt="CoreTweet.Core.ApiProviderBase" shape="rect" coords="0,0,205,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -186,7 +186,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a8f9003e34c6f19f561b10b1f14098ec1 inherit properties_classCoreTweet_1_1Core_1_1ApiProviderBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>GET/POST direct_messages These endpoints require an access token with RWD permissions. </p>
+<div class="textblock"><p>Provides a set of methods for the wrapper of GET/POST direct_messages. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a2b7a25577221ffb79858e889b1112e59"></a>
 <div class="memitem">
@@ -211,19 +211,19 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Destroys the direct message specified in the required ID parameter. The authenticating user must be the recipient of the specified direct message.</p>
+<p>Destroys the direct message specified in the required ID parameter.</p>
+<p>The authenticating user must be the recipient of the specified direct message.</p>
 <p>This method requires an access token with RWD (read, write and direct message) permissions.</p>
-<p>Avaliable parameters: </p>
-<p><em>long id (required)</em>  : The ID of the direct message to delete.</p>
-<p><em>bool include_entities</em>  : The entities node will not be included when set to false.</p>
-<dl class="section return"><dt>Returns</dt><dd>The direct message.</dd></dl>
+<p>Avaliable parameters:</p>
+<p><code>long</code> id (required)</p>
+<p><code>bool</code> include_entities (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">tokens</td><td><a class="el" href="classCoreTweet_1_1Tokens.html" title="The OAuth tokens. ">Tokens</a>. </td></tr>
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The direct message.</dd></dl>
 
 </div>
 </div>
@@ -249,6 +249,21 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Destroys the direct message specified in the required ID parameter.</p>
+<p>The authenticating user must be the recipient of the specified direct message.</p>
+<p>This method requires an access token with RWD (read, write and direct message) permissions.</p>
+<p>Avaliable parameters:</p>
+<p><code>long</code> id (required)</p>
+<p><code>bool</code> include_entities (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The direct message.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a587370d947e8092a468e9276740c48bf"></a>
@@ -272,6 +287,21 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Destroys the direct message specified in the required ID parameter.</p>
+<p>The authenticating user must be the recipient of the specified direct message.</p>
+<p>This method requires an access token with RWD (read, write and direct message) permissions.</p>
+<p>Avaliable parameters:</p>
+<p><code>long</code> id (required)</p>
+<p><code>bool</code> include_entities (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The direct message.</dd></dl>
 
 </div>
 </div>
@@ -298,19 +328,20 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Destroys the direct message specified in the required ID parameter. The authenticating user must be the recipient of the specified direct message.</p>
+<p>Destroys the direct message specified in the required ID parameter as an asynchronous operation.</p>
+<p>The authenticating user must be the recipient of the specified direct message.</p>
 <p>This method requires an access token with RWD (read, write and direct message) permissions.</p>
-<p>Avaliable parameters: </p>
-<p><em>long id (required)</em>  : The ID of the direct message to delete.</p>
-<p><em>bool include_entities</em>  : The entities node will not be included when set to false.</p>
-<dl class="section return"><dt>Returns</dt><dd>The direct message.</dd></dl>
+<p>Avaliable parameters:</p>
+<p><code>long</code> id (required)</p>
+<p><code>bool</code> include_entities (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">tokens</td><td><a class="el" href="classCoreTweet_1_1Tokens.html" title="The OAuth tokens. ">Tokens</a>. </td></tr>
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the direct message.</p>
 
 </div>
 </div>
@@ -346,6 +377,23 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Destroys the direct message specified in the required ID parameter as an asynchronous operation.</p>
+<p>The authenticating user must be the recipient of the specified direct message.</p>
+<p>This method requires an access token with RWD (read, write and direct message) permissions.</p>
+<p>Avaliable parameters:</p>
+<p><code>long</code> id (required)</p>
+<p><code>bool</code> include_entities (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the direct message.</p>
+
 </div>
 </div>
 <a class="anchor" id="a4d981035712491e0d77e293e620ba5e3"></a>
@@ -380,6 +428,23 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Destroys the direct message specified in the required ID parameter as an asynchronous operation.</p>
+<p>The authenticating user must be the recipient of the specified direct message.</p>
+<p>This method requires an access token with RWD (read, write and direct message) permissions.</p>
+<p>Avaliable parameters:</p>
+<p><code>long</code> id (required)</p>
+<p><code>bool</code> include_entities (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the direct message.</p>
+
 </div>
 </div>
 <a class="anchor" id="aecc868ead3a1d02bc850e73d71702b11"></a>
@@ -405,21 +470,22 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Sends a new direct message to the specified user from the authenticating user. Requires both the user and text parameters and must be a POST. Returns the sent message in the requested format if successful.</p>
+<p>Sends a new direct message to the specified user from the authenticating user.</p>
+<p>Requires both the user and text parameters and must be a POST.</p>
+<p>Returns the sent message in the requested format if successful.</p>
 <p>This method requires an access token with RWD (read, write and direct message) permissions.</p>
-<p>Note: One of user_id or screen_name are required.</p>
-<p>Avaliable parameters: </p>
-<p><em>long user_id (optional)</em>  : The ID of the user who should receive the direct message. Helpful for disambiguating when a valid user ID is also a valid screen name.</p>
-<p><em>string screen_name (optional)</em>  : The screen name of the user who should receive the direct message. Helpful for disambiguating when a valid screen name is also a user ID.</p>
-<p><em>string text (required)</em>  : The text of your direct message. Be sure to URL encode as necessary, and keep the message under 140 characters.</p>
-<dl class="section return"><dt>Returns</dt><dd>The sent direct message.</dd></dl>
+<p>Note: Either user_id or screen_name is required.</p>
+<p>Avaliable parameters:</p>
+<p><code>long</code> user_id (optional)</p>
+<p><code>string</code> screen_name (optional)</p>
+<p><code>string</code> text (required)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">tokens</td><td><a class="el" href="classCoreTweet_1_1Tokens.html" title="The OAuth tokens. ">Tokens</a>. </td></tr>
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The sent direct message.</dd></dl>
 
 </div>
 </div>
@@ -445,6 +511,24 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Sends a new direct message to the specified user from the authenticating user.</p>
+<p>Requires both the user and text parameters and must be a POST.</p>
+<p>Returns the sent message in the requested format if successful.</p>
+<p>This method requires an access token with RWD (read, write and direct message) permissions.</p>
+<p>Note: Either user_id or screen_name is required.</p>
+<p>Avaliable parameters:</p>
+<p><code>long</code> user_id (optional)</p>
+<p><code>string</code> screen_name (optional)</p>
+<p><code>string</code> text (required)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The sent direct message.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a31901a6aab5de1e35fade00286a4d339"></a>
@@ -468,6 +552,24 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Sends a new direct message to the specified user from the authenticating user.</p>
+<p>Requires both the user and text parameters and must be a POST.</p>
+<p>Returns the sent message in the requested format if successful.</p>
+<p>This method requires an access token with RWD (read, write and direct message) permissions.</p>
+<p>Note: Either user_id or screen_name is required.</p>
+<p>Avaliable parameters:</p>
+<p><code>long</code> user_id (optional)</p>
+<p><code>string</code> screen_name (optional)</p>
+<p><code>string</code> text (required)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The sent direct message.</dd></dl>
 
 </div>
 </div>
@@ -494,21 +596,23 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Sends a new direct message to the specified user from the authenticating user. Requires both the user and text parameters and must be a POST. Returns the sent message in the requested format if successful.</p>
+<p>Sends a new direct message to the specified user from the authenticating user as an asynchronous operation.</p>
+<p>Requires both the user and text parameters and must be a POST.</p>
+<p>Returns the sent message in the requested format if successful.</p>
 <p>This method requires an access token with RWD (read, write and direct message) permissions.</p>
-<p>Note: One of user_id or screen_name are required.</p>
-<p>Avaliable parameters: </p>
-<p><em>long user_id (optional)</em>  : The ID of the user who should receive the direct message. Helpful for disambiguating when a valid user ID is also a valid screen name.</p>
-<p><em>string screen_name (optional)</em>  : The screen name of the user who should receive the direct message. Helpful for disambiguating when a valid screen name is also a user ID.</p>
-<p><em>string text (required)</em>  : The text of your direct message. Be sure to URL encode as necessary, and keep the message under 140 characters.</p>
-<dl class="section return"><dt>Returns</dt><dd>The sent direct message.</dd></dl>
+<p>Note: Either user_id or screen_name is required.</p>
+<p>Avaliable parameters:</p>
+<p><code>long</code> user_id (optional)</p>
+<p><code>string</code> screen_name (optional)</p>
+<p><code>string</code> text (required)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">tokens</td><td><a class="el" href="classCoreTweet_1_1Tokens.html" title="The OAuth tokens. ">Tokens</a>. </td></tr>
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the direct message.</p>
 
 </div>
 </div>
@@ -544,6 +648,26 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Sends a new direct message to the specified user from the authenticating user as an asynchronous operation.</p>
+<p>Requires both the user and text parameters and must be a POST.</p>
+<p>Returns the sent message in the requested format if successful.</p>
+<p>This method requires an access token with RWD (read, write and direct message) permissions.</p>
+<p>Note: Either user_id or screen_name is required.</p>
+<p>Avaliable parameters:</p>
+<p><code>long</code> user_id (optional)</p>
+<p><code>string</code> screen_name (optional)</p>
+<p><code>string</code> text (required)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the direct message.</p>
+
 </div>
 </div>
 <a class="anchor" id="a7ad4e8d9a7cfe80998c7b500d277c6c3"></a>
@@ -578,6 +702,26 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Sends a new direct message to the specified user from the authenticating user as an asynchronous operation.</p>
+<p>Requires both the user and text parameters and must be a POST.</p>
+<p>Returns the sent message in the requested format if successful.</p>
+<p>This method requires an access token with RWD (read, write and direct message) permissions.</p>
+<p>Note: Either user_id or screen_name is required.</p>
+<p>Avaliable parameters:</p>
+<p><code>long</code> user_id (optional)</p>
+<p><code>string</code> screen_name (optional)</p>
+<p><code>string</code> text (required)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the direct message.</p>
+
 </div>
 </div>
 <a class="anchor" id="ad38eb53c796e4e978bc63ff021ea7fbc"></a>
@@ -603,22 +747,23 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Returns the 20 most recent direct messages sent to the authenticating user. Includes detailed information about the sender and recipient user. You can request up to 200 direct messages per call, up to a maximum of 800 incoming DMs.</p>
-<p>This method requires an access token with RWD (read, write &amp; direct message) permissions.</p>
-<p>Avaliable parameters: </p>
-<p><em>long since_id (optional)</em>  : Returns results with an ID greater than (that is, more recent than) the specified ID. There are limits to the number of Tweets which can be accessed through the API. If the limit of Tweets has occured since the since_id, the since_id will be forced to the oldest ID available.</p>
-<p><em>long max_id (optional)</em>  : Returns results with an ID less than (that is, older than) or equal to the specified ID.</p>
-<p><em>int count (optional)</em>  : Specifies the number of records to retrieve. Must be less than or equal to 200.&lt;&gt; </p>
-<p><em>int page (optional)</em>  : Specifies the page of results to retrieve.</p>
-<p><em>bool include_entities (optional)</em>  : The entities node will not be included when set to false.</p>
-<dl class="section return"><dt>Returns</dt><dd>Direct messages.</dd></dl>
+<p>Returns the 20 most recent direct messages sent to the authenticating user.</p>
+<p>Includes detailed information about the sender and recipient user.</p>
+<p>You can request up to 200 direct messages per call, up to a maximum of 800 incoming DMs.</p>
+<p>This method requires an access token with RWD (read, write and direct message) permissions.</p>
+<p>Avaliable parameters:</p>
+<p><code>long</code> since_id (optional)</p>
+<p><code>long</code> max_id (optional)</p>
+<p><code>int</code> count (optional)</p>
+<p><code>int</code> page (optional)</p>
+<p><code>bool</code> include_entities (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">tokens</td><td><a class="el" href="classCoreTweet_1_1Tokens.html" title="The OAuth tokens. ">Tokens</a>. </td></tr>
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The direct messages.</dd></dl>
 
 </div>
 </div>
@@ -644,6 +789,25 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns the 20 most recent direct messages sent to the authenticating user.</p>
+<p>Includes detailed information about the sender and recipient user.</p>
+<p>You can request up to 200 direct messages per call, up to a maximum of 800 incoming DMs.</p>
+<p>This method requires an access token with RWD (read, write and direct message) permissions.</p>
+<p>Avaliable parameters:</p>
+<p><code>long</code> since_id (optional)</p>
+<p><code>long</code> max_id (optional)</p>
+<p><code>int</code> count (optional)</p>
+<p><code>int</code> page (optional)</p>
+<p><code>bool</code> include_entities (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The direct messages.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a0ce7c0dbccdaeae8ec31fff80df0118c"></a>
@@ -667,6 +831,25 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Returns the 20 most recent direct messages sent to the authenticating user.</p>
+<p>Includes detailed information about the sender and recipient user.</p>
+<p>You can request up to 200 direct messages per call, up to a maximum of 800 incoming DMs.</p>
+<p>This method requires an access token with RWD (read, write and direct message) permissions.</p>
+<p>Avaliable parameters:</p>
+<p><code>long</code> since_id (optional)</p>
+<p><code>long</code> max_id (optional)</p>
+<p><code>int</code> count (optional)</p>
+<p><code>int</code> page (optional)</p>
+<p><code>bool</code> include_entities (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The direct messages.</dd></dl>
 
 </div>
 </div>
@@ -693,22 +876,24 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Returns the 20 most recent direct messages sent to the authenticating user. Includes detailed information about the sender and recipient user. You can request up to 200 direct messages per call, up to a maximum of 800 incoming DMs.</p>
-<p>This method requires an access token with RWD (read, write &amp; direct message) permissions.</p>
-<p>Avaliable parameters: </p>
-<p><em>long since_id (optional)</em>  : Returns results with an ID greater than (that is, more recent than) the specified ID. There are limits to the number of Tweets which can be accessed through the API. If the limit of Tweets has occured since the since_id, the since_id will be forced to the oldest ID available.</p>
-<p><em>long max_id (optional)</em>  : Returns results with an ID less than (that is, older than) or equal to the specified ID.</p>
-<p><em>int count (optional)</em>  : Specifies the number of records to retrieve. Must be less than or equal to 200.&lt;&gt; </p>
-<p><em>int page (optional)</em>  : Specifies the page of results to retrieve.</p>
-<p><em>bool include_entities (optional)</em>  : The entities node will not be included when set to false.</p>
-<dl class="section return"><dt>Returns</dt><dd>Direct messages.</dd></dl>
+<p>Returns the 20 most recent direct messages sent to the authenticating user as an asynchronous operation.</p>
+<p>Includes detailed information about the sender and recipient user.</p>
+<p>You can request up to 200 direct messages per call, up to a maximum of 800 incoming DMs.</p>
+<p>This method requires an access token with RWD (read, write and direct message) permissions.</p>
+<p>Avaliable parameters:</p>
+<p><code>long</code> since_id (optional)</p>
+<p><code>long</code> max_id (optional)</p>
+<p><code>int</code> count (optional)</p>
+<p><code>int</code> page (optional)</p>
+<p><code>bool</code> include_entities (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">tokens</td><td><a class="el" href="classCoreTweet_1_1Tokens.html" title="The OAuth tokens. ">Tokens</a>. </td></tr>
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the direct messages.</p>
 
 </div>
 </div>
@@ -744,6 +929,27 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns the 20 most recent direct messages sent to the authenticating user as an asynchronous operation.</p>
+<p>Includes detailed information about the sender and recipient user.</p>
+<p>You can request up to 200 direct messages per call, up to a maximum of 800 incoming DMs.</p>
+<p>This method requires an access token with RWD (read, write and direct message) permissions.</p>
+<p>Avaliable parameters:</p>
+<p><code>long</code> since_id (optional)</p>
+<p><code>long</code> max_id (optional)</p>
+<p><code>int</code> count (optional)</p>
+<p><code>int</code> page (optional)</p>
+<p><code>bool</code> include_entities (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the direct messages.</p>
+
 </div>
 </div>
 <a class="anchor" id="a9856ca235d33ff7bfdf43c8c1f6bc624"></a>
@@ -778,6 +984,27 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns the 20 most recent direct messages sent to the authenticating user as an asynchronous operation.</p>
+<p>Includes detailed information about the sender and recipient user.</p>
+<p>You can request up to 200 direct messages per call, up to a maximum of 800 incoming DMs.</p>
+<p>This method requires an access token with RWD (read, write and direct message) permissions.</p>
+<p>Avaliable parameters:</p>
+<p><code>long</code> since_id (optional)</p>
+<p><code>long</code> max_id (optional)</p>
+<p><code>int</code> count (optional)</p>
+<p><code>int</code> page (optional)</p>
+<p><code>bool</code> include_entities (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the direct messages.</p>
+
 </div>
 </div>
 <a class="anchor" id="a0522e7a2159ae5ff58981ee73ab43654"></a>
@@ -803,22 +1030,23 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Returns the 20 most recent direct messages sent by the authenticating user. Includes detailed information about the sender and recipient user. You can request up to 200 direct messages per call, up to a maximum of 800 outgoing DMs.</p>
+<p>Returns the 20 most recent direct messages sent by the authenticating user.</p>
+<p>Includes detailed information about the sender and recipient user.</p>
+<p>You can request up to 200 direct messages per call, up to a maximum of 800 outgoing DMs.</p>
 <p>This method requires an access token with RWD (read, write and direct message) permissions.</p>
-<p>Avaliable parameters: </p>
-<p><em>long since_id (optional)</em>  : Returns results with an ID greater than (that is, more recent than) the specified ID. There are limits to the number of Tweets which can be accessed through the API. If the limit of Tweets has occured since the since_id, the since_id will be forced to the oldest ID available.</p>
-<p><em>long max_id (optional)</em>  : Returns results with an ID less than (that is, older than) or equal to the specified ID.</p>
-<p><em>int count (optional)</em>  : Specifies the number of records to retrieve. Must be less than or equal to 200.&lt;&gt; </p>
-<p><em>int page (optional)</em>  : Specifies the page of results to retrieve.</p>
-<p><em>bool include_entities (optional)</em>  : The entities node will not be included when set to false.</p>
-<dl class="section return"><dt>Returns</dt><dd>Direct messages.</dd></dl>
+<p>Avaliable parameters:</p>
+<p><code>long</code> since_id (optional)</p>
+<p><code>long</code> max_id (optional)</p>
+<p><code>int</code> count (optional)</p>
+<p><code>int</code> page (optional)</p>
+<p><code>bool</code> include_entities (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">tokens</td><td><a class="el" href="classCoreTweet_1_1Tokens.html" title="The OAuth tokens. ">Tokens</a>. </td></tr>
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The direct messages.</dd></dl>
 
 </div>
 </div>
@@ -844,6 +1072,25 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns the 20 most recent direct messages sent by the authenticating user.</p>
+<p>Includes detailed information about the sender and recipient user.</p>
+<p>You can request up to 200 direct messages per call, up to a maximum of 800 outgoing DMs.</p>
+<p>This method requires an access token with RWD (read, write and direct message) permissions.</p>
+<p>Avaliable parameters:</p>
+<p><code>long</code> since_id (optional)</p>
+<p><code>long</code> max_id (optional)</p>
+<p><code>int</code> count (optional)</p>
+<p><code>int</code> page (optional)</p>
+<p><code>bool</code> include_entities (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The direct messages.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="aeffe60b6ca12014a79c41a794e2b880e"></a>
@@ -867,6 +1114,25 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Returns the 20 most recent direct messages sent by the authenticating user.</p>
+<p>Includes detailed information about the sender and recipient user.</p>
+<p>You can request up to 200 direct messages per call, up to a maximum of 800 outgoing DMs.</p>
+<p>This method requires an access token with RWD (read, write and direct message) permissions.</p>
+<p>Avaliable parameters:</p>
+<p><code>long</code> since_id (optional)</p>
+<p><code>long</code> max_id (optional)</p>
+<p><code>int</code> count (optional)</p>
+<p><code>int</code> page (optional)</p>
+<p><code>bool</code> include_entities (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The direct messages.</dd></dl>
 
 </div>
 </div>
@@ -893,22 +1159,24 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Returns the 20 most recent direct messages sent by the authenticating user. Includes detailed information about the sender and recipient user. You can request up to 200 direct messages per call, up to a maximum of 800 outgoing DMs.</p>
+<p>Returns the 20 most recent direct messages sent by the authenticating user as an asynchronous operation.</p>
+<p>Includes detailed information about the sender and recipient user.</p>
+<p>You can request up to 200 direct messages per call, up to a maximum of 800 outgoing DMs.</p>
 <p>This method requires an access token with RWD (read, write and direct message) permissions.</p>
-<p>Avaliable parameters: </p>
-<p><em>long since_id (optional)</em>  : Returns results with an ID greater than (that is, more recent than) the specified ID. There are limits to the number of Tweets which can be accessed through the API. If the limit of Tweets has occured since the since_id, the since_id will be forced to the oldest ID available.</p>
-<p><em>long max_id (optional)</em>  : Returns results with an ID less than (that is, older than) or equal to the specified ID.</p>
-<p><em>int count (optional)</em>  : Specifies the number of records to retrieve. Must be less than or equal to 200.&lt;&gt; </p>
-<p><em>int page (optional)</em>  : Specifies the page of results to retrieve.</p>
-<p><em>bool include_entities (optional)</em>  : The entities node will not be included when set to false.</p>
-<dl class="section return"><dt>Returns</dt><dd>Direct messages.</dd></dl>
+<p>Avaliable parameters:</p>
+<p><code>long</code> since_id (optional)</p>
+<p><code>long</code> max_id (optional)</p>
+<p><code>int</code> count (optional)</p>
+<p><code>int</code> page (optional)</p>
+<p><code>bool</code> include_entities (optional)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">tokens</td><td><a class="el" href="classCoreTweet_1_1Tokens.html" title="The OAuth tokens. ">Tokens</a>. </td></tr>
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the direct messages.</p>
 
 </div>
 </div>
@@ -944,6 +1212,27 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns the 20 most recent direct messages sent by the authenticating user as an asynchronous operation.</p>
+<p>Includes detailed information about the sender and recipient user.</p>
+<p>You can request up to 200 direct messages per call, up to a maximum of 800 outgoing DMs.</p>
+<p>This method requires an access token with RWD (read, write and direct message) permissions.</p>
+<p>Avaliable parameters:</p>
+<p><code>long</code> since_id (optional)</p>
+<p><code>long</code> max_id (optional)</p>
+<p><code>int</code> count (optional)</p>
+<p><code>int</code> page (optional)</p>
+<p><code>bool</code> include_entities (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the direct messages.</p>
+
 </div>
 </div>
 <a class="anchor" id="a0ce4961bafdebc8aefb150009ea23f3f"></a>
@@ -978,6 +1267,27 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns the 20 most recent direct messages sent by the authenticating user as an asynchronous operation.</p>
+<p>Includes detailed information about the sender and recipient user.</p>
+<p>You can request up to 200 direct messages per call, up to a maximum of 800 outgoing DMs.</p>
+<p>This method requires an access token with RWD (read, write and direct message) permissions.</p>
+<p>Avaliable parameters:</p>
+<p><code>long</code> since_id (optional)</p>
+<p><code>long</code> max_id (optional)</p>
+<p><code>int</code> count (optional)</p>
+<p><code>int</code> page (optional)</p>
+<p><code>bool</code> include_entities (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the direct messages.</p>
+
 </div>
 </div>
 <a class="anchor" id="a58387c32c3dc9ee9af329b8331b2e632"></a>
@@ -1003,18 +1313,18 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Returns a single direct message, specified by an id parameter. Like the /1.1/direct_messages.format request, this method will include the user objects of the sender and recipient.</p>
+<p>Returns a single direct message, specified by an id parameter.</p>
+<p>Like the /1.1/direct_messages.format request, this method will include the user objects of the sender and recipient.</p>
 <p>This method requires an access token with RWD (read, write and direct message) permissions.</p>
-<p>Avaliable parameters: </p>
-<p><em>long id (required)</em>  : The ID of the direct message.</p>
-<dl class="section return"><dt>Returns</dt><dd>Direct messages.</dd></dl>
+<p>Avaliable parameters:</p>
+<p><code>long</code> id (required)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">tokens</td><td><a class="el" href="classCoreTweet_1_1Tokens.html" title="The OAuth tokens. ">Tokens</a>. </td></tr>
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The direct message.</dd></dl>
 
 </div>
 </div>
@@ -1040,6 +1350,20 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns a single direct message, specified by an id parameter.</p>
+<p>Like the /1.1/direct_messages.format request, this method will include the user objects of the sender and recipient.</p>
+<p>This method requires an access token with RWD (read, write and direct message) permissions.</p>
+<p>Avaliable parameters:</p>
+<p><code>long</code> id (required)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The direct message.</dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a70070ae944e55a90bbf7eb0c157c977a"></a>
@@ -1063,6 +1387,20 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
+<p>Returns a single direct message, specified by an id parameter.</p>
+<p>Like the /1.1/direct_messages.format request, this method will include the user objects of the sender and recipient.</p>
+<p>This method requires an access token with RWD (read, write and direct message) permissions.</p>
+<p>Avaliable parameters:</p>
+<p><code>long</code> id (required)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The direct message.</dd></dl>
 
 </div>
 </div>
@@ -1089,18 +1427,19 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Returns a single direct message, specified by an id parameter. Like the /1.1/direct_messages.format request, this method will include the user objects of the sender and recipient.</p>
+<p>Returns a single direct message, specified by an id parameter as an asynchronous operation.</p>
+<p>Like the /1.1/direct_messages.format request, this method will include the user objects of the sender and recipient.</p>
 <p>This method requires an access token with RWD (read, write and direct message) permissions.</p>
-<p>Avaliable parameters: </p>
-<p><em>long id (required)</em>  : The ID of the direct message.</p>
-<dl class="section return"><dt>Returns</dt><dd>Direct messages.</dd></dl>
+<p>Avaliable parameters:</p>
+<p><code>long</code> id (required)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">tokens</td><td><a class="el" href="classCoreTweet_1_1Tokens.html" title="The OAuth tokens. ">Tokens</a>. </td></tr>
-    <tr><td class="paramname">parameters</td><td>Parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the direct messages.</p>
 
 </div>
 </div>
@@ -1136,6 +1475,22 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns a single direct message, specified by an id parameter as an asynchronous operation.</p>
+<p>Like the /1.1/direct_messages.format request, this method will include the user objects of the sender and recipient.</p>
+<p>This method requires an access token with RWD (read, write and direct message) permissions.</p>
+<p>Avaliable parameters:</p>
+<p><code>long</code> id (required)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the direct messages.</p>
+
 </div>
 </div>
 <a class="anchor" id="a589f9e73e646eb62c185a8c1cdba8d0f"></a>
@@ -1170,6 +1525,22 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+<p>Returns a single direct message, specified by an id parameter as an asynchronous operation.</p>
+<p>Like the /1.1/direct_messages.format request, this method will include the user objects of the sender and recipient.</p>
+<p>This method requires an access token with RWD (read, write and direct message) permissions.</p>
+<p>Avaliable parameters:</p>
+<p><code>long</code> id (required)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns the direct messages.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
@@ -1179,7 +1550,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat May 31 2014 23:10:00 for CoreTweet by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 20 2014 00:31:19 for CoreTweet by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

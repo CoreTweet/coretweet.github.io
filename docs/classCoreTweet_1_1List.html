@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="core-48x48.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">CoreTweet
-   &#160;<span id="projectnumber">0.3.3</span>
+   &#160;<span id="projectnumber">0.3.4</span>
    </div>
    <div id="projectbrief">Yet another .NET Twitter Library</div>
   </td>
@@ -96,67 +96,70 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">CoreTweet.List Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Represents a collections of tweets, culled from a curated list of Twitter users.  
+ <a href="classCoreTweet_1_1List.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for CoreTweet.List:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="classCoreTweet_1_1List.png" usemap="#CoreTweet.List_map" alt=""/>
   <map id="CoreTweet.List_map" name="CoreTweet.List_map">
-<area href="classCoreTweet_1_1Core_1_1CoreBase.html" title="The base class of twitter objects. " alt="CoreTweet.Core.CoreBase" shape="rect" coords="0,0,165,24"/>
-<area href="classCoreTweet_1_1ListResponse.html" alt="CoreTweet.ListResponse" shape="rect" coords="0,112,165,136"/>
+<area href="classCoreTweet_1_1Core_1_1CoreBase.html" title="Represents a Twitter object. This is an abstract class. " alt="CoreTweet.Core.CoreBase" shape="rect" coords="0,0,165,24"/>
+<area href="classCoreTweet_1_1ListResponse.html" title="Represents a collections of tweets, culled from a curated list of Twitter users with the rate limit..." alt="CoreTweet.ListResponse" shape="rect" coords="0,112,165,136"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:a3e719af22bebc8abb97e7615b7a155f1"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1List.html#a3e719af22bebc8abb97e7615b7a155f1">Slug</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a3e719af22bebc8abb97e7615b7a155f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The string that become unique representation by combining an owner_id or owner_screen_name.  <a href="#a3e719af22bebc8abb97e7615b7a155f1">More...</a><br /></td></tr>
+<tr class="memdesc:a3e719af22bebc8abb97e7615b7a155f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the string that becomes unique representation by combining an owner_id or owner_screen_name.  <a href="#a3e719af22bebc8abb97e7615b7a155f1">More...</a><br /></td></tr>
 <tr class="separator:a3e719af22bebc8abb97e7615b7a155f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e8cfbc213f8e67fa7d4886ed6cbbab6"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1List.html#a4e8cfbc213f8e67fa7d4886ed6cbbab6">Name</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a4e8cfbc213f8e67fa7d4886ed6cbbab6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of thi <a class="el" href="classCoreTweet_1_1List.html">List</a>.  <a href="#a4e8cfbc213f8e67fa7d4886ed6cbbab6">More...</a><br /></td></tr>
+<tr class="memdesc:a4e8cfbc213f8e67fa7d4886ed6cbbab6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the name of the <a class="el" href="classCoreTweet_1_1List.html" title="Represents a collections of tweets, culled from a curated list of Twitter users. ">List</a>.  <a href="#a4e8cfbc213f8e67fa7d4886ed6cbbab6">More...</a><br /></td></tr>
 <tr class="separator:a4e8cfbc213f8e67fa7d4886ed6cbbab6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a306364dba7e72275c43304f9f8d94f49"><td class="memItemLeft" align="right" valign="top">DateTimeOffset&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1List.html#a306364dba7e72275c43304f9f8d94f49">CreatedAt</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a306364dba7e72275c43304f9f8d94f49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time when this <a class="el" href="classCoreTweet_1_1List.html">List</a> was created.  <a href="#a306364dba7e72275c43304f9f8d94f49">More...</a><br /></td></tr>
+<tr class="memdesc:a306364dba7e72275c43304f9f8d94f49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the when the <a class="el" href="classCoreTweet_1_1List.html" title="Represents a collections of tweets, culled from a curated list of Twitter users. ">List</a> was created.  <a href="#a306364dba7e72275c43304f9f8d94f49">More...</a><br /></td></tr>
 <tr class="separator:a306364dba7e72275c43304f9f8d94f49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae94ec8d768e22e3813ce8e62820adc8e"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1List.html#ae94ec8d768e22e3813ce8e62820adc8e">Uri</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:ae94ec8d768e22e3813ce8e62820adc8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uri of this <a class="el" href="classCoreTweet_1_1List.html">List</a>. Usage: string.Format("https://twitter.com{0}", uri)  <a href="#ae94ec8d768e22e3813ce8e62820adc8e">More...</a><br /></td></tr>
 <tr class="separator:ae94ec8d768e22e3813ce8e62820adc8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1fbcdddbb7c10128293dcab5af402bc4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1List.html#a1fbcdddbb7c10128293dcab5af402bc4">SubscriberCount</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a1fbcdddbb7c10128293dcab5af402bc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of users following this <a class="el" href="classCoreTweet_1_1List.html">List</a>.  <a href="#a1fbcdddbb7c10128293dcab5af402bc4">More...</a><br /></td></tr>
+<tr class="memdesc:a1fbcdddbb7c10128293dcab5af402bc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the number of users following the <a class="el" href="classCoreTweet_1_1List.html" title="Represents a collections of tweets, culled from a curated list of Twitter users. ">List</a>.  <a href="#a1fbcdddbb7c10128293dcab5af402bc4">More...</a><br /></td></tr>
 <tr class="separator:a1fbcdddbb7c10128293dcab5af402bc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af54e2cf0dac1ee1d88f7a2e9c7a8936f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1List.html#af54e2cf0dac1ee1d88f7a2e9c7a8936f">MemberCount</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:af54e2cf0dac1ee1d88f7a2e9c7a8936f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of members in this <a class="el" href="classCoreTweet_1_1List.html">List</a> .  <a href="#af54e2cf0dac1ee1d88f7a2e9c7a8936f">More...</a><br /></td></tr>
+<tr class="memdesc:af54e2cf0dac1ee1d88f7a2e9c7a8936f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the number of members in the <a class="el" href="classCoreTweet_1_1List.html" title="Represents a collections of tweets, culled from a curated list of Twitter users. ">List</a>.  <a href="#af54e2cf0dac1ee1d88f7a2e9c7a8936f">More...</a><br /></td></tr>
 <tr class="separator:af54e2cf0dac1ee1d88f7a2e9c7a8936f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c7b77d9b952eb512643ea23b2a9a551"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1List.html#a5c7b77d9b952eb512643ea23b2a9a551">Id</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a5c7b77d9b952eb512643ea23b2a9a551"><td class="mdescLeft">&#160;</td><td class="mdescRight">The integer representation of the unique identifier for this <a class="el" href="classCoreTweet_1_1List.html">List</a>.  <a href="#a5c7b77d9b952eb512643ea23b2a9a551">More...</a><br /></td></tr>
+<tr class="memdesc:a5c7b77d9b952eb512643ea23b2a9a551"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the integer representation of the unique identifier for the <a class="el" href="classCoreTweet_1_1List.html" title="Represents a collections of tweets, culled from a curated list of Twitter users. ">List</a>.  <a href="#a5c7b77d9b952eb512643ea23b2a9a551">More...</a><br /></td></tr>
 <tr class="separator:a5c7b77d9b952eb512643ea23b2a9a551"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73a33ee31656258d7a2c4f4389fb9ed5"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1List.html#a73a33ee31656258d7a2c4f4389fb9ed5">Mode</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a73a33ee31656258d7a2c4f4389fb9ed5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether this <a class="el" href="classCoreTweet_1_1List.html">List</a> has been published by the owner.  <a href="#a73a33ee31656258d7a2c4f4389fb9ed5">More...</a><br /></td></tr>
+<tr class="memdesc:a73a33ee31656258d7a2c4f4389fb9ed5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets a value that indicates whether the <a class="el" href="classCoreTweet_1_1List.html" title="Represents a collections of tweets, culled from a curated list of Twitter users. ">List</a> has been published by the owner.  <a href="#a73a33ee31656258d7a2c4f4389fb9ed5">More...</a><br /></td></tr>
 <tr class="separator:a73a33ee31656258d7a2c4f4389fb9ed5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc32826b46cebade5fe3484dfe238db8"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1List.html#abc32826b46cebade5fe3484dfe238db8">FullName</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:abc32826b46cebade5fe3484dfe238db8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The full name of this <a class="el" href="classCoreTweet_1_1List.html">List</a>.  <a href="#abc32826b46cebade5fe3484dfe238db8">More...</a><br /></td></tr>
+<tr class="memdesc:abc32826b46cebade5fe3484dfe238db8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the full name of the <a class="el" href="classCoreTweet_1_1List.html" title="Represents a collections of tweets, culled from a curated list of Twitter users. ">List</a>.  <a href="#abc32826b46cebade5fe3484dfe238db8">More...</a><br /></td></tr>
 <tr class="separator:abc32826b46cebade5fe3484dfe238db8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a197f6cdcdc0dd3f1890599652a0c680c"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1List.html#a197f6cdcdc0dd3f1890599652a0c680c">Description</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a197f6cdcdc0dd3f1890599652a0c680c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nullable. The user-defined UTF-8 string describing this <a class="el" href="classCoreTweet_1_1List.html">List</a>.  <a href="#a197f6cdcdc0dd3f1890599652a0c680c">More...</a><br /></td></tr>
+<tr class="memdesc:a197f6cdcdc0dd3f1890599652a0c680c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the user-defined string describes the <a class="el" href="classCoreTweet_1_1List.html" title="Represents a collections of tweets, culled from a curated list of Twitter users. ">List</a>. Nullable.  <a href="#a197f6cdcdc0dd3f1890599652a0c680c">More...</a><br /></td></tr>
 <tr class="separator:a197f6cdcdc0dd3f1890599652a0c680c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3bc7ddc1d6459d0302e3c0d42b7afbdf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCoreTweet_1_1User.html">User</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1List.html#a3bc7ddc1d6459d0302e3c0d42b7afbdf">User</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a3bc7ddc1d6459d0302e3c0d42b7afbdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">The user of this <a class="el" href="classCoreTweet_1_1List.html">List</a>'s owner.  <a href="#a3bc7ddc1d6459d0302e3c0d42b7afbdf">More...</a><br /></td></tr>
+<tr class="memdesc:a3bc7ddc1d6459d0302e3c0d42b7afbdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the user of the owner of the <a class="el" href="classCoreTweet_1_1List.html" title="Represents a collections of tweets, culled from a curated list of Twitter users. ">List</a>.  <a href="#a3bc7ddc1d6459d0302e3c0d42b7afbdf">More...</a><br /></td></tr>
 <tr class="separator:a3bc7ddc1d6459d0302e3c0d42b7afbdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4772ea27255d86f40e563eddbd1e1888"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1List.html#a4772ea27255d86f40e563eddbd1e1888">IsFollowing</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a4772ea27255d86f40e563eddbd1e1888"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether this <a class="el" href="classCoreTweet_1_1List.html">List</a> has been followed by the authenticating user.  <a href="#a4772ea27255d86f40e563eddbd1e1888">More...</a><br /></td></tr>
+<tr class="memdesc:a4772ea27255d86f40e563eddbd1e1888"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets a value that determines if the <a class="el" href="classCoreTweet_1_1List.html" title="Represents a collections of tweets, culled from a curated list of Twitter users. ">List</a> has been followed by the authenticating user.  <a href="#a4772ea27255d86f40e563eddbd1e1888">More...</a><br /></td></tr>
 <tr class="separator:a4772ea27255d86f40e563eddbd1e1888"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_static_methods_classCoreTweet_1_1Core_1_1CoreBase"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classCoreTweet_1_1Core_1_1CoreBase')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classCoreTweet_1_1Core_1_1CoreBase.html">CoreTweet.Core.CoreBase</a></td></tr>
 <tr class="memitem:a24d02c61dc738f6e35086c7b42952294 inherit pub_static_methods_classCoreTweet_1_1Core_1_1CoreBase"><td class="memItemLeft" align="right" valign="top">static T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Core_1_1CoreBase.html#a24d02c61dc738f6e35086c7b42952294">Convert&lt; T &gt;</a> (<a class="el" href="classCoreTweet_1_1Core_1_1TokensBase.html">TokensBase</a> tokens, string json, string jsonPath=&quot;&quot;)</td></tr>
-<tr class="memdesc:a24d02c61dc738f6e35086c7b42952294 inherit pub_static_methods_classCoreTweet_1_1Core_1_1CoreBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the json to a twitter object of the specified type.  <a href="#a24d02c61dc738f6e35086c7b42952294">More...</a><br /></td></tr>
+<tr class="memdesc:a24d02c61dc738f6e35086c7b42952294 inherit pub_static_methods_classCoreTweet_1_1Core_1_1CoreBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the JSON to a twitter object of the specified type.  <a href="#a24d02c61dc738f6e35086c7b42952294">More...</a><br /></td></tr>
 <tr class="separator:a24d02c61dc738f6e35086c7b42952294 inherit pub_static_methods_classCoreTweet_1_1Core_1_1CoreBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b972da176de8e43680f988c5d9cf84b inherit pub_static_methods_classCoreTweet_1_1Core_1_1CoreBase"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classCoreTweet_1_1List.html">List</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Core_1_1CoreBase.html#a5b972da176de8e43680f988c5d9cf84b">ConvertArray&lt; T &gt;</a> (<a class="el" href="classCoreTweet_1_1Core_1_1TokensBase.html">TokensBase</a> tokens, string json, string jsonPath)</td></tr>
-<tr class="memdesc:a5b972da176de8e43680f988c5d9cf84b inherit pub_static_methods_classCoreTweet_1_1Core_1_1CoreBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the json to a twitter object of the specified type. This is used for APIs that return an array.  <a href="#a5b972da176de8e43680f988c5d9cf84b">More...</a><br /></td></tr>
 <tr class="separator:a5b972da176de8e43680f988c5d9cf84b inherit pub_static_methods_classCoreTweet_1_1Core_1_1CoreBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Property Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Represents a collections of tweets, culled from a curated list of Twitter users. </p>
+</div><h2 class="groupheader">Property Documentation</h2>
 <a class="anchor" id="a306364dba7e72275c43304f9f8d94f49"></a>
 <div class="memitem">
 <div class="memproto">
@@ -175,7 +178,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Time when this <a class="el" href="classCoreTweet_1_1List.html">List</a> was created. </p>
+<p>Gets or sets the when the <a class="el" href="classCoreTweet_1_1List.html" title="Represents a collections of tweets, culled from a curated list of Twitter users. ">List</a> was created. </p>
 
 </div>
 </div>
@@ -197,7 +200,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Nullable. The user-defined UTF-8 string describing this <a class="el" href="classCoreTweet_1_1List.html">List</a>. </p>
+<p>Gets or sets the user-defined string describes the <a class="el" href="classCoreTweet_1_1List.html" title="Represents a collections of tweets, culled from a curated list of Twitter users. ">List</a>. Nullable. </p>
 
 </div>
 </div>
@@ -219,7 +222,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>The full name of this <a class="el" href="classCoreTweet_1_1List.html">List</a>. </p>
+<p>Gets or sets the full name of the <a class="el" href="classCoreTweet_1_1List.html" title="Represents a collections of tweets, culled from a curated list of Twitter users. ">List</a>. </p>
 
 </div>
 </div>
@@ -241,7 +244,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>The integer representation of the unique identifier for this <a class="el" href="classCoreTweet_1_1List.html">List</a>. </p>
+<p>Gets or sets the integer representation of the unique identifier for the <a class="el" href="classCoreTweet_1_1List.html" title="Represents a collections of tweets, culled from a curated list of Twitter users. ">List</a>. </p>
 
 </div>
 </div>
@@ -263,7 +266,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Indicates whether this <a class="el" href="classCoreTweet_1_1List.html">List</a> has been followed by the authenticating user. </p>
+<p>Gets or sets a value that determines if the <a class="el" href="classCoreTweet_1_1List.html" title="Represents a collections of tweets, culled from a curated list of Twitter users. ">List</a> has been followed by the authenticating user. </p>
 
 </div>
 </div>
@@ -285,7 +288,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Number of members in this <a class="el" href="classCoreTweet_1_1List.html">List</a> . </p>
+<p>Gets or sets the number of members in the <a class="el" href="classCoreTweet_1_1List.html" title="Represents a collections of tweets, culled from a curated list of Twitter users. ">List</a>. </p>
 
 </div>
 </div>
@@ -307,7 +310,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Indicates whether this <a class="el" href="classCoreTweet_1_1List.html">List</a> has been published by the owner. </p>
+<p>Gets or sets a value that indicates whether the <a class="el" href="classCoreTweet_1_1List.html" title="Represents a collections of tweets, culled from a curated list of Twitter users. ">List</a> has been published by the owner. </p>
 
 </div>
 </div>
@@ -329,7 +332,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>The name of thi <a class="el" href="classCoreTweet_1_1List.html">List</a>. </p>
+<p>Gets or sets the name of the <a class="el" href="classCoreTweet_1_1List.html" title="Represents a collections of tweets, culled from a curated list of Twitter users. ">List</a>. </p>
 
 </div>
 </div>
@@ -351,7 +354,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>The string that become unique representation by combining an owner_id or owner_screen_name. </p>
+<p>Gets or sets the string that becomes unique representation by combining an owner_id or owner_screen_name. </p>
 
 </div>
 </div>
@@ -373,7 +376,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Number of users following this <a class="el" href="classCoreTweet_1_1List.html">List</a>. </p>
+<p>Gets or sets the number of users following the <a class="el" href="classCoreTweet_1_1List.html" title="Represents a collections of tweets, culled from a curated list of Twitter users. ">List</a>. </p>
 
 </div>
 </div>
@@ -395,7 +398,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Uri of this <a class="el" href="classCoreTweet_1_1List.html">List</a>. Usage: string.Format("https://twitter.com{0}", uri) </p>
+<p></p>
+<p>Gets or sets the URL of the <a class="el" href="classCoreTweet_1_1List.html" title="Represents a collections of tweets, culled from a curated list of Twitter users. ">List</a>.</p>
+<p>Usage: string.Format("https://twitter.com{0}", uri);</p>
 
 </div>
 </div>
@@ -417,7 +422,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>The user of this <a class="el" href="classCoreTweet_1_1List.html">List</a>'s owner. </p>
+<p>Gets or sets the user of the owner of the <a class="el" href="classCoreTweet_1_1List.html" title="Represents a collections of tweets, culled from a curated list of Twitter users. ">List</a>. </p>
 
 </div>
 </div>
@@ -427,7 +432,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat May 31 2014 23:10:00 for CoreTweet by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 20 2014 00:31:19 for CoreTweet by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>
