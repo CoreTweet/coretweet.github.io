@@ -5,23 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
 
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <title>Coretweet by CoreTweet</title>
+    <title>CoreTweet by CoreTweet</title>
   </head>
 
   <body>
     <header>
       <div class="inner">
-        <h1>Coretweet</h1>
+        <h1>CoreTweet</h1>
         <h2>Yet Another .NET Twitter Library</h2>
-        <a href="https://github.com/CoreTweet/CoreTweet" class="button"><small>View project on</small>GitHub</a>
+        <a href="https://github.com/CoreTweet" class="button"><small>Follow me on</small>GitHub</a>
       </div>
     </header>
 
@@ -29,9 +29,9 @@
       <div class="inner clearfix">
         <section id="main-content">
           <h1>
-<a name="coretweet" class="anchor" href="#coretweet"><span class="octicon octicon-link"></span></a>CoreTweet</h1>
+<a name="coretweet-" class="anchor" href="#coretweet-"><span class="octicon octicon-link"></span></a>CoreTweet </h1>
 
-<p>Yet another .NET Twitter Library...</p>
+<p>Yet Another .NET Twitter Library...</p>
 
 <p>Simplest authorizing:</p>
 
@@ -42,6 +42,17 @@
 <p>Tweeting is very easy:</p>
 
 <div class="highlight highlight-csharp"><pre><span class="n">tokens</span><span class="p">.</span><span class="n">Statuses</span><span class="p">.</span><span class="n">Update</span><span class="p">(</span><span class="n">status</span> <span class="p">=&gt;</span> <span class="s">"hello"</span><span class="p">);</span>
+</pre></div>
+
+<p>We provides the most modern way to use Twitter's API asynchronously:</p>
+
+<div class="highlight highlight-csharp"><pre><span class="kt">var</span> <span class="n">tokenSource</span> <span class="p">=</span> <span class="k">new</span> <span class="n">CancellationTokenSource</span><span class="p">();</span>
+<span class="n">tokens</span><span class="p">.</span><span class="n">Statuses</span><span class="p">.</span><span class="n">UpdateWithMediaAsync</span><span class="p">(</span>
+    <span class="k">new</span> <span class="p">{</span> <span class="n">status</span> <span class="p">=</span> <span class="s">"Yummy!"</span><span class="p">,</span> <span class="n">media</span> <span class="p">=</span> <span class="k">new</span> <span class="n">FileInfo</span><span class="p">(</span><span class="s">@"C:\test.jpg"</span><span class="p">)</span> <span class="p">},</span>
+    <span class="n">tokenSource</span><span class="p">.</span><span class="n">Token</span>
+<span class="p">);</span>
+<span class="c1">// oh! that was a photo of my dog!!</span>
+<span class="n">tokenSource</span><span class="p">.</span><span class="n">Cancel</span><span class="p">();</span>
 </pre></div>
 
 <p>Go with the Streaming API and LINQ:</p>
@@ -74,15 +85,13 @@
 <p>We support both of Windows .NET and Mono, and CoreTweet works on following platforms:</p>
 
 <ul>
-<li>net35 (without Rx support)</li>
-<li>net40</li>
-<li>net45</li>
-<li>portable-net4</li>
-<li>sl5</li>
-<li>wp8</li>
-<li>win8</li>
-<li>MonoAndroid</li>
-<li>MonoTouch</li>
+<li>.NET Framework 3.5 (without Rx support)</li>
+<li>.NET Framework 4.0</li>
+<li>.NET Framework 4.5</li>
+<li>Windows 8</li>
+<li>Windows Phone 8 Silverlight</li>
+<li>Windows Phone 8.1</li>
+<li>Xamarin Android / iOS</li>
 </ul><h2>
 <a name="files" class="anchor" href="#files"><span class="octicon octicon-link"></span></a>Files</h2>
 
@@ -107,7 +116,7 @@
 <h2>
 <a name="build" class="anchor" href="#build"><span class="octicon octicon-link"></span></a>Build</h2>
 
-<p>You can't build PCL binaries (portable-net4, sl5, etc) on Mono (on Linux) because they requires non-free libraries.</p>
+<p>You can't build PCL/WindowsRT binaries on Mono (on Linux) because they requires non-free libraries.</p>
 
 <h3>
 <a name="on-windows" class="anchor" href="#on-windows"><span class="octicon octicon-link"></span></a>On Windows</h3>
@@ -164,16 +173,7 @@
         </section>
 
         <aside id="sidebar">
-          <a href="https://github.com/CoreTweet/CoreTweet/zipball/master" class="button">
-            <small>Download</small>
-            .zip file
-          </a>
-          <a href="https://github.com/CoreTweet/CoreTweet/tarball/master" class="button">
-            <small>Download</small>
-            .tar.gz file
-          </a>
 
-          <p class="repo-owner"><a href="https://github.com/CoreTweet/CoreTweet"></a> is maintained by <a href="https://github.com/CoreTweet">CoreTweet</a>.</p>
 
           <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
         </aside>
