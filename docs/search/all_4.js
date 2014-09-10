@@ -2,6 +2,7 @@ var searchData=
 [
   ['embed',['Embed',['../classCoreTweet_1_1Embed.html',1,'CoreTweet']]],
   ['embed_2ecs',['Embed.cs',['../Embed_8cs.html',1,'']]],
+  ['endpointhasretired',['EndpointHasRetired',['../namespaceCoreTweet.html#a949c15457cb3462cff8d20b4c14b0ae5aba415e51df6967e243f6a091cf009f39',1,'CoreTweet']]],
   ['endtime',['EndTime',['../classCoreTweet_1_1SleepTime.html#a9e3f570c37634f1ae171b31ec5c33748',1,'CoreTweet::SleepTime']]],
   ['entities',['Entities',['../classCoreTweet_1_1Entities.html',1,'CoreTweet']]],
   ['entities',['Entities',['../classCoreTweet_1_1Status.html#accbd914e96ae0b0bc336eb5a87fcde75',1,'CoreTweet.Status.Entities()'],['../classCoreTweet_1_1DirectMessage.html#a5e44d69f44fb4476889e41f82800ddf4',1,'CoreTweet.DirectMessage.Entities()'],['../classCoreTweet_1_1User.html#aa7bee36dba3b11a4019057e332a5bde2',1,'CoreTweet.User.Entities()']]],
@@ -28,6 +29,8 @@ var searchData=
   ['envelopesmessage',['EnvelopesMessage',['../classCoreTweet_1_1Streaming_1_1EnvelopesMessage.html',1,'CoreTweet::Streaming']]],
   ['error',['Error',['../classCoreTweet_1_1Error.html',1,'CoreTweet']]],
   ['error_2ecs',['Error.cs',['../Error_8cs.html',1,'']]],
+  ['errorcode',['ErrorCode',['../namespaceCoreTweet.html#a949c15457cb3462cff8d20b4c14b0ae5',1,'CoreTweet']]],
+  ['errorcreatingstatus',['ErrorCreatingStatus',['../namespaceCoreTweet.html#a949c15457cb3462cff8d20b4c14b0ae5a9304c0c5c276015c1f259118afcb2424',1,'CoreTweet']]],
   ['errors',['Errors',['../classCoreTweet_1_1TwitterException.html#a4b785664f8ccff727d0bd38fd92dc47a',1,'CoreTweet::TwitterException']]],
   ['event',['Event',['../classCoreTweet_1_1Streaming_1_1EventMessage.html#a8adf7e86686802d009aedd0690f86172',1,'CoreTweet.Streaming.EventMessage.Event()'],['../namespaceCoreTweet_1_1Streaming.html#ae0f1a921dcf3d18048a7d11193abe829aa4ecfc70574394990cf17bd83df499f7',1,'CoreTweet.Streaming.Event()']]],
   ['eventcode',['EventCode',['../namespaceCoreTweet_1_1Streaming.html#a41edacb4832607d7589e10e59d07fb06',1,'CoreTweet::Streaming']]],

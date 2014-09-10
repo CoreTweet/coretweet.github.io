@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['warning',['Warning',['../namespaceCoreTweet_1_1Streaming.html#ae0f1a921dcf3d18048a7d11193abe829a0eaadb4fcb48a0a0ed7bc9868be9fbaa',1,'CoreTweet::Streaming']]]
+  ['thisaccounthasbeensuspended',['ThisAccountHasBeenSuspended',['../namespaceCoreTweet.html#a949c15457cb3462cff8d20b4c14b0ae5a1ab06a9ca7148dfcaa689546941e3f27',1,'CoreTweet']]],
+  ['tokenrevoked',['TokenRevoked',['../namespaceCoreTweet_1_1Streaming.html#a8a261ff0c83f88d7ee1d03e64a9d5258a79b513f8560c48bec64b054c2b5180df',1,'CoreTweet::Streaming']]]
 ];

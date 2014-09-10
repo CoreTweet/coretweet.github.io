@@ -1,6 +1,17 @@
 var searchData=
 [
-  ['name',['Name',['../classCoreTweet_1_1TwitterParameterAttribute.html#ac4da1c70f0a48faee83f72e003f5aa79',1,'CoreTweet.TwitterParameterAttribute.Name()'],['../classCoreTweet_1_1UserMentionEntity.html#aefad9f95bbbac2fef41df5584fab7e25',1,'CoreTweet.UserMentionEntity.Name()'],['../classCoreTweet_1_1Language.html#a38ee6dfcfcce3bfef7e1530e85edb68b',1,'CoreTweet.Language.Name()'],['../classCoreTweet_1_1List.html#a4e8cfbc213f8e67fa7d4886ed6cbbab6',1,'CoreTweet.List.Name()'],['../classCoreTweet_1_1Place.html#a2b81f09dfba21ae5b4d2325934b0bd8e',1,'CoreTweet.Place.Name()'],['../classCoreTweet_1_1Location.html#a819501ee75cebb6dfc67629be34f6555',1,'CoreTweet.Location.Name()'],['../classCoreTweet_1_1Trend.html#a3f869e6f3ce1fa4826157673665abf1b',1,'CoreTweet.Trend.Name()'],['../classCoreTweet_1_1SearchQuery.html#ae321ce66e2e9db332d4d0e455d7d8226',1,'CoreTweet.SearchQuery.Name()'],['../classCoreTweet_1_1TimeZone.html#a901fb629fed49bf8caa44f6d91db8d43',1,'CoreTweet.TimeZone.Name()'],['../classCoreTweet_1_1User.html#adac8217231728edab11d95e47bad6070',1,'CoreTweet.User.Name()'],['../classCoreTweet_1_1Category.html#a567b64f5bc38fb04c3ac282ac07436c9',1,'CoreTweet.Category.Name()']]],
-  ['nextcursor',['NextCursor',['../classCoreTweet_1_1Cursored_3_01T_01_4.html#a2877ee39ef642fe875aa6b403db43658',1,'CoreTweet::Cursored&lt; T &gt;']]],
-  ['nonusernamepaths',['NonUsernamePaths',['../classCoreTweet_1_1Configurations.html#aeffe7eb34bcea625a2cdd8dd00ef1ada',1,'CoreTweet::Configurations']]]
+  ['maxid',['MaxId',['../classCoreTweet_1_1SearchMetadata.html#ae2e7d30992cbd5c0e4799d76a6d30729',1,'CoreTweet::SearchMetadata']]],
+  ['maxmediaperupload',['MaxMediaPerUpload',['../classCoreTweet_1_1Configurations.html#a51f523f0ec28f2f5cebcc6ce08559b89',1,'CoreTweet::Configurations']]],
+  ['media',['Media',['../classCoreTweet_1_1Core_1_1TokensBase.html#afd14cf37320d111d4b7f3996a2389356',1,'CoreTweet.Core.TokensBase.Media()'],['../classCoreTweet_1_1Entities.html#a97ef03bfaac0371ed999cb257efc7593',1,'CoreTweet.Entities.Media()']]],
+  ['mediaid',['MediaId',['../classCoreTweet_1_1MediaUploadResult.html#ae60f08a403e880f9743bb9d352e74739',1,'CoreTweet::MediaUploadResult']]],
+  ['mediaurl',['MediaUrl',['../classCoreTweet_1_1MediaEntity.html#a5dceedc7a73565449aa78f8124a289fa',1,'CoreTweet::MediaEntity']]],
+  ['mediaurlhttps',['MediaUrlHttps',['../classCoreTweet_1_1MediaEntity.html#ad5e976b301f8157afc7d26418de048e6',1,'CoreTweet::MediaEntity']]],
+  ['medium',['Medium',['../classCoreTweet_1_1MediaSizes.html#a49eb12408addef9a91c2b555728cd446',1,'CoreTweet::MediaSizes']]],
+  ['membercount',['MemberCount',['../classCoreTweet_1_1List.html#af54e2cf0dac1ee1d88f7a2e9c7a8936f',1,'CoreTweet::List']]],
+  ['members',['Members',['../classCoreTweet_1_1Rest_1_1Lists.html#ad516e6594d2f59a55aa17b5da6a94f6b',1,'CoreTweet::Rest::Lists']]],
+  ['message',['Message',['../classCoreTweet_1_1Error.html#ad7c94c9e61b002f8563781a7f4e95f58',1,'CoreTweet.Error.Message()'],['../classCoreTweet_1_1Streaming_1_1WarningMessage.html#a405ae47dfa001f357547566a21a7a643',1,'CoreTweet.Streaming.WarningMessage.Message()'],['../classCoreTweet_1_1Streaming_1_1EnvelopesMessage.html#a1369457218f34289af6e940247f80394',1,'CoreTweet.Streaming.EnvelopesMessage.Message()']]],
+  ['mobile',['Mobile',['../classCoreTweet_1_1ProfileBannerSizes.html#ae64a74190ff44edf7209d31cbb0845c4',1,'CoreTweet::ProfileBannerSizes']]],
+  ['mobileretina',['MobileRetina',['../classCoreTweet_1_1ProfileBannerSizes.html#a1fd558442678b6af417ed96f5628c93b',1,'CoreTweet::ProfileBannerSizes']]],
+  ['mode',['Mode',['../classCoreTweet_1_1List.html#a73a33ee31656258d7a2c4f4389fb9ed5',1,'CoreTweet::List']]],
+  ['mutes',['Mutes',['../classCoreTweet_1_1Core_1_1TokensBase.html#a79c914a9aa691618280a8ede80ff122f',1,'CoreTweet::Core::TokensBase']]]
 ];

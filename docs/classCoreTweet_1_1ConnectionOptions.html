@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="core-48x48.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">CoreTweet
-   &#160;<span id="projectnumber">0.3.4</span>
+   &#160;<span id="projectnumber">0.4.0</span>
    </div>
    <div id="projectbrief">Yet another .NET Twitter Library</div>
   </td>
@@ -132,6 +132,15 @@ Properties</h2></td></tr>
 <tr class="memitem:a49035f68b5d4509c920160d56c31fabd"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1ConnectionOptions.html#a49035f68b5d4509c920160d56c31fabd">UserAgent</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a49035f68b5d4509c920160d56c31fabd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the value of the User-agent HTTP header.  <a href="#a49035f68b5d4509c920160d56c31fabd">More...</a><br /></td></tr>
 <tr class="separator:a49035f68b5d4509c920160d56c31fabd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a215d5541cc1cc4feb6fdbe765cd01993"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1ConnectionOptions.html#a215d5541cc1cc4feb6fdbe765cd01993">UseCompression</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a215d5541cc1cc4feb6fdbe765cd01993"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets whether the compression is used on non-streaming requests.  <a href="#a215d5541cc1cc4feb6fdbe765cd01993">More...</a><br /></td></tr>
+<tr class="separator:a215d5541cc1cc4feb6fdbe765cd01993"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5a8d18051759f89915bbf9e88e4b706"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1ConnectionOptions.html#ad5a8d18051759f89915bbf9e88e4b706">UseCompressionOnStreaming</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:ad5a8d18051759f89915bbf9e88e4b706"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets whether the compression is used on streaming requests.  <a href="#ad5a8d18051759f89915bbf9e88e4b706">More...</a><br /></td></tr>
+<tr class="separator:ad5a8d18051759f89915bbf9e88e4b706"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af38042c40ec6ae9c62156a56dca0024c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1ConnectionOptions.html#af38042c40ec6ae9c62156a56dca0024c">DisableKeepAlive</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:af38042c40ec6ae9c62156a56dca0024c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets whether Keep-Alive requests are disabled.  <a href="#af38042c40ec6ae9c62156a56dca0024c">More...</a><br /></td></tr>
+<tr class="separator:af38042c40ec6ae9c62156a56dca0024c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ea7241b628fffe2c0f8813d46dfffd3"><td class="memItemLeft" align="right" valign="top">Action&lt; HttpWebRequest &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1ConnectionOptions.html#a3ea7241b628fffe2c0f8813d46dfffd3">BeforeRequestAction</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a3ea7241b628fffe2c0f8813d46dfffd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the action which is called before sending request.  <a href="#a3ea7241b628fffe2c0f8813d46dfffd3">More...</a><br /></td></tr>
 <tr class="separator:a3ea7241b628fffe2c0f8813d46dfffd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -214,6 +223,28 @@ Properties</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="af38042c40ec6ae9c62156a56dca0024c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CoreTweet.ConnectionOptions.DisableKeepAlive</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets or sets whether Keep-Alive requests are disabled. </p>
+
+</div>
+</div>
 <a class="anchor" id="ac6d2c92915d5cc835ef559ed9c090745"></a>
 <div class="memitem">
 <div class="memproto">
@@ -280,6 +311,50 @@ Properties</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a215d5541cc1cc4feb6fdbe765cd01993"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CoreTweet.ConnectionOptions.UseCompression</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets or sets whether the compression is used on non-streaming requests. </p>
+
+</div>
+</div>
+<a class="anchor" id="ad5a8d18051759f89915bbf9e88e4b706"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CoreTweet.ConnectionOptions.UseCompressionOnStreaming</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets or sets whether the compression is used on streaming requests. </p>
+
+</div>
+</div>
 <a class="anchor" id="a49035f68b5d4509c920160d56c31fabd"></a>
 <div class="memitem">
 <div class="memproto">
@@ -308,7 +383,7 @@ Properties</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jun 20 2014 00:31:19 for CoreTweet by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Sep 7 2014 03:28:51 for CoreTweet by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="core-48x48.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">CoreTweet
-   &#160;<span id="projectnumber">0.3.4</span>
+   &#160;<span id="projectnumber">0.4.0</span>
    </div>
    <div id="projectbrief">Yet another .NET Twitter Library</div>
   </td>
@@ -90,6 +90,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#properties">Properties</a> &#124;
 <a href="classCoreTweet_1_1Streaming_1_1StreamingMessage-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -112,32 +114,125 @@ Inheritance diagram for CoreTweet.Streaming.StreamingMessage:</div>
 <area href="classCoreTweet_1_1Streaming_1_1EnvelopesMessage.html" title="Provides an envelopes message. " alt="CoreTweet.Streaming.EnvelopesMessage" shape="rect" coords="283,280,556,304"/>
 <area href="classCoreTweet_1_1Streaming_1_1EventMessage.html" title="Represents an event message. " alt="CoreTweet.Streaming.EventMessage" shape="rect" coords="283,336,556,360"/>
 <area href="classCoreTweet_1_1Streaming_1_1FriendsMessage.html" title="Represents a message contains ids of friends. " alt="CoreTweet.Streaming.FriendsMessage" shape="rect" coords="283,392,556,416"/>
-<area href="classCoreTweet_1_1Streaming_1_1IdMessage.html" title="Represents a message contains ids. " alt="CoreTweet.Streaming.IdMessage" shape="rect" coords="283,448,556,472"/>
-<area href="classCoreTweet_1_1Streaming_1_1LimitMessage.html" title="Represents the message with the rate limit. " alt="CoreTweet.Streaming.LimitMessage" shape="rect" coords="283,504,556,528"/>
-<area href="classCoreTweet_1_1Streaming_1_1RawJsonMessage.html" title="Represents a raw JSON message. " alt="CoreTweet.Streaming.RawJsonMessage" shape="rect" coords="283,560,556,584"/>
-<area href="classCoreTweet_1_1Streaming_1_1StatusMessage.html" title="Represents a status message. " alt="CoreTweet.Streaming.StatusMessage" shape="rect" coords="283,616,556,640"/>
-<area href="classCoreTweet_1_1Streaming_1_1WarningMessage.html" title="Represents a warning message. " alt="CoreTweet.Streaming.WarningMessage" shape="rect" coords="283,672,556,696"/>
+<area href="classCoreTweet_1_1Streaming_1_1RawJsonMessage.html" title="Represents a raw JSON message. " alt="CoreTweet.Streaming.RawJsonMessage" shape="rect" coords="283,448,556,472"/>
+<area href="classCoreTweet_1_1Streaming_1_1TimestampMessage.html" title="Represents a streaming message containing a timestamp. " alt="CoreTweet.Streaming.TimestampMessage" shape="rect" coords="283,504,556,528"/>
 </map>
  </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:acfd2c337a3ff1ecc5815ed24062581ce"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingMessage.html">StreamingMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingMessage.html#acfd2c337a3ff1ecc5815ed24062581ce">Parse</a> (string x)</td></tr>
+<tr class="memdesc:acfd2c337a3ff1ecc5815ed24062581ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the JSON to a <a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingMessage.html" title="Represents a streaming message. This class is an abstract class. ">StreamingMessage</a> object.  <a href="#acfd2c337a3ff1ecc5815ed24062581ce">More...</a><br /></td></tr>
+<tr class="separator:acfd2c337a3ff1ecc5815ed24062581ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_classCoreTweet_1_1Core_1_1CoreBase"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classCoreTweet_1_1Core_1_1CoreBase')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classCoreTweet_1_1Core_1_1CoreBase.html">CoreTweet.Core.CoreBase</a></td></tr>
+<tr class="memitem:adbb30fd01b3a565aafb0c9b24401e240 inherit pub_static_methods_classCoreTweet_1_1Core_1_1CoreBase"><td class="memItemLeft" align="right" valign="top">static T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Core_1_1CoreBase.html#adbb30fd01b3a565aafb0c9b24401e240">Convert&lt; T &gt;</a> (string json, string jsonPath=&quot;&quot;)</td></tr>
+<tr class="memdesc:adbb30fd01b3a565aafb0c9b24401e240 inherit pub_static_methods_classCoreTweet_1_1Core_1_1CoreBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the JSON to a twitter object of the specified type.  <a href="#adbb30fd01b3a565aafb0c9b24401e240">More...</a><br /></td></tr>
+<tr class="separator:adbb30fd01b3a565aafb0c9b24401e240 inherit pub_static_methods_classCoreTweet_1_1Core_1_1CoreBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d7f5f32683733211010f1024e4acedb inherit pub_static_methods_classCoreTweet_1_1Core_1_1CoreBase"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classCoreTweet_1_1List.html">List</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Core_1_1CoreBase.html#a4d7f5f32683733211010f1024e4acedb">ConvertArray&lt; T &gt;</a> (string json, string jsonPath)</td></tr>
+<tr class="separator:a4d7f5f32683733211010f1024e4acedb inherit pub_static_methods_classCoreTweet_1_1Core_1_1CoreBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a5ac5a71d8c93d113d7c4563db70f67d2"><td class="memItemLeft" align="right" valign="top">abstract <a class="el" href="namespaceCoreTweet_1_1Streaming.html#ae0f1a921dcf3d18048a7d11193abe829">MessageType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingMessage.html#a5ac5a71d8c93d113d7c4563db70f67d2">GetMessageType</a> ()</td></tr>
+<tr class="memdesc:a5ac5a71d8c93d113d7c4563db70f67d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the type of the message.  <a href="#a5ac5a71d8c93d113d7c4563db70f67d2">More...</a><br /></td></tr>
+<tr class="separator:a5ac5a71d8c93d113d7c4563db70f67d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:a82c3ecddefc44b460bd3cd6d17312416"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceCoreTweet_1_1Streaming.html#ae0f1a921dcf3d18048a7d11193abe829">MessageType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingMessage.html#a82c3ecddefc44b460bd3cd6d17312416">Type</a><code> [get]</code></td></tr>
 <tr class="memdesc:a82c3ecddefc44b460bd3cd6d17312416"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the type of the message.  <a href="#a82c3ecddefc44b460bd3cd6d17312416">More...</a><br /></td></tr>
 <tr class="separator:a82c3ecddefc44b460bd3cd6d17312416"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_static_methods_classCoreTweet_1_1Core_1_1CoreBase"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classCoreTweet_1_1Core_1_1CoreBase')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classCoreTweet_1_1Core_1_1CoreBase.html">CoreTweet.Core.CoreBase</a></td></tr>
-<tr class="memitem:a24d02c61dc738f6e35086c7b42952294 inherit pub_static_methods_classCoreTweet_1_1Core_1_1CoreBase"><td class="memItemLeft" align="right" valign="top">static T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Core_1_1CoreBase.html#a24d02c61dc738f6e35086c7b42952294">Convert&lt; T &gt;</a> (<a class="el" href="classCoreTweet_1_1Core_1_1TokensBase.html">TokensBase</a> tokens, string json, string jsonPath=&quot;&quot;)</td></tr>
-<tr class="memdesc:a24d02c61dc738f6e35086c7b42952294 inherit pub_static_methods_classCoreTweet_1_1Core_1_1CoreBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the JSON to a twitter object of the specified type.  <a href="#a24d02c61dc738f6e35086c7b42952294">More...</a><br /></td></tr>
-<tr class="separator:a24d02c61dc738f6e35086c7b42952294 inherit pub_static_methods_classCoreTweet_1_1Core_1_1CoreBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b972da176de8e43680f988c5d9cf84b inherit pub_static_methods_classCoreTweet_1_1Core_1_1CoreBase"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classCoreTweet_1_1List.html">List</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Core_1_1CoreBase.html#a5b972da176de8e43680f988c5d9cf84b">ConvertArray&lt; T &gt;</a> (<a class="el" href="classCoreTweet_1_1Core_1_1TokensBase.html">TokensBase</a> tokens, string json, string jsonPath)</td></tr>
-<tr class="separator:a5b972da176de8e43680f988c5d9cf84b inherit pub_static_methods_classCoreTweet_1_1Core_1_1CoreBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a967fd77b0e7db025d237684e71554ab7"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingMessage.html#a967fd77b0e7db025d237684e71554ab7">Json</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a967fd77b0e7db025d237684e71554ab7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the raw JSON.  <a href="#a967fd77b0e7db025d237684e71554ab7">More...</a><br /></td></tr>
+<tr class="separator:a967fd77b0e7db025d237684e71554ab7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents a streaming message. This class is an abstract class. </p>
-</div><h2 class="groupheader">Property Documentation</h2>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a5ac5a71d8c93d113d7c4563db70f67d2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">abstract <a class="el" href="namespaceCoreTweet_1_1Streaming.html#ae0f1a921dcf3d18048a7d11193abe829">MessageType</a> CoreTweet.Streaming.StreamingMessage.GetMessageType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the type of the message. </p>
+<dl class="section return"><dt>Returns</dt><dd>The type of the message.</dd></dl>
+
+<p>Implemented in <a class="el" href="classCoreTweet_1_1Streaming_1_1RawJsonMessage.html#a558914f09602da85106ff4380c97b830">CoreTweet.Streaming.RawJsonMessage</a>, <a class="el" href="classCoreTweet_1_1Streaming_1_1ControlMessage.html#acb76df42b2e56af9efb8d6bb12856c10">CoreTweet.Streaming.ControlMessage</a>, <a class="el" href="classCoreTweet_1_1Streaming_1_1EnvelopesMessage.html#ae3ee9d327bd8f9d64030799eb9f8511f">CoreTweet.Streaming.EnvelopesMessage</a>, <a class="el" href="classCoreTweet_1_1Streaming_1_1EventMessage.html#aeeabcc51da2072ddd2078dcda021dcc5">CoreTweet.Streaming.EventMessage</a>, <a class="el" href="classCoreTweet_1_1Streaming_1_1WarningMessage.html#acd69b5086f1a027b3385082929cf381a">CoreTweet.Streaming.WarningMessage</a>, <a class="el" href="classCoreTweet_1_1Streaming_1_1DisconnectMessage.html#a6916fd44b6fc9fb7986db15b0b6060c9">CoreTweet.Streaming.DisconnectMessage</a>, <a class="el" href="classCoreTweet_1_1Streaming_1_1UserMessage.html#ab271b26bce05bb116ed413d647e6bd61">CoreTweet.Streaming.UserMessage</a>, <a class="el" href="classCoreTweet_1_1Streaming_1_1StatusWithheldMessage.html#a4895abf7d6d95e79c0521a1a23d8656e">CoreTweet.Streaming.StatusWithheldMessage</a>, <a class="el" href="classCoreTweet_1_1Streaming_1_1UserWithheldMessage.html#ad151886eb8e96c9a8fca7b0662448bcb">CoreTweet.Streaming.UserWithheldMessage</a>, <a class="el" href="classCoreTweet_1_1Streaming_1_1ScrubGeoMessage.html#ae07a844c422b75ff0fbd255fb81ba740">CoreTweet.Streaming.ScrubGeoMessage</a>, <a class="el" href="classCoreTweet_1_1Streaming_1_1DeleteMessage.html#a9779fb40244f4a5cd23be319e7e2444d">CoreTweet.Streaming.DeleteMessage</a>, <a class="el" href="classCoreTweet_1_1Streaming_1_1LimitMessage.html#a3eb2e8c395b75c8d13d1df04838c61de">CoreTweet.Streaming.LimitMessage</a>, <a class="el" href="classCoreTweet_1_1Streaming_1_1FriendsMessage.html#a357a30f3ecc05fee298f1e88fdd4d923">CoreTweet.Streaming.FriendsMessage</a>, <a class="el" href="classCoreTweet_1_1Streaming_1_1DirectMessageMessage.html#a6d68a74e3171183f2b8d174829d46990">CoreTweet.Streaming.DirectMessageMessage</a>, and <a class="el" href="classCoreTweet_1_1Streaming_1_1StatusMessage.html#aa17c15921a58a918dac205230db2dae5">CoreTweet.Streaming.StatusMessage</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acfd2c337a3ff1ecc5815ed24062581ce"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingMessage.html">StreamingMessage</a> CoreTweet.Streaming.StreamingMessage.Parse </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Converts the JSON to a <a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingMessage.html" title="Represents a streaming message. This class is an abstract class. ">StreamingMessage</a> object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>The JSON value.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingMessage.html" title="Represents a streaming message. This class is an abstract class. ">StreamingMessage</a> object.</dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Property Documentation</h2>
+<a class="anchor" id="a967fd77b0e7db025d237684e71554ab7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string CoreTweet.Streaming.StreamingMessage.Json</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets or sets the raw JSON. </p>
+
+</div>
+</div>
 <a class="anchor" id="a82c3ecddefc44b460bd3cd6d17312416"></a>
 <div class="memitem">
 <div class="memproto">
@@ -166,7 +261,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jun 20 2014 00:31:20 for CoreTweet by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Sep 7 2014 03:28:57 for CoreTweet by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

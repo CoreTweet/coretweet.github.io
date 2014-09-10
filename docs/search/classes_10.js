@@ -5,6 +5,8 @@ var searchData=
   ['user',['User',['../classCoreTweet_1_1User.html',1,'CoreTweet']]],
   ['userentities',['UserEntities',['../classCoreTweet_1_1UserEntities.html',1,'CoreTweet']]],
   ['usermentionentity',['UserMentionEntity',['../classCoreTweet_1_1UserMentionEntity.html',1,'CoreTweet']]],
+  ['usermessage',['UserMessage',['../classCoreTweet_1_1Streaming_1_1UserMessage.html',1,'CoreTweet::Streaming']]],
   ['userresponse',['UserResponse',['../classCoreTweet_1_1UserResponse.html',1,'CoreTweet']]],
-  ['users',['Users',['../classCoreTweet_1_1Rest_1_1Users.html',1,'CoreTweet::Rest']]]
+  ['users',['Users',['../classCoreTweet_1_1Rest_1_1Users.html',1,'CoreTweet::Rest']]],
+  ['userwithheldmessage',['UserWithheldMessage',['../classCoreTweet_1_1Streaming_1_1UserWithheldMessage.html',1,'CoreTweet::Streaming']]]
 ];

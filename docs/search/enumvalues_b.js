@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['rawjson',['RawJson',['../namespaceCoreTweet_1_1Streaming.html#ae0f1a921dcf3d18048a7d11193abe829a318d38c70a7646cb3d37ccc427f4d18a',1,'CoreTweet::Streaming']]],
-  ['reserved',['Reserved',['../namespaceCoreTweet_1_1Streaming.html#a8a261ff0c83f88d7ee1d03e64a9d5258a942d4e37dd5607ab68e54755540d4a47',1,'CoreTweet::Streaming']]]
+  ['overcapacity',['OverCapacity',['../namespaceCoreTweet.html#a949c15457cb3462cff8d20b4c14b0ae5a4fcf3e94521b7db24bd0c3bd6e9201af',1,'CoreTweet']]],
+  ['overcharacterslimit',['OverCharactersLimit',['../namespaceCoreTweet.html#a949c15457cb3462cff8d20b4c14b0ae5a85992fa2444d8afff247b89c8a0afc6b',1,'CoreTweet']]],
+  ['overdailyphotolimit',['OverDailyPhotoLimit',['../namespaceCoreTweet.html#a949c15457cb3462cff8d20b4c14b0ae5adeb4458c7f04df2ce65ffa97881d1700',1,'CoreTweet']]],
+  ['overstatusupdatelimit',['OverStatusUpdateLimit',['../namespaceCoreTweet.html#a949c15457cb3462cff8d20b4c14b0ae5a543c7091db5e687b0a4f11ce82ec1e17',1,'CoreTweet']]]
 ];
