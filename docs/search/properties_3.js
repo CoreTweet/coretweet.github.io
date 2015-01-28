@@ -5,5 +5,6 @@ var searchData=
   ['directmessage',['DirectMessage',['../classCoreTweet_1_1Streaming_1_1DirectMessageMessage.html#a001d1809ad56825a791b450872f24c9d',1,'CoreTweet::Streaming::DirectMessageMessage']]],
   ['directmessages',['DirectMessages',['../classCoreTweet_1_1Core_1_1TokensBase.html#ab06eee18f84f81c105213bb2297206cd',1,'CoreTweet::Core::TokensBase']]],
   ['disablekeepalive',['DisableKeepAlive',['../classCoreTweet_1_1ConnectionOptions.html#af38042c40ec6ae9c62156a56dca0024c',1,'CoreTweet::ConnectionOptions']]],
-  ['displayurl',['DisplayUrl',['../classCoreTweet_1_1UrlEntity.html#ae70f22e362dfe16215136885d23ccc5e',1,'CoreTweet::UrlEntity']]]
+  ['displayurl',['DisplayUrl',['../classCoreTweet_1_1UrlEntity.html#ae70f22e362dfe16215136885d23ccc5e',1,'CoreTweet::UrlEntity']]],
+  ['durationmillis',['DurationMillis',['../classCoreTweet_1_1VideoInfo.html#ab555f1608c2db5086a8717c6079a6248',1,'CoreTweet::VideoInfo']]]
 ];

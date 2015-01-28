@@ -21,8 +21,8 @@ var searchData=
   ['detectedautomatedaction',['DetectedAutomatedAction',['../namespaceCoreTweet.html#a949c15457cb3462cff8d20b4c14b0ae5af39b7e5905aa45959a2b4f9b78154147',1,'CoreTweet']]],
   ['dictionaryresponse',['DictionaryResponse',['../classCoreTweet_1_1Core_1_1DictionaryResponse_3_01TKey_00_01TValue_01_4.html#a0237a2bf070ef4f0ba0e4422ad4939ee',1,'CoreTweet.Core.DictionaryResponse&lt; TKey, TValue &gt;.DictionaryResponse(Dictionary&lt; TKey, TValue &gt; dictionary)'],['../classCoreTweet_1_1Core_1_1DictionaryResponse_3_01TKey_00_01TValue_01_4.html#a08f257902849440943471a4a6964f9a6',1,'CoreTweet.Core.DictionaryResponse&lt; TKey, TValue &gt;.DictionaryResponse(Dictionary&lt; TKey, TValue &gt; dictionary, RateLimit rateLimit, string json)']]],
   ['dictionaryresponse_3c_20tkey_2c_20tvalue_20_3e',['DictionaryResponse&lt; TKey, TValue &gt;',['../classCoreTweet_1_1Core_1_1DictionaryResponse_3_01TKey_00_01TValue_01_4.html',1,'CoreTweet::Core']]],
-  ['directmessage',['DirectMessage',['../classCoreTweet_1_1DirectMessage.html',1,'CoreTweet']]],
   ['directmessage',['DirectMessage',['../classCoreTweet_1_1Streaming_1_1DirectMessageMessage.html#a001d1809ad56825a791b450872f24c9d',1,'CoreTweet::Streaming::DirectMessageMessage']]],
+  ['directmessage',['DirectMessage',['../classCoreTweet_1_1DirectMessage.html',1,'CoreTweet']]],
   ['directmessagemessage',['DirectMessageMessage',['../classCoreTweet_1_1Streaming_1_1DirectMessageMessage.html',1,'CoreTweet::Streaming']]],
   ['directmessageresponse',['DirectMessageResponse',['../classCoreTweet_1_1DirectMessageResponse.html',1,'CoreTweet']]],
   ['directmessages',['DirectMessages',['../classCoreTweet_1_1Core_1_1TokensBase.html#ab06eee18f84f81c105213bb2297206cd',1,'CoreTweet::Core::TokensBase']]],
@@ -36,5 +36,6 @@ var searchData=
   ['disconnectmessage',['DisconnectMessage',['../classCoreTweet_1_1Streaming_1_1DisconnectMessage.html',1,'CoreTweet::Streaming']]],
   ['displayurl',['DisplayUrl',['../classCoreTweet_1_1UrlEntity.html#ae70f22e362dfe16215136885d23ccc5e',1,'CoreTweet::UrlEntity']]],
   ['dispose',['Dispose',['../classCoreTweet_1_1AsyncResponse.html#a92978f5ebd8e28e6010102e936d18e49',1,'CoreTweet.AsyncResponse.Dispose(bool disposing)'],['../classCoreTweet_1_1AsyncResponse.html#a916b623894bfa9633fa835f620637b6c',1,'CoreTweet.AsyncResponse.Dispose()']]],
-  ['duplicatestream',['DuplicateStream',['../namespaceCoreTweet_1_1Streaming.html#a8a261ff0c83f88d7ee1d03e64a9d5258ad3d7932b00e2e69d71867d59c18ea817',1,'CoreTweet::Streaming']]]
+  ['duplicatestream',['DuplicateStream',['../namespaceCoreTweet_1_1Streaming.html#a8a261ff0c83f88d7ee1d03e64a9d5258ad3d7932b00e2e69d71867d59c18ea817',1,'CoreTweet::Streaming']]],
+  ['durationmillis',['DurationMillis',['../classCoreTweet_1_1VideoInfo.html#ab555f1608c2db5086a8717c6079a6248',1,'CoreTweet::VideoInfo']]]
 ];

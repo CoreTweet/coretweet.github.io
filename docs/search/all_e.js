@@ -19,5 +19,9 @@ var searchData=
   ['overcapacity',['OverCapacity',['../namespaceCoreTweet.html#a949c15457cb3462cff8d20b4c14b0ae5a4fcf3e94521b7db24bd0c3bd6e9201af',1,'CoreTweet']]],
   ['overcharacterslimit',['OverCharactersLimit',['../namespaceCoreTweet.html#a949c15457cb3462cff8d20b4c14b0ae5a85992fa2444d8afff247b89c8a0afc6b',1,'CoreTweet']]],
   ['overdailyphotolimit',['OverDailyPhotoLimit',['../namespaceCoreTweet.html#a949c15457cb3462cff8d20b4c14b0ae5adeb4458c7f04df2ce65ffa97881d1700',1,'CoreTweet']]],
-  ['overstatusupdatelimit',['OverStatusUpdateLimit',['../namespaceCoreTweet.html#a949c15457cb3462cff8d20b4c14b0ae5a543c7091db5e687b0a4f11ce82ec1e17',1,'CoreTweet']]]
+  ['overstatusupdatelimit',['OverStatusUpdateLimit',['../namespaceCoreTweet.html#a949c15457cb3462cff8d20b4c14b0ae5a543c7091db5e687b0a4f11ce82ec1e17',1,'CoreTweet']]],
+  ['ownerships',['Ownerships',['../classCoreTweet_1_1Rest_1_1Lists.html#addd8d8f6004634d67dc256de72f1c5ca',1,'CoreTweet.Rest.Lists.Ownerships(params Expression&lt; Func&lt; string, object &gt;&gt;[] parameters)'],['../classCoreTweet_1_1Rest_1_1Lists.html#a3e1a2e625db64e7e44cdb66a2503aa00',1,'CoreTweet.Rest.Lists.Ownerships(IDictionary&lt; string, object &gt; parameters)']]],
+  ['ownerships_3c_20t_20_3e',['Ownerships&lt; T &gt;',['../classCoreTweet_1_1Rest_1_1Lists.html#aa3536f1050239ac27d1eb2345b48cc56',1,'CoreTweet::Rest::Lists']]],
+  ['ownershipsasync',['OwnershipsAsync',['../classCoreTweet_1_1Rest_1_1Lists.html#a0d56479325a336a3b13a7481d1fa71b9',1,'CoreTweet.Rest.Lists.OwnershipsAsync(params Expression&lt; Func&lt; string, object &gt;&gt;[] parameters)'],['../classCoreTweet_1_1Rest_1_1Lists.html#a8a2e588917bce83a1e012f6623d51bfb',1,'CoreTweet.Rest.Lists.OwnershipsAsync(IDictionary&lt; string, object &gt; parameters, CancellationToken cancellationToken=default(CancellationToken))']]],
+  ['ownershipsasync_3c_20t_20_3e',['OwnershipsAsync&lt; T &gt;',['../classCoreTweet_1_1Rest_1_1Lists.html#adb47682b66c395db5a77cb1f447a5d23',1,'CoreTweet::Rest::Lists']]]
 ];

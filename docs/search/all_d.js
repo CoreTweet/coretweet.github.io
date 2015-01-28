@@ -8,6 +8,7 @@ var searchData=
   ['next',['Next',['../namespaceCoreTweet.html#a3cb7681ad32c9fadc094714125a3d30aa10ac3d04253ef7e1ddc73e6091c0cd55',1,'CoreTweet']]],
   ['nextcursor',['NextCursor',['../classCoreTweet_1_1Cursored_3_01T_01_4.html#a2877ee39ef642fe875aa6b403db43658',1,'CoreTweet::Cursored&lt; T &gt;']]],
   ['nextresults',['NextResults',['../classCoreTweet_1_1SearchMetadata.html#ab8e7cc4834d699909375aaaa6eefb298',1,'CoreTweet::SearchMetadata']]],
+  ['none',['None',['../namespaceCoreTweet.html#a06bda0e7d906c76737e291ced843a2cfa6adf97f83acf6453d4a6a4b1070f3754',1,'CoreTweet']]],
   ['nonusernamepaths',['NonUsernamePaths',['../classCoreTweet_1_1Configurations.html#aeffe7eb34bcea625a2cdd8dd00ef1ada',1,'CoreTweet::Configurations']]],
   ['noretweetsids',['NoRetweetsIds',['../classCoreTweet_1_1Rest_1_1Friendships.html#a61392df1674587f1430cfa0f2c02dead',1,'CoreTweet.Rest.Friendships.NoRetweetsIds(params Expression&lt; Func&lt; string, object &gt;&gt;[] parameters)'],['../classCoreTweet_1_1Rest_1_1Friendships.html#a9a585026443ff33250438c9e56f49133',1,'CoreTweet.Rest.Friendships.NoRetweetsIds(IDictionary&lt; string, object &gt; parameters)']]],
   ['noretweetsids_3c_20t_20_3e',['NoRetweetsIds&lt; T &gt;',['../classCoreTweet_1_1Rest_1_1Friendships.html#a99006a606b75bc3cf5c8bdce6660230a',1,'CoreTweet::Rest::Friendships']]],

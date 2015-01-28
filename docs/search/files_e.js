@@ -10,6 +10,6 @@ var searchData=
   ['status_2ecs',['Status.cs',['../Status_8cs.html',1,'']]],
   ['statuses_2easync_2ecs',['Statuses.Async.cs',['../Statuses_8Async_8cs.html',1,'']]],
   ['statuses_2ecs',['Statuses.cs',['../Statuses_8cs.html',1,'']]],
-  ['stream_2ecs',['Stream.cs',['../Streaming_8Reactive_2Stream_8cs.html',1,'']]],
-  ['stream_2ecs',['Stream.cs',['../Streaming_2Stream_8cs.html',1,'']]]
+  ['stream_2ecs',['Stream.cs',['../CoreTweet_8Streaming_8Reactive_2Stream_8cs.html',1,'']]],
+  ['stream_2ecs',['Stream.cs',['../CoreTweet_8Shared_2Streaming_2Stream_8cs.html',1,'']]]
 ];

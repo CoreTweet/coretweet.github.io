@@ -8,6 +8,7 @@ var searchData=
   ['apiversion',['ApiVersion',['../classCoreTweet_1_1Property.html#a87701ee5a2f5d3cc13c6820262e4c5d8',1,'CoreTweet::Property']]],
   ['application',['Application',['../classCoreTweet_1_1Core_1_1TokensBase.html#ab4c9c479e857f813c25dbc41cc7541f1',1,'CoreTweet::Core::TokensBase']]],
   ['asof',['AsOf',['../classCoreTweet_1_1TrendsResult.html#a8ff15ab141dfc52c6b86470f523271bb',1,'CoreTweet::TrendsResult']]],
+  ['aspectratio',['AspectRatio',['../classCoreTweet_1_1VideoInfo.html#ad820e8aab3c0158b79efde6a952c64c4',1,'CoreTweet::VideoInfo']]],
   ['attributes',['Attributes',['../classCoreTweet_1_1Place.html#ae309ad815bcc3356e48dbc32d2caea0c',1,'CoreTweet::Place']]],
   ['authorizeuri',['AuthorizeUri',['../classCoreTweet_1_1OAuth_1_1OAuthSession.html#a7a025edd4f6de8e1b826f5e0d8431015',1,'CoreTweet::OAuth::OAuthSession']]],
   ['authorname',['AuthorName',['../classCoreTweet_1_1Embed.html#ab724be69da24625ea593b28c2e481258',1,'CoreTweet::Embed']]],
