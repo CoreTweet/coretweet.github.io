@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['blocks_2easync_2ecs',['Blocks.Async.cs',['../Blocks_8Async_8cs.html',1,'']]],
-  ['blocks_2ecs',['Blocks.cs',['../Blocks_8cs.html',1,'']]]
+  ['connectionoptions_2ecs',['ConnectionOptions.cs',['../ConnectionOptions_8cs.html',1,'']]],
+  ['converters_2ecs',['Converters.cs',['../Converters_8cs.html',1,'']]],
+  ['corebase_2ecs',['CoreBase.cs',['../CoreBase_8cs.html',1,'']]],
+  ['cursored_2ecs',['Cursored.cs',['../Cursored_8cs.html',1,'']]]
 ];

@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['list_2ecs',['List.cs',['../List_8cs.html',1,'']]],
-  ['lists_2easync_2ecs',['Lists.Async.cs',['../Lists_8Async_8cs.html',1,'']]],
-  ['lists_2ecs',['Lists.cs',['../Lists_8cs.html',1,'']]]
+  ['ratelimit_2ecs',['RateLimit.cs',['../RateLimit_8cs.html',1,'']]],
+  ['request_2easync_2ecs',['Request.Async.cs',['../Request_8Async_8cs.html',1,'']]],
+  ['request_2ecs',['Request.cs',['../Request_8cs.html',1,'']]],
+  ['restapis_2ecs',['RestApis.cs',['../RestApis_8cs.html',1,'']]]
 ];
