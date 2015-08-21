@@ -1,18 +1,8 @@
 var searchData=
 [
-  ['uploadurl',['UploadUrl',['../classCoreTweet_1_1ConnectionOptions.html#a2d8b1db97b9bd05f4850bf980ce110c0',1,'CoreTweet::ConnectionOptions']]],
-  ['uptostatusid',['UpToStatusId',['../classCoreTweet_1_1Streaming_1_1ScrubGeoMessage.html#ada8954ccf1432ed90b18112518f6b80b',1,'CoreTweet::Streaming::ScrubGeoMessage']]],
-  ['uri',['Uri',['../classCoreTweet_1_1List.html#ae94ec8d768e22e3813ce8e62820adc8e',1,'CoreTweet::List']]],
-  ['url',['Url',['../classCoreTweet_1_1Embed.html#aa10117fb053e6d8a2e6b8b160cd24295',1,'CoreTweet.Embed.Url()'],['../classCoreTweet_1_1VideoVariant.html#ae7fc2b465e3fe26e7d33cc9570d34b41',1,'CoreTweet.VideoVariant.Url()'],['../classCoreTweet_1_1UrlEntity.html#a862da26cad9957682ded8c74a2c3b6eb',1,'CoreTweet.UrlEntity.Url()'],['../classCoreTweet_1_1Place.html#a8f5e4354c67c2d5352d2e4071609f586',1,'CoreTweet.Place.Url()'],['../classCoreTweet_1_1Trend.html#ae6419331428d6335ab14c46539a1112a',1,'CoreTweet.Trend.Url()'],['../classCoreTweet_1_1TrendLocation.html#ac898c93866e6f410c95202616f6d591a',1,'CoreTweet.TrendLocation.Url()'],['../classCoreTweet_1_1User.html#a30ed1967582c4a9003067f2be3718432',1,'CoreTweet.User.Url()'],['../classCoreTweet_1_1ProfileBannerSize.html#aa4db5a8313c5a82205ed62b502dc5763',1,'CoreTweet.ProfileBannerSize.Url()'],['../classCoreTweet_1_1UserEntities.html#a2c82c4aa34001ac21e30b0898678de92',1,'CoreTweet.UserEntities.Url()'],['../classCoreTweet_1_1Streaming_1_1ClientApplication.html#a159e497833896f7c4819f60aae4091b1',1,'CoreTweet.Streaming.ClientApplication.Url()']]],
-  ['urls',['Urls',['../classCoreTweet_1_1Entities.html#a92cdd8b633b51e1e850032d5a4843170',1,'CoreTweet::Entities']]],
-  ['usecompression',['UseCompression',['../classCoreTweet_1_1ConnectionOptions.html#a215d5541cc1cc4feb6fdbe765cd01993',1,'CoreTweet::ConnectionOptions']]],
-  ['usecompressiononstreaming',['UseCompressionOnStreaming',['../classCoreTweet_1_1ConnectionOptions.html#ad5a8d18051759f89915bbf9e88e4b706',1,'CoreTweet::ConnectionOptions']]],
-  ['usecookiepersonalization',['UseCookiePersonalization',['../classCoreTweet_1_1Setting.html#aca6383cb49a7109886a4f98a2d21126e',1,'CoreTweet::Setting']]],
-  ['user',['User',['../classCoreTweet_1_1List.html#a3bc7ddc1d6459d0302e3c0d42b7afbdf',1,'CoreTweet.List.User()'],['../classCoreTweet_1_1Status.html#a2c741499612bf1af94ed9798a3973a12',1,'CoreTweet.Status.User()']]],
-  ['useragent',['UserAgent',['../classCoreTweet_1_1ConnectionOptions.html#a49035f68b5d4509c920160d56c31fabd',1,'CoreTweet::ConnectionOptions']]],
-  ['userid',['UserId',['../classCoreTweet_1_1Tokens.html#a491b18da5ad66a4ce8f643dd0c0928fc',1,'CoreTweet.Tokens.UserId()'],['../classCoreTweet_1_1Streaming_1_1DeleteMessage.html#a79431d04ce52a47fae58f31295bfb85a',1,'CoreTweet.Streaming.DeleteMessage.UserId()'],['../classCoreTweet_1_1Streaming_1_1ScrubGeoMessage.html#a8e65a267a95b4514af753f40ebee18a9',1,'CoreTweet.Streaming.ScrubGeoMessage.UserId()'],['../classCoreTweet_1_1Streaming_1_1StatusWithheldMessage.html#a3b42291cfb77d99abbc180e59e7b8a73',1,'CoreTweet.Streaming.StatusWithheldMessage.UserId()'],['../classCoreTweet_1_1Streaming_1_1WarningMessage.html#a7c6ec07ec5e6234f16de255deb6a395f',1,'CoreTweet.Streaming.WarningMessage.UserId()']]],
-  ['usermentions',['UserMentions',['../classCoreTweet_1_1Entities.html#aa9831111610770e86a85ee94ef6f4fc0',1,'CoreTweet::Entities']]],
-  ['users',['Users',['../classCoreTweet_1_1Core_1_1TokensBase.html#a481ee207e4c8579a311fa3463ed965f4',1,'CoreTweet.Core.TokensBase.Users()'],['../classCoreTweet_1_1Category.html#a85f03a7d7e752d388fdb427f54875d5a',1,'CoreTweet.Category.Users()'],['../classCoreTweet_1_1Rest_1_1Mutes.html#a671b4e524b4a7b9fe15871994a6cbb1a',1,'CoreTweet.Rest.Mutes.Users()']]],
-  ['userstreamurl',['UserStreamUrl',['../classCoreTweet_1_1ConnectionOptions.html#a3987340ed5c0cc4000fdb29bdef7a511',1,'CoreTweet::ConnectionOptions']]],
-  ['utcoffset',['UtcOffset',['../classCoreTweet_1_1TimeZone.html#af3bf43c3e745e0944716a3a0731164a1',1,'CoreTweet.TimeZone.UtcOffset()'],['../classCoreTweet_1_1User.html#abeda658d312b2147117302beea9c1284',1,'CoreTweet.User.UtcOffset()']]]
+  ['variants',['Variants',['../classCoreTweet_1_1VideoInfo.html#a58e368713f88532a92eede6b9eeff02a',1,'CoreTweet::VideoInfo']]],
+  ['version',['Version',['../classCoreTweet_1_1Embed.html#a8e896c0b86c1f8ca59cda4c0067af4f7',1,'CoreTweet::Embed']]],
+  ['video',['Video',['../classCoreTweet_1_1MediaUploadResult.html#af99b4778716147862d9311de082a2e19',1,'CoreTweet::MediaUploadResult']]],
+  ['videoinfo',['VideoInfo',['../classCoreTweet_1_1MediaEntity.html#a9ef7ec570f1f446e0732b6b19d3f18ce',1,'CoreTweet::MediaEntity']]],
+  ['videotype',['VideoType',['../classCoreTweet_1_1UploadedVideo.html#ade9423ad31fe14c9d99e15734760ade0',1,'CoreTweet::UploadedVideo']]]
 ];

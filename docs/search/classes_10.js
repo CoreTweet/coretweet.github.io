@@ -2,7 +2,6 @@ var searchData=
 [
   ['uploadedimage',['UploadedImage',['../classCoreTweet_1_1UploadedImage.html',1,'CoreTweet']]],
   ['uploadedvideo',['UploadedVideo',['../classCoreTweet_1_1UploadedVideo.html',1,'CoreTweet']]],
-  ['uriconverter',['UriConverter',['../classCoreTweet_1_1Core_1_1UriConverter.html',1,'CoreTweet::Core']]],
   ['urlentity',['UrlEntity',['../classCoreTweet_1_1UrlEntity.html',1,'CoreTweet']]],
   ['user',['User',['../classCoreTweet_1_1User.html',1,'CoreTweet']]],
   ['userentities',['UserEntities',['../classCoreTweet_1_1UserEntities.html',1,'CoreTweet']]],

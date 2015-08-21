@@ -1,7 +1,7 @@
 var searchData=
 [
   ['target',['Target',['../classCoreTweet_1_1Relationship.html#a0bc02c897cd90a2ffe805cac5b3bc960',1,'CoreTweet.Relationship.Target()'],['../classCoreTweet_1_1Streaming_1_1EventMessage.html#ac16c51ade4f91d58a5fdf468420ba938',1,'CoreTweet.Streaming.EventMessage.Target()']]],
-  ['targetlist',['TargetList',['../classCoreTweet_1_1Streaming_1_1EventMessage.html#a3f278bf7a7c33e28513f6923a657cabf',1,'CoreTweet::Streaming::EventMessage']]],
+  ['targetlist',['TargetList',['../classCoreTweet_1_1Streaming_1_1EventMessage.html#a0defa5e16b3ac1c42c935567bc256a4b',1,'CoreTweet::Streaming::EventMessage']]],
   ['targetstatus',['TargetStatus',['../classCoreTweet_1_1Streaming_1_1EventMessage.html#a32001842a9f5ddd23f4f25ef68b216c7',1,'CoreTweet::Streaming::EventMessage']]],
   ['targettoken',['TargetToken',['../classCoreTweet_1_1Streaming_1_1EventMessage.html#a8a3c7b659b08f39b730b7893ce252c5f',1,'CoreTweet::Streaming::EventMessage']]],
   ['targettype',['TargetType',['../classCoreTweet_1_1Streaming_1_1EventMessage.html#ac2de97c32196212518b8350402ce7246',1,'CoreTweet::Streaming::EventMessage']]],
@@ -19,7 +19,7 @@ var searchData=
   ['token',['Token',['../classCoreTweet_1_1GeoResult.html#a6f772c8553b407e035d66b7809e96909',1,'CoreTweet.GeoResult.Token()'],['../classCoreTweet_1_1Streaming_1_1AccessRevocation.html#ac6a0248d9085e00875ec851b6c0b47a5',1,'CoreTweet.Streaming.AccessRevocation.Token()']]],
   ['tokenrevoked',['TokenRevoked',['../namespaceCoreTweet_1_1Streaming.html#a8a261ff0c83f88d7ee1d03e64a9d5258a79b513f8560c48bec64b054c2b5180df',1,'CoreTweet::Streaming']]],
   ['tokens',['Tokens',['../classCoreTweet_1_1Tokens.html',1,'CoreTweet']]],
-  ['tokens',['Tokens',['../classCoreTweet_1_1Tokens.html#a1c780de10899d55b0eab556ca1ecf2f0',1,'CoreTweet.Tokens.Tokens()'],['../classCoreTweet_1_1Tokens.html#a297d18ee7e148cb243f2582a5eb02046',1,'CoreTweet.Tokens.Tokens(Tokens e)']]],
+  ['tokens',['Tokens',['../classCoreTweet_1_1Core_1_1ApiProviderBase.html#af0d77d8ec4f2d71a9d20bc9b9cebd64e',1,'CoreTweet.Core.ApiProviderBase.Tokens()'],['../classCoreTweet_1_1Tokens.html#a1c780de10899d55b0eab556ca1ecf2f0',1,'CoreTweet.Tokens.Tokens()'],['../classCoreTweet_1_1Tokens.html#a297d18ee7e148cb243f2582a5eb02046',1,'CoreTweet.Tokens.Tokens(Tokens e)']]],
   ['tokens_2ecs',['Tokens.cs',['../Tokens_8cs.html',1,'']]],
   ['tokensbase',['TokensBase',['../classCoreTweet_1_1Core_1_1TokensBase.html',1,'CoreTweet::Core']]],
   ['tokensbase',['TokensBase',['../classCoreTweet_1_1Core_1_1TokensBase.html#ae3d516bb48b2cd126a3c2820bf4a847f',1,'CoreTweet::Core::TokensBase']]],

@@ -1,29 +1,6 @@
 var searchData=
 [
-  ['parameters',['Parameters',['../classCoreTweet_1_1Streaming_1_1StreamingParameters.html#a129d146c4dbd7dee683dd15580ac7458',1,'CoreTweet::Streaming::StreamingParameters']]],
-  ['parentid',['ParentId',['../classCoreTweet_1_1TrendLocation.html#ae0f25cea67bab53485b3ebaa21024bb3',1,'CoreTweet::TrendLocation']]],
-  ['percentfull',['PercentFull',['../classCoreTweet_1_1Streaming_1_1WarningMessage.html#ac36f544c06cb1e39e4f0749d5e0c7c9c',1,'CoreTweet::Streaming::WarningMessage']]],
-  ['phone',['Phone',['../classCoreTweet_1_1GeoAttributes.html#aefc0c88e7074d4e8d9b52081d3a1f38c',1,'CoreTweet::GeoAttributes']]],
-  ['photosizelimit',['PhotoSizeLimit',['../classCoreTweet_1_1Configurations.html#aa6cf3c5df3e7bf725325ca8e5dd45a57',1,'CoreTweet::Configurations']]],
-  ['photosizes',['PhotoSizes',['../classCoreTweet_1_1Configurations.html#a5efb9097c2c41adab69a82eb321788f8',1,'CoreTweet::Configurations']]],
-  ['place',['Place',['../classCoreTweet_1_1Status.html#aa5baf856f53420ed5b494dba1e65b461',1,'CoreTweet::Status']]],
-  ['places',['Places',['../classCoreTweet_1_1GeoResult.html#ab81915b0e52af732d5723e1a924c16db',1,'CoreTweet::GeoResult']]],
-  ['placetype',['PlaceType',['../classCoreTweet_1_1Place.html#a8091a4f2ec4967d378c75ab614ab02a0',1,'CoreTweet.Place.PlaceType()'],['../classCoreTweet_1_1TrendLocation.html#ab8bcec8c405b8d6ebd5a453b0a93789a',1,'CoreTweet.TrendLocation.PlaceType()']]],
-  ['possiblysensitive',['PossiblySensitive',['../classCoreTweet_1_1Status.html#ae965f8b70522afd497c972b91899dd95',1,'CoreTweet::Status']]],
-  ['postalcode',['PostalCode',['../classCoreTweet_1_1GeoAttributes.html#a065780272914343fcfcf2229267dcfb1',1,'CoreTweet::GeoAttributes']]],
-  ['previouscursor',['PreviousCursor',['../classCoreTweet_1_1Cursored.html#a8d2e33f4b5a419bc8f921376b0ed9462',1,'CoreTweet::Cursored']]],
-  ['profilebackgroundcolor',['ProfileBackgroundColor',['../classCoreTweet_1_1User.html#ad84ca25dba025d36b2ae9a36699328ae',1,'CoreTweet::User']]],
-  ['profilebackgroundimageurl',['ProfileBackgroundImageUrl',['../classCoreTweet_1_1User.html#a1dc0b4e4ae3e00d50c03a548ce668ee8',1,'CoreTweet::User']]],
-  ['profilebackgroundimageurlhttps',['ProfileBackgroundImageUrlHttps',['../classCoreTweet_1_1User.html#a925785cff9a6ad4c2ee4eedf8613c2e3',1,'CoreTweet::User']]],
-  ['profilebannerurl',['ProfileBannerUrl',['../classCoreTweet_1_1User.html#a01deb164c7b9a2cc557f5c0a89ea84a2',1,'CoreTweet::User']]],
-  ['profileimageurl',['ProfileImageUrl',['../classCoreTweet_1_1User.html#af95ff2eac3ba67c082ee1f5ca3868f57',1,'CoreTweet::User']]],
-  ['profileimageurlhttps',['ProfileImageUrlHttps',['../classCoreTweet_1_1User.html#a6a660d5b20670b002ad0b6535f5649a6',1,'CoreTweet::User']]],
-  ['profilelinkcolor',['ProfileLinkColor',['../classCoreTweet_1_1User.html#a892ca433a81b72fe7e85ec20a174c350',1,'CoreTweet::User']]],
-  ['profilelocation',['ProfileLocation',['../classCoreTweet_1_1User.html#a4ab21c674ab06ca3bfa43a43d5c5ec52',1,'CoreTweet::User']]],
-  ['profilesidebarbordercolor',['ProfileSidebarBorderColor',['../classCoreTweet_1_1User.html#a81db7f4c57647666663418ad9e3088ae',1,'CoreTweet::User']]],
-  ['profilesidebarfillcolor',['ProfileSidebarFillColor',['../classCoreTweet_1_1User.html#a4adb58ec9d286239af6eacfdc8ab531f',1,'CoreTweet::User']]],
-  ['profiletextcolor',['ProfileTextColor',['../classCoreTweet_1_1User.html#a1d5646cad4cefe645ab3e060279a187f',1,'CoreTweet::User']]],
-  ['providername',['ProviderName',['../classCoreTweet_1_1Embed.html#a5d955fbfd8c037268f78208f94fc1c7f',1,'CoreTweet::Embed']]],
-  ['providerurl',['ProviderUrl',['../classCoreTweet_1_1Embed.html#a3a2e5b064f9c13c17c7e0f0410010f17',1,'CoreTweet::Embed']]],
-  ['proxy',['Proxy',['../classCoreTweet_1_1ConnectionOptions.html#ac6d2c92915d5cc835ef559ed9c090745',1,'CoreTweet::ConnectionOptions']]]
+  ['query',['Query',['../classCoreTweet_1_1Trend.html#a321c48f2c1a4bae1f0f4035681c7976f',1,'CoreTweet.Trend.Query()'],['../classCoreTweet_1_1SearchQuery.html#aff81014148227ff7bafb604b84d4910a',1,'CoreTweet.SearchQuery.Query()'],['../classCoreTweet_1_1SearchMetadata.html#ad43fb9876991c78e3a91d1d3468266c1',1,'CoreTweet.SearchMetadata.Query()']]],
+  ['quotedstatus',['QuotedStatus',['../classCoreTweet_1_1Status.html#a658304900e5cb481f887cb2da1be32fc',1,'CoreTweet::Status']]],
+  ['quotedstatusid',['QuotedStatusId',['../classCoreTweet_1_1Status.html#ac3b5b6d6e050967787e9eaf33694f7ea',1,'CoreTweet::Status']]]
 ];

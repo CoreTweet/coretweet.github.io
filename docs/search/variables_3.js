@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['params',['Params',['../classApiEndpoint.html#ac60207ec9df6e186812d9a7927fe9fc1',1,'ApiEndpoint']]]
+  ['directmessages',['DirectMessages',['../classCoreTweet_1_1Core_1_1TokensBase.html#ab06eee18f84f81c105213bb2297206cd',1,'CoreTweet::Core::TokensBase']]]
 ];

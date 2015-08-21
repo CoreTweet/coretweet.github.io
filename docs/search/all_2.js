@@ -1,7 +1,7 @@
 var searchData=
 [
   ['cacheage',['CacheAge',['../classCoreTweet_1_1Embed.html#a1e26e407fe59401b766469a1a649bb3b',1,'CoreTweet::Embed']]],
-  ['canconvert',['CanConvert',['../classCoreTweet_1_1Core_1_1UriConverter.html#a3f9194a95828277c4668339ae185cc38',1,'CoreTweet.Core.UriConverter.CanConvert()'],['../classCoreTweet_1_1Core_1_1DateTimeOffsetConverter.html#a032404d14b86adb38c3f222575ef19bf',1,'CoreTweet.Core.DateTimeOffsetConverter.CanConvert()'],['../classCoreTweet_1_1Core_1_1ContributorsConverter.html#a100ead0e8c8cd901b957ea613373f864',1,'CoreTweet.Core.ContributorsConverter.CanConvert()'],['../classCoreTweet_1_1Core_1_1TimestampConverter.html#a5ce628c5b422a770c72f2427626553b6',1,'CoreTweet.Core.TimestampConverter.CanConvert()']]],
+  ['canconvert',['CanConvert',['../classCoreTweet_1_1Core_1_1DateTimeOffsetConverter.html#a032404d14b86adb38c3f222575ef19bf',1,'CoreTweet.Core.DateTimeOffsetConverter.CanConvert()'],['../classCoreTweet_1_1Core_1_1ContributorsConverter.html#a100ead0e8c8cd901b957ea613373f864',1,'CoreTweet.Core.ContributorsConverter.CanConvert()'],['../classCoreTweet_1_1Core_1_1TimestampConverter.html#a5ce628c5b422a770c72f2427626553b6',1,'CoreTweet.Core.TimestampConverter.CanConvert()']]],
   ['candm',['CanDM',['../classCoreTweet_1_1RelationshipSource.html#aabfb6cf66d466d01a4bd5ec0cc7b3f19',1,'CoreTweet::RelationshipSource']]],
   ['cannotdeleteotherusersstatus',['CannotDeleteOtherUsersStatus',['../namespaceCoreTweet.html#a949c15457cb3462cff8d20b4c14b0ae5a37f4c9c8563de59e698d6013bc9b9791',1,'CoreTweet']]],
   ['cannotfavoritetweetsofprotectedusersyouarenotfollowing',['CannotFavoriteTweetsOfProtectedUsersYouAreNotFollowing',['../namespaceCoreTweet.html#a949c15457cb3462cff8d20b4c14b0ae5a6081c6b9db891b096dc1405f90712344',1,'CoreTweet']]],
