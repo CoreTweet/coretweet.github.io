@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['endpointhasretired',['EndpointHasRetired',['../namespaceCoreTweet.html#a949c15457cb3462cff8d20b4c14b0ae5aba415e51df6967e243f6a091cf009f39',1,'CoreTweet']]],
+  ['endpointhasretired',['EndpointHasRetired',['../namespaceCoreTweet.html#adb5cd00c67f4fe33b2049b37e634e15eaba415e51df6967e243f6a091cf009f39',1,'CoreTweet']]],
   ['envelopes',['Envelopes',['../namespaceCoreTweet_1_1Streaming.html#ae0f1a921dcf3d18048a7d11193abe829afa9218f2927bf28f67029569c2c86b58',1,'CoreTweet::Streaming']]],
-  ['errorcreatingstatus',['ErrorCreatingStatus',['../namespaceCoreTweet.html#a949c15457cb3462cff8d20b4c14b0ae5a9304c0c5c276015c1f259118afcb2424',1,'CoreTweet']]],
+  ['errorcreatingstatus',['ErrorCreatingStatus',['../namespaceCoreTweet.html#adb5cd00c67f4fe33b2049b37e634e15ea9304c0c5c276015c1f259118afcb2424',1,'CoreTweet']]],
   ['event',['Event',['../namespaceCoreTweet_1_1Streaming.html#ae0f1a921dcf3d18048a7d11193abe829aa4ecfc70574394990cf17bd83df499f7',1,'CoreTweet::Streaming']]]
 ];

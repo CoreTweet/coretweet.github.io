@@ -25,7 +25,7 @@
   <td id="projectlogo"><img alt="Logo" src="core-48x48.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">CoreTweet
-   &#160;<span id="projectnumber">0.5.3</span>
+   &#160;<span id="projectnumber">0.6.0</span>
    </div>
    <div id="projectbrief">Yet another .NET Twitter Library</div>
   </td>
@@ -178,6 +178,66 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aef9d14c4920b0231efbe70dc998779ce"><td class="memItemLeft" align="right" valign="top">IEnumerable&lt; <a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingMessage.html">StreamingMessage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingApi.html#aef9d14c4920b0231efbe70dc998779ce">Firehose</a> (int?count=null, bool?stall_warnings=null)</td></tr>
 <tr class="memdesc:aef9d14c4920b0231efbe70dc998779ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns all public statuses. Few applications require this level of access.  <a href="#aef9d14c4920b0231efbe70dc998779ce">More...</a><br /></td></tr>
 <tr class="separator:aef9d14c4920b0231efbe70dc998779ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70d94b3fe6bb0172d247ad70a21736b3"><td class="memItemLeft" align="right" valign="top">IObservable&lt; <a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingMessage.html">StreamingMessage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingApi.html#a70d94b3fe6bb0172d247ad70a21736b3">UserAsObservable</a> (params Expression&lt; Func&lt; string, object &gt;&gt;[] parameters)</td></tr>
+<tr class="memdesc:a70d94b3fe6bb0172d247ad70a21736b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Streams messages for a single user.  <a href="#a70d94b3fe6bb0172d247ad70a21736b3">More...</a><br /></td></tr>
+<tr class="separator:a70d94b3fe6bb0172d247ad70a21736b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4316fc278e7145a2e6e944b6ab536d2a"><td class="memItemLeft" align="right" valign="top">IObservable&lt; <a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingMessage.html">StreamingMessage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingApi.html#a4316fc278e7145a2e6e944b6ab536d2a">UserAsObservable</a> (IDictionary&lt; string, object &gt; parameters)</td></tr>
+<tr class="memdesc:a4316fc278e7145a2e6e944b6ab536d2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Streams messages for a single user.  <a href="#a4316fc278e7145a2e6e944b6ab536d2a">More...</a><br /></td></tr>
+<tr class="separator:a4316fc278e7145a2e6e944b6ab536d2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a9799a791d0fea948aad47af16a0c65"><td class="memItemLeft" align="right" valign="top">IObservable&lt; <a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingMessage.html">StreamingMessage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingApi.html#a7a9799a791d0fea948aad47af16a0c65">UserAsObservable</a> (object parameters)</td></tr>
+<tr class="memdesc:a7a9799a791d0fea948aad47af16a0c65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Streams messages for a single user.  <a href="#a7a9799a791d0fea948aad47af16a0c65">More...</a><br /></td></tr>
+<tr class="separator:a7a9799a791d0fea948aad47af16a0c65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a288a3db3ec3d338c89d0a02cbbfcf1ac"><td class="memItemLeft" align="right" valign="top">IObservable&lt; <a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingMessage.html">StreamingMessage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingApi.html#a288a3db3ec3d338c89d0a02cbbfcf1ac">UserAsObservable</a> (bool?stall_warnings=null, string with=null, string replies=null, string track=null, IEnumerable&lt; double &gt; locations=null)</td></tr>
+<tr class="memdesc:a288a3db3ec3d338c89d0a02cbbfcf1ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Streams messages for a single user.  <a href="#a288a3db3ec3d338c89d0a02cbbfcf1ac">More...</a><br /></td></tr>
+<tr class="separator:a288a3db3ec3d338c89d0a02cbbfcf1ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d957c250ff2f596efdf539f76694968"><td class="memItemLeft" align="right" valign="top">IObservable&lt; <a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingMessage.html">StreamingMessage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingApi.html#a9d957c250ff2f596efdf539f76694968">SiteAsObservable</a> (params Expression&lt; Func&lt; string, object &gt;&gt;[] parameters)</td></tr>
+<tr class="memdesc:a9d957c250ff2f596efdf539f76694968"><td class="mdescLeft">&#160;</td><td class="mdescRight">Streams messages for a set of users.  <a href="#a9d957c250ff2f596efdf539f76694968">More...</a><br /></td></tr>
+<tr class="separator:a9d957c250ff2f596efdf539f76694968"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a115d4394258f06cd93d73cbb5ddea371"><td class="memItemLeft" align="right" valign="top">IObservable&lt; <a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingMessage.html">StreamingMessage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingApi.html#a115d4394258f06cd93d73cbb5ddea371">SiteAsObservable</a> (IDictionary&lt; string, object &gt; parameters)</td></tr>
+<tr class="memdesc:a115d4394258f06cd93d73cbb5ddea371"><td class="mdescLeft">&#160;</td><td class="mdescRight">Streams messages for a set of users.  <a href="#a115d4394258f06cd93d73cbb5ddea371">More...</a><br /></td></tr>
+<tr class="separator:a115d4394258f06cd93d73cbb5ddea371"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab032f25c881deb83ed8ebe22f5a0e540"><td class="memItemLeft" align="right" valign="top">IObservable&lt; <a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingMessage.html">StreamingMessage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingApi.html#ab032f25c881deb83ed8ebe22f5a0e540">SiteAsObservable</a> (object parameters)</td></tr>
+<tr class="memdesc:ab032f25c881deb83ed8ebe22f5a0e540"><td class="mdescLeft">&#160;</td><td class="mdescRight">Streams messages for a set of users.  <a href="#ab032f25c881deb83ed8ebe22f5a0e540">More...</a><br /></td></tr>
+<tr class="separator:ab032f25c881deb83ed8ebe22f5a0e540"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff62f0a439ce4152d22d733bd0ec275f"><td class="memItemLeft" align="right" valign="top">IObservable&lt; <a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingMessage.html">StreamingMessage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingApi.html#aff62f0a439ce4152d22d733bd0ec275f">SiteAsObservable</a> (IEnumerable&lt; long &gt; follow, bool?stall_warnings=null, string with=null, string replies=null)</td></tr>
+<tr class="memdesc:aff62f0a439ce4152d22d733bd0ec275f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Streams messages for a set of users.  <a href="#aff62f0a439ce4152d22d733bd0ec275f">More...</a><br /></td></tr>
+<tr class="separator:aff62f0a439ce4152d22d733bd0ec275f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1535db4ccbc0652f215cefb31016f2c"><td class="memItemLeft" align="right" valign="top">IObservable&lt; <a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingMessage.html">StreamingMessage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingApi.html#ac1535db4ccbc0652f215cefb31016f2c">FilterAsObservable</a> (params Expression&lt; Func&lt; string, object &gt;&gt;[] parameters)</td></tr>
+<tr class="memdesc:ac1535db4ccbc0652f215cefb31016f2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns public statuses that match one or more filter predicates.  <a href="#ac1535db4ccbc0652f215cefb31016f2c">More...</a><br /></td></tr>
+<tr class="separator:ac1535db4ccbc0652f215cefb31016f2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a630ecaeecce36a0a48046c287187cfa6"><td class="memItemLeft" align="right" valign="top">IObservable&lt; <a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingMessage.html">StreamingMessage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingApi.html#a630ecaeecce36a0a48046c287187cfa6">FilterAsObservable</a> (IDictionary&lt; string, object &gt; parameters)</td></tr>
+<tr class="memdesc:a630ecaeecce36a0a48046c287187cfa6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns public statuses that match one or more filter predicates.  <a href="#a630ecaeecce36a0a48046c287187cfa6">More...</a><br /></td></tr>
+<tr class="separator:a630ecaeecce36a0a48046c287187cfa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabc115d19cee4c178e65f75480304da7"><td class="memItemLeft" align="right" valign="top">IObservable&lt; <a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingMessage.html">StreamingMessage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingApi.html#aabc115d19cee4c178e65f75480304da7">FilterAsObservable</a> (object parameters)</td></tr>
+<tr class="memdesc:aabc115d19cee4c178e65f75480304da7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns public statuses that match one or more filter predicates.  <a href="#aabc115d19cee4c178e65f75480304da7">More...</a><br /></td></tr>
+<tr class="separator:aabc115d19cee4c178e65f75480304da7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08f264af0c131ca76badcf688a298cda"><td class="memItemLeft" align="right" valign="top">IObservable&lt; <a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingMessage.html">StreamingMessage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingApi.html#a08f264af0c131ca76badcf688a298cda">FilterAsObservable</a> (IEnumerable&lt; long &gt; follow=null, string track=null, IEnumerable&lt; double &gt; locations=null, bool?stall_warnings=null)</td></tr>
+<tr class="memdesc:a08f264af0c131ca76badcf688a298cda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns public statuses that match one or more filter predicates.  <a href="#a08f264af0c131ca76badcf688a298cda">More...</a><br /></td></tr>
+<tr class="separator:a08f264af0c131ca76badcf688a298cda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa84598e10838fddff48b4e737d5cbea2"><td class="memItemLeft" align="right" valign="top">IObservable&lt; <a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingMessage.html">StreamingMessage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingApi.html#aa84598e10838fddff48b4e737d5cbea2">SampleAsObservable</a> (params Expression&lt; Func&lt; string, object &gt;&gt;[] parameters)</td></tr>
+<tr class="memdesc:aa84598e10838fddff48b4e737d5cbea2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a small random sample of all public statuses.  <a href="#aa84598e10838fddff48b4e737d5cbea2">More...</a><br /></td></tr>
+<tr class="separator:aa84598e10838fddff48b4e737d5cbea2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0e13fb6509246f1292365c4f1db5bc9"><td class="memItemLeft" align="right" valign="top">IObservable&lt; <a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingMessage.html">StreamingMessage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingApi.html#ab0e13fb6509246f1292365c4f1db5bc9">SampleAsObservable</a> (IDictionary&lt; string, object &gt; parameters)</td></tr>
+<tr class="memdesc:ab0e13fb6509246f1292365c4f1db5bc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a small random sample of all public statuses.  <a href="#ab0e13fb6509246f1292365c4f1db5bc9">More...</a><br /></td></tr>
+<tr class="separator:ab0e13fb6509246f1292365c4f1db5bc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f94e0ddd023a3be1a132f7c7a73c9d6"><td class="memItemLeft" align="right" valign="top">IObservable&lt; <a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingMessage.html">StreamingMessage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingApi.html#a0f94e0ddd023a3be1a132f7c7a73c9d6">SampleAsObservable</a> (object parameters)</td></tr>
+<tr class="memdesc:a0f94e0ddd023a3be1a132f7c7a73c9d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a small random sample of all public statuses.  <a href="#a0f94e0ddd023a3be1a132f7c7a73c9d6">More...</a><br /></td></tr>
+<tr class="separator:a0f94e0ddd023a3be1a132f7c7a73c9d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03c329ffed50e6454aac7ea3b7f78174"><td class="memItemLeft" align="right" valign="top">IObservable&lt; <a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingMessage.html">StreamingMessage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingApi.html#a03c329ffed50e6454aac7ea3b7f78174">SampleAsObservable</a> (bool?stall_warnings=null)</td></tr>
+<tr class="memdesc:a03c329ffed50e6454aac7ea3b7f78174"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a small random sample of all public statuses.  <a href="#a03c329ffed50e6454aac7ea3b7f78174">More...</a><br /></td></tr>
+<tr class="separator:a03c329ffed50e6454aac7ea3b7f78174"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f56804b0af18298a6636a8dce6277d5"><td class="memItemLeft" align="right" valign="top">IObservable&lt; <a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingMessage.html">StreamingMessage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingApi.html#a4f56804b0af18298a6636a8dce6277d5">FirehoseAsObservable</a> (params Expression&lt; Func&lt; string, object &gt;&gt;[] parameters)</td></tr>
+<tr class="memdesc:a4f56804b0af18298a6636a8dce6277d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns all public statuses. Few applications require this level of access.  <a href="#a4f56804b0af18298a6636a8dce6277d5">More...</a><br /></td></tr>
+<tr class="separator:a4f56804b0af18298a6636a8dce6277d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab88380b8c720b7d7d627f7b654e5b8bb"><td class="memItemLeft" align="right" valign="top">IObservable&lt; <a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingMessage.html">StreamingMessage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingApi.html#ab88380b8c720b7d7d627f7b654e5b8bb">FirehoseAsObservable</a> (IDictionary&lt; string, object &gt; parameters)</td></tr>
+<tr class="memdesc:ab88380b8c720b7d7d627f7b654e5b8bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns all public statuses. Few applications require this level of access.  <a href="#ab88380b8c720b7d7d627f7b654e5b8bb">More...</a><br /></td></tr>
+<tr class="separator:ab88380b8c720b7d7d627f7b654e5b8bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af56e4ecec7ca3fa8971802783a24728b"><td class="memItemLeft" align="right" valign="top">IObservable&lt; <a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingMessage.html">StreamingMessage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingApi.html#af56e4ecec7ca3fa8971802783a24728b">FirehoseAsObservable</a> (object parameters)</td></tr>
+<tr class="memdesc:af56e4ecec7ca3fa8971802783a24728b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns all public statuses. Few applications require this level of access.  <a href="#af56e4ecec7ca3fa8971802783a24728b">More...</a><br /></td></tr>
+<tr class="separator:af56e4ecec7ca3fa8971802783a24728b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4a239cefa843b5fbd41211a5b6dc36a"><td class="memItemLeft" align="right" valign="top">IObservable&lt; <a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingMessage.html">StreamingMessage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingApi.html#ac4a239cefa843b5fbd41211a5b6dc36a">FirehoseAsObservable</a> (int?count=null, bool?stall_warnings=null)</td></tr>
+<tr class="memdesc:ac4a239cefa843b5fbd41211a5b6dc36a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns all public statuses. Few applications require this level of access.  <a href="#ac4a239cefa843b5fbd41211a5b6dc36a">More...</a><br /></td></tr>
+<tr class="separator:ac4a239cefa843b5fbd41211a5b6dc36a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -325,6 +385,189 @@ Additional Inherited Members</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">IEnumerable&lt;<a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingMessage.html">StreamingMessage</a>&gt; CoreTweet.Streaming.StreamingApi.Filter </td>
+          <td>(</td>
+          <td class="paramtype">IEnumerable&lt; long &gt;&#160;</td>
+          <td class="paramname"><em>follow</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>track</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IEnumerable&lt; double &gt;&#160;</td>
+          <td class="paramname"><em>locations</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool?&#160;</td>
+          <td class="paramname"><em>stall_warnings</em> = <code>null</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns public statuses that match one or more filter predicates. </p>
+<p>Multiple parameters may be specified which allows most clients to use a single connection to the <a class="el" href="namespaceCoreTweet_1_1Streaming.html">Streaming</a> API.</p>
+<p>Note: At least one predicate parameter (follow, locations, or track) must be specified.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">follow</td><td>A comma separated list of user IDs, indicating the users to return statuses for in the stream.</td></tr>
+    <tr><td class="paramname">track</td><td>Keywords to track. Phrases of keywords are specified by a comma-separated list.</td></tr>
+    <tr><td class="paramname">locations</td><td>Specifies a set of bounding boxes to track.</td></tr>
+    <tr><td class="paramname">stall_warnings</td><td>Specifies whether stall warnings should be delivered.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The stream messages.</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac1535db4ccbc0652f215cefb31016f2c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IObservable&lt;<a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingMessage.html">StreamingMessage</a>&gt; CoreTweet.Streaming.StreamingApi.FilterAsObservable </td>
+          <td>(</td>
+          <td class="paramtype">params Expression&lt; Func&lt; string, object &gt;&gt;[]&#160;</td>
+          <td class="paramname"><em>parameters</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns public statuses that match one or more filter predicates. </p>
+<p>Multiple parameters may be specified which allows most clients to use a single connection to the <a class="el" href="namespaceCoreTweet_1_1Streaming.html">Streaming</a> API.</p>
+<p>Note: At least one predicate parameter (follow, locations, or track) must be specified.</p>
+<p>Available parameters:</p>
+<p>- <code>IEnumerable&lt;long&gt;</code> follow (optional)</p>
+<p>- <code>string</code> track (optional)</p>
+<p>- <code>IEnumerable&lt;double&gt;</code> locations (optional)</p>
+<p>- <code>string</code> delimited (optional, not affects <a class="el" href="namespaceCoreTweet.html">CoreTweet</a>)</p>
+<p>- <code>bool</code> stall_warnings (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The stream messages.</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a630ecaeecce36a0a48046c287187cfa6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IObservable&lt;<a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingMessage.html">StreamingMessage</a>&gt; CoreTweet.Streaming.StreamingApi.FilterAsObservable </td>
+          <td>(</td>
+          <td class="paramtype">IDictionary&lt; string, object &gt;&#160;</td>
+          <td class="paramname"><em>parameters</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns public statuses that match one or more filter predicates. </p>
+<p>Multiple parameters may be specified which allows most clients to use a single connection to the <a class="el" href="namespaceCoreTweet_1_1Streaming.html">Streaming</a> API.</p>
+<p>Note: At least one predicate parameter (follow, locations, or track) must be specified.</p>
+<p>Available parameters:</p>
+<p>- <code>IEnumerable&lt;long&gt;</code> follow (optional)</p>
+<p>- <code>string</code> track (optional)</p>
+<p>- <code>IEnumerable&lt;double&gt;</code> locations (optional)</p>
+<p>- <code>string</code> delimited (optional, not affects <a class="el" href="namespaceCoreTweet.html">CoreTweet</a>)</p>
+<p>- <code>bool</code> stall_warnings (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The stream messages.</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aabc115d19cee4c178e65f75480304da7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IObservable&lt;<a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingMessage.html">StreamingMessage</a>&gt; CoreTweet.Streaming.StreamingApi.FilterAsObservable </td>
+          <td>(</td>
+          <td class="paramtype">object&#160;</td>
+          <td class="paramname"><em>parameters</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns public statuses that match one or more filter predicates. </p>
+<p>Multiple parameters may be specified which allows most clients to use a single connection to the <a class="el" href="namespaceCoreTweet_1_1Streaming.html">Streaming</a> API.</p>
+<p>Note: At least one predicate parameter (follow, locations, or track) must be specified.</p>
+<p>Available parameters:</p>
+<p>- <code>IEnumerable&lt;long&gt;</code> follow (optional)</p>
+<p>- <code>string</code> track (optional)</p>
+<p>- <code>IEnumerable&lt;double&gt;</code> locations (optional)</p>
+<p>- <code>string</code> delimited (optional, not affects <a class="el" href="namespaceCoreTweet.html">CoreTweet</a>)</p>
+<p>- <code>bool</code> stall_warnings (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The stream messages.</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a08f264af0c131ca76badcf688a298cda"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IObservable&lt;<a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingMessage.html">StreamingMessage</a>&gt; CoreTweet.Streaming.StreamingApi.FilterAsObservable </td>
           <td>(</td>
           <td class="paramtype">IEnumerable&lt; long &gt;&#160;</td>
           <td class="paramname"><em>follow</em> = <code>null</code>, </td>
@@ -535,6 +778,165 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a4f56804b0af18298a6636a8dce6277d5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IObservable&lt;<a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingMessage.html">StreamingMessage</a>&gt; CoreTweet.Streaming.StreamingApi.FirehoseAsObservable </td>
+          <td>(</td>
+          <td class="paramtype">params Expression&lt; Func&lt; string, object &gt;&gt;[]&#160;</td>
+          <td class="paramname"><em>parameters</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns all public statuses. Few applications require this level of access. </p>
+<p>Creative use of a combination of other resources and various access levels can satisfy nearly every application use case.</p>
+<p>Available parameters:</p>
+<p>- <code>int</code> count (optional)</p>
+<p>- <code>string</code> delimited (optional, not affects <a class="el" href="namespaceCoreTweet.html">CoreTweet</a>)</p>
+<p>- <code>bool</code> stall_warnings (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The stream messages.</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab88380b8c720b7d7d627f7b654e5b8bb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IObservable&lt;<a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingMessage.html">StreamingMessage</a>&gt; CoreTweet.Streaming.StreamingApi.FirehoseAsObservable </td>
+          <td>(</td>
+          <td class="paramtype">IDictionary&lt; string, object &gt;&#160;</td>
+          <td class="paramname"><em>parameters</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns all public statuses. Few applications require this level of access. </p>
+<p>Creative use of a combination of other resources and various access levels can satisfy nearly every application use case.</p>
+<p>Available parameters:</p>
+<p>- <code>int</code> count (optional)</p>
+<p>- <code>string</code> delimited (optional, not affects <a class="el" href="namespaceCoreTweet.html">CoreTweet</a>)</p>
+<p>- <code>bool</code> stall_warnings (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The stream messages.</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af56e4ecec7ca3fa8971802783a24728b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IObservable&lt;<a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingMessage.html">StreamingMessage</a>&gt; CoreTweet.Streaming.StreamingApi.FirehoseAsObservable </td>
+          <td>(</td>
+          <td class="paramtype">object&#160;</td>
+          <td class="paramname"><em>parameters</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns all public statuses. Few applications require this level of access. </p>
+<p>Creative use of a combination of other resources and various access levels can satisfy nearly every application use case.</p>
+<p>Available parameters:</p>
+<p>- <code>int</code> count (optional)</p>
+<p>- <code>string</code> delimited (optional, not affects <a class="el" href="namespaceCoreTweet.html">CoreTweet</a>)</p>
+<p>- <code>bool</code> stall_warnings (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The stream messages.</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac4a239cefa843b5fbd41211a5b6dc36a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IObservable&lt;<a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingMessage.html">StreamingMessage</a>&gt; CoreTweet.Streaming.StreamingApi.FirehoseAsObservable </td>
+          <td>(</td>
+          <td class="paramtype">int?&#160;</td>
+          <td class="paramname"><em>count</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool?&#160;</td>
+          <td class="paramname"><em>stall_warnings</em> = <code>null</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns all public statuses. Few applications require this level of access. </p>
+<p>Creative use of a combination of other resources and various access levels can satisfy nearly every application use case.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">count</td><td>The number of messages to backfill.</td></tr>
+    <tr><td class="paramname">stall_warnings</td><td>Specifies whether stall warnings should be delivered.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The stream messages.</dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a5d65af5861b09a23d4e50a01f8e47712"></a>
 <div class="memitem">
 <div class="memproto">
@@ -655,6 +1057,151 @@ Additional Inherited Members</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">IEnumerable&lt;<a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingMessage.html">StreamingMessage</a>&gt; CoreTweet.Streaming.StreamingApi.Sample </td>
+          <td>(</td>
+          <td class="paramtype">bool?&#160;</td>
+          <td class="paramname"><em>stall_warnings</em> = <code>null</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a small random sample of all public statuses. </p>
+<p>The Tweets returned by the default access level are the same, so if two different clients connect to this endpoint, they will see the same Tweets.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stall_warnings</td><td>Specifies whether stall warnings should be delivered.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The stream messages.</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa84598e10838fddff48b4e737d5cbea2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IObservable&lt;<a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingMessage.html">StreamingMessage</a>&gt; CoreTweet.Streaming.StreamingApi.SampleAsObservable </td>
+          <td>(</td>
+          <td class="paramtype">params Expression&lt; Func&lt; string, object &gt;&gt;[]&#160;</td>
+          <td class="paramname"><em>parameters</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a small random sample of all public statuses. </p>
+<p>The Tweets returned by the default access level are the same, so if two different clients connect to this endpoint, they will see the same Tweets.</p>
+<p>Available parameters:</p>
+<p>- <code>string</code> delimited (optional, not affects <a class="el" href="namespaceCoreTweet.html">CoreTweet</a>)</p>
+<p>- <code>bool</code> stall_warnings (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The stream messages.</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab0e13fb6509246f1292365c4f1db5bc9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IObservable&lt;<a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingMessage.html">StreamingMessage</a>&gt; CoreTweet.Streaming.StreamingApi.SampleAsObservable </td>
+          <td>(</td>
+          <td class="paramtype">IDictionary&lt; string, object &gt;&#160;</td>
+          <td class="paramname"><em>parameters</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a small random sample of all public statuses. </p>
+<p>The Tweets returned by the default access level are the same, so if two different clients connect to this endpoint, they will see the same Tweets.</p>
+<p>Available parameters:</p>
+<p>- <code>string</code> delimited (optional, not affects <a class="el" href="namespaceCoreTweet.html">CoreTweet</a>)</p>
+<p>- <code>bool</code> stall_warnings (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The stream messages.</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a0f94e0ddd023a3be1a132f7c7a73c9d6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IObservable&lt;<a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingMessage.html">StreamingMessage</a>&gt; CoreTweet.Streaming.StreamingApi.SampleAsObservable </td>
+          <td>(</td>
+          <td class="paramtype">object&#160;</td>
+          <td class="paramname"><em>parameters</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a small random sample of all public statuses. </p>
+<p>The Tweets returned by the default access level are the same, so if two different clients connect to this endpoint, they will see the same Tweets.</p>
+<p>Available parameters:</p>
+<p>- <code>string</code> delimited (optional, not affects <a class="el" href="namespaceCoreTweet.html">CoreTweet</a>)</p>
+<p>- <code>bool</code> stall_warnings (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The stream messages.</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a03c329ffed50e6454aac7ea3b7f78174"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IObservable&lt;<a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingMessage.html">StreamingMessage</a>&gt; CoreTweet.Streaming.StreamingApi.SampleAsObservable </td>
           <td>(</td>
           <td class="paramtype">bool?&#160;</td>
           <td class="paramname"><em>stall_warnings</em> = <code>null</code></td><td>)</td>
@@ -806,6 +1353,181 @@ Additional Inherited Members</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">IEnumerable&lt;<a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingMessage.html">StreamingMessage</a>&gt; CoreTweet.Streaming.StreamingApi.Site </td>
+          <td>(</td>
+          <td class="paramtype">IEnumerable&lt; long &gt;&#160;</td>
+          <td class="paramname"><em>follow</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool?&#160;</td>
+          <td class="paramname"><em>stall_warnings</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>with</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>replies</em> = <code>null</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Streams messages for a set of users. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">follow</td><td>A comma separated list of user IDs, indicating the users to return statuses for in the stream.</td></tr>
+    <tr><td class="paramname">stall_warnings</td><td>Specifies whether stall warnings should be delivered.</td></tr>
+    <tr><td class="paramname">with</td><td>Specifies whether to return information for just the users specified in the follow parameter, or include messages from accounts they follow.</td></tr>
+    <tr><td class="paramname">replies</td><td>Specifies whether to return additional &amp;#64;replies.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The stream messages.</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9d957c250ff2f596efdf539f76694968"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IObservable&lt;<a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingMessage.html">StreamingMessage</a>&gt; CoreTweet.Streaming.StreamingApi.SiteAsObservable </td>
+          <td>(</td>
+          <td class="paramtype">params Expression&lt; Func&lt; string, object &gt;&gt;[]&#160;</td>
+          <td class="paramname"><em>parameters</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Streams messages for a set of users. </p>
+<p>Available parameters:</p>
+<p>- <code>IEnumerable&lt;long&gt;</code> follow (required)</p>
+<p>- <code>string</code> delimited (optional, not affects <a class="el" href="namespaceCoreTweet.html">CoreTweet</a>)</p>
+<p>- <code>bool</code> stall_warnings (optional)</p>
+<p>- <code>string</code> with (optional)</p>
+<p>- <code>string</code> replies (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The stream messages.</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a115d4394258f06cd93d73cbb5ddea371"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IObservable&lt;<a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingMessage.html">StreamingMessage</a>&gt; CoreTweet.Streaming.StreamingApi.SiteAsObservable </td>
+          <td>(</td>
+          <td class="paramtype">IDictionary&lt; string, object &gt;&#160;</td>
+          <td class="paramname"><em>parameters</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Streams messages for a set of users. </p>
+<p>Available parameters:</p>
+<p>- <code>IEnumerable&lt;long&gt;</code> follow (required)</p>
+<p>- <code>string</code> delimited (optional, not affects <a class="el" href="namespaceCoreTweet.html">CoreTweet</a>)</p>
+<p>- <code>bool</code> stall_warnings (optional)</p>
+<p>- <code>string</code> with (optional)</p>
+<p>- <code>string</code> replies (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The stream messages.</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab032f25c881deb83ed8ebe22f5a0e540"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IObservable&lt;<a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingMessage.html">StreamingMessage</a>&gt; CoreTweet.Streaming.StreamingApi.SiteAsObservable </td>
+          <td>(</td>
+          <td class="paramtype">object&#160;</td>
+          <td class="paramname"><em>parameters</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Streams messages for a set of users. </p>
+<p>Available parameters:</p>
+<p>- <code>IEnumerable&lt;long&gt;</code> follow (required)</p>
+<p>- <code>string</code> delimited (optional, not affects <a class="el" href="namespaceCoreTweet.html">CoreTweet</a>)</p>
+<p>- <code>bool</code> stall_warnings (optional)</p>
+<p>- <code>string</code> with (optional)</p>
+<p>- <code>string</code> replies (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The stream messages.</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aff62f0a439ce4152d22d733bd0ec275f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IObservable&lt;<a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingMessage.html">StreamingMessage</a>&gt; CoreTweet.Streaming.StreamingApi.SiteAsObservable </td>
           <td>(</td>
           <td class="paramtype">IEnumerable&lt; long &gt;&#160;</td>
           <td class="paramname"><em>follow</em>, </td>
@@ -1135,13 +1857,198 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a70d94b3fe6bb0172d247ad70a21736b3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IObservable&lt;<a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingMessage.html">StreamingMessage</a>&gt; CoreTweet.Streaming.StreamingApi.UserAsObservable </td>
+          <td>(</td>
+          <td class="paramtype">params Expression&lt; Func&lt; string, object &gt;&gt;[]&#160;</td>
+          <td class="paramname"><em>parameters</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Streams messages for a single user. </p>
+<p>Available parameters:</p>
+<p>- <code>string</code> delimited (optional, not affects <a class="el" href="namespaceCoreTweet.html">CoreTweet</a>)</p>
+<p>- <code>bool</code> stall_warnings (optional)</p>
+<p>- <code>string</code> with (optional)</p>
+<p>- <code>string</code> replies (optional)</p>
+<p>- <code>string</code> track (optional)</p>
+<p>- <code>IEnumerable&lt;double&gt;</code> locations (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The stream messages.</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4316fc278e7145a2e6e944b6ab536d2a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IObservable&lt;<a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingMessage.html">StreamingMessage</a>&gt; CoreTweet.Streaming.StreamingApi.UserAsObservable </td>
+          <td>(</td>
+          <td class="paramtype">IDictionary&lt; string, object &gt;&#160;</td>
+          <td class="paramname"><em>parameters</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Streams messages for a single user. </p>
+<p>Available parameters:</p>
+<p>- <code>string</code> delimited (optional, not affects <a class="el" href="namespaceCoreTweet.html">CoreTweet</a>)</p>
+<p>- <code>bool</code> stall_warnings (optional)</p>
+<p>- <code>string</code> with (optional)</p>
+<p>- <code>string</code> replies (optional)</p>
+<p>- <code>string</code> track (optional)</p>
+<p>- <code>IEnumerable&lt;double&gt;</code> locations (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The stream messages.</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a7a9799a791d0fea948aad47af16a0c65"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IObservable&lt;<a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingMessage.html">StreamingMessage</a>&gt; CoreTweet.Streaming.StreamingApi.UserAsObservable </td>
+          <td>(</td>
+          <td class="paramtype">object&#160;</td>
+          <td class="paramname"><em>parameters</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Streams messages for a single user. </p>
+<p>Available parameters:</p>
+<p>- <code>string</code> delimited (optional, not affects <a class="el" href="namespaceCoreTweet.html">CoreTweet</a>)</p>
+<p>- <code>bool</code> stall_warnings (optional)</p>
+<p>- <code>string</code> with (optional)</p>
+<p>- <code>string</code> replies (optional)</p>
+<p>- <code>string</code> track (optional)</p>
+<p>- <code>IEnumerable&lt;double&gt;</code> locations (optional)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The stream messages.</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a288a3db3ec3d338c89d0a02cbbfcf1ac"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IObservable&lt;<a class="el" href="classCoreTweet_1_1Streaming_1_1StreamingMessage.html">StreamingMessage</a>&gt; CoreTweet.Streaming.StreamingApi.UserAsObservable </td>
+          <td>(</td>
+          <td class="paramtype">bool?&#160;</td>
+          <td class="paramname"><em>stall_warnings</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>with</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>replies</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>track</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IEnumerable&lt; double &gt;&#160;</td>
+          <td class="paramname"><em>locations</em> = <code>null</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Streams messages for a single user. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stall_warnings</td><td>Specifies whether stall warnings should be delivered.</td></tr>
+    <tr><td class="paramname">with</td><td>Specifies whether to return information for just the authenticating user, or include messages from accounts the user follows.</td></tr>
+    <tr><td class="paramname">replies</td><td>Specifies whether to return additional &amp;#64;replies.</td></tr>
+    <tr><td class="paramname">track</td><td>Includes additional Tweets matching the specified keywords. Phrases of keywords are specified by a comma-separated list.</td></tr>
+    <tr><td class="paramname">locations</td><td>Includes additional Tweets falling within the specified bounding boxes.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The stream messages.</dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>CoreTweet.Shared/Streaming/<a class="el" href="CoreTweet_8Shared_2Streaming_2Stream_8cs.html">Stream.cs</a></li>
+<li>CoreTweet.Shared/Streaming/<a class="el" href="Stream_8cs.html">Stream.cs</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 21 2015 22:25:14 for CoreTweet by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 26 2015 00:30:37 for CoreTweet by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

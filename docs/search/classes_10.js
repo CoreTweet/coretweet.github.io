@@ -2,6 +2,7 @@ var searchData=
 [
   ['uploadedimage',['UploadedImage',['../classCoreTweet_1_1UploadedImage.html',1,'CoreTweet']]],
   ['uploadedvideo',['UploadedVideo',['../classCoreTweet_1_1UploadedVideo.html',1,'CoreTweet']]],
+  ['uploadinitcommandresult',['UploadInitCommandResult',['../classCoreTweet_1_1UploadInitCommandResult.html',1,'CoreTweet']]],
   ['urlentity',['UrlEntity',['../classCoreTweet_1_1UrlEntity.html',1,'CoreTweet']]],
   ['user',['User',['../classCoreTweet_1_1User.html',1,'CoreTweet']]],
   ['userentities',['UserEntities',['../classCoreTweet_1_1UserEntities.html',1,'CoreTweet']]],

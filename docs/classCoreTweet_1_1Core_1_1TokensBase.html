@@ -25,7 +25,7 @@
   <td id="projectlogo"><img alt="Logo" src="core-48x48.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">CoreTweet
-   &#160;<span id="projectnumber">0.5.3</span>
+   &#160;<span id="projectnumber">0.6.0</span>
    </div>
    <div id="projectbrief">Yet another .NET Twitter Library</div>
   </td>
@@ -93,6 +93,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#properties">Properties</a> &#124;
 <a href="classCoreTweet_1_1Core_1_1TokensBase-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -130,12 +131,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5b27f1f12146875e9b0ab0e991e8894b"><td class="memItemLeft" align="right" valign="top">Task&lt; <a class="el" href="classCoreTweet_1_1AsyncResponse.html">AsyncResponse</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Core_1_1TokensBase.html#a5b27f1f12146875e9b0ab0e991e8894b">SendRequestAsyncImpl</a> (<a class="el" href="namespaceCoreTweet.html#a6e05c1dcaf2cf8e4ece975f7d3af0e26">MethodType</a> type, string url, IEnumerable&lt; KeyValuePair&lt; string, object &gt;&gt; parameters, CancellationToken cancellationToken)</td></tr>
 <tr class="memdesc:a5b27f1f12146875e9b0ab0e991e8894b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a streaming request to the specified url with the specified parameters as an asynchronous operation.  <a href="#a5b27f1f12146875e9b0ab0e991e8894b">More...</a><br /></td></tr>
 <tr class="separator:a5b27f1f12146875e9b0ab0e991e8894b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3d516bb48b2cd126a3c2820bf4a847f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Core_1_1TokensBase.html#ae3d516bb48b2cd126a3c2820bf4a847f">TokensBase</a> ()</td></tr>
-<tr class="memdesc:ae3d516bb48b2cd126a3c2820bf4a847f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new instance of the <a class="el" href="classCoreTweet_1_1Core_1_1TokensBase.html" title="Represents an OAuth token. This is an abstract class. ">CoreTweet.Core.TokensBase</a> class.  <a href="#ae3d516bb48b2cd126a3c2820bf4a847f">More...</a><br /></td></tr>
-<tr class="separator:ae3d516bb48b2cd126a3c2820bf4a847f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39d8f0f62be18072869f43fdb0eed62f"><td class="memItemLeft" align="right" valign="top">abstract string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Core_1_1TokensBase.html#a39d8f0f62be18072869f43fdb0eed62f">CreateAuthorizationHeader</a> (<a class="el" href="namespaceCoreTweet.html#a6e05c1dcaf2cf8e4ece975f7d3af0e26">MethodType</a> type, string url, IEnumerable&lt; KeyValuePair&lt; string, object &gt;&gt; parameters)</td></tr>
-<tr class="memdesc:a39d8f0f62be18072869f43fdb0eed62f"><td class="mdescLeft">&#160;</td><td class="mdescRight">When overridden in a descendant class, creates a string for Authorization header.  <a href="#a39d8f0f62be18072869f43fdb0eed62f">More...</a><br /></td></tr>
-<tr class="separator:a39d8f0f62be18072869f43fdb0eed62f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0932d5dced16c30a3a6ca4bb50156121"><td class="memItemLeft" align="right" valign="top">abstract string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Core_1_1TokensBase.html#a0932d5dced16c30a3a6ca4bb50156121">CreateAuthorizationHeader</a> (<a class="el" href="namespaceCoreTweet.html#a6e05c1dcaf2cf8e4ece975f7d3af0e26">MethodType</a> type, Uri url, IEnumerable&lt; KeyValuePair&lt; string, object &gt;&gt; parameters)</td></tr>
+<tr class="memdesc:a0932d5dced16c30a3a6ca4bb50156121"><td class="mdescLeft">&#160;</td><td class="mdescRight">When overridden in a descendant class, creates a string for Authorization header.  <a href="#a0932d5dced16c30a3a6ca4bb50156121">More...</a><br /></td></tr>
+<tr class="separator:a0932d5dced16c30a3a6ca4bb50156121"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7b226d241132b4a8d4250aadbfa0931"><td class="memItemLeft" align="right" valign="top">HttpWebResponse&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Core_1_1TokensBase.html#af7b226d241132b4a8d4250aadbfa0931">SendRequest</a> (<a class="el" href="namespaceCoreTweet.html#a6e05c1dcaf2cf8e4ece975f7d3af0e26">MethodType</a> type, string url, params Expression&lt; Func&lt; string, object &gt;&gt;[] parameters)</td></tr>
 <tr class="memdesc:af7b226d241132b4a8d4250aadbfa0931"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a request to the specified url with the specified parameters.  <a href="#af7b226d241132b4a8d4250aadbfa0931">More...</a><br /></td></tr>
 <tr class="separator:af7b226d241132b4a8d4250aadbfa0931"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -209,6 +207,12 @@ Public Attributes</h2></td></tr>
 <tr class="memdesc:aaca3159ce0ca51979ad01d60252649e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the wrapper of the <a class="el" href="namespaceCoreTweet_1_1Streaming.html">Streaming</a> API.  <a href="#aaca3159ce0ca51979ad01d60252649e5">More...</a><br /></td></tr>
 <tr class="separator:aaca3159ce0ca51979ad01d60252649e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:ae3d516bb48b2cd126a3c2820bf4a847f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Core_1_1TokensBase.html#ae3d516bb48b2cd126a3c2820bf4a847f">TokensBase</a> ()</td></tr>
+<tr class="memdesc:ae3d516bb48b2cd126a3c2820bf4a847f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new instance of the <a class="el" href="classCoreTweet_1_1Core_1_1TokensBase.html" title="Represents an OAuth token. This is an abstract class. ">TokensBase</a> class.  <a href="#ae3d516bb48b2cd126a3c2820bf4a847f">More...</a><br /></td></tr>
+<tr class="separator:ae3d516bb48b2cd126a3c2820bf4a847f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:a80586cc16e684e67c2e8aea6e0a33e38"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Core_1_1TokensBase.html#a80586cc16e684e67c2e8aea6e0a33e38">ConsumerKey</a><code> [get, set]</code></td></tr>
@@ -240,17 +244,17 @@ Properties</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Initializes a new instance of the <a class="el" href="classCoreTweet_1_1Core_1_1TokensBase.html" title="Represents an OAuth token. This is an abstract class. ">CoreTweet.Core.TokensBase</a> class. </p>
+<p>Initializes a new instance of the <a class="el" href="classCoreTweet_1_1Core_1_1TokensBase.html" title="Represents an OAuth token. This is an abstract class. ">TokensBase</a> class. </p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a39d8f0f62be18072869f43fdb0eed62f"></a>
+<a class="anchor" id="a0932d5dced16c30a3a6ca4bb50156121"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -266,7 +270,7 @@ Properties</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">string&#160;</td>
+          <td class="paramtype">Uri&#160;</td>
           <td class="paramname"><em>url</em>, </td>
         </tr>
         <tr>
@@ -299,7 +303,7 @@ Properties</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A string for Authorization header.</dd></dl>
 
-<p>Implemented in <a class="el" href="classCoreTweet_1_1Tokens.html#a48652f6cb2b5674be701deae05251e01">CoreTweet.Tokens</a>, and <a class="el" href="classCoreTweet_1_1OAuth2Token.html#afa8083dd37011053b2448a9c7acc9c71">CoreTweet.OAuth2Token</a>.</p>
+<p>Implemented in <a class="el" href="classCoreTweet_1_1Tokens.html#a080824567a7b0b5a402b412f9a2c11be">CoreTweet.Tokens</a>, and <a class="el" href="classCoreTweet_1_1OAuth2Token.html#ac32c805d459cba9d7871e23d4f576a08">CoreTweet.OAuth2Token</a>.</p>
 
 </div>
 </div>
@@ -1143,7 +1147,7 @@ Properties</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 21 2015 22:25:13 for CoreTweet by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 26 2015 00:30:36 for CoreTweet by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>
