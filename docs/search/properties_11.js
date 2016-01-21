@@ -16,5 +16,6 @@ var searchData=
   ['track',['Track',['../classCoreTweet_1_1Streaming_1_1LimitMessage.html#a56e75a26714cb530269960b0fe59f158',1,'CoreTweet::Streaming::LimitMessage']]],
   ['trendlocaion',['TrendLocaion',['../classCoreTweet_1_1Setting.html#a002c8ae7f4880dc795c5406aaad28f61',1,'CoreTweet::Setting']]],
   ['trends',['Trends',['../classCoreTweet_1_1TrendsResult.html#a1ae2921b779a52db4b4a53ad3555d03c',1,'CoreTweet::TrendsResult']]],
+  ['tweetvolume',['TweetVolume',['../classCoreTweet_1_1Trend.html#a24282283409f369c29d93abbc26d99cb',1,'CoreTweet::Trend']]],
   ['type',['Type',['../classCoreTweet_1_1Embed.html#aa3781766d7f803c37cab06cfb5ebd14c',1,'CoreTweet.Embed.Type()'],['../classCoreTweet_1_1MediaEntity.html#a2af2cda8d5ac5bcf911b2ebc0160be52',1,'CoreTweet.MediaEntity.Type()'],['../classCoreTweet_1_1BoundingBox.html#ac247f0ec7663b0ebd4df287fa0f54bbd',1,'CoreTweet.BoundingBox.Type()'],['../classCoreTweet_1_1Coordinates.html#a0d1d1351156d6149cb30165a9da82791',1,'CoreTweet.Coordinates.Type()']]]
 ];

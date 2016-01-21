@@ -25,7 +25,7 @@
   <td id="projectlogo"><img alt="Logo" src="core-48x48.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">CoreTweet
-   &#160;<span id="projectnumber">0.6.0</span>
+   &#160;<span id="projectnumber">0.6.1</span>
    </div>
    <div id="projectbrief">Yet another .NET Twitter Library</div>
   </td>
@@ -403,8 +403,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Destroys the status specified by the required ID parameter.</p>
-<p>The authenticating user must be the author of the specified status.</p>
-<p>Returns the destroyed status if successful.</p>
 <p>Available parameters:</p>
 <p>- <code>long</code> id (required)</p>
 <p>- <code>bool</code> trim_user (optional)</p>
@@ -442,8 +440,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Destroys the status specified by the required ID parameter.</p>
-<p>The authenticating user must be the author of the specified status.</p>
-<p>Returns the destroyed status if successful.</p>
 <p>Available parameters:</p>
 <p>- <code>long</code> id (required)</p>
 <p>- <code>bool</code> trim_user (optional)</p>
@@ -481,8 +477,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Destroys the status specified by the required ID parameter.</p>
-<p>The authenticating user must be the author of the specified status.</p>
-<p>Returns the destroyed status if successful.</p>
 <p>Available parameters:</p>
 <p>- <code>long</code> id (required)</p>
 <p>- <code>bool</code> trim_user (optional)</p>
@@ -530,8 +524,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Destroys the status specified by the required ID parameter.</p>
-<p>The authenticating user must be the author of the specified status.</p>
-<p>Returns the destroyed status if successful.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">id</td><td>required.</td></tr>
@@ -567,8 +559,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Destroys the status specified by the required ID parameter.</p>
-<p>The authenticating user must be the author of the specified status.</p>
-<p>Returns the destroyed status if successful.</p>
 <p>Available parameters:</p>
 <p>- <code>long</code> id (required)</p>
 <p>- <code>bool</code> trim_user (optional)</p>
@@ -616,8 +606,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Destroys the status specified by the required ID parameter.</p>
-<p>The authenticating user must be the author of the specified status.</p>
-<p>Returns the destroyed status if successful.</p>
 <p>Available parameters:</p>
 <p>- <code>long</code> id (required)</p>
 <p>- <code>bool</code> trim_user (optional)</p>
@@ -666,8 +654,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Destroys the status specified by the required ID parameter.</p>
-<p>The authenticating user must be the author of the specified status.</p>
-<p>Returns the destroyed status if successful.</p>
 <p>Available parameters:</p>
 <p>- <code>long</code> id (required)</p>
 <p>- <code>bool</code> trim_user (optional)</p>
@@ -722,8 +708,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Destroys the status specified by the required ID parameter.</p>
-<p>The authenticating user must be the author of the specified status.</p>
-<p>Returns the destroyed status if successful.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">id</td><td>required.</td></tr>
@@ -776,7 +760,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns a collection of up to 100 user IDs belonging to users who have retweeted the tweet specified by the id parameter.</p>
-<p>This method offers similar data to GET statuses/retweets/:id and replaces API v1's GET statuses/:id/retweeted_by/ids method.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">id</td><td>required.</td></tr>
@@ -823,7 +806,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns a collection of up to 100 user IDs belonging to users who have retweeted the tweet specified by the id parameter.</p>
-<p>This method offers similar data to GET statuses/retweets/:id and replaces API v1's GET statuses/:id/retweeted_by/ids method.</p>
 <p>Available parameters:</p>
 <p>- <code>long</code> id (required)</p>
 <p>- <code>long</code> cursor (semi-optional)</p>
@@ -872,7 +854,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns a collection of up to 100 user IDs belonging to users who have retweeted the tweet specified by the id parameter.</p>
-<p>This method offers similar data to GET statuses/retweets/:id and replaces API v1's GET statuses/:id/retweeted_by/ids method.</p>
 <p>Available parameters:</p>
 <p>- <code>long</code> id (required)</p>
 <p>- <code>long</code> cursor (semi-optional)</p>
@@ -921,7 +902,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns a collection of up to 100 user IDs belonging to users who have retweeted the tweet specified by the id parameter.</p>
-<p>This method offers similar data to GET statuses/retweets/:id and replaces API v1's GET statuses/:id/retweeted_by/ids method.</p>
 <p>Available parameters:</p>
 <p>- <code>long</code> id (required)</p>
 <p>- <code>long</code> cursor (semi-optional)</p>
@@ -960,9 +940,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns a collection of the most recent Tweets and retweets posted by the authenticating user and the users they follow.</p>
-<p>The home timeline is central to how most users interact with the Twitter service.</p>
-<p>Up to 800 Tweets are obtainable on the home timeline.</p>
-<p>It is more volatile for users that follow many users or follow users who tweet frequently.</p>
 <p>Available parameters:</p>
 <p>- <code>int</code> count (optional)</p>
 <p>- <code>long</code> since_id (optional)</p>
@@ -1005,9 +982,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns a collection of the most recent Tweets and retweets posted by the authenticating user and the users they follow.</p>
-<p>The home timeline is central to how most users interact with the Twitter service.</p>
-<p>Up to 800 Tweets are obtainable on the home timeline.</p>
-<p>It is more volatile for users that follow many users or follow users who tweet frequently.</p>
 <p>Available parameters:</p>
 <p>- <code>int</code> count (optional)</p>
 <p>- <code>long</code> since_id (optional)</p>
@@ -1050,9 +1024,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns a collection of the most recent Tweets and retweets posted by the authenticating user and the users they follow.</p>
-<p>The home timeline is central to how most users interact with the Twitter service.</p>
-<p>Up to 800 Tweets are obtainable on the home timeline.</p>
-<p>It is more volatile for users that follow many users or follow users who tweet frequently.</p>
 <p>Available parameters:</p>
 <p>- <code>int</code> count (optional)</p>
 <p>- <code>long</code> since_id (optional)</p>
@@ -1135,9 +1106,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns a collection of the most recent Tweets and retweets posted by the authenticating user and the users they follow.</p>
-<p>The home timeline is central to how most users interact with the Twitter service.</p>
-<p>Up to 800 Tweets are obtainable on the home timeline.</p>
-<p>It is more volatile for users that follow many users or follow users who tweet frequently.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">count</td><td>optional.</td></tr>
@@ -1178,9 +1146,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns a collection of the most recent Tweets and retweets posted by the authenticating user and the users they follow.</p>
-<p>The home timeline is central to how most users interact with the Twitter service.</p>
-<p>Up to 800 Tweets are obtainable on the home timeline.</p>
-<p>It is more volatile for users that follow many users or follow users who tweet frequently.</p>
 <p>Available parameters:</p>
 <p>- <code>int</code> count (optional)</p>
 <p>- <code>long</code> since_id (optional)</p>
@@ -1233,9 +1198,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns a collection of the most recent Tweets and retweets posted by the authenticating user and the users they follow.</p>
-<p>The home timeline is central to how most users interact with the Twitter service.</p>
-<p>Up to 800 Tweets are obtainable on the home timeline.</p>
-<p>It is more volatile for users that follow many users or follow users who tweet frequently.</p>
 <p>Available parameters:</p>
 <p>- <code>int</code> count (optional)</p>
 <p>- <code>long</code> since_id (optional)</p>
@@ -1289,9 +1251,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns a collection of the most recent Tweets and retweets posted by the authenticating user and the users they follow.</p>
-<p>The home timeline is central to how most users interact with the Twitter service.</p>
-<p>Up to 800 Tweets are obtainable on the home timeline.</p>
-<p>It is more volatile for users that follow many users or follow users who tweet frequently.</p>
 <p>Available parameters:</p>
 <p>- <code>int</code> count (optional)</p>
 <p>- <code>long</code> since_id (optional)</p>
@@ -1381,9 +1340,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns a collection of the most recent Tweets and retweets posted by the authenticating user and the users they follow.</p>
-<p>The home timeline is central to how most users interact with the Twitter service.</p>
-<p>Up to 800 Tweets are obtainable on the home timeline.</p>
-<p>It is more volatile for users that follow many users or follow users who tweet frequently.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">count</td><td>optional.</td></tr>
@@ -1425,7 +1381,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns fully-hydrated tweet objects for up to 100 tweets per request, as specified by comma-separated values passed to the id parameter.</p>
-<p>This method is especially useful to get the details (hydrate) a collection of Tweet IDs.</p>
 <p>Available parameters:</p>
 <p>- <code>IEnumerable&lt;long&gt;</code> id (required)</p>
 <p>- <code>bool</code> trim_user (optional)</p>
@@ -1464,7 +1419,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns fully-hydrated tweet objects for up to 100 tweets per request, as specified by comma-separated values passed to the id parameter.</p>
-<p>This method is especially useful to get the details (hydrate) a collection of Tweet IDs.</p>
 <p>Available parameters:</p>
 <p>- <code>IEnumerable&lt;long&gt;</code> id (required)</p>
 <p>- <code>bool</code> trim_user (optional)</p>
@@ -1503,7 +1457,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns fully-hydrated tweet objects for up to 100 tweets per request, as specified by comma-separated values passed to the id parameter.</p>
-<p>This method is especially useful to get the details (hydrate) a collection of Tweet IDs.</p>
 <p>Available parameters:</p>
 <p>- <code>IEnumerable&lt;long&gt;</code> id (required)</p>
 <p>- <code>bool</code> trim_user (optional)</p>
@@ -1558,7 +1511,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns fully-hydrated tweet objects for up to 100 tweets per request, as specified by comma-separated values passed to the id parameter.</p>
-<p>This method is especially useful to get the details (hydrate) a collection of Tweet IDs.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">id</td><td>required.</td></tr>
@@ -1595,7 +1547,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns fully-hydrated tweet objects for up to 100 tweets per request, as specified by comma-separated values passed to the id parameter.</p>
-<p>This method is especially useful to get the details (hydrate) a collection of Tweet IDs.</p>
 <p>Available parameters:</p>
 <p>- <code>IEnumerable&lt;long&gt;</code> id (required)</p>
 <p>- <code>bool</code> trim_user (optional)</p>
@@ -1644,7 +1595,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns fully-hydrated tweet objects for up to 100 tweets per request, as specified by comma-separated values passed to the id parameter.</p>
-<p>This method is especially useful to get the details (hydrate) a collection of Tweet IDs.</p>
 <p>Available parameters:</p>
 <p>- <code>IEnumerable&lt;long&gt;</code> id (required)</p>
 <p>- <code>bool</code> trim_user (optional)</p>
@@ -1694,7 +1644,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns fully-hydrated tweet objects for up to 100 tweets per request, as specified by comma-separated values passed to the id parameter.</p>
-<p>This method is especially useful to get the details (hydrate) a collection of Tweet IDs.</p>
 <p>Available parameters:</p>
 <p>- <code>IEnumerable&lt;long&gt;</code> id (required)</p>
 <p>- <code>bool</code> trim_user (optional)</p>
@@ -1756,7 +1705,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns fully-hydrated tweet objects for up to 100 tweets per request, as specified by comma-separated values passed to the id parameter.</p>
-<p>This method is especially useful to get the details (hydrate) a collection of Tweet IDs.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">id</td><td>required.</td></tr>
@@ -1794,7 +1742,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns fully-hydrated tweet objects for up to 100 tweets per request, as specified by comma-separated values passed to the id parameter.</p>
-<p>This method is especially useful to get the details (hydrate) a collection of Tweet IDs.</p>
 <p>Available parameters:</p>
 <p>- <code>IEnumerable&lt;long&gt;</code> id (required)</p>
 <p>- <code>bool</code> trim_user (optional)</p>
@@ -1833,7 +1780,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns fully-hydrated tweet objects for up to 100 tweets per request, as specified by comma-separated values passed to the id parameter.</p>
-<p>This method is especially useful to get the details (hydrate) a collection of Tweet IDs.</p>
 <p>Available parameters:</p>
 <p>- <code>IEnumerable&lt;long&gt;</code> id (required)</p>
 <p>- <code>bool</code> trim_user (optional)</p>
@@ -1872,7 +1818,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns fully-hydrated tweet objects for up to 100 tweets per request, as specified by comma-separated values passed to the id parameter.</p>
-<p>This method is especially useful to get the details (hydrate) a collection of Tweet IDs.</p>
 <p>Available parameters:</p>
 <p>- <code>IEnumerable&lt;long&gt;</code> id (required)</p>
 <p>- <code>bool</code> trim_user (optional)</p>
@@ -1927,7 +1872,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns fully-hydrated tweet objects for up to 100 tweets per request, as specified by comma-separated values passed to the id parameter.</p>
-<p>This method is especially useful to get the details (hydrate) a collection of Tweet IDs.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">id</td><td>required.</td></tr>
@@ -1964,7 +1908,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns fully-hydrated tweet objects for up to 100 tweets per request, as specified by comma-separated values passed to the id parameter.</p>
-<p>This method is especially useful to get the details (hydrate) a collection of Tweet IDs.</p>
 <p>Available parameters:</p>
 <p>- <code>IEnumerable&lt;long&gt;</code> id (required)</p>
 <p>- <code>bool</code> trim_user (optional)</p>
@@ -2013,7 +1956,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns fully-hydrated tweet objects for up to 100 tweets per request, as specified by comma-separated values passed to the id parameter.</p>
-<p>This method is especially useful to get the details (hydrate) a collection of Tweet IDs.</p>
 <p>Available parameters:</p>
 <p>- <code>IEnumerable&lt;long&gt;</code> id (required)</p>
 <p>- <code>bool</code> trim_user (optional)</p>
@@ -2063,7 +2005,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns fully-hydrated tweet objects for up to 100 tweets per request, as specified by comma-separated values passed to the id parameter.</p>
-<p>This method is especially useful to get the details (hydrate) a collection of Tweet IDs.</p>
 <p>Available parameters:</p>
 <p>- <code>IEnumerable&lt;long&gt;</code> id (required)</p>
 <p>- <code>bool</code> trim_user (optional)</p>
@@ -2125,7 +2066,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns fully-hydrated tweet objects for up to 100 tweets per request, as specified by comma-separated values passed to the id parameter.</p>
-<p>This method is especially useful to get the details (hydrate) a collection of Tweet IDs.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">id</td><td>required.</td></tr>
@@ -2162,9 +2102,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Returns the 20 most recent mentions (tweets containing a users's &amp;#64;screen_name) for the authenticating user.</p>
-<p>The timeline returned is the equivalent of the one seen when you view your mentions on twitter.com.</p>
-<p>This method can only return up to 800 tweets.</p>
+<p>Returns the most recent mentions (tweets containing a users's &amp;#64;screen_name) for the authenticating user.</p>
 <p>Available parameters:</p>
 <p>- <code>int</code> count (optional)</p>
 <p>- <code>long</code> since_id (optional)</p>
@@ -2205,9 +2143,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Returns the 20 most recent mentions (tweets containing a users's &amp;#64;screen_name) for the authenticating user.</p>
-<p>The timeline returned is the equivalent of the one seen when you view your mentions on twitter.com.</p>
-<p>This method can only return up to 800 tweets.</p>
+<p>Returns the most recent mentions (tweets containing a users's &amp;#64;screen_name) for the authenticating user.</p>
 <p>Available parameters:</p>
 <p>- <code>int</code> count (optional)</p>
 <p>- <code>long</code> since_id (optional)</p>
@@ -2248,9 +2184,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Returns the 20 most recent mentions (tweets containing a users's &amp;#64;screen_name) for the authenticating user.</p>
-<p>The timeline returned is the equivalent of the one seen when you view your mentions on twitter.com.</p>
-<p>This method can only return up to 800 tweets.</p>
+<p>Returns the most recent mentions (tweets containing a users's &amp;#64;screen_name) for the authenticating user.</p>
 <p>Available parameters:</p>
 <p>- <code>int</code> count (optional)</p>
 <p>- <code>long</code> since_id (optional)</p>
@@ -2325,9 +2259,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Returns the 20 most recent mentions (tweets containing a users's &amp;#64;screen_name) for the authenticating user.</p>
-<p>The timeline returned is the equivalent of the one seen when you view your mentions on twitter.com.</p>
-<p>This method can only return up to 800 tweets.</p>
+<p>Returns the most recent mentions (tweets containing a users's &amp;#64;screen_name) for the authenticating user.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">count</td><td>optional.</td></tr>
@@ -2366,9 +2298,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Returns the 20 most recent mentions (tweets containing a users's &amp;#64;screen_name) for the authenticating user.</p>
-<p>The timeline returned is the equivalent of the one seen when you view your mentions on twitter.com.</p>
-<p>This method can only return up to 800 tweets.</p>
+<p>Returns the most recent mentions (tweets containing a users's &amp;#64;screen_name) for the authenticating user.</p>
 <p>Available parameters:</p>
 <p>- <code>int</code> count (optional)</p>
 <p>- <code>long</code> since_id (optional)</p>
@@ -2419,9 +2349,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Returns the 20 most recent mentions (tweets containing a users's &amp;#64;screen_name) for the authenticating user.</p>
-<p>The timeline returned is the equivalent of the one seen when you view your mentions on twitter.com.</p>
-<p>This method can only return up to 800 tweets.</p>
+<p>Returns the most recent mentions (tweets containing a users's &amp;#64;screen_name) for the authenticating user.</p>
 <p>Available parameters:</p>
 <p>- <code>int</code> count (optional)</p>
 <p>- <code>long</code> since_id (optional)</p>
@@ -2473,9 +2401,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Returns the 20 most recent mentions (tweets containing a users's &amp;#64;screen_name) for the authenticating user.</p>
-<p>The timeline returned is the equivalent of the one seen when you view your mentions on twitter.com.</p>
-<p>This method can only return up to 800 tweets.</p>
+<p>Returns the most recent mentions (tweets containing a users's &amp;#64;screen_name) for the authenticating user.</p>
 <p>Available parameters:</p>
 <p>- <code>int</code> count (optional)</p>
 <p>- <code>long</code> since_id (optional)</p>
@@ -2557,9 +2483,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Returns the 20 most recent mentions (tweets containing a users's &amp;#64;screen_name) for the authenticating user.</p>
-<p>The timeline returned is the equivalent of the one seen when you view your mentions on twitter.com.</p>
-<p>This method can only return up to 800 tweets.</p>
+<p>Returns the most recent mentions (tweets containing a users's &amp;#64;screen_name) for the authenticating user.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">count</td><td>optional.</td></tr>
@@ -2600,8 +2524,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns information allowing the creation of an embedded representation of a Tweet on third party sites.</p>
-<p>While this endpoint allows a bit of customization for the final appearance of the embedded Tweet, be aware that the appearance of the rendered Tweet may change over time to be consistent with Twitter's Display Requirements.</p>
-<p>Do not rely on any class or id parameters to stay constant in the returned markup.</p>
 <p>Available parameters:</p>
 <p>- <code>long</code> id (any one is required)</p>
 <p>- <code>string</code> url (any one is required)</p>
@@ -2648,8 +2570,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns information allowing the creation of an embedded representation of a Tweet on third party sites.</p>
-<p>While this endpoint allows a bit of customization for the final appearance of the embedded Tweet, be aware that the appearance of the rendered Tweet may change over time to be consistent with Twitter's Display Requirements.</p>
-<p>Do not rely on any class or id parameters to stay constant in the returned markup.</p>
 <p>Available parameters:</p>
 <p>- <code>long</code> id (any one is required)</p>
 <p>- <code>string</code> url (any one is required)</p>
@@ -2696,8 +2616,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns information allowing the creation of an embedded representation of a Tweet on third party sites.</p>
-<p>While this endpoint allows a bit of customization for the final appearance of the embedded Tweet, be aware that the appearance of the rendered Tweet may change over time to be consistent with Twitter's Display Requirements.</p>
-<p>Do not rely on any class or id parameters to stay constant in the returned markup.</p>
 <p>Available parameters:</p>
 <p>- <code>long</code> id (any one is required)</p>
 <p>- <code>string</code> url (any one is required)</p>
@@ -2802,8 +2720,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns information allowing the creation of an embedded representation of a Tweet on third party sites.</p>
-<p>While this endpoint allows a bit of customization for the final appearance of the embedded Tweet, be aware that the appearance of the rendered Tweet may change over time to be consistent with Twitter's Display Requirements.</p>
-<p>Do not rely on any class or id parameters to stay constant in the returned markup.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">id</td><td>any one is required.</td></tr>
@@ -2905,8 +2821,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns information allowing the creation of an embedded representation of a Tweet on third party sites.</p>
-<p>While this endpoint allows a bit of customization for the final appearance of the embedded Tweet, be aware that the appearance of the rendered Tweet may change over time to be consistent with Twitter's Display Requirements.</p>
-<p>Do not rely on any class or id parameters to stay constant in the returned markup.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">url</td><td>any one is required.</td></tr>
@@ -2950,8 +2864,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns information allowing the creation of an embedded representation of a Tweet on third party sites.</p>
-<p>While this endpoint allows a bit of customization for the final appearance of the embedded Tweet, be aware that the appearance of the rendered Tweet may change over time to be consistent with Twitter's Display Requirements.</p>
-<p>Do not rely on any class or id parameters to stay constant in the returned markup.</p>
 <p>Available parameters:</p>
 <p>- <code>long</code> id (any one is required)</p>
 <p>- <code>string</code> url (any one is required)</p>
@@ -3008,8 +2920,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns information allowing the creation of an embedded representation of a Tweet on third party sites.</p>
-<p>While this endpoint allows a bit of customization for the final appearance of the embedded Tweet, be aware that the appearance of the rendered Tweet may change over time to be consistent with Twitter's Display Requirements.</p>
-<p>Do not rely on any class or id parameters to stay constant in the returned markup.</p>
 <p>Available parameters:</p>
 <p>- <code>long</code> id (any one is required)</p>
 <p>- <code>string</code> url (any one is required)</p>
@@ -3067,8 +2977,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns information allowing the creation of an embedded representation of a Tweet on third party sites.</p>
-<p>While this endpoint allows a bit of customization for the final appearance of the embedded Tweet, be aware that the appearance of the rendered Tweet may change over time to be consistent with Twitter's Display Requirements.</p>
-<p>Do not rely on any class or id parameters to stay constant in the returned markup.</p>
 <p>Available parameters:</p>
 <p>- <code>long</code> id (any one is required)</p>
 <p>- <code>string</code> url (any one is required)</p>
@@ -3180,8 +3088,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns information allowing the creation of an embedded representation of a Tweet on third party sites.</p>
-<p>While this endpoint allows a bit of customization for the final appearance of the embedded Tweet, be aware that the appearance of the rendered Tweet may change over time to be consistent with Twitter's Display Requirements.</p>
-<p>Do not rely on any class or id parameters to stay constant in the returned markup.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">id</td><td>any one is required.</td></tr>
@@ -3290,8 +3196,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns information allowing the creation of an embedded representation of a Tweet on third party sites.</p>
-<p>While this endpoint allows a bit of customization for the final appearance of the embedded Tweet, be aware that the appearance of the rendered Tweet may change over time to be consistent with Twitter's Display Requirements.</p>
-<p>Do not rely on any class or id parameters to stay constant in the returned markup.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">url</td><td>any one is required.</td></tr>
@@ -3335,7 +3239,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Retweets a tweet. Returns the original tweet with retweet details embedded.</p>
+<p>Retweets a tweet.</p>
 <p>Available parameters:</p>
 <p>- <code>long</code> id (required)</p>
 <p>- <code>bool</code> trim_user (optional)</p>
@@ -3372,7 +3276,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Retweets a tweet. Returns the original tweet with retweet details embedded.</p>
+<p>Retweets a tweet.</p>
 <p>Available parameters:</p>
 <p>- <code>long</code> id (required)</p>
 <p>- <code>bool</code> trim_user (optional)</p>
@@ -3409,7 +3313,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Retweets a tweet. Returns the original tweet with retweet details embedded.</p>
+<p>Retweets a tweet.</p>
 <p>Available parameters:</p>
 <p>- <code>long</code> id (required)</p>
 <p>- <code>bool</code> trim_user (optional)</p>
@@ -3456,7 +3360,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Retweets a tweet. Returns the original tweet with retweet details embedded.</p>
+<p>Retweets a tweet.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">id</td><td>required.</td></tr>
@@ -3491,7 +3395,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Retweets a tweet. Returns the original tweet with retweet details embedded.</p>
+<p>Retweets a tweet.</p>
 <p>Available parameters:</p>
 <p>- <code>long</code> id (required)</p>
 <p>- <code>bool</code> trim_user (optional)</p>
@@ -3538,7 +3442,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Retweets a tweet. Returns the original tweet with retweet details embedded.</p>
+<p>Retweets a tweet.</p>
 <p>Available parameters:</p>
 <p>- <code>long</code> id (required)</p>
 <p>- <code>bool</code> trim_user (optional)</p>
@@ -3586,7 +3490,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Retweets a tweet. Returns the original tweet with retweet details embedded.</p>
+<p>Retweets a tweet.</p>
 <p>Available parameters:</p>
 <p>- <code>long</code> id (required)</p>
 <p>- <code>bool</code> trim_user (optional)</p>
@@ -3640,7 +3544,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Retweets a tweet. Returns the original tweet with retweet details embedded.</p>
+<p>Retweets a tweet.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">id</td><td>required.</td></tr>
@@ -3677,7 +3581,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns a collection of up to 100 user IDs belonging to users who have retweeted the tweet specified by the id parameter.</p>
-<p>This method offers similar data to GET statuses/retweets/:id and replaces API v1's GET statuses/:id/retweeted_by/ids method.</p>
 <p>Available parameters:</p>
 <p>- <code>long</code> id (required)</p>
 <p>- <code>long</code> cursor (semi-optional)</p>
@@ -3715,7 +3618,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns a collection of up to 100 user IDs belonging to users who have retweeted the tweet specified by the id parameter.</p>
-<p>This method offers similar data to GET statuses/retweets/:id and replaces API v1's GET statuses/:id/retweeted_by/ids method.</p>
 <p>Available parameters:</p>
 <p>- <code>long</code> id (required)</p>
 <p>- <code>long</code> cursor (semi-optional)</p>
@@ -3753,7 +3655,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns a collection of up to 100 user IDs belonging to users who have retweeted the tweet specified by the id parameter.</p>
-<p>This method offers similar data to GET statuses/retweets/:id and replaces API v1's GET statuses/:id/retweeted_by/ids method.</p>
 <p>Available parameters:</p>
 <p>- <code>long</code> id (required)</p>
 <p>- <code>long</code> cursor (semi-optional)</p>
@@ -3801,7 +3702,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns a collection of up to 100 user IDs belonging to users who have retweeted the tweet specified by the id parameter.</p>
-<p>This method offers similar data to GET statuses/retweets/:id and replaces API v1's GET statuses/:id/retweeted_by/ids method.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">id</td><td>required.</td></tr>
@@ -3837,7 +3737,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns a collection of up to 100 user IDs belonging to users who have retweeted the tweet specified by the id parameter.</p>
-<p>This method offers similar data to GET statuses/retweets/:id and replaces API v1's GET statuses/:id/retweeted_by/ids method.</p>
 <p>Available parameters:</p>
 <p>- <code>long</code> id (required)</p>
 <p>- <code>long</code> cursor (semi-optional)</p>
@@ -3885,7 +3784,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns a collection of up to 100 user IDs belonging to users who have retweeted the tweet specified by the id parameter.</p>
-<p>This method offers similar data to GET statuses/retweets/:id and replaces API v1's GET statuses/:id/retweeted_by/ids method.</p>
 <p>Available parameters:</p>
 <p>- <code>long</code> id (required)</p>
 <p>- <code>long</code> cursor (semi-optional)</p>
@@ -3934,7 +3832,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns a collection of up to 100 user IDs belonging to users who have retweeted the tweet specified by the id parameter.</p>
-<p>This method offers similar data to GET statuses/retweets/:id and replaces API v1's GET statuses/:id/retweeted_by/ids method.</p>
 <p>Available parameters:</p>
 <p>- <code>long</code> id (required)</p>
 <p>- <code>long</code> cursor (semi-optional)</p>
@@ -3989,7 +3886,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns a collection of up to 100 user IDs belonging to users who have retweeted the tweet specified by the id parameter.</p>
-<p>This method offers similar data to GET statuses/retweets/:id and replaces API v1's GET statuses/:id/retweeted_by/ids method.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">id</td><td>required.</td></tr>
@@ -4387,7 +4283,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns the most recent tweets authored by the authenticating user that have recently been retweeted by others.</p>
-<p>This timeline is a subset of the user's GET statuses/user_timeline.</p>
 <p>Available parameters:</p>
 <p>- <code>int</code> count (optional)</p>
 <p>- <code>long</code> since_id (optional)</p>
@@ -4429,7 +4324,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns the most recent tweets authored by the authenticating user that have recently been retweeted by others.</p>
-<p>This timeline is a subset of the user's GET statuses/user_timeline.</p>
 <p>Available parameters:</p>
 <p>- <code>int</code> count (optional)</p>
 <p>- <code>long</code> since_id (optional)</p>
@@ -4471,7 +4365,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns the most recent tweets authored by the authenticating user that have recently been retweeted by others.</p>
-<p>This timeline is a subset of the user's GET statuses/user_timeline.</p>
 <p>Available parameters:</p>
 <p>- <code>int</code> count (optional)</p>
 <p>- <code>long</code> since_id (optional)</p>
@@ -4547,7 +4440,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns the most recent tweets authored by the authenticating user that have recently been retweeted by others.</p>
-<p>This timeline is a subset of the user's GET statuses/user_timeline.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">count</td><td>optional.</td></tr>
@@ -4587,7 +4479,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns the most recent tweets authored by the authenticating user that have recently been retweeted by others.</p>
-<p>This timeline is a subset of the user's GET statuses/user_timeline.</p>
 <p>Available parameters:</p>
 <p>- <code>int</code> count (optional)</p>
 <p>- <code>long</code> since_id (optional)</p>
@@ -4639,7 +4530,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns the most recent tweets authored by the authenticating user that have recently been retweeted by others.</p>
-<p>This timeline is a subset of the user's GET statuses/user_timeline.</p>
 <p>Available parameters:</p>
 <p>- <code>int</code> count (optional)</p>
 <p>- <code>long</code> since_id (optional)</p>
@@ -4692,7 +4582,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns the most recent tweets authored by the authenticating user that have recently been retweeted by others.</p>
-<p>This timeline is a subset of the user's GET statuses/user_timeline.</p>
 <p>Available parameters:</p>
 <p>- <code>int</code> count (optional)</p>
 <p>- <code>long</code> since_id (optional)</p>
@@ -4775,7 +4664,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns the most recent tweets authored by the authenticating user that have recently been retweeted by others.</p>
-<p>This timeline is a subset of the user's GET statuses/user_timeline.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">count</td><td>optional.</td></tr>
@@ -4816,7 +4704,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns a single Tweet, specified by the id parameter.</p>
-<p>The Tweet's author will also be embedded within the tweet.</p>
 <p>Available parameters:</p>
 <p>- <code>long</code> id (required)</p>
 <p>- <code>bool</code> trim_user (optional)</p>
@@ -4856,7 +4743,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns a single Tweet, specified by the id parameter.</p>
-<p>The Tweet's author will also be embedded within the tweet.</p>
 <p>Available parameters:</p>
 <p>- <code>long</code> id (required)</p>
 <p>- <code>bool</code> trim_user (optional)</p>
@@ -4896,7 +4782,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns a single Tweet, specified by the id parameter.</p>
-<p>The Tweet's author will also be embedded within the tweet.</p>
 <p>Available parameters:</p>
 <p>- <code>long</code> id (required)</p>
 <p>- <code>bool</code> trim_user (optional)</p>
@@ -4958,7 +4843,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns a single Tweet, specified by the id parameter.</p>
-<p>The Tweet's author will also be embedded within the tweet.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">id</td><td>required.</td></tr>
@@ -4996,7 +4880,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns a single Tweet, specified by the id parameter.</p>
-<p>The Tweet's author will also be embedded within the tweet.</p>
 <p>Available parameters:</p>
 <p>- <code>long</code> id (required)</p>
 <p>- <code>bool</code> trim_user (optional)</p>
@@ -5046,7 +4929,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns a single Tweet, specified by the id parameter.</p>
-<p>The Tweet's author will also be embedded within the tweet.</p>
 <p>Available parameters:</p>
 <p>- <code>long</code> id (required)</p>
 <p>- <code>bool</code> trim_user (optional)</p>
@@ -5097,7 +4979,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns a single Tweet, specified by the id parameter.</p>
-<p>The Tweet's author will also be embedded within the tweet.</p>
 <p>Available parameters:</p>
 <p>- <code>long</code> id (required)</p>
 <p>- <code>bool</code> trim_user (optional)</p>
@@ -5166,7 +5047,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns a single Tweet, specified by the id parameter.</p>
-<p>The Tweet's author will also be embedded within the tweet.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">id</td><td>required.</td></tr>
@@ -5205,8 +5085,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Updates the authenticating user’s current status, also known as Tweeting.</p>
-<p>For each update attempt, the update text is compared with the authenticating user’s recent Tweets. Any attempt that would result in duplication will be blocked, resulting in a 403 error. Therefore, a user cannot submit the same status twice in a row.</p>
-<p>While not rate limited by the API a user is limited in the number of Tweets they can create at a time. If the number of updates posted by the user reaches the current allowed limit this method will return an HTTP 403 error.</p>
 <p>Available parameters:</p>
 <p>- <code>string</code> status (required)</p>
 <p>- <code>long</code> in_reply_to_status_id (optional)</p>
@@ -5251,8 +5129,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Updates the authenticating user’s current status, also known as Tweeting.</p>
-<p>For each update attempt, the update text is compared with the authenticating user’s recent Tweets. Any attempt that would result in duplication will be blocked, resulting in a 403 error. Therefore, a user cannot submit the same status twice in a row.</p>
-<p>While not rate limited by the API a user is limited in the number of Tweets they can create at a time. If the number of updates posted by the user reaches the current allowed limit this method will return an HTTP 403 error.</p>
 <p>Available parameters:</p>
 <p>- <code>string</code> status (required)</p>
 <p>- <code>long</code> in_reply_to_status_id (optional)</p>
@@ -5297,8 +5173,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Updates the authenticating user’s current status, also known as Tweeting.</p>
-<p>For each update attempt, the update text is compared with the authenticating user’s recent Tweets. Any attempt that would result in duplication will be blocked, resulting in a 403 error. Therefore, a user cannot submit the same status twice in a row.</p>
-<p>While not rate limited by the API a user is limited in the number of Tweets they can create at a time. If the number of updates posted by the user reaches the current allowed limit this method will return an HTTP 403 error.</p>
 <p>Available parameters:</p>
 <p>- <code>string</code> status (required)</p>
 <p>- <code>long</code> in_reply_to_status_id (optional)</p>
@@ -5395,8 +5269,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Updates the authenticating user’s current status, also known as Tweeting.</p>
-<p>For each update attempt, the update text is compared with the authenticating user’s recent Tweets. Any attempt that would result in duplication will be blocked, resulting in a 403 error. Therefore, a user cannot submit the same status twice in a row.</p>
-<p>While not rate limited by the API a user is limited in the number of Tweets they can create at a time. If the number of updates posted by the user reaches the current allowed limit this method will return an HTTP 403 error.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">status</td><td>required.</td></tr>
@@ -5439,8 +5311,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Updates the authenticating user’s current status, also known as Tweeting.</p>
-<p>For each update attempt, the update text is compared with the authenticating user’s recent Tweets. Any attempt that would result in duplication will be blocked, resulting in a 403 error. Therefore, a user cannot submit the same status twice in a row.</p>
-<p>While not rate limited by the API a user is limited in the number of Tweets they can create at a time. If the number of updates posted by the user reaches the current allowed limit this method will return an HTTP 403 error.</p>
 <p>Available parameters:</p>
 <p>- <code>string</code> status (required)</p>
 <p>- <code>long</code> in_reply_to_status_id (optional)</p>
@@ -5495,8 +5365,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Updates the authenticating user’s current status, also known as Tweeting.</p>
-<p>For each update attempt, the update text is compared with the authenticating user’s recent Tweets. Any attempt that would result in duplication will be blocked, resulting in a 403 error. Therefore, a user cannot submit the same status twice in a row.</p>
-<p>While not rate limited by the API a user is limited in the number of Tweets they can create at a time. If the number of updates posted by the user reaches the current allowed limit this method will return an HTTP 403 error.</p>
 <p>Available parameters:</p>
 <p>- <code>string</code> status (required)</p>
 <p>- <code>long</code> in_reply_to_status_id (optional)</p>
@@ -5552,8 +5420,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Updates the authenticating user’s current status, also known as Tweeting.</p>
-<p>For each update attempt, the update text is compared with the authenticating user’s recent Tweets. Any attempt that would result in duplication will be blocked, resulting in a 403 error. Therefore, a user cannot submit the same status twice in a row.</p>
-<p>While not rate limited by the API a user is limited in the number of Tweets they can create at a time. If the number of updates posted by the user reaches the current allowed limit this method will return an HTTP 403 error.</p>
 <p>Available parameters:</p>
 <p>- <code>string</code> status (required)</p>
 <p>- <code>long</code> in_reply_to_status_id (optional)</p>
@@ -5657,8 +5523,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Updates the authenticating user’s current status, also known as Tweeting.</p>
-<p>For each update attempt, the update text is compared with the authenticating user’s recent Tweets. Any attempt that would result in duplication will be blocked, resulting in a 403 error. Therefore, a user cannot submit the same status twice in a row.</p>
-<p>While not rate limited by the API a user is limited in the number of Tweets they can create at a time. If the number of updates posted by the user reaches the current allowed limit this method will return an HTTP 403 error.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">status</td><td>required.</td></tr>
@@ -5701,8 +5565,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Updates the authenticating user’s current status and attaches media for upload. In other words, it creates a Tweet with a picture attached.</p>
-<p>The Tweet text will be rewritten to include the media URL(s), which will reduce the number of characters allowed in the Tweet text. If the URL(s) cannot be appended without text truncation, the tweet will be rejected and this method will return an HTTP 403 error.</p>
+<p>Updates the authenticating user’s current status and attaches media for upload.</p>
 <p>Available parameters:</p>
 <p>- <code>string</code> status (required)</p>
 <p>- <code>Stream</code> media (any one is required)</p>
@@ -5747,8 +5610,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Updates the authenticating user’s current status and attaches media for upload. In other words, it creates a Tweet with a picture attached.</p>
-<p>The Tweet text will be rewritten to include the media URL(s), which will reduce the number of characters allowed in the Tweet text. If the URL(s) cannot be appended without text truncation, the tweet will be rejected and this method will return an HTTP 403 error.</p>
+<p>Updates the authenticating user’s current status and attaches media for upload.</p>
 <p>Available parameters:</p>
 <p>- <code>string</code> status (required)</p>
 <p>- <code>Stream</code> media (any one is required)</p>
@@ -5793,8 +5655,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Updates the authenticating user’s current status and attaches media for upload. In other words, it creates a Tweet with a picture attached.</p>
-<p>The Tweet text will be rewritten to include the media URL(s), which will reduce the number of characters allowed in the Tweet text. If the URL(s) cannot be appended without text truncation, the tweet will be rejected and this method will return an HTTP 403 error.</p>
+<p>Updates the authenticating user’s current status and attaches media for upload.</p>
 <p>Available parameters:</p>
 <p>- <code>string</code> status (required)</p>
 <p>- <code>Stream</code> media (any one is required)</p>
@@ -5885,8 +5746,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Updates the authenticating user’s current status and attaches media for upload. In other words, it creates a Tweet with a picture attached.</p>
-<p>The Tweet text will be rewritten to include the media URL(s), which will reduce the number of characters allowed in the Tweet text. If the URL(s) cannot be appended without text truncation, the tweet will be rejected and this method will return an HTTP 403 error.</p>
+<p>Updates the authenticating user’s current status and attaches media for upload.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">status</td><td>required.</td></tr>
@@ -5973,8 +5833,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Updates the authenticating user’s current status and attaches media for upload. In other words, it creates a Tweet with a picture attached.</p>
-<p>The Tweet text will be rewritten to include the media URL(s), which will reduce the number of characters allowed in the Tweet text. If the URL(s) cannot be appended without text truncation, the tweet will be rejected and this method will return an HTTP 403 error.</p>
+<p>Updates the authenticating user’s current status and attaches media for upload.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">status</td><td>required.</td></tr>
@@ -6061,8 +5920,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Updates the authenticating user’s current status and attaches media for upload. In other words, it creates a Tweet with a picture attached.</p>
-<p>The Tweet text will be rewritten to include the media URL(s), which will reduce the number of characters allowed in the Tweet text. If the URL(s) cannot be appended without text truncation, the tweet will be rejected and this method will return an HTTP 403 error.</p>
+<p>Updates the authenticating user’s current status and attaches media for upload.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">status</td><td>required.</td></tr>
@@ -6103,8 +5961,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Updates the authenticating user’s current status and attaches media for upload. In other words, it creates a Tweet with a picture attached.</p>
-<p>The Tweet text will be rewritten to include the media URL(s), which will reduce the number of characters allowed in the Tweet text. If the URL(s) cannot be appended without text truncation, the tweet will be rejected and this method will return an HTTP 403 error.</p>
+<p>Updates the authenticating user’s current status and attaches media for upload.</p>
 <p>Available parameters:</p>
 <p>- <code>string</code> status (required)</p>
 <p>- <code>Stream</code> media (any one is required)</p>
@@ -6159,8 +6016,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Updates the authenticating user’s current status and attaches media for upload. In other words, it creates a Tweet with a picture attached.</p>
-<p>The Tweet text will be rewritten to include the media URL(s), which will reduce the number of characters allowed in the Tweet text. If the URL(s) cannot be appended without text truncation, the tweet will be rejected and this method will return an HTTP 403 error.</p>
+<p>Updates the authenticating user’s current status and attaches media for upload.</p>
 <p>Available parameters:</p>
 <p>- <code>string</code> status (required)</p>
 <p>- <code>Stream</code> media (any one is required)</p>
@@ -6216,8 +6072,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Updates the authenticating user’s current status and attaches media for upload. In other words, it creates a Tweet with a picture attached.</p>
-<p>The Tweet text will be rewritten to include the media URL(s), which will reduce the number of characters allowed in the Tweet text. If the URL(s) cannot be appended without text truncation, the tweet will be rejected and this method will return an HTTP 403 error.</p>
+<p>Updates the authenticating user’s current status and attaches media for upload.</p>
 <p>Available parameters:</p>
 <p>- <code>string</code> status (required)</p>
 <p>- <code>Stream</code> media (any one is required)</p>
@@ -6315,8 +6170,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Updates the authenticating user’s current status and attaches media for upload. In other words, it creates a Tweet with a picture attached.</p>
-<p>The Tweet text will be rewritten to include the media URL(s), which will reduce the number of characters allowed in the Tweet text. If the URL(s) cannot be appended without text truncation, the tweet will be rejected and this method will return an HTTP 403 error.</p>
+<p>Updates the authenticating user’s current status and attaches media for upload.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">status</td><td>required.</td></tr>
@@ -6410,8 +6264,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Updates the authenticating user’s current status and attaches media for upload. In other words, it creates a Tweet with a picture attached.</p>
-<p>The Tweet text will be rewritten to include the media URL(s), which will reduce the number of characters allowed in the Tweet text. If the URL(s) cannot be appended without text truncation, the tweet will be rejected and this method will return an HTTP 403 error.</p>
+<p>Updates the authenticating user’s current status and attaches media for upload.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">status</td><td>required.</td></tr>
@@ -6505,8 +6358,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p></p>
-<p>Updates the authenticating user’s current status and attaches media for upload. In other words, it creates a Tweet with a picture attached.</p>
-<p>The Tweet text will be rewritten to include the media URL(s), which will reduce the number of characters allowed in the Tweet text. If the URL(s) cannot be appended without text truncation, the tweet will be rejected and this method will return an HTTP 403 error.</p>
+<p>Updates the authenticating user’s current status and attaches media for upload.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">status</td><td>required.</td></tr>
@@ -6549,10 +6401,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns a collection of the most recent Tweets posted by the user indicated by the screen_name or user_id parameters.</p>
-<p><a class="el" href="classCoreTweet_1_1User.html" title="Represents a user. ">User</a> timelines belonging to protected users may only be requested when the authenticated user either "owns" the timeline or is an approved follower of the owner.</p>
-<p>The timeline returned is the equivalent of the one seen when you view a user's profile on twitter.com.</p>
-<p>This method can only return up to 3,200 of a user's most recent Tweets.</p>
-<p>Native retweets of other statuses by the user is included in this total, regardless of whether include_rts is set to false when requesting this resource.</p>
 <p>Available parameters:</p>
 <p>- <code>long</code> user_id (any one is required)</p>
 <p>- <code>string</code> screen_name (any one is required)</p>
@@ -6597,10 +6445,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns a collection of the most recent Tweets posted by the user indicated by the screen_name or user_id parameters.</p>
-<p><a class="el" href="classCoreTweet_1_1User.html" title="Represents a user. ">User</a> timelines belonging to protected users may only be requested when the authenticated user either "owns" the timeline or is an approved follower of the owner.</p>
-<p>The timeline returned is the equivalent of the one seen when you view a user's profile on twitter.com.</p>
-<p>This method can only return up to 3,200 of a user's most recent Tweets.</p>
-<p>Native retweets of other statuses by the user is included in this total, regardless of whether include_rts is set to false when requesting this resource.</p>
 <p>Available parameters:</p>
 <p>- <code>long</code> user_id (any one is required)</p>
 <p>- <code>string</code> screen_name (any one is required)</p>
@@ -6645,10 +6489,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns a collection of the most recent Tweets posted by the user indicated by the screen_name or user_id parameters.</p>
-<p><a class="el" href="classCoreTweet_1_1User.html" title="Represents a user. ">User</a> timelines belonging to protected users may only be requested when the authenticated user either "owns" the timeline or is an approved follower of the owner.</p>
-<p>The timeline returned is the equivalent of the one seen when you view a user's profile on twitter.com.</p>
-<p>This method can only return up to 3,200 of a user's most recent Tweets.</p>
-<p>Native retweets of other statuses by the user is included in this total, regardless of whether include_rts is set to false when requesting this resource.</p>
 <p>Available parameters:</p>
 <p>- <code>long</code> user_id (any one is required)</p>
 <p>- <code>string</code> screen_name (any one is required)</p>
@@ -6733,10 +6573,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns a collection of the most recent Tweets posted by the user indicated by the screen_name or user_id parameters.</p>
-<p><a class="el" href="classCoreTweet_1_1User.html" title="Represents a user. ">User</a> timelines belonging to protected users may only be requested when the authenticated user either "owns" the timeline or is an approved follower of the owner.</p>
-<p>The timeline returned is the equivalent of the one seen when you view a user's profile on twitter.com.</p>
-<p>This method can only return up to 3,200 of a user's most recent Tweets.</p>
-<p>Native retweets of other statuses by the user is included in this total, regardless of whether include_rts is set to false when requesting this resource.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">count</td><td>optional.</td></tr>
@@ -6823,10 +6659,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns a collection of the most recent Tweets posted by the user indicated by the screen_name or user_id parameters.</p>
-<p><a class="el" href="classCoreTweet_1_1User.html" title="Represents a user. ">User</a> timelines belonging to protected users may only be requested when the authenticated user either "owns" the timeline or is an approved follower of the owner.</p>
-<p>The timeline returned is the equivalent of the one seen when you view a user's profile on twitter.com.</p>
-<p>This method can only return up to 3,200 of a user's most recent Tweets.</p>
-<p>Native retweets of other statuses by the user is included in this total, regardless of whether include_rts is set to false when requesting this resource.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">user_id</td><td>any one is required.</td></tr>
@@ -6914,10 +6746,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns a collection of the most recent Tweets posted by the user indicated by the screen_name or user_id parameters.</p>
-<p><a class="el" href="classCoreTweet_1_1User.html" title="Represents a user. ">User</a> timelines belonging to protected users may only be requested when the authenticated user either "owns" the timeline or is an approved follower of the owner.</p>
-<p>The timeline returned is the equivalent of the one seen when you view a user's profile on twitter.com.</p>
-<p>This method can only return up to 3,200 of a user's most recent Tweets.</p>
-<p>Native retweets of other statuses by the user is included in this total, regardless of whether include_rts is set to false when requesting this resource.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">screen_name</td><td>any one is required.</td></tr>
@@ -6959,10 +6787,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns a collection of the most recent Tweets posted by the user indicated by the screen_name or user_id parameters.</p>
-<p><a class="el" href="classCoreTweet_1_1User.html" title="Represents a user. ">User</a> timelines belonging to protected users may only be requested when the authenticated user either "owns" the timeline or is an approved follower of the owner.</p>
-<p>The timeline returned is the equivalent of the one seen when you view a user's profile on twitter.com.</p>
-<p>This method can only return up to 3,200 of a user's most recent Tweets.</p>
-<p>Native retweets of other statuses by the user is included in this total, regardless of whether include_rts is set to false when requesting this resource.</p>
 <p>Available parameters:</p>
 <p>- <code>long</code> user_id (any one is required)</p>
 <p>- <code>string</code> screen_name (any one is required)</p>
@@ -7017,10 +6841,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns a collection of the most recent Tweets posted by the user indicated by the screen_name or user_id parameters.</p>
-<p><a class="el" href="classCoreTweet_1_1User.html" title="Represents a user. ">User</a> timelines belonging to protected users may only be requested when the authenticated user either "owns" the timeline or is an approved follower of the owner.</p>
-<p>The timeline returned is the equivalent of the one seen when you view a user's profile on twitter.com.</p>
-<p>This method can only return up to 3,200 of a user's most recent Tweets.</p>
-<p>Native retweets of other statuses by the user is included in this total, regardless of whether include_rts is set to false when requesting this resource.</p>
 <p>Available parameters:</p>
 <p>- <code>long</code> user_id (any one is required)</p>
 <p>- <code>string</code> screen_name (any one is required)</p>
@@ -7076,10 +6896,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns a collection of the most recent Tweets posted by the user indicated by the screen_name or user_id parameters.</p>
-<p><a class="el" href="classCoreTweet_1_1User.html" title="Represents a user. ">User</a> timelines belonging to protected users may only be requested when the authenticated user either "owns" the timeline or is an approved follower of the owner.</p>
-<p>The timeline returned is the equivalent of the one seen when you view a user's profile on twitter.com.</p>
-<p>This method can only return up to 3,200 of a user's most recent Tweets.</p>
-<p>Native retweets of other statuses by the user is included in this total, regardless of whether include_rts is set to false when requesting this resource.</p>
 <p>Available parameters:</p>
 <p>- <code>long</code> user_id (any one is required)</p>
 <p>- <code>string</code> screen_name (any one is required)</p>
@@ -7171,10 +6987,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns a collection of the most recent Tweets posted by the user indicated by the screen_name or user_id parameters.</p>
-<p><a class="el" href="classCoreTweet_1_1User.html" title="Represents a user. ">User</a> timelines belonging to protected users may only be requested when the authenticated user either "owns" the timeline or is an approved follower of the owner.</p>
-<p>The timeline returned is the equivalent of the one seen when you view a user's profile on twitter.com.</p>
-<p>This method can only return up to 3,200 of a user's most recent Tweets.</p>
-<p>Native retweets of other statuses by the user is included in this total, regardless of whether include_rts is set to false when requesting this resource.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">count</td><td>optional.</td></tr>
@@ -7268,10 +7080,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns a collection of the most recent Tweets posted by the user indicated by the screen_name or user_id parameters.</p>
-<p><a class="el" href="classCoreTweet_1_1User.html" title="Represents a user. ">User</a> timelines belonging to protected users may only be requested when the authenticated user either "owns" the timeline or is an approved follower of the owner.</p>
-<p>The timeline returned is the equivalent of the one seen when you view a user's profile on twitter.com.</p>
-<p>This method can only return up to 3,200 of a user's most recent Tweets.</p>
-<p>Native retweets of other statuses by the user is included in this total, regardless of whether include_rts is set to false when requesting this resource.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">user_id</td><td>any one is required.</td></tr>
@@ -7366,10 +7174,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns a collection of the most recent Tweets posted by the user indicated by the screen_name or user_id parameters.</p>
-<p><a class="el" href="classCoreTweet_1_1User.html" title="Represents a user. ">User</a> timelines belonging to protected users may only be requested when the authenticated user either "owns" the timeline or is an approved follower of the owner.</p>
-<p>The timeline returned is the equivalent of the one seen when you view a user's profile on twitter.com.</p>
-<p>This method can only return up to 3,200 of a user's most recent Tweets.</p>
-<p>Native retweets of other statuses by the user is included in this total, regardless of whether include_rts is set to false when requesting this resource.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">screen_name</td><td>any one is required.</td></tr>
@@ -7394,7 +7198,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 26 2015 00:30:37 for CoreTweet by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 21 2016 15:20:05 for CoreTweet by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

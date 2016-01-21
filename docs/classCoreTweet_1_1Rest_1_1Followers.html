@@ -25,7 +25,7 @@
   <td id="projectlogo"><img alt="Logo" src="core-48x48.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">CoreTweet
-   &#160;<span id="projectnumber">0.6.0</span>
+   &#160;<span id="projectnumber">0.6.1</span>
    </div>
    <div id="projectbrief">Yet another .NET Twitter Library</div>
   </td>
@@ -233,9 +233,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns a cursored collection of user IDs for every user following the specified user.</p>
-<p>At this time, results are ordered with the most recent following first; however this ordering is subject to unannounced change and eventual consistency issues.</p>
-<p>Results are given in groups of 5,000 user IDs and multiple "pages" of results can be navigated through using the next_cursor value in subsequent requests.</p>
-<p>This method is especially powerful when used in conjunction with GET users/lookup, a method that allows you to convert user IDs into full user objects in bulk.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">user_id</td><td>any one is required.</td></tr>
@@ -295,9 +292,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns a cursored collection of user IDs for every user following the specified user.</p>
-<p>At this time, results are ordered with the most recent following first; however this ordering is subject to unannounced change and eventual consistency issues.</p>
-<p>Results are given in groups of 5,000 user IDs and multiple "pages" of results can be navigated through using the next_cursor value in subsequent requests.</p>
-<p>This method is especially powerful when used in conjunction with GET users/lookup, a method that allows you to convert user IDs into full user objects in bulk.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">screen_name</td><td>any one is required.</td></tr>
@@ -345,9 +339,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns a cursored collection of user IDs for every user following the specified user.</p>
-<p>At this time, results are ordered with the most recent following first; however this ordering is subject to unannounced change and eventual consistency issues.</p>
-<p>Results are given in groups of 5,000 user IDs and multiple "pages" of results can be navigated through using the next_cursor value in subsequent requests.</p>
-<p>This method is especially powerful when used in conjunction with GET users/lookup, a method that allows you to convert user IDs into full user objects in bulk.</p>
 <p>Available parameters:</p>
 <p>- <code>long</code> user_id (any one is required)</p>
 <p>- <code>string</code> screen_name (any one is required)</p>
@@ -398,9 +389,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns a cursored collection of user IDs for every user following the specified user.</p>
-<p>At this time, results are ordered with the most recent following first; however this ordering is subject to unannounced change and eventual consistency issues.</p>
-<p>Results are given in groups of 5,000 user IDs and multiple "pages" of results can be navigated through using the next_cursor value in subsequent requests.</p>
-<p>This method is especially powerful when used in conjunction with GET users/lookup, a method that allows you to convert user IDs into full user objects in bulk.</p>
 <p>Available parameters:</p>
 <p>- <code>long</code> user_id (any one is required)</p>
 <p>- <code>string</code> screen_name (any one is required)</p>
@@ -451,9 +439,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns a cursored collection of user IDs for every user following the specified user.</p>
-<p>At this time, results are ordered with the most recent following first; however this ordering is subject to unannounced change and eventual consistency issues.</p>
-<p>Results are given in groups of 5,000 user IDs and multiple "pages" of results can be navigated through using the next_cursor value in subsequent requests.</p>
-<p>This method is especially powerful when used in conjunction with GET users/lookup, a method that allows you to convert user IDs into full user objects in bulk.</p>
 <p>Available parameters:</p>
 <p>- <code>long</code> user_id (any one is required)</p>
 <p>- <code>string</code> screen_name (any one is required)</p>
@@ -522,8 +507,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns a cursored collection of user objects for users following the specified user.</p>
-<p>At this time, results are ordered with the most recent following first — however, this ordering is subject to unannounced change and eventual consistency issues. </p>
-<p>Results are given in groups of 20 users and multiple “pages” of results can be navigated through using the next_cursor value in subsequent requests. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">user_id</td><td>any one is required.</td></tr>
@@ -590,8 +573,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns a cursored collection of user objects for users following the specified user.</p>
-<p>At this time, results are ordered with the most recent following first — however, this ordering is subject to unannounced change and eventual consistency issues. </p>
-<p>Results are given in groups of 20 users and multiple “pages” of results can be navigated through using the next_cursor value in subsequent requests. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">screen_name</td><td>any one is required.</td></tr>
@@ -640,8 +621,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns a cursored collection of user objects for users following the specified user.</p>
-<p>At this time, results are ordered with the most recent following first — however, this ordering is subject to unannounced change and eventual consistency issues. </p>
-<p>Results are given in groups of 20 users and multiple “pages” of results can be navigated through using the next_cursor value in subsequent requests. </p>
 <p>Available parameters:</p>
 <p>- <code>long</code> user_id (any one is required)</p>
 <p>- <code>string</code> screen_name (any one is required)</p>
@@ -693,8 +672,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns a cursored collection of user objects for users following the specified user.</p>
-<p>At this time, results are ordered with the most recent following first — however, this ordering is subject to unannounced change and eventual consistency issues. </p>
-<p>Results are given in groups of 20 users and multiple “pages” of results can be navigated through using the next_cursor value in subsequent requests. </p>
 <p>Available parameters:</p>
 <p>- <code>long</code> user_id (any one is required)</p>
 <p>- <code>string</code> screen_name (any one is required)</p>
@@ -746,8 +723,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns a cursored collection of user objects for users following the specified user.</p>
-<p>At this time, results are ordered with the most recent following first — however, this ordering is subject to unannounced change and eventual consistency issues. </p>
-<p>Results are given in groups of 20 users and multiple “pages” of results can be navigated through using the next_cursor value in subsequent requests. </p>
 <p>Available parameters:</p>
 <p>- <code>long</code> user_id (any one is required)</p>
 <p>- <code>string</code> screen_name (any one is required)</p>
@@ -789,9 +764,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns a cursored collection of user IDs for every user following the specified user.</p>
-<p>At this time, results are ordered with the most recent following first; however this ordering is subject to unannounced change and eventual consistency issues.</p>
-<p>Results are given in groups of 5,000 user IDs and multiple "pages" of results can be navigated through using the next_cursor value in subsequent requests.</p>
-<p>This method is especially powerful when used in conjunction with GET users/lookup, a method that allows you to convert user IDs into full user objects in bulk.</p>
 <p>Available parameters:</p>
 <p>- <code>long</code> user_id (any one is required)</p>
 <p>- <code>string</code> screen_name (any one is required)</p>
@@ -831,9 +803,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns a cursored collection of user IDs for every user following the specified user.</p>
-<p>At this time, results are ordered with the most recent following first; however this ordering is subject to unannounced change and eventual consistency issues.</p>
-<p>Results are given in groups of 5,000 user IDs and multiple "pages" of results can be navigated through using the next_cursor value in subsequent requests.</p>
-<p>This method is especially powerful when used in conjunction with GET users/lookup, a method that allows you to convert user IDs into full user objects in bulk.</p>
 <p>Available parameters:</p>
 <p>- <code>long</code> user_id (any one is required)</p>
 <p>- <code>string</code> screen_name (any one is required)</p>
@@ -873,9 +842,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns a cursored collection of user IDs for every user following the specified user.</p>
-<p>At this time, results are ordered with the most recent following first; however this ordering is subject to unannounced change and eventual consistency issues.</p>
-<p>Results are given in groups of 5,000 user IDs and multiple "pages" of results can be navigated through using the next_cursor value in subsequent requests.</p>
-<p>This method is especially powerful when used in conjunction with GET users/lookup, a method that allows you to convert user IDs into full user objects in bulk.</p>
 <p>Available parameters:</p>
 <p>- <code>long</code> user_id (any one is required)</p>
 <p>- <code>string</code> screen_name (any one is required)</p>
@@ -931,9 +897,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns a cursored collection of user IDs for every user following the specified user.</p>
-<p>At this time, results are ordered with the most recent following first; however this ordering is subject to unannounced change and eventual consistency issues.</p>
-<p>Results are given in groups of 5,000 user IDs and multiple "pages" of results can be navigated through using the next_cursor value in subsequent requests.</p>
-<p>This method is especially powerful when used in conjunction with GET users/lookup, a method that allows you to convert user IDs into full user objects in bulk.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">user_id</td><td>any one is required.</td></tr>
@@ -986,9 +949,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns a cursored collection of user IDs for every user following the specified user.</p>
-<p>At this time, results are ordered with the most recent following first; however this ordering is subject to unannounced change and eventual consistency issues.</p>
-<p>Results are given in groups of 5,000 user IDs and multiple "pages" of results can be navigated through using the next_cursor value in subsequent requests.</p>
-<p>This method is especially powerful when used in conjunction with GET users/lookup, a method that allows you to convert user IDs into full user objects in bulk.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">screen_name</td><td>any one is required.</td></tr>
@@ -1025,9 +985,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns a cursored collection of user IDs for every user following the specified user.</p>
-<p>At this time, results are ordered with the most recent following first; however this ordering is subject to unannounced change and eventual consistency issues.</p>
-<p>Results are given in groups of 5,000 user IDs and multiple "pages" of results can be navigated through using the next_cursor value in subsequent requests.</p>
-<p>This method is especially powerful when used in conjunction with GET users/lookup, a method that allows you to convert user IDs into full user objects in bulk.</p>
 <p>Available parameters:</p>
 <p>- <code>long</code> user_id (any one is required)</p>
 <p>- <code>string</code> screen_name (any one is required)</p>
@@ -1077,9 +1034,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns a cursored collection of user IDs for every user following the specified user.</p>
-<p>At this time, results are ordered with the most recent following first; however this ordering is subject to unannounced change and eventual consistency issues.</p>
-<p>Results are given in groups of 5,000 user IDs and multiple "pages" of results can be navigated through using the next_cursor value in subsequent requests.</p>
-<p>This method is especially powerful when used in conjunction with GET users/lookup, a method that allows you to convert user IDs into full user objects in bulk.</p>
 <p>Available parameters:</p>
 <p>- <code>long</code> user_id (any one is required)</p>
 <p>- <code>string</code> screen_name (any one is required)</p>
@@ -1130,9 +1084,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns a cursored collection of user IDs for every user following the specified user.</p>
-<p>At this time, results are ordered with the most recent following first; however this ordering is subject to unannounced change and eventual consistency issues.</p>
-<p>Results are given in groups of 5,000 user IDs and multiple "pages" of results can be navigated through using the next_cursor value in subsequent requests.</p>
-<p>This method is especially powerful when used in conjunction with GET users/lookup, a method that allows you to convert user IDs into full user objects in bulk.</p>
 <p>Available parameters:</p>
 <p>- <code>long</code> user_id (any one is required)</p>
 <p>- <code>string</code> screen_name (any one is required)</p>
@@ -1195,9 +1146,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns a cursored collection of user IDs for every user following the specified user.</p>
-<p>At this time, results are ordered with the most recent following first; however this ordering is subject to unannounced change and eventual consistency issues.</p>
-<p>Results are given in groups of 5,000 user IDs and multiple "pages" of results can be navigated through using the next_cursor value in subsequent requests.</p>
-<p>This method is especially powerful when used in conjunction with GET users/lookup, a method that allows you to convert user IDs into full user objects in bulk.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">user_id</td><td>any one is required.</td></tr>
@@ -1257,9 +1205,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns a cursored collection of user IDs for every user following the specified user.</p>
-<p>At this time, results are ordered with the most recent following first; however this ordering is subject to unannounced change and eventual consistency issues.</p>
-<p>Results are given in groups of 5,000 user IDs and multiple "pages" of results can be navigated through using the next_cursor value in subsequent requests.</p>
-<p>This method is especially powerful when used in conjunction with GET users/lookup, a method that allows you to convert user IDs into full user objects in bulk.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">screen_name</td><td>any one is required.</td></tr>
@@ -1297,8 +1242,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns a cursored collection of user objects for users following the specified user.</p>
-<p>At this time, results are ordered with the most recent following first — however, this ordering is subject to unannounced change and eventual consistency issues. </p>
-<p>Results are given in groups of 20 users and multiple “pages” of results can be navigated through using the next_cursor value in subsequent requests. </p>
 <p>Available parameters:</p>
 <p>- <code>long</code> user_id (any one is required)</p>
 <p>- <code>string</code> screen_name (any one is required)</p>
@@ -1339,8 +1282,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns a cursored collection of user objects for users following the specified user.</p>
-<p>At this time, results are ordered with the most recent following first — however, this ordering is subject to unannounced change and eventual consistency issues. </p>
-<p>Results are given in groups of 20 users and multiple “pages” of results can be navigated through using the next_cursor value in subsequent requests. </p>
 <p>Available parameters:</p>
 <p>- <code>long</code> user_id (any one is required)</p>
 <p>- <code>string</code> screen_name (any one is required)</p>
@@ -1381,8 +1322,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns a cursored collection of user objects for users following the specified user.</p>
-<p>At this time, results are ordered with the most recent following first — however, this ordering is subject to unannounced change and eventual consistency issues. </p>
-<p>Results are given in groups of 20 users and multiple “pages” of results can be navigated through using the next_cursor value in subsequent requests. </p>
 <p>Available parameters:</p>
 <p>- <code>long</code> user_id (any one is required)</p>
 <p>- <code>string</code> screen_name (any one is required)</p>
@@ -1445,8 +1384,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns a cursored collection of user objects for users following the specified user.</p>
-<p>At this time, results are ordered with the most recent following first — however, this ordering is subject to unannounced change and eventual consistency issues. </p>
-<p>Results are given in groups of 20 users and multiple “pages” of results can be navigated through using the next_cursor value in subsequent requests. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">user_id</td><td>any one is required.</td></tr>
@@ -1506,8 +1443,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns a cursored collection of user objects for users following the specified user.</p>
-<p>At this time, results are ordered with the most recent following first — however, this ordering is subject to unannounced change and eventual consistency issues. </p>
-<p>Results are given in groups of 20 users and multiple “pages” of results can be navigated through using the next_cursor value in subsequent requests. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">screen_name</td><td>any one is required.</td></tr>
@@ -1545,8 +1480,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns a cursored collection of user objects for users following the specified user.</p>
-<p>At this time, results are ordered with the most recent following first — however, this ordering is subject to unannounced change and eventual consistency issues. </p>
-<p>Results are given in groups of 20 users and multiple “pages” of results can be navigated through using the next_cursor value in subsequent requests. </p>
 <p>Available parameters:</p>
 <p>- <code>long</code> user_id (any one is required)</p>
 <p>- <code>string</code> screen_name (any one is required)</p>
@@ -1597,8 +1530,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns a cursored collection of user objects for users following the specified user.</p>
-<p>At this time, results are ordered with the most recent following first — however, this ordering is subject to unannounced change and eventual consistency issues. </p>
-<p>Results are given in groups of 20 users and multiple “pages” of results can be navigated through using the next_cursor value in subsequent requests. </p>
 <p>Available parameters:</p>
 <p>- <code>long</code> user_id (any one is required)</p>
 <p>- <code>string</code> screen_name (any one is required)</p>
@@ -1650,8 +1581,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns a cursored collection of user objects for users following the specified user.</p>
-<p>At this time, results are ordered with the most recent following first — however, this ordering is subject to unannounced change and eventual consistency issues. </p>
-<p>Results are given in groups of 20 users and multiple “pages” of results can be navigated through using the next_cursor value in subsequent requests. </p>
 <p>Available parameters:</p>
 <p>- <code>long</code> user_id (any one is required)</p>
 <p>- <code>string</code> screen_name (any one is required)</p>
@@ -1721,8 +1650,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns a cursored collection of user objects for users following the specified user.</p>
-<p>At this time, results are ordered with the most recent following first — however, this ordering is subject to unannounced change and eventual consistency issues. </p>
-<p>Results are given in groups of 20 users and multiple “pages” of results can be navigated through using the next_cursor value in subsequent requests. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">user_id</td><td>any one is required.</td></tr>
@@ -1789,8 +1716,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p></p>
 <p>Returns a cursored collection of user objects for users following the specified user.</p>
-<p>At this time, results are ordered with the most recent following first — however, this ordering is subject to unannounced change and eventual consistency issues. </p>
-<p>Results are given in groups of 20 users and multiple “pages” of results can be navigated through using the next_cursor value in subsequent requests. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">screen_name</td><td>any one is required.</td></tr>
@@ -1811,7 +1736,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 26 2015 00:30:36 for CoreTweet by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 21 2016 15:20:04 for CoreTweet by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>
