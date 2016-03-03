@@ -20,6 +20,7 @@ var searchData=
   ['placetype',['PlaceType',['../classCoreTweet_1_1PlaceType.html',1,'CoreTweet']]],
   ['placetype',['PlaceType',['../classCoreTweet_1_1Place.html#a8091a4f2ec4967d378c75ab614ab02a0',1,'CoreTweet.Place.PlaceType()'],['../classCoreTweet_1_1TrendLocation.html#ab8bcec8c405b8d6ebd5a453b0a93789a',1,'CoreTweet.TrendLocation.PlaceType()']]],
   ['possiblysensitive',['PossiblySensitive',['../classCoreTweet_1_1Status.html#ae965f8b70522afd497c972b91899dd95',1,'CoreTweet::Status']]],
+  ['possiblysensitiveappealable',['PossiblySensitiveAppealable',['../classCoreTweet_1_1Status.html#ac777c92c9cdf45e1e2c91908de08017d',1,'CoreTweet::Status']]],
   ['post',['Post',['../namespaceCoreTweet.html#a6e05c1dcaf2cf8e4ece975f7d3af0e26a03d947a2158373c3b9d74325850cb8b9',1,'CoreTweet']]],
   ['postalcode',['PostalCode',['../classCoreTweet_1_1GeoAttributes.html#a065780272914343fcfcf2229267dcfb1',1,'CoreTweet::GeoAttributes']]],
   ['previous',['Previous',['../namespaceCoreTweet.html#a3cb7681ad32c9fadc094714125a3d30aadd1f775e443ff3b9a89270713580a51b',1,'CoreTweet']]],
