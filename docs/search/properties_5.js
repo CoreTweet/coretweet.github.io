@@ -7,5 +7,6 @@ var searchData=
   ['foruser',['ForUser',['../classCoreTweet_1_1Streaming_1_1EnvelopesMessage.html#af7e8f27fcf4264d7a3a4932524822bc4',1,'CoreTweet::Streaming::EnvelopesMessage']]],
   ['friends',['Friends',['../classCoreTweet_1_1Streaming_1_1FriendsMessage.html#a57d4f36b22f080e0e779354b86b5a071',1,'CoreTweet::Streaming::FriendsMessage']]],
   ['friendscount',['FriendsCount',['../classCoreTweet_1_1User.html#a135ff7540ae37c83d757c7b610cb31e0',1,'CoreTweet::User']]],
-  ['fullname',['FullName',['../classCoreTweet_1_1List.html#abc32826b46cebade5fe3484dfe238db8',1,'CoreTweet.List.FullName()'],['../classCoreTweet_1_1Place.html#a3532d4b5897f0e76643f36734af0356e',1,'CoreTweet.Place.FullName()']]]
+  ['fullname',['FullName',['../classCoreTweet_1_1List.html#abc32826b46cebade5fe3484dfe238db8',1,'CoreTweet.List.FullName()'],['../classCoreTweet_1_1Place.html#a3532d4b5897f0e76643f36734af0356e',1,'CoreTweet.Place.FullName()']]],
+  ['fulltext',['FullText',['../classCoreTweet_1_1Status.html#a13ff9f36ee6689163edb7379ab9951d4',1,'CoreTweet.Status.FullText()'],['../classCoreTweet_1_1CompatExtendedTweet.html#aaef858d2aace341d111a5675b7c064dd',1,'CoreTweet.CompatExtendedTweet.FullText()']]]
 ];

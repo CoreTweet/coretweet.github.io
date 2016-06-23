@@ -5,6 +5,7 @@ var searchData=
   ['directmessage',['DirectMessage',['../classCoreTweet_1_1Streaming_1_1DirectMessageMessage.html#a001d1809ad56825a791b450872f24c9d',1,'CoreTweet::Streaming::DirectMessageMessage']]],
   ['disablekeepalive',['DisableKeepAlive',['../classCoreTweet_1_1ConnectionOptions.html#af38042c40ec6ae9c62156a56dca0024c',1,'CoreTweet::ConnectionOptions']]],
   ['displaysensitivemedia',['DisplaySensitiveMedia',['../classCoreTweet_1_1Setting.html#a81b2c8fac51938a68ea240fb6048d675',1,'CoreTweet::Setting']]],
+  ['displaytextrange',['DisplayTextRange',['../classCoreTweet_1_1Status.html#a718fc0419bb9e5b2dbb00ce24a9e2837',1,'CoreTweet.Status.DisplayTextRange()'],['../classCoreTweet_1_1CompatExtendedTweet.html#a0f171099d43a6bb91a527d3b1040ce07',1,'CoreTweet.CompatExtendedTweet.DisplayTextRange()']]],
   ['displayurl',['DisplayUrl',['../classCoreTweet_1_1UrlEntity.html#ae70f22e362dfe16215136885d23ccc5e',1,'CoreTweet::UrlEntity']]],
   ['dmtextcharacterlimit',['DMTextCharacterLimit',['../classCoreTweet_1_1Configurations.html#aa6d6836edeb51c19ca326445590c1c80',1,'CoreTweet::Configurations']]],
   ['durationmillis',['DurationMillis',['../classCoreTweet_1_1VideoInfo.html#ab555f1608c2db5086a8717c6079a6248',1,'CoreTweet::VideoInfo']]]

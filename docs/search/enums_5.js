@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['uploadmediatype',['UploadMediaType',['../namespaceCoreTweet.html#a9e026311810cccf59fcca3104137d78c',1,'CoreTweet']]]
+  ['tweetmode',['TweetMode',['../namespaceCoreTweet.html#a252b466c1e7ee9db064e9fcb815f7dbb',1,'CoreTweet']]]
 ];

@@ -4,7 +4,6 @@ var searchData=
   ['large',['Large',['../classCoreTweet_1_1MediaSizes.html#a0945fbada8ebc3baf06c0de48bc220a4',1,'CoreTweet::MediaSizes']]],
   ['limit',['Limit',['../classCoreTweet_1_1RateLimit.html#a3770012b5173188b1f553e19aa7240f8',1,'CoreTweet::RateLimit']]],
   ['listedcount',['ListedCount',['../classCoreTweet_1_1User.html#a531f57f02411b66982565b9c1487f33b',1,'CoreTweet::User']]],
-  ['locality',['Locality',['../classCoreTweet_1_1GeoAttributes.html#a5d6548640dc8de05b6a8ae745e219640',1,'CoreTweet::GeoAttributes']]],
   ['location',['Location',['../classCoreTweet_1_1User.html#a75e13fd70964fc71c700bc760073357d',1,'CoreTweet::User']]],
   ['locations',['Locations',['../classCoreTweet_1_1TrendsResult.html#aec0719835c5582a8a9f2e10a00dfd721',1,'CoreTweet::TrendsResult']]]
 ];

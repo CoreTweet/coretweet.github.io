@@ -7,6 +7,7 @@ var searchData=
   ['cannotperformwriteactions',['CannotPerformWriteActions',['../namespaceCoreTweet.html#adb5cd00c67f4fe33b2049b37e634e15ea9ff38048314697120258f7bf7d2f8110',1,'CoreTweet']]],
   ['cannotsenddirectmessagestousersnotfollowingme',['CannotSendDirectMessagesToUsersNotFollowingMe',['../namespaceCoreTweet.html#adb5cd00c67f4fe33b2049b37e634e15ea11a9ecd01fcd2d03bf656dd0874add9f',1,'CoreTweet']]],
   ['cannotsendlongdirectmessages',['CannotSendLongDirectMessages',['../namespaceCoreTweet.html#adb5cd00c67f4fe33b2049b37e634e15ea0cebd3e2e87a65c7e2711c49e19a7a5c',1,'CoreTweet']]],
+  ['compat',['compat',['../namespaceCoreTweet.html#a252b466c1e7ee9db064e9fcb815f7dbba6805d2eb09708dde50e925b430024691',1,'CoreTweet']]],
   ['control',['Control',['../namespaceCoreTweet_1_1Streaming.html#ae0f1a921dcf3d18048a7d11193abe829aa1595abbb4c3a326636dd178757cd6c1',1,'CoreTweet::Streaming']]],
   ['controlrequest',['ControlRequest',['../namespaceCoreTweet_1_1Streaming.html#a8a261ff0c83f88d7ee1d03e64a9d5258a93361601a12cf7edff0c5047c653cb15',1,'CoreTweet::Streaming']]],
   ['couldnotauthenticate',['CouldNotAuthenticate',['../namespaceCoreTweet.html#adb5cd00c67f4fe33b2049b37e634e15ea516567e184001421f6c9a71e982ccd67',1,'CoreTweet']]],

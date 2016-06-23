@@ -28,7 +28,6 @@ var searchData=
   ['ismarkedspam',['IsMarkedSpam',['../classCoreTweet_1_1RelationshipSource.html#a6ee9caf7adc80cd8053b336fc564b536',1,'CoreTweet::RelationshipSource']]],
   ['ismuting',['IsMuting',['../classCoreTweet_1_1User.html#a649072752d8b6702d82328c011c055a4',1,'CoreTweet.User.IsMuting()'],['../classCoreTweet_1_1RelationshipSource.html#af8985ef758d2446acfe406c41c3c92ff',1,'CoreTweet.RelationshipSource.IsMuting()']]],
   ['isnotificationsenabled',['IsNotificationsEnabled',['../classCoreTweet_1_1RelationshipSource.html#ad31192cf7f3aa72c00d52c4eda57dcbe',1,'CoreTweet::RelationshipSource']]],
-  ['iso3countrycode',['Iso3CountryCode',['../classCoreTweet_1_1GeoAttributes.html#abbd75a3c3baf8d6b2e1fa352d7674cdc',1,'CoreTweet::GeoAttributes']]],
   ['isprofilebackgroundtile',['IsProfileBackgroundTile',['../classCoreTweet_1_1User.html#a1962e7dec6865c5eeada0c251c5a0300',1,'CoreTweet::User']]],
   ['isprofileusebackgroundimage',['IsProfileUseBackgroundImage',['../classCoreTweet_1_1User.html#ab5d6e60d801cd3f83222a9e802e58c91',1,'CoreTweet::User']]],
   ['isprotected',['IsProtected',['../classCoreTweet_1_1Setting.html#a881085f94f7240c4028208f2a21d6463',1,'CoreTweet.Setting.IsProtected()'],['../classCoreTweet_1_1User.html#a096a6e3d621534807e21459bf7dd87d1',1,'CoreTweet.User.IsProtected()']]],
