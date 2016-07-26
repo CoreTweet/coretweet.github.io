@@ -25,7 +25,7 @@
   <td id="projectlogo"><img alt="Logo" src="core-48x48.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">CoreTweet
-   &#160;<span id="projectnumber">0.6.4</span>
+   &#160;<span id="projectnumber">0.7.0</span>
    </div>
    <div id="projectbrief">Yet another .NET Twitter Library</div>
   </td>
@@ -128,9 +128,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9d652a3e4e1d39ca7e7279c57cecdd94"><td class="memItemLeft" align="right" valign="top">Task&lt; <a class="el" href="classCoreTweet_1_1AsyncResponse.html">AsyncResponse</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Core_1_1TokensBase.html#a9d652a3e4e1d39ca7e7279c57cecdd94">SendStreamingRequestAsync</a> (<a class="el" href="namespaceCoreTweet.html#a6e05c1dcaf2cf8e4ece975f7d3af0e26">MethodType</a> type, string url, IEnumerable&lt; KeyValuePair&lt; string, object &gt;&gt; parameters, CancellationToken cancellationToken=default(CancellationToken))</td></tr>
 <tr class="memdesc:a9d652a3e4e1d39ca7e7279c57cecdd94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a streaming request to the specified url with the specified parameters as an asynchronous operation.  <a href="#a9d652a3e4e1d39ca7e7279c57cecdd94">More...</a><br /></td></tr>
 <tr class="separator:a9d652a3e4e1d39ca7e7279c57cecdd94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b27f1f12146875e9b0ab0e991e8894b"><td class="memItemLeft" align="right" valign="top">Task&lt; <a class="el" href="classCoreTweet_1_1AsyncResponse.html">AsyncResponse</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Core_1_1TokensBase.html#a5b27f1f12146875e9b0ab0e991e8894b">SendRequestAsyncImpl</a> (<a class="el" href="namespaceCoreTweet.html#a6e05c1dcaf2cf8e4ece975f7d3af0e26">MethodType</a> type, string url, IEnumerable&lt; KeyValuePair&lt; string, object &gt;&gt; parameters, CancellationToken cancellationToken)</td></tr>
-<tr class="memdesc:a5b27f1f12146875e9b0ab0e991e8894b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a streaming request to the specified url with the specified parameters as an asynchronous operation.  <a href="#a5b27f1f12146875e9b0ab0e991e8894b">More...</a><br /></td></tr>
-<tr class="separator:a5b27f1f12146875e9b0ab0e991e8894b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78bfeddc46181ee2820e2008abc60782"><td class="memItemLeft" align="right" valign="top">Task&lt; <a class="el" href="classCoreTweet_1_1AsyncResponse.html">AsyncResponse</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Core_1_1TokensBase.html#a78bfeddc46181ee2820e2008abc60782">PostContentAsync</a> (string url, string contentType, byte[] content, CancellationToken cancellationToken=default(CancellationToken))</td></tr>
+<tr class="memdesc:a78bfeddc46181ee2820e2008abc60782"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a request to the specified url with the specified content as an asynchronous operation.  <a href="#a78bfeddc46181ee2820e2008abc60782">More...</a><br /></td></tr>
+<tr class="separator:a78bfeddc46181ee2820e2008abc60782"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0932d5dced16c30a3a6ca4bb50156121"><td class="memItemLeft" align="right" valign="top">abstract string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Core_1_1TokensBase.html#a0932d5dced16c30a3a6ca4bb50156121">CreateAuthorizationHeader</a> (<a class="el" href="namespaceCoreTweet.html#a6e05c1dcaf2cf8e4ece975f7d3af0e26">MethodType</a> type, Uri url, IEnumerable&lt; KeyValuePair&lt; string, object &gt;&gt; parameters)</td></tr>
 <tr class="memdesc:a0932d5dced16c30a3a6ca4bb50156121"><td class="mdescLeft">&#160;</td><td class="mdescRight">When overridden in a descendant class, creates a string for Authorization header.  <a href="#a0932d5dced16c30a3a6ca4bb50156121">More...</a><br /></td></tr>
 <tr class="separator:a0932d5dced16c30a3a6ca4bb50156121"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -146,6 +146,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:adb742969e56fbf21b835d8ac3bb71c07"><td class="memItemLeft" align="right" valign="top">HttpWebResponse&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Core_1_1TokensBase.html#adb742969e56fbf21b835d8ac3bb71c07">SendStreamingRequest</a> (<a class="el" href="namespaceCoreTweet.html#a6e05c1dcaf2cf8e4ece975f7d3af0e26">MethodType</a> type, string url, IEnumerable&lt; KeyValuePair&lt; string, object &gt;&gt; parameters)</td></tr>
 <tr class="memdesc:adb742969e56fbf21b835d8ac3bb71c07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a streaming request to the specified url with the specified parameters.  <a href="#adb742969e56fbf21b835d8ac3bb71c07">More...</a><br /></td></tr>
 <tr class="separator:adb742969e56fbf21b835d8ac3bb71c07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c79948d57b2c3838c6cf2dbb177026d"><td class="memItemLeft" align="right" valign="top">HttpWebResponse&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Core_1_1TokensBase.html#a2c79948d57b2c3838c6cf2dbb177026d">PostContent</a> (string url, string contentType, byte[] content)</td></tr>
+<tr class="memdesc:a2c79948d57b2c3838c6cf2dbb177026d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a request to the specified url with the specified content.  <a href="#a2c79948d57b2c3838c6cf2dbb177026d">More...</a><br /></td></tr>
+<tr class="separator:a2c79948d57b2c3838c6cf2dbb177026d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -158,6 +161,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a82101a08497db82fd72ee14ae8e56f9d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCoreTweet_1_1Rest_1_1Blocks.html">Blocks</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Core_1_1TokensBase.html#a82101a08497db82fd72ee14ae8e56f9d">Blocks</a> =&gt; new <a class="el" href="classCoreTweet_1_1Rest_1_1Blocks.html">Blocks</a>(this)</td></tr>
 <tr class="memdesc:a82101a08497db82fd72ee14ae8e56f9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the wrapper of blocks.  <a href="#a82101a08497db82fd72ee14ae8e56f9d">More...</a><br /></td></tr>
 <tr class="separator:a82101a08497db82fd72ee14ae8e56f9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42847980c422a876bdd8e1c1011313b3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCoreTweet_1_1Rest_1_1Collections.html">Collections</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Core_1_1TokensBase.html#a42847980c422a876bdd8e1c1011313b3">Collections</a> =&gt; new <a class="el" href="classCoreTweet_1_1Rest_1_1Collections.html">Collections</a>(this)</td></tr>
+<tr class="memdesc:a42847980c422a876bdd8e1c1011313b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the wrapper of collections.  <a href="#a42847980c422a876bdd8e1c1011313b3">More...</a><br /></td></tr>
+<tr class="separator:a42847980c422a876bdd8e1c1011313b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab06eee18f84f81c105213bb2297206cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCoreTweet_1_1Rest_1_1DirectMessages.html">DirectMessages</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoreTweet_1_1Core_1_1TokensBase.html#ab06eee18f84f81c105213bb2297206cd">DirectMessages</a> =&gt; new <a class="el" href="classCoreTweet_1_1Rest_1_1DirectMessages.html">DirectMessages</a>(this)</td></tr>
 <tr class="memdesc:ab06eee18f84f81c105213bb2297206cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the wrapper of direct_messages.  <a href="#ab06eee18f84f81c105213bb2297206cd">More...</a><br /></td></tr>
 <tr class="separator:ab06eee18f84f81c105213bb2297206cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -307,6 +313,116 @@ Properties</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a2c79948d57b2c3838c6cf2dbb177026d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">HttpWebResponse CoreTweet.Core.TokensBase.PostContent </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>url</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>contentType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">byte[]&#160;</td>
+          <td class="paramname"><em>content</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sends a request to the specified url with the specified content. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">url</td><td>The URL.</td></tr>
+    <tr><td class="paramname">contentType</td><td>The Content-Type header.</td></tr>
+    <tr><td class="paramname">content</td><td>The content.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A HttpWebResponse.</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a78bfeddc46181ee2820e2008abc60782"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Task&lt;<a class="el" href="classCoreTweet_1_1AsyncResponse.html">AsyncResponse</a>&gt; CoreTweet.Core.TokensBase.PostContentAsync </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>url</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>contentType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">byte[]&#160;</td>
+          <td class="paramname"><em>content</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CancellationToken&#160;</td>
+          <td class="paramname"><em>cancellationToken</em> = <code>default(CancellationToken)</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sends a request to the specified url with the specified content as an asynchronous operation. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">url</td><td>The URL.</td></tr>
+    <tr><td class="paramname">contentType</td><td>The Content-Type header.</td></tr>
+    <tr><td class="paramname">content</td><td>The content.</td></tr>
+    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
+<p>The Result property on the task object returns a <a class="el" href="classCoreTweet_1_1AsyncResponse.html" title="Represents an asynchronous response. ">AsyncResponse</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="af7b226d241132b4a8d4250aadbfa0931"></a>
 <div class="memitem">
 <div class="memproto">
@@ -354,7 +470,7 @@ Properties</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A stream.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A HttpWebResponse.</dd></dl>
 
 </div>
 </div>
@@ -405,7 +521,7 @@ Properties</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A stream.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A HttpWebResponse.</dd></dl>
 
 </div>
 </div>
@@ -456,7 +572,7 @@ Properties</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A stream.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A HttpWebResponse.</dd></dl>
 
 </div>
 </div>
@@ -515,7 +631,7 @@ Properties</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
-<p>The Result property on the task object returns a stream.</p>
+<p>The Result property on the task object returns a <a class="el" href="classCoreTweet_1_1AsyncResponse.html" title="Represents an asynchronous response. ">AsyncResponse</a>.</p>
 
 </div>
 </div>
@@ -574,7 +690,7 @@ Properties</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
-<p>The Result property on the task object returns a stream.</p>
+<p>The Result property on the task object returns a <a class="el" href="classCoreTweet_1_1AsyncResponse.html" title="Represents an asynchronous response. ">AsyncResponse</a>.</p>
 
 </div>
 </div>
@@ -633,66 +749,7 @@ Properties</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
-<p>The Result property on the task object returns a stream.</p>
-
-</div>
-</div>
-<a class="anchor" id="a5b27f1f12146875e9b0ab0e991e8894b"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Task&lt;<a class="el" href="classCoreTweet_1_1AsyncResponse.html">AsyncResponse</a>&gt; CoreTweet.Core.TokensBase.SendRequestAsyncImpl </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespaceCoreTweet.html#a6e05c1dcaf2cf8e4ece975f7d3af0e26">MethodType</a>&#160;</td>
-          <td class="paramname"><em>type</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>url</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">IEnumerable&lt; KeyValuePair&lt; string, object &gt;&gt;&#160;</td>
-          <td class="paramname"><em>parameters</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">CancellationToken&#160;</td>
-          <td class="paramname"><em>cancellationToken</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sends a streaming request to the specified url with the specified parameters as an asynchronous operation. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">type</td><td>The type of HTTP request.</td></tr>
-    <tr><td class="paramname">url</td><td>The URL.</td></tr>
-    <tr><td class="paramname">parameters</td><td>The parameters.</td></tr>
-    <tr><td class="paramname">cancellationToken</td><td>The cancellation token.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
-<p>The Result property on the task object returns a stream.</p>
+<p>The Result property on the task object returns a <a class="el" href="classCoreTweet_1_1AsyncResponse.html" title="Represents an asynchronous response. ">AsyncResponse</a>.</p>
 
 </div>
 </div>
@@ -743,7 +800,7 @@ Properties</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A stream.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A HttpWebResponse.</dd></dl>
 
 </div>
 </div>
@@ -802,7 +859,7 @@ Properties</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The task object representing the asynchronous operation.</dd></dl>
-<p>The Result property on the task object returns a stream.</p>
+<p>The Result property on the task object returns a <a class="el" href="classCoreTweet_1_1AsyncResponse.html" title="Represents an asynchronous response. ">AsyncResponse</a>.</p>
 
 </div>
 </div>
@@ -846,6 +903,20 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets the wrapper of blocks. </p>
+
+</div>
+</div>
+<a class="anchor" id="a42847980c422a876bdd8e1c1011313b3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classCoreTweet_1_1Rest_1_1Collections.html">Collections</a> CoreTweet.Core.TokensBase.Collections =&gt; new <a class="el" href="classCoreTweet_1_1Rest_1_1Collections.html">Collections</a>(this)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the wrapper of collections. </p>
 
 </div>
 </div>
@@ -1147,7 +1218,7 @@ Properties</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jun 23 2016 14:33:00 for CoreTweet by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 26 2016 23:03:46 for CoreTweet by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

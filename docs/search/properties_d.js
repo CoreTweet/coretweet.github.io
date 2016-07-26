@@ -1,31 +1,4 @@
 var searchData=
 [
-  ['parameters',['Parameters',['../classCoreTweet_1_1Streaming_1_1StreamingParameters.html#a129d146c4dbd7dee683dd15580ac7458',1,'CoreTweet::Streaming::StreamingParameters']]],
-  ['parentid',['ParentId',['../classCoreTweet_1_1TrendLocation.html#ae0f25cea67bab53485b3ebaa21024bb3',1,'CoreTweet::TrendLocation']]],
-  ['percentfull',['PercentFull',['../classCoreTweet_1_1Streaming_1_1WarningMessage.html#ac36f544c06cb1e39e4f0749d5e0c7c9c',1,'CoreTweet::Streaming::WarningMessage']]],
-  ['photosizelimit',['PhotoSizeLimit',['../classCoreTweet_1_1Configurations.html#aa6cf3c5df3e7bf725325ca8e5dd45a57',1,'CoreTweet::Configurations']]],
-  ['photosizes',['PhotoSizes',['../classCoreTweet_1_1Configurations.html#a5efb9097c2c41adab69a82eb321788f8',1,'CoreTweet::Configurations']]],
-  ['place',['Place',['../classCoreTweet_1_1Status.html#aa5baf856f53420ed5b494dba1e65b461',1,'CoreTweet::Status']]],
-  ['places',['Places',['../classCoreTweet_1_1GeoResult.html#ab81915b0e52af732d5723e1a924c16db',1,'CoreTweet::GeoResult']]],
-  ['placetype',['PlaceType',['../classCoreTweet_1_1Place.html#a8091a4f2ec4967d378c75ab614ab02a0',1,'CoreTweet.Place.PlaceType()'],['../classCoreTweet_1_1TrendLocation.html#ab8bcec8c405b8d6ebd5a453b0a93789a',1,'CoreTweet.TrendLocation.PlaceType()']]],
-  ['polylines',['Polylines',['../classCoreTweet_1_1Place.html#a200fcf7d3522ad36e5ff503bb526243b',1,'CoreTweet::Place']]],
-  ['possiblysensitive',['PossiblySensitive',['../classCoreTweet_1_1Status.html#ae965f8b70522afd497c972b91899dd95',1,'CoreTweet::Status']]],
-  ['possiblysensitiveappealable',['PossiblySensitiveAppealable',['../classCoreTweet_1_1Status.html#ac777c92c9cdf45e1e2c91908de08017d',1,'CoreTweet::Status']]],
-  ['previouscursor',['PreviousCursor',['../classCoreTweet_1_1Cursored.html#a8d2e33f4b5a419bc8f921376b0ed9462',1,'CoreTweet::Cursored']]],
-  ['processinginfo',['ProcessingInfo',['../classCoreTweet_1_1UploadFinalizeCommandResult.html#a49b7f75336f4a0bba869fcae8be9abbf',1,'CoreTweet::UploadFinalizeCommandResult']]],
-  ['profilebackgroundcolor',['ProfileBackgroundColor',['../classCoreTweet_1_1User.html#ad84ca25dba025d36b2ae9a36699328ae',1,'CoreTweet::User']]],
-  ['profilebackgroundimageurl',['ProfileBackgroundImageUrl',['../classCoreTweet_1_1User.html#a76531fa48bf8abe5c12c6e24c04d281b',1,'CoreTweet::User']]],
-  ['profilebackgroundimageurlhttps',['ProfileBackgroundImageUrlHttps',['../classCoreTweet_1_1User.html#abf23dc33ab27827b13f596543bde5242',1,'CoreTweet::User']]],
-  ['profilebannerurl',['ProfileBannerUrl',['../classCoreTweet_1_1User.html#a6eeefbb7e4abe8b00e2a47c8baf9a7ef',1,'CoreTweet::User']]],
-  ['profileimageurl',['ProfileImageUrl',['../classCoreTweet_1_1User.html#a9b8cafdd627e3d69d550697683739b60',1,'CoreTweet::User']]],
-  ['profileimageurlhttps',['ProfileImageUrlHttps',['../classCoreTweet_1_1User.html#aa9cd4fc9bd2de9e1a624fa1d46b28dc7',1,'CoreTweet::User']]],
-  ['profilelinkcolor',['ProfileLinkColor',['../classCoreTweet_1_1User.html#a892ca433a81b72fe7e85ec20a174c350',1,'CoreTweet::User']]],
-  ['profilelocation',['ProfileLocation',['../classCoreTweet_1_1User.html#a4ab21c674ab06ca3bfa43a43d5c5ec52',1,'CoreTweet::User']]],
-  ['profilesidebarbordercolor',['ProfileSidebarBorderColor',['../classCoreTweet_1_1User.html#a81db7f4c57647666663418ad9e3088ae',1,'CoreTweet::User']]],
-  ['profilesidebarfillcolor',['ProfileSidebarFillColor',['../classCoreTweet_1_1User.html#a4adb58ec9d286239af6eacfdc8ab531f',1,'CoreTweet::User']]],
-  ['profiletextcolor',['ProfileTextColor',['../classCoreTweet_1_1User.html#a1d5646cad4cefe645ab3e060279a187f',1,'CoreTweet::User']]],
-  ['progresspercent',['ProgressPercent',['../classCoreTweet_1_1ProcessingInfo.html#a0a6411918db49b492f2c26f1b0864d63',1,'CoreTweet::ProcessingInfo']]],
-  ['providername',['ProviderName',['../classCoreTweet_1_1Embed.html#a5d955fbfd8c037268f78208f94fc1c7f',1,'CoreTweet::Embed']]],
-  ['providerurl',['ProviderUrl',['../classCoreTweet_1_1Embed.html#af7ccc31a0075c185196aab2752cfcbfc',1,'CoreTweet::Embed']]],
-  ['proxy',['Proxy',['../classCoreTweet_1_1ConnectionOptions.html#ac6d2c92915d5cc835ef559ed9c090745',1,'CoreTweet::ConnectionOptions']]]
+  ['op',['Op',['../classCoreTweet_1_1CollectionEntryChange.html#a3104648988cce62e97aa4b73cbffd44f',1,'CoreTweet::CollectionEntryChange']]]
 ];

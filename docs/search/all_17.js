@@ -3,6 +3,7 @@ var searchData=
   ['wantsretweets',['WantsRetweets',['../classCoreTweet_1_1RelationshipSource.html#ad121ed139464256ad7ea6a638ae29320',1,'CoreTweet::RelationshipSource']]],
   ['warning',['Warning',['../namespaceCoreTweet_1_1Streaming.html#ae0f1a921dcf3d18048a7d11193abe829a0eaadb4fcb48a0a0ed7bc9868be9fbaa',1,'CoreTweet::Streaming']]],
   ['warningmessage',['WarningMessage',['../classCoreTweet_1_1Streaming_1_1WarningMessage.html',1,'CoreTweet::Streaming']]],
+  ['wastruncated',['WasTruncated',['../classCoreTweet_1_1CollectionEntriesPosition.html#a2e2b1724f8fef3fbc7a1747167c52d4f',1,'CoreTweet::CollectionEntriesPosition']]],
   ['web',['Web',['../classCoreTweet_1_1ProfileBannerSizes.html#a1c34f9bef8ee980ff3ec37fc8397f9ca',1,'CoreTweet::ProfileBannerSizes']]],
   ['webretina',['WebRetina',['../classCoreTweet_1_1ProfileBannerSizes.html#ad0d1bb22459904e6b73f38de3e67b7cb',1,'CoreTweet::ProfileBannerSizes']]],
   ['width',['Width',['../classCoreTweet_1_1Embed.html#a8b15240795aea71f07c7f413ae3bc808',1,'CoreTweet.Embed.Width()'],['../classCoreTweet_1_1MediaSize.html#a6084130ebe21268ab04c7a062762bc91',1,'CoreTweet.MediaSize.Width()'],['../classCoreTweet_1_1UploadedImage.html#a8a43cc9074c2ee2bcd8bd8b6c526284f',1,'CoreTweet.UploadedImage.Width()'],['../classCoreTweet_1_1ProfileBannerSize.html#ac36f9d6d76ac378b43fbe8bf2ba67520',1,'CoreTweet.ProfileBannerSize.Width()']]],

@@ -1,5 +1,8 @@
 var searchData=
 [
+  ['timeline',['Timeline',['../classCoreTweet_1_1Timeline.html',1,'CoreTweet']]],
+  ['timelineentry',['TimelineEntry',['../classCoreTweet_1_1TimelineEntry.html',1,'CoreTweet']]],
+  ['timelineresponse',['TimelineResponse',['../classCoreTweet_1_1TimelineResponse.html',1,'CoreTweet']]],
   ['timestampconverter',['TimestampConverter',['../classCoreTweet_1_1Core_1_1TimestampConverter.html',1,'CoreTweet::Core']]],
   ['timestampmessage',['TimestampMessage',['../classCoreTweet_1_1Streaming_1_1TimestampMessage.html',1,'CoreTweet::Streaming']]],
   ['timezone',['TimeZone',['../classCoreTweet_1_1TimeZone.html',1,'CoreTweet']]],

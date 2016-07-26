@@ -2,6 +2,7 @@ var searchData=
 [
   ['media',['Media',['../classCoreTweet_1_1Rest_1_1Media.html',1,'CoreTweet::Rest']]],
   ['mediaentity',['MediaEntity',['../classCoreTweet_1_1MediaEntity.html',1,'CoreTweet']]],
+  ['mediametadata',['MediaMetadata',['../classCoreTweet_1_1Rest_1_1MediaMetadata.html',1,'CoreTweet::Rest']]],
   ['mediaprocessingerror',['MediaProcessingError',['../classCoreTweet_1_1MediaProcessingError.html',1,'CoreTweet']]],
   ['mediaprocessingexception',['MediaProcessingException',['../classCoreTweet_1_1MediaProcessingException.html',1,'CoreTweet']]],
   ['mediasize',['MediaSize',['../classCoreTweet_1_1MediaSize.html',1,'CoreTweet']]],

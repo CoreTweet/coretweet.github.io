@@ -12,5 +12,6 @@ var searchData=
   ['videoinfo',['VideoInfo',['../classCoreTweet_1_1VideoInfo.html',1,'CoreTweet']]],
   ['videoinfo',['VideoInfo',['../classCoreTweet_1_1MediaEntity.html#a9ef7ec570f1f446e0732b6b19d3f18ce',1,'CoreTweet::MediaEntity']]],
   ['videotype',['VideoType',['../classCoreTweet_1_1UploadedVideo.html#ade9423ad31fe14c9d99e15734760ade0',1,'CoreTweet::UploadedVideo']]],
-  ['videovariant',['VideoVariant',['../classCoreTweet_1_1VideoVariant.html',1,'CoreTweet']]]
+  ['videovariant',['VideoVariant',['../classCoreTweet_1_1VideoVariant.html',1,'CoreTweet']]],
+  ['visibility',['Visibility',['../classCoreTweet_1_1Timeline.html#a6bf6b4ced91b1cc73c1c48b651afebf3',1,'CoreTweet::Timeline']]]
 ];
