@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['embed_2ecs',['Embed.cs',['../Embed_8cs.html',1,'']]],
-  ['entities_2ecs',['Entities.cs',['../Entities_8cs.html',1,'']]],
-  ['error_2ecs',['Error.cs',['../Error_8cs.html',1,'']]],
-  ['exceptions_2ecs',['Exceptions.cs',['../Exceptions_8cs.html',1,'']]],
-  ['extensions_2ecs',['Extensions.cs',['../Extensions_8cs.html',1,'']]]
+  ['directmessageevents_2ecs',['DirectMessageEvents.cs',['../DirectMessageEvents_8cs.html',1,'']]],
+  ['directmessages_2ecs',['DirectMessages.cs',['../DirectMessages_8cs.html',1,'']]]
 ];

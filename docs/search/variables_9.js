@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['latitude',['Latitude',['../classCoreTweet_1_1Coordinates.html#a56edf3a50b50b9cdf18392f785e0e452',1,'CoreTweet::Coordinates']]],
-  ['lists',['Lists',['../classCoreTweet_1_1Core_1_1TokensBase.html#a39a7715161d53f4376624131efe06393',1,'CoreTweet::Core::TokensBase']]],
-  ['longitude',['Longitude',['../classCoreTweet_1_1Coordinates.html#aa2ea43d2417ffd0181157c0c5dee7364',1,'CoreTweet::Coordinates']]]
+  ['keys',['Keys',['../classCoreTweet_1_1Core_1_1DictionaryResponse.html#a93f65aa7a5c0b9c02e2a2c5808d5f9b8',1,'CoreTweet::Core::DictionaryResponse']]]
 ];

@@ -1,6 +1,7 @@
 var searchData=
 [
   ['cacheage',['CacheAge',['../classCoreTweet_1_1Embed.html#a1e26e407fe59401b766469a1a649bb3b',1,'CoreTweet::Embed']]],
+  ['calltoactions',['CallToActions',['../classCoreTweet_1_1AdditionalMediaInfo.html#a169f84e221a47d86ca7138537901d4b4',1,'CoreTweet::AdditionalMediaInfo']]],
   ['candm',['CanDM',['../classCoreTweet_1_1RelationshipSource.html#aabfb6cf66d466d01a4bd5ec0cc7b3f19',1,'CoreTweet::RelationshipSource']]],
   ['centroid',['Centroid',['../classCoreTweet_1_1Place.html#af034808931accfba007aadd24f404dd8',1,'CoreTweet::Place']]],
   ['change',['Change',['../classCoreTweet_1_1CollectionEntryOperationError.html#a3f4f4fbf227ddae41b415f1747a57b05',1,'CoreTweet::CollectionEntryOperationError']]],
@@ -24,6 +25,8 @@ var searchData=
   ['country',['Country',['../classCoreTweet_1_1Place.html#a2fc0ff75e28831d37a81712b82a28744',1,'CoreTweet.Place.Country()'],['../classCoreTweet_1_1TrendLocation.html#a2ad49997dbe235811c4a726843ab4f62',1,'CoreTweet.TrendLocation.Country()']]],
   ['countrycode',['CountryCode',['../classCoreTweet_1_1Place.html#aaab07dab5d2986f5ae9545da1e6db47e',1,'CoreTweet.Place.CountryCode()'],['../classCoreTweet_1_1TrendLocation.html#aca056f0609207883f1e06ceadba79a8e',1,'CoreTweet.TrendLocation.CountryCode()']]],
   ['createdat',['CreatedAt',['../classCoreTweet_1_1List.html#a306364dba7e72275c43304f9f8d94f49',1,'CoreTweet.List.CreatedAt()'],['../classCoreTweet_1_1TrendsResult.html#a77230e90c33220ac444528505110422a',1,'CoreTweet.TrendsResult.CreatedAt()'],['../classCoreTweet_1_1SearchQuery.html#aeaed57e799ba58718d142614f955e62a',1,'CoreTweet.SearchQuery.CreatedAt()'],['../classCoreTweet_1_1Status.html#abe0967eb4bb7891eeadcf039b8729729',1,'CoreTweet.Status.CreatedAt()'],['../classCoreTweet_1_1DirectMessage.html#af71d8fc3f9a50cbe41e436a25373f098',1,'CoreTweet.DirectMessage.CreatedAt()'],['../classCoreTweet_1_1User.html#a3f935cd99d6918a5c6a144247911ce47',1,'CoreTweet.User.CreatedAt()'],['../classCoreTweet_1_1Streaming_1_1EventMessage.html#ac906f4a4dbacb32fbd092cc18e8222c9',1,'CoreTweet.Streaming.EventMessage.CreatedAt()']]],
+  ['createdtimestamp',['CreatedTimestamp',['../classCoreTweet_1_1MessageCreateEvent.html#a1a774e4fbe39fa930fce9deb56f14611',1,'CoreTweet.MessageCreateEvent.CreatedTimestamp()'],['../classCoreTweet_1_1WelcomeMessage.html#ac75cf51eaaf66cadae6d52a45a62a9d8',1,'CoreTweet.WelcomeMessage.CreatedTimestamp()'],['../classCoreTweet_1_1WelcomeMessageRule.html#a5e3f3cfbf2357610af7e335d09b481eb',1,'CoreTweet.WelcomeMessageRule.CreatedTimestamp()']]],
+  ['ctas',['Ctas',['../classCoreTweet_1_1MessageData.html#a5c57b05c98dad9da16c180609f626efc',1,'CoreTweet::MessageData']]],
   ['currentuserretweet',['CurrentUserRetweet',['../classCoreTweet_1_1Status.html#a06ca0a2ba4689d1025e89ad628e902cb',1,'CoreTweet::Status']]],
   ['cursors',['Cursors',['../classCoreTweet_1_1CollectionsListResult.html#a0ffbc650568ff303338684b692fa5564',1,'CoreTweet::CollectionsListResult']]],
   ['customtimelinetype',['CustomTimelineType',['../classCoreTweet_1_1Timeline.html#a78b985b897c6089764afd5eafd6b92f4',1,'CoreTweet::Timeline']]],

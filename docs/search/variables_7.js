@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['includedtokens',['IncludedTokens',['../classCoreTweet_1_1Core_1_1ApiProviderBase.html#a8f9003e34c6f19f561b10b1f14098ec1',1,'CoreTweet::Core::ApiProviderBase']]]
+  ['help',['Help',['../classCoreTweet_1_1Core_1_1TokensBase.html#a23eab5f215c508d6e56895671dd51a30',1,'CoreTweet::Core::TokensBase']]]
 ];

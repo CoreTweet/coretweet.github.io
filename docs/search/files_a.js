@@ -1,10 +1,7 @@
 var searchData=
 [
-  ['searchquery_2ecs',['SearchQuery.cs',['../SearchQuery_8cs.html',1,'']]],
-  ['securityutils_2ecs',['SecurityUtils.cs',['../SecurityUtils_8cs.html',1,'']]],
-  ['setting_2ecs',['Setting.cs',['../Setting_8cs.html',1,'']]],
-  ['simpleprogress_2ecs',['SimpleProgress.cs',['../SimpleProgress_8cs.html',1,'']]],
-  ['status_2ecs',['Status.cs',['../Status_8cs.html',1,'']]],
-  ['stream_2ecs',['Stream.cs',['../Stream_8cs.html',1,'']]],
-  ['streamingobservable_2ecs',['StreamingObservable.cs',['../StreamingObservable_8cs.html',1,'']]]
+  ['ratelimit_2ecs',['RateLimit.cs',['../RateLimit_8cs.html',1,'']]],
+  ['request_2easync_2ecs',['Request.Async.cs',['../Request_8Async_8cs.html',1,'']]],
+  ['request_2ecs',['Request.cs',['../Request_8cs.html',1,'']]],
+  ['restapis_2ecs',['RestApis.cs',['../RestApis_8cs.html',1,'']]]
 ];

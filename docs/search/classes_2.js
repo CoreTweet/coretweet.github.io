@@ -20,5 +20,7 @@ var searchData=
   ['controlmessage',['ControlMessage',['../classCoreTweet_1_1Streaming_1_1ControlMessage.html',1,'CoreTweet::Streaming']]],
   ['coordinates',['Coordinates',['../classCoreTweet_1_1Coordinates.html',1,'CoreTweet']]],
   ['corebase',['CoreBase',['../classCoreTweet_1_1Core_1_1CoreBase.html',1,'CoreTweet::Core']]],
-  ['cursored',['Cursored',['../classCoreTweet_1_1Cursored.html',1,'CoreTweet']]]
+  ['cursored',['Cursored',['../classCoreTweet_1_1Cursored.html',1,'CoreTweet']]],
+  ['cursoredmessagecreateevents',['CursoredMessageCreateEvents',['../classCoreTweet_1_1CursoredMessageCreateEvents.html',1,'CoreTweet']]],
+  ['cursoredwelcomemessagerules',['CursoredWelcomeMessageRules',['../classCoreTweet_1_1CursoredWelcomeMessageRules.html',1,'CoreTweet']]]
 ];

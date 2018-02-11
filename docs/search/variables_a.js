@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['media',['Media',['../classCoreTweet_1_1Core_1_1TokensBase.html#afd14cf37320d111d4b7f3996a2389356',1,'CoreTweet::Core::TokensBase']]],
-  ['members',['Members',['../classCoreTweet_1_1Rest_1_1Lists.html#ac7eac549ca9d022c84e507ffaa51af6e',1,'CoreTweet::Rest::Lists']]],
-  ['metadata',['Metadata',['../classCoreTweet_1_1Rest_1_1Media.html#aa3360a6af3ef5a14d118532ff8027bbb',1,'CoreTweet::Rest::Media']]],
-  ['mutes',['Mutes',['../classCoreTweet_1_1Core_1_1TokensBase.html#a79c914a9aa691618280a8ede80ff122f',1,'CoreTweet::Core::TokensBase']]]
+  ['latitude',['Latitude',['../classCoreTweet_1_1Coordinates.html#a56edf3a50b50b9cdf18392f785e0e452',1,'CoreTweet::Coordinates']]],
+  ['lists',['Lists',['../classCoreTweet_1_1Core_1_1TokensBase.html#a39a7715161d53f4376624131efe06393',1,'CoreTweet::Core::TokensBase']]],
+  ['longitude',['Longitude',['../classCoreTweet_1_1Coordinates.html#aa2ea43d2417ffd0181157c0c5dee7364',1,'CoreTweet::Coordinates']]]
 ];

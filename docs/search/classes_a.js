@@ -1,6 +1,8 @@
 var searchData=
 [
   ['media',['Media',['../classCoreTweet_1_1Rest_1_1Media.html',1,'CoreTweet::Rest']]],
+  ['mediaaction',['MediaAction',['../classCoreTweet_1_1MediaAction.html',1,'CoreTweet']]],
+  ['mediacalltoactions',['MediaCallToActions',['../classCoreTweet_1_1MediaCallToActions.html',1,'CoreTweet']]],
   ['mediaentity',['MediaEntity',['../classCoreTweet_1_1MediaEntity.html',1,'CoreTweet']]],
   ['mediametadata',['MediaMetadata',['../classCoreTweet_1_1Rest_1_1MediaMetadata.html',1,'CoreTweet::Rest']]],
   ['mediaprocessingerror',['MediaProcessingError',['../classCoreTweet_1_1MediaProcessingError.html',1,'CoreTweet']]],
@@ -8,6 +10,15 @@ var searchData=
   ['mediasize',['MediaSize',['../classCoreTweet_1_1MediaSize.html',1,'CoreTweet']]],
   ['mediasizes',['MediaSizes',['../classCoreTweet_1_1MediaSizes.html',1,'CoreTweet']]],
   ['mediauploadresult',['MediaUploadResult',['../classCoreTweet_1_1MediaUploadResult.html',1,'CoreTweet']]],
+  ['messageattachment',['MessageAttachment',['../classCoreTweet_1_1MessageAttachment.html',1,'CoreTweet']]],
+  ['messagecalltoaction',['MessageCallToAction',['../classCoreTweet_1_1MessageCallToAction.html',1,'CoreTweet']]],
+  ['messagecalltoactionresponse',['MessageCallToActionResponse',['../classCoreTweet_1_1MessageCallToActionResponse.html',1,'CoreTweet']]],
+  ['messagecreate',['MessageCreate',['../classCoreTweet_1_1MessageCreate.html',1,'CoreTweet']]],
+  ['messagecreateevent',['MessageCreateEvent',['../classCoreTweet_1_1MessageCreateEvent.html',1,'CoreTweet']]],
+  ['messagecreateeventresponse',['MessageCreateEventResponse',['../classCoreTweet_1_1MessageCreateEventResponse.html',1,'CoreTweet']]],
+  ['messagedata',['MessageData',['../classCoreTweet_1_1MessageData.html',1,'CoreTweet']]],
+  ['messagesourceapp',['MessageSourceApp',['../classCoreTweet_1_1MessageSourceApp.html',1,'CoreTweet']]],
+  ['messagetarget',['MessageTarget',['../classCoreTweet_1_1MessageTarget.html',1,'CoreTweet']]],
   ['mutes',['Mutes',['../classCoreTweet_1_1Rest_1_1Mutes.html',1,'CoreTweet::Rest']]],
   ['mutesusers',['MutesUsers',['../classCoreTweet_1_1Rest_1_1MutesUsers.html',1,'CoreTweet::Rest']]]
 ];

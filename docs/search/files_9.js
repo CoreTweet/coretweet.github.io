@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['ratelimit_2ecs',['RateLimit.cs',['../RateLimit_8cs.html',1,'']]],
-  ['request_2easync_2ecs',['Request.Async.cs',['../Request_8Async_8cs.html',1,'']]],
-  ['request_2ecs',['Request.cs',['../Request_8cs.html',1,'']]],
-  ['restapis_2ecs',['RestApis.cs',['../RestApis_8cs.html',1,'']]]
+  ['places_2ecs',['Places.cs',['../Places_8cs.html',1,'']]],
+  ['progresshttpcontent_2ecs',['ProgressHttpContent.cs',['../ProgressHttpContent_8cs.html',1,'']]],
+  ['progressinfo_2ecs',['ProgressInfo.cs',['../ProgressInfo_8cs.html',1,'']]]
 ];

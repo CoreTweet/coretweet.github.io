@@ -12,7 +12,7 @@ var searchData=
   ['position',['Position',['../classCoreTweet_1_1CollectionEntriesResult.html#a5d8e3f4aa95a183b1100e642be61ea69',1,'CoreTweet::CollectionEntriesResult']]],
   ['possiblysensitive',['PossiblySensitive',['../classCoreTweet_1_1Status.html#ae965f8b70522afd497c972b91899dd95',1,'CoreTweet::Status']]],
   ['possiblysensitiveappealable',['PossiblySensitiveAppealable',['../classCoreTweet_1_1Status.html#ac777c92c9cdf45e1e2c91908de08017d',1,'CoreTweet::Status']]],
-  ['previouscursor',['PreviousCursor',['../classCoreTweet_1_1CollectionCursors.html#abd17acb6c90b5a71855fa12e741dea73',1,'CoreTweet.CollectionCursors.PreviousCursor()'],['../classCoreTweet_1_1Cursored.html#a8d2e33f4b5a419bc8f921376b0ed9462',1,'CoreTweet.Cursored.PreviousCursor()']]],
+  ['previouscursor',['PreviousCursor',['../classCoreTweet_1_1CollectionCursors.html#abd17acb6c90b5a71855fa12e741dea73',1,'CoreTweet.CollectionCursors.PreviousCursor()'],['../interfaceCoreTweet_1_1ICursorBackwardable.html#a96f4e2e776e98ebd65d702fab5bdd96d',1,'CoreTweet.ICursorBackwardable.PreviousCursor()'],['../classCoreTweet_1_1Cursored.html#a8d2e33f4b5a419bc8f921376b0ed9462',1,'CoreTweet.Cursored.PreviousCursor()']]],
   ['processinginfo',['ProcessingInfo',['../classCoreTweet_1_1UploadFinalizeCommandResult.html#a49b7f75336f4a0bba869fcae8be9abbf',1,'CoreTweet::UploadFinalizeCommandResult']]],
   ['processingprogresspercent',['ProcessingProgressPercent',['../structCoreTweet_1_1UploadChunkedProgressInfo.html#a733b93319e505c98706781db017442f4',1,'CoreTweet::UploadChunkedProgressInfo']]],
   ['profilebackgroundcolor',['ProfileBackgroundColor',['../classCoreTweet_1_1User.html#ad84ca25dba025d36b2ae9a36699328ae',1,'CoreTweet::User']]],
@@ -28,5 +28,6 @@ var searchData=
   ['profiletextcolor',['ProfileTextColor',['../classCoreTweet_1_1User.html#a1d5646cad4cefe645ab3e060279a187f',1,'CoreTweet::User']]],
   ['progresspercent',['ProgressPercent',['../classCoreTweet_1_1ProcessingInfo.html#a0a6411918db49b492f2c26f1b0864d63',1,'CoreTweet::ProcessingInfo']]],
   ['providername',['ProviderName',['../classCoreTweet_1_1Embed.html#a5d955fbfd8c037268f78208f94fc1c7f',1,'CoreTweet::Embed']]],
-  ['providerurl',['ProviderUrl',['../classCoreTweet_1_1Embed.html#af7ccc31a0075c185196aab2752cfcbfc',1,'CoreTweet::Embed']]]
+  ['providerurl',['ProviderUrl',['../classCoreTweet_1_1Embed.html#af7ccc31a0075c185196aab2752cfcbfc',1,'CoreTweet::Embed']]],
+  ['proxy',['Proxy',['../classCoreTweet_1_1ConnectionOptions.html#ac6d2c92915d5cc835ef559ed9c090745',1,'CoreTweet::ConnectionOptions']]]
 ];

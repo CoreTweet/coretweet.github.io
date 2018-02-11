@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['help',['Help',['../classCoreTweet_1_1Core_1_1TokensBase.html#a23eab5f215c508d6e56895671dd51a30',1,'CoreTweet::Core::TokensBase']]]
+  ['geo',['Geo',['../classCoreTweet_1_1Core_1_1TokensBase.html#a9bc1ad5a49dc25c3bdf01e9aeb7ac42c',1,'CoreTweet::Core::TokensBase']]]
 ];
