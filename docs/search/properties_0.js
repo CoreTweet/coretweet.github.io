@@ -10,7 +10,7 @@ var searchData=
   ['alwaysusehttps',['AlwaysUseHttps',['../classCoreTweet_1_1Setting.html#a6c96a9a99d55fb08a84cd77deb27cbb3',1,'CoreTweet::Setting']]],
   ['apiurl',['ApiUrl',['../classCoreTweet_1_1ConnectionOptions.html#a1bbe2ec43f3966f78d400ebc4431f07c',1,'CoreTweet::ConnectionOptions']]],
   ['apiversion',['ApiVersion',['../classCoreTweet_1_1ConnectionOptions.html#ad3b392f8af57a5dd5e368ee503a0f39f',1,'CoreTweet::ConnectionOptions']]],
-  ['apps',['Apps',['../classCoreTweet_1_1CursoredMessageCreateEvents.html#a5d14ee0c7596a5ed38563e75387dd0a0',1,'CoreTweet::CursoredMessageCreateEvents']]],
+  ['apps',['Apps',['../classCoreTweet_1_1MessageCreateEventResponse.html#a9df6a35dcfa684fb730fec51fe95d041',1,'CoreTweet.MessageCreateEventResponse.Apps()'],['../classCoreTweet_1_1CursoredMessageCreateEvents.html#a5d14ee0c7596a5ed38563e75387dd0a0',1,'CoreTweet.CursoredMessageCreateEvents.Apps()'],['../classCoreTweet_1_1WelcomeMessageResponse.html#a9a131dc92d0fd00614149b5917391a21',1,'CoreTweet.WelcomeMessageResponse.Apps()'],['../classCoreTweet_1_1CursoredWelcomeMessages.html#a16586259edc7a91baaec35cc32ff67eb',1,'CoreTweet.CursoredWelcomeMessages.Apps()']]],
   ['asof',['AsOf',['../classCoreTweet_1_1TrendsResult.html#a8ff15ab141dfc52c6b86470f523271bb',1,'CoreTweet::TrendsResult']]],
   ['aspectratio',['AspectRatio',['../classCoreTweet_1_1VideoInfo.html#ad820e8aab3c0158b79efde6a952c64c4',1,'CoreTweet::VideoInfo']]],
   ['attachment',['Attachment',['../classCoreTweet_1_1MessageData.html#a86180e17b098c575ac87d1ed8b4e240c',1,'CoreTweet::MessageData']]],

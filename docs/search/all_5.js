@@ -35,7 +35,7 @@ var searchData=
   ['errorcode',['ErrorCode',['../namespaceCoreTweet.html#adb5cd00c67f4fe33b2049b37e634e15e',1,'CoreTweet']]],
   ['errorcreatingstatus',['ErrorCreatingStatus',['../namespaceCoreTweet.html#adb5cd00c67f4fe33b2049b37e634e15ea9304c0c5c276015c1f259118afcb2424',1,'CoreTweet']]],
   ['errors',['Errors',['../classCoreTweet_1_1TwitterException.html#a4b785664f8ccff727d0bd38fd92dc47a',1,'CoreTweet::TwitterException']]],
-  ['event',['Event',['../classCoreTweet_1_1Streaming_1_1EventMessage.html#a8adf7e86686802d009aedd0690f86172',1,'CoreTweet.Streaming.EventMessage.Event()'],['../namespaceCoreTweet_1_1Streaming.html#ae0f1a921dcf3d18048a7d11193abe829aa4ecfc70574394990cf17bd83df499f7',1,'CoreTweet.Streaming.Event()']]],
+  ['event',['Event',['../classCoreTweet_1_1MessageCreateEventResponse.html#ab9ef301f4d4ae50efa6de5be793a01e1',1,'CoreTweet.MessageCreateEventResponse.Event()'],['../classCoreTweet_1_1Streaming_1_1EventMessage.html#a8adf7e86686802d009aedd0690f86172',1,'CoreTweet.Streaming.EventMessage.Event()'],['../namespaceCoreTweet_1_1Streaming.html#ae0f1a921dcf3d18048a7d11193abe829aa4ecfc70574394990cf17bd83df499f7',1,'CoreTweet.Streaming.Event()']]],
   ['eventcode',['EventCode',['../namespaceCoreTweet_1_1Streaming.html#a41edacb4832607d7589e10e59d07fb06',1,'CoreTweet::Streaming']]],
   ['eventmessage',['EventMessage',['../classCoreTweet_1_1Streaming_1_1EventMessage.html',1,'CoreTweet::Streaming']]],
   ['events',['Events',['../classCoreTweet_1_1CursoredMessageCreateEvents.html#a69992ea822cba23334fa4e0d655f63b9',1,'CoreTweet.CursoredMessageCreateEvents.Events()'],['../classCoreTweet_1_1Rest_1_1DirectMessages.html#aa48b064ec5620f8c669c05fd80720ab0',1,'CoreTweet.Rest.DirectMessages.Events()']]],

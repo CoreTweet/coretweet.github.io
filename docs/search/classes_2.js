@@ -22,5 +22,6 @@ var searchData=
   ['corebase',['CoreBase',['../classCoreTweet_1_1Core_1_1CoreBase.html',1,'CoreTweet::Core']]],
   ['cursored',['Cursored',['../classCoreTweet_1_1Cursored.html',1,'CoreTweet']]],
   ['cursoredmessagecreateevents',['CursoredMessageCreateEvents',['../classCoreTweet_1_1CursoredMessageCreateEvents.html',1,'CoreTweet']]],
-  ['cursoredwelcomemessagerules',['CursoredWelcomeMessageRules',['../classCoreTweet_1_1CursoredWelcomeMessageRules.html',1,'CoreTweet']]]
+  ['cursoredwelcomemessagerules',['CursoredWelcomeMessageRules',['../classCoreTweet_1_1CursoredWelcomeMessageRules.html',1,'CoreTweet']]],
+  ['cursoredwelcomemessages',['CursoredWelcomeMessages',['../classCoreTweet_1_1CursoredWelcomeMessages.html',1,'CoreTweet']]]
 ];

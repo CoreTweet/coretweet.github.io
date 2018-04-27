@@ -22,7 +22,7 @@ var searchData=
   ['apiversion',['ApiVersion',['../classCoreTweet_1_1ConnectionOptions.html#ad3b392f8af57a5dd5e368ee503a0f39f',1,'CoreTweet::ConnectionOptions']]],
   ['application',['Application',['../classCoreTweet_1_1Rest_1_1Application.html',1,'CoreTweet.Rest.Application'],['../classCoreTweet_1_1Core_1_1TokensBase.html#ab4c9c479e857f813c25dbc41cc7541f1',1,'CoreTweet.Core.TokensBase.Application()']]],
   ['apponly',['apponly',['../coretweet__for__shell_8cs.html#a25f15e1dda46d6d3cec3574ba86b8878',1,'coretweet_for_shell.cs']]],
-  ['apps',['Apps',['../classCoreTweet_1_1CursoredMessageCreateEvents.html#a5d14ee0c7596a5ed38563e75387dd0a0',1,'CoreTweet::CursoredMessageCreateEvents']]],
+  ['apps',['Apps',['../classCoreTweet_1_1MessageCreateEventResponse.html#a9df6a35dcfa684fb730fec51fe95d041',1,'CoreTweet.MessageCreateEventResponse.Apps()'],['../classCoreTweet_1_1CursoredMessageCreateEvents.html#a5d14ee0c7596a5ed38563e75387dd0a0',1,'CoreTweet.CursoredMessageCreateEvents.Apps()'],['../classCoreTweet_1_1WelcomeMessageResponse.html#a9a131dc92d0fd00614149b5917391a21',1,'CoreTweet.WelcomeMessageResponse.Apps()'],['../classCoreTweet_1_1CursoredWelcomeMessages.html#a16586259edc7a91baaec35cc32ff67eb',1,'CoreTweet.CursoredWelcomeMessages.Apps()']]],
   ['asof',['AsOf',['../classCoreTweet_1_1TrendsResult.html#a8ff15ab141dfc52c6b86470f523271bb',1,'CoreTweet::TrendsResult']]],
   ['aspectratio',['AspectRatio',['../classCoreTweet_1_1VideoInfo.html#ad820e8aab3c0158b79efde6a952c64c4',1,'CoreTweet::VideoInfo']]],
   ['assemblyinfo_2ecs',['AssemblyInfo.cs',['../AssemblyInfo_8cs.html',1,'']]],

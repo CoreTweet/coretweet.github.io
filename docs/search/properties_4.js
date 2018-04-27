@@ -7,7 +7,7 @@ var searchData=
   ['entries',['Entries',['../classCoreTweet_1_1CollectionEntriesResult.html#a49f672a2297472e30d67ad7de3250c81',1,'CoreTweet::CollectionEntriesResult']]],
   ['error',['Error',['../classCoreTweet_1_1ProcessingInfo.html#a218a6c98417b28560be09da9bef1a679',1,'CoreTweet::ProcessingInfo']]],
   ['errors',['Errors',['../classCoreTweet_1_1TwitterException.html#a4b785664f8ccff727d0bd38fd92dc47a',1,'CoreTweet::TwitterException']]],
-  ['event',['Event',['../classCoreTweet_1_1Streaming_1_1EventMessage.html#a8adf7e86686802d009aedd0690f86172',1,'CoreTweet::Streaming::EventMessage']]],
+  ['event',['Event',['../classCoreTweet_1_1MessageCreateEventResponse.html#ab9ef301f4d4ae50efa6de5be793a01e1',1,'CoreTweet.MessageCreateEventResponse.Event()'],['../classCoreTweet_1_1Streaming_1_1EventMessage.html#a8adf7e86686802d009aedd0690f86172',1,'CoreTweet.Streaming.EventMessage.Event()']]],
   ['events',['Events',['../classCoreTweet_1_1CursoredMessageCreateEvents.html#a69992ea822cba23334fa4e0d655f63b9',1,'CoreTweet::CursoredMessageCreateEvents']]],
   ['exception',['Exception',['../classCoreTweet_1_1Streaming_1_1RawJsonMessage.html#aa8d8bf0d4db0b1881f58449ba15a6aa9',1,'CoreTweet::Streaming::RawJsonMessage']]],
   ['expandedurl',['ExpandedUrl',['../classCoreTweet_1_1UrlEntity.html#a30a2fe8b3ea0490c109920caa636a873',1,'CoreTweet::UrlEntity']]],

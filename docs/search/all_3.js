@@ -88,6 +88,7 @@ var searchData=
   ['cursored_2ecs',['Cursored.cs',['../Cursored_8cs.html',1,'']]],
   ['cursoredmessagecreateevents',['CursoredMessageCreateEvents',['../classCoreTweet_1_1CursoredMessageCreateEvents.html',1,'CoreTweet']]],
   ['cursoredwelcomemessagerules',['CursoredWelcomeMessageRules',['../classCoreTweet_1_1CursoredWelcomeMessageRules.html',1,'CoreTweet']]],
+  ['cursoredwelcomemessages',['CursoredWelcomeMessages',['../classCoreTweet_1_1CursoredWelcomeMessages.html',1,'CoreTweet']]],
   ['cursors',['Cursors',['../classCoreTweet_1_1CollectionsListResult.html#a0ffbc650568ff303338684b692fa5564',1,'CoreTweet::CollectionsListResult']]],
   ['customtimelinetype',['CustomTimelineType',['../classCoreTweet_1_1Timeline.html#a78b985b897c6089764afd5eafd6b92f4',1,'CoreTweet::Timeline']]],
   ['customtimelineurl',['CustomTimelineUrl',['../classCoreTweet_1_1Timeline.html#a93a2ff383b69b355a6a95f1a313e610e',1,'CoreTweet::Timeline']]],
