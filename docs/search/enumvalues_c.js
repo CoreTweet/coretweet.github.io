@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['pagedoesnotexist',['PageDoesNotExist',['../namespaceCoreTweet.html#adb5cd00c67f4fe33b2049b37e634e15eaf2e67122145ef380f3a0a3f2384bca20',1,'CoreTweet']]],
-  ['parameterismissing',['ParameterIsMissing',['../namespaceCoreTweet.html#adb5cd00c67f4fe33b2049b37e634e15eaa37aac0fc6aec0c87628337a86afab88',1,'CoreTweet']]],
-  ['pending',['Pending',['../namespaceCoreTweet.html#a197f9846d8068532d1c527f5782c5d80a2d13df6f8b5e4c5af9f87e0dc39df69d',1,'CoreTweet']]],
-  ['post',['Post',['../namespaceCoreTweet.html#a6e05c1dcaf2cf8e4ece975f7d3af0e26a03d947a2158373c3b9d74325850cb8b9',1,'CoreTweet']]],
-  ['previous',['Previous',['../namespaceCoreTweet.html#a3cb7681ad32c9fadc094714125a3d30aadd1f775e443ff3b9a89270713580a51b',1,'CoreTweet']]]
+  ['overcapacity',['OverCapacity',['../namespaceCoreTweet.html#adb5cd00c67f4fe33b2049b37e634e15ea4fcf3e94521b7db24bd0c3bd6e9201af',1,'CoreTweet']]],
+  ['overcharacterslimit',['OverCharactersLimit',['../namespaceCoreTweet.html#adb5cd00c67f4fe33b2049b37e634e15ea85992fa2444d8afff247b89c8a0afc6b',1,'CoreTweet']]],
+  ['overdailyphotolimit',['OverDailyPhotoLimit',['../namespaceCoreTweet.html#adb5cd00c67f4fe33b2049b37e634e15eadeb4458c7f04df2ce65ffa97881d1700',1,'CoreTweet']]],
+  ['overstatusupdatelimit',['OverStatusUpdateLimit',['../namespaceCoreTweet.html#adb5cd00c67f4fe33b2049b37e634e15ea543c7091db5e687b0a4f11ce82ec1e17',1,'CoreTweet']]]
 ];

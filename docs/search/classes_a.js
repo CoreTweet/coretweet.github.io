@@ -19,6 +19,7 @@ var searchData=
   ['messagedata',['MessageData',['../classCoreTweet_1_1MessageData.html',1,'CoreTweet']]],
   ['messagesourceapp',['MessageSourceApp',['../classCoreTweet_1_1MessageSourceApp.html',1,'CoreTweet']]],
   ['messagetarget',['MessageTarget',['../classCoreTweet_1_1MessageTarget.html',1,'CoreTweet']]],
+  ['muteevents',['MuteEvents',['../classCoreTweet_1_1AccountActivity_1_1MuteEvents.html',1,'CoreTweet::AccountActivity']]],
   ['mutes',['Mutes',['../classCoreTweet_1_1Rest_1_1Mutes.html',1,'CoreTweet::Rest']]],
   ['mutesusers',['MutesUsers',['../classCoreTweet_1_1Rest_1_1MutesUsers.html',1,'CoreTweet::Rest']]]
 ];

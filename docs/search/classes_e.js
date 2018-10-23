@@ -1,22 +1,10 @@
 var searchData=
 [
-  ['savedsearches',['SavedSearches',['../classCoreTweet_1_1Rest_1_1SavedSearches.html',1,'CoreTweet::Rest']]],
-  ['scrubgeomessage',['ScrubGeoMessage',['../classCoreTweet_1_1Streaming_1_1ScrubGeoMessage.html',1,'CoreTweet::Streaming']]],
-  ['search',['Search',['../classCoreTweet_1_1Rest_1_1Search.html',1,'CoreTweet::Rest']]],
-  ['searchmetadata',['SearchMetadata',['../classCoreTweet_1_1SearchMetadata.html',1,'CoreTweet']]],
-  ['searchquery',['SearchQuery',['../classCoreTweet_1_1SearchQuery.html',1,'CoreTweet']]],
-  ['searchqueryresponse',['SearchQueryResponse',['../classCoreTweet_1_1SearchQueryResponse.html',1,'CoreTweet']]],
-  ['searchresult',['SearchResult',['../classCoreTweet_1_1SearchResult.html',1,'CoreTweet']]],
-  ['setting',['Setting',['../classCoreTweet_1_1Setting.html',1,'CoreTweet']]],
-  ['sleeptime',['SleepTime',['../classCoreTweet_1_1SleepTime.html',1,'CoreTweet']]],
-  ['status',['Status',['../classCoreTweet_1_1Status.html',1,'CoreTweet']]],
-  ['statuses',['Statuses',['../classCoreTweet_1_1Rest_1_1Statuses.html',1,'CoreTweet::Rest']]],
-  ['statusmessage',['StatusMessage',['../classCoreTweet_1_1Streaming_1_1StatusMessage.html',1,'CoreTweet::Streaming']]],
-  ['statusresponse',['StatusResponse',['../classCoreTweet_1_1StatusResponse.html',1,'CoreTweet']]],
-  ['statuswithheldmessage',['StatusWithheldMessage',['../classCoreTweet_1_1Streaming_1_1StatusWithheldMessage.html',1,'CoreTweet::Streaming']]],
-  ['streamingapi',['StreamingApi',['../classCoreTweet_1_1Streaming_1_1StreamingApi.html',1,'CoreTweet::Streaming']]],
-  ['streamingmessage',['StreamingMessage',['../classCoreTweet_1_1Streaming_1_1StreamingMessage.html',1,'CoreTweet::Streaming']]],
-  ['streamingparameters',['StreamingParameters',['../classCoreTweet_1_1Streaming_1_1StreamingParameters.html',1,'CoreTweet::Streaming']]],
-  ['stringresponse',['StringResponse',['../classCoreTweet_1_1StringResponse.html',1,'CoreTweet']]],
-  ['symbolentity',['SymbolEntity',['../classCoreTweet_1_1SymbolEntity.html',1,'CoreTweet']]]
+  ['ratelimit',['RateLimit',['../classCoreTweet_1_1RateLimit.html',1,'CoreTweet']]],
+  ['rawjsonmessage',['RawJsonMessage',['../classCoreTweet_1_1Streaming_1_1RawJsonMessage.html',1,'CoreTweet::Streaming']]],
+  ['relationship',['Relationship',['../classCoreTweet_1_1Relationship.html',1,'CoreTweet']]],
+  ['relationshipsource',['RelationshipSource',['../classCoreTweet_1_1RelationshipSource.html',1,'CoreTweet']]],
+  ['relationshiptarget',['RelationshipTarget',['../classCoreTweet_1_1RelationshipTarget.html',1,'CoreTweet']]],
+  ['request',['Request',['../classCoreTweet_1_1Request.html',1,'CoreTweet']]],
+  ['requestparameters',['RequestParameters',['../classCoreTweet_1_1RequestParameters.html',1,'CoreTweet']]]
 ];

@@ -1,9 +1,16 @@
 var searchData=
 [
+  ['dateconverter',['DateConverter',['../classCoreTweet_1_1Core_1_1DateConverter.html',1,'CoreTweet::Core']]],
   ['datetimeoffsetconverter',['DateTimeOffsetConverter',['../classCoreTweet_1_1Core_1_1DateTimeOffsetConverter.html',1,'CoreTweet::Core']]],
+  ['deletedstatus',['DeletedStatus',['../classCoreTweet_1_1AccountActivity_1_1DeletedStatus.html',1,'CoreTweet::AccountActivity']]],
   ['deletemessage',['DeleteMessage',['../classCoreTweet_1_1Streaming_1_1DeleteMessage.html',1,'CoreTweet::Streaming']]],
   ['dictionaryresponse',['DictionaryResponse',['../classCoreTweet_1_1Core_1_1DictionaryResponse.html',1,'CoreTweet::Core']]],
   ['directmessage',['DirectMessage',['../classCoreTweet_1_1DirectMessage.html',1,'CoreTweet']]],
+  ['directmessageevents',['DirectMessageEvents',['../classCoreTweet_1_1AccountActivity_1_1DirectMessageEvents.html',1,'CoreTweet::AccountActivity']]],
+  ['directmessageindicatetypingevent',['DirectMessageIndicateTypingEvent',['../classCoreTweet_1_1AccountActivity_1_1DirectMessageIndicateTypingEvent.html',1,'CoreTweet::AccountActivity']]],
+  ['directmessageindicatetypingevents',['DirectMessageIndicateTypingEvents',['../classCoreTweet_1_1AccountActivity_1_1DirectMessageIndicateTypingEvents.html',1,'CoreTweet::AccountActivity']]],
+  ['directmessagemarkreadevent',['DirectMessageMarkReadEvent',['../classCoreTweet_1_1AccountActivity_1_1DirectMessageMarkReadEvent.html',1,'CoreTweet::AccountActivity']]],
+  ['directmessagemarkreadevents',['DirectMessageMarkReadEvents',['../classCoreTweet_1_1AccountActivity_1_1DirectMessageMarkReadEvents.html',1,'CoreTweet::AccountActivity']]],
   ['directmessagemessage',['DirectMessageMessage',['../classCoreTweet_1_1Streaming_1_1DirectMessageMessage.html',1,'CoreTweet::Streaming']]],
   ['directmessageresponse',['DirectMessageResponse',['../classCoreTweet_1_1DirectMessageResponse.html',1,'CoreTweet']]],
   ['directmessages',['DirectMessages',['../classCoreTweet_1_1Rest_1_1DirectMessages.html',1,'CoreTweet::Rest']]],

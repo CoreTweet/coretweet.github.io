@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['streamingtype',['StreamingType',['../namespaceCoreTweet_1_1Streaming.html#a8c5eb73c0291bd14af419ba8318ccbf7',1,'CoreTweet::Streaming']]]
+  ['filterlevel',['FilterLevel',['../namespaceCoreTweet.html#a06bda0e7d906c76737e291ced843a2cf',1,'CoreTweet']]]
 ];

@@ -2,6 +2,7 @@ var searchData=
 [
   ['accesstoken',['AccessToken',['../classCoreTweet_1_1Tokens.html#a26b15c6a7284ee352e4829122b30c41d',1,'CoreTweet::Tokens']]],
   ['accesstokensecret',['AccessTokenSecret',['../classCoreTweet_1_1Tokens.html#a5d4e9084f700ba8e59dd8d2801e9775a',1,'CoreTweet::Tokens']]],
+  ['accountname',['AccountName',['../classCoreTweet_1_1AccountActivity_1_1SubscriptionsCount.html#a901419c07302abedd65914afd64042dc',1,'CoreTweet::AccountActivity::SubscriptionsCount']]],
   ['additionalmediainfo',['AdditionalMediaInfo',['../classCoreTweet_1_1MediaEntity.html#ae69aff5a7101d64904b93c2b9003b1e2',1,'CoreTweet::MediaEntity']]],
   ['allowcontributorrequest',['AllowContributorRequest',['../classCoreTweet_1_1Setting.html#aed62231cd2c906060acc426cd032d0f4',1,'CoreTweet::Setting']]],
   ['allowdmgroupsfrom',['AllowDMGroupsFrom',['../classCoreTweet_1_1Setting.html#a80c116b440666945466317d842356b06',1,'CoreTweet::Setting']]],
@@ -10,7 +11,9 @@ var searchData=
   ['alwaysusehttps',['AlwaysUseHttps',['../classCoreTweet_1_1Setting.html#a6c96a9a99d55fb08a84cd77deb27cbb3',1,'CoreTweet::Setting']]],
   ['apiurl',['ApiUrl',['../classCoreTweet_1_1ConnectionOptions.html#a1bbe2ec43f3966f78d400ebc4431f07c',1,'CoreTweet::ConnectionOptions']]],
   ['apiversion',['ApiVersion',['../classCoreTweet_1_1ConnectionOptions.html#ad3b392f8af57a5dd5e368ee503a0f39f',1,'CoreTweet::ConnectionOptions']]],
-  ['apps',['Apps',['../classCoreTweet_1_1MessageCreateEventResponse.html#a9df6a35dcfa684fb730fec51fe95d041',1,'CoreTweet.MessageCreateEventResponse.Apps()'],['../classCoreTweet_1_1CursoredMessageCreateEvents.html#a5d14ee0c7596a5ed38563e75387dd0a0',1,'CoreTweet.CursoredMessageCreateEvents.Apps()'],['../classCoreTweet_1_1WelcomeMessageResponse.html#a9a131dc92d0fd00614149b5917391a21',1,'CoreTweet.WelcomeMessageResponse.Apps()'],['../classCoreTweet_1_1CursoredWelcomeMessages.html#a16586259edc7a91baaec35cc32ff67eb',1,'CoreTweet.CursoredWelcomeMessages.Apps()']]],
+  ['appid',['AppId',['../classCoreTweet_1_1AccountActivity_1_1IdOnlyApp.html#a47929959e613284db74f4dda9860990c',1,'CoreTweet::AccountActivity::IdOnlyApp']]],
+  ['applicationid',['ApplicationId',['../classCoreTweet_1_1AccountActivity_1_1SubscriptionsList.html#a6866edd92f337625eab0a60092e91959',1,'CoreTweet::AccountActivity::SubscriptionsList']]],
+  ['apps',['Apps',['../classCoreTweet_1_1AccountActivity_1_1AppsInvolvingActivityEvent.html#a51f2e79a905b67900aef672344050945',1,'CoreTweet.AccountActivity.AppsInvolvingActivityEvent.Apps()'],['../classCoreTweet_1_1MessageCreateEventResponse.html#a9df6a35dcfa684fb730fec51fe95d041',1,'CoreTweet.MessageCreateEventResponse.Apps()'],['../classCoreTweet_1_1CursoredMessageCreateEvents.html#a5d14ee0c7596a5ed38563e75387dd0a0',1,'CoreTweet.CursoredMessageCreateEvents.Apps()'],['../classCoreTweet_1_1WelcomeMessageResponse.html#a9a131dc92d0fd00614149b5917391a21',1,'CoreTweet.WelcomeMessageResponse.Apps()'],['../classCoreTweet_1_1CursoredWelcomeMessages.html#a16586259edc7a91baaec35cc32ff67eb',1,'CoreTweet.CursoredWelcomeMessages.Apps()']]],
   ['asof',['AsOf',['../classCoreTweet_1_1TrendsResult.html#a8ff15ab141dfc52c6b86470f523271bb',1,'CoreTweet::TrendsResult']]],
   ['aspectratio',['AspectRatio',['../classCoreTweet_1_1VideoInfo.html#ad820e8aab3c0158b79efde6a952c64c4',1,'CoreTweet::VideoInfo']]],
   ['attachment',['Attachment',['../classCoreTweet_1_1MessageData.html#a86180e17b098c575ac87d1ed8b4e240c',1,'CoreTweet::MessageData']]],

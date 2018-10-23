@@ -5,12 +5,14 @@ var searchData=
   ['badrequest',['BadRequest',['../namespaceCoreTweet.html#adb5cd00c67f4fe33b2049b37e634e15ea9edf8fbf00a57d95a0af4923c9a1ec6f',1,'CoreTweet']]],
   ['bearertoken',['BearerToken',['../classCoreTweet_1_1OAuth2Token.html#a4d29db08d403acff0101bf6a3044da47',1,'CoreTweet::OAuth2Token']]],
   ['bitrate',['Bitrate',['../classCoreTweet_1_1VideoVariant.html#a6b2253adcec80f1d6be9800e7e5e94ca',1,'CoreTweet::VideoVariant']]],
-  ['block',['Block',['../namespaceCoreTweet_1_1Streaming.html#a41edacb4832607d7589e10e59d07fb06ae1e4c8c9ccd9fc39c391da4bcd093fb2',1,'CoreTweet::Streaming']]],
+  ['block',['Block',['../classCoreTweet_1_1AccountActivity_1_1TypedEventItem.html#a56fdb732d5da892f48d5d3103d075126ae1e4c8c9ccd9fc39c391da4bcd093fb2',1,'CoreTweet.AccountActivity.TypedEventItem.Block()'],['../namespaceCoreTweet_1_1Streaming.html#a41edacb4832607d7589e10e59d07fb06ae1e4c8c9ccd9fc39c391da4bcd093fb2',1,'CoreTweet.Streaming.Block()']]],
   ['blockedfromfollowinguser',['BlockedFromFollowingUser',['../namespaceCoreTweet.html#adb5cd00c67f4fe33b2049b37e634e15ea83f3b606cce8ec9802a6904eb3f4a370',1,'CoreTweet']]],
   ['blockedfromoperatingstatus',['BlockedFromOperatingStatus',['../namespaceCoreTweet.html#adb5cd00c67f4fe33b2049b37e634e15ea6ea341979b3fb176779b4d800a49b2b3',1,'CoreTweet']]],
+  ['blockevents',['BlockEvents',['../classCoreTweet_1_1AccountActivity_1_1BlockEvents.html',1,'CoreTweet.AccountActivity.BlockEvents'],['../namespaceCoreTweet_1_1AccountActivity.html#a18b0baaa24c72eec6dfc99563a13ae57ab69e3a38521bf5b220bb2d88aff434d0',1,'CoreTweet.AccountActivity.BlockEvents()']]],
   ['blocks',['Blocks',['../classCoreTweet_1_1Rest_1_1Blocks.html',1,'CoreTweet.Rest.Blocks'],['../classCoreTweet_1_1Core_1_1TokensBase.html#a82101a08497db82fd72ee14ae8e56f9d',1,'CoreTweet.Core.TokensBase.Blocks()']]],
   ['boundingbox',['BoundingBox',['../classCoreTweet_1_1BoundingBox.html',1,'CoreTweet.BoundingBox'],['../classCoreTweet_1_1Place.html#a3c0ee8d1abca37b83ed388d325cc2b5e',1,'CoreTweet.Place.BoundingBox()']]],
   ['brokerstall',['BrokerStall',['../namespaceCoreTweet_1_1Streaming.html#a8a261ff0c83f88d7ee1d03e64a9d5258a89db316a4594429ac2c66b629f202c87',1,'CoreTweet::Streaming']]],
+  ['bucket',['Bucket',['../classCoreTweet_1_1RequestParameters.html#a092d200e205937a2ac744429b5ea6ef6',1,'CoreTweet.RequestParameters.Bucket()'],['../namespaceCoreTweet.html#a0df7c5ad1d5a34f327538f239ed6462c',1,'CoreTweet.Bucket()']]],
   ['businessid',['BusinessId',['../classCoreTweet_1_1VendorYelp.html#aa7b617a5c9e9fac04057413e43be7fb6',1,'CoreTweet::VendorYelp']]],
   ['bytessent',['BytesSent',['../structCoreTweet_1_1UploadProgressInfo.html#a0f2669fc32b248d0048b5e4105a771fe',1,'CoreTweet.UploadProgressInfo.BytesSent()'],['../structCoreTweet_1_1UploadChunkedProgressInfo.html#a70096ba285182846692971d044698720',1,'CoreTweet.UploadChunkedProgressInfo.BytesSent()']]]
 ];

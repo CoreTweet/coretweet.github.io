@@ -1,9 +1,6 @@
 var searchData=
 [
-  ['ratelimit',['RateLimit',['../classCoreTweet_1_1RateLimit.html',1,'CoreTweet']]],
-  ['rawjsonmessage',['RawJsonMessage',['../classCoreTweet_1_1Streaming_1_1RawJsonMessage.html',1,'CoreTweet::Streaming']]],
-  ['relationship',['Relationship',['../classCoreTweet_1_1Relationship.html',1,'CoreTweet']]],
-  ['relationshipsource',['RelationshipSource',['../classCoreTweet_1_1RelationshipSource.html',1,'CoreTweet']]],
-  ['relationshiptarget',['RelationshipTarget',['../classCoreTweet_1_1RelationshipTarget.html',1,'CoreTweet']]],
-  ['request',['Request',['../classCoreTweet_1_1Request.html',1,'CoreTweet']]]
+  ['quickreply',['QuickReply',['../classCoreTweet_1_1QuickReply.html',1,'CoreTweet']]],
+  ['quickreplyoption',['QuickReplyOption',['../classCoreTweet_1_1QuickReplyOption.html',1,'CoreTweet']]],
+  ['quickreplyresponse',['QuickReplyResponse',['../classCoreTweet_1_1QuickReplyResponse.html',1,'CoreTweet']]]
 ];

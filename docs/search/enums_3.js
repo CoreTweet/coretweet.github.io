@@ -1,5 +1,8 @@
 var searchData=
 [
-  ['messagetype',['MessageType',['../namespaceCoreTweet_1_1Streaming.html#ae0f1a921dcf3d18048a7d11193abe829',1,'CoreTweet::Streaming']]],
-  ['methodtype',['MethodType',['../namespaceCoreTweet.html#a6e05c1dcaf2cf8e4ece975f7d3af0e26',1,'CoreTweet']]]
+  ['enumeratemode',['EnumerateMode',['../namespaceCoreTweet.html#a3cb7681ad32c9fadc094714125a3d30a',1,'CoreTweet']]],
+  ['errorcode',['ErrorCode',['../namespaceCoreTweet.html#adb5cd00c67f4fe33b2049b37e634e15e',1,'CoreTweet']]],
+  ['eventcode',['EventCode',['../namespaceCoreTweet_1_1Streaming.html#a41edacb4832607d7589e10e59d07fb06',1,'CoreTweet::Streaming']]],
+  ['eventitemtype',['EventItemType',['../classCoreTweet_1_1AccountActivity_1_1TypedEventItem.html#a56fdb732d5da892f48d5d3103d075126',1,'CoreTweet::AccountActivity::TypedEventItem']]],
+  ['eventtargettype',['EventTargetType',['../namespaceCoreTweet_1_1Streaming.html#aef46a890b8a505198f96d60ba21797f5',1,'CoreTweet::Streaming']]]
 ];

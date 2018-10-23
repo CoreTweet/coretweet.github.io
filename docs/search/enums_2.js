@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['filterlevel',['FilterLevel',['../namespaceCoreTweet.html#a06bda0e7d906c76737e291ced843a2cf',1,'CoreTweet']]]
+  ['disconnectcode',['DisconnectCode',['../namespaceCoreTweet_1_1Streaming.html#a8a261ff0c83f88d7ee1d03e64a9d5258',1,'CoreTweet::Streaming']]]
 ];

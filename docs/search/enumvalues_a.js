@@ -1,12 +1,11 @@
 var searchData=
 [
-  ['next',['Next',['../namespaceCoreTweet.html#a3cb7681ad32c9fadc094714125a3d30aa10ac3d04253ef7e1ddc73e6091c0cd55',1,'CoreTweet']]],
-  ['none',['None',['../namespaceCoreTweet.html#a06bda0e7d906c76737e291ced843a2cfa6adf97f83acf6453d4a6a4b1070f3754',1,'CoreTweet.None()'],['../namespaceCoreTweet.html#a197f9846d8068532d1c527f5782c5d80a6adf97f83acf6453d4a6a4b1070f3754',1,'CoreTweet.None()']]],
-  ['normal',['Normal',['../namespaceCoreTweet_1_1Streaming.html#a8a261ff0c83f88d7ee1d03e64a9d5258a960b44c579bc2f6818d2daaf9e4c16f0',1,'CoreTweet::Streaming']]],
-  ['nostatusfoundwiththatid',['NoStatusFoundWithThatId',['../namespaceCoreTweet.html#adb5cd00c67f4fe33b2049b37e634e15ea3f4f111b6fe6bbab06e9421783816950',1,'CoreTweet']]],
-  ['notallowedtoaccessordeletedirectmessages',['NotAllowedToAccessOrDeleteDirectMessages',['../namespaceCoreTweet.html#adb5cd00c67f4fe33b2049b37e634e15ea4e63a17b6967ecd585fd8a29bff1b01f',1,'CoreTweet']]],
-  ['notauthorizedtoseestatus',['NotAuthorizedToSeeStatus',['../namespaceCoreTweet.html#adb5cd00c67f4fe33b2049b37e634e15ea5fb2174d12bcfe1ae313100c41bbdd8e',1,'CoreTweet']]],
-  ['notauthorizedtousethisendpoint',['NotAuthorizedToUseThisEndpoint',['../namespaceCoreTweet.html#adb5cd00c67f4fe33b2049b37e634e15ea2354c0331ccbfb1fd494cf8916d7474f',1,'CoreTweet']]],
-  ['notmutingspecifieduser',['NotMutingSpecifiedUser',['../namespaceCoreTweet.html#adb5cd00c67f4fe33b2049b37e634e15eaa091077167a72800211cb7ef3a89328b',1,'CoreTweet']]],
-  ['null',['Null',['../namespaceCoreTweet_1_1Streaming.html#aef46a890b8a505198f96d60ba21797f5abbb93ef26e3c101ff11cdd21cab08a94',1,'CoreTweet::Streaming']]]
+  ['maxmessagelimit',['MaxMessageLimit',['../namespaceCoreTweet_1_1Streaming.html#a8a261ff0c83f88d7ee1d03e64a9d5258a90c0f97be1deee37309ee392db743b85',1,'CoreTweet::Streaming']]],
+  ['mediaistoolarge',['MediaIsTooLarge',['../namespaceCoreTweet.html#adb5cd00c67f4fe33b2049b37e634e15eae5985f1818c415a269d5a48e771d3403',1,'CoreTweet']]],
+  ['medium',['Medium',['../namespaceCoreTweet.html#a06bda0e7d906c76737e291ced843a2cfa87f8a6ab85c9ced3702b4ea641ad4bb5',1,'CoreTweet']]],
+  ['messagecreate',['MessageCreate',['../classCoreTweet_1_1AccountActivity_1_1TypedEventItem.html#a56fdb732d5da892f48d5d3103d075126a83041ff1df2cbd82dac934bb7cacd9cc',1,'CoreTweet::AccountActivity::TypedEventItem']]],
+  ['minute',['Minute',['../namespaceCoreTweet.html#a0df7c5ad1d5a34f327538f239ed6462ca62902641c38f3a4a8eb3212454360e24',1,'CoreTweet']]],
+  ['mustverifylogin',['MustVerifyLogin',['../namespaceCoreTweet.html#adb5cd00c67f4fe33b2049b37e634e15eacfc4a06b5c2db6c1263d7b47b92b04dc',1,'CoreTweet']]],
+  ['mute',['Mute',['../classCoreTweet_1_1AccountActivity_1_1TypedEventItem.html#a56fdb732d5da892f48d5d3103d075126a00cd7be4cb21c59179316d7844a8cfc4',1,'CoreTweet.AccountActivity.TypedEventItem.Mute()'],['../namespaceCoreTweet_1_1Streaming.html#a41edacb4832607d7589e10e59d07fb06a00cd7be4cb21c59179316d7844a8cfc4',1,'CoreTweet.Streaming.Mute()']]],
+  ['muteevents',['MuteEvents',['../namespaceCoreTweet_1_1AccountActivity.html#a18b0baaa24c72eec6dfc99563a13ae57a370ad89187f2c5fdb7e24af52678c2ee',1,'CoreTweet::AccountActivity']]]
 ];

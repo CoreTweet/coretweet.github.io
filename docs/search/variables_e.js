@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['this_5bint_20index_5d',['this[int index]',['../classCoreTweet_1_1Core_1_1ListedResponse.html#a04f5a0c8b37711694be60ce39eae7fa3',1,'CoreTweet.Core.ListedResponse.this[int index]()'],['../classCoreTweet_1_1Cursored.html#a2f0ff20fee0ad491e954a97c13d0464b',1,'CoreTweet.Cursored.this[int index]()'],['../classCoreTweet_1_1SearchResult.html#aad5bea790e3c3fde17fc1ebe4a7d8af3',1,'CoreTweet.SearchResult.this[int index]()']]],
-  ['this_5btkey_20key_5d',['this[TKey key]',['../classCoreTweet_1_1Core_1_1DictionaryResponse.html#a06d92ab1d95f0e1e3adafad27731702d',1,'CoreTweet::Core::DictionaryResponse']]],
-  ['tokens',['tokens',['../coretweet__for__shell_8cs.html#a4acece93fc1f10ab00bab52fab7ae30c',1,'coretweet_for_shell.cs']]],
-  ['trends',['Trends',['../classCoreTweet_1_1Core_1_1TokensBase.html#a9bb4c925177b369dc50a97734eeaf215',1,'CoreTweet::Core::TokensBase']]],
-  ['type',['Type',['../classCoreTweet_1_1Streaming_1_1StreamingMessage.html#a82c3ecddefc44b460bd3cd6d17312416',1,'CoreTweet::Streaming::StreamingMessage']]]
+  ['savedsearches',['SavedSearches',['../classCoreTweet_1_1Core_1_1TokensBase.html#ae45c7638f8558867afc80bd8b5fe19b0',1,'CoreTweet::Core::TokensBase']]],
+  ['search',['Search',['../classCoreTweet_1_1Core_1_1TokensBase.html#a238727d95236b8c5844fad01dee2a91e',1,'CoreTweet::Core::TokensBase']]],
+  ['statuses',['Statuses',['../classCoreTweet_1_1Core_1_1TokensBase.html#affcfb44f4a9080d50f6474545595ae69',1,'CoreTweet::Core::TokensBase']]],
+  ['streaming',['Streaming',['../classCoreTweet_1_1Core_1_1TokensBase.html#aaca3159ce0ca51979ad01d60252649e5',1,'CoreTweet::Core::TokensBase']]],
+  ['subscribers',['Subscribers',['../classCoreTweet_1_1Rest_1_1Lists.html#a76eb8c2bae3066ab5f13e4154f77d65d',1,'CoreTweet::Rest::Lists']]]
 ];

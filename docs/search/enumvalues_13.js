@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['warning',['Warning',['../namespaceCoreTweet_1_1Streaming.html#ae0f1a921dcf3d18048a7d11193abe829a0eaadb4fcb48a0a0ed7bc9868be9fbaa',1,'CoreTweet::Streaming']]]
+  ['video',['Video',['../namespaceCoreTweet.html#a9e026311810cccf59fcca3104137d78ca34e2d1989a1dbf75cd631596133ee5ee',1,'CoreTweet']]]
 ];

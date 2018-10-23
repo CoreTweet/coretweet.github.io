@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['disconnectcode',['DisconnectCode',['../namespaceCoreTweet_1_1Streaming.html#a8a261ff0c83f88d7ee1d03e64a9d5258',1,'CoreTweet::Streaming']]]
+  ['activityeventtype',['ActivityEventType',['../namespaceCoreTweet_1_1AccountActivity.html#a18b0baaa24c72eec6dfc99563a13ae57',1,'CoreTweet::AccountActivity']]]
 ];
