@@ -1,10 +1,19 @@
 var searchData=
 [
-  ['accessrevocation',['AccessRevocation',['../namespaceCoreTweet_1_1Streaming.html#aef46a890b8a505198f96d60ba21797f5a63ba6532f5e4a6dbb6d4ceaad90e997e',1,'CoreTweet::Streaming']]],
-  ['accessrevoked',['AccessRevoked',['../namespaceCoreTweet_1_1Streaming.html#a41edacb4832607d7589e10e59d07fb06aa7239bac45029ba5fe0eb9eb2710820c',1,'CoreTweet::Streaming']]],
-  ['accountissuspended',['AccountIsSuspended',['../namespaceCoreTweet.html#adb5cd00c67f4fe33b2049b37e634e15ea0b20d2ae68177f4478934e02994609f3',1,'CoreTweet']]],
-  ['adminlogout',['AdminLogout',['../namespaceCoreTweet_1_1Streaming.html#a8a261ff0c83f88d7ee1d03e64a9d5258a6e168fdf89545e2a01578e87edcc9d4d',1,'CoreTweet::Streaming']]],
-  ['alreadyfavorited',['AlreadyFavorited',['../namespaceCoreTweet.html#adb5cd00c67f4fe33b2049b37e634e15eaeead240c4821a3e950c1379cc5f19059',1,'CoreTweet']]],
-  ['alreadyfollowrequested',['AlreadyFollowRequested',['../namespaceCoreTweet.html#adb5cd00c67f4fe33b2049b37e634e15ea4efd1446a41364eac441062163c5b4e9',1,'CoreTweet']]],
-  ['alreadyretweetedthistweet',['AlreadyRetweetedThisTweet',['../namespaceCoreTweet.html#adb5cd00c67f4fe33b2049b37e634e15ea14238c494fcc0e9b59cecf417e1da8c0',1,'CoreTweet']]]
+  ['accessrevocation_1428',['AccessRevocation',['../namespaceCoreTweet_1_1Streaming.html#aef46a890b8a505198f96d60ba21797f5a63ba6532f5e4a6dbb6d4ceaad90e997e',1,'CoreTweet::Streaming']]],
+  ['accessrevoked_1429',['AccessRevoked',['../namespaceCoreTweet_1_1Streaming.html#a41edacb4832607d7589e10e59d07fb06aa7239bac45029ba5fe0eb9eb2710820c',1,'CoreTweet::Streaming']]],
+  ['accountissuspended_1430',['AccountIsSuspended',['../namespaceCoreTweet.html#adb5cd00c67f4fe33b2049b37e634e15ea0b20d2ae68177f4478934e02994609f3',1,'CoreTweet']]],
+  ['admin_1431',['Admin',['../namespaceCoreTweet_1_1V2.html#a12c883abcf742ae3ec6344356334f0c8ae3afed0047b08059d0fada10f400c1e5',1,'CoreTweet::V2']]],
+  ['admin0_1432',['Admin0',['../namespaceCoreTweet_1_1V2.html#a12c883abcf742ae3ec6344356334f0c8a1ebd3fc97688d1f3088017d42bf0b8bb',1,'CoreTweet::V2']]],
+  ['admin1_1433',['Admin1',['../namespaceCoreTweet_1_1V2.html#a12c883abcf742ae3ec6344356334f0c8a2e33a9b0b06aa0a01ede70995674ee23',1,'CoreTweet::V2']]],
+  ['adminlogout_1434',['AdminLogout',['../namespaceCoreTweet_1_1Streaming.html#a8a261ff0c83f88d7ee1d03e64a9d5258a6e168fdf89545e2a01578e87edcc9d4d',1,'CoreTweet::Streaming']]],
+  ['all_1435',['All',['../namespaceCoreTweet_1_1V2.html#af6fe2f51120c9492adc4f73543547284ab1c94ca2fbc3e78fc30069c8d0f01680',1,'CoreTweet.V2.All()'],['../namespaceCoreTweet_1_1V2.html#a7a67a74849879b65615760ef0ed23708ab1c94ca2fbc3e78fc30069c8d0f01680',1,'CoreTweet.V2.All()'],['../namespaceCoreTweet_1_1V2.html#aa9af76ee4a17c14242c030d7a270870bab1c94ca2fbc3e78fc30069c8d0f01680',1,'CoreTweet.V2.All()'],['../namespaceCoreTweet_1_1V2.html#abea88cbcb18d4821a77a3b0652ad020cab1c94ca2fbc3e78fc30069c8d0f01680',1,'CoreTweet.V2.All()'],['../namespaceCoreTweet_1_1V2.html#ac4506b0610de6c2bfdc32fec8b7f6ee2ab1c94ca2fbc3e78fc30069c8d0f01680',1,'CoreTweet.V2.All()'],['../namespaceCoreTweet_1_1V2.html#acd8f9c8586e91e5adf18bcfac52bb137ab1c94ca2fbc3e78fc30069c8d0f01680',1,'CoreTweet.V2.All()'],['../namespaceCoreTweet_1_1V2.html#afe703988156d5e24b181aa747e07788fab1c94ca2fbc3e78fc30069c8d0f01680',1,'CoreTweet.V2.All()']]],
+  ['alreadyfavorited_1436',['AlreadyFavorited',['../namespaceCoreTweet.html#adb5cd00c67f4fe33b2049b37e634e15eaeead240c4821a3e950c1379cc5f19059',1,'CoreTweet']]],
+  ['alreadyfollowrequested_1437',['AlreadyFollowRequested',['../namespaceCoreTweet.html#adb5cd00c67f4fe33b2049b37e634e15ea4efd1446a41364eac441062163c5b4e9',1,'CoreTweet']]],
+  ['alreadyretweetedthistweet_1438',['AlreadyRetweetedThisTweet',['../namespaceCoreTweet.html#adb5cd00c67f4fe33b2049b37e634e15ea14238c494fcc0e9b59cecf417e1da8c0',1,'CoreTweet']]],
+  ['animatedgif_1439',['AnimatedGif',['../namespaceCoreTweet_1_1V2.html#acb4547c13cf56b712ca5f6893083eef5af584fa6684b99752d0092baccc2cee0a',1,'CoreTweet::V2']]],
+  ['attachments_1440',['Attachments',['../namespaceCoreTweet_1_1V2.html#abea88cbcb18d4821a77a3b0652ad020ca7e2708aeb65763c54052f57ed1a1ec1d',1,'CoreTweet::V2']]],
+  ['attachmentsmediakeys_1441',['AttachmentsMediaKeys',['../namespaceCoreTweet_1_1V2.html#ac4506b0610de6c2bfdc32fec8b7f6ee2a27186cd91003f740c0034cab9fcf95ab',1,'CoreTweet::V2']]],
+  ['attachmentspollids_1442',['AttachmentsPollIds',['../namespaceCoreTweet_1_1V2.html#ac4506b0610de6c2bfdc32fec8b7f6ee2a03e45812d2c81e74472ed4062ba875e0',1,'CoreTweet::V2']]],
+  ['authorid_1443',['AuthorId',['../namespaceCoreTweet_1_1V2.html#abea88cbcb18d4821a77a3b0652ad020ca69f7c8724792bde88c587b3a17e87fbe',1,'CoreTweet.V2.AuthorId()'],['../namespaceCoreTweet_1_1V2.html#ac4506b0610de6c2bfdc32fec8b7f6ee2a69f7c8724792bde88c587b3a17e87fbe',1,'CoreTweet.V2.AuthorId()']]]
 ];

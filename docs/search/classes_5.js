@@ -1,12 +1,19 @@
 var searchData=
 [
-  ['favoriteevent',['FavoriteEvent',['../classCoreTweet_1_1AccountActivity_1_1FavoriteEvent.html',1,'CoreTweet::AccountActivity']]],
-  ['favoriteevents',['FavoriteEvents',['../classCoreTweet_1_1AccountActivity_1_1FavoriteEvents.html',1,'CoreTweet::AccountActivity']]],
-  ['favorites',['Favorites',['../classCoreTweet_1_1Rest_1_1Favorites.html',1,'CoreTweet::Rest']]],
-  ['followers',['Followers',['../classCoreTweet_1_1Rest_1_1Followers.html',1,'CoreTweet::Rest']]],
-  ['followevents',['FollowEvents',['../classCoreTweet_1_1AccountActivity_1_1FollowEvents.html',1,'CoreTweet::AccountActivity']]],
-  ['friends',['Friends',['../classCoreTweet_1_1Rest_1_1Friends.html',1,'CoreTweet::Rest']]],
-  ['friendship',['Friendship',['../classCoreTweet_1_1Friendship.html',1,'CoreTweet']]],
-  ['friendships',['Friendships',['../classCoreTweet_1_1Rest_1_1Friendships.html',1,'CoreTweet::Rest']]],
-  ['friendsmessage',['FriendsMessage',['../classCoreTweet_1_1Streaming_1_1FriendsMessage.html',1,'CoreTweet::Streaming']]]
+  ['favoriteevent_1015',['FavoriteEvent',['../classCoreTweet_1_1AccountActivity_1_1FavoriteEvent.html',1,'CoreTweet::AccountActivity']]],
+  ['favoriteevents_1016',['FavoriteEvents',['../classCoreTweet_1_1AccountActivity_1_1FavoriteEvents.html',1,'CoreTweet::AccountActivity']]],
+  ['filteredstreamapi_1017',['FilteredStreamApi',['../classCoreTweet_1_1V2_1_1FilteredStreamApi.html',1,'CoreTweet::V2']]],
+  ['filterrule_1018',['FilterRule',['../classCoreTweet_1_1V2_1_1FilterRule.html',1,'CoreTweet::V2']]],
+  ['filterrulesgetresponse_1019',['FilterRulesGetResponse',['../classCoreTweet_1_1V2_1_1FilterRulesGetResponse.html',1,'CoreTweet::V2']]],
+  ['filterrulesgetresponsemeta_1020',['FilterRulesGetResponseMeta',['../classCoreTweet_1_1V2_1_1FilterRulesGetResponseMeta.html',1,'CoreTweet::V2']]],
+  ['filterrulespostcreateresponse_1021',['FilterRulesPostCreateResponse',['../classCoreTweet_1_1V2_1_1FilterRulesPostCreateResponse.html',1,'CoreTweet::V2']]],
+  ['filterrulespostcreateresponsemeta_1022',['FilterRulesPostCreateResponseMeta',['../classCoreTweet_1_1V2_1_1FilterRulesPostCreateResponseMeta.html',1,'CoreTweet::V2']]],
+  ['filterrulespostcreateresponsemetasummary_1023',['FilterRulesPostCreateResponseMetaSummary',['../classCoreTweet_1_1V2_1_1FilterRulesPostCreateResponseMetaSummary.html',1,'CoreTweet::V2']]],
+  ['filterrulespostdeleteresponse_1024',['FilterRulesPostDeleteResponse',['../classCoreTweet_1_1V2_1_1FilterRulesPostDeleteResponse.html',1,'CoreTweet::V2']]],
+  ['filterrulespostdeleteresponsemeta_1025',['FilterRulesPostDeleteResponseMeta',['../classCoreTweet_1_1V2_1_1FilterRulesPostDeleteResponseMeta.html',1,'CoreTweet::V2']]],
+  ['filterrulespostdeleteresponsemetasummary_1026',['FilterRulesPostDeleteResponseMetaSummary',['../classCoreTweet_1_1V2_1_1FilterRulesPostDeleteResponseMetaSummary.html',1,'CoreTweet::V2']]],
+  ['filterstreamresponse_1027',['FilterStreamResponse',['../classCoreTweet_1_1V2_1_1FilterStreamResponse.html',1,'CoreTweet::V2']]],
+  ['followevents_1028',['FollowEvents',['../classCoreTweet_1_1AccountActivity_1_1FollowEvents.html',1,'CoreTweet::AccountActivity']]],
+  ['friendship_1029',['Friendship',['../classCoreTweet_1_1Friendship.html',1,'CoreTweet']]],
+  ['friendsmessage_1030',['FriendsMessage',['../classCoreTweet_1_1Streaming_1_1FriendsMessage.html',1,'CoreTweet::Streaming']]]
 ];
